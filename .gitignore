@@ -33,3 +33,4 @@ msbuild.wrn
 
 # Project specific
 Dist/MagicKeys.exe
+Dist/License.txt

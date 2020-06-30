@@ -183,7 +183,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="if not exist &quot;$(ProjectDir)Dist\License.txt&quot; copy &quot;$(ProjectDir)License.txt&quot; &quot;$(ProjectDir)Dist&quot;&#xD;&#xA;if not exist &quot;$(ProjectDir)Dist\Руководство пользователя.html&quot; copy &quot;$(ProjectDir)Readme.html&quot; &quot;$(ProjectDir)Dist\Руководство пользователя.html&quot;&#xD;&#xA;xcopy /y &quot;$(ProjectDir)\Dist\*&quot; &quot;$(TargetDir)&quot;" />
+    <Exec Command="if not exist &quot;$(ProjectDir)Dist\License.txt&quot; copy &quot;$(ProjectDir)License.txt&quot; &quot;$(ProjectDir)Dist&quot;&#xD;&#xA;xcopy /y &quot;$(ProjectDir)\Dist\*&quot; &quot;$(TargetDir)&quot;" />
   </Target>
 
 </Project>
