@@ -1,0 +1,49 @@
+[1]
+Text=Midi channel
+ObjectType=Button
+Help=Назначить MIDI канал
+Func=LibMidiChannel
+[2]
+Text=Audio channel
+ObjectType=Button
+Help=Назначить аудио канал
+Func=LibAudioChannel
+[3]
+Text=Delete library
+ObjectType=Button
+Help=Удалить выбранную библиотеку
+Func=LibDelete
+[4]
+Text=previous library in folder
+ObjectType=Button
+Help=Переход к предыдущей библиотеке в папке
+Func=LibSwitchFolder
+Ptr=Back
+[5]
+Text=Next library in folder
+ObjectType=Button
+Help=Переход к следующей библиотеке в папке
+Func=LibSwitchFolder
+Ptr=Next
+[6]
+Text=previous snapshot
+ObjectType=Button
+Help=Предыдущий снапшот
+Func=LibSwitchSnapshot
+Ptr=Back
+[7]
+Text=Next Snapshot
+ObjectType=Button
+Help=Следующий снапшот
+Func=LibSwitchSnapshot
+Ptr=Next
+[8]
+Text=Go to library interface
+ObjectType=Button
+Help=Открыть интерфейс выделенной библиотеки
+Func=GoToLibInterface
+[9]
+Text=Back to Option menu
+ObjectType=Button
+Help=Вернуться в главное меню Kontakt
+Func=BackToOptionMenu

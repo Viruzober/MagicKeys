@@ -1,0 +1,45 @@
+[1]
+Text=Reverb
+ObjectType=CheckBox
+Help=Help not found
+Func=ReverbOnOff
+[2]
+Text=Type
+ObjectType=RadioBoxGroup
+Help=Help not found
+Func=ReverbType
+[3]
+Text=Mix
+ObjectType=Slider
+Help=Help not found
+Func=ReverbMix
+[4]
+Text=Mod
+ObjectType=Slider
+Help=Help not found
+Func=ReverbMod
+[5]
+Text=Dec
+ObjectType=Slider
+Help=Help not found
+Func=ReverbDec
+[6]
+Text=Pre-dly
+ObjectType=Slider
+Help=Help not found
+Func=ReverbPreDelay
+[7]
+Text=Lo-Cut
+ObjectType=Slider
+Help=Help not found
+Func=ReverbLoCut
+[8]
+Text=Hi-Cut
+ObjectType=Slider
+Help=Help not found
+Func=ReverbHiCut
+[9]
+Text=Back
+ObjectType=Button
+Help=Help not found
+Func=Back

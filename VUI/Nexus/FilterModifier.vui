@@ -1,0 +1,45 @@
+[1]
+Text=Filter Modifier
+ObjectType=CheckBox
+Help=Help not found
+Func=FilterModifierOnOff
+[2]
+Text=Env
+ObjectType=Slider
+Help=Help not found
+Func=FilterModifierEnv
+[3]
+Text=CutOff
+ObjectType=Slider
+Help=Help not found
+Func=FilterModifierCutOff
+[4]
+Text=Res
+ObjectType=Slider
+Help=Help not found
+Func=FilterModifierRes
+[5]
+Text=Afk
+ObjectType=Slider
+Help=Help not found
+Func=FilterModifierAfk
+[6]
+Text=Dec
+ObjectType=Slider
+Help=Help not found
+Func=FilterModifierDec
+[7]
+Text=Sus
+ObjectType=Slider
+Help=Help not found
+Func=FilterModifierSus
+[8]
+Text=Rel
+ObjectType=Slider
+Help=Help not found
+Func=FilterModifierRel
+[9]
+Text=Back
+ObjectType=Button
+Help=Help not found
+Func=Back

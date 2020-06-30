@@ -1,0 +1,5 @@
+[1]
+Text=Bank and patch menu
+ObjectType=Button
+Help=Открыть меню банков и патчей
+Func=FreeMenu

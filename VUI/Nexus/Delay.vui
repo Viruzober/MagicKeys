@@ -1,0 +1,45 @@
+[1]
+Text=Delay
+ObjectType=CheckBox
+Help=Help not found
+Func=DelayOnOff
+[2]
+Text=Type
+ObjectType=RadioBoxGroup
+Help=Help not found
+Func=DelayType
+[3]
+Text=Mix
+ObjectType=Slider
+Help=Help not found
+Func=DelayMix
+[4]
+Text=Mod
+ObjectType=Slider
+Help=Help not found
+Func=DelayMod
+[5]
+Text=Time
+ObjectType=Slider
+Help=Help not found
+Func=DelayTime
+[6]
+Text=FeedBack
+ObjectType=Slider
+Help=Help not found
+Func=DelayFeedBack
+[7]
+Text=LoCut
+ObjectType=Slider
+Help=Help not found
+Func=DelayLoCut
+[8]
+Text=HiCut
+ObjectType=Slider
+Help=Help not found
+Func=DelayHiCut
+[9]
+Text=Back
+ObjectType=Button
+Help=Help not found
+Func=Back

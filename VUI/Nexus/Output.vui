@@ -1,0 +1,10 @@
+[1]
+Text=Vol
+ObjectType=Slider
+Help=Help not found
+Func=OutputVol
+[2]
+Text=Back
+ObjectType=Button
+Help=Help not found
+Func=Back

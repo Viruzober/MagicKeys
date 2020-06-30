@@ -1,0 +1,60 @@
+[1]
+Text=Auto Attack
+ObjectType=CheckBox
+Help=Help not found
+Func=AutoAttack
+[2]
+Text=Attack Time
+ObjectType=Slider
+Help=Help not found
+Func=AttackTime
+[3]
+Text=Key noise
+ObjectType=Slider
+Help=Громкость удара пальцев по клавишам
+Func=KeyNoise
+[4]
+Text=Bellow
+ObjectType=Slider
+Help=Help not found
+Func=Bellow
+[5]
+Text=Release
+ObjectType=Slider
+Help=Help not found
+Func=Release
+[6]
+Text=Reverb
+ObjectType=CheckBox
+Help=Help not found
+Func=Reverb
+[7]
+Text=Reverb Level
+ObjectType=Slider
+Help=Help not found
+Func=ReverbLevel
+[8]
+Text=Sustain
+ObjectType=RadioBox
+Help=Help not found
+Func=Sustain
+[9]
+Text=Staccato
+ObjectType=RadioBox
+Help=Help not found
+Func=Staccato
+[10]
+Text=Crescendo
+ObjectType=RadioBox
+Help=Help not found
+Func=Crescendo
+[11]
+Text=Detache
+ObjectType=RadioBox
+Help=Help not found
+Func=Detache
+[12]
+Text=Back
+ObjectType=Button
+Help=Help not found
+Func=Back
