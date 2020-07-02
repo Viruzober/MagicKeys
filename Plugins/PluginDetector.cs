@@ -24,7 +24,6 @@ continue;
 }
 for (int I = 1; I <= PluginsList.Count; I++)
 {
-//MessageBox.Show(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]);
 if (WinActive(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]) == true)
 {
 Type T = AS.GetType("MagicKeys."+PluginsList[I]["PClass"]);
