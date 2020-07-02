@@ -8,22 +8,22 @@
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>Viruzober.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
     <Platforms>AnyCPU;x86</Platforms>
-    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants></DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath></OutputPath>
     <ErrorReport>queue</ErrorReport>
     <FileAlignment>512</FileAlignment>
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
@@ -32,32 +32,37 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants></DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <ErrorReport>queue</ErrorReport>
+    <OutputPath></OutputPath>
+    <ErrorReport>none</ErrorReport>
     <FileAlignment>512</FileAlignment>
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants></DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DefineConstants></DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="bin\**" />
-    <Compile Remove="Lib\**" />
-    <Compile Remove="VUI\Sylenth1\**" />
     <EmbeddedResource Remove="bin\**" />
-    <EmbeddedResource Remove="Lib\**" />
-    <EmbeddedResource Remove="VUI\Sylenth1\**" />
     <None Remove="bin\**" />
-    <None Remove="Lib\**" />
-    <None Remove="VUI\Sylenth1\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove=".gitignore" />
     <None Remove="app.manifest" />
     <None Remove="Sounds\Button.ogg" />
     <None Remove="Sounds\ChangeVUI.ogg" />
@@ -73,26 +78,6 @@
     <None Remove="Sounds\Start.ogg" />
     <None Remove="Sounds\WindowClose.ogg" />
     <None Remove="Sounds\WindowOpened.ogg" />
-    <None Remove="VUI\KontaktLib\IlyaEfimovBayanL.vui" />
-    <None Remove="VUI\KontaktLib\IlyaEfimovBayanR.vui" />
-    <None Remove="VUI\Kontakt\ConntentMissing.vui" />
-    <None Remove="VUI\Kontakt\Kontakt.help" />
-    <None Remove="VUI\Kontakt\Kontakt.vui" />
-    <None Remove="VUI\Kontakt\LibList.VUI" />
-    <None Remove="VUI\Kontakt\Options.vui" />
-    <None Remove="VUI\Kontakt\Progress.vui" />
-    <None Remove="VUI\Nexus\AmpModifier.vui" />
-    <None Remove="VUI\Nexus\Delay.vui" />
-    <None Remove="VUI\Nexus\FilterModifier.vui" />
-    <None Remove="VUI\Nexus\MasterFilter.vui" />
-    <None Remove="VUI\Nexus\Nexus.help" />
-    <None Remove="VUI\Nexus\Nexus.vui" />
-    <None Remove="VUI\Nexus\Output.vui" />
-    <None Remove="VUI\Nexus\Reverb.vui" />
-    <None Remove="VUI\PlugSound\PlugSound.help" />
-    <None Remove="VUI\PlugSound\PlugSound.vui" />
-    <None Remove="VUI\PlugSound\PlugSoundFree.help" />
-    <None Remove="VUI\PlugSound\PlugSoundFree.vui" />
   </ItemGroup>
 
   <ItemGroup>
@@ -112,15 +97,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="app.manifest" />
-    <EmbeddedResource Include="VUI\KontaktLib\IlyaEfimovBayanL.vui" />
-    <EmbeddedResource Include="VUI\KontaktLib\IlyaEfimovBayanR.vui" />
-    <EmbeddedResource Include="VUI\Nexus\AmpModifier.vui" />
-    <EmbeddedResource Include="VUI\Nexus\Delay.vui" />
-    <EmbeddedResource Include="VUI\Nexus\FilterModifier.vui" />
-    <EmbeddedResource Include="VUI\Nexus\MasterFilter.vui" />
-    <EmbeddedResource Include="VUI\Nexus\Nexus.help" />
-    <EmbeddedResource Include="VUI\Nexus\Nexus.vui" />
+    <EmbeddedResource Include="app.manifest" />
     <EmbeddedResource Include="Sounds\Button.ogg" />
     <EmbeddedResource Include="Sounds\ChangeVUI.ogg" />
     <EmbeddedResource Include="Sounds\doubleClick.ogg" />
@@ -135,36 +112,12 @@
     <EmbeddedResource Include="Sounds\Start.ogg" />
     <EmbeddedResource Include="Sounds\WindowClose.ogg" />
     <EmbeddedResource Include="Sounds\WindowOpened.ogg" />
-    <EmbeddedResource Include="VUI\Nexus\Output.vui" />
-    <EmbeddedResource Include="VUI\Nexus\Reverb.vui" />
-    <EmbeddedResource Include="VUI\PlugSound\PlugSound.vui" />
-    <EmbeddedResource Include="VUI\PlugSound\PlugSoundFree.vui" />
-    <EmbeddedResource Include="VUI\Kontakt\ConntentMissing.vui" />
-    <EmbeddedResource Include="VUI\Kontakt\Kontakt.help" />
-    <EmbeddedResource Include="VUI\Kontakt\Kontakt.vui" />
-    <EmbeddedResource Include="VUI\Kontakt\LibList.vui" />
-    <EmbeddedResource Include="VUI\Kontakt\Progress.vui" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Bass.Net">
       <HintPath>Bass.Net.dll</HintPath>
     </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -177,13 +130,14 @@
     <None Update="nvdaControllerClient32.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Settings.ini">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if exist &quot;$(ProjectDir)Dist&quot; rd /s /q &quot;$(ProjectDir)Dist&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(ProjectDir)Dist\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(ProjectDir)Dist\Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(ProjectDir)Dist\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(ProjectDir)Dist\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(ProjectDir)Dist\&quot; &gt; nul" />
+  </Target>
+
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="if not exist &quot;$(ProjectDir)Dist\License.txt&quot; copy &quot;$(ProjectDir)License.txt&quot; &quot;$(ProjectDir)Dist&quot;&#xD;&#xA;xcopy /y &quot;$(ProjectDir)\Dist\*&quot; &quot;$(TargetDir)&quot;" />
+    <Exec Command="if exist &quot;$(TargetDir)&quot; rd /s /q &quot;$(TargetDir)&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(TargetDir)Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(TargetDir)VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(TargetDir)&quot; &gt; nul" />
   </Target>
 
 </Project>

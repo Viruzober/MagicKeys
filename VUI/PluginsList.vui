@@ -1,0 +1,42 @@
+﻿[1]
+WTitle=FX: Track
+WClass=#32770
+PClass=Kontakt
+VUI=Kontakt\Kontakt.vui
+PluginImg=Images\Kontakt\NIK_Logo.bmp
+[2]
+WTitle=Kontakt (x64 bridged
+WClass=REAPERb32host
+PClass=Kontakt
+VUI=Kontakt\Kontakt.vui
+[3]
+WTitle=Content Missing
+WClass=#32770
+PClass=Kontakt
+VUI=Kontakt\ConntentMissing.vui
+[4]
+WTitle=Progress
+WClass=#32770
+PClass=Kontakt
+VUI=Kontakt\Progress.vui
+[5]
+WTitle=reFX Nexus
+WClass=REAPERb32host
+PClass=Nexus
+VUI=Nexus\Nexus.vui
+[6]
+WTitle=PS0
+WClass=REAPERb32host
+PClass=PlugSound
+VUI=PlugSound\PlugSound.vui
+[7]
+WTitle=Plugsound
+WClass=REAPERb32host
+PClass=PlugSound
+VUI=PlugSound\PlugSoundFree.vui
+[8]
+WTitle=Kontakt
+WClass=NINormalWindow
+PClass=Kontakt
+VUI=Kontakt\Kontakt.vui
+PluginImg=Images\Kontakt\NIK_Logo.bmp

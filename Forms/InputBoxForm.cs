@@ -59,6 +59,8 @@ this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Size = new Size(300, 150);
 this.Name = "MagicKeys";
+this.AcceptButton = ButtonOK;
+this.CancelButton = ButtonCancel;
 this.Shown += InputBox_Shown;
 }
 

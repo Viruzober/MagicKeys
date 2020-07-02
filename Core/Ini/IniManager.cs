@@ -13,8 +13,7 @@ public static List<string> IniReadSections(string File)
 {
 List<string> temp = new List<string>();
 string sLine = string.Empty;
-Stream IniFileStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(@"MagicKeys."+File);
-using (StreamReader sr = new StreamReader(IniFileStream))
+using (StreamReader sr = new StreamReader(File))
 {
 while (!sr.EndOfStream)
 {
@@ -34,8 +33,7 @@ public static List<string> IniReadKeys(string File, string Section)
 List<string> temp = new List<string>();
 string sLine = string.Empty;
 string SecName = string.Empty;
-Stream IniFileStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(@"MagicKeys." + File);
-using (StreamReader sr = new StreamReader(IniFileStream))
+using (StreamReader sr = new StreamReader(File))
 {
 while (!sr.EndOfStream)
 {

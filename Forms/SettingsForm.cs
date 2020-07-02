@@ -88,6 +88,8 @@ this.Size = new Size(500, 400);
 this.Name = "SettingsForm";
 this.Text = "Настройки";
 this.Shown += SettingsForm_Shown;
+this.AcceptButton = Save;
+this.CancelButton = Cancel;
 }
 
 }

@@ -7,9 +7,7 @@ namespace MagicKeys
 public static partial class Ini
 {
 
-public static void IniWriteStr(string GetFile, string GetSection, string GetKey, string GetValue)
-{
-try
+public static void IniWrite(string GetFile, string GetSection, string GetKey, string GetValue)
 {
 string[] FileStr = File.ReadAllLines(GetFile);
 string FullStr = "";
@@ -31,11 +29,6 @@ File.WriteAllText(GetFile, FullStr);
 }
 }
 }
-}
-}
-catch(Exception)
-{
-return;
 }
 }	
 

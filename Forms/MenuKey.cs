@@ -48,8 +48,7 @@ MagicKeys.Speak("Звук включён");
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F6)
 {
-SettingsForm Settings = new SettingsForm();
-Settings.Show();
+Settings(null, null);
 }
 break;
 }

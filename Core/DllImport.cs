@@ -55,6 +55,8 @@ public static extern bool IsWindowVisible(IntPtr hWnd);
 public static extern IntPtr GetWindow(IntPtr hWnd, uint uCmd);
 [DllImport("user32.dll")]
 public static extern bool GetMenuItemRect(IntPtr hWnd, IntPtr hMenu, uint uItem, out MenuRect lprcItem);
+[DllImport("user32.dll", EntryPoint = "SetWindowPos")]
+public static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int Y, int cx, int cy, int wFlags);
 [DllImport("User32.dll")]
 public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
 

@@ -15,37 +15,15 @@ CheckBox(P[1]+70, P[2]+345, "#3AA1FF", "MasterFilter");
 public static void MasterFilterCutOff()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("CutOff", "Введите значение для CutOff от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("CutOff", 125, 350, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+125, P[2]+350, P[1]+125, Height-10, 0, 10);
-int V = P[2] + 350 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+125, P[2]+350, P[1]+125, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 public static void MasterFilterRes()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("Res", "Введите значение для Res от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("Res", 185, 350, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+185, P[2]+350, P[1]+185, Height-10, 0, 10);
-int V = P[2] + 350 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+185, P[2]+350, P[1]+185, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 public static void MasterFilterType()

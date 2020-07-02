@@ -7,7 +7,7 @@ namespace MagicKeys
 
 public static void VUIObjectEnter()
 {
-string Func = Ini.IniReadStr(IniFile, ActiveObjects[Section].ToString(), "Func");
+string Func = VUIObjects[ActiveObjects[Section]]["Func"];
 InvokeFromString(Func);
 }
 

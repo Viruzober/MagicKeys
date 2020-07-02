@@ -9,14 +9,16 @@ public partial class MagicKeys
         public static void WindowMover(int X, int Y, bool RecP)
         {
 P = Mes();
-IntPtr Handle = GetParentWindow(GetWinPointHandle(P[1], P[2]));
+IntPtr Handle = GetForegroundWindow();
 int[] Rect = GetWinRect(Handle);
             if (RecP == true)
             {
 DP[1] = Rect[0];
 DP[2] = Rect[1];
 }
-MouseClickDrag("Left", Rect[0]+20, Rect[1]+10, X+20, Y+10, 0, 10);
+Thread.Sleep(20);
+SetWindowPos(GetForegroundWindow(), 0, X, Y, 0, 0, MKC.SWP_NOSIZE);
+Thread.Sleep(20);
 P = Mes();
 }
 

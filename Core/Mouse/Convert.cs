@@ -40,10 +40,10 @@ return new Tuple<int, int>((int)(mouseEventCoordsX * MouseEventToPositionX), (in
  
 public static Tuple<int,int> MouseEventCoords(int mousePositionX, int mousePositionY)
 {
-if (mousePositionX < 0 || mousePositionX > Width)
-throw new ArgumentOutOfRangeException("mousePositionX");
-if (mousePositionY < 0 || mousePositionY > Height)
-throw new ArgumentOutOfRangeException("mousePositionY");
+//if (mousePositionX < 0 || mousePositionX > Width)
+//throw new ArgumentOutOfRangeException("mousePositionX");
+//if (mousePositionY < 0 || mousePositionY > Height)
+//throw new ArgumentOutOfRangeException("mousePositionY");
 return new Tuple<int, int>((int)(mousePositionX * PositionToMouseEventX), (int)(mousePositionY * PositionToMouseEventY));
 }
  

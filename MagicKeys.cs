@@ -15,9 +15,6 @@ public static Menu HM;
 static void Main(string[] args)
 {
 if (CheckRunProc("MagicKeys") == true) return;
-LoadSettings();
-SoundPlay("Start.ogg", 0);
-Speak("Сервис Magic Keys запущен");
 if (CheckInternet() == true)
 {
 string UI = UserInfo(PCID());
@@ -27,6 +24,10 @@ RegUser = false;
 MessageBox.Show("Пожалуйста зарегистрируйтесь через меню на панели задач.", "Внимание");
 }
 }
+LoadSettings();
+PluginsListLoader();
+SoundPlay("Start.ogg", 0);
+Speak("Сервис Magic Keys запущен");
 HM = new Menu();
 Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));
 ThreadPluginDetector.IsBackground = true;

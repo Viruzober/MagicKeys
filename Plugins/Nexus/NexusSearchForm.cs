@@ -23,7 +23,7 @@ public NexusSearchForm()
 InitForm();
 InitTextBox();
 InitLabel();
-InitListBox();
+InitListView();
 InitButton();
 }
 
@@ -33,12 +33,14 @@ OK.Location = new Point(320, 10);
 OK.Size = new Size(50, 30);
 OK.TabIndex = 6;
 OK.Text = "OK";
+OK.Visible = false;
 OK.Click += ButtonOK_Click;
 this.Controls.Add(OK);
 Cancel.Location = new Point(390, 10);
 Cancel.Size = new Size(50, 30);
 Cancel.TabIndex = 7;
 Cancel.Text = "Cancel";
+Cancel.Click += ButtonCancel_Click;
 this.Controls.Add(Cancel);
 }
 
@@ -70,20 +72,25 @@ LabelPatch.TabIndex = 4;
 this.Controls.Add(LabelPatch);
 }
 
-public void InitListBox()
+public void InitListView()
 {
 ListBank.Location = new Point(10, 80);
 ListBank.Size = new Size(250, 300);
 ListBank.TabIndex = 3;
 ListBank.SelectedIndexChanged += ListBank_SelectedIndexChanged;
 ListBank.MultiSelect = false;
-ListBank.View = View.List;
+ListBank.View = View.Details;
+ListBank.Columns.Add(new ColumnHeader());
+ListBank.Columns[0].Text = "Banks";
 this.Controls.Add(ListBank);
 ListPatch.Location = new Point(280, 80);
 ListPatch.Size = new Size(250, 300);
 ListPatch.TabIndex = 5;
 ListPatch.MultiSelect = false;
-ListPatch.View = View.List;
+ListPatch.View = View.Details;
+ListPatch.SelectedIndexChanged += ListPatch_SelectedIndexChanged;
+ListPatch.Columns.Add(new ColumnHeader());
+ListPatch.Columns[0].Text = "Patches";
 this.Controls.Add(ListPatch);
 }
 
@@ -97,6 +104,7 @@ this.MinimizeBox = false;
 this.Text = "Поиск";
 this.TopMost = true;
 this.Shown += Form_Shown;
+this.CancelButton = Cancel;
 }
 
 }

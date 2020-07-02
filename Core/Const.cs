@@ -9,5 +9,9 @@ public const int CTRL = 0x0002;
 public const int SHIFT = 0x0004;
 public const int WIN = 0x0008;
 public const int MOD_NOREPEAT = 0x4000;
+public const short SWP_NOMOVE = 0X2;
+public const short SWP_NOSIZE = 1;
+public const short SWP_NOZORDER = 0X4;
+public const int SWP_SHOWWINDOW = 0x0040;
 }
 }

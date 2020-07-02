@@ -6,6 +6,8 @@ namespace MagicKeys
 public partial class Menu : Form
 {
 
+public static SettingsForm WSettings;
+
 public void Exit(object sender, EventArgs e)
 {
 MagicKeys.KeySwitch = 1;
@@ -47,8 +49,16 @@ proc.Start();
 
 public void Settings(object sender, EventArgs e)
 {
-SettingsForm Settings = new SettingsForm();
-Settings.Show();
+if (WSettings == null)
+{
+WSettings = new SettingsForm();
+WSettings.ShowDialog();
+WSettings = null;
+}
+else
+{
+WSettings.Activate();
+}
 }
 
 public void Register(object sender, EventArgs e)

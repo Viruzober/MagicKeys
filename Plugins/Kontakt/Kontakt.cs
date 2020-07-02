@@ -42,7 +42,7 @@ while (ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp")[0] == 0)
 {
                 LoopException();
 MouseClick("Left", P[1]+630, P[2]+80, 1, 0, 0, 10);
-while(WinActive(HWNDFXTrack[0], HWNDFXTrack[1]) == false);
+while(WinActive(PluginsList[0]["WTitle"], PluginsList[0]["WClass"]) == false);
 Thread.Sleep(100);
 }
 KeyReg();
@@ -54,7 +54,7 @@ Speak("OK");
 public static void GoToLibList()
 {
 PluginClass = typeof(Kontakt).FullName;
-VUILoader("VUI.Kontakt.LibList.vui");
+VUILoader(@"Kontakt\LibList.vui");
 LibNormalize();
 KeyGoToLibListReg();
 Speak("OK");
@@ -63,7 +63,7 @@ Speak("OK");
 public static void BackToOptionMenu()
 {
 PluginClass = typeof(Kontakt).FullName;
-VUILoader("VUI.Kontakt.Kontakt.vui");
+VUILoader(@"Kontakt\Kontakt.vui");
 LibLoaded();
 KeyReg();
 KeyGoToLibListUnReg();

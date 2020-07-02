@@ -58,7 +58,6 @@
   -->
 
   <!-- Включите темы для общих элементов управления и диалоговых окон Windows (Windows XP и более поздние версии) -->
-  <!--
   <dependency>
     <dependentAssembly>
       <assemblyIdentity
@@ -71,6 +70,5 @@
         />
     </dependentAssembly>
   </dependency>
-  -->
 
 </assembly>

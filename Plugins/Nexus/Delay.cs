@@ -24,109 +24,43 @@ if (PixelSearch(P[1]+290, P[2]+375, "#3AA1FF") == true) Speak("Pingpong");
 public static void DelayMix()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("Mix", "Введите значение для Mix от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("Mix", 365, 355, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+365, P[2]+355, P[1]+365, Height-10, 0, 10);
-int V = P[2] + 355 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+365, P[2]+355, P[1]+365, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 public static void DelayMod()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("Mod", "Введите значение для Mod от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("Mod", 425, 355, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+425, P[2]+355, P[1]+425, Height-10, 0, 10);
-int V = P[2] + 355 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+425, P[2]+355, P[1]+425, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 public static void DelayTime()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("Time", "Введите значение для Time от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("Time", 250, 415, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+250, P[2]+415, P[1]+250, Height-10, 0, 10);
-int V = P[2] + 415 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+250, P[2]+415, P[1]+250, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 public static void DelayFeedBack()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("FeedBack", "Введите значение для FeedBack от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("FeedBack", 305, 415, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+305, P[2]+415, P[1]+305, Height-10, 0, 10);
-int V = P[2] + 415 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+305, P[2]+415, P[1]+305, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 public static void DelayLoCut()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("LoCut", "Введите значение для LoCut от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("LoCut", 365, 415, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+365, P[2]+415, P[1]+365, Height-10, 0, 10);
-int V = P[2] + 415 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+365, P[2]+415, P[1]+365, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 public static void DelayHiCut()
 {
 KeyUnReg();
-int Input = Convert.ToInt32(InputBox("HiCut", "Введите значение для HiCut от 1 до 100", 1, 100));
-if (Input == 0)
-{
+Slider("HiCut", 420, 415, "V", 1.38, 1.6);
 KeyReg();
-return;
-}
-WindowMover(50, 250, true);
-MouseClickDrag("Left", P[1]+420, P[2]+415, P[1]+420, Height-10, 0, 10);
-int V = P[2] + 415 - (Convert.ToInt32(Convert.ToInt32(Input*1.38)*1.6));
-MouseClickDrag("Left", P[1]+420, P[2]+415, P[1]+420, V, 0, 10);
-WindowMover(DP[1], DP[2], false);
-KeyReg();
-Speak("OK");
 }
 
 }

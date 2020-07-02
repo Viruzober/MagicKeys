@@ -11,10 +11,10 @@ public static void LibLoaded()
 int[] LibLoaded = ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp");
 if(LibLoaded[0] == 1)
 {
-VUIObjectSwitcher(true, false, 4, 6);
+VUIObjectSwitcher(true, "false", 4, 6);
 return;
 }
-VUIObjectSwitcher(true, true, 4, 6);
+VUIObjectSwitcher(true, "true", 4, 6);
 }
 
 }

@@ -7,8 +7,7 @@ namespace MagicKeys
 
 public static void  VUIObjectHelp()
 {
-string Help = Ini.IniReadStr(IniFile, ActiveObjects[Section].ToString(), "Help");
-Speak(Help);
+Speak(VUIObjects[ActiveObjects[Section]]["Help"]);
 }
 
 }

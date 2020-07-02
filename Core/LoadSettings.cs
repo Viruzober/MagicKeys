@@ -10,7 +10,7 @@ public static void LoadSettings()
 {
 if (File.Exists(@".\Settings.ini") == true)
 {
-if (Ini.IniReadSettings(@".\Settings.ini", "Settings", "NavigationType") == "1")
+if (Ini.IniRead(@".\Settings.ini", "Settings", "NavigationType") == "1")
 {
 NavigationType = 1;
 }
@@ -18,7 +18,7 @@ else
 {
 NavigationType = 0;
 }
-if (Ini.IniReadSettings(@".\Settings.ini", "Settings", "SoundTheme") == "false")
+if (Ini.IniRead(@".\Settings.ini", "Settings", "SoundTheme") == "false")
 {
 SoundTheme = false;
 }
@@ -26,8 +26,8 @@ else
 {
 SoundTheme = true;
 }
-TimeOut = Convert.ToInt32(Ini.IniReadSettings(@".\Settings.ini", "Settings", "TimeOut"));
-if (Ini.IniReadSettings(@".\Settings.ini", "Settings", "SpeachType") == "false")
+TimeOut = Convert.ToInt32(Ini.IniRead(@".\Settings.ini", "Settings", "TimeOut"));
+if (Ini.IniRead(@".\Settings.ini", "Settings", "SpeachType") == "false")
 {
 SpeachType = false;
 }

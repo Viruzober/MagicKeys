@@ -62,11 +62,28 @@ ListPatch.Items.Add(Path.GetFileNameWithoutExtension(Path.GetFileName(Patch)));
 }
 }
 
+public void ListPatch_SelectedIndexChanged(object sender, EventArgs e)
+{
+if (ListPatch.FocusedItem != null)
+{
+OK.Visible = true;
+}
+else
+{
+OK.Visible = false;
+}
+}
+
 public void ButtonOK_Click(object sender, EventArgs e)
 {
 this.DialogResult = DialogResult.OK;
 this.Close();
 Result = ListPatch.FocusedItem.Text;
+}
+
+public void ButtonCancel_Click(object sender, EventArgs e)
+{
+this.Close();
 }
 
 public string GetString()
