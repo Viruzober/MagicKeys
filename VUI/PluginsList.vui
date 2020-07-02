@@ -34,9 +34,3 @@ WTitle=Plugsound
 WClass=REAPERb32host
 PClass=PlugSound
 VUI=PlugSound\PlugSoundFree.vui
-[8]
-WTitle=Kontakt
-WClass=NINormalWindow
-PClass=Kontakt
-VUI=Kontakt\Kontakt.vui
-PluginImg=Images\Kontakt\NIK_Logo.bmp
