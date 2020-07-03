@@ -9,9 +9,6 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 
-public delegate int[] GetP();
-public static GetP Mes = GetPos;
-
 public static void PluginDetector()
 {
 while(true)

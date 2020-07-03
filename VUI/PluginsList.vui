@@ -47,3 +47,15 @@ WClass=REAPERb32host
 PClass=Serum
 VUI=Serum\Serum.vui
 PluginImg=Images\Serum\SerumLogo.bmp
+[10]
+WTitle=FX: Track
+WClass=#32770
+PClass=Serum
+VUI=Serum\Serum.vui
+PluginImg=Images\Serum\SerumReg.bmp
+[11]
+WTitle=Serum (x86 bridged)
+WClass=REAPERb32host
+PClass=Serum
+VUI=Serum\Serum.vui
+PluginImg=Images\Serum\SerumReg.bmp
