@@ -3,12 +3,13 @@ WTitle=FX: Track
 WClass=#32770
 PClass=Kontakt
 VUI=Kontakt\Kontakt.vui
-PluginImg=Images\Kontakt\NIK_Logo.bmp
+PluginImg=Images\Kontakt\KontaktLogo.bmp
 [2]
 WTitle=Kontakt (x64 bridged
 WClass=REAPERb32host
 PClass=Kontakt
 VUI=Kontakt\Kontakt.vui
+PluginImg=Images\Kontakt\KontaktLogo.bmp
 [3]
 WTitle=Content Missing
 WClass=#32770
@@ -34,9 +35,3 @@ WTitle=Plugsound
 WClass=REAPERb32host
 PClass=PlugSound
 VUI=PlugSound\PlugSoundFree.vui
-[8]
-WTitle=Kontakt
-WClass=NINormalWindow
-PClass=Kontakt
-VUI=Kontakt\Kontakt.vui
-PluginImg=Images\Kontakt\NIK_Logo.bmp
