@@ -1,0 +1,25 @@
+[1]
+Text=Presets menu
+ObjectType=Button
+Help=Меню пресетов
+Func=PresetsMenu
+[2]
+Text=Previous preset
+ObjectType=Button
+Help=Предыдущий пресет
+Func=PreviousPreset
+[3]
+Text=Next preset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset
+[4]
+Text=Menu
+ObjectType=Button
+Help=Меню
+Func=Menu
+[5]
+Text=Save preset as
+ObjectType=Button
+Help=Сохранить пресет как
+Func=SavePresetAs
