@@ -26,8 +26,9 @@ for (int I = 1; I <= PluginsList.Count; I++)
 {
 if (WinActive(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]) == true)
 {
+Type T = AS.GetType("MagicKeys."+PluginsList[I]["PClass"]);
+PluginClass = T.FullName;
 GlobalPluginLoad(I);
-PluginsList[0]["PClass"] = AS.GetType(PluginsList[0]["PClass"]).FullName;
 if (GetPos()[0] == 1)
 {
 InvokeFromString("PluginLoad");

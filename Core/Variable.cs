@@ -24,6 +24,8 @@ public static bool SoundTheme = true;
 public static bool SpeachType = false;
 // Задержка в цикле обнаружения окон.
 public static int TimeOut = 20;
+// Имя класса для обнаруженного окна.
+public static string PluginClass = string.Empty;
 // Объектная модель текущего интерфейса.
 public static Dictionary<int, Dictionary<string, string>> VUIObjects = new Dictionary<int, Dictionary<string, string>>();
 public static List<int> ActiveObjects = new List<int>();
