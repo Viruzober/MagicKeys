@@ -17,14 +17,14 @@ DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 5, 5, 10);
 KeyGoToLibListUnReg();
 if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanR.bmp")[0] == 1)
 {
-PluginClass = typeof(IlyaEfimovBayanR).FullName;
+                PluginsList[0]["PClass"] = typeof(IlyaEfimovBayanR).FullName;
 VUILoader(@"KontaktLib\IlyaEfimovBayanR.vui");
 IlyaEfimovBayanR.Loader();
 Speak("Ilya Efimov Bayan right keyboard loaded");
 }
 else if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanL.bmp")[0] == 1)
 {
-PluginClass = typeof(IlyaEfimovBayanL).FullName;
+                PluginsList[0]["PClass"] = typeof(IlyaEfimovBayanL).FullName;
 VUILoader(@"KontaktLib\IlyaEfimovBayanL.vui");
 IlyaEfimovBayanL.Loader();
 Speak("Ilya Efimov Bayan left keyboard loaded");
