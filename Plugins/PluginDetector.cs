@@ -11,6 +11,7 @@ namespace MagicKeys
 
 public delegate int[] GetP();
 public static GetP Mes;
+public static Assembly AS = typeof(MagicKeys).Assembly;
 
 public static void PluginDetector()
 {
@@ -25,6 +26,8 @@ for (int I = 1; I <= PluginsList.Count; I++)
 {
 if (WinActive(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]) == true)
 {
+Type T = AS.GetType("MagicKeys."+PluginsList[I]["PClass"]);
+PluginClass = T.FullName;
 GlobalPluginLoad(I);
 if (GetPos()[0] == 1)
 {
@@ -45,7 +48,7 @@ public static void GlobalPluginLoad(int ID)
 PluginsList.Add(0, new Dictionary<string, string>());
 PluginsList[0].Add("WTitle", PluginsList[ID]["WTitle"]);
 PluginsList[0].Add("WClass", PluginsList[ID]["WClass"]);
-PluginsList[0].Add("PClass", Type.GetType(PluginsList[ID]["PClass"]).FullName);
+PluginsList[0].Add("PClass", PluginsList[ID]["PClass"]);
 PluginsList[0].Add("VUI", PluginsList[ID]["VUI"]);
 if (PluginsList[ID].ContainsKey("PluginImg") == true)
 {
