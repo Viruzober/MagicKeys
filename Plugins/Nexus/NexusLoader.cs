@@ -8,8 +8,7 @@ public static partial class Nexus
 
 public static void PluginLoad()
 {
-Mes = MagicKeys.GetPos;
-VUILoader(@"Nexus\Nexus.vui");
+VUILoader(@PluginsList[0]["VUI"]);
 KeyReg();
 }
 

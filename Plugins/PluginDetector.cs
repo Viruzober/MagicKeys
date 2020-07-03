@@ -10,7 +10,7 @@ namespace MagicKeys
 {
 
 public delegate int[] GetP();
-public static GetP Mes;
+public static GetP Mes = GetPos;
 
 public static void PluginDetector()
 {

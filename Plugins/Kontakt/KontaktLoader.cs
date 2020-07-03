@@ -8,7 +8,6 @@ public static partial class Kontakt
 
 public static void PluginLoad()
 {
-Mes = GetPos;
 VUILoader(@PluginsList[0]["VUI"]);
 if (PluginsList[0]["VUI"] == @"Kontakt\Kontakt.vui")
 {
