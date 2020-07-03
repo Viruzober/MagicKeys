@@ -8,7 +8,7 @@ namespace MagicKeys
 public static string InvokeFromString(string InvokeFunc)
 {
 MagicKeys MK = new MagicKeys();
-var method = Type.GetType(PluginClass).GetMethod(InvokeFunc);
+var method = Type.GetType(PluginsList[0]["PClass"]).GetMethod(InvokeFunc);
 object[] FuncParam = new object[] {};
 if (VUIFile != string.Empty)
 {

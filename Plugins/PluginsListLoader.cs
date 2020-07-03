@@ -20,7 +20,7 @@ for(int I = 1; I <= PCount; I++)
 PluginsList.Add(I, new Dictionary<string, string>());
 PluginsList[I].Add("WTitle", Ini.IniRead(IVUI, I.ToString(), "WTitle"));
 PluginsList[I].Add("WClass", Ini.IniRead(IVUI, I.ToString(), "WClass"));
-PluginsList[I].Add("PClass", Ini.IniRead(IVUI, I.ToString(), "PClass"));
+PluginsList[I].Add("PClass", GetFullClassName(Ini.IniRead(IVUI, I.ToString(), "PClass")));
 PluginsList[I].Add("VUI", Ini.IniRead(IVUI, I.ToString(), "VUI"));
 if (Ini.IniKeyExists(IVUI, I.ToString(), "PluginImg") == true)
 {

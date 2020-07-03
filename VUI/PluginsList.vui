@@ -35,9 +35,3 @@ WTitle=Plugsound
 WClass=REAPERb32host
 PClass=PlugSound
 VUI=PlugSound\PlugSoundFree.vui
-[8]
-WTitle=FX: Track
-WClass=#32770
-PClass=Serum
-VUI=Serum\Serum.vui
-PluginImg=Images\Serum\SerumLogo.bmp
