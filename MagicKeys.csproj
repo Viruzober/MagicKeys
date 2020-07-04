@@ -153,7 +153,7 @@
   </Choose>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="set distroot=&quot;$(ProjectDir)Dist&quot;&#xD;&#xA;set distdir=&quot;%25distroot%25\$(PlatformName)&quot;&#xD;&#xA;if exist &quot;%25distroot%25&quot; rd /s /q &quot;%25distroot%25&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;%25distdir%25\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;%25distdir%25\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
+    <Exec Command="set distdir=&quot;$(ProjectDir)Dist\$(PlatformName)&quot;&#xD;&#xA;if exist &quot;%25distdir%25&quot; rd /s /q &quot;%25distdir%25&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;%25distdir%25\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;%25distdir%25\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
   </Target>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
