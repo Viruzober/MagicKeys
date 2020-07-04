@@ -5,9 +5,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
-    <SignAssembly>false</SignAssembly>
-    <AssemblyOriginatorKeyFile>Viruzober.snk</AssemblyOriginatorKeyFile>
-    <DelaySign>false</DelaySign>
     <Platforms>x86;x64</Platforms>
     <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
     <ApplicationManifest>app.manifest</ApplicationManifest>
