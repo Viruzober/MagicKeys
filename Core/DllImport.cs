@@ -8,10 +8,10 @@ namespace MagicKeys
 [DllImport("user32.dll")]
 [return: MarshalAs(UnmanagedType.Bool)]
 public static extern bool EnumChildWindows(IntPtr hwndParent, EnumChildProcDelegate lpEnumFunc, IntPtr lParam);
-#if x86
-[DllImport("ImageSearch.dll")]
+#if X86
+[DllImport("ImageSearch32.dll")]
 public static extern IntPtr ImageSearch(int x, int y, int right, int bottom, string imagePath);
-#elif x64
+#elif X64
 [DllImport("ImageSearch64.dll")]
 public static extern IntPtr ImageSearch(int x, int y, int right, int bottom, string imagePath);
 #endif
@@ -40,12 +40,12 @@ public static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int 
 public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 [DllImport("user32.dll")]
 public static extern IntPtr WindowFromPoint(WinPoint p);
-#if x86
+#if X86
 [DllImport("nvdaControllerClient32.dll")]
 public static extern int nvdaController_cancelSpeech();
 [DllImport("nvdaControllerClient32.dll", CharSet = CharSet.Unicode)]
 public static extern int nvdaController_speakText(string text);
-#elif x64
+#elif X64
 [DllImport("nvdaControllerClient64.dll")]
 public static extern int nvdaController_cancelSpeech();
 [DllImport("nvdaControllerClient64.dll", CharSet = CharSet.Unicode)]

@@ -4,35 +4,19 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon></ApplicationIcon>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>Viruzober.snk</AssemblyOriginatorKeyFile>
     <DelaySign>false</DelaySign>
-    <Platforms>AnyCPU;x86;x64</Platforms>
+    <Platforms>x86;x64</Platforms>
     <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
-    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <DefineConstants></DefineConstants>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Optimize>true</Optimize>
-    <OutputPath></OutputPath>
-    <ErrorReport>queue</ErrorReport>
-    <FileAlignment>512</FileAlignment>
-    <DebugType>none</DebugType>
-    <DebugSymbols>false</DebugSymbols>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <DefineConstants>x86</DefineConstants>
+    <DefineConstants>TRACE;X86</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
     <OutputPath></OutputPath>
@@ -48,7 +32,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PlatformTarget>x64</PlatformTarget>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <DefineConstants>x64</DefineConstants>
+    <DefineConstants>TRACE;X64</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
     <OutputPath />
@@ -61,18 +45,13 @@
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants></DefineConstants>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <DefineConstants></DefineConstants>
+    <DefineConstants>TRACE;X86</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <DefineConstants />
+    <DefineConstants>TRACE;X64</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
@@ -137,28 +116,51 @@
 
   <ItemGroup>
     <Reference Include="Bass.Net">
-      <HintPath>Bass.Net.dll</HintPath>
+      <HintPath>Lib\Bass.Net.dll</HintPath>
     </Reference>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="bass.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="ImageSearchDLL.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="nvdaControllerClient32.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+  <Choose>
+    <When Condition=" '$(Platform)'=='x86' ">
+      <ItemGroup>
+        <None Include="Lib\bass32.dll">
+          <Link>bass.dll</Link>
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Include="Lib\ImageSearch32.dll">
+          <Link>ImageSearch32.dll</Link>
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Include="Lib\nvdaControllerClient32.dll">
+          <Link>nvdaControllerClient32.dll</Link>
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+      </ItemGroup>
+    </When>
+    <When Condition=" '$(Platform)'=='x64' ">
+      <ItemGroup>
+        <None Include="Lib\bass64.dll">
+          <Link>bass.dll</Link>
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Include="Lib\ImageSearch64.dll">
+          <Link>ImageSearch64.dll</Link>
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Include="Lib\nvdaControllerClient64.dll">
+          <Link>nvdaControllerClient64.dll</Link>
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+      </ItemGroup>
+    </When>
+  </Choose>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="if exist &quot;$(ProjectDir)Dist&quot; rd /s /q &quot;$(ProjectDir)Dist&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(ProjectDir)Dist\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(ProjectDir)Dist\Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(ProjectDir)Dist\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(ProjectDir)Dist\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(ProjectDir)Dist\&quot; &gt; nul" />
+    <Exec Command="set distroot=&quot;$(ProjectDir)Dist&quot;&#xD;&#xA;set distdir=&quot;%25distroot%25\$(PlatformName)&quot;&#xD;&#xA;if exist &quot;%25distroot%25&quot; rd /s /q &quot;%25distroot%25&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;%25distdir%25\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;%25distdir%25\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
   </Target>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="if exist &quot;$(TargetDir)&quot; rd /s /q &quot;$(TargetDir)&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(TargetDir)Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(TargetDir)VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(TargetDir)&quot; &gt; nul" />
+    <Exec Command="if exist &quot;$(TargetDir)&quot; rd /s /q &quot;$(TargetDir)&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(TargetDir)Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(TargetDir)VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy /y &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(TargetDir)&quot; &gt; nul" />
   </Target>
 
 </Project>
