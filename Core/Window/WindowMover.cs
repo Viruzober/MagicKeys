@@ -8,6 +8,7 @@ public partial class MagicKeys
 
         public static void WindowMover(int X, int Y, bool RecP)
         {
+P = GetPos();
 IntPtr Handle = GetForegroundWindow();
 int[] Rect = GetWinRect(Handle);
             if (RecP == true)
@@ -18,6 +19,7 @@ DP[2] = Rect[1];
 Thread.Sleep(20);
 SetWindowPos(GetForegroundWindow(), 0, X, Y, 0, 0, MKC.SWP_NOSIZE);
 Thread.Sleep(20);
+P = GetPos();
 }
 
 }

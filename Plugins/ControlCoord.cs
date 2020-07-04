@@ -10,7 +10,7 @@ public static int[] GetPos()
 {
 if (PluginsList[0].ContainsKey("PluginImg") == true)
 {
-int[] Img = ImgSearch(@PluginsList[0]["PluginImg"], true);
+int[] Img = ImgSearch(@PluginsList[0]["PluginImg"]);
 if (Img[0] == 1)
 {
 IntPtr Handle = GetWinPointHandle(Img[5], Img[6]);

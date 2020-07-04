@@ -24,7 +24,12 @@ ObjectType=Button
 Help=Меню
 Func=Menu
 [6]
+Text=Normalize window
+ObjectType=Button
+Help=Устанавливает маштаб плагина на 50%
+Func=Normalize
+[7]
 Text=Register
 ObjectType=Button
-Help=Автоматическая регистрация Serum с публичным ключом
+Help=Автоматическая регистрация Serum с ключом из буфера обмена
 Func=Register
