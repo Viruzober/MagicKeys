@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Net;
 
@@ -7,6 +8,8 @@ namespace MagicKeys
 {
 
 public static string UserInfo(string SerialKey)
+{
+try
 {
 WebRequest request = WebRequest.Create("http://viruzober.tk:80/UserInfo.php");
 request.Method = "POST";
@@ -22,6 +25,11 @@ StreamReader reader = new StreamReader(stream);
 string r = reader.ReadToEnd();
 response.Close();
 return r;
+}
+catch(Exception)
+{
+                return "Reg user";
+}
 }
 
 }

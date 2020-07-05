@@ -5,6 +5,9 @@ namespace MagicKeys
 {
     public partial class MagicKeys
 {
+[DllImport("user32.dll")]
+[return: MarshalAs(UnmanagedType.Bool)]
+static extern bool IsWindowEnabled(IntPtr hWnd);
 [DllImport("user32.dll", SetLastError = true)]
 static extern IntPtr SendMessage(IntPtr hWnd, WM Msg, int wParam, StringBuilder lParam);
 [DllImport("user32.dll")]
