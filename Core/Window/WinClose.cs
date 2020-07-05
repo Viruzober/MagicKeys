@@ -14,7 +14,7 @@ SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE);
 while(true)
 {
 P = GetPos();
-Thread.Sleep(30);
+Thread.Sleep(20);
 Application.DoEvents();
 if (KeySwitch == 1)
 {

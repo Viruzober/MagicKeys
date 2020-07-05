@@ -11,9 +11,9 @@ public static int[] GetPos()
 {
 IntPtr Handle = GetForegroundWindow();
 int[] RC = GetWinRect(Handle);
-for (int X = RC[0]; X <= RC[0]+RC[2]; X+=100)
+for (int X = RC[0]; X <= RC[0]+RC[2]; X+=50)
 {
-for (int Y = RC[1]; Y <= RC[1]+RC[3]; Y+=100)
+for (int Y = RC[1]; Y <= RC[1]+RC[3]; Y+=50)
 {
 IntPtr HModule = GetWinPointHandle(X, Y);
 string ModuleName = GetDllName(HModule);

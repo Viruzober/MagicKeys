@@ -20,9 +20,10 @@ MouseClickDrag("Left", P[1]+X, P[2]+Y, V, P[2]+Y, 1, 10);
 }
 else if (Type == "V")
 {
-WindowMover(50, 250, true);
+WindowMover(50, 0, true);
 MouseClickDrag("Left", P[1]+X, P[2]+Y, P[1]+X, Height-30, 0, 10);
-int V = P[2]+Y-Convert.ToInt32((Input*OnePercent)*SlidePercent);
+WindowMover(50, 250, false);
+int V = P[2]+Y-Convert.ToInt32(Convert.ToInt32(Input*OnePercent)*SlidePercent);
 MouseClickDrag("Left", P[1]+X, P[2]+Y, P[1]+X, V, 0, 10);
 WindowMover(DP[1], DP[2], false);
 }
