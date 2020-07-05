@@ -52,3 +52,9 @@ WClass=REAPERb32host
 PClass=Serum
 VUI=Serum\Serum.vui
 Module=Serum.dll
+[10]
+WTitle=bridged
+WClass=REAPERb32host
+PClass=Serum
+VUI=Serum\Serum.vui
+Module=Serum_x64.dll
