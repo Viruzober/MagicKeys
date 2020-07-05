@@ -10,6 +10,7 @@ public static partial class Kontakt
 
 public static void KontaktNormalize()
 {
+while (ImgSearch(@"Images\Kontakt\KontaktLogo.bmp")[0] == 0);
 KeyUnReg();
 RegisterHotKey(KeyNavigatorHandle.Handle, 21, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
 try
@@ -32,12 +33,6 @@ MouseClick("Left", P[1]+405, P[2]+17, 1, 0, 0, 10);
 MouseClick("Left", P[1]+405, P[2]+85, 1, 0, 0, 10);
 DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 3, 3, 10);
 }
-}
-catch(IndexOutOfRangeException)
-{
-SoundPlay("Error.ogg", 0);
-KeySwitch = 1;
-KeySwitch = 0;
 }
 catch(Exception)
 {

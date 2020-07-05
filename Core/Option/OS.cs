@@ -12,7 +12,7 @@ public partial class MagicKeys
 public static string OS()
 {
 ManagementObject os = new ManagementObject("Win32_OperatingSystem=@");
-string Bit = ((string)os["OSArchitecture"]).Remove(3);
+string Bit = ((string)os["OSArchitecture"]).Remove(2);
 return Bit;
 }
 

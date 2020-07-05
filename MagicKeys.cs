@@ -15,6 +15,13 @@ public static Menu HM;
 static void Main(string[] args)
 {
 if (CheckRunProc("MagicKeys") == true) return;
+#if X86
+if (OS() == "64")
+{
+MessageBox.Show("Эта версия MagicKeys предназначенна для windows x86. Используйте версию MagicKeys x64.", "Внимание");
+return;
+}
+#endif
 if (CheckInternet() == true)
 {
 string UI = UserInfo(PCID());

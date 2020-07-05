@@ -64,5 +64,18 @@ public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string l
 [DllImport("user32.dll")]
 [return: MarshalAs(UnmanagedType.Bool)]
 public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
+[DllImport("user32.dll")]
+private static extern UInt32 GetWindowThreadProcessId(Int32 hWnd, out Int32 lpdwProcessId);
+#if X86
+[DllImport("user32.dll", EntryPoint="GetWindowLong")]
+private static extern IntPtr GetWindowLongPtr32(IntPtr hWnd, GWL nIndex);
+#elif X64
+[DllImport("user32.dll", EntryPoint="GetWindowLongPtr")]
+private static extern IntPtr GetWindowLongPtr64(IntPtr hWnd, GWL nIndex);
+#endif
+[DllImport("kernel32.dll", SetLastError = true)]
+public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId);
+[DllImport("psapi.dll")]
+static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, [Out] StringBuilder lpBaseName, [In] [MarshalAs(UnmanagedType.U4)] int nSize);
 }
 }

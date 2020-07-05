@@ -22,10 +22,7 @@ PluginsList[I].Add("WTitle", Ini.IniRead(IVUI, I.ToString(), "WTitle"));
 PluginsList[I].Add("WClass", Ini.IniRead(IVUI, I.ToString(), "WClass"));
 PluginsList[I].Add("PClass", GetFullClassName(Ini.IniRead(IVUI, I.ToString(), "PClass")));
 PluginsList[I].Add("VUI", Ini.IniRead(IVUI, I.ToString(), "VUI"));
-if (Ini.IniKeyExists(IVUI, I.ToString(), "PluginImg") == true)
-{
-PluginsList[I].Add("PluginImg", Ini.IniRead(IVUI, I.ToString(), "PluginImg"));
-}
+PluginsList[I].Add("Module", Ini.IniRead(IVUI, I.ToString(), "Module"));
 }
 }
 

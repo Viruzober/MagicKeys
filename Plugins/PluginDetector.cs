@@ -44,10 +44,7 @@ PluginsList[0].Add("WTitle", PluginsList[ID]["WTitle"]);
 PluginsList[0].Add("WClass", PluginsList[ID]["WClass"]);
 PluginsList[0].Add("PClass", PluginsList[ID]["PClass"]);
 PluginsList[0].Add("VUI", PluginsList[ID]["VUI"]);
-if (PluginsList[ID].ContainsKey("PluginImg") == true)
-{
-PluginsList[0].Add("PluginImg", PluginsList[ID]["PluginImg"]);
-}
+PluginsList[0].Add("Module", PluginsList[ID]["Module"]);
 }
 
 }

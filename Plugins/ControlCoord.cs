@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
@@ -8,35 +9,24 @@ public partial class MagicKeys
 public static int[] ControlCoord;
 public static int[] GetPos()
 {
-if (PluginsList[0].ContainsKey("PluginImg") == true)
+IntPtr Handle = GetForegroundWindow();
+int[] RC = GetWinRect(Handle);
+for (int X = RC[0]; X <= RC[0]+RC[2]; X+=100)
 {
-int[] Img = ImgSearch(@PluginsList[0]["PluginImg"]);
-if (Img[0] == 1)
+for (int Y = RC[1]; Y <= RC[1]+RC[3]; Y+=100)
 {
-IntPtr Handle = GetWinPointHandle(Img[5], Img[6]);
-int[] Rect = GetWinRect(Handle);
-ControlCoord = new int[5] {Img[0], Rect[0], Rect[1], Rect[2], Rect[3]};
+IntPtr HModule = GetWinPointHandle(X, Y);
+string ModuleName = GetDllName(HModule);
+if (ModuleName.Contains(PluginsList[0]["Module"]) == true)
+{
+int[] RectCTRL = GetWinRect(GetWinPointHandle(X, Y));
+ControlCoord = new int[5] {1, RectCTRL[0], RectCTRL[1], RectCTRL[2], RectCTRL[3]};
 return ControlCoord;
 }
-else
-{
-return Img;
 }
 }
-else
-{
-IntPtr Handle = GetForegroundWindow();
-int[] Rect = GetWinRect(Handle);
-IntPtr HandleCTRL = GetWinPointHandle(Rect[0]+100, Rect[1]+100);
-int[] RectCTRL = GetWinRect(HandleCTRL);
-if (RectCTRL[0] == 0 & RectCTRL[1] == 0 & RectCTRL[2] == 0 & RectCTRL[3] == 0)
-{
-ControlCoord = new int[5] {0, RectCTRL[0], RectCTRL[1], RectCTRL[2], RectCTRL[3]};
-return ControlCoord;;
-}
-ControlCoord = new int[5] {1, RectCTRL[0], RectCTRL[1], RectCTRL[2], RectCTRL[3]};
-return ControlCoord;;
-}
+ControlCoord = new int[5] {0, 0, 0, 0, 0};
+return ControlCoord;
 }
 
 }
