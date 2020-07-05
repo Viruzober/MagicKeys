@@ -13,6 +13,7 @@ try
 {
 WebRequest request = WebRequest.Create("http://viruzober.tk:80/UserInfo.php");
 request.Method = "POST";
+request.Timeout = 5000;
 string data = "SerialKey="+SerialKey;
 byte[] byteArray = System.Text.Encoding.UTF8.GetBytes(data);
 request.ContentType = "application/x-www-form-urlencoded";

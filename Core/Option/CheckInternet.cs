@@ -11,7 +11,7 @@ public static bool CheckInternet()
 IPStatus status = IPStatus.Unknown;
 try
 {
-status = new Ping().Send("viruzober.tk").Status;
+status = new Ping().Send("viruzober.tk", 3000).Status;
 }
 catch{}
 if (status == IPStatus.Success)

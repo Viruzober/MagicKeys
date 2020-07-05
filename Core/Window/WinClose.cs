@@ -10,7 +10,7 @@ namespace MagicKeys
 
 public static bool WinClose(string HWNDTitle, string HWNDClass)
 {
-SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE);
+SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
 while(true)
 {
 P = GetPos();
@@ -27,6 +27,7 @@ if (Title.ToString().Contains(HWNDTitle) == true & Class.ToString().Contains(HWN
 {
 continue;
 }
+//SetWindowPos(Handle, 1, 0, 0, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOMOVE);
 return true;
 }
 
