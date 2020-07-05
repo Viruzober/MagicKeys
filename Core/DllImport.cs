@@ -5,6 +5,8 @@ namespace MagicKeys
 {
     public partial class MagicKeys
 {
+[DllImport("user32.dll", SetLastError = true)]
+static extern IntPtr SendMessage(IntPtr hWnd, WM Msg, int wParam, StringBuilder lParam);
 [DllImport("user32.dll")]
 [return: MarshalAs(UnmanagedType.Bool)]
 public static extern bool EnumChildWindows(IntPtr hwndParent, EnumChildProcDelegate lpEnumFunc, IntPtr lParam);

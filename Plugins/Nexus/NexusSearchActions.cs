@@ -66,11 +66,11 @@ public void ListPatch_SelectedIndexChanged(object sender, EventArgs e)
 {
 if (ListPatch.FocusedItem != null)
 {
-OK.Visible = true;
+OK.Enabled = true;
 }
 else
 {
-OK.Visible = false;
+OK.Enabled = false;
 }
 }
 

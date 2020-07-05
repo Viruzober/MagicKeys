@@ -25,6 +25,7 @@ if (WinActive(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]) == true)
 GlobalPluginLoad(I);
 if (GetPos()[0] == 1)
 {
+P = GetPos();
 InvokeFromString("PluginLoad");
 SoundPlay("WindowOpened.ogg", 0);
 WinClose(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]);

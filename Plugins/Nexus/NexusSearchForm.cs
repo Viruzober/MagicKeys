@@ -33,7 +33,7 @@ OK.Location = new Point(320, 10);
 OK.Size = new Size(50, 30);
 OK.TabIndex = 6;
 OK.Text = "OK";
-OK.Visible = false;
+OK.Enabled = false;
 OK.Click += ButtonOK_Click;
 this.Controls.Add(OK);
 Cancel.Location = new Point(390, 10);
