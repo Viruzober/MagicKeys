@@ -12,7 +12,7 @@ public static void HelpForm(string HelpFile)
 {
 if (HelpFile != string.Empty)
 {
-if (Assembly.GetExecutingAssembly().GetManifestResourceStream(@"MagicKeys."+HelpFile.Substring(0, HelpFile.Length - 3)+"help") == null)
+if (File.Exists(@HelpFile.Substring(0, HelpFile.Length - 3)+"help") == false)
 {
 MagicKeys.Speak("Файл справки не найден");
 }
