@@ -22,6 +22,7 @@ public static int KeySwitch = 0;
 public static int NavigationType = 0;
 public static bool SoundTheme = true;
 public static bool SpeachType = false;
+public static bool Exit = true;
 // Задержка в цикле обнаружения окон.
 public static int TimeOut = 20;
 // Объектная модель текущего интерфейса.

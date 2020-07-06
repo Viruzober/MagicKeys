@@ -13,51 +13,22 @@ public partial class SettingsForm : Form
 public void SettingsForm_Shown(object sender, EventArgs e)
 {
 this.Activate();
-if (Ini.IniRead(@".\Settings.ini", "Settings", "NavigationType") == "1")
-{
-NavigationType.CheckState = CheckState.Checked;
-}
-if (Ini.IniRead(@".\Settings.ini", "Settings", "SoundTheme") == "true")
-{
-SoundTheme.CheckState = CheckState.Checked;
-}
-if (Ini.IniRead(@".\Settings.ini", "Settings", "SpeachType") == "true")
-{
-SpeachType.CheckState = CheckState.Checked;
-}
+NavigationType.CheckState = (CheckState)Convert.ToInt32(Ini.IniRead(@".\Settings.ini", "Settings", "NavigationType"));
+SoundTheme.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SoundTheme")));
+SpeachType.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SpeachType")));
 Time.Value = Convert.ToDecimal(Ini.IniRead(@".\Settings.ini", "Settings", "TimeOut"));
+Exit.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "Exit")));
 }
 
 public void Save_Click(object sender, EventArgs e)
 {
-if (NavigationType.Checked == true)
-{
-Ini.IniWrite(@".\Settings.ini", "Settings", "NavigationType", "1");
-}
-else
-{
-Ini.IniWrite(@".\Settings.ini", "Settings", "NavigationType", "0");
-}
-if (SoundTheme.Checked == true)
-{
-Ini.IniWrite(@".\Settings.ini", "Settings", "SoundTheme", "true");
-}
-else
-{
-Ini.IniWrite(@".\Settings.ini", "Settings", "SoundTheme", "false");
-}
+Ini.IniWrite(@".\Settings.ini", "Settings", "NavigationType", Convert.ToInt32(NavigationType.Checked).ToString());
+Ini.IniWrite(@".\Settings.ini", "Settings", "SoundTheme", Convert.ToBoolean(SoundTheme.Checked).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "TimeOut", (Time.Value).ToString());
-if (SpeachType.Checked == true)
-{
-Ini.IniWrite(@".\Settings.ini", "Settings", "SpeachType", "true");
-}
-else
-{
-Ini.IniWrite(@".\Settings.ini", "Settings", "SpeachType", "false");
-}
+Ini.IniWrite(@".\Settings.ini", "Settings", "SpeachType", Convert.ToBoolean(SpeachType.Checked).ToString());
+Ini.IniWrite(@".\Settings.ini", "Settings", "Exit", Convert.ToBoolean(Exit.Checked).ToString());
 MagicKeys.LoadSettings();
 this.Close();
-
 }
 
 public void Cancel_Click(object sender, EventArgs e)
@@ -68,11 +39,7 @@ this.Close();
 
 public void Help_Click(object sender, EventArgs e)
 {
-string commandText = @"Руководство пользователя.html";
-var proc = new System.Diagnostics.Process();
-proc.StartInfo.FileName = commandText;
-proc.StartInfo.UseShellExecute = true;
-proc.Start();
+MagicKeys.HM.Help(null, null);
 }
 
 }

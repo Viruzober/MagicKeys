@@ -10,37 +10,17 @@ public static void LoadSettings()
 {
 if (File.Exists(@".\Settings.ini") == true)
 {
-if (Ini.IniRead(@".\Settings.ini", "Settings", "NavigationType") == "1")
-{
-NavigationType = 1;
-}
-else
-{
-NavigationType = 0;
-}
-if (Ini.IniRead(@".\Settings.ini", "Settings", "SoundTheme") == "false")
-{
-SoundTheme = false;
-}
-else
-{
-SoundTheme = true;
-}
+NavigationType = Convert.ToInt32(Ini.IniRead(@".\Settings.ini", "Settings", "NavigationType"));
+SoundTheme = Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SoundTheme"));
 TimeOut = Convert.ToInt32(Ini.IniRead(@".\Settings.ini", "Settings", "TimeOut"));
-if (Ini.IniRead(@".\Settings.ini", "Settings", "SpeachType") == "false")
-{
-SpeachType = false;
-}
-else
-{
-SpeachType = true;
-}
+SpeachType = Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SpeachType"));
+Exit = Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "Exit"));
 }
 else
 {
 using (StreamWriter sw = new StreamWriter(@".\Settings.ini", true, System.Text.Encoding.Default))
 {
-sw.Write("[Settings]\r\nNavigationType=0\r\nSoundTheme=true\r\nTimeOut=20\r\nSpeachType=false\r\n");
+sw.Write("[Settings]\r\nNavigationType=0\r\nSoundTheme=true\r\nTimeOut=20\r\nSpeachType=false\r\nExit=true\r\n");
 }
 }
 }

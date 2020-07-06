@@ -15,6 +15,8 @@ MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 0);
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 2);
 Ni.Visible = false;
+if (MagicKeys.Exit == true)
+{
 DialogResult result;
 if (sender == null)
 {
@@ -27,14 +29,18 @@ result = MessageBox.Show("Выйти", "Закрыть Magic Keys?", MessageBoxB
 if (result == DialogResult.Yes)
 {
 Application.Exit();
+return;
 }
-else
-{
 Ni.Visible = true;
 MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
 MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
 MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 2, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 MagicKeys.KeySwitch = 0;
+}
+else
+{
+MagicKeys.Speak("Пока");
+Application.Exit();
 }
 }
 
