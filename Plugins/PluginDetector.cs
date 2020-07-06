@@ -23,9 +23,9 @@ for (int I = 1; I <= PluginsList.Count; I++)
 if (WinActive(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]) == true)
 {
 GlobalPluginLoad(I);
-if (GetPos()[0] == 1)
-{
 P = GetPos();
+if (P[0] == 1)
+{
 InvokeFromString("PluginLoad");
 SoundPlay("WindowOpened.ogg", 0);
 WinClose(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]);

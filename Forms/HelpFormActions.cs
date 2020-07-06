@@ -13,8 +13,7 @@ public partial class HelpForm : Form
 public void HelpForm_Shown(object sender, EventArgs e)
 {
 this.Activate();
-Stream HelpFileStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(@"MagicKeys."+HelpFile.Substring(0, HelpFile.Length - 3)+"help");
-StreamReader HelpStreamReader = new StreamReader(HelpFileStream);
+StreamReader HelpStreamReader = new StreamReader(HelpFile.Substring(0, HelpFile.Length - 3)+"help");
 string FileStr = HelpStreamReader.ReadToEnd().ToString();
 HelpText.Text = FileStr;
 }
