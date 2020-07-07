@@ -43,15 +43,15 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <DefineConstants>TRACE;X86</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;X86</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <DefineConstants>TRACE;X64</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;X64</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
@@ -159,7 +159,7 @@
   </Target>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="if exist &quot;$(TargetDir)&quot; rd /s /q &quot;$(TargetDir)&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(TargetDir)Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(TargetDir)VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(TargetDir)&quot; &gt; nul" />
+    <Exec Command="if exist &quot;$(TargetDir)&quot; rd /s /q &quot;$(TargetDir)&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(TargetDir)Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(TargetDir)VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(TargetDir)&quot; &gt; nul	" />
   </Target>
 
 </Project>
