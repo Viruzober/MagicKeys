@@ -28,8 +28,6 @@ public static int TimeOut = 20;
 // Объектная модель текущего интерфейса.
 public static Dictionary<int, Dictionary<string, string>> VUIObjects = new Dictionary<int, Dictionary<string, string>>();
 public static List<int> ActiveObjects = new List<int>();
-// Текущий загруженный интерфейс.
-public static string VUIFile = string.Empty;
 // Количество объектов интерфейса.
 public static int Count;
 // Номер текущего объекта интерфейса.

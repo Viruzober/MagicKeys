@@ -9,7 +9,8 @@ namespace MagicKeys
 public static void VUILoader(string File)
 {
 SoundPlay("ChangeVUI.ogg", 0);
-VUIFile = @"VUI\"+File;
+string VUIFile = @"VUI\"+File;
+PluginsList[0]["VUI"] = @File;
 Count = Ini.IniCountSections(VUIFile);
 VUIObjects.Clear();
 for (int I = 1; I <= Count; I++)

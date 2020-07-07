@@ -11,9 +11,7 @@ public static SettingsForm WSettings;
 public void Exit(object sender, EventArgs e)
 {
 MagicKeys.KeySwitch = 1;
-MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 0);
-MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
-MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 2);
+MagicKeys.OptionReg();
 Ni.Visible = false;
 if (MagicKeys.Exit == true)
 {
@@ -32,9 +30,7 @@ Application.Exit();
 return;
 }
 Ni.Visible = true;
-MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
-MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
-MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 2, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
+MagicKeys.OptionUnReg();
 MagicKeys.KeySwitch = 0;
 }
 else

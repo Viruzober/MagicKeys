@@ -18,6 +18,7 @@ KeyGoToLibListUnReg();
 if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanR.bmp")[0] == 1)
 {
                 PluginsList[0]["PClass"] = typeof(IlyaEfimovBayanR).FullName;
+                PluginsList[0]["VUI"] = @"KontaktLib\IlyaEfimovBayanR.vui";
 VUILoader(@"KontaktLib\IlyaEfimovBayanR.vui");
 IlyaEfimovBayanR.Loader();
 Speak("Ilya Efimov Bayan right keyboard loaded");
@@ -25,6 +26,7 @@ Speak("Ilya Efimov Bayan right keyboard loaded");
 else if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanL.bmp")[0] == 1)
 {
 PluginsList[0]["PClass"] = typeof(IlyaEfimovBayanL).FullName;
+PluginsList[0]["VUI"] = @"KontaktLib\IlyaEfimovBayanL.vui";
 VUILoader(@"KontaktLib\IlyaEfimovBayanL.vui");
 IlyaEfimovBayanL.Loader();
 Speak("Ilya Efimov Bayan left keyboard loaded");

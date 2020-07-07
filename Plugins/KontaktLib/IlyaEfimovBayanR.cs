@@ -8,6 +8,9 @@ public static class IlyaEfimovBayanR
 {
 
 public static void PluginUnLoad() => Kontakt.PluginUnLoad();
+public static void KeyReg() => Kontakt.KeyReg();
+public static void KeyUnReg() => Kontakt.KeyUnReg();
+public static void HelpForm() => HelpForm();
 
 public static void RoundRobin()
 {
