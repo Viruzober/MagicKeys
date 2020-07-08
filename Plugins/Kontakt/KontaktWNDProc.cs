@@ -13,7 +13,15 @@ switch (m.Msg)
 case MKC.WM_HOTKEY:
 int modifier = (int)m.LParam & 0xFFFF;
 Keys key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);
-if (key == Keys.Up)
+if (modifier == MKC.CTRL & key == Keys.Delete)
+{
+Kontakt.AllLibDelete();
+}
+else if (key == Keys.Delete)
+{
+Kontakt.LibDelete();
+}
+else if (key == Keys.Up)
 {
 Kontakt.LibNavigator("Back");
 }
@@ -28,14 +36,6 @@ Kontakt.LibGetInfo();
 else if (key == Keys.S)
 {
 Kontakt.LibGetSnapshot();
-}
-else if (modifier == MKC.SHIFT & key == Keys.Delete)
-{
-Kontakt.AllLibDelete();
-}
-else if (key == Keys.Delete)
-{
-Kontakt.LibDelete();
 }
 break;
 }
