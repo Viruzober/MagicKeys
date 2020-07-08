@@ -1,4 +1,5 @@
 using System.Windows.Forms;
+using Windows.Security.Authentication.Identity;
 
 namespace MagicKeys
 {
@@ -46,7 +47,9 @@ Nexus.NexusPatch("Next");
 }
 else if (key == Keys.S)
 {
+MagicKeys.InvokeFromString("KeyUnReg");
 Nexus.NexusSearch();
+MagicKeys.InvokeFromString("KeyReg");
 }
 break;
 }
