@@ -29,6 +29,14 @@ else if (key == Keys.S)
 {
 Kontakt.LibGetSnapshot();
 }
+else if (modifier == MKC.SHIFT & key == Keys.Delete)
+{
+Kontakt.AllLibDelete();
+}
+else if (key == Keys.Delete)
+{
+Kontakt.LibDelete();
+}
 break;
 }
 base.WndProc(ref m);

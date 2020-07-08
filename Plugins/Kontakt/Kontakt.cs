@@ -36,6 +36,11 @@ Process.Start(@"Settings\Kontakt\Add Library Tool x32\Add Library.exe");
 
 public static void AllLibDelete()
 {
+if (ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp")[0] == 1)
+{
+Speak("Not loaded library");
+return;
+}
 RegisterHotKey(KeyNavigatorHandle.Handle, 21, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
 while (ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp")[0] == 0)
 {

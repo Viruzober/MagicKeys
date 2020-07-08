@@ -19,6 +19,7 @@ IntPtr GGWL = GetWindowLongPtr32(Handle, GWL.GWL_HINSTANCE);
 IntPtr GGWL = GetWindowLongPtr64(Handle, GWL.GWL_HINSTANCE);
 #endif
 GetModuleFileNameEx(OP, GGWL, Text, nChars);
+CloseHandle(OP);
 return Text.ToString();
 }
 

@@ -17,6 +17,11 @@ RegisterHotKey(KontaktKeyHandle.Handle, 4, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys
 RegisterHotKey(KontaktKeyHandle.Handle, 5, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.Up);
 RegisterHotKey(KontaktKeyHandle.Handle, 6, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.I);
 RegisterHotKey(KontaktKeyHandle.Handle, 7, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.S);
+RegisterHotKey(KontaktKeyHandle.Handle, 8, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.Delete);
+}
+if (PluginsList[0]["VUIName"] == "Kontakt")
+{
+RegisterHotKey(KontaktKeyHandle.Handle, 9, MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.Delete);
 }
 }
 
@@ -29,6 +34,11 @@ UnregisterHotKey(KontaktKeyHandle.Handle, 4);
 UnregisterHotKey(KontaktKeyHandle.Handle, 5);
 UnregisterHotKey(KontaktKeyHandle.Handle, 6);
 UnregisterHotKey(KontaktKeyHandle.Handle, 7);
+UnregisterHotKey(KontaktKeyHandle.Handle, 8);
+}
+if (PluginsList[0]["VUIName"] == "Kontakt")
+{
+UnregisterHotKey(KontaktKeyHandle.Handle, 9);
 }
 }
 
