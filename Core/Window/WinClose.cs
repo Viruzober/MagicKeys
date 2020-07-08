@@ -27,7 +27,6 @@ if (Title.ToString().Contains(HWNDTitle) == true & Class.ToString().Contains(HWN
 {
 continue;
 }
-//SetWindowPos(Handle, 1, 0, 0, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOMOVE);
 return true;
 }
 

@@ -1,7 +1,6 @@
 using System;
 using System.Threading;
 using static MagicKeys.MagicKeys;
-using static MagicKeys.Kontakt;
 
 namespace MagicKeys
 {

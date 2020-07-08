@@ -7,6 +7,7 @@ public partial class Menu : Form
 {
 
 public static SettingsForm WSettings;
+public static RegisterForm Reg;
 
 public void Exit(object sender, EventArgs e)
 {
@@ -67,8 +68,16 @@ WSettings.Activate();
 
 public void Register(object sender, EventArgs e)
 {
-RegisterForm Reg = new RegisterForm();
-Reg.Show();
+if (Reg == null)
+{
+Reg = new RegisterForm();
+Reg.ShowDialog();
+Reg = null;
+}
+else
+{
+Reg.Activate();
+}
 }
 
 }

@@ -6,20 +6,24 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 
+public static MagicKeys MK = new MagicKeys();
+
 public static string InvokeFromString(string InvokeFunc, string FuncPtr = null)
 {
-MagicKeys MK = new MagicKeys();
-var Class = Type.GetType(PluginsList[0]["PClass"]);
+try
+{
+Type Class = Type.GetType(PluginsList[0]["PClass"]);
 MethodInfo method;
 if (Class.GetMethod(InvokeFunc) == null)
 {
 Class = Type.GetType(PluginsList[0]["BClass"]);
-method = Class.GetMethod(InvokeFunc);
 }
-else
+if (Class.GetMethod(InvokeFunc) == null)
 {
-method = Class.GetMethod(InvokeFunc);
+Speak("Этот метод не реализован");
+return "";
 }
+method = Class.GetMethod(InvokeFunc);
 object[] FuncParam = new object[] {};
 if (FuncPtr != null)
 {
@@ -28,6 +32,12 @@ FuncParam = new object[] {Ptr};
 }
 string result = method.Invoke(MK, FuncParam) as string;
 return result;
+}
+catch(Exception)
+{
+Speak("Ошибка! Класс или метод не реализован");
+return "";
+}
 }
 
 }

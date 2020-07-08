@@ -18,5 +18,13 @@ string FileStr = HelpStreamReader.ReadToEnd().ToString();
 HelpText.Text = FileStr;
 }
 
+public void HelpForm_KeyDown(Object Sender, KeyEventArgs e)
+{
+if (e.KeyCode == Keys.Escape)
+{
+this.Close();
+}
+}
+
 }
 }

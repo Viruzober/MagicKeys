@@ -22,6 +22,7 @@ HelpText.Location = new Point(10, 10);
 HelpText.Size = new Size(300, 400);
 HelpText.Multiline = true;
 HelpText.ReadOnly = true;
+HelpText.KeyDown += HelpForm_KeyDown;
 this.Controls.Add(HelpText);
 }
 
