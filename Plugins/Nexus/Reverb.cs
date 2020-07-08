@@ -24,44 +24,32 @@ if (PixelSearch(P[1]+520, P[2]+375, "#3AA1FF") == true) Speak("Arena");
 
 public static void ReverbMix()
 {
-KeyUnReg();
 Slider("Mix", 595, 355, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void ReverbMod()
 {
-KeyUnReg();
 Slider("Mod", 655, 355, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void ReverbDec()
 {
-KeyUnReg();
 Slider("Dec", 540, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void ReverbPreDelay()
 {
-KeyUnReg();
 Slider("PreDelay", 480, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void ReverbLoCut()
 {
-KeyUnReg();
 Slider("LoCut", 595, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void ReverbHiCut()
 {
-KeyUnReg();
 Slider("HiCut", 655, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 }

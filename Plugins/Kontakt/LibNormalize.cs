@@ -10,7 +10,6 @@ public static partial class Kontakt
 
 public static void LibNormalize()
 {
-KeyUnReg();
 RegisterHotKey(KeyNavigatorHandle.Handle, 21, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
 try
 {
@@ -42,7 +41,6 @@ KeySwitch = 1;
 LoopError = false;
 return;
 }
-KeyReg();
 UnregisterHotKey(KeyNavigatorHandle.Handle, 21);
 return;
 }

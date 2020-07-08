@@ -11,7 +11,6 @@ public static partial class Kontakt
 public static void KontaktNormalize()
 {
 while (ImgSearch(@"Images\Kontakt\KontaktLogo.bmp")[0] == 0);
-KeyUnReg();
 RegisterHotKey(KeyNavigatorHandle.Handle, 21, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
 try
 {
@@ -41,7 +40,6 @@ KeySwitch = 1;
 LoopError = false;
 return;
 }
-KeyReg();
 UnregisterHotKey(KeyNavigatorHandle.Handle, 21);
 return;
 }

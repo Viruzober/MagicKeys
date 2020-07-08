@@ -21,11 +21,9 @@ X = CI[1];
 Y = CI[2];
 Count += 1;
 }
-KeyUnReg();
 string Input = InputBox("Сохранить инструмент", "Введите номер библиотеки от 1 до "+Count.ToString()+".", 1, Count);
 if (Input != "0")
 {
-KeyReg();
 MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
 MouseMove(P[1]+355, P[2]+170, 0);
 MouseMove(P[1]+320, P[2]+170, 1);
@@ -35,7 +33,6 @@ MouseClick("Left", LS[5]+10, LS[2]+(17*(Convert.ToInt32(Input))), 1, 0, 0, 10);
 }
 else
 {
-KeyReg();
 }
 }
 

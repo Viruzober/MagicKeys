@@ -23,44 +23,32 @@ if (PixelSearch(P[1]+290, P[2]+375, "#3AA1FF") == true) Speak("Pingpong");
 
 public static void DelayMix()
 {
-KeyUnReg();
 Slider("Mix", 365, 355, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void DelayMod()
 {
-KeyUnReg();
 Slider("Mod", 425, 355, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void DelayTime()
 {
-KeyUnReg();
 Slider("Time", 250, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void DelayFeedBack()
 {
-KeyUnReg();
 Slider("FeedBack", 305, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void DelayLoCut()
 {
-KeyUnReg();
 Slider("LoCut", 365, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void DelayHiCut()
 {
-KeyUnReg();
 Slider("HiCut", 420, 415, "V", 1.38, 1.6);
-KeyReg();
 }
 
 }

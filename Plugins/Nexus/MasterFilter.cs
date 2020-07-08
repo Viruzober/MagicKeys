@@ -14,16 +14,12 @@ CheckBox(P[1]+70, P[2]+345, "#3AA1FF", "MasterFilter");
 
 public static void MasterFilterCutOff()
 {
-KeyUnReg();
 Slider("CutOff", 125, 350, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void MasterFilterRes()
 {
-KeyUnReg();
 Slider("Res", 185, 350, "V", 1.38, 1.6);
-KeyReg();
 }
 
 public static void MasterFilterType()

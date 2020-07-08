@@ -80,7 +80,6 @@ Speak(Bank);
 
 public static void NexusSearch()
 {
-KeyUnReg();
 NexusSearchForm F = new NexusSearchForm();
 F.ShowDialog();
 if (F.DialogResult == DialogResult.OK)
@@ -97,7 +96,6 @@ Keyboard.KeyDown(Keys.Enter);
 Keyboard.KeyUp(Keys.Enter);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
 }
-KeyReg();
 }
 
 }
