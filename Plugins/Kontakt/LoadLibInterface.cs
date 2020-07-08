@@ -14,21 +14,21 @@ int[] KTL = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
 CreateOneBitmap(P[1], P[2], P[1]+P[3], P[2]+P[4]);
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 5, 5, 10);
-KeyGoToLibListUnReg();
+KeyUnReg();
 if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanR.bmp")[0] == 1)
 {
                 PluginsList[0]["PClass"] = typeof(IlyaEfimovBayanR).FullName;
-                PluginsList[0]["VUI"] = @"KontaktLib\IlyaEfimovBayanR.vui";
 VUILoader(@"KontaktLib\IlyaEfimovBayanR.vui");
 IlyaEfimovBayanR.Loader();
+KeyReg();
 Speak("Ilya Efimov Bayan right keyboard loaded");
 }
 else if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanL.bmp")[0] == 1)
 {
 PluginsList[0]["PClass"] = typeof(IlyaEfimovBayanL).FullName;
-PluginsList[0]["VUI"] = @"KontaktLib\IlyaEfimovBayanL.vui";
 VUILoader(@"KontaktLib\IlyaEfimovBayanL.vui");
 IlyaEfimovBayanL.Loader();
+KeyReg();
 Speak("Ilya Efimov Bayan left keyboard loaded");
 }
 else

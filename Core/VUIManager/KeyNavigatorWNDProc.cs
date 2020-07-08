@@ -16,9 +16,7 @@ int modifier = (int)m.LParam & 0xFFFF;
 Keys key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);
 if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F3)
 {
-InvokeFromString("KeyUnReg");
-MagicKeys.HelpForm(@"VUI\"+PluginsList[0]["VUI"]);
-InvokeFromString("KeyReg");
+MagicKeys.HelpForm();
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F4)
 {

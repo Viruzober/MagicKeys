@@ -1,3 +1,7 @@
+[Info]
+VUIName=PlugSoundFree
+PClass=PlugSound
+BClass=None
 [1]
 Text=Bank and patch menu
 ObjectType=Button

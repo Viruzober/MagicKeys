@@ -8,11 +8,6 @@ namespace MagicKeys
 public static class IlyaEfimovBayanL
 {
 
-public static void PluginUnLoad() => Kontakt.PluginUnLoad();
-public static void KeyReg() => Kontakt.KeyReg();
-public static void KeyUnReg() => Kontakt.KeyUnReg();
-public static void HelpForm() => HelpForm();
-
 public static void AutoAttack()
 {
 MouseClick("Left", P[1]+45, P[2]+190, 1, 0, 0, 10);

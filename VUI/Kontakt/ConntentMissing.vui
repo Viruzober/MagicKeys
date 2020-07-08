@@ -1,3 +1,7 @@
+[Info]
+VUIName=ConntentMissing
+PClass=Kontakt
+BClass=None
 [1]
 Text=Browse for folder
 ObjectType=Button

@@ -21,7 +21,16 @@ PluginsList.Add(I, new Dictionary<string, string>());
 PluginsList[I].Add("WTitle", Ini.IniRead(IVUI, I.ToString(), "WTitle"));
 PluginsList[I].Add("WClass", Ini.IniRead(IVUI, I.ToString(), "WClass"));
 PluginsList[I].Add("PClass", GetFullClassName(Ini.IniRead(IVUI, I.ToString(), "PClass")));
+if (Ini.IniRead(IVUI, I.ToString(), "BClass") == "None")
+{
+PluginsList[I].Add("BClass", "None");
+}
+else
+{
+PluginsList[I].Add("BClass", GetFullClassName(Ini.IniRead(IVUI, I.ToString(), "BClass")));
+}
 PluginsList[I].Add("VUI", Ini.IniRead(IVUI, I.ToString(), "VUI"));
+PluginsList[I].Add("VUIName", Ini.IniRead(IVUI, I.ToString(), "VUIName"));
 PluginsList[I].Add("Module", Ini.IniRead(IVUI, I.ToString(), "Module"));
 }
 }

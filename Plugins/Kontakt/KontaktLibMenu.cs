@@ -12,12 +12,10 @@ public static partial class Kontakt
 public static void LibMidiChannel()
 {
 KeyUnReg();
-KeyGoToLibListUnReg();
 string Input = InputBox("Midi канал", "Введите номер Midi канала от 1 до 16.", 1, 16);
 if (Input != "0")
 {
 KeyReg();
-KeyGoToLibListReg();
 int[] KLMC = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
 MouseClick("Left", KLMC[1]+620, KLMC[2]+20, 1, 0, 0, 10);
 Thread.Sleep(100);
@@ -40,7 +38,6 @@ Speak("OK");
 else
 {
 KeyReg();
-KeyGoToLibListReg();
 return;
 }
 }
@@ -48,12 +45,10 @@ return;
 public static void LibAudioChannel()
 {
 KeyUnReg();
-KeyGoToLibListUnReg();
 string Input = InputBox("Аудио канал", "Введите номер стерео пары от 1 до 16.", 1, 16);
 if (Input != "0")
 {
 KeyReg();
-KeyGoToLibListReg();
 int[] KLAC = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
 MouseClick("Left", KLAC[1]+620, KLAC[2]+20, 1, 0, 0, 10);
 Thread.Sleep(100);
@@ -72,7 +67,6 @@ Speak("OK");
 else
 {
 KeyReg();
-KeyGoToLibListReg();
 return;
 }
 }
@@ -80,7 +74,6 @@ return;
 public static void LibDelete()
 {
 KeyUnReg();
-KeyGoToLibListUnReg();
 int[] KLD = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
 string Name = ImgToText(200, 30, KLD[1] + 70, KLD[2] + 5, 2);
 MouseClick("Left", KLD[1] + 620, KLD[2] + 10, 1, 0, 0, 10);
@@ -96,7 +89,6 @@ else
 {
 LibNormalize();
 KeyReg();
-KeyGoToLibListReg();
 Speak(Name+" deleted");
 return;
 }
@@ -107,7 +99,6 @@ public static void LibSwitchFolder(string To)
 try
 {
 KeyUnReg();
-KeyGoToLibListUnReg();
 int[] KLSF = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
 if (To == "Back")
 {
@@ -125,14 +116,12 @@ LibSwitchFolder(To);
 }
 Thread.Sleep(200);
 KeyReg();
-KeyGoToLibListReg();
 Speak("OK");
 }
 
 public static void LibSwitchSnapshot(string To)
 {
 KeyUnReg();
-KeyGoToLibListUnReg();
 int[] KLSS = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
 MouseClick("Left", KLSS[1]+620, KLSS[2]+20, 1, 0, 0, 10);
 while (ImgSearch(@"Images\Kontakt\KontaktLeftLine.bmp")[0] == 0);
@@ -151,7 +140,6 @@ string Snapshot = ImgToText(140, 25, KLSS[1] + 70, KLSS[2] + 35, 2);
 MouseClick("Left", KLSS[1]+620, KLSS[2]+20, 1, 0, 0, 10);
 Speak(Snapshot);
 KeyReg();
-KeyGoToLibListReg();
 }
 
 }

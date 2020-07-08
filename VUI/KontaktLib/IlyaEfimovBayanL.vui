@@ -1,3 +1,7 @@
+[Info]
+VUIName=IlyaEfimovBayanL
+PClass=IlyaEfimovBayanL
+BClass=Kontakt
 [1]
 Text=Auto Attack
 ObjectType=CheckBox

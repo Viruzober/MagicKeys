@@ -1,3 +1,7 @@
+[Info]
+VUIName=Progress
+PClass=Kontakt
+BClass=None
 [1]
 Text=Loading
 ObjectType=Progress

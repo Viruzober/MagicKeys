@@ -1,3 +1,7 @@
+[Info]
+VUIName=Reverb
+PClass=Nexus
+BClass=None
 [1]
 Text=Reverb
 ObjectType=CheckBox

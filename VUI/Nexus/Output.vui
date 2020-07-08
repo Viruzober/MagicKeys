@@ -1,3 +1,7 @@
+[Info]
+VUIName=Output
+PClass=Nexus
+BClass=None
 [1]
 Text=Vol
 ObjectType=Slider

@@ -1,3 +1,7 @@
+[Info]
+VUIName=Serum
+PClass=Serum
+BClass=None
 [1]
 Text=Presets menu
 ObjectType=Button

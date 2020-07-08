@@ -1,3 +1,7 @@
+[Info]
+VUIName=FilterModifier
+PClass=Nexus
+BClass=None
 [1]
 Text=Filter Modifier
 ObjectType=CheckBox

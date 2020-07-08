@@ -1,16 +1,12 @@
 using System;
 using System.Threading;
 using static MagicKeys.MagicKeys;
+using static MagicKeys.Kontakt;
 
 namespace MagicKeys
 {
 public static class IlyaEfimovBayanR
 {
-
-public static void PluginUnLoad() => Kontakt.PluginUnLoad();
-public static void KeyReg() => Kontakt.KeyReg();
-public static void KeyUnReg() => Kontakt.KeyUnReg();
-public static void HelpForm() => HelpForm();
 
 public static void RoundRobin()
 {

@@ -1,3 +1,7 @@
+[Info]
+VUIName=IlyaEfimovBayanR
+PClass=IlyaEfimovBayanR
+BClass=Kontakt
 [1]
 Text=Round Robin
 ObjectType=CheckBox

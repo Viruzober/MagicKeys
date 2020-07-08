@@ -10,7 +10,6 @@ public static partial class Kontakt
 public static void LibGetInfo()
 {
 KeyUnReg();
-KeyGoToLibListUnReg();
 int[] KTL = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 Thread.Sleep(100);
@@ -22,7 +21,6 @@ string MidiChannel = ImgToText(120, 45, KTL[1] + 70, KTL[2] + 40, 2);
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 Speak(Name+", Audio Channel "+AudioChannel+", Midi channel "+MidiChannel);
 KeyReg();
-KeyGoToLibListReg();
 }
 
 }

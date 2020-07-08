@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 
 namespace MagicKeys
 {
@@ -8,7 +9,17 @@ namespace MagicKeys
 public static string InvokeFromString(string InvokeFunc, string FuncPtr = null)
 {
 MagicKeys MK = new MagicKeys();
-var method = Type.GetType(PluginsList[0]["PClass"]).GetMethod(InvokeFunc);
+var Class = Type.GetType(PluginsList[0]["PClass"]);
+MethodInfo method;
+if (Class.GetMethod(InvokeFunc) == null)
+{
+Class = Type.GetType(PluginsList[0]["BClass"]);
+method = Class.GetMethod(InvokeFunc);
+}
+else
+{
+method = Class.GetMethod(InvokeFunc);
+}
 object[] FuncParam = new object[] {};
 if (FuncPtr != null)
 {

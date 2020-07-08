@@ -20,7 +20,6 @@ KeyReg();
 public static void PluginUnLoad()
 {
 KeyUnReg();
-KeyGoToLibListUnReg();
 }
 
 }

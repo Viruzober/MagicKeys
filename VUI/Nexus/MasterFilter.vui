@@ -1,3 +1,7 @@
+[Info]
+VUIName=MasterFilter
+PClass=Nexus
+BClass=None
 [1]
 Text=Master filter
 ObjectType=CheckBox

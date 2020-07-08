@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 namespace MagicKeys
@@ -11,7 +12,17 @@ public static void VUILoader(string File)
 SoundPlay("ChangeVUI.ogg", 0);
 string VUIFile = @"VUI\"+File;
 PluginsList[0]["VUI"] = @File;
-Count = Ini.IniCountSections(VUIFile);
+PluginsList[0]["PClass"] = GetFullClassName(Ini.IniRead(VUIFile, "Info", "PClass"));
+if (Ini.IniRead(VUIFile, "Info", "BClass") == "None")
+{
+PluginsList[0]["BClass"] = "None";
+}
+else
+{
+PluginsList[0]["BClass"] = GetFullClassName(Ini.IniRead(VUIFile, "Info", "BClass"));
+}
+PluginsList[0]["VUIName"] = Ini.IniRead(VUIFile, "Info", "VUIName");
+Count = Ini.IniCountSections(VUIFile)-1;
 VUIObjects.Clear();
 for (int I = 1; I <= Count; I++)
 {

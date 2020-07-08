@@ -1,3 +1,7 @@
+[Info]
+VUIName=Delay
+PClass=Nexus
+BClass=None
 [1]
 Text=Delay
 ObjectType=CheckBox

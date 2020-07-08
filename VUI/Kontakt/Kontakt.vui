@@ -1,3 +1,7 @@
+[Info]
+VUIName=Kontakt
+PClass=Kontakt
+BClass=None
 [1]
 Text=Load
 ObjectType=Button

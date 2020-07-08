@@ -1,3 +1,7 @@
+[Info]
+VUIName=Nexus
+PClass=Nexus
+BClass=None
 [1]
 Text=filter modifier
 ObjectType=Button

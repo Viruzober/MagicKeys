@@ -1,3 +1,7 @@
+[Info]
+VUIName=LibList
+PClass=Kontakt
+BClass=None
 [1]
 Text=Midi channel
 ObjectType=Button

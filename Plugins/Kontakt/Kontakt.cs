@@ -53,20 +53,18 @@ Speak("OK");
 
 public static void GoToLibList()
 {
-            PluginsList[0]["PClass"] = typeof(Kontakt).FullName;
 VUILoader(@"Kontakt\LibList.vui");
 LibNormalize();
-KeyGoToLibListReg();
+KeyReg();
 Speak("OK");
 }
 
 public static void BackToOptionMenu()
 {
-            PluginsList[0]["PClass"] = typeof(Kontakt).FullName;
+KeyUnReg();
 VUILoader(@"Kontakt\Kontakt.vui");
 LibLoaded();
 KeyReg();
-KeyGoToLibListUnReg();
 Speak("OK");
 }
 
