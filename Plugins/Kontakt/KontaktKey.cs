@@ -23,6 +23,7 @@ if (PluginsList[0]["VUIName"] == "Kontakt")
 {
 RegisterHotKey(KontaktKeyHandle.Handle, 9, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Keys.D);
 }
+RegisterHotKey(KontaktKeyHandle.Handle, 10, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.Delete);
 }
 
 public static void KeyUnReg()
@@ -40,6 +41,7 @@ if (PluginsList[0]["VUIName"] != "Kontakt")
 {
 UnregisterHotKey(KontaktKeyHandle.Handle, 9);
 }
+UnregisterHotKey(KontaktKeyHandle.Handle, 10);
 }
 
 }

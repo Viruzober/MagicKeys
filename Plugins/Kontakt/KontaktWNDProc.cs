@@ -21,6 +21,10 @@ else if (key == Keys.D)
 {
 Kontakt.LibDelete();
 }
+else if (key == Keys.Delete)
+{
+Speak("Для удаления нажмите D или Ctrl+D");
+}
 else if (key == Keys.Up)
 {
 Kontakt.LibNavigator("Back");
