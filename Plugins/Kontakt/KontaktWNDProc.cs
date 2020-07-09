@@ -13,11 +13,11 @@ switch (m.Msg)
 case MKC.WM_HOTKEY:
 int modifier = (int)m.LParam & 0xFFFF;
 Keys key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);
-if (modifier == MKC.CTRL & key == Keys.Delete)
+if (modifier == MKC.CTRL & key == Keys.D)
 {
 Kontakt.AllLibDelete();
 }
-else if (key == Keys.Delete)
+else if (key == Keys.D)
 {
 Kontakt.LibDelete();
 }
