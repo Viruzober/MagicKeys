@@ -14,6 +14,10 @@ SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOAC
 while(true)
 {
 P = GetPos();
+if (Array.TrueForAll(P[0..4], ValidationConstraints => ValidationConstraints == 0))
+{
+return true;
+}
 Thread.Sleep(20);
 Application.DoEvents();
 if (KeySwitch == 1)
