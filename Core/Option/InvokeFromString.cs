@@ -20,7 +20,7 @@ Class = Type.GetType(PluginsList[0]["BClass"]);
 }
 if (Class.GetMethod(InvokeFunc) == null)
 {
-Speak("Этот метод не реализован");
+Speak("Р­С‚РѕС‚ РјРµС‚РѕРґ РЅРµ СЂРµР°Р»РёР·РѕРІР°РЅ");
 return "";
 }
 method = Class.GetMethod(InvokeFunc);
@@ -35,7 +35,7 @@ return result;
 }
 catch(Exception)
 {
-Speak("Ошибка! Класс или метод не реализован");
+Speak("РћС€РёР±РєР°! РљР»Р°СЃСЃ РёР»Рё РјРµС‚РѕРґ РЅРµ СЂРµР°Р»РёР·РѕРІР°РЅ");
 return "";
 }
 }
