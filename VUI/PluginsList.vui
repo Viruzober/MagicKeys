@@ -1,5 +1,5 @@
 [1]
-WTitle=FX: Track
+WTitle=FX
 WClass=#32770
 PClass=Kontakt
 BClass=None
@@ -55,7 +55,7 @@ VUI=PlugSound\PlugSoundFree.vui
 VUIName=PlugSoundFree
 Module=Plugsound.dll
 [8]
-WTitle=FX: Track
+WTitle=FX
 WClass=#32770
 PClass=Serum
 BClass=None
