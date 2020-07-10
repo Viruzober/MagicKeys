@@ -78,3 +78,11 @@ BClass=None
 VUI=Serum\Serum.vui
 VUIName=Serum
 Module=Serum_x64.dll
+[11]
+WTitle=FX: Track
+WClass=#32770
+PClass=Omnisphere
+BClass=None
+VUI=Omnisphere\Omnisphere.vui
+VUIName=Omnisphere
+Module=Omnisphere.dll

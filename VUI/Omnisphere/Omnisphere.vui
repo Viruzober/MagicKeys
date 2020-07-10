@@ -1,0 +1,19 @@
+[Info]
+VUIName=Omnisphere
+PClass=Omnisphere
+BClass=None
+[1]
+Text=Copy serial code
+ObjectType=Button
+Help=Скопировать серийный номер в буфер обмена
+Func=CopySerial
+[2]
+Text=Paste activation code
+ObjectType=Button
+Help=Вставить код активации из буфера обмена
+Func=PasteCode
+[3]
+Text=Continue
+ObjectType=Button
+Help=Продолжить активацию
+Func=ActiveCode
