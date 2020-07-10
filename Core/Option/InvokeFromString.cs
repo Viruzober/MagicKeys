@@ -10,13 +10,19 @@ public static MagicKeys MK = new MagicKeys();
 
 public static string InvokeFromString(string InvokeFunc, string FuncPtr = null)
 {
-try
-{
 Type Class = Type.GetType(PluginsList[0]["PClass"]);
 MethodInfo method;
 if (Class.GetMethod(InvokeFunc) == null)
 {
+if (PluginsList[0]["BClass"] != "None")
+{
 Class = Type.GetType(PluginsList[0]["BClass"]);
+}
+else
+{
+Speak("Этот метод не реализован");
+return "";
+}
 }
 if (Class.GetMethod(InvokeFunc) == null)
 {
@@ -32,12 +38,6 @@ FuncParam = new object[] {Ptr};
 }
 string result = method.Invoke(MK, FuncParam) as string;
 return result;
-}
-catch(Exception)
-{
-Speak("Ошибка! Класс или метод не реализован");
-return "";
-}
 }
 
 }

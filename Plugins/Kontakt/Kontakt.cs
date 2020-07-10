@@ -10,7 +10,7 @@ namespace MagicKeys
 public static partial class Kontakt
 {
 
-public static void Load()
+public static void qLoad()
 {
 MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
 MouseClick("Left", P[1]+355, P[2]+87, 1, 0, 0, 10);
