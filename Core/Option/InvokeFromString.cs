@@ -10,25 +10,24 @@ public static MagicKeys MK = new MagicKeys();
 
 public static string InvokeFromString(string InvokeFunc, string FuncPtr = null)
 {
-Type cls = Type.GetType(PluginsList[0]["PClass"]);
-if (cls.GetMethod(InvokeFunc) == null && PluginsList[0]["BClass"] != "None")
+Type Class = Type.GetType(PluginsList[0]["PClass"]);
+if (Class.GetMethod(InvokeFunc) == null && PluginsList[0]["BClass"] != "None")
 {
-cls = Type.GetType(PluginsList[0]["BClass"]);
+Class = Type.GetType(PluginsList[0]["BClass"]);
 }
-if (cls.GetMethod(InvokeFunc) == null)
+MethodInfo Method = Class.GetMethod(InvokeFunc);
+if (Method == null)
 {
 Speak("Метод "+InvokeFunc+" не реализован");
 return "";
 }
-MethodInfo method = cls.GetMethod(InvokeFunc);
-object[] FuncParam = new object[] {};
+object[] FuncParam = {};
 if (FuncPtr != null)
 {
-string Ptr = FuncPtr;
-FuncParam = new object[] {Ptr};
+FuncParam = new object[] {FuncPtr};
 }
-string result = method.Invoke(MK, FuncParam) as string;
-return result;
+string Result = Method.Invoke(MK, FuncParam) as string;
+return Result;
 }
 
 }
