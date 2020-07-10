@@ -27,7 +27,7 @@ return true;
 IntPtr Handle = GetForegroundWindow();
 GetWindowText(Handle, Title, nChars);
 GetClassName(Handle, Class, nChars);
-if (Title.ToString().Contains(HWNDTitle) == true & Class.ToString().Contains(HWNDClass) == true)
+if (Title.ToString().Contains(HWNDTitle, StringComparison.OrdinalIgnoreCase) == true & Class.ToString().Contains(HWNDClass, StringComparison.OrdinalIgnoreCase) == true)
 {
 continue;
 }
