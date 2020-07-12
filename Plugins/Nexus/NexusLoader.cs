@@ -8,7 +8,7 @@ public static partial class Nexus
 
 public static void PluginLoad()
 {
-VUILoader(@PluginsList[0]["VUI"]);
+VUILoader(API.GetVUI());
 KeyReg();
 }
 

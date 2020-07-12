@@ -7,7 +7,7 @@ namespace MagicKeys
 
 public static void  VUIObjectHelp()
 {
-Speak(VUIObjects[ActiveObjects[Section]]["Help"]);
+Speak(API.GetHelp());
 }
 
 }

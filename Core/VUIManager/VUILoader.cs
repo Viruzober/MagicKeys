@@ -36,9 +36,9 @@ if (Ini.IniKeyExists(VUIFile, I.ToString(), "AutoFunc") == true)
 VUIObjects[I].Add("AutoFunc", Ini.IniRead(VUIFile, I.ToString(), "AutoFunc"));
 }
 VUIObjects[I].Add("Func", Ini.IniRead(VUIFile, I.ToString(), "Func"));
-if (Ini.IniKeyExists(VUIFile, I.ToString(), "Ptr") == true)
+if (Ini.IniKeyExists(VUIFile, I.ToString(), "Param") == true)
 {
-VUIObjects[I].Add("Ptr", Ini.IniRead(VUIFile, I.ToString(), "Ptr"));
+VUIObjects[I].Add("Param", Ini.IniRead(VUIFile, I.ToString(), "Param"));
 }
 }
 VUIObjectsUpdate(true);

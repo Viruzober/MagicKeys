@@ -46,7 +46,7 @@ while (ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp")[0] == 0)
 {
                 LoopException();
 MouseClick("Left", P[1]+630, P[2]+80, 1, 0, 0, 10);
-while(WinActive(PluginsList[0]["WTitle"], PluginsList[0]["WClass"]) == false);
+while(WinActive(API.GetWTitle(), API.GetWClass()) == false);
 Thread.Sleep(150);
 }
 UnregisterHotKey(KontaktKeyHandle.Handle, 21);

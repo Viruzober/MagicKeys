@@ -9,7 +9,7 @@ public static partial class Serum
 
 public static void PluginLoad()
 {
-VUILoader(@PluginsList[0]["VUI"]);
+VUILoader(API.GetVUI());
 MouseClick("Left", P[1]+150, P[2]+20, 1, 0, 0, 10);
 Thread.Sleep(200);
 if (ImgSearch(@"Images\Serum\SerumLogo.bmp")[0] == 1)

@@ -8,14 +8,13 @@ namespace MagicKeys
 public static void VUIObjectEnter()
 {
 InvokeFromString("KeyUnReg");
-string Func = VUIObjects[ActiveObjects[Section]]["Func"];
-if (VUIObjects[ActiveObjects[Section]].ContainsKey("Ptr") == false)
+if (API.GetParam() == null)
 {
-InvokeFromString(Func);
+InvokeFromString(API.GetFunc());
 InvokeFromString("KeyReg");
 return;
 }
-InvokeFromString(Func, VUIObjects[ActiveObjects[Section]]["Ptr"]);
+InvokeFromString(API.GetFunc(), API.GetParam());
 InvokeFromString("KeyReg");
 }
 

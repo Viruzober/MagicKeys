@@ -16,7 +16,7 @@ MouseClick("Left", P[1]+330, P[2]+5, 1, 0, 0, 10);
 public static void PreviousPreset()
 {
 MouseClick("Left", P[1]+345, P[2]+5, 1, 0, 0, 10);
-if (PluginsList[0]["WClass"] == "#32770")
+if (API.GetWClass() == "#32770")
 {
 Speak(ControlGetTextPoint(P[1]+100, P[2]-20));
 }
@@ -25,7 +25,7 @@ Speak(ControlGetTextPoint(P[1]+100, P[2]-20));
 public static void NextPreset()
 {
 MouseClick("Left", P[1]+355, P[2]+5, 1, 0, 0, 10);
-if (PluginsList[0]["WClass"] == "#32770")
+if (API.GetWClass() == "#32770")
 {
 Speak(ControlGetTextPoint(P[1]+100, P[2]-20));
 }

@@ -40,7 +40,7 @@ IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
 int[] MRect = GetMIRect(HWND, HMenu, 1);
 MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 10);
 Thread.Sleep(100);
-string Bank = ControlGetText(PluginsList[0]["WTitle"], PluginsList[0]["WClass"], "Edit");
+string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
 Keyboard.KeyDown(Keys.Enter);
 Keyboard.KeyUp(Keys.Enter);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);

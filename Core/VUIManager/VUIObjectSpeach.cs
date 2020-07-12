@@ -7,17 +7,14 @@ namespace MagicKeys
 
 public static void VUIObjectSpeach()
 {
-string SpeachObject = VUIObjects[ActiveObjects[Section]]["Text"];
+string SpeachObject = API.GetText();
 if (SpeachType == true)
 {
-if (VUIObjects[ActiveObjects[Section]].ContainsKey("ObjectType") == true)
-{
-SpeachObject += " "+VUIObjects[ActiveObjects[Section]]["ObjectType"];
+SpeachObject += " "+API.GetOpjectType();
 }
-}
-if (VUIObjects[ActiveObjects[Section]].ContainsKey("AutoFunc") == true)
+if (API.GetAutoFunc() != null)
 {
-string AutoFunc = InvokeFromString(VUIObjects[ActiveObjects[Section]]["AutoFunc"]);
+string AutoFunc = InvokeFromString(API.GetAutoFunc());
 SpeachObject += " "+AutoFunc;
 }
 Speak(SpeachObject);

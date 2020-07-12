@@ -8,7 +8,7 @@ namespace MagicKeys
 
 public static MagicKeys MK = new MagicKeys();
 
-public static string InvokeFromString(string InvokeFunc, string FuncPtr = null)
+public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
 {
 Type Class =Type.GetType(PluginsList[0]["PClass"]);
 if (Class.GetMethod(InvokeFunc) == null && PluginsList[0]["BClass"] != "None")
@@ -21,12 +21,12 @@ if (Method == null)
 Speak("Метод "+InvokeFunc+" не реализован");
 return "";
 }
-object[] FuncParam = {};
-if (FuncPtr != null)
+object[] Param = {};
+if (FuncParam != null)
 {
-FuncParam = new object[] {FuncPtr};
+Param = new object[] {FuncParam};
 }
-string Result = Method.Invoke(MK, FuncParam) as string;
+string Result = Method.Invoke(MK, Param) as string;
 return Result;
 }
 
