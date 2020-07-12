@@ -10,12 +10,13 @@ public static MagicKeys MK = new MagicKeys();
 
 public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
 {
-Type Class =Type.GetType(PluginsList[0]["PClass"]);
-if (Class.GetMethod(InvokeFunc) == null && PluginsList[0]["BClass"] != "None")
+Type Class = Type.GetType(PluginsList[0]["PClass"]);
+MethodInfo Method;
+if ((Method = Class.GetMethod(InvokeFunc)) == null && PluginsList[0]["BClass"] != "None")
 {
 Class = Type.GetType(PluginsList[0]["BClass"]);
+Method = Class.GetMethod(InvokeFunc);
 }
-MethodInfo Method = Class.GetMethod(InvokeFunc);
 if (Method == null)
 {
 Speak("Метод "+InvokeFunc+" не реализован");
