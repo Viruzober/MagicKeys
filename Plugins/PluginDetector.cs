@@ -27,6 +27,7 @@ GlobalPluginLoad(I);
 P = GetPos();
 if (P[0] == 1)
 {
+VUILoader(API.GetVUI());
 InvokeFromString("PluginLoad");
 SoundPlay("WindowOpened.ogg", 0);
 WinClose(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]);

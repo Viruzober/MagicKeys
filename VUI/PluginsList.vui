@@ -61,7 +61,7 @@ PClass=Serum
 BClass=None
 VUI=Serum\Serum.vui
 VUIName=Serum
-Module=Serum_x64.dll
+Module=Serum_
 [9]
 WTitle=bridged
 WClass=REAPERb32host
@@ -69,20 +69,12 @@ PClass=Serum
 BClass=None
 VUI=Serum\Serum.vui
 VUIName=Serum
-Module=Serum.dll
+Module=Serum
 [10]
-WTitle=bridged
-WClass=REAPERb32host
-PClass=Serum
-BClass=None
-VUI=Serum\Serum.vui
-VUIName=Serum
-Module=Serum_x64.dll
-[11]
-WTitle=FX: Track
+WTitle=FX
 WClass=#32770
 PClass=Omnisphere
 BClass=None
 VUI=Omnisphere\Omnisphere.vui
 VUIName=Omnisphere
-Module=Omnisphere.dll
+Module=Omnisphere

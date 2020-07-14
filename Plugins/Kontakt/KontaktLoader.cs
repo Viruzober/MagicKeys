@@ -8,7 +8,6 @@ public static partial class Kontakt
 
 public static void PluginLoad()
 {
-VUILoader(API.GetVUI());
 if (API.GetVUIName() == "Kontakt")
 {
 KontaktNormalize();

@@ -8,7 +8,6 @@ public static partial class PlugSound
 
 public static void PluginLoad()
 {
-VUILoader(API.GetVUI());
 KeyReg();
 }
 
