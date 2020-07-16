@@ -119,6 +119,18 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Plugins\Omnisphere\OmnisphereSearchActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Plugins\Omnisphere\OmnisphereSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Plugins\Omnisphere\OmnisphereWNDProc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
   <Choose>
     <When Condition=" '$(Platform)'=='x86' ">
       <ItemGroup>
