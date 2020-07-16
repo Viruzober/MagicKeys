@@ -8,17 +8,17 @@ ObjectType=Button
 Help=Поиск пресетов
 Func=Search
 [2]
-Text=Copy serial code
+Text=Category
 ObjectType=Button
-Help=Скопировать серийный номер в буфер обмена
-Func=CopySerial
+Help=Help not found
+Func=Category
 [3]
-Text=Paste activation code
+Text=Type
 ObjectType=Button
-Help=Вставить код активации из буфера обмена
-Func=PasteCode
+Help=Help not found
+Func=Type
 [4]
-Text=Continue
+Text=Genre
 ObjectType=Button
-Help=Продолжить активацию
-Func=ActiveCode
+Help=Help not found
+Func=Genre

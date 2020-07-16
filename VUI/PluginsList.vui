@@ -7,7 +7,7 @@ VUI=Kontakt\Kontakt.vui
 VUIName=Kontakt
 Module=Kontakt.dll
 [2]
-WTitle=bridged
+WTitle=bridge
 WClass=REAPERb32host
 PClass=Kontakt
 BClass=None
@@ -31,7 +31,7 @@ VUI=Kontakt\Progress.vui
 VUIName=Progress
 Module=Kontakt.dll
 [5]
-WTitle=bridged
+WTitle=bridge
 WClass=REAPERb32host
 PClass=Nexus
 BClass=None
@@ -39,7 +39,7 @@ VUI=Nexus\Nexus.vui
 VUIName=Nexus
 Module=Nexus.dll
 [6]
-WTitle=bridged
+WTitle=bridge
 WClass=REAPERb32host
 PClass=PlugSound
 BClass=None
@@ -47,7 +47,7 @@ VUI=PlugSound\PlugSound.vui
 VUIName=PlugSound
 Module=PS0
 [7]
-WTitle=bridged
+WTitle=bridge
 WClass=REAPERb32host
 PClass=PlugSound
 BClass=None
@@ -63,7 +63,7 @@ VUI=Serum\Serum.vui
 VUIName=Serum
 Module=Serum_
 [9]
-WTitle=bridged
+WTitle=bridge
 WClass=REAPERb32host
 PClass=Serum
 BClass=None

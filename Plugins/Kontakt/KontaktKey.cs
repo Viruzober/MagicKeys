@@ -29,18 +29,12 @@ RegisterHotKey(KontaktKeyHandle.Handle, 10, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Key
 public static void KeyUnReg()
 {
 KeyNavigatorUnReg();
-if (API.GetVUIName() != "LibList")
-{
 UnregisterHotKey(KontaktKeyHandle.Handle, 4);
 UnregisterHotKey(KontaktKeyHandle.Handle, 5);
 UnregisterHotKey(KontaktKeyHandle.Handle, 6);
 UnregisterHotKey(KontaktKeyHandle.Handle, 7);
 UnregisterHotKey(KontaktKeyHandle.Handle, 8);
-}
-if (API.GetVUIName() != "Kontakt")
-{
 UnregisterHotKey(KontaktKeyHandle.Handle, 9);
-}
 UnregisterHotKey(KontaktKeyHandle.Handle, 10);
 }
 

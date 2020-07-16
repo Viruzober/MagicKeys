@@ -9,6 +9,7 @@ namespace MagicKeys
 
 public static void VUILoader(string File)
 {
+InvokeFromString("KeyUnReg");
 SoundPlay("ChangeVUI.ogg", 0);
 string VUIFile = @"VUI\"+File;
 PluginsList[0]["VUI"] = @File;
@@ -42,7 +43,6 @@ VUIObjects[I].Add("Param", Ini.IniRead(VUIFile, I.ToString(), "Param"));
 }
 }
 VUIObjectsUpdate(true);
-InvokeFromString("KeyUnReg");
 InvokeFromString("KeyReg");
 }
 
