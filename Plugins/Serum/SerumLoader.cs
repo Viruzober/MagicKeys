@@ -9,10 +9,9 @@ public static partial class Serum
 
 public static void PluginLoad()
 {
-MouseClick("Left", P[1]+150, P[2]+20, 1, 0, 0, 10);
 while(
-ImgSearch(@"Images\Serum\SerumLogo.bmp")[0] == 0 &
-ImgSearch(@"Images\Serum\SerumReg.bmp")[0] == 0)
+ImgSearch(@"Images\Serum\SerumLogo.bmp", true)[0] == 0 &
+ImgSearch(@"Images\Serum\SerumReg.bmp", true)[0] == 0)
 {
 if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
 {
