@@ -1,4 +1,8 @@
-﻿[1]
+﻿[Info]
+VUIName=Omnisphere
+PClass=Omnisphere
+BClass=None
+[1]
 Text=Copy serial code
 ObjectType=Button
 Help=Скопировать серийный номер в буфер обмена

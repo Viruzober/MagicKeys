@@ -26,7 +26,7 @@ Thread.Sleep(500);
 }
 if (ImgSearch(@"Images\Omnisphere\Reg.bmp", true)[0] == 1)
 {
-VUILoader(@"VUI\Omnisphere\OmnisphereReg.vui");
+VUILoader(@"Omnisphere\OmnisphereReg.vui");
 }
 KeyReg();
 }

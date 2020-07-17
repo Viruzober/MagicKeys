@@ -8,7 +8,7 @@ public static partial class Omnisphere
 
 public static void CopySerial()
 {
-int[] CS = ImgSearch(@"Images\Omnisphere\CopySerial.bmp", true);
+int[] CS = ImgSearchArea(@"Images\Omnisphere\CopySerial.bmp", P[1], P[2], P[1]+P[3], P[2]+P[4], 120);
 MouseClick("Left", CS[1], CS[2], 1, 0, 0, 10);
 Speak("copied "+GetText());
 }
