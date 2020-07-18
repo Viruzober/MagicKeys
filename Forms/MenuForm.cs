@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.ComponentModel;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace MagicKeys
@@ -33,7 +34,7 @@ else
 MainMenu.Items.AddRange(new[] {RegisterMenuItem, SettingsMenuItem, HelpMenuItem, ExitMenuItem});
 }
 Ni.ContextMenuStrip = MainMenu;
-Ni.Icon = new Icon(@"Images\Icon.ico");
+Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
 Ni.Text = "MagicKeys включён";
 Ni.Visible = true;
 }
