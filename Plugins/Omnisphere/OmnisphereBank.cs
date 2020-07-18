@@ -12,90 +12,54 @@ public static void OmnisphereBank(string To)
 {
 if (To == "Back")
 {
-int[] NXUP = ImgSearchArea(@"Images\Omnisphere\OmnisphereUp.bmp", P[1]+330, P[2]+70, P[1]+350, P[2]+130, 40);
-if (NXUP[0] == 1)
+int[] OUP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+160, P[1]+50, P[2]+185, 20);
+if (OUP[0] == 1)
 {
 OmnisphereBankPage("Back");
 return;
 }
-else if (NXUP[0] == 0)
+else if (OUP[0] == 0)
 {
-int[] NXBP = ImgSearchArea(@"Images\Omnisphere\OmnisphereBP.bmp", P[1]+260, P[2]+90, P[1]+280, P[2]+270, 20);
-if (NXBP[0] == 1)
+int[] OBP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20);
+if (OBP[0] == 1)
 {
-MouseClick("Left", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
-MouseClick("Right", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
-Thread.Sleep(200);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 50);
-Thread.Sleep(100);
-string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
-MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 50);
+string Bank = ImgToText(150, 20, OBP[1], OBP[2]-15, 3);
+MouseClick("Left", OBP[5]+30, OBP[6]-15, 1, 0, 0, 10);
+MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
 Speak(Bank);
+return;
 }
 }
 }
 else if (To == "Next")
 {
-int[] NXDW = ImgSearchArea(@"Images\Omnisphere\OmnisphereDown.bmp", P[1]+300, P[2]+220, P[1]+330, P[2]+250, 40);
-if (NXDW[0] == 1)
+int[] ODW = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+360, P[1]+50, P[2]+385, 20);
+if (ODW[0] == 1)
 {
 OmnisphereBankPage("Next");
 return;
 }
-else if (NXDW[0] == 0)
+else if (ODW[0] == 0)
 {
-int[] NXBP = ImgSearchArea(@"Images\Omnisphere\OmnisphereBP.bmp", P[1]+260, P[2]+90, P[1]+280, P[2]+270, 20);
-if (NXBP[0] == 1)
+int[] OBP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20);
+if (OBP[0] == 1)
 {
-int[] NXEND = ImgSearchArea(@"Images\Omnisphere\OmnisphereEnd.bmp", NXBP[5], NXBP[6], NXBP[5]+15, NXBP[6]+20, 20);
-if (NXEND[0] == 1)
-{
-SoundPlay("End.ogg", 0);
-}
-else if (NXEND[0] == 0)
-{
-MouseClick("Left", NXBP[1]+15, NXBP[2]+15, 1, 0, 0, 50);
-MouseClick("Right", NXBP[1]+15, NXBP[2]+15, 1, 0, 0, 50);
-Thread.Sleep(200);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15, MRect[1]+15, 1, 0, 0, 50);
-Thread.Sleep(100);
-string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
-MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 50);
+string Bank = ImgToText(150, 20, OBP[1], OBP[2]+15, 3);
+MouseClick("Left", OBP[5]+30, OBP[6]+15, 1, 0, 0, 10);
+MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
 Speak(Bank);
-}
+return;
 }
 }
 }
 }
 
-public static void OmnisphereSearch()
+public static void BankName()
 {
-OmnisphereSearchForm F = new OmnisphereSearchForm();
-F.ShowDialog();
-if (F.DialogResult == DialogResult.OK)
-{
-MouseClick("Right", P[1]+330, P[2]+230, 1, 0, 0, 10);
-Thread.Sleep(200);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 7);
-MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 50);
+int[] OBP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20);
+string Bank = ImgToText(150, 25, OBP[1], OBP[2], 3);
 Thread.Sleep(100);
-ControlSetText(API.GetWTitle(), API.GetWClass(), "Edit", F.GetString());
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
-MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
-}
+Speak(Bank);
 }
 
 }

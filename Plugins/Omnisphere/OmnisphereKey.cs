@@ -19,7 +19,8 @@ RegisterHotKey(OmnisphereKeyHandle.Handle, 8, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Ke
 RegisterHotKey(OmnisphereKeyHandle.Handle, 9, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Keys.End);
 RegisterHotKey(OmnisphereKeyHandle.Handle, 10, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Keys.Prior);
 RegisterHotKey(OmnisphereKeyHandle.Handle, 11, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Keys.Next);
-RegisterHotKey(OmnisphereKeyHandle.Handle, 12, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.S);
+RegisterHotKey(OmnisphereKeyHandle.Handle, 12, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.B);
+RegisterHotKey(OmnisphereKeyHandle.Handle, 13, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.P);
 }
 
 public static void KeyUnReg()
@@ -34,6 +35,7 @@ UnregisterHotKey(OmnisphereKeyHandle.Handle, 9);
 UnregisterHotKey(OmnisphereKeyHandle.Handle, 10);
 UnregisterHotKey(OmnisphereKeyHandle.Handle, 11);
 UnregisterHotKey(OmnisphereKeyHandle.Handle, 12);
+UnregisterHotKey(OmnisphereKeyHandle.Handle, 13);
 }
 
 }

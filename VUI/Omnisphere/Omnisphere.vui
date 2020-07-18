@@ -22,3 +22,8 @@ Text=Genre
 ObjectType=Button
 Help=Help not found
 Func=Genre
+[5]
+Text=SelectChennel
+ObjectType=Button
+Help=Help not found
+Func=SelectChennel

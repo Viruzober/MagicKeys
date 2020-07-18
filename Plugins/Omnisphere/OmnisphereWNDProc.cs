@@ -45,11 +45,13 @@ else if (key == Keys.Next)
 {
 Omnisphere.OmnispherePatch("Next");
 }
-else if (key == Keys.S)
+else if (key == Keys.B)
 {
-MagicKeys.InvokeFromString("KeyUnReg");
-Omnisphere.OmnisphereSearch();
-MagicKeys.InvokeFromString("KeyReg");
+Omnisphere.BankName();
+}
+else if (key == Keys.P)
+{
+Omnisphere.PatchName();
 }
 break;
 }

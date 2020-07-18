@@ -12,50 +12,34 @@ public static void OmnispherePatchPage(string To)
 {
 if (To == "Back")
 {
-int[] FH = ImgSearchArea(@"Images\Omnisphere\FullHome.bmp", P[1]+540, P[2]+50, P[1]+590, P[2]+160, 20);
+int[] FH = ImgSearchArea(@"Images\Omnisphere\FullHome.bmp", P[1]+230, P[2]+380, P[1]+270, P[2]+420, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End.ogg", 0);
 return;
 }
 SoundPlay("Scrol.ogg", 0);
-MouseClick("Left", P[1]+575, P[2]+120, 1, 0, 0, 10);
-MouseClick("Right", P[1]+450, P[2]+230, 1, 0, 0, 10);
-Thread.Sleep(100);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 10);
-Thread.Sleep(100);
-string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
-MouseClick("Left", P[1]+450, P[2]+230, 2, 0, 0, 10);
-Speak(Patch);
+MouseClick("Left", P[1]+250, P[2]+395, 1, 0, 0, 10);
+Thread.Sleep(300);
+MouseClick("Left", P[1]+220, P[2]+610, 1, 0, 0, 10);
 }
 else if (To == "Next")
 {
-int[] FH = ImgSearchArea(@"Images\Omnisphere\FullEnd.bmp", P[1]+540, P[2]+180, P[1]+590, P[2]+280, 20);
+int[] FH = ImgSearchArea(@"Images\Omnisphere\FullEnd.bmp", P[1]+230, P[2]+590, P[1]+270, P[2]+630, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End.ogg", 0);
 return;
 }
 SoundPlay("Scrol.ogg", 0);
-MouseClick("Left", P[1]+575, P[2]+220, 1, 0, 0, 10);
-MouseClick("Right", P[1]+450, P[2]+105, 1, 0, 0, 10);
-Thread.Sleep(100);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 10);
-Thread.Sleep(100);
-string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
-MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
-Speak(Patch);
+MouseClick("Left", P[1]+250, P[2]+615, 1, 0, 0, 10);
+Thread.Sleep(300);
+MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
 }
+Thread.Sleep(600);
+int[] OBP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20);
+string Patch = ImgToText(150, 20, OBP[1], OBP[2], 3);
+Speak(Patch);
 }
 
 }

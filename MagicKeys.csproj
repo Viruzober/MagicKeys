@@ -120,12 +120,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Plugins\Omnisphere\OmnisphereSearchActions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Plugins\Omnisphere\OmnisphereSearchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Plugins\Omnisphere\OmnisphereWNDProc.cs">
       <SubType>Form</SubType>
     </Compile>

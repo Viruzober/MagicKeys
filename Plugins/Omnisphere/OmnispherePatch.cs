@@ -12,70 +12,50 @@ public static void OmnispherePatch(string To)
 {
 if (To == "Back")
 {
-int[] NXUP = ImgSearchArea(@"Images\Omnisphere\OmnisphereUp.bmp", P[1]+450, P[2]+70, P[1]+480, P[2]+150, 40);
-if (NXUP[0] == 1)
+int[] OUP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+415, 20);
+if (OUP[0] == 1)
 {
 OmnispherePatchPage("Back");
 return;
 }
-else if (NXUP[0] == 0)
+else if (OUP[0] == 0)
 {
-int[] NXBP = ImgSearchArea(@"Images\Omnisphere\OmnisphereBP.bmp", P[1]+400, P[2]+90, P[1]+430, P[2]+270, 40);
-if (NXBP[0] == 1)
+int[] OBP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20);
+if (OBP[0] == 1)
 {
-MouseClick("Right", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
-Thread.Sleep(100);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 10);
-Thread.Sleep(100);
-string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
-MouseClick("Left", P[1]+50, P[2]+50, 1, 0, 0, 10);
-MouseClick("Left", NXBP[1]+15, NXBP[2]-5, 2, 0, 0, 10);
+string Patch = ImgToText(150, 20, OBP[1], OBP[2]-15, 3);
+MouseClick("Left", OBP[5]+30, OBP[6]-15, 1, 0, 0, 10);
 Speak(Patch);
 }
 }
 }
 else if (To == "Next")
 {
-int[] NXDW = ImgSearchArea(@"Images\Omnisphere\OmnisphereDown.bmp", P[1]+530, P[2]+220, P[1]+570, P[2]+260, 40);
-if (NXDW[0] == 1)
+int[] ODW = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+590, P[1]+50, P[2]+620, 20);
+if (ODW[0] == 1)
 {
 OmnispherePatchPage("Next");
 return;
 }
-else if (NXDW[0] == 0)
+else if (ODW[0] == 0)
 {
-int[] NXBP = ImgSearchArea(@"Images\Omnisphere\OmnisphereBP.bmp", P[1]+400, P[2]+90, P[1]+430, P[2]+270, 40);
-if (NXBP[0] == 1)
+int[] OBP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20);
+if (OBP[0] == 1)
 {
-int[] NXEND = ImgSearchArea(@"Images\Omnisphere\OmnisphereEnd.bmp", NXBP[5], NXBP[6], NXBP[5]+15, NXBP[6]+25, 20);
-if (NXEND[0] == 1)
-{
-SoundPlay("End.ogg", 0);
-}
-else if (NXEND[0] == 0)
-{
-MouseClick("Right", NXBP[1]+15, NXBP[2]+15, 1, 0, 0, 10);
-Thread.Sleep(100);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15, MRect[1]+15, 1, 0, 0, 10);
-Thread.Sleep(100);
-string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
-MouseClick("Left", P[1]+50, P[2]+50, 1, 0, 0, 10);
-MouseClick("Left", NXBP[1]+15, NXBP[2]+15, 2, 0, 0, 10);
+string Patch = ImgToText(150, 20, OBP[1], OBP[2]+15, 3);
+MouseClick("Left", OBP[5]+30, OBP[6]+15, 1, 0, 0, 10);
 Speak(Patch);
 }
 }
 }
 }
+
+public static void PatchName()
+{
+int[] OBP = ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20);
+string Patch = ImgToText(150, 25, OBP[1], OBP[2], 3);
+Thread.Sleep(100);
+Speak(Patch);
 }
 
 }
