@@ -1,0 +1,63 @@
+<SpectrasonicsPreferences >
+<PROPERTIES_SCOPE  NAME="RhEngine" >
+<NVP  NAME="AcceptRemoteControlConnections"  VALUE="0.000000000" >
+</NVP>
+ <NVP  NAME="CustomPaneTabReset"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="SyncTabbedPanes_v2"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="StreamVsImmed_64bit"  VALUE="0.020000000" >
+</NVP>
+ <NVP  NAME="VarySampleAlgorithm_v2"  VALUE="0.059999999" >
+</NVP>
+ <NVP  NAME="MaxSampleMemory"  VALUE="0.000000000" >
+</NVP>
+ <NVP  NAME="BrowserThinSticky_v12"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="StreamPrimer"  VALUE="0.300000012" >
+</NVP>
+ <NVP  NAME="StreamRead"  VALUE="0.200000003" >
+</NVP>
+ <NVP  NAME="DiskCachePreRead"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="LinkCustom"  VALUE="0.000000000" >
+</NVP>
+ <NVP  NAME="LockMemory"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="StreamBrake"  VALUE="0.100000001" >
+</NVP>
+ <NVP  NAME="RetainShMem"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="AudNote"  VALUE="0.990001023" >
+</NVP>
+ <NVP  NAME="AudLen"  VALUE="0.079999998" >
+</NVP>
+ <NVP  NAME="BrowserLayout_v2"  VALUE="0.020000000" >
+</NVP>
+ <NVP  NAME="ShareF"  VALUE="0.000000000" >
+</NVP>
+ <NVP  NAME="LockSearch"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="ThinLock"  VALUE="0.000000000" >
+</NVP>
+ <NVP  NAME="ResetDefFiltersNewCat"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="ProgressiveSoundsourceLoading"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="BrowserSteppers"  VALUE="1.000000000" >
+</NVP>
+ <NVP  NAME="AudAutoPl_v2"  VALUE="0.000000000" >
+</NVP>
+ <NVP  NAME="DCEF"  VALUE="D:\Spectrasonics\STEAM/Omnisphere" >
+</NVP>
+ <NVP  NAME="AudAutoPl"  VALUE="0.000000000" >
+</NVP>
+ </PROPERTIES_SCOPE>
+ <PROPERTIES_SCOPE  NAME="General" >
+<NVP  NAME="Scale"  VALUE="1.00" >
+</NVP>
+ <NVP  NAME="BrDir0"  VALUE="All Spectrasonics" >
+</NVP>
+ </PROPERTIES_SCOPE>
+ </SpectrasonicsPreferences>
+ 

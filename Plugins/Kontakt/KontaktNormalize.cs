@@ -10,7 +10,13 @@ public static partial class Kontakt
 
 public static void KontaktNormalize()
 {
-while (ImgSearch(@"Images\Kontakt\KontaktLogo.bmp", true)[0] == 0);
+while (ImgSearch(@"Images\Kontakt\KontaktLogo.bmp", true)[0] == 0)
+{
+if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
+{
+return;
+}
+}
 RegisterHotKey(KeyNavigatorHandle.Handle, 21, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
 try
 {

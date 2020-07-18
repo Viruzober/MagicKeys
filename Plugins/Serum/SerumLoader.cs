@@ -18,11 +18,11 @@ if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
 return;
 }
 }
-if (ImgSearch(@"Images\Serum\SerumLogo.bmp")[0] == 1)
+if (ImgSearch(@"Images\Serum\SerumLogo.bmp", true)[0] == 1)
 {
 VUIObjectSwitcher(true, "false", 6, 6);
 }
-else if (ImgSearch(@"Images\Serum\SerumReg.bmp")[0] == 1)
+else if (ImgSearch(@"Images\Serum\SerumReg.bmp", true)[0] == 1)
 {
 VUIObjectSwitcher(true, "false", 1, 5);
 }
