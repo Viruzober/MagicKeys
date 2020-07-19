@@ -23,7 +23,7 @@ ObjectType=Button
 Help=Help not found
 Func=Genre
 [5]
-Text=SelectChennel
+Text=Select channel
 ObjectType=Button
 Help=Help not found
-Func=SelectChennel
+Func=SelectChannel

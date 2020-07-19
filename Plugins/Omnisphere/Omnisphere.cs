@@ -42,11 +42,20 @@ MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
 Speak("OK");
 }
 
-public static void SelectChennel()
+public static void SelectChannel()
 {
 int Input = Convert.ToInt32(InputBox("Select chennel", "Enter chennel number.", 1, 8));
 int CH = Input*35;
 MouseClick("Left", P[1]+485+CH, P[2]+55, 1, 0, 0, 10);
+if (ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20)[0] == 0)
+{
+MouseClick("Left", P[1]+220, P[2]+170, 1, 0, 0, 10);
+}
+Thread.Sleep(100);
+if (ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20)[0] == 0)
+{
+MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
+}
 }
 
 }
