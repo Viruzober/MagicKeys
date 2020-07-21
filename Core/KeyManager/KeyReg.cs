@@ -17,9 +17,10 @@ public static void KeyReg()
 int IDKey = 0;
 foreach(var OBJKey in VUIKeys)
 {
-uint Mod = MKC.MOD_NOREPEAT;
+//uint Mod = MKC.MOD_NOREPEAT;
+uint Mod = 0;
 string[] KeyItems = OBJKey.Key.Split("+");
-for(int K = 0; K < KeyItems.Length; K++)
+for(int K = 0; K <= KeyItems.Length-1; K++)
 {
 if (KeyItems[K] == "Alt") Mod = Mod|MKC.ALT;
 if (KeyItems[K] == "Ctrl") Mod = Mod|MKC.CTRL;

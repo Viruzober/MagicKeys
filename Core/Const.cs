@@ -1,7 +1,18 @@
+using System;
+
 namespace MagicKeys
 {
     public class MKC
 {
+[Flags] 
+public enum ModKeys : uint 
+{
+No = 0,
+Alt = 1, 
+Ctrl = 2, 
+Shift = 4, 
+Win = 8 
+}
 public const int WM_HOTKEY = 0x0312;
 public const int NOMOD = 0x0000;
 public const int ALT = 0x0001;

@@ -3,7 +3,7 @@ VUIName=Kontakt
 PClass=Kontakt
 BClass=None
 [Keys]
-Alt+V=Test
+Ctrl+L=Load
 [1]
 Text=Load
 ObjectType=Button
