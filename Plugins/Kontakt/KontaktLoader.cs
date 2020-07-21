@@ -21,6 +21,7 @@ MagicKeys.KeyReg();
 public static void PluginUnLoad()
 {
 KeyUnReg();
+MagicKeys.KeyUnReg();
 }
 
 }
