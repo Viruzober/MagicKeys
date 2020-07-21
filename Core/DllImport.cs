@@ -5,6 +5,8 @@ namespace MagicKeys
 {
     public partial class MagicKeys
 {
+[DllImport("user32.dll")]
+static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 [DllImport("kernel32.dll", SetLastError=true)]
 [return: MarshalAs(UnmanagedType.Bool)]
 static extern bool CloseHandle(IntPtr hObject);
@@ -44,8 +46,6 @@ public static extern bool GetWindowRect(IntPtr hwnd, out WinRect lpRect);
 public static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
 [DllImport("user32.dll", SetLastError = true)]
 public static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
-[DllImport("user32.dll")]
-public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 [DllImport("user32.dll")]
 public static extern IntPtr WindowFromPoint(WinPoint p);
 #if X86

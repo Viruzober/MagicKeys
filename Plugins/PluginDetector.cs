@@ -28,6 +28,10 @@ P = GetPos();
 if (P[0] == 1)
 {
 VUILoader(API.GetVUI());
+if (API.GetWClass() == "#32770")
+{
+ShowWindow(GetForegroundWindow(), 3);
+}
 InvokeFromString("PluginLoad");
 SoundPlay("WindowOpened.ogg", 0);
 WinClose(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]);

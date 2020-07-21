@@ -25,16 +25,7 @@ VUILoader(@"Omnisphere\OmnisphereReg.vui");
 }
 else
 {
-if (ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20)[0] == 0)
-{
-MouseClick("Left", P[1]+220, P[2]+170, 1, 0, 0, 10);
-}
-Thread.Sleep(100);
-if (ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20)[0] == 0)
-{
-MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
-}
-Speak("OK");
+AudoSelect();
 }
 KeyReg();
 }

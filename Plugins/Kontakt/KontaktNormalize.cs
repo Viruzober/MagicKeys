@@ -27,7 +27,7 @@ Application.DoEvents();
 CreateOneBitmap(P[1], P[2], P[1]+P[3], P[2]+P[4]);
 MouseClick("Left", P[1]+730, P[2]+17, 1, 0, 0, 10);
 MouseClick("Left", P[1]+730, P[2]+40, 1, 0, 0, 10);
-DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 1, 1, 10);
+DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 1, 1, 20);
 }
 while (ImgSearch(@"Images\Kontakt\KontaktInfoShow.bmp", true)[0] == 1)
 {
@@ -36,7 +36,7 @@ Application.DoEvents();
 CreateOneBitmap(P[1], P[2], P[1]+P[3], P[2]+P[4]);
 MouseClick("Left", P[1]+405, P[2]+17, 1, 0, 0, 10);
 MouseClick("Left", P[1]+405, P[2]+85, 1, 0, 0, 10);
-DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 1, 1, 10);
+DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 1, 1, 20);
 }
 }
 catch(Exception)

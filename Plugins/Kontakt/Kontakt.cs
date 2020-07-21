@@ -41,17 +41,8 @@ if (ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp")[0] == 1)
 Speak("No loaded libraries");
 return;
 }
-RegisterHotKey(KeyNavigatorHandle.Handle, 21, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
-while (ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp")[0] == 0)
-{
-                LoopException();
-MouseClick("Left", P[1]+630, P[2]+80, 1, 0, 0, 10);
-while(WinActive(API.GetWTitle(), API.GetWClass()) == false);
-Thread.Sleep(150);
-}
-UnregisterHotKey(KontaktKeyHandle.Handle, 21);
-LibLoaded();
-Speak("OK");
+MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
+MouseClick("Left", P[1]+355, P[2]+235, 1, 0, 0, 10);
 }
 
 public static void GoToLibList()
