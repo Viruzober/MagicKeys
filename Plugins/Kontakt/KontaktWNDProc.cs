@@ -41,6 +41,10 @@ else if (key == Keys.S)
 {
 Kontakt.LibGetSnapshot();
 }
+else if (key == Keys.V)
+{
+MagicKeys.Speak("It work");
+}
 break;
 }
 base.WndProc(ref m);

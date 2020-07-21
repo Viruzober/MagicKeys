@@ -2,6 +2,8 @@
 VUIName=Kontakt
 PClass=Kontakt
 BClass=None
+[Keys]
+V=Test
 [1]
 Text=Load
 ObjectType=Button

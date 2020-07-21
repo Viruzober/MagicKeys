@@ -14,6 +14,8 @@ KontaktNormalize();
 LibLoaded();
 }
 KeyReg();
+MagicKeys.KeyLoader();
+MagicKeys.KeyReg();
 }
 
 public static void PluginUnLoad()
