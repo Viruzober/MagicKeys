@@ -7,15 +7,15 @@ namespace MagicKeys
 
 public static void VUIObjectEnter()
 {
-InvokeFromString("KeyUnReg");
+KeyUnReg();
 if (API.GetParam() == null)
 {
 InvokeFromString(API.GetFunc());
-InvokeFromString("KeyReg");
+KeyReg();
 return;
 }
 InvokeFromString(API.GetFunc(), API.GetParam());
-InvokeFromString("KeyReg");
+KeyReg();
 }
 
 }

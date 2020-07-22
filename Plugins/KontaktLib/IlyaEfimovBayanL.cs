@@ -25,30 +25,30 @@ VUIObjectSwitcher(false, "true", 2, 2);
 
 public static void AttackTime()
 {
-Kontakt.KeyUnReg();
+KeyUnReg();
 Slider("Attack Time", 45, 230, "H", 0.86, 1.4);
-Kontakt.KeyReg();
+KeyReg();
 }
 
 public static void KeyNoise()
 {
-Kontakt.KeyUnReg();
+KeyUnReg();
 Slider("Key Noise", 170, 190, "H", 0.86, 1.4);
-Kontakt.KeyReg();
+KeyReg();
 }
 
 public static void Bellow()
 {
-Kontakt.KeyUnReg();
+KeyUnReg();
 Slider("Bellow", 170, 230, "H", 0.86, 1.4);
-Kontakt.KeyReg();
+KeyReg();
 }
 
 public static void Release()
 {
-Kontakt.KeyUnReg();
+KeyUnReg();
 Slider("Release", 170, 270, "H", 0.86, 1.4);
-Kontakt.KeyReg();
+KeyReg();
 }
 
 public static void Reverb()
@@ -69,9 +69,9 @@ VUIObjectSwitcher(false, "false", 7, 7);
 
 public static void ReverbLevel()
 {
-Kontakt.KeyUnReg();
+KeyUnReg();
 Slider("ReverbLevel", 280, 230, "H", 0.86, 1.4);
-Kontakt.KeyReg();
+KeyReg();
 }
 
 public static void Sustain()

@@ -31,6 +31,7 @@ if (KeyItems[K] == "Win") Mod = Mod|MKC.WIN;
 RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, key);
 IDKey+=1;
 }
+KeyNavigatorReg(Ini.IniRead(@"VUI\"+API.GetVUI(), "Info", "ActiveKey"));
 }
 
 }

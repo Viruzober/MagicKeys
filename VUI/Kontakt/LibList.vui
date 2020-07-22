@@ -2,6 +2,13 @@
 VUIName=LibList
 PClass=Kontakt
 BClass=None
+ActiveKey=Enter
+[Keys]
+Down=LibNavigator|Next
+Up=LibNavigator|Back
+I=LibGetInfo
+S=LibGetSnapshot
+D=LibDelete
 [1]
 Text=Midi channel
 ObjectType=Button

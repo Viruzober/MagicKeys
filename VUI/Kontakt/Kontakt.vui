@@ -2,8 +2,9 @@
 VUIName=Kontakt
 PClass=Kontakt
 BClass=None
+ActiveKey=Enter
 [Keys]
-Ctrl+L=Load
+Ctrl+D=AllLibDelete
 [1]
 Text=Load
 ObjectType=Button

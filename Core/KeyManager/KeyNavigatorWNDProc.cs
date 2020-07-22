@@ -16,7 +16,6 @@ int modifier = (int)m.LParam & 0xFFFF;
 Keys key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);
 if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F3)
 {
-MessageBox.Show(modifier.ToString(), "");
 MagicKeys.HelpForm();
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F4)
