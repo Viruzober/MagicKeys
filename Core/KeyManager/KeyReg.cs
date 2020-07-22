@@ -14,6 +14,8 @@ public static KeysConverter kc = new KeysConverter();
 
 public static void KeyReg()
 {
+if (VUIKeys.Count != 0)
+{
 int IDKey = 0;
 foreach(var OBJKey in VUIKeys)
 {
@@ -30,6 +32,7 @@ if (KeyItems[K] == "Win") Mod = Mod|MKC.WIN;
             uint key = (uint)(Keys)kc.ConvertFrom(KeyItems[KeyItems.Length-1]);
 RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, key);
 IDKey+=1;
+}
 }
 KeyNavigatorReg(Ini.IniRead(@"VUI\"+API.GetVUI(), "Info", "ActiveKey"));
 }
