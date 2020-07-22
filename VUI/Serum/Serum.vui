@@ -2,6 +2,7 @@
 VUIName=Serum
 PClass=Serum
 BClass=None
+ActiveKey=Space
 [1]
 Text=Presets menu
 ObjectType=Button

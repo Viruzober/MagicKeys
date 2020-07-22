@@ -42,6 +42,10 @@ if (Ini.IniKeyExists(VUIFile, I.ToString(), "Param") == true)
 {
 VUIObjects[I].Add("Param", Ini.IniRead(VUIFile, I.ToString(), "Param"));
 }
+if (Ini.IniKeyExists(VUIFile, I.ToString(), "Key") == true)
+{
+VUIObjects[I].Add("Key", Ini.IniRead(VUIFile, I.ToString(), "Key"));
+}
 }
 VUIObjectsUpdate(true);
 KeyLoader();

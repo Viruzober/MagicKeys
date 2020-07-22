@@ -19,11 +19,11 @@ else
 {
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 2);
-InvokeFromString("KeyUnReg");
+KeyUnReg();
 HelpForm HF = new HelpForm();
 HF.HelpFile = HelpFile;
 HF.ShowDialog();
-InvokeFromString("KeyReg");
+KeyReg();
 MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 2, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
 }

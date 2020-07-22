@@ -31,7 +31,6 @@ else
 Speak("Перед использованием этого плагина выполните соответствующую инструкцию для него из папки settings");
 return;
 }
-KeyReg();
 }
 
 public static void PluginUnLoad()
