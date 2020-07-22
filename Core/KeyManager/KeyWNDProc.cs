@@ -16,7 +16,8 @@ string modifier = KeyParse((int)m.LParam & 0xFFFF);
 string key = ((Keys)(((int)m.LParam >> 16) & 0xFFFF)).ToString();
 if (VUIKeys.ContainsKey(modifier+key) == true)
 {
-InvokeFromString(FuncParse(VUIKeys[modifier+key]), ParamParse(VUIKeys[modifier+key]));
+(string Func, string Param) = FuncParse(VUIKeys[modifier+key]);
+InvokeFromString(Func, Param);
 }
 break;
 }

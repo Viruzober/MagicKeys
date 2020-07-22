@@ -6,10 +6,11 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static string FuncParse(string FuncParam)
+public static (string, string) FuncParse(string FuncParam)
 {
-string[] Temp = FuncParam.Split("|");
-return Temp[0];
+string[] Temp = new string[2];
+Temp = FuncParam.Split("|, 2");
+return (Temp[0], Temp[1]);
 }
 
 }
