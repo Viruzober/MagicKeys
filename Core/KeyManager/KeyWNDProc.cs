@@ -14,13 +14,9 @@ switch (m.Msg)
 case MKC.WM_HOTKEY:
 string modifier = KeyParse((int)m.LParam & 0xFFFF);
 string key = ((Keys)(((int)m.LParam >> 16) & 0xFFFF)).ToString();
-if (VUIKeys.ContainsKey(modifier+"+"+key) == true)
+if (VUIKeys.ContainsKey(modifier+key) == true)
 {
-InvokeFromString(FuncParse(VUIKeys[modifier+"+"+key]), ParamParse(VUIKeys[modifier+"+"+key]));
-}
-else if (VUIKeys.ContainsKey(key) == true)
-{
-InvokeFromString(FuncParse(VUIKeys[key]), ParamParse(VUIKeys[key]));
+InvokeFromString(FuncParse(VUIKeys[modifier+key]), ParamParse(VUIKeys[modifier+key]));
 }
 break;
 }
