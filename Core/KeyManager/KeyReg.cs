@@ -14,7 +14,7 @@ public static KeysConverter kc = new KeysConverter();
 
 public static void KeyReg()
 {
-if (VUIKeys.Count != 0)
+if (VUIKeys.ContainsKey("None") == false)
 {
 int IDKey = 0;
 foreach(var OBJKey in VUIKeys)

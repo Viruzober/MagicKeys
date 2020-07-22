@@ -18,6 +18,10 @@ for(int I = 0; I <= KeyList.Count-1; I++)
 VUIKeys.Add(KeyList[I], Ini.IniRead(@"VUI\"+API.GetVUI(), "Keys", KeyList[I]));
 }
 }
+else
+{
+VUIKeys.Add("None", "None");
+}
 }
 
 }

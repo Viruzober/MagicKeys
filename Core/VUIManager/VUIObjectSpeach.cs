@@ -17,6 +17,7 @@ if (API.GetAutoFunc() != null)
 string AutoFunc = InvokeFromString(API.GetAutoFunc());
 SpeachObject += " "+AutoFunc;
 }
+SpeachObject += " "+API.GetObjectKey();
 Speak(SpeachObject);
 }
 

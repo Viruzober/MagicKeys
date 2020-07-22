@@ -41,6 +41,11 @@ public static string GetModule()
 return PluginsList[0]["Module"];
 }
 
+public static string GetActiveKey()
+{
+return PluginsList[0]["ActiveKey"];
+}
+
 public static string GetText()
 {
 return VUIObjects[ActiveObjects[Section]]["Text"];
@@ -79,7 +84,7 @@ return VUIObjects[ActiveObjects[Section]]["Param"];
 return null;
 }
 
-public static string GetKey()
+public static string GetObjectKey()
 {
 if (VUIObjects[ActiveObjects[Section]].ContainsKey("Key") == true)
 {
