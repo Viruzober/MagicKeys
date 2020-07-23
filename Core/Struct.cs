@@ -5,6 +5,7 @@ namespace MagicKeys
 {
     public partial class MagicKeys
 {
+
 [StructLayout(LayoutKind.Sequential)]
 public struct WinPoint
 {

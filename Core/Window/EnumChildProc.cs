@@ -7,6 +7,9 @@ namespace MagicKeys
 {
 public partial class MagicKeys
 {
+[DllImport("user32.dll")]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool EnumChildWindows(IntPtr hwndParent, EnumChildProcDelegate lpEnumFunc, IntPtr lParam);
 
 public static bool EnumChildProc(IntPtr handle, IntPtr pointer)
 {

@@ -37,8 +37,8 @@ public static int[] P = new int[10];
 // Для хранения временных координат.
 public static int[] DP = new int[10];
 public static int nChars = 256;
+public static StringBuilder Text = new StringBuilder(nChars);
 public static StringBuilder Title = new StringBuilder(nChars);
 public static StringBuilder Class = new StringBuilder(nChars);
-public static StringBuilder Text = new StringBuilder(nChars);
 }
 }

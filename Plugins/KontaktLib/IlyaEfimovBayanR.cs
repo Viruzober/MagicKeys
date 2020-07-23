@@ -39,30 +39,22 @@ VUIObjectSwitcher(false, "true", 3, 3);
 
 public static void AttackTime()
 {
-KeyUnReg();
 Slider("Attack Time", 45, 270, "H", 0.86, 1.4);
-KeyReg();
 }
 
 public static void KeyNoise()
 {
-KeyUnReg();
 Slider("Key Noise", 170, 190, "H", 0.86, 1.4);
-KeyReg();
 }
 
 public static void Bellow()
 {
-KeyUnReg();
 Slider("Bellow", 170, 230, "H", 0.86, 1.4);
-KeyReg();
 }
 
 public static void Release()
 {
-KeyUnReg();
 Slider("Release", 170, 270, "H", 0.86, 1.4);
-KeyReg();
 }
 
 public static void Reverb()
@@ -83,9 +75,7 @@ VUIObjectSwitcher(false, "false", 8, 8);
 
 public static void ReverbLevel()
 {
-KeyUnReg();
 Slider("ReverbLevel", 280, 230, "H", 0.86, 1.4);
-KeyReg();
 }
 
 public static void Detune()
