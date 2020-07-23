@@ -2,6 +2,7 @@
 VUIName=Delay
 PClass=Nexus
 BClass=None
+ActiveKey=Enter
 [1]
 Text=Delay
 ObjectType=CheckBox

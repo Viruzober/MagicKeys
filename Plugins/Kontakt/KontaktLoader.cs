@@ -17,7 +17,7 @@ LibLoaded();
 
 public static void PluginUnLoad()
 {
-MagicKeys.KeyUnReg();
+return;
 }
 
 }

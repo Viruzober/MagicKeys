@@ -8,12 +8,12 @@ public static partial class Nexus
 
 public static void PluginLoad()
 {
-KeyReg();
+return;
 }
 
 public static void PluginUnLoad()
 {
-KeyUnReg();
+return;
 }
 
 }

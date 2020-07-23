@@ -2,6 +2,7 @@
 VUIName=IlyaEfimovBayanL
 PClass=IlyaEfimovBayanL
 BClass=Kontakt
+ActiveKey=Enter
 [1]
 Text=Auto Attack
 ObjectType=CheckBox

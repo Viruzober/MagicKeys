@@ -2,6 +2,7 @@
 VUIName=Reverb
 PClass=Nexus
 BClass=None
+ActiveKey=Enter
 [1]
 Text=Reverb
 ObjectType=CheckBox

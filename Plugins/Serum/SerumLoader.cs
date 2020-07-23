@@ -35,7 +35,7 @@ return;
 
 public static void PluginUnLoad()
 {
-KeyUnReg();
+return;
 }
 
 }

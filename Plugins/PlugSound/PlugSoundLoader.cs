@@ -8,12 +8,12 @@ public static partial class PlugSound
 
 public static void PluginLoad()
 {
-KeyReg();
+return;
 }
 
 public static void PluginUnLoad()
 {
-KeyUnReg();
+return;
 }
 
 }

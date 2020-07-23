@@ -2,6 +2,17 @@
 VUIName=Nexus
 PClass=Nexus
 BClass=None
+ActiveKey=Enter
+[Keys]
+Ctrl+Home=NexusBankPage|Back
+Ctrl+End=NexusBankPage|Next
+Ctrl+Prior=NexusPatchPage|Back
+Ctrl+Next=NexusPatchPage|Next
+Home=NexusBank|Back
+End=NexusBank|Next
+Prior=NexusPatch|Back
+Next=NexusPatch|Next
+S=NexusSearch
 [1]
 Text=filter modifier
 ObjectType=Button
