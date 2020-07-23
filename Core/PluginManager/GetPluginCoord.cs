@@ -7,7 +7,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 public static int[] ControlCoord;
-public static int[] GetPos()
+public static int[] GetPluginCoord()
 {
 IntPtr Handle = GetForegroundWindow();
 int[] RC = GetWinRect(Handle);
