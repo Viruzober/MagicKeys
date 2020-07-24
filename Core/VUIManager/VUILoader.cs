@@ -53,6 +53,7 @@ VUIObjects[I].Add("Key", Ini.IniRead(VUIFile, I.ToString(), "Key"));
 }
 }
 VUIObjectsUpdate(true);
+PluginLoad();
 KeyLoader();
 KeyReg();
 }
