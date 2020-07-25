@@ -11,28 +11,25 @@ public partial class MagicKeys
 public static void PluginLoad()
 {
 string VUIPath = @"VUI\"+(API.GetVUI().Substring(0, API.GetVUI().Length - 4)+"Load.vui");
-if (File.Exists(@VUIPath) != true)
+if (File.Exists(@VUIPath) == false)
 {
 return;
 }
-int Count = Ini.IniCountSections(VUIPath);
-for(int I = 0; I <= Count; I++)
+int VUICount = Ini.IniCountSections(VUIPath);
+for(int I = 1; I <= VUICount; I++)
 {
-List<string> Items = Ini.IniReadKeys(VUIPath, I.ToString());
-List<string> Values = Ini.IniReadValues(VUIPath, I.ToString());
-string[] Trigger = Items[0].Split("|");
-if (Trigger[0] == "Img")
-{
-if (ImgSearch(@"Images\"+Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))
-{
-LoadActionRun(Items.GetRange(2, Count-1), Values.GetRange(2, Count-1), Convert.ToInt32(Values[1]));
-}
-else if (Trigger[0] == "VUI")
+List<string> VUIItems = Ini.IniReadKeys(VUIPath, I.ToString());
+List<string> VUIValues = Ini.IniReadValues(VUIPath, I.ToString());
+string[] Trigger = VUIValues[0].Split("|");
+if (Trigger[0] == "VUI")
 {
 if (Trigger[1] == API.GetVUIName())
 {
-LoadActionRun(Items.GetRange(2, Count-1), Values.GetRange(2, Count-1), Convert.ToInt32(Values[1]));
-}
+string VUFPath = @"VUI\"+(API.GetVUI().Substring(0, API.GetVUI().Length - 4)+"Load.vuf");
+int VUFCount = Ini.IniCountSections(VUFPath);
+List<string> VUFItems = Ini.IniReadKeys(VUFPath, I.ToString());
+List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
+VUFInvoke(VUFItems, VUFValues, Convert.ToInt32(VUIValues[1]));
 }
 }
 }

@@ -32,10 +32,8 @@ if (API.GetWClass() == "#32770")
 {
 ShowWindow(GetForegroundWindow(), 3);
 }
-InvokeFromString("PluginLoad");
 SoundPlay("WindowOpened.ogg", 0);
 WinClose(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]);
-InvokeFromString("PluginUnLoad");
 KeyUnReg();
 SoundPlay("WindowClose.ogg", 0);
 }

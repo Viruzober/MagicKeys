@@ -1,1 +1,4 @@
-﻿
+﻿[1]
+Trigger=VUI|Kontakt|true
+TimeOut=20
+Action=1
