@@ -26,10 +26,8 @@ if (Trigger[0] == "VUI")
 if (Trigger[1] == API.GetVUIName())
 {
 string VUFPath = @"VUI\"+(API.GetVUI().Substring(0, API.GetVUI().Length - 4)+"Load.vuf");
-int VUFCount = Ini.IniCountSections(VUFPath);
-List<string> VUFItems = Ini.IniReadKeys(VUFPath, I.ToString());
 List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
-VUFInvoke(VUFItems, VUFValues, Convert.ToInt32(VUIValues[1]));
+VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
 }
 }
 }

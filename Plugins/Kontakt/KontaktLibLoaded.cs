@@ -8,6 +8,7 @@ public static partial class Kontakt
 
 public static void LibLoaded()
 {
+Speak("Говноооооооооооооооооооооооооопаааааааааааааааааа");
 int[] LibLoaded = ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp");
 if(LibLoaded[0] == 1)
 {
