@@ -46,6 +46,11 @@ public static string GetActiveKey()
 return PluginsList[0]["ActiveKey"];
 }
 
+public static string GetVUF()
+{
+return PluginsList[0]["VUF"];
+}
+
 public static string GetText()
 {
 return VUIObjects[ActiveObjects[Section]]["Text"];

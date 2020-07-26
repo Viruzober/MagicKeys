@@ -8,10 +8,18 @@ namespace MagicKeys
 
 public static MagicKeys MK = new MagicKeys();
 
-public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
+public static string InvokeFromString(string InvokeFunc, string FuncParam = null, string GetClass = null)
 {
 KeyUnReg();
-Type Class =Type.GetType(PluginsList[0]["PClass"]);
+Type Class;
+if (GetClass != null)
+{
+Class =Type.GetType(GetFullClassName(GetClass));
+}
+else
+{
+Class =Type.GetType(PluginsList[0]["PClass"]);
+}
 MethodInfo Method;
 object[] Param;
 if ((Method = Class.GetMethod(InvokeFunc)) == null && PluginsList[0]["BClass"] != "None")

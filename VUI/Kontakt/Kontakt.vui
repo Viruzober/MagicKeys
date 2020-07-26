@@ -5,6 +5,7 @@ BClass=None
 ActiveKey=Enter
 [Keys]
 Ctrl+D=AllLibDelete
+L=Load
 [1]
 Text=Load
 ObjectType=Button

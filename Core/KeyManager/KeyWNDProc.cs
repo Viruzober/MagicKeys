@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
 
@@ -17,7 +18,15 @@ string key = ((Keys)(((int)m.LParam >> 16) & 0xFFFF)).ToString();
 if (VUIKeys.ContainsKey(modifier+key) == true)
 {
 (string Func, string Param) = FuncParse(VUIKeys[modifier+key]);
+if (API.GetPClass() == "MagicKeys")
+{
+List<string> VUFValues = Ini.IniReadValues(@"VUI\"+API.GetVUF(), Func);
+VUFInvoke(VUFValues);
+}
+else
+{
 InvokeFromString(Func, Param);
+}
 }
 break;
 }
