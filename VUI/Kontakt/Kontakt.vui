@@ -2,8 +2,8 @@
 VUIName=Kontakt
 PClass=Kontakt
 BClass=None
-ActiveKey=Enter
-Load=Code
+ActivationKey=Enter
+Loader=Code
 [Keys]
 Ctrl+D=AllLibDelete
 L=Load

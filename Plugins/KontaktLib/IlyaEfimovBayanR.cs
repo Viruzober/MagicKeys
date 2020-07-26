@@ -176,7 +176,7 @@ Speak("Bossoon отключён");
 }
 }
 
-public static void Loader()
+public static void PluginLoad()
 {
 if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
 {

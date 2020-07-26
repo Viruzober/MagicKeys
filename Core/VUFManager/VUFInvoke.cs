@@ -17,7 +17,7 @@ string[] FP = Action[I].Split("|", 2);
 if (FP[0] == "Func")
 {
 string[] Param = FP[1].Split("|", 2);
-if (Param[1] == "No")
+if (Param.Length == 1)
 {
 InvokeFromString(Param[0]);
 continue;

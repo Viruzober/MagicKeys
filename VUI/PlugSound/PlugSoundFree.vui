@@ -2,7 +2,7 @@
 VUIName=PlugSoundFree
 PClass=PlugSound
 BClass=None
-ActiveKey=Space
+ActivationKey=Space
 [1]
 Text=Bank and patch menu
 ObjectType=Button

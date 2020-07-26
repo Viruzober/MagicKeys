@@ -2,7 +2,7 @@
 VUIName=Output
 PClass=Nexus
 BClass=None
-ActiveKey=Enter
+ActivationKey=Space
 [1]
 Text=Vol
 ObjectType=Slider

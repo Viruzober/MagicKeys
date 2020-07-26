@@ -2,7 +2,8 @@
 VUIName=IlyaEfimovBayanR
 PClass=IlyaEfimovBayanR
 BClass=Kontakt
-ActiveKey=Enter
+ActivationKey=Enter
+Loader=Code
 [1]
 Text=Round Robin
 ObjectType=CheckBox

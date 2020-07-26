@@ -2,7 +2,7 @@
 VUIName=FilterModifier
 PClass=Nexus
 BClass=None
-ActiveKey=Enter
+ActivationKey=Space
 [1]
 Text=Filter Modifier
 ObjectType=CheckBox

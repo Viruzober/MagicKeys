@@ -2,7 +2,7 @@
 VUIName=Omnisphere
 PClass=Omnisphere
 BClass=None
-ActiveKey=Space
+ActivationKey=Space
 [1]
 Text=Copy serial code
 ObjectType=Button

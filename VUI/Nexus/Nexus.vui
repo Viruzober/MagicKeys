@@ -2,7 +2,7 @@
 VUIName=Nexus
 PClass=Nexus
 BClass=None
-ActiveKey=Enter
+ActivationKey=Space
 [Keys]
 Ctrl+Home=NexusBankPage|Back
 Ctrl+End=NexusBankPage|Next

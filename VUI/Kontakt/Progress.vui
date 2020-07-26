@@ -2,7 +2,7 @@
 VUIName=Progress
 PClass=Kontakt
 BClass=None
-ActiveKey=Enter
+ActivationKey=Enter
 [1]
 Text=Loading
 ObjectType=Progress

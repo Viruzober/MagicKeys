@@ -48,9 +48,9 @@ return PluginsList[0]["ActiveKey"];
 
 public static string GetLoad()
 {
-if (PluginsList[0].ContainsKey("Load") == true)
+if (PluginsList[0].ContainsKey("Loader") == true)
 {
-return PluginsList[0]["Load"];
+return PluginsList[0]["Loader"];
 }
 else
 {

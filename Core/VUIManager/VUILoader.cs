@@ -24,10 +24,10 @@ else
 PluginsList[0]["BClass"] = GetFullClassName(Ini.IniRead(VUIFile, "Info", "BClass"));
 }
 PluginsList[0]["VUIName"] = Ini.IniRead(VUIFile, "Info", "VUIName");
-PluginsList[0]["ActiveKey"] = Ini.IniRead(VUIFile, "Info", "ActiveKey");
-if (Ini.IniKeyExists(VUIFile, "Info", "Load") == true)
+PluginsList[0]["ActivationKey"] = Ini.IniRead(VUIFile, "Info", "ActivationKey");
+if (Ini.IniKeyExists(VUIFile, "Info", "Loader") == true)
 {
-PluginsList[0]["Load"] = Ini.IniRead(VUIFile, "Info", "Load");
+PluginsList[0]["Loader"] = Ini.IniRead(VUIFile, "Info", "Loader");
 }
 Count = Ini.IniCountSections(VUIFile)-1;
 if (Ini.IniSectionExists(VUIFile, "Keys") == true)
