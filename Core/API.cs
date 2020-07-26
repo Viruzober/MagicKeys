@@ -48,7 +48,14 @@ return PluginsList[0]["ActiveKey"];
 
 public static string GetVUF()
 {
+if (PluginsList[0].ContainsKey("VUF") == true)
+{
 return PluginsList[0]["VUF"];
+}
+else
+{
+return null;
+}
 }
 
 public static string GetText()

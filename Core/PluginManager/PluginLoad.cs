@@ -27,7 +27,7 @@ if (ImgSearch(@"Images\"+Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoole
 {
 string VUFPath = @"VUI\"+API.GetVUI().Substring(0, API.GetVUI().Length - 4)+"Load.vuf";
 List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
-LoadInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
+VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
 }
 }
 else if (Trigger[0] == "VUI")
@@ -36,7 +36,7 @@ if (Trigger[1] == API.GetVUIName())
 {
 string VUFPath = @"VUI\"+API.GetVUI().Substring(0, API.GetVUI().Length - 4)+"Load.vuf";
 List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
-LoadInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
+VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
 }
 }
 }
