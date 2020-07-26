@@ -33,10 +33,5 @@ return;
 }
 }
 
-public static void PluginUnLoad()
-{
-return;
-}
-
 }
 }

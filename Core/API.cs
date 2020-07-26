@@ -46,11 +46,11 @@ public static string GetActiveKey()
 return PluginsList[0]["ActiveKey"];
 }
 
-public static string GetVUF()
+public static string GetLoad()
 {
-if (PluginsList[0].ContainsKey("VUF") == true)
+if (PluginsList[0].ContainsKey("Load") == true)
 {
-return PluginsList[0]["VUF"];
+return PluginsList[0]["Load"];
 }
 else
 {

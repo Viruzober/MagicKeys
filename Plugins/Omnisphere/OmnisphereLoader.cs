@@ -29,10 +29,5 @@ AudoSelect();
 }
 }
 
-public static void PluginUnLoad()
-{
-return;
-}
-
 }
 }

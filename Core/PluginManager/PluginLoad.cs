@@ -10,6 +10,13 @@ public partial class MagicKeys
 
 public static void PluginLoad()
 {
+if (API.GetLoad() == "Code")
+{
+InvokeFromString("PluginLoad");
+return;
+}
+else if (API.GetLoad() == "VUF")
+{
 string VUIPath = @"VUI\"+API.GetVUI().Substring(0, API.GetVUI().Length - 4)+"Load.vui";
 if (File.Exists(@VUIPath) == false)
 {
@@ -37,6 +44,7 @@ if (Trigger[1] == API.GetVUIName())
 string VUFPath = @"VUI\"+API.GetVUI().Substring(0, API.GetVUI().Length - 4)+"Load.vuf";
 List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
 VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
+}
 }
 }
 }

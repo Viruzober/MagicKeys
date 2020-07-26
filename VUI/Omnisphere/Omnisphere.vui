@@ -3,6 +3,7 @@ VUIName=Omnisphere
 PClass=Omnisphere
 BClass=None
 ActiveKey=Space
+Load=Code
 [Keys]
 Ctrl+Home=OmnisphereBankPage|Back
 Ctrl+End=OmnisphereBankPage|Next

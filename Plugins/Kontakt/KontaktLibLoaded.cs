@@ -8,13 +8,10 @@ public static partial class Kontakt
 
 public static void LibLoaded()
 {
-int[] LibLoaded = ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp");
-if(LibLoaded[0] == 1)
+if(ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp", true)[0] == 1)
 {
 VUIObjectSwitcher(true, "false", 4, 6);
-return;
 }
-VUIObjectSwitcher(true, "true", 4, 6);
 }
 
 }
