@@ -1,0 +1,39 @@
+[Info]
+VUIName=Kontakt
+PClass=Kontakt
+BClass=None
+ActivationKey=Enter
+Loader=Code
+[Keys]
+Ctrl+D=AllLibDelete
+L=Load
+[1]
+Text=Load
+ObjectType=Button
+Help=Загрузить библиотеку
+Func=Load
+[2]
+Text=Batch resave
+ObjectType=Button
+Help=Пересохранить библиотеку для более быстрой загрузки
+Func=BatchResave
+[3]
+Text=Add library tool
+ObjectType=Button
+Help=Запуск утилиты для управления библиотеками
+Func=AddLibrary
+[4]
+Text=Save as
+ObjectType=Button
+Help=Сохранить библиотеку отдельно
+Func=LibSave
+[5]
+Text=Delete all loaded libraries
+ObjectType=Button
+Help=Удалить все загруженные библиотеки
+Func=AllLibDelete
+[6]
+Text=Go to library list
+ObjectType=Button
+Help=Переход к списку загруженных библиотек
+Func=GoToLibList

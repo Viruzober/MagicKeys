@@ -1,0 +1,50 @@
+[Info]
+VUIName=ConntentMissing
+PClass=Kontakt
+BClass=None
+ActivationKey=Enter
+[1]
+Text=Browse for folder
+ObjectType=Button
+Help=Выбрать папку библиотеки
+Func=CmBFD
+[2]
+Text=Browse for Files
+ObjectType=Button
+Help=Выбрать файлы библиотеки
+Func=CmBFF
+[3]
+Text=Search Filesystern
+ObjectType=Button
+Help=Поиск файлов библиотеки
+Func=CmSFST
+[4]
+Text=Search Database
+ObjectType=Button
+Help=Поиск базы библиотеки
+Func=CmSD
+[5]
+Text=Abort Loading
+ObjectType=Button
+Help=Прервать загрузку
+Func=CmAL
+[6]
+Text=Resolue all possible
+ObjectType=CheckBox
+Help=Нет подсказки
+Func=CmRAP
+[7]
+Text=Check for duplicates (takes more time)
+ObjectType=CheckBox
+Help=Проверить на дубликаты (Занимает больше времени)
+Func=CmCFD
+[8]
+Text=Allow alternative file types
+ObjectType=CheckBox
+Help=Разрешить альтернативные типы файлов
+Func=CmAAFT
+[9]
+Text=Keep search mode end selected folders for the corrent session
+ObjectType=CheckBox
+Help=Сохранить режим поиска для другого сеанса
+Func=CmKSM

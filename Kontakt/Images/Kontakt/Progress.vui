@@ -1,0 +1,16 @@
+[Info]
+VUIName=Progress
+PClass=Kontakt
+BClass=None
+ActivationKey=Enter
+[1]
+Text=Loading
+ObjectType=Progress
+Help=Прогресс загрузки библиотеки
+AutoFunc=Progress
+Func=Progress
+[2]
+Text=Cancel
+ObjectType=Button
+Help=Отменить загрузку библиотеки
+Func=ProgressCancel
