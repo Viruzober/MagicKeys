@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Platforms>x64;x86</Platforms>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MagicKeys\MagicKeys.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="set mkbuilddir=$(SolutionDir)MagicKeys\bin\$(PlatformName)\$(ConfigurationName)&#xD;&#xA;set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;%25mkbuilddir%25\Plugins\$(TargetName)\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;%25mkbuilddir%25\Plugins\$(TargetName)\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Manifest.ini&quot; &quot;%25mkbuilddir%25\Plugins\$(TargetName)\&quot; &gt; nul&#xD;&#xA;copy &quot;$(TargetPath)&quot; &quot;%25mkbuilddir%25\Plugins\$(TargetName)\&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;%25distdir%25\Plugins\$(TargetName)\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;%25distdir%25\Plugins\$(TargetName)\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Manifest.ini&quot; &quot;%25distdir%25\Plugins\$(TargetName)\&quot; &gt; nul&#xD;&#xA;copy &quot;$(TargetPath)&quot; &quot;%25distdir%25\Plugins\$(TargetName)\&quot; &gt; nul" />
+  </Target>
+
+</Project>
