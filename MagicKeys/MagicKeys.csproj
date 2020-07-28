@@ -8,6 +8,9 @@
     <Platforms>x86;x64</Platforms>
     <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
@@ -32,7 +35,7 @@
     <DefineConstants>TRACE;X64</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
-    <OutputPath />
+    <OutputPath></OutputPath>
     <ErrorReport>none</ErrorReport>
     <FileAlignment>512</FileAlignment>
     <DebugType>none</DebugType>
@@ -46,12 +49,14 @@
     <DefineConstants>DEBUG;TRACE;X86</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DefineConstants>DEBUG;TRACE;X64</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>false</Optimize>
+    <OutputPath></OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -155,11 +160,11 @@
   </Choose>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="set distdir=$(ProjectDir)Dist\$(PlatformName)&#xD;&#xA;if exist &quot;%25distdir%25&quot; rd /s /q &quot;%25distdir%25&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;%25distdir%25\Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;%25distdir%25\VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Changelog.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
+    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;if exist &quot;%25distdir%25&quot; rd /s /q &quot;%25distdir%25&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;copy &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;xcopy /d /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;copy &quot;$(SolutionDir)Changelog.txt&quot; &quot;%25distdir%25\&quot; &gt; nul	&#xD;&#xA;copy &quot;$(SolutionDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul	&#xD;&#xA;copy &quot;$(SolutionDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul	" />
   </Target>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="if exist &quot;$(TargetDir)&quot; rd /s /q &quot;$(TargetDir)&quot;&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Images&quot; &quot;$(TargetDir)Images&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /d /e /i /q &quot;$(ProjectDir)VUI&quot; &quot;$(TargetDir)VUI&quot; &gt; nul&#xD;&#xA;copy &quot;$(ProjectDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(ProjectDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul	&#xD;&#xA;copy &quot;$(ProjectDir)Руководство пользователя.html&quot; &quot;$(TargetDir)&quot; &gt; nul	" />
+    <Exec Command="if exist &quot;$(TargetDir)&quot; rd /s /q &quot;$(TargetDir)&quot;" />
   </Target>
 
 </Project>
