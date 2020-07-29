@@ -1,56 +1,77 @@
 ﻿using System;
+using System.IO;
+using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public partial class API
+public class API
 {
+
+public static string GetVUIPath()
+{
+return @"Plugins\"+GetPClass()+@"\VUI\";
+}
+
+public static string GetImgPath()
+{
+return @"Plugins\"+GetPClass()+@"\Images\";
+}
+
+public static string GetModulePath()
+{
+if (File.Exists(@"Plugins\"+GetPClass()+@"\"+GetPClass()+".dll") == true)
+{
+return @"Plugins\"+GetPClass()+@"\"+GetPClass()+".dll";
+}
+return null;
+}
 
 public static string GetWTitle()
 {
-return PluginsList[0]["WTitle"];
+return CurrentPlugin["WTitle"];
 }
 
 public static string GetWClass()
 {
-return PluginsList[0]["WClass"];
+return CurrentPlugin["WClass"];
 }
 
 public static string GetPClass()
 {
-return PluginsList[0]["PClass"];
+return CurrentPlugin["PClass"];
 }
 
 public static string GetBClass()
 {
-return PluginsList[0]["BClass"];
+return CurrentPlugin["BClass"];
 }
 
 public static string GetVUI()
 {
-return PluginsList[0]["VUI"];
+return CurrentPlugin["VUI"];
 }
 
 public static string GetVUIName()
 {
-return PluginsList[0]["VUIName"];
+return CurrentPlugin["VUIName"];
 }
 
 public static string GetModule()
 {
-return PluginsList[0]["Module"];
+return CurrentPlugin["Module"];
 }
 
 public static string GetActiveKey()
 {
-return PluginsList[0]["ActiveKey"];
+return CurrentPlugin["ActiveKey"];
 }
 
 public static string GetLoad()
 {
-if (PluginsList[0].ContainsKey("Loader") == true)
+if (CurrentPlugin.ContainsKey("Loader") == true)
 {
-return PluginsList[0]["Loader"];
+return CurrentPlugin["Loader"];
 }
 else
 {

@@ -9,17 +9,16 @@ namespace MagicKeys
 {
     public partial class MagicKeys
 {
-
-public static void GlobalPluginLoad(int ID)
+public static Dictionary<string, string> CurrentPlugin = new Dictionary<string, string>();
+public static void GlobalPluginLoad(string Item)
 {
-PluginsList.Add(0, new Dictionary<string, string>());
-PluginsList[0].Add("WTitle", PluginsList[ID]["WTitle"]);
-PluginsList[0].Add("WClass", PluginsList[ID]["WClass"]);
-PluginsList[0].Add("PClass", PluginsList[ID]["PClass"]);
-PluginsList[0].Add("BClass", PluginsList[ID]["BClass"]);
-PluginsList[0].Add("VUI", PluginsList[ID]["VUI"]);
-PluginsList[0].Add("VUIName", PluginsList[ID]["VUIName"]);
-PluginsList[0].Add("Module", PluginsList[ID]["Module"]);
+CurrentPlugin.Add("WTitle", PluginsList[Item]["WTitle"]);
+CurrentPlugin.Add("WClass", PluginsList[Item]["WClass"]);
+CurrentPlugin.Add("PClass", PluginsList[Item]["PClass"]);
+CurrentPlugin.Add("BClass", PluginsList[Item]["BClass"]);
+CurrentPlugin.Add("VUI", PluginsList[Item]["VUI"]);
+CurrentPlugin.Add("VUIName", PluginsList[Item]["VUIName"]);
+CurrentPlugin.Add("Module", PluginsList[Item]["Module"]);
 }
 
 }

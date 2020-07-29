@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Threading;
+using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public static partial class Kontakt
+public partial class Kontakt
 {
 
 public static void PluginLoad()

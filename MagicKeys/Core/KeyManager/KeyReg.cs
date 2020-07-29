@@ -34,7 +34,7 @@ RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, key);
 IDKey+=1;
 }
 }
-KeyNavigatorReg(Ini.IniRead(@"VUI\"+API.GetVUI(), "Info", "ActivationKey"));
+KeyNavigatorReg(Ini.IniRead(API.GetVUIPath()+API.GetVUI(), "Info", "ActivationKey"));
 }
 
 }

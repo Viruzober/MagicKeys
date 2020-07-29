@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Windows.Forms;
 using System.Threading;
 using System.Reflection;
@@ -9,29 +10,37 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 
-public static Dictionary<int, Dictionary<string, string>> PluginsList = new Dictionary<int, Dictionary<string, string>>();
+public static Dictionary<string, Dictionary<string, string>> PluginsList = new Dictionary<string, Dictionary<string, string>>();
 
 public static void PluginsListLoader()
 {
-string IVUI = @"VUI\PluginsList.vui";
-int PCount = Ini.IniCountSections(IVUI);
-for(int I = 1; I <= PCount; I++)
+string[] dir = Directory.GetDirectories(@".\Plugins");
+for (int D = 0; D <= dir.Length-1; D++)
 {
-PluginsList.Add(I, new Dictionary<string, string>());
-PluginsList[I].Add("WTitle", Ini.IniRead(IVUI, I.ToString(), "WTitle"));
-PluginsList[I].Add("WClass", Ini.IniRead(IVUI, I.ToString(), "WClass"));
-PluginsList[I].Add("PClass", GetFullClassName(Ini.IniRead(IVUI, I.ToString(), "PClass")));
-if (Ini.IniRead(IVUI, I.ToString(), "BClass") == "None")
+if (File.Exists(dir[D]+@"\Manifest.ini") == false)
 {
-PluginsList[I].Add("BClass", "None");
+continue;
+}
+string IVUI = dir[D]+@"\Manifest.ini";
+List<string> MainPoints = Ini.IniReadSections(IVUI);
+foreach(string Point in MainPoints)
+{
+PluginsList.Add(Point, new Dictionary<string, string>());
+PluginsList[Point].Add("WTitle", Ini.IniRead(IVUI, Point, "WTitle"));
+PluginsList[Point].Add("WClass", Ini.IniRead(IVUI, Point, "WClass"));
+PluginsList[Point].Add("PClass", Ini.IniRead(IVUI, Point, "PClass"));
+if (Ini.IniRead(IVUI, Point, "BClass") == "None")
+{
+PluginsList[Point].Add("BClass", "None");
 }
 else
 {
-PluginsList[I].Add("BClass", GetFullClassName(Ini.IniRead(IVUI, I.ToString(), "BClass")));
+PluginsList[Point].Add("BClass", GetFullClassName(Ini.IniRead(IVUI, Point, "BClass")));
 }
-PluginsList[I].Add("VUI", Ini.IniRead(IVUI, I.ToString(), "VUI"));
-PluginsList[I].Add("VUIName", Ini.IniRead(IVUI, I.ToString(), "VUIName"));
-PluginsList[I].Add("Module", Ini.IniRead(IVUI, I.ToString(), "Module"));
+PluginsList[Point].Add("VUI", Ini.IniRead(IVUI, Point, "VUI"));
+PluginsList[Point].Add("VUIName", Ini.IniRead(IVUI, Point, "VUIName"));
+PluginsList[Point].Add("Module", Ini.IniRead(IVUI, Point, "Module"));
+}
 }
 }
 

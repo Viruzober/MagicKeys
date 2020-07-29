@@ -10,7 +10,7 @@ public partial class MagicKeys
 
 public static void HelpForm()
 {
-string HelpFile = @"VUI\"+PluginsList[0]["VUI"];
+string HelpFile = @"VUI\"+CurrentPlugin["VUI"];
 if (File.Exists(HelpFile.Substring(0, HelpFile.Length - 3)+"help") == false)
 {
 MagicKeys.Speak("Файл справки не найден");

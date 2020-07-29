@@ -19,25 +19,25 @@ if (KeySwitch == 1)
 {
 continue;
 }
-for (int I = 1; I <= PluginsList.Count; I++)
+foreach(string Item in PluginsList.Keys)
 {
-if (WinActive(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]) == true)
+if (Item == "Info")
 {
-GlobalPluginLoad(I);
+continue;
+}
+if (WinActive(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]) == true)
+{
+GlobalPluginLoad(Item);
 P = GetPluginCoord();
 if (P[0] == 1)
 {
 VUILoader(API.GetVUI());
-if (API.GetWClass() == "#32770")
-{
-ShowWindow(GetForegroundWindow(), 3);
-}
 SoundPlay("WindowOpened.ogg", 0);
-WinClose(PluginsList[I]["WTitle"], PluginsList[I]["WClass"]);
+WinClose(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
 KeyUnReg();
 SoundPlay("WindowClose.ogg", 0);
 }
-PluginsList.Remove(0);
+CurrentPlugin.Clear();
 }
 }
 }

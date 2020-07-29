@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace MagicKeys
 {
@@ -12,22 +13,22 @@ public static void VUILoader(string File)
 KeyUnReg();
 VUIKeys.Clear();
 SoundPlay("ChangeVUI.ogg", 0);
-string VUIFile = @"VUI\"+File;
-PluginsList[0]["VUI"] = @File;
-PluginsList[0]["PClass"] = GetFullClassName(Ini.IniRead(VUIFile, "Info", "PClass"));
+string VUIFile = API.GetVUIPath()+File;
+CurrentPlugin["VUI"] = @File;
+CurrentPlugin["PClass"] = Ini.IniRead(VUIFile, "Info", "PClass");
 if (Ini.IniRead(VUIFile, "Info", "BClass") == "None")
 {
-PluginsList[0]["BClass"] = "None";
+CurrentPlugin["BClass"] = "None";
 }
 else
 {
-PluginsList[0]["BClass"] = GetFullClassName(Ini.IniRead(VUIFile, "Info", "BClass"));
+CurrentPlugin["BClass"] = Ini.IniRead(VUIFile, "Info", "BClass");
 }
-PluginsList[0]["VUIName"] = Ini.IniRead(VUIFile, "Info", "VUIName");
-PluginsList[0]["ActivationKey"] = Ini.IniRead(VUIFile, "Info", "ActivationKey");
+CurrentPlugin["VUIName"] = Ini.IniRead(VUIFile, "Info", "VUIName");
+CurrentPlugin["ActivationKey"] = Ini.IniRead(VUIFile, "Info", "ActivationKey");
 if (Ini.IniKeyExists(VUIFile, "Info", "Loader") == true)
 {
-PluginsList[0]["Loader"] = Ini.IniRead(VUIFile, "Info", "Loader");
+CurrentPlugin["Loader"] = Ini.IniRead(VUIFile, "Info", "Loader");
 }
 Count = Ini.IniCountSections(VUIFile)-1;
 if (Ini.IniSectionExists(VUIFile, "Keys") == true)
@@ -57,6 +58,7 @@ VUIObjects[I].Add("Key", Ini.IniRead(VUIFile, I.ToString(), "Key"));
 }
 }
 VUIObjectsUpdate(true);
+GetPluginType();
 PluginLoad();
 KeyLoader();
 KeyReg();
