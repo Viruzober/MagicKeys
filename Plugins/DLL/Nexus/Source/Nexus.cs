@@ -8,37 +8,37 @@ public partial class Nexus
 
 public static void FilterModifier()
 {
-VUILoader(@"Nexus\FilterModifier.vui");
+VUILoader("FilterModifier");
 }
 
 public static void MasterFilter()
 {
-VUILoader(@"Nexus\MasterFilter.vui");
+VUILoader("MasterFilter");
 }
 
 public static void Delay()
 {
-VUILoader(@"Nexus\Delay.vui");
+VUILoader("Delay");
 }
 
 public static void Reverb()
 {
-VUILoader(@"Nexus\Reverb.vui");
+VUILoader("Reverb");
 }
 
 public static void Output()
 {
-VUILoader(@"Nexus\Output.vui");
+VUILoader("Output");
 }
 
 public static void AmpModifier()
 {
-VUILoader(@"Nexus\AmpModifier.vui");
+VUILoader("AmpModifier");
 }
 
 public static void Back()
 {
-VUILoader(@"Nexus\Nexus.vui");
+VUILoader("Nexus");
 }
 
 }

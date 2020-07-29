@@ -9,7 +9,7 @@ public partial class Kontakt
 
 public static void LibGetInfo()
 {
-int[] KTL = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
+int[] KTL = ImgSearch("KontaktTopLine");
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 Thread.Sleep(100);
 MouseClick("Left", KTL[1]+380, KTL[2]+15, 1, 0, 0, 10);

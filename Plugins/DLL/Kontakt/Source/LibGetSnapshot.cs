@@ -9,7 +9,7 @@ public partial class Kontakt
 
 public static void LibGetSnapshot()
 {
-int[] KLSS = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
+int[] KLSS = ImgSearch("KontaktTopLine");
 MouseClick("Left", KLSS[1]+620, KLSS[2]+20, 1, 0, 0, 10);
 Thread.Sleep(100);
 MouseClick("Left", KLSS[1]+360, KLSS[2]+15, 1, 0, 0, 10);

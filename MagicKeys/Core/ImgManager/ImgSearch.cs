@@ -12,11 +12,11 @@ IntPtr result;
 if (Window == true)
 {
 int[] RC = GetWinRect(GetForegroundWindow());
-result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+imgPath);
+result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+API.GetImgPath()+imgPath+".bmp");
 }
 else
 {
-result = ImageSearch(0, 0, Width, Height, "*20 "+imgPath);
+result = ImageSearch(0, 0, Width, Height, "*20 "+API.GetImgPath()+imgPath+".bmp");
 }
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
@@ -40,7 +40,7 @@ return pos;
 
 public static int[] ImgSearch(string imgPath)
 {
-IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+imgPath);
+IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+API.GetImgPath()+imgPath+".bmp");
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {

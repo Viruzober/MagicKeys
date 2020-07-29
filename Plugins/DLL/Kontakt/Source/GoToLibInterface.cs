@@ -11,7 +11,7 @@ public partial class Kontakt
 public static void GoToLibInterface()
 {
 Speak("Идёт поиск интерфейса");
-int[] KTL = ImgSearch(@"Images\Kontakt\KontaktTopLine.bmp");
+int[] KTL = ImgSearch("KontaktTopLine");
 DP[1] = KTL[1];
 DP[2] = KTL[2];
 MouseClickDrag("Left", KTL[1]+5, KTL[2]+5, P[1]+15, P[2]+75, 0, 1000);

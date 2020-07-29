@@ -12,7 +12,7 @@ public static void NexusBank(string To)
 {
 if (To == "Back")
 {
-int[] NXUP = ImgSearchArea(@"Images\Nexus\NexusUp.bmp", P[1]+330, P[2]+70, P[1]+350, P[2]+130, 40);
+int[] NXUP = ImgSearchArea("NexusUp", P[1]+330, P[2]+70, P[1]+350, P[2]+130, 40);
 if (NXUP[0] == 1)
 {
 NexusBankPage("Back");
@@ -20,7 +20,7 @@ return;
 }
 else if (NXUP[0] == 0)
 {
-int[] NXBP = ImgSearchArea(@"Images\Nexus\NexusBP.bmp", P[1]+260, P[2]+90, P[1]+280, P[2]+270, 20);
+int[] NXBP = ImgSearchArea("NexusBP", P[1]+260, P[2]+90, P[1]+280, P[2]+270, 20);
 if (NXBP[0] == 1)
 {
 MouseClick("Left", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
@@ -41,7 +41,7 @@ Speak(Bank);
 }
 else if (To == "Next")
 {
-int[] NXDW = ImgSearchArea(@"Images\Nexus\NexusDown.bmp", P[1]+300, P[2]+220, P[1]+330, P[2]+250, 40);
+int[] NXDW = ImgSearchArea("NexusDown", P[1]+300, P[2]+220, P[1]+330, P[2]+250, 40);
 if (NXDW[0] == 1)
 {
 NexusBankPage("Next");
@@ -49,10 +49,10 @@ return;
 }
 else if (NXDW[0] == 0)
 {
-int[] NXBP = ImgSearchArea(@"Images\Nexus\NexusBP.bmp", P[1]+260, P[2]+90, P[1]+280, P[2]+270, 20);
+int[] NXBP = ImgSearchArea("NexusBP", P[1]+260, P[2]+90, P[1]+280, P[2]+270, 20);
 if (NXBP[0] == 1)
 {
-int[] NXEND = ImgSearchArea(@"Images\Nexus\NexusEnd.bmp", NXBP[5], NXBP[6], NXBP[5]+15, NXBP[6]+20, 20);
+int[] NXEND = ImgSearchArea("NexusEnd", NXBP[5], NXBP[6], NXBP[5]+15, NXBP[6]+20, 20);
 if (NXEND[0] == 1)
 {
 SoundPlay("End.ogg", 0);

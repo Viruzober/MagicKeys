@@ -36,7 +36,7 @@ Process.Start(@"Settings\Kontakt\Add Library Tool x32\Add Library.exe");
 
 public static void AllLibDelete()
 {
-if (ImgSearch(@"Images\Kontakt\KontaktLibLoaded.bmp")[0] == 1)
+if (ImgSearch("KontaktLibLoaded")[0] == 1)
 {
 Speak("No loaded libraries");
 return;
@@ -47,14 +47,14 @@ MouseClick("Left", P[1]+355, P[2]+235, 1, 0, 0, 10);
 
 public static void GoToLibList()
 {
-VUILoader(@"Kontakt\LibList.vui");
+VUILoader("LibList");
 LibNormalize();
 Speak("OK");
 }
 
 public static void BackToOptionMenu()
 {
-VUILoader(@"Kontakt\Kontakt.vui");
+VUILoader("Kontakt");
 LibLoaded();
 Speak("OK");
 }

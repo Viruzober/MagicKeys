@@ -25,6 +25,10 @@ string IVUI = dir[D]+@"\Manifest.ini";
 List<string> MainPoints = Ini.IniReadSections(IVUI);
 foreach(string Point in MainPoints)
 {
+if (Point == "Info")
+{
+ continue;
+}
 PluginsList.Add(Point, new Dictionary<string, string>());
 PluginsList[Point].Add("WTitle", Ini.IniRead(IVUI, Point, "WTitle"));
 PluginsList[Point].Add("WClass", Ini.IniRead(IVUI, Point, "WClass"));

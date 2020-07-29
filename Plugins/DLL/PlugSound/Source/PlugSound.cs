@@ -3,7 +3,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public static partial class PlugSound
+public partial class PlugSound
 {
 
 public static void Menu()

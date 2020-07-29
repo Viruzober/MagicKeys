@@ -5,7 +5,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public static partial class Serum
+public partial class Serum
 {
 
 public static void PresetsMenu()

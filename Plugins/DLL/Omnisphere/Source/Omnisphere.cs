@@ -4,7 +4,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public static partial class Omnisphere
+public partial class Omnisphere
 {
 
 public static void Search()
@@ -41,12 +41,12 @@ AudoSelect();
 public static void AudoSelect()
 {
 Thread.Sleep(200);
-if (ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20)[0] == 0)
+if (ImgSearchArea("BP", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20)[0] == 0)
 {
 MouseClick("Left", P[1]+220, P[2]+170, 1, 0, 0, 10);
 }
 Thread.Sleep(200);
-if (ImgSearchArea(@"Images\Omnisphere\BP.bmp", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20)[0] == 0)
+if (ImgSearchArea("BP", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20)[0] == 0)
 {
 MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
 }

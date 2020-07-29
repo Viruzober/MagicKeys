@@ -6,7 +6,7 @@ namespace MagicKeys
 {
 public static int[] ImgSearchArea(string imgPath, int X, int Y, int W, int H, int Variant)
 {
-IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+imgPath);
+IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+API.GetImgPath()+imgPath+".bmp");
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {

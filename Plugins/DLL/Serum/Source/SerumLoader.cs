@@ -4,25 +4,25 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public static partial class Serum
+public partial class Serum
 {
 
 public static void PluginLoad()
 {
 while(
-ImgSearch(@"Images\Serum\SerumLogo.bmp", true)[0] == 0 &
-ImgSearch(@"Images\Serum\SerumReg.bmp", true)[0] == 0)
+ImgSearch("SerumLogo", true)[0] == 0 &
+ImgSearch("SerumReg", true)[0] == 0)
 {
 if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
 {
 return;
 }
 }
-if (ImgSearch(@"Images\Serum\SerumLogo.bmp", true)[0] == 1)
+if (ImgSearch("SerumLogo", true)[0] == 1)
 {
 VUIObjectSwitcher(true, "false", 6, 6);
 }
-else if (ImgSearch(@"Images\Serum\SerumReg.bmp", true)[0] == 1)
+else if (ImgSearch("SerumReg", true)[0] == 1)
 {
 VUIObjectSwitcher(true, "false", 1, 5);
 }
