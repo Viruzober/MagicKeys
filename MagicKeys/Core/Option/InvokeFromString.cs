@@ -12,7 +12,7 @@ KeyUnReg();
 Type Class = PClass;
 object OBC = Activator.CreateInstance(PClass);
 MethodInfo Method;
-object[] Param;
+object[] Param = null;
 if ((Method = Class.GetMethod(InvokeFunc)) == null && BClass != null)
 {
 Class = BClass;
