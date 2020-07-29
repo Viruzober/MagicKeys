@@ -29,10 +29,6 @@ if (FuncParam != null)
 {
 Param = new object[] {FuncParam};
 }
-else
-{
-Param = new object[] {};
-}
 string Result = Method.Invoke(OBC, Param) as string;
 KeyReg();
 return Result;
