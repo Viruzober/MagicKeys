@@ -10,7 +10,7 @@ public class API
 
 public static string GetVUIPath()
 {
-return @"Plugins\"+GetPClass()+@"\VUI\";
+return @"Plugins\"+GetPluginName()+@"\VUI\";
 }
 
 public static string GetImgPath()
@@ -20,9 +20,9 @@ return @"Plugins\"+GetPClass()+@"\Images\";
 
 public static string GetModulePath()
 {
-if (File.Exists(@"Plugins\"+GetPClass()+@"\"+GetPClass()+".dll") == true)
+if (File.Exists(@"Plugins\"+GetPluginName()+@"\"+GetPluginName()+".dll") == true)
 {
-return @"Plugins\"+GetPClass()+@"\"+GetPClass()+".dll";
+return @"Plugins\"+GetPluginName()+@"\"+GetPluginName()+".dll";
 }
 return null;
 }
@@ -52,9 +52,14 @@ public static string GetVUI()
 return CurrentPlugin["VUI"];
 }
 
-public static string GetVUIName()
+public static string GetVUIExt()
 {
-return CurrentPlugin["VUIName"];
+return CurrentPlugin["VUI"]+".vui";
+}
+
+public static string GetPluginName()
+{
+return CurrentPlugin["PluginName"];
 }
 
 public static string GetModule()

@@ -1,5 +1,5 @@
 [Info]
-VUIName=Nexus
+VUI=Nexus
 PClass=Nexus
 BClass=None
 ActivationKey=Space

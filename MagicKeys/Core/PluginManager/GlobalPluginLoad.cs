@@ -17,7 +17,7 @@ CurrentPlugin.Add("WClass", PluginsList[Item]["WClass"]);
 CurrentPlugin.Add("PClass", PluginsList[Item]["PClass"]);
 CurrentPlugin.Add("BClass", PluginsList[Item]["BClass"]);
 CurrentPlugin.Add("VUI", PluginsList[Item]["VUI"]);
-CurrentPlugin.Add("VUIName", PluginsList[Item]["VUIName"]);
+CurrentPlugin.Add("PluginName", PluginsList[Item]["PluginName"]);
 CurrentPlugin.Add("Module", PluginsList[Item]["Module"]);
 }
 

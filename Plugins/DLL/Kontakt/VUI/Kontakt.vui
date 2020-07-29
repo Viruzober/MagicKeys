@@ -1,5 +1,5 @@
 [Info]
-VUIName=Kontakt
+VUI=Kontakt
 PClass=Kontakt
 BClass=None
 ActivationKey=Enter

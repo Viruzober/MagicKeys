@@ -25,7 +25,7 @@ continue;
 InvokeFromString(Param[0], Param[1]);
 continue;
 }
-InvokeFromString("VUF"+FP[0], FP[1], "MagicKeys");
+InvokeFromString("VUF"+FP[0], FP[1]);
 }
 }
 

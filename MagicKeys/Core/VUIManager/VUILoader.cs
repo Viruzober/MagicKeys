@@ -16,15 +16,8 @@ SoundPlay("ChangeVUI.ogg", 0);
 string VUIFile = API.GetVUIPath()+File+".vui";
 CurrentPlugin["VUI"] = @File+".vui";
 CurrentPlugin["PClass"] = Ini.IniRead(VUIFile, "Info", "PClass");
-if (Ini.IniRead(VUIFile, "Info", "BClass") == "None")
-{
-CurrentPlugin["BClass"] = "None";
-}
-else
-{
 CurrentPlugin["BClass"] = Ini.IniRead(VUIFile, "Info", "BClass");
-}
-CurrentPlugin["VUIName"] = Ini.IniRead(VUIFile, "Info", "VUIName");
+CurrentPlugin["VUI"] = Ini.IniRead(VUIFile, "Info", "VUI");
 CurrentPlugin["ActivationKey"] = Ini.IniRead(VUIFile, "Info", "ActivationKey");
 if (Ini.IniKeyExists(VUIFile, "Info", "Loader") == true)
 {

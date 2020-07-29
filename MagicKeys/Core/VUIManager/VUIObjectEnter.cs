@@ -10,7 +10,7 @@ public static void VUIObjectEnter()
 {
 if (API.GetPClass() == "MagicKeys")
 {
-List<string> VUFValues = Ini.IniReadValues(API.GetVUIPath()+API.GetVUI().Substring(0, API.GetVUI().Length - 4)+".vuf", API.GetFunc());
+List<string> VUFValues = Ini.IniReadValues(API.GetVUIPath()+API.GetVUIExt().Substring(0, API.GetVUIExt().Length - 4)+".vuf", API.GetFunc());
 VUFInvoke(VUFValues);
 }
 if (API.GetParam() == null)

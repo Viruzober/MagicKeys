@@ -1,5 +1,5 @@
 [Info]
-VUIName=Delay
+VUI=Delay
 PClass=Nexus
 BClass=None
 ActivationKey=Space

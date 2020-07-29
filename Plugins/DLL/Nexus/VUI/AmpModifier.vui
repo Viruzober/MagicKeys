@@ -1,5 +1,5 @@
 [Info]
-VUIName=AmpModifier
+VUI=AmpModifier
 PClass=Nexus
 BClass=None
 ActivationKey=Space

@@ -10,11 +10,16 @@ public partial class Kontakt
 
 public static void PluginLoad()
 {
-if (API.GetVUIName() == "Kontakt")
+if (API.GetVUI() == "Kontakt")
 {
 KontaktNormalize();
 LibLoaded();
 }
+}
+
+public static void PSK()
+{
+Speak("Jopa");
 }
 
 }

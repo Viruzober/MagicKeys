@@ -6,15 +6,17 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 
-public static string InvokeFromString(string InvokeFunc, string FuncParam = null, string GetClass = null)
+public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
 {
 KeyUnReg();
 Type Class = PClass;
+object OBC = Activator.CreateInstance(PClass);
 MethodInfo Method;
 object[] Param;
 if ((Method = Class.GetMethod(InvokeFunc)) == null && BClass != null)
 {
 Class = BClass;
+OBC = Activator.CreateInstance(BClass);
 Method = Class.GetMethod(InvokeFunc);
 }
 if (Method == null)
@@ -31,7 +33,7 @@ else
 {
 Param = new object[] {};
 }
-string Result = Method.Invoke(OClass, Param) as string;
+string Result = Method.Invoke(OBC, Param) as string;
 KeyReg();
 return Result;
 }

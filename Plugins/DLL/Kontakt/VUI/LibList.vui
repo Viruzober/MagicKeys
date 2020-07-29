@@ -1,5 +1,5 @@
 [Info]
-VUIName=LibList
+VUI=LibList
 PClass=Kontakt
 BClass=None
 ActivationKey=Enter

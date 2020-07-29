@@ -1,5 +1,5 @@
 [Info]
-VUIName=FilterModifier
+VUI=FilterModifier
 PClass=Nexus
 BClass=None
 ActivationKey=Space

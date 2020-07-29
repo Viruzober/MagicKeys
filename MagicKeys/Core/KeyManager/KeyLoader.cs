@@ -10,12 +10,12 @@ public partial class MagicKeys
 public static Dictionary<string, string> VUIKeys = new Dictionary<string, string>();
 public static void KeyLoader()
 {
-if (Ini.IniSectionExists(API.GetVUIPath()+API.GetVUI(), "Keys") == true)
+if (Ini.IniSectionExists(API.GetVUIPath()+API.GetVUIExt(), "Keys") == true)
 {
-List<string> KeyList = Ini.IniReadKeys(API.GetVUIPath()+API.GetVUI(), "Keys");
+List<string> KeyList = Ini.IniReadKeys(API.GetVUIPath()+API.GetVUIExt(), "Keys");
 for(int I = 0; I <= KeyList.Count-1; I++)
 {
-VUIKeys.Add(KeyList[I], Ini.IniRead(API.GetVUIPath()+API.GetVUI(), "Keys", KeyList[I]));
+VUIKeys.Add(KeyList[I], Ini.IniRead(API.GetVUIPath()+API.GetVUIExt(), "Keys", KeyList[I]));
 }
 }
 else
