@@ -11,7 +11,7 @@ public static void AutoAttack()
 {
 MouseClick("Left", P[1]+45, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
 {
 Speak("AutoAttack отмечено");
 VUIObjectSwitcher(false, "false", 2, 2);
@@ -47,7 +47,7 @@ public static void Reverb()
 {
 MouseClick("Left", P[1]+280, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
 Speak("Reverb отмечено");
 VUIObjectSwitcher(false, "true", 7, 7);
@@ -90,7 +90,7 @@ Speak("Detache включено");
 
 public static void PluginLoad()
 {
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, "false", 2, 2);
 }
@@ -98,7 +98,7 @@ else
 {
 VUIObjectSwitcher(false, "true", 2, 2);
 }
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, "true", 7, 7);
 }

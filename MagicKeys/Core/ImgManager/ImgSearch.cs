@@ -9,14 +9,20 @@ namespace MagicKeys
 public static int[] ImgSearch(string imgPath, bool Window)
 {
 IntPtr result;
+string PImg = imgPath;
+string[] TPImg = imgPath.Split(@"\");
+if (TPImg.Length == 1)
+{
+PImg = API.GetImgPath()+imgPath;
+}
 if (Window == true)
 {
 int[] RC = GetWinRect(GetForegroundWindow());
-result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+API.GetImgPath()+imgPath+".bmp");
+result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+PImg+".bmp");
 }
 else
 {
-result = ImageSearch(0, 0, Width, Height, "*20 "+API.GetImgPath()+imgPath+".bmp");
+result = ImageSearch(0, 0, Width, Height, "*20 "+PImg+".bmp");
 }
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
@@ -40,7 +46,13 @@ return pos;
 
 public static int[] ImgSearch(string imgPath)
 {
-IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+API.GetImgPath()+imgPath+".bmp");
+string PImg = imgPath;
+string[] TPImg = imgPath.Split(@"\");
+if (TPImg.Length == 1)
+{
+PImg = API.GetImgPath()+imgPath;
+}
+IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+PImg+".bmp");
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {

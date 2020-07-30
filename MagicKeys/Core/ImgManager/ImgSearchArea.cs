@@ -6,7 +6,13 @@ namespace MagicKeys
 {
 public static int[] ImgSearchArea(string imgPath, int X, int Y, int W, int H, int Variant)
 {
-IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+API.GetImgPath()+imgPath+".bmp");
+string PImg = imgPath;
+string[] TPImg = imgPath.Split(@"\");
+if (TPImg.Length == 1)
+{
+PImg = API.GetImgPath()+imgPath;
+}
+IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+PImg+".bmp");
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {
@@ -26,5 +32,6 @@ int[] pos = new int[7] {r, x, y, w, h, cx, cy};
 result = IntPtr.Zero;
 return pos;
 }
+
 }
 }

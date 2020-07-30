@@ -10,19 +10,19 @@ public class API
 
 public static string GetVUIPath()
 {
-return @"Plugins\"+GetPluginName()+@"\VUI\";
+return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\VUI\";
 }
 
 public static string GetImgPath()
 {
-return @"Plugins\"+GetPClass()+@"\Images\";
+return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\Images\";
 }
 
 public static string GetModulePath()
 {
-if (File.Exists(@"Plugins\"+GetPluginName()+@"\"+GetPluginName()+".dll") == true)
+if (File.Exists(@"Plugins\"+SubPath+@"\"+GetPluginName()+@"\"+GetPluginName()+".dll") == true)
 {
-return @"Plugins\"+GetPluginName()+@"\"+GetPluginName()+".dll";
+return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\"+GetPluginName()+".dll";
 }
 return null;
 }

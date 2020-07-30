@@ -14,7 +14,7 @@ public static Dictionary<string, Dictionary<string, string>> PluginsList = new D
 
 public static void PluginsListLoader()
 {
-string[] dir = Directory.GetDirectories(@".\Plugins");
+string[] dir = Directory.GetDirectories(@"Plugins\"+SubPath);
 for (int D = 0; D <= dir.Length-1; D++)
 {
 if (File.Exists(dir[D]+@"\Manifest.ini") == false)

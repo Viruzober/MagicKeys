@@ -40,5 +40,6 @@ public static int nChars = 256;
 public static StringBuilder Text = new StringBuilder(nChars);
 public static StringBuilder Title = new StringBuilder(nChars);
 public static StringBuilder Class = new StringBuilder(nChars);
+public static string SubPath = null;
 }
 }

@@ -17,7 +17,7 @@ return;
 }
 else if (API.GetLoad() == "VUF")
 {
-string VUIPath = API.GetVUIPath()+API.GetVUIExt().Substring(0, API.GetVUIExt().Length - 4)+"Load.vui";
+string VUIPath = API.GetVUIPath()+API.GetVUI()+"Load.vui";
 if (File.Exists(@VUIPath) == false)
 {
 return;
@@ -32,7 +32,7 @@ if (Trigger[0] == "Img")
 {
 if (ImgSearch(API.GetImgPath()+Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))
 {
-string VUFPath = API.GetVUIPath()+API.GetVUIExt().Substring(0, API.GetVUIExt().Length - 4)+"Load.vuf";
+string VUFPath = API.GetVUIPath()+API.GetVUI()+"Load.vuf";
 List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
 VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
 }
@@ -41,7 +41,7 @@ else if (Trigger[0] == "VUI")
 {
 if (Trigger[1] == API.GetVUI())
 {
-string VUFPath = API.GetVUIPath()+API.GetVUIExt().Substring(0, API.GetVUIExt().Length - 4)+"Load.vuf";
+string VUFPath = API.GetVUIPath()+API.GetVUI()+"Load.vuf";
 List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
 VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
 }

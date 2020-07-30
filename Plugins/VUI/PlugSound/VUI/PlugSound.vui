@@ -1,18 +1,12 @@
 [Info]
 VUI=PlugSound
 PClass=MagicKeys
-BClass=Kontakt
+BClass=None
 ActivationKey=Space
 [Keys]
 M=Menu
-P=PSK
 [1]
 Text=Bank and patch menu
 ObjectType=Button
 Help=Открыть меню банков и патчей
 Func=Menu
-[2]
-Text=Jopa
-ObjectType=Button
-Help=Открыть меню банков и патчей
-Func=PSK

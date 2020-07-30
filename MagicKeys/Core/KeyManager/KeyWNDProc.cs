@@ -20,7 +20,7 @@ if (VUIKeys.ContainsKey(modifier+key) == true)
 (string Func, string Param) = FuncParse(VUIKeys[modifier+key]);
 if (API.GetPClass() == "MagicKeys")
 {
-List<string> VUFValues = Ini.IniReadValues(API.GetVUIPath()+API.GetVUIExt().Substring(0, API.GetVUIExt().Length - 4)+".vuf", Func);
+List<string> VUFValues = Ini.IniReadValues(API.GetVUIPath()+API.GetVUI()+".vuf", Func);
 VUFInvoke(VUFValues);
 }
 else

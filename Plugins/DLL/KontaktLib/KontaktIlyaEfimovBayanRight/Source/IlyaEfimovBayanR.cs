@@ -11,7 +11,7 @@ public static void RoundRobin()
 {
 MouseClick("Left", P[1]+45, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
 {
 Speak("RoundRobin отмечено");
 }
@@ -25,7 +25,7 @@ public static void AutoAttack()
 {
 MouseClick("Left", P[1]+45, P[2]+230, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
 {
 Speak("AutoAttack отмечено");
 VUIObjectSwitcher(false, "false", 3, 3);
@@ -61,7 +61,7 @@ public static void Reverb()
 {
 MouseClick("Left", P[1]+280, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
 Speak("Reverb отмечено");
 VUIObjectSwitcher(false, "true", 8, 8);
@@ -82,7 +82,7 @@ public static void Detune()
 {
 MouseClick("Left", P[1]+280, P[2]+270, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+280, P[2]+270, P[1]+350, P[2]+320, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+270, P[1]+350, P[2]+320, 0)[0] == 1)
 {
 Speak("Detune отмечено");
 }
@@ -121,7 +121,7 @@ public static void Piccolo()
 MouseClick("Left", P[1]+75, P[2]+310, 1, 0, 0, 10);
 MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
-if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanPiccolo.bmp")[0] == 1)
+if (ImgSearch("BayanPiccolo")[0] == 1)
 {
 Speak("Piccolo включён");
 }
@@ -136,7 +136,7 @@ public static void Concertina()
 MouseClick("Left", P[1]+155, P[2]+310, 1, 0, 0, 10);
 MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
-if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanConcertina.bmp")[0] == 1)
+if (ImgSearch("BayanConcertina")[0] == 1)
 {
 Speak("Concertina включён");
 }
@@ -151,7 +151,7 @@ public static void Clarinet()
 MouseClick("Left", P[1]+235, P[2]+310, 1, 0, 0, 10);
 MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
-if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanClarinet.bmp")[0] == 1)
+if (ImgSearch("BayanClarinet")[0] == 1)
 {
 Speak("Clarinet включён");
 }
@@ -166,7 +166,7 @@ public static void Bossoon()
 MouseClick("Left", P[1]+315, P[2]+310, 1, 0, 0, 10);
 MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
-if (ImgSearch(@"Images\KontaktIlyaEfimov\BayanBassoon.bmp")[0] == 1)
+if (ImgSearch("BayanBassoon")[0] == 1)
 {
 Speak("Bossoon включён");
 }
@@ -178,7 +178,7 @@ Speak("Bossoon отключён");
 
 public static void PluginLoad()
 {
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, "false", 3, 3);
 }
@@ -186,7 +186,7 @@ else
 {
 VUIObjectSwitcher(false, "true", 3, 3);
 }
-if (ImgSearchArea(@"Images\KontaktIlyaEfimov\BayanCheckBox.bmp", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
+if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, "true", 8, 8);
 }
