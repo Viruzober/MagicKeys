@@ -8,7 +8,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void PluginLoad()
+public static void VUIPluginLoad()
 {
 if (API.GetLoad() == "Code")
 {

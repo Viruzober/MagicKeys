@@ -4,6 +4,7 @@ PClass=Kontakt
 BClass=None
 PluginName=Kontakt
 ActivationKey=Enter
+Loader=None
 [Keys]
 Down=LibNavigator|Next
 Up=LibNavigator|Back

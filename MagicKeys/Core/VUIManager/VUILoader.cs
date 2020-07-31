@@ -13,17 +13,13 @@ public static void VUILoader(string File)
 KeyUnReg();
 VUIKeys.Clear();
 SoundPlay("ChangeVUI.ogg", 0);
-string VUIFile = API.GetVUIPath()+File+".vui";
-CurrentPlugin["VUI"] = @File+".vui";
+string VUIFile = VUIPathDetect(File);
+CurrentPlugin["VUI"] = File;
 CurrentPlugin["PClass"] = Ini.IniRead(VUIFile, "Info", "PClass");
 CurrentPlugin["BClass"] = Ini.IniRead(VUIFile, "Info", "BClass");
-CurrentPlugin["VUI"] = Ini.IniRead(VUIFile, "Info", "VUI");
 CurrentPlugin["PluginName"] = Ini.IniRead(VUIFile, "Info", "PluginName");
 CurrentPlugin["ActivationKey"] = Ini.IniRead(VUIFile, "Info", "ActivationKey");
-if (Ini.IniKeyExists(VUIFile, "Info", "Loader") == true)
-{
 CurrentPlugin["Loader"] = Ini.IniRead(VUIFile, "Info", "Loader");
-}
 Count = Ini.IniCountSections(VUIFile)-1;
 if (Ini.IniSectionExists(VUIFile, "Keys") == true)
 {
@@ -56,7 +52,7 @@ VUIObjects[I].Add("Key", Ini.IniRead(VUIFile, I.ToString(), "Key"));
 VUIObjectsUpdate(true);
 }
 GetPluginType();
-PluginLoad();
+VUIPluginLoad();
 KeyLoader();
 KeyReg();
 }

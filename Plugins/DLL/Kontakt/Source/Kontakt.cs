@@ -47,6 +47,7 @@ MouseClick("Left", P[1]+355, P[2]+235, 1, 0, 0, 10);
 
 public static void GoToLibList()
 {
+SubPluginUnLoad();
 VUILoader("LibList");
 LibNormalize();
 Speak("OK");

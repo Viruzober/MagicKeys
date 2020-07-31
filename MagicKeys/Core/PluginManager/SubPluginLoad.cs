@@ -13,7 +13,6 @@ namespace MagicKeys
 public static bool SubPluginLoad()
 {
 SubPath = API.GetPluginName()+"Lib";
-string TempPluginName = CurrentPlugin["PluginName"];
 string[] dir = Directory.GetDirectories(@"Plugins\"+SubPath);
 for (int D = 0; D <= dir.Length-1; D++)
 {
@@ -38,7 +37,6 @@ return true;
 }
 }
 }
-CurrentPlugin["PluginName"] = TempPluginName;
 return false;
 }
 
