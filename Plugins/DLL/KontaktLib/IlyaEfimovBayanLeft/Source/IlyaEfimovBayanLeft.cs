@@ -4,7 +4,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public static class IlyaEfimovBayanL
+public class IlyaEfimovBayanLeft
 {
 
 public static void AutoAttack()
@@ -110,6 +110,7 @@ VUIObjectSwitcher(false, "false", 7, 7);
 
 public static void Back()
 {
+SubPluginUnLoad();
 Kontakt.GoToLibList();
 }
 

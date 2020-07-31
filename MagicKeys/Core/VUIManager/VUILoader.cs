@@ -18,6 +18,7 @@ CurrentPlugin["VUI"] = @File+".vui";
 CurrentPlugin["PClass"] = Ini.IniRead(VUIFile, "Info", "PClass");
 CurrentPlugin["BClass"] = Ini.IniRead(VUIFile, "Info", "BClass");
 CurrentPlugin["VUI"] = Ini.IniRead(VUIFile, "Info", "VUI");
+CurrentPlugin["PluginName"] = Ini.IniRead(VUIFile, "Info", "PluginName");
 CurrentPlugin["ActivationKey"] = Ini.IniRead(VUIFile, "Info", "ActivationKey");
 if (Ini.IniKeyExists(VUIFile, "Info", "Loader") == true)
 {

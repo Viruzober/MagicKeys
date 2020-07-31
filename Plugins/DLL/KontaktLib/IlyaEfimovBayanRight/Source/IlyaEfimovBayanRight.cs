@@ -4,7 +4,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public static class IlyaEfimovBayanR
+public class IlyaEfimovBayanRight
 {
 
 public static void RoundRobin()
@@ -198,6 +198,7 @@ VUIObjectSwitcher(false, "false", 8, 8);
 
 public static void Back()
 {
+SubPluginUnLoad();
 Kontakt.GoToLibList();
 }
 

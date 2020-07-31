@@ -1,7 +1,8 @@
 [Info]
-VUI=IlyaEfimovBayanR
-PClass=IlyaEfimovBayanR
+VUI=IlyaEfimovBayanRight
+PClass=IlyaEfimovBayanRight
 BClass=Kontakt
+PluginName=IlyaEfimovBayanRight
 ActivationKey=Enter
 Loader=Code
 [1]

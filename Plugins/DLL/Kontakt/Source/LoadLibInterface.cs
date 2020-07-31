@@ -14,6 +14,15 @@ int[] KTL = ImgSearch("KontaktTopLine");
 CreateOneBitmap(P[1], P[2], P[1]+P[3], P[2]+P[4]);
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 5, 5, 10);
+bool SPL = SubPluginLoad();
+if (SPL == true)
+{
+return;
+}
+else
+{
+SubPluginUnLoad();
+}
 CreateOneBitmap(P[1], P[2], P[1]+P[3], P[2]+P[4]);
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 DisplayTrafic(P[1], P[2], P[1]+P[3], P[2]+P[4], 10, 10, 10);

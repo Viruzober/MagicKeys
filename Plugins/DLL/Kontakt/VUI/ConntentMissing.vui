@@ -2,6 +2,7 @@
 VUI=ConntentMissing
 PClass=Kontakt
 BClass=None
+PluginName=Kontakt
 ActivationKey=Enter
 [1]
 Text=Browse for folder

@@ -37,6 +37,7 @@ WinClose(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
 KeyUnReg();
 SoundPlay("WindowClose.ogg", 0);
 }
+SubPath = "";
 CurrentPlugin.Clear();
 }
 }
