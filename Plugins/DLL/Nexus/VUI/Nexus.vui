@@ -2,6 +2,7 @@
 VUI=Nexus
 PClass=Nexus
 BClass=None
+PluginName=Nexus
 ActivationKey=Space
 [Keys]
 Ctrl+Home=NexusBankPage|Back

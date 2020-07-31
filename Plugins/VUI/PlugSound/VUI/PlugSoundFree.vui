@@ -2,6 +2,7 @@
 VUI=PlugSoundFree
 PClass=MagicKeys
 BClass=None
+PluginName=PlugSound
 ActivationKey=Space
 [Keys]
 M=FreeMenu

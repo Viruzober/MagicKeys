@@ -2,6 +2,7 @@
 VUI=Omnisphere
 PClass=Omnisphere
 BClass=None
+PluginName=Omnisphere
 ActivationKey=Space
 Loader=Code
 [Keys]

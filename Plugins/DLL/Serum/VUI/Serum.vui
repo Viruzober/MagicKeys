@@ -2,6 +2,7 @@
 VUI=Serum
 PClass=Serum
 BClass=None
+PluginName=Serum
 ActivationKey=Space
 Loader=Code
 [1]

@@ -2,6 +2,7 @@
 VUI=Output
 PClass=Nexus
 BClass=None
+PluginName=Nexus
 ActivationKey=Space
 [1]
 Text=Vol
