@@ -17,10 +17,5 @@ LibLoaded();
 }
 }
 
-public static void PSK()
-{
-Speak("Jopa");
-}
-
 }
 }
