@@ -10,10 +10,10 @@ public static void VUFCheckStateImg(string Param)
 string[] FP = Param.Split("|");
 CheckStateImg(
 FP[0],
-Convert.ToInt32(FP[1]),
-Convert.ToInt32(FP[2]),
-Convert.ToInt32(FP[3]),
-Convert.ToInt32(FP[4])
+P[1]+Convert.ToInt32(FP[1]),
+P[2]+Convert.ToInt32(FP[2]),
+P[1]+Convert.ToInt32(FP[3]),
+P[2]+Convert.ToInt32(FP[4])
 );
 }
 

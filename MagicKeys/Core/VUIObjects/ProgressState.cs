@@ -7,7 +7,7 @@ public partial class MagicKeys
 
 public static string ProgressState(string Img, int X, int Y, int W, int H)
 {
-int[] S = ImgSearchArea(Img, P[1]+X, P[2]+Y, P[1]+X+W, P[2]+Y+H, 10);
+int[] S = ImgSearchArea(Img, X, Y, W, H, 10);
 if (S[0] == 1)
 {
 Speak((Convert.ToInt32((S[1]-P[1])/((W-X)/100))).ToString());
