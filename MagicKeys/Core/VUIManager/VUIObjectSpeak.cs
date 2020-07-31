@@ -6,7 +6,7 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 
-public static void VUIObjectSpeach()
+public static void VUIObjectSpeak()
 {
 string SpeachObject = API.GetText();
 if (SpeachType == true)

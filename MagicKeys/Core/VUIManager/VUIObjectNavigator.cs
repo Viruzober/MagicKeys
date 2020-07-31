@@ -29,7 +29,7 @@ else
 Section -= 1;
 }
 }
-VUIObjectSpeach();
+VUIObjectSpeak();
 }
 
 }
