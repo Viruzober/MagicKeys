@@ -30,6 +30,8 @@ if (Ini.IniSectionExists(VUIFile, "Keys") == true)
 Count = Ini.IniCountSections(VUIFile)-2;
 }
 VUIObjects.Clear();
+if (Ini.IniSectionExists(VUIFile, "1") == true)
+{
 for (int I = 1; I <= Count; I++)
 {
 VUIObjects.Add(I, new Dictionary<string, string>());
@@ -52,6 +54,7 @@ VUIObjects[I].Add("Key", Ini.IniRead(VUIFile, I.ToString(), "Key"));
 }
 }
 VUIObjectsUpdate(true);
+}
 GetPluginType();
 PluginLoad();
 KeyLoader();

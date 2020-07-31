@@ -10,6 +10,8 @@ public static KeyNavigator KeyNavigatorHandle = new KeyNavigator();
 
 public static void KeyNavigatorReg(string KeyActive)
 {
+if (Ini.IniSectionExists(API.GetVUIPath()+API.GetVUIExt(), "1") == true)
+{
 if (NavigationType == 0)
 {
 RegisterHotKey(KeyNavigatorHandle.Handle, 0, MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.Tab);
@@ -28,6 +30,7 @@ RegisterHotKey(KeyNavigatorHandle.Handle, 3, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Ke
 else if (KeyActive == "Space")
 {
 RegisterHotKey(KeyNavigatorHandle.Handle, 3, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.Space);
+}
 }
 RegisterHotKey(KeyNavigatorHandle.Handle, 20, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 }
