@@ -20,12 +20,12 @@ Color GetColor =  Screen.GetPixel(GetX, GetY);
 string StrColor = String.Format("#{0:X6}", GetColor.ToArgb() & 0x00FFFFFF);
 if (StrColor == Color)
 {
-Speak(Text+" отмечено");
+Speak(Text+" checked");
 return true;
 }
 }
 }
-Speak(Text+" Не отмечено");
+Speak(Text+" not checked");
 return false;
 }
 
