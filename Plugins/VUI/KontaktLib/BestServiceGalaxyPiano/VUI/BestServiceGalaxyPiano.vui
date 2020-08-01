@@ -4,11 +4,14 @@ PClass=MagicKeys
 BClass=Kontakt
 PluginName=BestServiceGalaxyPiano
 ActivationKey=Enter
-Loader=None
+Loader=VUF
+[Keys]
+P=Info
 [1]
 Text=Presets
 ObjectType=Button
 Help=Help not found
+AutoFunc=Info
 Func=Presets
 [2]
 Text=Back

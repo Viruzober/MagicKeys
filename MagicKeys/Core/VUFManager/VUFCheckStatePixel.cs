@@ -5,14 +5,16 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void CheckStatePixel(string Param)
+public static string CheckStatePixel(string Param)
 {
 string[] FP = Param.Split("|");
-CheckStatePixel(
+string R = CheckStatePixel(
 FP[0],
 P[1]+Convert.ToInt32(FP[1]),
 P[2]+Convert.ToInt32(FP[2])
 );
+Speak(R);
+return R;
 }
 
 }

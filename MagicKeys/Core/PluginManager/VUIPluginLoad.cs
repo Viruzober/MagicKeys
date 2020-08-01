@@ -30,7 +30,7 @@ List<string> VUIValues = Ini.IniReadValues(VUIPath, I.ToString());
 string[] Trigger = VUIValues[0].Split("|");
 if (Trigger[0] == "Img")
 {
-if (ImgSearch(API.GetImgPath()+Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))
+if (ImgSearch(Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))
 {
 string VUFPath = API.GetVUIPath()+API.GetVUI()+"Load.vuf";
 List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
