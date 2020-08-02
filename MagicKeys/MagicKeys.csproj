@@ -68,20 +68,6 @@
   <ItemGroup>
     <None Remove=".gitignore" />
     <None Remove="app.manifest" />
-    <None Remove="Sounds\Button.ogg" />
-    <None Remove="Sounds\ChangeVUI.ogg" />
-    <None Remove="Sounds\doubleClick.ogg" />
-    <None Remove="Sounds\End.ogg" />
-    <None Remove="Sounds\Error.ogg" />
-    <None Remove="Sounds\Fixer.ogg" />
-    <None Remove="Sounds\ModClick.ogg" />
-    <None Remove="Sounds\OK.ogg" />
-    <None Remove="Sounds\OneClick.ogg" />
-    <None Remove="Sounds\PluginDetect.ogg" />
-    <None Remove="Sounds\Scrol.ogg" />
-    <None Remove="Sounds\Start.ogg" />
-    <None Remove="Sounds\WindowClose.ogg" />
-    <None Remove="Sounds\WindowOpened.ogg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -102,20 +88,6 @@
 
   <ItemGroup>
     <EmbeddedResource Include="app.manifest" />
-    <EmbeddedResource Include="Sounds\Button.ogg" />
-    <EmbeddedResource Include="Sounds\ChangeVUI.ogg" />
-    <EmbeddedResource Include="Sounds\doubleClick.ogg" />
-    <EmbeddedResource Include="Sounds\End.ogg" />
-    <EmbeddedResource Include="Sounds\Error.ogg" />
-    <EmbeddedResource Include="Sounds\Fixer.ogg" />
-    <EmbeddedResource Include="Sounds\ModClick.ogg" />
-    <EmbeddedResource Include="Sounds\OK.ogg" />
-    <EmbeddedResource Include="Sounds\OneClick.ogg" />
-    <EmbeddedResource Include="Sounds\PluginDetect.ogg" />
-    <EmbeddedResource Include="Sounds\Scrol.ogg" />
-    <EmbeddedResource Include="Sounds\Start.ogg" />
-    <EmbeddedResource Include="Sounds\WindowClose.ogg" />
-    <EmbeddedResource Include="Sounds\WindowOpened.ogg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -167,7 +139,7 @@
   </Choose>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;if exist &quot;%25distdir%25\$(TargetName).exe&quot; rd /s /q &quot;%25distdir%25&quot;&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;%25distdir%25\Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
+    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;if exist &quot;%25distdir%25\$(TargetName).exe&quot; rd /s /q &quot;%25distdir%25&quot;&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(ProjectDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;%25distdir%25\Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(ProjectDir)Sounds&quot; &quot;%25distdir%25\Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
   </Target>
 
   <Target Name="ProjectCleanup" AfterTargets="Clean">

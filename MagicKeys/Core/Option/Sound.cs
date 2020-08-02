@@ -10,17 +10,17 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 
-public static void SoundPlay(string File, int Wait)
+public static void SoundPlay(string SoundFile, int Wait)
 {
 if (SoundTheme == true)
 {
-Stream SoundFileStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(@"MagicKeys.Sounds."+File);
+FileStream SoundFileStream = File.OpenRead(@".\Sounds\"+SoundFile);
 long length = SoundFileStream.Length;
 byte[] buffer = new byte[length];
 SoundFileStream.Read(buffer, 0, (int)length);
 SoundFileStream.Close();
 GCHandle HGCFile = GCHandle.Alloc(buffer, GCHandleType.Pinned );
-Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, IntPtr.Zero);
+if (!Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, IntPtr.Zero)) return;
 int Stream = Bass.BASS_StreamCreateFile(HGCFile.AddrOfPinnedObject(), 0L, length, BASSFlag.BASS_SAMPLE_FLOAT);
 Bass.BASS_ChannelPlay(Stream, false);
 if (Wait ==1)
