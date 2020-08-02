@@ -124,6 +124,13 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Forms\DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DebugFormActions.cs" />
+  </ItemGroup>
+
   <Choose>
     <When Condition=" '$(Platform)'=='x86' ">
       <ItemGroup>

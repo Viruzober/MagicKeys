@@ -1,0 +1,1 @@
+txt2tags -t html --toc MagicKeys.txt
