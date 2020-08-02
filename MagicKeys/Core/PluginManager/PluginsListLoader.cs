@@ -14,6 +14,8 @@ public static Dictionary<string, Dictionary<string, string>> PluginsList = new D
 
 public static void PluginsListLoader()
 {
+string WTitle = Ini.IniRead(@"Plugins\HostsList.vui", "Hosts", "WTitle");
+string WClass = Ini.IniRead(@"Plugins\HostsList.vui", "Hosts", "WClass");
 string[] dir = Directory.GetDirectories(@"Plugins\"+SubPath);
 for (int D = 0; D <= dir.Length-1; D++)
 {
@@ -30,8 +32,16 @@ if (Point == "Info")
  continue;
 }
 PluginsList.Add(Point, new Dictionary<string, string>());
+if (Ini.IniKeyExists(IVUI, Point, "WTitle") == true | Ini.IniKeyExists(IVUI, Point, "WClass") == true)
+{
 PluginsList[Point].Add("WTitle", Ini.IniRead(IVUI, Point, "WTitle"));
 PluginsList[Point].Add("WClass", Ini.IniRead(IVUI, Point, "WClass"));
+}
+else
+{
+PluginsList[Point].Add("WTitle", WTitle);
+PluginsList[Point].Add("WClass", WClass);
+}
 PluginsList[Point].Add("PClass", Ini.IniRead(IVUI, Point, "PClass"));
 PluginsList[Point].Add("BClass", Ini.IniRead(IVUI, Point, "BClass"));
 PluginsList[Point].Add("VUI", Ini.IniRead(IVUI, Point, "VUI"));
