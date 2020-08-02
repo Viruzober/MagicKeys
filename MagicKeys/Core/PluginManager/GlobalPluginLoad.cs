@@ -10,10 +10,10 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 public static Dictionary<string, string> CurrentPlugin = new Dictionary<string, string>();
-public static void GlobalPluginLoad(string Item)
+public static void GlobalPluginLoad(string Item, string WTitle, string WClass)
 {
-CurrentPlugin.Add("WTitle", PluginsList[Item]["WTitle"]);
-CurrentPlugin.Add("WClass", PluginsList[Item]["WClass"]);
+CurrentPlugin.Add("WTitle", WTitle);
+CurrentPlugin.Add("WClass", WClass);
 CurrentPlugin.Add("PClass", PluginsList[Item]["PClass"]);
 CurrentPlugin.Add("BClass", PluginsList[Item]["BClass"]);
 CurrentPlugin.Add("VUI", PluginsList[Item]["VUI"]);

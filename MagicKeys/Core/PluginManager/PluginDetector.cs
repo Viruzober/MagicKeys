@@ -12,6 +12,7 @@ namespace MagicKeys
 
 public static void PluginDetector()
 {
+string[] WH = new string[2];
 while(true)
 {
 Thread.Sleep(TimeOut);
@@ -25,15 +26,16 @@ if (Item == "Info")
 {
 continue;
 }
-if (WinActive(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]) == true)
+WH = WinHook(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
+if (WH[0] != null)
 {
-GlobalPluginLoad(Item);
+GlobalPluginLoad(Item, WH[0], WH[1]);
 P = GetPluginCoord();
 if (P[0] == 1)
 {
 VUILoader(API.GetVUI());
 SoundPlay("WindowOpened.ogg", 0);
-WinClose(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
+WinClose(WH[0], WH[1]);
 KeyUnReg();
 SoundPlay("WindowClose.ogg", 0);
 }
