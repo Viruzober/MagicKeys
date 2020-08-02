@@ -7,12 +7,12 @@ ActivationKey=Space
 [Keys]
 Ctrl+Home=NexusBankPage|Back
 Ctrl+End=NexusBankPage|Next
-Ctrl+Prior=NexusPatchPage|Back
-Ctrl+Next=NexusPatchPage|Next
+Ctrl+PageUp=NexusPatchPage|Back
+Ctrl+PageDown=NexusPatchPage|Next
 Home=NexusBank|Back
 End=NexusBank|Next
-Prior=NexusPatch|Back
-Next=NexusPatch|Next
+PageUp=NexusPatch|Back
+PageDown=NexusPatch|Next
 S=NexusSearch
 [1]
 Text=filter modifier

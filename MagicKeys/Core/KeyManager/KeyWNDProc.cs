@@ -14,7 +14,8 @@ switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
 string modifier = KeyParse((int)m.LParam & 0xFFFF);
-string key = ((Keys)(((int)m.LParam >> 16) & 0xFFFF)).ToString();
+int K = ((int)m.LParam >> 16) & 0xFFFF;
+string key = GetKeyName(K);
 if (VUIKeys.ContainsKey(modifier+key) == true)
 {
 (string Func, string Param) = FuncParse(VUIKeys[modifier+key]);

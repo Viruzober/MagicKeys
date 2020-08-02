@@ -8,12 +8,12 @@ Loader=Code
 [Keys]
 Ctrl+Home=OmnisphereBankPage|Back
 Ctrl+End=OmnisphereBankPage|Next
-Ctrl+Prior=OmnispherePatchPage|Back
-Ctrl+Next=OmnispherePatchPage|Next
+Ctrl+PageUp=OmnispherePatchPage|Back
+Ctrl+PageDown=OmnispherePatchPage|Next
 Home=OmnisphereBank|Back
 End=OmnisphereBank|Next
-Prior=OmnispherePatch|Back
-Next=OmnispherePatch|Next
+PageUp=OmnispherePatch|Back
+PageDown=OmnispherePatch|Next
 B=BankName
 P=PatchName
 [1]

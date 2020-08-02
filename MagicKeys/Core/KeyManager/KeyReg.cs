@@ -29,8 +29,8 @@ if (KeyItems[K] == "Ctrl") Mod = Mod|MKC.CTRL;
 if (KeyItems[K] == "Shift") Mod = Mod|MKC.SHIFT;
 if (KeyItems[K] == "Win") Mod = Mod|MKC.WIN;
 }
-            uint key = (uint)(Keys)kc.ConvertFrom(KeyItems[KeyItems.Length-1]);
-RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, key);
+Keys key = (Keys)kc.ConvertFrom(KeyItems[KeyItems.Length-1]);
+ RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, (uint)key);
 IDKey+=1;
 }
 }
