@@ -20,7 +20,7 @@ byte[] buffer = new byte[length];
 SoundFileStream.Read(buffer, 0, (int)length);
 SoundFileStream.Close();
 GCHandle HGCFile = GCHandle.Alloc(buffer, GCHandleType.Pinned );
-if (!Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, IntPtr.Zero)) return;
+                Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, IntPtr.Zero);
 int Stream = Bass.BASS_StreamCreateFile(HGCFile.AddrOfPinnedObject(), 0L, length, BASSFlag.BASS_SAMPLE_FLOAT);
 Bass.BASS_ChannelPlay(Stream, false);
 if (Wait ==1)
