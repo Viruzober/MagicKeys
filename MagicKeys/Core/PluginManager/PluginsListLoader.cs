@@ -14,8 +14,8 @@ public static Dictionary<string, Dictionary<string, string>> PluginsList = new D
 
 public static void PluginsListLoader()
 {
-string WTitle = Ini.IniRead(@"Plugins\HostsList.vui", "Hosts", "WTitle");
-string WClass = Ini.IniRead(@"Plugins\HostsList.vui", "Hosts", "WClass");
+string WTitle = Ini.IniRead(@"Plugins\Hosts.ini", "Hosts", "WTitle");
+string WClass = Ini.IniRead(@"Plugins\Hosts.ini", "Hosts", "WClass");
 string[] dir = Directory.GetDirectories(@"Plugins\"+SubPath);
 for (int D = 0; D <= dir.Length-1; D++)
 {
