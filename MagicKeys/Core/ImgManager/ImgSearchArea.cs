@@ -1,5 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
     public partial class MagicKeys

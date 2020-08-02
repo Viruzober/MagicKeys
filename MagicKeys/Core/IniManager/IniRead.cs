@@ -12,14 +12,22 @@ public static string IniRead(string GetFile, string GetSection, string GetKey)
 {
 try
 {
-StreamReader SR = new StreamReader(GetFile);
-string FileStr = SR.ReadToEnd();
-string SearchSection = FileStr.Substring(FileStr.IndexOf("["+GetSection+"]"));
-string SearchKey = SearchSection.Substring(SearchSection.IndexOf("\r\n"+GetKey+"=")+1);
-string KeyValue = SearchKey.Substring(0, SearchKey.IndexOf("\r\n"));
-string Value = KeyValue.Substring(KeyValue.IndexOf("=")+1);
-SR.Close();
-return Value;
+string[] FileStr = File.ReadAllLines(GetFile);
+for (int S = 0; S < FileStr.Length; S++)
+{
+if (FileStr[S] == "["+GetSection+"]")
+{
+for (int K = S; K < FileStr.Length; K++)
+{
+string[] KeyValue = FileStr[K].Split("=", 2);
+if (KeyValue[0] == GetKey)
+{
+return KeyValue[1];
+}
+}
+}
+}
+return null;
 }
 catch(Exception)
 {
