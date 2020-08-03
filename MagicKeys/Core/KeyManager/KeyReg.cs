@@ -19,15 +19,14 @@ if (VUIKeys.ContainsKey("None") == false)
 int IDKey = 0;
 foreach(var OBJKey in VUIKeys)
 {
-//uint Mod = MKC.MOD_NOREPEAT;
-uint Mod = 0;
+uint Mod = MKC.MOD_NOREPEAT;
 string[] KeyItems = OBJKey.Key.Split("+");
-for(int K = 0; K <= KeyItems.Length-1; K++)
+for(int K = 0; K < KeyItems.Length; K++)
 {
-if (KeyItems[K] == "Alt") Mod = Mod|MKC.ALT;
-if (KeyItems[K] == "Ctrl") Mod = Mod|MKC.CTRL;
-if (KeyItems[K] == "Shift") Mod = Mod|MKC.SHIFT;
-if (KeyItems[K] == "Win") Mod = Mod|MKC.WIN;
+if (KeyItems[K] == "Ctrl" | KeyItems[K] == "Alt" | KeyItems[K] == "Shift" | KeyItems[K] == "Win")
+{
+Mod = Mod|(uint)Enum.Parse(typeof(MKC.ModKeys), KeyItems[K]);
+}
 }
 Keys key = (Keys)kc.ConvertFrom(KeyItems[KeyItems.Length-1]);
  RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, (uint)key);
