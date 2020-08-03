@@ -35,9 +35,6 @@ Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
 Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
 S.MakeTransparent();
-//#if DEBUG
-//S.Save(@".\Images\"+Guid.NewGuid().ToString()+".png");
-//#endif
 var engine = Windows.Media.Ocr.OcrEngine.TryCreateFromLanguage(new Windows.Globalization.Language("en"));
 var memoryStream = new MemoryStream();
 S.Save(memoryStream, ImageFormat.Bmp);
