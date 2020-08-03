@@ -14,14 +14,8 @@ public static void SoundPlay(string SoundFile, int Wait)
 {
 if (SoundTheme == true)
 {
-FileStream SoundFileStream = File.OpenRead(@".\Sounds\"+SoundFile);
-long length = SoundFileStream.Length;
-byte[] buffer = new byte[length];
-SoundFileStream.Read(buffer, 0, (int)length);
-SoundFileStream.Close();
-GCHandle HGCFile = GCHandle.Alloc(buffer, GCHandleType.Pinned );
                 Bass.BASS_Init(-1, 44100, BASSInit.BASS_DEVICE_DEFAULT, IntPtr.Zero);
-int Stream = Bass.BASS_StreamCreateFile(HGCFile.AddrOfPinnedObject(), 0L, length, BASSFlag.BASS_SAMPLE_FLOAT);
+int Stream = Bass.BASS_StreamCreateFile(@".\Sounds\"+SoundFile, 0L, 0, BASSFlag.BASS_STREAM_AUTOFREE);
 Bass.BASS_ChannelPlay(Stream, false);
 if (Wait ==1)
 {
