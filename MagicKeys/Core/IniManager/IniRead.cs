@@ -15,7 +15,7 @@ try
 string[] FileStr = File.ReadAllLines(GetFile);
 for (int S = 0; S < FileStr.Length; S++)
 {
-if (FileStr[S] == "["+GetSection+"]")
+if (FileStr[S].Trim() == "["+GetSection+"]")
 {
 for (int K = S; K < FileStr.Length; K++)
 {
