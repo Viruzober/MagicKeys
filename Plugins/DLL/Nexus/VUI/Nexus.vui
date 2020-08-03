@@ -3,6 +3,7 @@ VUI=Nexus
 PClass=Nexus
 BClass=None
 PluginName=Nexus
+Loader=None
 [Keys]
 Ctrl+Home=NexusBankPage|Back
 Ctrl+End=NexusBankPage|Next

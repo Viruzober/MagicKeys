@@ -23,17 +23,17 @@ RegisterHotKey(KeyNavigatorHandle.Handle, 0, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Ke
 RegisterHotKey(KeyNavigatorHandle.Handle, 1, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.Right);
 }
 RegisterHotKey(KeyNavigatorHandle.Handle, 2, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.F1);
+RegisterHotKey(KeyNavigatorHandle.Handle, 3, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.Enter);
 }
-RegisterHotKey(KeyNavigatorHandle.Handle, 20, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
+RegisterHotKey(KeyNavigatorHandle.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 }
 
 public static void KeyNavigatorUnReg()
 {
-UnregisterHotKey(KeyNavigatorHandle.Handle, 0);
-UnregisterHotKey(KeyNavigatorHandle.Handle, 1);
-UnregisterHotKey(KeyNavigatorHandle.Handle, 2);
-UnregisterHotKey(KeyNavigatorHandle.Handle, 3);
-UnregisterHotKey(KeyNavigatorHandle.Handle, 20);
+for(int I = 0; I <= 4; I++)
+{
+UnregisterHotKey(KeyNavigatorHandle.Handle, I);
+}
 }
 
 }

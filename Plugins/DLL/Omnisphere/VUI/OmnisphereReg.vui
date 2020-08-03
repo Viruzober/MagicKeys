@@ -3,6 +3,7 @@ VUI=Omnisphere
 PClass=Omnisphere
 BClass=None
 PluginName=Omnisphere
+Loader=None
 [1]
 Text=Copy serial code
 ObjectType=Button

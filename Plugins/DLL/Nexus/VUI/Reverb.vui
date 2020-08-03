@@ -3,6 +3,7 @@ VUI=Reverb
 PClass=Nexus
 BClass=None
 PluginName=Nexus
+Loader=None
 [1]
 Text=Reverb
 ObjectType=CheckBox

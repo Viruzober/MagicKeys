@@ -3,7 +3,6 @@ VUI=Serum
 PClass=Serum
 BClass=None
 PluginName=Serum
-ActivationKey=Kyka
 Loader=Code
 [1]
 Text=Presets menu
