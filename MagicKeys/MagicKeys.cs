@@ -32,10 +32,10 @@ MessageBox.Show("Пожалуйста зарегистрируйтесь чер�
 }
 }
 LoadSettings();
-PluginsListLoader();
 SoundPlay("Start.ogg", 0);
 Speak("Сервис Magic Keys запущен");
 HM = new Menu();
+PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));
 ThreadPluginDetector.IsBackground = true;
 ThreadPluginDetector.Start();

@@ -17,7 +17,7 @@ string[] DI = DebugInfo.Split("|");
 switch(DI[0])
 {
 case "IniRead":
-IniReadError();
+IniReadError(DI);
 break;
 }
 }
@@ -30,9 +30,11 @@ this.Close();
 }
 }
 
-public void IniReadError()
+public void IniReadError(string[] EX)
 {
-DebugText.Text = "Error";
+DebugText.Text =
+"Error in file: "+EX[2]+" on line "+EX[1]+"\r\n"+
+"section "+EX[3]+" key "+EX[4]+".";
 }
 
 }
