@@ -3,7 +3,7 @@ VUI=Delay
 PClass=Nexus
 BClass=None
 PluginName=Nexus
-ActivationKey=Space
+ActivationKey=Enter
 [1]
 Text=Delay
 ObjectType=CheckBox

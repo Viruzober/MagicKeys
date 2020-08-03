@@ -3,7 +3,7 @@ VUI=Serum
 PClass=Serum
 BClass=None
 PluginName=Serum
-ActivationKey=Space
+ActivationKey=Enter
 Loader=Code
 [1]
 Text=Presets menu

@@ -20,6 +20,7 @@ if (Array.TrueForAll(P[0..4], V => V == 0))
 return true;
 }
 Application.DoEvents();
+WinWaitClose("#32768");
 if (KeySwitch == 1)
 {
 return true;

@@ -3,7 +3,7 @@ VUI=Omnisphere
 PClass=Omnisphere
 BClass=None
 PluginName=Omnisphere
-ActivationKey=Space
+ActivationKey=Enter
 [1]
 Text=Copy serial code
 ObjectType=Button

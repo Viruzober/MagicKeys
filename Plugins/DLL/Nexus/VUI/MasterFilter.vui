@@ -3,7 +3,7 @@ VUI=MasterFilter
 PClass=Nexus
 BClass=None
 PluginName=Nexus
-ActivationKey=Space
+ActivationKey=Enter
 [1]
 Text=Master filter
 ObjectType=CheckBox
