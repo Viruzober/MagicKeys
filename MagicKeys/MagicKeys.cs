@@ -31,10 +31,10 @@ RegUser = false;
 MessageBox.Show("Пожалуйста зарегистрируйтесь через меню на панели задач.", "Внимание");
 }
 }
+HM = new Menu();
 LoadSettings();
 SoundPlay("Start.ogg", 0);
 Speak("Сервис Magic Keys запущен");
-HM = new Menu();
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));
 ThreadPluginDetector.IsBackground = true;

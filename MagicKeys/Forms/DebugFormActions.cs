@@ -12,6 +12,7 @@ public partial class DebugForm : Form
 
 public void DebugForm_Shown(object sender, EventArgs e)
 {
+MagicKeys.SoundPlay("Error.ogg", 0);
 this.Activate();
 string[] DI = DebugInfo.Split("|");
 switch(DI[0])
@@ -30,11 +31,20 @@ this.Close();
 }
 }
 
+public void Exit_Click(Object Sender, EventArgs e)
+{
+MagicKeys.KeySwitch = 1;
+MagicKeys.HM.Ni.Visible = false;
+Application.Exit();
+}
+
 public void IniReadError(string[] EX)
 {
 DebugText.Text =
-"Error in file: "+EX[2]+" on line "+EX[1]+"\r\n"+
-"section "+EX[3]+" key "+EX[4]+".";
+"File: "+EX[2]+"\r\n"+
+"Line: "+EX[1]+"\r\n"+
+"Section: "+EX[3]+"\r\n"+
+"Key: "+EX[4];
 }
 
 }

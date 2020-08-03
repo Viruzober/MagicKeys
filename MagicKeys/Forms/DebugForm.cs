@@ -9,21 +9,32 @@ public partial class DebugForm : Form
 {
 public string DebugInfo;
 public TextBox DebugText = new TextBox();
+public Button Exit = new Button();
 
         public DebugForm()
 {
 InitTextBox();
+InitButton();
 InitForm();
 }
 
 public void InitTextBox()
 {
 DebugText.Location = new Point(10, 10);
-DebugText.Size = new Size(300, 400);
+DebugText.Size = new Size(300, 200);
 DebugText.Multiline = true;
 DebugText.ReadOnly = true;
 DebugText.KeyDown += DebugText_KeyDown;
 this.Controls.Add(DebugText);
+}
+
+public void InitButton()
+{
+Exit.Size = new Size(300, 30);
+Exit.Location = new Point(10, 230);
+Exit.Text = "Exit";
+Exit.Click += Exit_Click;
+this.Controls.Add(Exit);
 }
 
 public void InitForm()
@@ -32,9 +43,11 @@ this.TopMost = true;
 this.StartPosition = FormStartPosition.CenterScreen;
 this.MaximizeBox = false;
 this.MinimizeBox = false;
-this.Size = new Size(335, 455);
+this.Size = new Size(335, 300);
 this.Name = "DebugForm";
 this.Text = "Error";
+this.AcceptButton = Exit;
+this.CancelButton = Exit;
 this.Shown += DebugForm_Shown;
 }
 
