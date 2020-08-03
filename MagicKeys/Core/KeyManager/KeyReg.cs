@@ -28,12 +28,12 @@ if (KeyItems[K] == "Ctrl" | KeyItems[K] == "Alt" | KeyItems[K] == "Shift" | KeyI
 Mod = Mod|(uint)Enum.Parse(typeof(MKC.ModKeys), KeyItems[K]);
 }
 }
-Keys key = (Keys)kc.ConvertFrom(KeyItems[KeyItems.Length-1]);
+Keys key = (Keys)kc.ConvertFrom(KeyItems[^1]);
  RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, (uint)key);
 IDKey+=1;
 }
 }
-KeyNavigatorReg(Ini.IniRead(API.GetVUIPath()+API.GetVUIExt(), "Info", "ActivationKey"));
+KeyNavigatorReg();
 }
 
 }

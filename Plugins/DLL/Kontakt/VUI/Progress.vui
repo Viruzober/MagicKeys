@@ -3,7 +3,6 @@ VUI=Progress
 PClass=Kontakt
 BClass=None
 PluginName=Kontakt
-ActivationKey=Enter
 Loader=None
 [1]
 Text=Loading

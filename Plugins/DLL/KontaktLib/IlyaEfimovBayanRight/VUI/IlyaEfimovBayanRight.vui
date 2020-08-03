@@ -3,7 +3,6 @@ VUI=IlyaEfimovBayanRight
 PClass=IlyaEfimovBayanRight
 BClass=Kontakt
 PluginName=IlyaEfimovBayanRight
-ActivationKey=Enter
 Loader=Code
 [1]
 Text=Round Robin

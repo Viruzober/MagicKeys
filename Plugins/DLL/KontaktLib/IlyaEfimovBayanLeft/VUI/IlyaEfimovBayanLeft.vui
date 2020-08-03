@@ -3,7 +3,6 @@ VUI=IlyaEfimovBayanLeft
 PClass=IlyaEfimovBayanLeft
 BClass=Kontakt
 PluginName=IlyaEfimovBayanLeft
-ActivationKey=Enter
 Loader=Code
 [1]
 Text=Auto Attack

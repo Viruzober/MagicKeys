@@ -3,7 +3,6 @@ VUI=Omnisphere
 PClass=Omnisphere
 BClass=None
 PluginName=Omnisphere
-ActivationKey=Enter
 Loader=Code
 [Keys]
 Ctrl+Home=OmnisphereBankPage|Back

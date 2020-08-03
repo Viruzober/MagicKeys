@@ -3,7 +3,6 @@ VUI=ConntentMissing
 PClass=Kontakt
 BClass=None
 PluginName=Kontakt
-ActivationKey=Enter
 Loader=None
 [1]
 Text=Browse for folder

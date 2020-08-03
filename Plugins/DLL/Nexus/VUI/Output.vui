@@ -3,7 +3,6 @@ VUI=Output
 PClass=Nexus
 BClass=None
 PluginName=Nexus
-ActivationKey=Enter
 [1]
 Text=Vol
 ObjectType=Slider

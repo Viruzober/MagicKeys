@@ -3,7 +3,6 @@ VUI=Nexus
 PClass=Nexus
 BClass=None
 PluginName=Nexus
-ActivationKey=Enter
 [Keys]
 Ctrl+Home=NexusBankPage|Back
 Ctrl+End=NexusBankPage|Next

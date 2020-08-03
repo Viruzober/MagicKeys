@@ -18,7 +18,6 @@ CurrentPlugin["VUI"] = File;
 CurrentPlugin["PClass"] = Ini.IniRead(VUIFile, "Info", "PClass");
 CurrentPlugin["BClass"] = Ini.IniRead(VUIFile, "Info", "BClass");
 CurrentPlugin["PluginName"] = Ini.IniRead(VUIFile, "Info", "PluginName");
-CurrentPlugin["ActivationKey"] = Ini.IniRead(VUIFile, "Info", "ActivationKey");
 CurrentPlugin["Loader"] = Ini.IniRead(VUIFile, "Info", "Loader");
 Count = Ini.IniCountSections(VUIFile)-1;
 if (Ini.IniSectionExists(VUIFile, "Keys") == true)

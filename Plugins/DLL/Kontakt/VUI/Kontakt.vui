@@ -3,7 +3,6 @@ VUI=Kontakt
 PClass=Kontakt
 BClass=None
 PluginName=Kontakt
-ActivationKey=Enter
 Loader=Code
 [Keys]
 Ctrl+D=AllLibDelete

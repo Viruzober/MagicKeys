@@ -67,11 +67,6 @@ public static string GetModule()
 return CurrentPlugin["Module"];
 }
 
-public static string GetActiveKey()
-{
-return CurrentPlugin["ActiveKey"];
-}
-
 public static string GetLoad()
 {
 if (CurrentPlugin.ContainsKey("Loader") == true)
