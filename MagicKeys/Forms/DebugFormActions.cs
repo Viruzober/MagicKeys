@@ -20,6 +20,9 @@ switch(DI[0])
 case "IniRead":
 IniReadError(DI);
 break;
+case "KeyRead":
+KeyRegError(DI);
+break;
 }
 }
 
@@ -46,6 +49,11 @@ DebugText.Text =
 "Section: "+EX[3]+"\r\n"+
 "Key: "+EX[4]+"\r\n"+
 "Message: "+EX[5];
+}
+
+public void KeyRegError(string[] EX)
+{
+DebugText.Text = "";
 }
 
 }

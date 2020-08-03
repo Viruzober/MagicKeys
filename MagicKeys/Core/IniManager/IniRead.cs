@@ -25,6 +25,7 @@ break;
 }
 else if (FileStr[S].Trim() != "["+GetSection+"]" && S == FileStr.Length-1)
 {
+L = S;
 Error = "Section not found";
 throw new Exception();
 }
@@ -50,12 +51,14 @@ return KeyValue[1].Trim();
 }
 else
 {
+L = Start;
 Error = "Value is not correct";
 throw new Exception();
 }
 }
 else if (KeyValue[0].Trim() != GetKey && Start == End)
 {
+L = Start;
 Error = "Key not found";
 throw new Exception();
 }
