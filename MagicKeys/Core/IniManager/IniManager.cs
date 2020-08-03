@@ -9,21 +9,18 @@ namespace MagicKeys
 public static partial class Ini
 {
 
-public static List<string> IniReadSections(string File)
+public static List<string> IniReadSections(string GetFile)
 {
 List<string> temp = new List<string>();
-string sLine = string.Empty;
-using (StreamReader sr = new StreamReader(File))
+string[] FileStr = File.ReadAllLines(GetFile);
+string S = string.Empty;
+for(int I = 0; I < FileStr.Length; I++)
 {
-while (!sr.EndOfStream)
+S = FileStr[I].Trim();
+if (S.StartsWith("[") && S.EndsWith("]"))
 {
-sLine = sr.ReadLine().Trim();
-if (sLine.StartsWith("[") && sLine.EndsWith("]"))
-{
-temp.Add(sLine.Substring(1, sLine.Length - 2));
+temp.Add(S.Substring(1, S.Length - 2));
 }
-}
-sr.Close();
 }
 return temp;
 }

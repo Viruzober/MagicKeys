@@ -20,9 +20,9 @@ if (FileStr[S] == "["+GetSection+"]")
 for (int K = S; K < FileStr.Length; K++)
 {
 string[] KeyValue = FileStr[K].Split("=", 2);
-if (KeyValue[0] == GetKey)
+if (KeyValue[0].Trim() == GetKey)
 {
-return KeyValue[1];
+return (KeyValue[1]).Trim();
 }
 }
 }
