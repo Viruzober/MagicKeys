@@ -44,7 +44,8 @@ DebugText.Text =
 "File: "+EX[2]+"\r\n"+
 "Line: "+EX[1]+"\r\n"+
 "Section: "+EX[3]+"\r\n"+
-"Key: "+EX[4];
+"Key: "+EX[4]+"\r\n"+
+"Message: "+EX[5];
 }
 
 }

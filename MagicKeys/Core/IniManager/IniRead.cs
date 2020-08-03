@@ -11,55 +11,57 @@ public static partial class Ini
 public static string IniRead(string GetFile, string GetSection, string GetKey)
 {
 int L = 0;
+int End = 0;
 string Error = string.Empty;
 try
 {
 string[] FileStr = File.ReadAllLines(GetFile);
-for(int S = 0; S < FileStr.Length; S++)
+for (int S = 0; S <= FileStr.Length-1; S++)
 {
-L = S;
 if (FileStr[S].Trim() == "["+GetSection+"]")
 {
-
-int Start = S;
-int End = 0;
-for (int ES = S+1; ES < FileStr.Length; ES++)
+L = S;
+break;
+}
+else if (FileStr[S].Trim() != "["+GetSection+"]" && S == FileStr.Length-1)
 {
-if (FileStr[ES].Contains("[") == true | ES == FileStr.Length-1)
-{
-End = ES;
+Error = "Section not found";
+throw new Exception();
 }
 }
 
-for (int K = Start; K <= End; K++)
+for (int R = L+1; R < FileStr.Length; R++)
 {
-string[] KeyValue = FileStr[K].Split("=", 2);
-L = K;
+if (FileStr[R].Contains("[") || R == FileStr.Length-1)
+{
+End = R;
+break;
+}
+}
+
+for (int Start = L+1; Start <= End; Start++)
+{
+string[] KeyValue = FileStr[Start].Split("=", 2);
 if (KeyValue[0].Trim() == GetKey)
+{
+if (KeyValue.Length == 2)
 {
 return KeyValue[1].Trim();
 }
-else if (KeyValue[0].Trim() != GetKey && K == End)
+else
+{
+Error = "Value is not correct";
+throw new Exception();
+}
+}
+else if (KeyValue[0].Trim() != GetKey && Start == End)
 {
 Error = "Key not found";
 throw new Exception();
 }
 }
-
-}
-else if (FileStr[S] != "["+GetSection+"]" && S == FileStr.Length)
-{
-Error = "Section not found";
+Error = "Error reading file";
 throw new Exception();
-{
-}
-}
-if (S == FileStr.Length-1)
-{
-Error = "Section not found";
-throw new Exception();
-}
-}
 }
 catch(Exception)
 {
