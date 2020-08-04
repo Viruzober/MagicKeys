@@ -69,7 +69,6 @@ DebugText.Text =
 "Message: the keyboard shortcut cannot be registered\r\n"+
 "File: "+EX[1]+"\r\n"+
 "Key: "+EX[2];
-;
 }
 
 }
