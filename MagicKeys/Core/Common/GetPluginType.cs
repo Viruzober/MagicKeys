@@ -12,6 +12,8 @@ public static Type BClass = null;
 
 public static void GetPluginType()
 {
+try
+{
 if (API.GetBClass() != "None")
 {
 Assembly MKB = Assembly.LoadFrom(@"Plugins\"+API.GetBClass()+@"\"+API.GetBClass()+".dll");
@@ -25,6 +27,12 @@ return;
 }
 Assembly PC = Assembly.LoadFrom(API.GetModulePath());
 PClass = PC.GetType("MagicKeys."+API.GetPClass(), true, true);
+}
+catch(Exception)
+{
+MKDebugForm("GetPluginType|"+API.GetVUIPath()+API.GetVUIExt()+"|"+API.GetModule()+".dll");
+return;
+}
 }
 
 }

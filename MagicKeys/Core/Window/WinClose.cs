@@ -20,11 +20,11 @@ if (Array.TrueForAll(P[0..4], V => V == 0))
 return true;
 }
 Application.DoEvents();
-//WinWaitClose("#32768");
 if (KeySwitch == 1)
 {
 return true;
 }
+WinWaitClose("#32768");
 IntPtr Handle = GetForegroundWindow();
 GetWindowText(Handle, Title, nChars);
 GetClassName(Handle, Class, nChars);
