@@ -47,10 +47,6 @@ else if (key == Keys.Enter)
 {
 MagicKeys.VUIObjectEnter();
 }
-else if (key == Keys.Space)
-{
-MagicKeys.VUIObjectEnter();
-}
 break;
 }
 base.WndProc(ref m);

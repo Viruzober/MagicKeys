@@ -20,7 +20,10 @@ switch(DI[0])
 case "IniRead":
 IniReadError(DI);
 break;
-case "KeyRead":
+case "IniReadKeys":
+IniReadKeysError(DI);
+break;
+case "KeyReg":
 KeyRegError(DI);
 break;
 }
@@ -51,9 +54,22 @@ DebugText.Text =
 "Message: "+EX[5];
 }
 
+public void IniReadKeysError(string[] EX)
+{
+DebugText.Text =
+"Message: "+EX[4]+"\r\n"+
+"File: "+EX[2]+"\r\n"+
+"Line: "+EX[1]+"\r\n"+
+"Section: "+EX[3];
+}
+
 public void KeyRegError(string[] EX)
 {
-DebugText.Text = "";
+DebugText.Text =
+"Message: the keyboard shortcut cannot be registered\r\n"+
+"File: "+EX[1]+"\r\n"+
+"Key: "+EX[2];
+;
 }
 
 }

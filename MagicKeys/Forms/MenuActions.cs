@@ -11,6 +11,7 @@ public static RegisterForm Reg;
 
 public void Exit(object sender, EventArgs e)
 {
+MagicKeys.KeyUnReg();
 MagicKeys.KeySwitch = 1;
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 0);
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);

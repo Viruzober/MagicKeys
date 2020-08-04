@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace MagicKeys
 {
@@ -25,39 +26,51 @@ temp.Add(S.Substring(1, S.Length - 2));
 return temp;
 }
 
-public static List<string> IniReadKeys(string File, string Section)
+public static List<string> IniReadKeys(string GetFile, string GetSection)
 {
 List<string> temp = new List<string>();
-string sLine = string.Empty;
-string SecName = string.Empty;
-using (StreamReader sr = new StreamReader(File))
+int L = 0;
+int End = 0;
+string Error = string.Empty;
+try
 {
-while (!sr.EndOfStream)
+string[] FileStr = File.ReadAllLines(GetFile);
+for (int S = 0; S <= FileStr.Length-1; S++)
 {
-sLine = sr.ReadLine().Trim();
-if (sLine.StartsWith("[") && sLine.EndsWith("]"))
+if (FileStr[S].Trim() == "["+GetSection+"]")
 {
-SecName = sLine.Substring(1, sLine.Length - 2);
-if (!sr.EndOfStream)
+L = S;
+break;
+}
+else if (FileStr[S].Trim() != "["+GetSection+"]" && S == FileStr.Length-1)
 {
-sLine = sr.ReadLine().Trim();
+L = S+1;
+Error = "Section not found";
+throw new Exception();
 }
 }
-if (SecName.ToUpper() == Section.ToUpper())
+
+for (int R = L+1; R < FileStr.Length; R++)
 {
-if (sLine.Length > 0)
+if (FileStr[R].Contains("[") || R == FileStr.Length-1)
 {
-int pos = sLine.IndexOf("=");
-if (pos > 0)
+End = R-1;
+break;
+}
+}
+
+for (int Start = L+1; Start <= End; Start++)
 {
-temp.Add(sLine.Remove(pos, sLine.Length - pos));
-}
-}
-}
-}
-sr.Close();
+string[] KeyValue = FileStr[Start].Split("=", 2);
+temp.Add(KeyValue[0].Trim());
 }
 return temp;
+}
+catch(Exception)
+{
+MagicKeys.MKDebugForm("IniReadKeys|"+L.ToString()+"|"+GetFile+"|"+GetSection+"|"+Error);
+return null;
+}
 }
 
 public static int IniCountSections( string File)
