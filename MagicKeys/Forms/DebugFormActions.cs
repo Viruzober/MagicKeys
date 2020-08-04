@@ -26,6 +26,9 @@ break;
 case "KeyReg":
 KeyRegError(DI);
 break;
+case "GetPluginType":
+GetPluginTypeError(DI);
+break;
 }
 }
 
@@ -69,6 +72,15 @@ DebugText.Text =
 "Message: the keyboard shortcut cannot be registered\r\n"+
 "File: "+EX[1]+"\r\n"+
 "Key: "+EX[2];
+}
+
+
+public void GetPluginTypeError(string[] EX)
+{
+DebugText.Text =
+"Message: File not found\r\n"+
+"File: "+EX[1]+"\r\n"+
+"Module: "+EX[2];
 }
 
 }
