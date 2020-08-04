@@ -21,7 +21,7 @@ InitForm();
 public void InitTextBox()
 {
 DebugText.Location = new Point(10, 10);
-DebugText.Size = new Size(300, 200);
+DebugText.Size = new Size(400, 150);
 DebugText.Multiline = true;
 DebugText.ReadOnly = true;
 DebugText.KeyDown += DebugText_KeyDown;
@@ -30,8 +30,8 @@ this.Controls.Add(DebugText);
 
 public void InitButton()
 {
-Exit.Size = new Size(300, 30);
-Exit.Location = new Point(10, 230);
+Exit.Size = new Size(400, 25);
+Exit.Location = new Point(10, 180);
 Exit.Text = "Exit";
 Exit.Click += Exit_Click;
 this.Controls.Add(Exit);
@@ -43,7 +43,7 @@ this.TopMost = true;
 this.StartPosition = FormStartPosition.CenterScreen;
 this.MaximizeBox = false;
 this.MinimizeBox = false;
-this.Size = new Size(335, 300);
+this.Size = new Size(435, 250);
 this.Name = "DebugForm";
 this.Text = "Error";
 this.AcceptButton = Exit;

@@ -12,9 +12,9 @@ public static int[] GetPluginCoord()
 {
 IntPtr Handle = GetForegroundWindow();
 int[] RC = GetWinRect(Handle);
-for (int X = RC[0]; X <= RC[0]+RC[2]; X+=150)
+for (int X = RC[0]; X < RC[2]; X+=150)
 {
-for (int Y = RC[1]; Y <= RC[1]+RC[3]; Y+=150)
+for (int Y = RC[1]; Y < RC[3]; Y+=150)
 {
 IntPtr HModule = GetWinPointHandle(X, Y);
 string ModuleName = GetDllName(HModule);

@@ -13,11 +13,9 @@ if (WinExistsHandle("", Class) == IntPtr.Zero)
 return;
 }
 KeyUnReg();
-while(WinExistsHandle("", Class) != IntPtr.Zero)
-{
-Application.DoEvents();
-}
+while(WinExistsHandle("", Class) != IntPtr.Zero);
 KeyReg();
+return;
 }
 
 }

@@ -29,6 +29,9 @@ break;
 case "GetPluginType":
 GetPluginTypeError(DI);
 break;
+case "ExceptionHook":
+ExceptionHookError(DI);
+break;
 }
 }
 
@@ -81,6 +84,11 @@ DebugText.Text =
 "Message: File not found\r\n"+
 "File: "+EX[1]+"\r\n"+
 "Module: "+EX[2];
+}
+
+public void ExceptionHookError(string[] EX)
+{
+DebugText.Text = EX[1];
 }
 
 }

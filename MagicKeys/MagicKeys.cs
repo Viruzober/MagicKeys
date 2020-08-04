@@ -4,6 +4,7 @@ using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Security.Permissions;
 
 namespace MagicKeys
 {
@@ -12,8 +13,14 @@ public partial class MagicKeys
 
 public static Menu HM;
 
+[SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.ControlAppDomain)]
 static void Main(string[] args)
 {
+Application.ThreadException +=
+(o, e) => MKDebugForm("ExceptionHook|"+e.Exception.ToString());
+Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+AppDomain.CurrentDomain.UnhandledException +=
+(o, e) => MKDebugForm("ExceptionHook|"+e.ExceptionObject.ToString());
 if (CheckRunProc("MagicKeys") == true) return;
 #if X86
 if (OS() == "64")

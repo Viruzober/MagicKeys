@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Text;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace MagicKeys
 {
@@ -20,7 +21,7 @@ IntPtr GGWL = GetWindowLongPtr64(Handle, GWL.GWL_HINSTANCE);
 #endif
 GetModuleFileNameEx(OP, GGWL, Text, nChars);
 CloseHandle(OP);
-return Text.ToString();
+return Path.GetFileName(Text.ToString());
 }
 
 public enum ProcessAccessFlags : uint
