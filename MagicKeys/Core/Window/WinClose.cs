@@ -25,11 +25,7 @@ if (KeySwitch == 1)
 return true;
 }
 WinWaitClose("#32768");
-<<<<<<< HEAD
-IntPtr Handle = GetForegroundWindow();
-=======
                 IntPtr Handle = GetForegroundWindow();
->>>>>>> ad7614f8545dd53a9aef0ffa14b58720fb40e01a
 GetWindowText(Handle, Title, nChars);
 GetClassName(Handle, Class, nChars);
 if (Title.ToString().Contains(HWNDTitle) == true && Class.ToString().Contains(HWNDClass) == true)
