@@ -20,15 +20,15 @@ if (Array.TrueForAll(P[0..4], V => V == 0))
 return true;
 }
 Application.DoEvents();
-//WinWaitClose("#32768");
 if (KeySwitch == 1)
 {
 return true;
 }
-IntPtr Handle = GetForegroundWindow();
+WinWaitClose("#32768");
+                IntPtr Handle = GetForegroundWindow();
 GetWindowText(Handle, Title, nChars);
 GetClassName(Handle, Class, nChars);
-if (Title.ToString().Contains(HWNDTitle) == true & Class.ToString().Contains(HWNDClass) == true)
+if (Title.ToString().Contains(HWNDTitle) == true && Class.ToString().Contains(HWNDClass) == true)
 {
 continue;
 }

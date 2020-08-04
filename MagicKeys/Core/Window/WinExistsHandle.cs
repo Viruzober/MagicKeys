@@ -18,7 +18,7 @@ foreach(IntPtr Handle in result)
 {
 GetWindowText(Handle, Title, nChars);
 GetClassName(Handle, Class, nChars);
-if (Title.ToString().Contains(HWNDTitle) & Class.ToString().Contains(HWNDClass))
+if (Title.ToString().Contains(HWNDTitle) && Class.ToString().Contains(HWNDClass))
 {
 return Handle;
 }
