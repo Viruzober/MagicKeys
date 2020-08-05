@@ -25,7 +25,7 @@ if (CheckRunProc("MagicKeys") == true) return;
 #if X86
 if (OS() == "64")
 {
-MessageBox.Show("Эта версия MagicKeys предназначенна для windows x86. Используйте версию MagicKeys x64.", "Внимание");
+MessageBox.Show("This version of MagicKeys is built for 32-bit Windows, but you are running a 64-bit version. Please run a 64-bit version of MagicKeys instead.", "Error", MessageBoxIcon.Error);
 return;
 }
 #endif
@@ -35,13 +35,13 @@ string UI = UserInfo(PCID());
 if (UI != "Reg user")
 {
 RegUser = false;
-MessageBox.Show("Пожалуйста зарегистрируйтесь через меню на панели задач.", "Внимание");
+MessageBox.Show("Please register by clicking Register in the tray context menu.", "Information");
 }
 }
 HM = new Menu();
 LoadSettings();
 SoundPlay("Start.ogg", 0);
-Speak("Сервис Magic Keys запущен");
+Speak("MagicKeys is ready");
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));
 ThreadPluginDetector.IsBackground = true;

@@ -12,10 +12,10 @@ public partial class Menu : Form
 public NotifyIcon Ni;
 public System.ComponentModel.IContainer components;
 public ContextMenuStrip MainMenu = new ContextMenuStrip();
-public ToolStripMenuItem RegisterMenuItem = new ToolStripMenuItem("Регистрация");
-public ToolStripMenuItem SettingsMenuItem = new ToolStripMenuItem("Настройки");
-public ToolStripMenuItem HelpMenuItem = new ToolStripMenuItem("Справка");
-public ToolStripMenuItem ExitMenuItem = new ToolStripMenuItem("Выход");
+public ToolStripMenuItem RegisterMenuItem = new ToolStripMenuItem("Register");
+public ToolStripMenuItem SettingsMenuItem = new ToolStripMenuItem("Settings");
+public ToolStripMenuItem HelpMenuItem = new ToolStripMenuItem("Help");
+public ToolStripMenuItem ExitMenuItem = new ToolStripMenuItem("Exit");
 
         public Menu()
 {
@@ -35,7 +35,7 @@ MainMenu.Items.AddRange(new[] {RegisterMenuItem, SettingsMenuItem, HelpMenuItem,
 }
 Ni.ContextMenuStrip = MainMenu;
 Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
-Ni.Text = "MagicKeys включён";
+Ni.Text = "MagicKeys is enabled";
 Ni.Visible = true;
 }
 

@@ -18,14 +18,14 @@ if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F1)
 {
 if (MagicKeys.KeySwitch == 0)
 {
-Ni.Text = "MagicKeys выключен";
-MagicKeys.Speak("MagicKeys выключенн");
+Ni.Text = "MagicKeys is disabled";
+MagicKeys.Speak("MagicKeys is disabled");
 MagicKeys.KeySwitch = 1;
 }
 else if (MagicKeys.KeySwitch == 1)
 {
-Ni.Text = "MagicKeys включён";
-MagicKeys.Speak("MagicKeys включён");
+Ni.Text = "MagicKeys is enabled";
+MagicKeys.Speak("MagicKeys is enabled");
 MagicKeys.KeySwitch = 0;
 }
 }
@@ -38,12 +38,12 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F5)
 if (MagicKeys.SoundTheme == true)
 {
 MagicKeys.SoundTheme = false;
-MagicKeys.Speak("Звук отключён");
+MagicKeys.Speak("Sounds off");
 }
 else
 {
 MagicKeys.SoundTheme = true;
-MagicKeys.Speak("Звук включён");
+MagicKeys.Speak("Sounds on");
 }
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F6)

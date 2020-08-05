@@ -8,10 +8,10 @@ namespace MagicKeys
 
 public static void VUIObjectSpeak()
 {
-string SpeachObject = API.GetText();
-if (SpeachType == true)
+string SpeakObject = API.GetText();
+if (SpeakType == true)
 {
-SpeachObject += " "+API.GetOpjectType();
+SpeakObject += " "+API.GetOpjectType();
 }
 if (API.GetAutoFunc() != null)
 {
@@ -25,10 +25,10 @@ else
 {
 AutoFunc = InvokeFromString(API.GetAutoFunc());
 }
-SpeachObject += " "+AutoFunc;
+SpeakObject += " "+AutoFunc;
 }
-SpeachObject += " "+API.GetObjectKey();
-Speak(SpeachObject);
+SpeakObject += " "+API.GetObjectKey();
+Speak(SpeakObject);
 }
 
 }

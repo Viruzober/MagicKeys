@@ -7,7 +7,7 @@ public partial class MagicKeys
 
 public static void Slider(string Name, int X, int Y, string Type, double OnePercent, double SlidePercent)
 {
-int Input = Convert.ToInt32(InputBox(Name, "Введите значение для "+Name+" от 1 до 100", 1, 100));
+int Input = Convert.ToInt32(InputBox(Name, "Enter a value for "+Name+" from 1 to 100", 1, 100));
 if (Input == 0)
 {
 return;

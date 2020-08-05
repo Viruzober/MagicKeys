@@ -13,7 +13,7 @@ public static void HelpForm()
 string HelpFile = @"VUI\"+CurrentPlugin["VUI"];
 if (File.Exists(HelpFile.Substring(0, HelpFile.Length - 3)+"help") == false)
 {
-MagicKeys.Speak("Файл справки не найден");
+MagicKeys.Speak("Help file not found");
 }
 else
 {

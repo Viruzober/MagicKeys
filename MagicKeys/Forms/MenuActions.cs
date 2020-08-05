@@ -20,11 +20,11 @@ if (MagicKeys.Exit == true)
 DialogResult result;
 if (sender == null)
 {
-result = MessageBox.Show("Выйти", "Закрыть Magic Keys?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+result = MessageBox.Show("Exit", "Do you really want to exit MagicKeys?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
 }
 else
 {
-result = MessageBox.Show("Выйти", "Закрыть Magic Keys?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+result = MessageBox.Show("Exit", "Do you really want to exit MagicKeys?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 }
 if (result == DialogResult.OK)
 {
@@ -38,7 +38,7 @@ MagicKeys.KeySwitch = 0;
 }
 else
 {
-MagicKeys.Speak("Пока");
+MagicKeys.Speak("Goodbye");
 Application.Exit();
 }
 }

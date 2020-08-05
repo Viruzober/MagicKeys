@@ -23,21 +23,21 @@ this.Close();
 MagicKeys.RegUser = true;
 MagicKeys.HM.Ni.Visible = false;
 MagicKeys.HM = new Menu();
-MessageBox.Show("Вы успешно зарегистрировались! Для  применения изменений перезагрузите MagicKeys.", "Внимание");
+MessageBox.Show("Registration Successful. Restart MagicKeys to apply the changes.", "Information");
 }
 else
 {
-MessageBox.Show("Что-то пошло не так! Повторите попытку позже, или обратитесь к разработчику.", "Ошибка");
-}
-}
-else
-{
-MagicKeys.Speak("Некоректный E-Mail");
+MessageBox.Show("Something has gone wrong. Please try again later or contact the developer.", "Error");
 }
 }
 else
 {
-MagicKeys.Speak("Пожалуйста, укажите ваше имя");
+MagicKeys.Speak("Incorrect e-mail.");
+}
+}
+else
+{
+MagicKeys.Speak("Please enter your name.");
 }
 }
 public void Can_Click(object sender, EventArgs e)
