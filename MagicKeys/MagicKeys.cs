@@ -35,7 +35,7 @@ string UI = UserInfo(PCID());
 if (UI != "Reg user")
 {
 RegUser = false;
-MessageBox.Show("Please register by clicking Register in the tray context menu.", "Information");
+MessageBox.Show("Please register by clicking Register in the tray context menu.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 }
 }
 HM = new Menu();
