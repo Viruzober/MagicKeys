@@ -10,8 +10,8 @@ public partial class MagicKeys
 
 public static void HelpForm()
 {
-string HelpFile = @"VUI\"+CurrentPlugin["VUI"];
-if (File.Exists(HelpFile.Substring(0, HelpFile.Length - 3)+"help") == false)
+string HelpFile = API.GetVUIPath()+API.GetVUI()+".help";
+if (File.Exists(HelpFile) == false)
 {
 MagicKeys.Speak("Help file not found");
 }
