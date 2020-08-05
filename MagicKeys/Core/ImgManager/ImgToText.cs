@@ -24,7 +24,7 @@ return GetOCR.Result;
 }
 catch(Exception)
 {
-return "Компонент Windows 10 OCR недоступен";
+return "Windows 10 OCR is unavailable";
 }
 }
 
