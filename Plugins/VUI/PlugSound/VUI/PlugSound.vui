@@ -3,7 +3,7 @@ VUI=PlugSound
 PClass=MagicKeys
 BClass=None
 PluginName=PlugSound
-ActivationKey=Space
+Loader=None
 [Keys]
 M=Menu
 [1]
