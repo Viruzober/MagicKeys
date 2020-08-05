@@ -20,13 +20,13 @@ if (MagicKeys.Exit == true)
 DialogResult result;
 if (sender == null)
 {
-result = MessageBox.Show("Выйти", "Закрыть Magic Keys?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+result = MessageBox.Show("Выйти", "Закрыть Magic Keys?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
 }
 else
 {
-result = MessageBox.Show("Выйти", "Закрыть Magic Keys?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+result = MessageBox.Show("Выйти", "Закрыть Magic Keys?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 }
-if (result == DialogResult.Yes)
+if (result == DialogResult.OK)
 {
 Application.Exit();
 return;
