@@ -25,7 +25,7 @@ if (CheckRunProc("MagicKeys") == true) return;
 #if X86
 if (OS() == "64")
 {
-SoundPlay("Error.ogg", 0);
+SoundPlay("Error.wav", 0);
                 MessageBox.Show("This version of MagicKeys is built for 32-bit Windows, but you are running a 64-bit version. Please run a 64-bit version of MagicKeys instead.", "Error");
 return;
 }
@@ -41,7 +41,7 @@ MessageBox.Show("Please register by clicking Register in the tray context menu."
 }
 HM = new Menu();
 LoadSettings();
-SoundPlay("Start.ogg", 0);
+SoundPlay("Start.wav", 0);
 Speak("MagicKeys is ready");
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));

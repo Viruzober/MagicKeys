@@ -11,6 +11,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AssemblyName>MagicKeys</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
@@ -91,55 +92,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Bass.Net">
-      <HintPath>Lib\Bass.Net.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Forms\DebugForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\DebugForm.cs" />
     <Compile Update="Forms\DebugFormActions.cs" />
   </ItemGroup>
 
-  <Choose>
-    <When Condition=" '$(Platform)'=='x86' ">
-      <ItemGroup>
-        <None Include="Lib\bass32.dll">
-          <Link>bass.dll</Link>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Include="Lib\ImageSearch32.dll">
-          <Link>ImageSearch32.dll</Link>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Include="Lib\nvdaControllerClient32.dll">
-          <Link>nvdaControllerClient32.dll</Link>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-      </ItemGroup>
-    </When>
-    <When Condition=" '$(Platform)'=='x64' ">
-      <ItemGroup>
-        <None Include="Lib\bass64.dll">
-          <Link>bass.dll</Link>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Include="Lib\ImageSearch64.dll">
-          <Link>ImageSearch64.dll</Link>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Include="Lib\nvdaControllerClient64.dll">
-          <Link>nvdaControllerClient64.dll</Link>
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-      </ItemGroup>
-    </When>
-  </Choose>
-
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;if exist &quot;%25distdir%25\$(TargetName).exe&quot; rd /s /q &quot;%25distdir%25&quot;&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;%25distdir%25\Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Sounds&quot; &quot;%25distdir%25\Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
+    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;if exist &quot;%25distdir%25\$(TargetName).exe&quot; rd /s /q &quot;%25distdir%25&quot;&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Plugins\VUI&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;%25distdir%25\Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q &quot;$(SolutionDir)Sounds&quot; &quot;%25distdir%25\Sounds&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul" />
   </Target>
 
   <Target Name="ProjectCleanup" AfterTargets="Clean">

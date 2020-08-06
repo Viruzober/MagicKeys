@@ -6,6 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
     <Platforms>x64;x86</Platforms>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -31,5 +33,13 @@
   <ItemGroup>
     <ProjectReference Include="..\MagicKeys\MagicKeys.csproj" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;$(TargetDir)&quot; &gt; nul" />
+  </Target>
+
+  <Target Name="ProjectCleanup" AfterTargets="Clean">
+    <RemoveDir Directories="$(TargetDir)" />
+  </Target>
 
 </Project>

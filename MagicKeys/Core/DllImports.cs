@@ -7,12 +7,12 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 [DllImport("user32.dll")]
-static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 [DllImport("user32.dll")]
 [return: MarshalAs(UnmanagedType.Bool)]
-static extern bool IsWindowEnabled(IntPtr hWnd);
+public static extern bool IsWindowEnabled(IntPtr hWnd);
 [DllImport("user32.dll", SetLastError = true)]
-static extern IntPtr SendMessage(IntPtr hWnd, WM Msg, int wParam, StringBuilder lParam);
+public static extern IntPtr SendMessage(IntPtr hWnd, WM Msg, int wParam, StringBuilder lParam);
 [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
 public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName,int nMaxCount);
 [DllImport("user32.dll")]
@@ -37,7 +37,7 @@ public static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x
 public static extern int SendMessage(IntPtr hWnd, int uMsg, int wParam, string lParam);
 [DllImport("kernel32.dll", SetLastError=true)]
 [return: MarshalAs(UnmanagedType.Bool)]
-static extern bool CloseHandle(IntPtr hObject);
+public static extern bool CloseHandle(IntPtr hObject);
 #if X86
 [DllImport("ImageSearch32.dll")]
 public static extern IntPtr ImageSearch(int x, int y, int right, int bottom, string imagePath);
@@ -68,17 +68,19 @@ public static extern int nvdaController_cancelSpeech();
 public static extern int nvdaController_speakText(string text);
 #endif
 [DllImport("user32.dll")]
-private static extern UInt32 GetWindowThreadProcessId(Int32 hWnd, out Int32 lpdwProcessId);
+public static extern UInt32 GetWindowThreadProcessId(Int32 hWnd, out Int32 lpdwProcessId);
 #if X86
 [DllImport("user32.dll", EntryPoint="GetWindowLong")]
-private static extern IntPtr GetWindowLongPtr32(IntPtr hWnd, GWL nIndex);
+public static extern IntPtr GetWindowLongPtr32(IntPtr hWnd, GWL nIndex);
 #elif X64
 [DllImport("user32.dll", EntryPoint="GetWindowLongPtr")]
-private static extern IntPtr GetWindowLongPtr64(IntPtr hWnd, GWL nIndex);
+public static extern IntPtr GetWindowLongPtr64(IntPtr hWnd, GWL nIndex);
 #endif
 [DllImport("kernel32.dll", SetLastError = true)]
 public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId);
 [DllImport("psapi.dll")]
-static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, [Out] StringBuilder lpBaseName, [In] [MarshalAs(UnmanagedType.U4)] int nSize);
+public static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, [Out] StringBuilder lpBaseName, [In] [MarshalAs(UnmanagedType.U4)] int nSize);
+[DllImport("Winmm.dll", SetLastError = true)]
+public static extern int mciSendString(string lpszCommand, [MarshalAs(UnmanagedType.LPStr)] StringBuilder lpszReturnString, int cchReturn, IntPtr hwndCallback);
 }
 }

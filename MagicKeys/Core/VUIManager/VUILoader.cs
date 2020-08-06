@@ -12,7 +12,7 @@ public static void VUILoader(string File)
 {
 KeyUnReg();
 VUIKeys.Clear();
-SoundPlay("ChangeVUI.ogg", 0);
+SoundPlay("ChangeVUI.wav", 0);
 string VUIFile = VUIPathDetect(File);
 CurrentPlugin["VUI"] = File;
 CurrentPlugin["PClass"] = Ini.IniRead(VUIFile, "Info", "PClass");
