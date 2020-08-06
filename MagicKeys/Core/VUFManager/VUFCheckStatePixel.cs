@@ -5,7 +5,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static string CheckStatePixel(string Param)
+public static string VUFCheckStatePixel(string Param)
 {
 string[] FP = Param.Split("|");
 string R = CheckStatePixel(
