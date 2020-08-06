@@ -5,7 +5,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static string VUFSpeakControlTextAtPoint(string Param)
+public static string VUFControlGetTextPoint(string Param)
 {
 string[] FP = Param.Split("|");
 string R = ControlGetTextPoint(
