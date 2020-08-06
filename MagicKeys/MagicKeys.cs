@@ -25,7 +25,8 @@ if (CheckRunProc("MagicKeys") == true) return;
 #if X86
 if (OS() == "64")
 {
-MessageBox.Show("This version of MagicKeys is built for 32-bit Windows, but you are running a 64-bit version. Please run a 64-bit version of MagicKeys instead.", "Error", MessageBoxIcon.Error);
+SoundPlay("Error.ogg", 0);
+                MessageBox.Show("This version of MagicKeys is built for 32-bit Windows, but you are running a 64-bit version. Please run a 64-bit version of MagicKeys instead.", "Error");
 return;
 }
 #endif
