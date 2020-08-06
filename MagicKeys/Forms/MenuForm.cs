@@ -35,7 +35,7 @@ MainMenu.Items.AddRange(new[] {RegisterMenuItem, SettingsMenuItem, HelpMenuItem,
 }
 Ni.ContextMenuStrip = MainMenu;
 Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
-Ni.Text = "MagicKeys is enabled";
+Ni.Text = "MagicKeys "+MagicKeys.Version+" is enabled";
 Ni.Visible = true;
 }
 

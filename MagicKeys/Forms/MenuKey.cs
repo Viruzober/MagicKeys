@@ -18,13 +18,13 @@ if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F1)
 {
 if (MagicKeys.KeySwitch == 0)
 {
-Ni.Text = "MagicKeys is disabled";
+Ni.Text = "MagicKeys "+MagicKeys.Version+" is disabled";
 MagicKeys.Speak("MagicKeys is disabled");
 MagicKeys.KeySwitch = 1;
 }
 else if (MagicKeys.KeySwitch == 1)
 {
-Ni.Text = "MagicKeys is enabled";
+Ni.Text = "MagicKeys "+MagicKeys.Version+" is enabled";
 MagicKeys.Speak("MagicKeys is enabled");
 MagicKeys.KeySwitch = 0;
 }

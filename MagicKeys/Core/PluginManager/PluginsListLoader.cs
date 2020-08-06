@@ -32,14 +32,20 @@ if (Point == "Info")
  continue;
 }
 PluginsList.Add(Point, new Dictionary<string, string>());
-if (Ini.IniKeyExists(IVUI, Point, "WTitle") == true | Ini.IniKeyExists(IVUI, Point, "WClass") == true)
+if (Ini.IniKeyExists(IVUI, Point, "WTitle") == true)
 {
 PluginsList[Point].Add("WTitle", Ini.IniRead(IVUI, Point, "WTitle"));
-PluginsList[Point].Add("WClass", Ini.IniRead(IVUI, Point, "WClass"));
 }
 else
 {
 PluginsList[Point].Add("WTitle", WTitle);
+}
+if (Ini.IniKeyExists(IVUI, Point, "WClass") == true)
+{
+PluginsList[Point].Add("WClass", Ini.IniRead(IVUI, Point, "WClass"));
+}
+else
+{
 PluginsList[Point].Add("WClass", WClass);
 }
 PluginsList[Point].Add("PClass", Ini.IniRead(IVUI, Point, "PClass"));
