@@ -102,7 +102,5 @@ public static extern IntPtr GetWindowLongPtr64(IntPtr hWnd, GWL nIndex);
 public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId);
 [DllImport("psapi.dll")]
 public static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, [Out] StringBuilder lpBaseName, [In] [MarshalAs(UnmanagedType.U4)] int nSize);
-[DllImport("Winmm.dll", SetLastError = true)]
-public static extern int mciSendString(string lpszCommand, [MarshalAs(UnmanagedType.LPStr)] StringBuilder lpszReturnString, int cchReturn, IntPtr hwndCallback);
 }
 }

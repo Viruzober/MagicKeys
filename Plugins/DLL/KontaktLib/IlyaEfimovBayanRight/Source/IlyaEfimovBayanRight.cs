@@ -13,11 +13,11 @@ MouseClick("Left", P[1]+45, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
 {
-Speak("RoundRobin отмечено");
+Speak("RoundRobin checked");
 }
 else
 {
-Speak("RoundRobin не отмечено");
+Speak("RoundRobin not checked");
 }
 }
 
@@ -27,12 +27,12 @@ MouseClick("Left", P[1]+45, P[2]+230, 1, 0, 0, 10);
 Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
 {
-Speak("AutoAttack отмечено");
+Speak("AutoAttack checked");
 VUIObjectSwitcher(false, "false", 3, 3);
 }
 else
 {
-Speak("AutoAttack не отмечено");
+Speak("AutoAttack not checked");
 VUIObjectSwitcher(false, "true", 3, 3);
 }
 }
@@ -63,12 +63,12 @@ MouseClick("Left", P[1]+280, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
-Speak("Reverb отмечено");
+Speak("Reverb checked");
 VUIObjectSwitcher(false, "true", 8, 8);
 }
 else
 {
-Speak("Reverb не отмечено");
+Speak("Reverb not checked");
 VUIObjectSwitcher(false, "false", 8, 8);
 }
 }
@@ -84,11 +84,11 @@ MouseClick("Left", P[1]+280, P[2]+270, 1, 0, 0, 10);
 Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+270, P[1]+350, P[2]+320, 0)[0] == 1)
 {
-Speak("Detune отмечено");
+Speak("Detune checked");
 }
 else
 {
-Speak("Detune не отмечено");
+Speak("Detune not checked");
 }
 }
 
@@ -101,19 +101,19 @@ Speak("Sustain включено");
 public static void Staccato()
 {
 MouseClick("Left", P[1]+550, P[2]+210, 1, 0, 0, 10);
-Speak("Staccato включено");
+Speak("Staccato on");
 }
 
 public static void Crescendo()
 {
 MouseClick("Left", P[1]+550, P[2]+230, 1, 0, 0, 10);
-Speak("Crescendo включено");
+Speak("Crescendo on");
 }
 
 public static void Detache()
 {
 MouseClick("Left", P[1]+590, P[2]+250, 1, 0, 0, 10);
-Speak("Detache включено");
+Speak("Detache on");
 }
 
 public static void Piccolo()
@@ -123,11 +123,11 @@ MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
 if (ImgSearch("BayanPiccolo")[0] == 1)
 {
-Speak("Piccolo включён");
+Speak("Piccolo on");
 }
 else
 {
-Speak("Piccolo отключён");
+Speak("Piccolo off");
 }
 }
 
@@ -138,11 +138,11 @@ MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
 if (ImgSearch("BayanConcertina")[0] == 1)
 {
-Speak("Concertina включён");
+Speak("Concertina on");
 }
 else
 {
-Speak("Concertina отключён");
+Speak("Concertina off");
 }
 }
 
@@ -153,11 +153,11 @@ MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
 if (ImgSearch("BayanClarinet")[0] == 1)
 {
-Speak("Clarinet включён");
+Speak("Clarinet on");
 }
 else
 {
-Speak("Clarinet отключён");
+Speak("Clarinet off");
 }
 }
 
@@ -168,11 +168,11 @@ MouseMove(P[1], P[2], 0);
 Thread.Sleep(100);
 if (ImgSearch("BayanBassoon")[0] == 1)
 {
-Speak("Bossoon включён");
+Speak("Bassoon on");
 }
 else
 {
-Speak("Bossoon отключён");
+Speak("Bassoon off");
 }
 }
 

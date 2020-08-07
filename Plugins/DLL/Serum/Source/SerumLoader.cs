@@ -28,7 +28,7 @@ VUIObjectSwitcher(true, "false", 1, 5);
 }
 else
 {
-Speak("Перед использованием этого плагина выполните соответствующую инструкцию для него из папки settings");
+Speak("Before using this plugin follow the instructions found in the corresponding Settings folder");
 return;
 }
 }

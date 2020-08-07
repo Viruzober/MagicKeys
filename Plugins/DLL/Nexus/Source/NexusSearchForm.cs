@@ -57,15 +57,15 @@ public void InitLabel()
 {
 SearchLabel.Location = new Point(10, 10);
 SearchLabel.Size = new Size(80, 25);
-SearchLabel.Text = "Поиск";
+SearchLabel.Text = "Search:";
 SearchLabel.TabIndex = 0;
 this.Controls.Add(SearchLabel);
-LabelBank.Text = "Категории";
+LabelBank.Text = "Banks:";
 LabelBank.Location = new Point(10, 50);
 LabelBank.Size = new Size(200, 25);
 LabelBank.TabIndex = 2;
 this.Controls.Add(LabelBank);
-LabelPatch.Text = "Патчи";
+LabelPatch.Text = "Patches:";
 LabelPatch.Location = new Point(280, 50);
 LabelPatch.Size = new Size(200, 25);
 LabelPatch.TabIndex = 4;
@@ -101,7 +101,7 @@ this.Name = "NexusSearch";
 this.StartPosition = FormStartPosition.CenterScreen;
 this.MaximizeBox = false;
 this.MinimizeBox = false;
-this.Text = "Поиск";
+this.Text = "Search";
 this.TopMost = true;
 this.Shown += Form_Shown;
 this.CancelButton = Cancel;

@@ -11,7 +11,7 @@ public partial class Kontakt
 
 public static void LibMidiChannel()
 {
-string Input = InputBox("Midi канал", "Введите номер Midi канала от 1 до 16.", 1, 16);
+string Input = InputBox("MIDI Channel", "Enter MIDI channel number from 1 to 16.", 1, 16);
 if (Input != "0")
 {
 int[] KLMC = ImgSearch("KontaktTopLine");
@@ -33,15 +33,11 @@ MouseClick("Left", X, Y, 1, 0, 0, 10);
 MouseClick("Left", KLMC[1]+620, KLMC[2]+20, 1, 0, 0, 10);
 Speak("OK");
 }
-else
-{
-return;
-}
 }
 
 public static void LibAudioChannel()
 {
-string Input = InputBox("Аудио канал", "Введите номер стерео пары от 1 до 16.", 1, 16);
+string Input = InputBox("Audio Channel", "Enter audio channel number from 1 to 16.", 1, 16);
 if (Input != "0")
 {
 int[] KLAC = ImgSearch("KontaktTopLine");

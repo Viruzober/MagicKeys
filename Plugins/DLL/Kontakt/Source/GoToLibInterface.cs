@@ -10,7 +10,7 @@ public partial class Kontakt
 
 public static void GoToLibInterface()
 {
-Speak("Идёт поиск интерфейса");
+Speak("Searching for an interface");
 int[] KTL = ImgSearch("KontaktTopLine");
 DP[1] = KTL[1];
 DP[2] = KTL[2];

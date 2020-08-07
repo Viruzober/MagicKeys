@@ -10,7 +10,7 @@ public static bool CheckRunProc(string Proc)
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
 if (RunProc.Count(p => p.ProcessName.Contains(Proc)) > 1)
 {
-SoundPlay("Error.wav", 0);
+SoundPlay("Error", 0);
 MessageBox.Show("MagicKeys is already running.", "Error");
 return true;
 }

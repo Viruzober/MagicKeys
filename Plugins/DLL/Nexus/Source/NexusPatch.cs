@@ -55,7 +55,7 @@ if (NXBP[0] == 1)
 int[] NXEND = ImgSearchArea("NexusEnd", NXBP[5], NXBP[6], NXBP[5]+15, NXBP[6]+25, 20);
 if (NXEND[0] == 1)
 {
-SoundPlay("End.wav", 0);
+SoundPlay("End", 0);
 }
 else if (NXEND[0] == 0)
 {

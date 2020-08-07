@@ -15,10 +15,10 @@ if (To == "Back")
 int[] FH = ImgSearchArea("FullHome", P[1]+230, P[2]+380, P[1]+270, P[2]+420, 20);
 if (FH[0] == 1)
 {
-SoundPlay("End.wav", 0);
+SoundPlay("End", 0);
 return;
 }
-SoundPlay("Scrol.wav", 0);
+SoundPlay("Scrol", 0);
 MouseClick("Left", P[1]+250, P[2]+395, 1, 0, 0, 10);
 Thread.Sleep(300);
 MouseClick("Left", P[1]+220, P[2]+610, 1, 0, 0, 10);
@@ -28,10 +28,10 @@ else if (To == "Next")
 int[] FH = ImgSearchArea("FullEnd", P[1]+230, P[2]+590, P[1]+270, P[2]+630, 20);
 if (FH[0] == 1)
 {
-SoundPlay("End.wav", 0);
+SoundPlay("End", 0);
 return;
 }
-SoundPlay("Scrol.wav", 0);
+SoundPlay("Scrol", 0);
 MouseClick("Left", P[1]+250, P[2]+615, 1, 0, 0, 10);
 Thread.Sleep(300);
 MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
