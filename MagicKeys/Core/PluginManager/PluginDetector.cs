@@ -34,10 +34,10 @@ P = GetPluginCoord();
 if (P[0] == 1)
 {
 VUILoader(API.GetVUI());
-SoundPlay("WindowOpened.wav", 0);
+SoundPlay("WindowOpened", 0);
 WinClose(WH[0], WH[1]);
 KeyUnReg();
-SoundPlay("WindowClose.wav", 0);
+SoundPlay("WindowClosed", 0);
 }
 SubPath = "";
 CurrentPlugin.Clear();

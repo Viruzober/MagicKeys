@@ -52,7 +52,7 @@ int[] MRect = GetMIRect(HWND, HMenu, 4);
 MouseClick("Left", MRect[0]+15, MRect[1]+15, 1, 0, 0, 10);
 Thread.Sleep(50);
 MouseClick("Left", P[1]+355, P[2]+170, 2, 0, 0, 10);
-Speak("Перезагрузите плагин");
+Speak("please reload the plugin");
 }
 
 }

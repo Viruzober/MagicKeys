@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Runtime.InteropServices;
 using System.IO;
+using System.Media;
 using System.Reflection;
 using System.Text;
 
@@ -14,14 +15,16 @@ public static void SoundPlay(string SoundFile, int Wait)
 {
 if (SoundTheme == true)
 {
-mciSendString("open \"" + @".\Sounds\" + SoundFile + "\" alias Notification", null, 0, IntPtr.Zero);
+string SoundPath = @$".\Sounds\{SoundFile}.wav";
+SoundPlayer Player = new SoundPlayer();
+Player.SoundLocation = SoundPath;
 if (Wait == 0)
 {
-mciSendString("play Notification", null, 0, IntPtr.Zero);
+Player.Play();
 }
 else
 {
-mciSendString("play Notification wait", null, 0, IntPtr.Zero);
+Player.PlaySync();
 }    
 }
 else

@@ -38,7 +38,7 @@ Slider("Time", 250, 415, "V", 1.38, 1.6);
 
 public static void DelayFeedBack()
 {
-Slider("FeedBack", 305, 415, "V", 1.38, 1.6);
+Slider("Feedback", 305, 415, "V", 1.38, 1.6);
 }
 
 public static void DelayLoCut()

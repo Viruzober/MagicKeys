@@ -27,7 +27,7 @@ MessageBox.Show("Registration Successful. Restart MagicKeys to apply the changes
 }
 else
 {
-MagicKeys.SoundPlay("Error.wav", 0);
+MagicKeys.SoundPlay("Error", 0);
 MessageBox.Show("Something has gone wrong. Please try again later or contact the developer.", "Error");
 }
 }

@@ -21,7 +21,7 @@ X = CI[1];
 Y = CI[2];
 Count += 1;
 }
-string Input = InputBox("Сохранить инструмент", "Введите номер библиотеки от 1 до "+Count.ToString()+".", 1, Count);
+string Input = InputBox("Save Instrument", "Enter library number from 1 to "+Count.ToString()+".", 1, Count);
 if (Input != "0")
 {
 MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
@@ -30,9 +30,6 @@ MouseMove(P[1]+320, P[2]+170, 1);
 while (ImgSearch("KontaktLibSave")[0] == 0);
 int[] LS = ImgSearch("KontaktLibSave");
 MouseClick("Left", LS[5]+10, LS[2]+(17*(Convert.ToInt32(Input))), 1, 0, 0, 10);
-}
-else
-{
 }
 }
 

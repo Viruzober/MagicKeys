@@ -11,7 +11,7 @@ public static void PluginLoad()
 {
 MouseClick("Left", P[1]+300, P[2]+10, 1, 0, 0, 10);
 while(
-ImgSearch("Reg", true)[0] == 0 &
+ImgSearch("Reg", true)[0] == 0 &&
 ImgSearch("Logo", true)[0] == 0)
 {
 if (WinActive(API.GetWTitle(), API.GetWClass()) == false)

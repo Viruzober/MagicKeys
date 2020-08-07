@@ -13,12 +13,12 @@ MouseClick("Left", P[1]+45, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
 {
-Speak("AutoAttack отмечено");
+Speak("AutoAttack checked");
 VUIObjectSwitcher(false, "false", 2, 2);
 }
 else
 {
-Speak("AutoAttack не отмечено");
+Speak("AutoAttack not checked");
 VUIObjectSwitcher(false, "true", 2, 2);
 }
 }
@@ -49,12 +49,12 @@ MouseClick("Left", P[1]+280, P[2]+190, 1, 0, 0, 10);
 Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
-Speak("Reverb отмечено");
+Speak("Reverb checked");
 VUIObjectSwitcher(false, "true", 7, 7);
 }
 else
 {
-Speak("Reverb не отмечено");
+Speak("Reverb not checked");
 VUIObjectSwitcher(false, "false", 7, 7);
 }
 }
@@ -67,25 +67,25 @@ Slider("ReverbLevel", 280, 230, "H", 0.86, 1.4);
 public static void Sustain()
 {
 MouseClick("Left", P[1]+550, P[2]+190, 1, 0, 0, 10);
-Speak("Sustain включено");
+Speak("Sustain on");
 }
 
 public static void Staccato()
 {
 MouseClick("Left", P[1]+550, P[2]+210, 1, 0, 0, 10);
-Speak("Staccato включено");
+Speak("Staccato on");
 }
 
 public static void Crescendo()
 {
 MouseClick("Left", P[1]+550, P[2]+230, 1, 0, 0, 10);
-Speak("Crescendo включено");
+Speak("Crescendo on");
 }
 
 public static void Detache()
 {
 MouseClick("Left", P[1]+550, P[2]+250, 1, 0, 0, 10);
-Speak("Detache включено");
+Speak("Detache on");
 }
 
 public static void PluginLoad()
