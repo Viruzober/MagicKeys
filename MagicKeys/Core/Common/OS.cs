@@ -15,7 +15,7 @@ if (Bit == true)
 {
 return "64";
 }
-return "86";
+return "32";
 }
 
 }

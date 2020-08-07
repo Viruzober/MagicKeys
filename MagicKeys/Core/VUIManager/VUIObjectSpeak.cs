@@ -11,7 +11,7 @@ public static void VUIObjectSpeak()
 string SpeakObject = API.GetText();
 if (SpeakType == true)
 {
-SpeakObject += " "+API.GetOpjectType();
+SpeakObject += " "+API.GetObjectType();
 }
 if (API.GetAutoFunc() != null)
 {

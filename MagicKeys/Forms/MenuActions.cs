@@ -28,6 +28,7 @@ result = MessageBox.Show("Do you really want to exit MagicKeys?", "Exit MagicKey
 }
 if (result == DialogResult.OK)
 {
+MagicKeys.Speak("Goodbye");
 Application.Exit();
 return;
 }
@@ -54,10 +55,11 @@ proc.Start();
 
 public void Settings(object sender, EventArgs e)
 {
-if (WSettings == null)
+if (WSettings == null || WSettings.IsDisposed == true)
 {
 WSettings = new SettingsForm();
 WSettings.ShowDialog();
+WSettings.Dispose();
 WSettings = null;
 }
 else
@@ -68,10 +70,11 @@ WSettings.Activate();
 
 public void Register(object sender, EventArgs e)
 {
-if (Reg == null)
+if (Reg == null || Reg.IsDisposed == true)
 {
 Reg = new RegisterForm();
 Reg.ShowDialog();
+Reg.Dispose();
 Reg = null;
 }
 else

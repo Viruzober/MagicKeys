@@ -10,12 +10,12 @@ public partial class MagicKeys
 
 public static void VUIPluginLoad()
 {
-if (API.GetLoad() == "Code")
+if (API.GetLoader() == "Code")
 {
 InvokeFromString("PluginLoad");
 return;
 }
-else if (API.GetLoad() == "VUF")
+else if (API.GetLoader() == "VUF")
 {
 string VUIPath = API.GetVUIPath()+API.GetVUI()+"Load.vui";
 if (File.Exists(@VUIPath) == false)

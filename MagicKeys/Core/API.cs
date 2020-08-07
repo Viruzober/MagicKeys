@@ -67,7 +67,7 @@ public static string GetModule()
 return CurrentPlugin["Module"];
 }
 
-public static string GetLoad()
+public static string GetLoader()
 {
 if (CurrentPlugin.ContainsKey("Loader") == true)
 {
@@ -84,7 +84,7 @@ public static string GetText()
 return VUIObjects[ActiveObjects[Section]]["Text"];
 }
 
-public static string GetOpjectType()
+public static string GetObjectType()
 {
 return VUIObjects[ActiveObjects[Section]]["ObjectType"];
 }
