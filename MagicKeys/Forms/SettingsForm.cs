@@ -72,24 +72,24 @@ this.Controls.Add(Time);
 
 public void InitButton()
 {
+Help.Location = new Point(10, 310);
+Help.Size = new Size(100, 40);
+Help.Text = "Help";
+Help.Click += Help_Click;
+Help.TabIndex = 6;
+this.Controls.Add(Help);
 Save.Location = new Point(250, 310);
 Save.Size = new Size(100, 40);
 Save.Text = "Save";
 Save.Click += Save_Click;
-Save.TabIndex = 6;
+Save.TabIndex = 7;
 this.Controls.Add(Save);
 Cancel.Location = new Point(370, 310);
 Cancel.Size = new Size(100, 40);
 Cancel.Text = "Cancel";
 Cancel.Click += Cancel_Click;
-Cancel.TabIndex = 7;
+Cancel.TabIndex = 8;
 this.Controls.Add(Cancel);
-Help.Location = new Point(10, 310);
-Help.Size = new Size(100, 40);
-Help.Text = "Help";
-Help.Click += Help_Click;
-Help.TabIndex = 8;
-this.Controls.Add(Help);
 }
 
 public void InitForm()
