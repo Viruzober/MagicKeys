@@ -24,12 +24,8 @@ int[] NXBP = ImgSearchArea("NexusBP", P[1]+260, P[2]+90, P[1]+280, P[2]+270, 20)
 if (NXBP[0] == 1)
 {
 MouseClick("Left", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
-MouseClick("Right", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
-Thread.Sleep(200);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 50);
+//MouseClick("Right", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
+MenuItemClick("Right", NXBP[1]+15, NXBP[2]-5, "rename");
 Thread.Sleep(100);
 string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
 Keyboard.KeyDown(Keys.Enter);
