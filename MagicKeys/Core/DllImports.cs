@@ -7,6 +7,26 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 [DllImport("user32.dll")]
+static extern int GetMenuString(IntPtr hMenu, uint uIDItem, [Out] StringBuilder lpString, int nMaxCount, uint uFlag);
+[DllImport("user32.dll")]
+static extern IntPtr GetClipboardData(uint uFormat);
+[DllImport("user32.dll")]
+static extern bool IsClipboardFormatAvailable(uint format);
+[DllImport("user32.dll", SetLastError = true)]
+static extern bool OpenClipboard(IntPtr hWndNewOwner);
+[DllImport("user32.dll", SetLastError = true)]
+static extern bool CloseClipboard();
+[DllImport("kernel32.dll")]
+static extern IntPtr GlobalLock(IntPtr hMem);
+[DllImport("kernel32.dll")]
+static extern bool GlobalUnlock(IntPtr hMem);
+[DllImport("user32.dll")]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam);
+[DllImport("user32.dll")]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool EnumChildWindows(IntPtr hwndParent, EnumChildProcDelegate lpEnumFunc, IntPtr lParam);
+[DllImport("user32.dll")]
 public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 [DllImport("user32.dll")]
 [return: MarshalAs(UnmanagedType.Bool)]
@@ -29,6 +49,8 @@ public static extern IntPtr WindowFromPoint(WinPoint p);
 public static extern IntPtr SendMessage(IntPtr hWnd, int Msg, int wParam, IntPtr lParam);
 [DllImport("user32.dll", ExactSpelling = true)]
 public static extern IntPtr GetAncestor(IntPtr hwnd, uint flags);
+[DllImport("user32.dll")]
+static extern int GetMenuItemCount(IntPtr hMenu);
 [DllImport("user32.dll")]
 public static extern bool GetMenuItemRect(IntPtr hWnd, IntPtr hMenu, uint uItem, out MenuRect lprcItem);
 [DllImport("user32.dll", EntryPoint = "SetWindowPos")]

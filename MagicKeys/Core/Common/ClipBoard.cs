@@ -5,19 +5,9 @@ namespace MagicKeys
 {
 public partial class MagicKeys
 {
-[DllImport("user32.dll")]
-static extern IntPtr GetClipboardData(uint uFormat);
-[DllImport("user32.dll")]
-static extern bool IsClipboardFormatAvailable(uint format);
-[DllImport("user32.dll", SetLastError = true)]
-static extern bool OpenClipboard(IntPtr hWndNewOwner);
-[DllImport("user32.dll", SetLastError = true)]
-static extern bool CloseClipboard();
-[DllImport("kernel32.dll")]
-static extern IntPtr GlobalLock(IntPtr hMem);
-[DllImport("kernel32.dll")]
-static extern bool GlobalUnlock(IntPtr hMem);
+
 const uint CF_UNICODETEXT = 13;
+
 public static string GetText()
 {
 if (!IsClipboardFormatAvailable(CF_UNICODETEXT))
