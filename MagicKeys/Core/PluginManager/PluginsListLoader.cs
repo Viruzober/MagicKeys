@@ -57,7 +57,7 @@ PluginsList[Point].Add("Module", Ini.IniRead(IVUI, Point, "Module"));
 }
 if (PluginsList.Count == 0)
 {
-MKDebugForm("ExceptionHook|No plugins are available.");
+MessageBox.Show("No plugins are available.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 }
 }
 
