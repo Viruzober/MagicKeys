@@ -20,11 +20,7 @@ return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\Images\";
 
 public static string GetModulePath()
 {
-if (File.Exists(@"Plugins\"+SubPath+@"\"+GetPluginName()+@"\"+GetPluginName()+".dll") == true)
-{
-return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\"+GetPluginName()+".dll";
-}
-return null;
+return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\"+GetPluginName()+".dll".Replace(@"\\", @"\");
 }
 
 public static string GetWTitle()

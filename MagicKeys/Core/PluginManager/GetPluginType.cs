@@ -12,11 +12,13 @@ public static Type BClass = null;
 
 public static void GetPluginType()
 {
-try
-{
+string ModulePath = string.Empty;
+            try
+            {
 if (API.GetBClass() != "None")
 {
-Assembly MKB = Assembly.LoadFrom(@"Plugins\"+API.GetBClass()+@"\"+API.GetBClass()+".dll");
+ModulePath = @"Plugins\"+API.GetBClass()+@"\"+API.GetBClass()+".dll";
+Assembly MKB = Assembly.LoadFrom(ModulePath);
 BClass = MKB.GetType("MagicKeys."+API.GetBClass(), true, true);
 }
 if (API.GetPClass() == "MagicKeys")
@@ -25,12 +27,13 @@ Assembly MK = Assembly.LoadFrom("MagicKeys");
 PClass = MK.GetType("MagicKeys.MagicKeys", true, true);
 return;
 }
-Assembly PC = Assembly.LoadFrom(API.GetModulePath());
+ModulePath = API.GetModulePath();
+Assembly PC = Assembly.LoadFrom(ModulePath);
 PClass = PC.GetType("MagicKeys."+API.GetPClass(), true, true);
 }
 catch(Exception)
 {
-MKDebugForm("GetPluginType|"+API.GetVUIPath()+API.GetVUIExt()+"|"+API.GetModule()+".dll");
+MKDebugForm("FileNotFound|"+ModulePath);
 return;
 }
 }

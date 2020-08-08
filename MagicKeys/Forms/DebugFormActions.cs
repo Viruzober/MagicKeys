@@ -26,8 +26,8 @@ break;
 case "KeyReg":
 KeyRegError(DI);
 break;
-case "GetPluginType":
-GetPluginTypeError(DI);
+case "FileNotFound":
+FileNotFoundError(DI);
 break;
 case "ExceptionHook":
 ExceptionHookError(DI);
@@ -35,19 +35,11 @@ break;
 }
 }
 
-public void DebugText_KeyDown(Object Sender, KeyEventArgs e)
-{
-if (e.KeyCode == Keys.Escape)
-{
-this.Close();
-}
-}
-
 public void Exit_Click(Object Sender, EventArgs e)
 {
 MagicKeys.KeySwitch = 1;
 MagicKeys.HM.Ni.Visible = false;
-Application.Exit();
+Environment.Exit(1);
 }
 
 public void IniReadError(string[] EX)
@@ -77,13 +69,11 @@ DebugText.Text =
 "Key: "+EX[2];
 }
 
-
-public void GetPluginTypeError(string[] EX)
+public void FileNotFoundError(string[] EX)
 {
 DebugText.Text =
 "Message: File not found\r\n"+
-"File: "+EX[1]+"\r\n"+
-"Module: "+EX[2];
+"File: "+EX[1];
 }
 
 public void ExceptionHookError(string[] EX)

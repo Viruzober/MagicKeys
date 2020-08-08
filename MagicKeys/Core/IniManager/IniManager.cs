@@ -13,6 +13,11 @@ public static partial class Ini
 public static List<string> IniReadSections(string GetFile)
 {
 List<string> temp = new List<string>();
+if (IniFileExists(GetFile) == false)
+{
+MagicKeys.MKDebugForm("FileNotFound|"+GetFile);
+return null;
+}
 string[] FileStr = File.ReadAllLines(GetFile);
 string S = string.Empty;
 for(int I = 0; I < FileStr.Length; I++)
@@ -34,6 +39,11 @@ int End = 0;
 string Error = string.Empty;
 try
 {
+if (IniFileExists(GetFile) == false)
+{
+MagicKeys.MKDebugForm("FileNotFound|"+GetFile);
+return null;
+}
 string[] FileStr = File.ReadAllLines(GetFile);
 for (int S = 0; S <= FileStr.Length-1; S++)
 {

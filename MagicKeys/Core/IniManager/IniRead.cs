@@ -15,6 +15,11 @@ int End = 0;
 string Error = string.Empty;
 try
 {
+if (IniFileExists(GetFile) == false)
+{
+MagicKeys.MKDebugForm("FileNotFound|"+GetFile);
+return null;
+}
 string[] FileStr = File.ReadAllLines(GetFile);
 for (int S = 0; S <= FileStr.Length-1; S++)
 {
@@ -52,7 +57,7 @@ return KeyValue[1].Trim();
 else
 {
 L = Start+1;
-Error = "Value is not correct";
+Error = "The value is not correct";
 throw new Exception();
 }
 }

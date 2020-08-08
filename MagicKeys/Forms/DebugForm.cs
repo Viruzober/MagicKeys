@@ -24,7 +24,6 @@ DebugText.Location = new Point(10, 10);
 DebugText.Size = new Size(400, 150);
 DebugText.Multiline = true;
 DebugText.ReadOnly = true;
-DebugText.KeyDown += DebugText_KeyDown;
 this.Controls.Add(DebugText);
 }
 
