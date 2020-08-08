@@ -55,6 +55,10 @@ PluginsList[Point].Add("PluginName", Ini.IniRead(IVUI, Point, "PluginName"));
 PluginsList[Point].Add("Module", Ini.IniRead(IVUI, Point, "Module"));
 }
 }
+if (PluginsList.Count == 0)
+{
+MKDebugForm("ExceptionHook|No plugins are available.");
+}
 }
 
 }
