@@ -27,10 +27,6 @@ else
 Player.PlaySync();
 }    
 }
-else
-{
-return;
-}
 }
 
 }

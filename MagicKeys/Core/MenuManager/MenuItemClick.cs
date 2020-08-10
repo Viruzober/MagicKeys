@@ -10,7 +10,7 @@ public partial class MagicKeys
 public static void MenuItemClick(string Button, int X, int Y, string MIText)
 {
 MouseClick(Button, X, Y, 1, 0, 0, 10);
-Thread.Sleep(200);
+Thread.Sleep(100);
 int Count = GetMICount();
 for(int I = 0; I <= Count-1; I++)
 {

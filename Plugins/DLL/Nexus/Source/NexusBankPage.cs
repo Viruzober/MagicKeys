@@ -20,7 +20,7 @@ return;
 }
 SoundPlay("Scrol", 0);
 MouseClick("Left", P[1]+400, P[2]+105, 1, 0, 0, 10);
-MouseClick("Right", P[1]+330, P[2]+230, 1, 0, 0, 10);
+MenuItemClick("Right", P[1]+330, P[2]+230, "rename");
 }
 else if (To == "Next")
 {
@@ -32,13 +32,8 @@ return;
 }
 SoundPlay("Scrol", 0);
 MouseClick("Left", P[1]+400, P[2]+220, 1, 0, 0, 10);
-MouseClick("Right", P[1]+330, P[2]+105, 1, 0, 0, 10);
+MenuItemClick("Right", P[1]+330, P[2]+105, "rename");
 }
-Thread.Sleep(200);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 1);
-MouseClick("Left", MRect[0]+15,MRect[1]+15, 1, 0, 0, 10);
 Thread.Sleep(100);
 string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
 Keyboard.KeyDown(Keys.Enter);

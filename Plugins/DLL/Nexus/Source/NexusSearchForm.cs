@@ -8,14 +8,14 @@ namespace MagicKeys
 public partial class NexusSearchForm : Form
 {
 
-public static string Result;
+public string Result;
 public Label SearchLabel = new Label();
 public TextBox SearchText = new TextBox();
 public Button OK = new Button();
 public Button Cancel = new Button();
 public Label LabelBank = new Label();
 public Label LabelPatch = new Label();
-public static ListView ListPatch = new ListView();
+public ListView ListPatch = new ListView();
 public ListView ListBank = new ListView();
 
 public NexusSearchForm()
