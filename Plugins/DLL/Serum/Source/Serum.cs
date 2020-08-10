@@ -44,12 +44,7 @@ MouseClick("Left", P[1]+220, P[2]+5, 1, 0, 0, 10);
 public static void Register()
 {
 MouseClick("Left", P[1]+170, P[2]+20, 1, 0, 0, 10);
-MouseClick("Right", P[1]+170, P[2]+20, 1, 0, 0, 10);
-Thread.Sleep(50);
-IntPtr HWND = WinExistsHandle("", "#32768");
-IntPtr HMenu = SendMessage(HWND, 0x01E1, 0, IntPtr.Zero);
-int[] MRect = GetMIRect(HWND, HMenu, 4);
-MouseClick("Left", MRect[0]+15, MRect[1]+15, 1, 0, 0, 10);
+MenuItemClick("Right", P[1]+170, P[2]+20, 4);
 Thread.Sleep(50);
 MouseClick("Left", P[1]+355, P[2]+170, 2, 0, 0, 10);
 Speak("please reload the plugin");

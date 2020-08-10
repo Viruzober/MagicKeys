@@ -23,5 +23,14 @@ return;
 }
 }
 
+public static void MenuItemClick(string Button, int X, int Y, int IDItem)
+{
+MouseClick(Button, X, Y, 1, 0, 0, 10);
+Thread.Sleep(100);
+int[] RC = GetMIRect(IDItem);
+MouseClick("Left", RC[0], RC[1], 1, 0, 0, 10);
+return;
+}
+
 }
 }
