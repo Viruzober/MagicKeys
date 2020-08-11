@@ -27,13 +27,13 @@ Label Name = new Label();
 Name.TabIndex = 0;
 Name.Location = new Point(10, 15);
 Name.Size = new Size(130, 30);
-Name.Text = "First and last name:";
+Name.Text = T._("First and last name:");
 this.Controls.Add(Name);
 Label Mail = new Label();
 Mail.TabIndex = 2;
 Mail.Location = new Point(10, 55);
 Mail.Size = new Size(130, 30);
-Mail.Text = "E-mail:";
+Mail.Text = T._("E-mail:");
 this.Controls.Add(Mail);
 }
 
@@ -54,13 +54,13 @@ public void InitButton()
 Reg.DialogResult = DialogResult.OK;
 Reg.Location = new Point(30, 100);
 Reg.Size = new Size(150, 50);
-Reg.Text = "Register";
+Reg.Text = T._("Register");
 Reg.Click += Reg_Click;
 this.Controls.Add(Reg);
 Can.DialogResult = DialogResult.Cancel;
 Can.Location = new Point(200, 100);
 Can.Size = new Size(100, 50);
-Can.Text = "Cancel";
+Can.Text = T._("Cancel");
 Can.Click += Can_Click;
 this.Controls.Add(Can);
 }

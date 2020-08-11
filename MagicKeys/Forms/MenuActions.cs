@@ -20,15 +20,15 @@ if (MagicKeys.Exit == true)
 DialogResult result;
 if (sender == null)
 {
-result = MessageBox.Show("Do you really want to exit MagicKeys?", "Exit MagicKeys", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+result = MessageBox.Show(T._("Do you really want to exit MagicKeys?"), T._("Exit MagicKeys"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
 }
 else
 {
-result = MessageBox.Show("Do you really want to exit MagicKeys?", "Exit MagicKeys", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+result = MessageBox.Show(T._("Do you really want to exit MagicKeys?"), T._("Exit MagicKeys"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 }
 if (result == DialogResult.OK)
 {
-MagicKeys.Speak("Goodbye");
+MagicKeys.Speak(T._("Goodbye"));
 Application.Exit();
 return;
 }
@@ -39,7 +39,7 @@ MagicKeys.KeySwitch = 0;
 }
 else
 {
-MagicKeys.Speak("Goodbye");
+MagicKeys.Speak(T._("Goodbye"));
 Application.Exit();
 }
 }

@@ -13,14 +13,14 @@ public static void HelpForm()
 string HelpFile = API.GetVUIPath()+API.GetVUI()+".help";
 if (File.Exists(HelpFile) == false)
 {
-MagicKeys.Speak("Help file not found");
+MagicKeys.Speak(T._("Help file not found"));
 }
 else
 {
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 2);
 KeyUnReg();
-HelpForm HF = new HelpForm();
+using HelpForm HF = new HelpForm();
 HF.HelpFile = HelpFile;
 HF.ShowDialog();
 KeyReg();

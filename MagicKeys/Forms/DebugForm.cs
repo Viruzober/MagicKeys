@@ -31,7 +31,7 @@ public void InitButton()
 {
 Exit.Size = new Size(400, 25);
 Exit.Location = new Point(10, 180);
-Exit.Text = "Exit";
+Exit.Text = T._("Exit");
 Exit.Click += Exit_Click;
 this.Controls.Add(Exit);
 }
@@ -44,7 +44,7 @@ this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Size = new Size(435, 250);
 this.Name = "DebugForm";
-this.Text = "Error";
+this.Text = T._("Error");
 this.AcceptButton = Exit;
 this.CancelButton = Exit;
 this.Shown += DebugForm_Shown;

@@ -8,7 +8,7 @@ public partial class MagicKeys
 
 public static string InputBox(string Title, string Text, int Start, int End)
 {
-InputBox IB = new InputBox();
+using InputBox IB = new InputBox();
 IB.Value.Minimum = Start;
 IB.Value.Maximum = End;
 IB.Text = Title;

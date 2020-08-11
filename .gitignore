@@ -3,6 +3,7 @@
 project.lock.json
 .DS_Store
 *.pyc
+*.mo
 
 # Visual Studio Code
 .vscode

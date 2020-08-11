@@ -22,7 +22,7 @@ Method = Class.GetMethod(InvokeFunc);
 }
 if (Method == null)
 {
-Speak("Method "+InvokeFunc+" is not implemented ");
+Speak(T._("Method {0} is not implemented", InvokeFunc));
 KeyReg();
 return null;
 }

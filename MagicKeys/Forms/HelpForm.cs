@@ -34,7 +34,7 @@ this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Size = new Size(335, 455);
 this.Name = "HelpForm";
-this.Text = "Help";
+this.Text = T._("Help");
 this.Shown += HelpForm_Shown;
 }
 

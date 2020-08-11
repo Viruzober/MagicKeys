@@ -55,7 +55,7 @@ break;
 else if (FileStr[S].Trim() != "["+GetSection+"]" && S == FileStr.Length-1)
 {
 L = S+1;
-Error = "Section not found";
+Error = T._("Section not found");
 throw new Exception();
 }
 }

@@ -31,7 +31,7 @@ break;
 else if (FileStr[S].Trim() != "["+GetSection+"]" && S == FileStr.Length-1)
 {
 L = S+1;
-Error = "Section not found";
+Error = T._("Section not found");
 throw new Exception();
 }
 }
@@ -57,18 +57,18 @@ return KeyValue[1].Trim();
 else
 {
 L = Start+1;
-Error = "The value is not correct";
+Error = T._("The value is not correct");
 throw new Exception();
 }
 }
 else if (KeyValue[0].Trim() != GetKey && Start == End)
 {
 L = Start+1;
-Error = "Key not found";
+Error = T._("Key not found");
 throw new Exception();
 }
 }
-Error = "Error reading file";
+Error = T._("Error reading file");
 throw new Exception();
 }
 catch(Exception)

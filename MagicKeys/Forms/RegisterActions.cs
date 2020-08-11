@@ -23,22 +23,22 @@ this.Close();
 MagicKeys.RegUser = true;
 MagicKeys.HM.Ni.Visible = false;
 MagicKeys.HM = new Menu();
-MessageBox.Show("Registration Successful. Restart MagicKeys to apply the changes.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+MessageBox.Show(T._("Registration Successful. Restart MagicKeys to apply the changes."), T._("Information"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 }
 else
 {
 MagicKeys.SoundPlay("Error", 0);
-MessageBox.Show("Something has gone wrong. Please try again later or contact the developer.", "Error");
+MessageBox.Show(T._("Something has gone wrong. Please try again later or contact the developer."), T._("Error"));
 }
 }
 else
 {
-MagicKeys.Speak("Incorrect e-mail");
+MagicKeys.Speak(T._("Incorrect e-mail"));
 }
 }
 else
 {
-MagicKeys.Speak("Please enter your name");
+MagicKeys.Speak(T._("Please enter your name"));
 }
 }
 public void Can_Click(object sender, EventArgs e)
