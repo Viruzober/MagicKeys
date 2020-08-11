@@ -15,6 +15,8 @@ if (P[0] == 1)
 MagicKeys.Speak("Module founded");
 MagicKeys.MouseMove(P[1], P[2], 0);
 KeyReg();
+MagicKeys.SoundPlay("WindowOpened", 0);
+ModuleFound();
 }
 else
 {

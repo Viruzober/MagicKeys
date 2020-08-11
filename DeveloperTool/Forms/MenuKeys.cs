@@ -40,19 +40,19 @@ DeveloperTool.ControlSearch();
 }
 else if (key == Keys.Left)
 {
-
+DeveloperTool.MouseMover("Left");
 }
 else if (key == Keys.Right)
 {
-
+DeveloperTool.MouseMover("Right");
 }
 else if (key == Keys.Up)
 {
-
+DeveloperTool.MouseMover("Up");
 }
 else if (key == Keys.Down)
 {
-
+DeveloperTool.MouseMover("Down");
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.P)
 {

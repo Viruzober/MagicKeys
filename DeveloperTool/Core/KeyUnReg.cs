@@ -9,7 +9,7 @@ public static void KeyUnReg()
 {
 for(int I = 4; I <= 10; I++)
 {
-MagicKeys.UnregisterHotKey(HM.Handle, I);
+MagicKeys.UnregisterHotKey(DeveloperTool.HM.Handle, I);
 }
 }
 

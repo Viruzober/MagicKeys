@@ -9,6 +9,7 @@ namespace MagicKeys
 {
 public partial class DeveloperTool
 {
+
 public static Menu HM;
 
 static void Main()
@@ -19,6 +20,26 @@ MagicKeys.RegisterHotKey(HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int
 MagicKeys.RegisterHotKey(HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
 MagicKeys.RegisterHotKey(HM.Handle, 2, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 Application.Run();
+}
+
+public static void ModuleFound()
+{
+while(true)
+{
+Thread.Sleep(20);
+Application.DoEvents();
+if(Module != string.Empty)
+{
+P = GetPluginCoord();
+if(P[0] == 0)
+{
+KeyUnReg();
+Module = string.Empty;
+MagicKeys.SoundPlay("WindowClosed", 0);
+return;
+}
+}
+}
 }
 
 }

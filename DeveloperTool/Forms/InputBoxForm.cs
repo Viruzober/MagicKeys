@@ -14,10 +14,10 @@ public Button ButtonCancel = new Button();
 
 public InputBox()
 {
+InitForm();
 InitLabel();
 InitNumericUpDown();
 InitButton();
-InitForm();
 }
 
 public void InitLabel()
