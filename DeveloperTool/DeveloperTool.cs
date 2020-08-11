@@ -4,14 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DeveloperTool
+namespace MagicKeys
 {
-public static class Program
+public partial class DeveloperTool
 {
-[STAThread]
+
+public static Menu HM;
+
 static void Main()
 {
-return;
+HM = new Menu();
+MagicKeys.Speak("DeveloperTool is ready");
+MagicKeys.RegisterHotKey(HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
+MagicKeys.RegisterHotKey(HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
+Application.Run();
 }
 
 }

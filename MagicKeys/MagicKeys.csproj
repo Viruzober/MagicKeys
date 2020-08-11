@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿65<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -93,6 +93,12 @@
   <ItemGroup>
     <Compile Update="Forms\DebugForm.cs" />
     <Compile Update="Forms\DebugFormActions.cs" />
+    <Compile Update="Forms\InputTextBoxActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\InputTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
