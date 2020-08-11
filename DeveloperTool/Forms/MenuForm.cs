@@ -21,6 +21,7 @@ this.components = new System.ComponentModel.Container();
 this.Ni = new System.Windows.Forms.NotifyIcon(this.components);
 HelpMenuItem.Click += Help;
 ExitMenuItem.Click += Exit;
+MainMenu.Items.AddRange(new[] {HelpMenuItem, ExitMenuItem});
 Ni.ContextMenuStrip = MainMenu;
 Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
 Ni.Text = "Developer tool for MagicKeys";

@@ -71,8 +71,7 @@ Speak(Bank);
 
 public static void NexusSearch()
 {
-using (NexusSearchForm F = new NexusSearchForm())
-{
+NexusSearchForm F = new NexusSearchForm();
 F.ShowDialog();
 if (F.DialogResult == DialogResult.OK)
 {
@@ -82,7 +81,6 @@ ControlSetText(API.GetWTitle(), API.GetWClass(), "Edit", F.GetString());
 Keyboard.KeyDown(Keys.Enter);
 Keyboard.KeyUp(Keys.Enter);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
-}
 }
 }
 

@@ -35,6 +35,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\InputBoxActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\InputBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\MenuActions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -42,9 +48,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\MenuKeys.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Core\KeyWNDProc.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

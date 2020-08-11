@@ -7,7 +7,19 @@ public partial class DeveloperTool
 
 public static void ControlSearch()
 {
-MagicKeys.InputTextBox("Enter sub string for calling module", "ControlSearch");
+KeyUnReg();
+ Module = MagicKeys.InputTextBox("Enter sub string for calling module", "ControlSearch");
+P = GetPluginCoord();
+if (P[0] == 1)
+{
+MagicKeys.Speak("Module founded");
+MagicKeys.MouseMove(P[1], P[2], 0);
+KeyReg();
+}
+else
+{
+MagicKeys.Speak("Not found");
+}
 }
 
 }
