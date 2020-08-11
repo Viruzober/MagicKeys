@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "POT-Creation-Date: 2020-08-11 17:43+0300\n"
-"PO-Revision-Date: 2020-08-11 17:43+0300\n"
+"PO-Revision-Date: 2020-08-11 17:55+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -207,10 +207,8 @@ msgid "Speak control types"
 msgstr "Говорить типы элементов управления"
 
 #: MagicKeys/Forms/SettingsForm.cs:49
-#, fuzzy
-#| msgid "Ask before exiting MagicKeys"
 msgid "Ask before exiting"
-msgstr "Спрашивать при выходе"
+msgstr "Спрашивать перед выходом"
 
 #: MagicKeys/Forms/SettingsForm.cs:58
 msgid "Window detection timeout (ms):"
