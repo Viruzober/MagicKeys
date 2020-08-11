@@ -12,10 +12,10 @@ public partial class Menu : Form
 public NotifyIcon Ni;
 public System.ComponentModel.IContainer components;
 public ContextMenuStrip MainMenu = new ContextMenuStrip();
-public ToolStripMenuItem RegisterMenuItem = new ToolStripMenuItem("Register");
-public ToolStripMenuItem SettingsMenuItem = new ToolStripMenuItem("Settings");
-public ToolStripMenuItem HelpMenuItem = new ToolStripMenuItem("Help");
-public ToolStripMenuItem ExitMenuItem = new ToolStripMenuItem("Exit");
+public ToolStripMenuItem RegisterMenuItem = new ToolStripMenuItem(T._("Register"));
+public ToolStripMenuItem SettingsMenuItem = new ToolStripMenuItem(T._("Settings"));
+public ToolStripMenuItem HelpMenuItem = new ToolStripMenuItem(T._("Help"));
+public ToolStripMenuItem ExitMenuItem = new ToolStripMenuItem(T._("Exit"));
 
         public Menu()
 {

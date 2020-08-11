@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
-"POT-Creation-Date: 2020-08-10 21:23+0300\n"
-"PO-Revision-Date: 2020-08-10 22:36+0300\n"
+"POT-Creation-Date: 2020-08-11 17:43+0300\n"
+"PO-Revision-Date: 2020-08-11 17:43+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -65,7 +65,7 @@ msgstr "Нет доступных плагинов."
 msgid "Warning"
 msgstr "Внимание"
 
-#: MagicKeys/Forms/DebugForm.cs:34
+#: MagicKeys/Forms/DebugForm.cs:34 MagicKeys/Forms/MenuForm.cs:18
 msgid "Exit"
 msgstr "Выход"
 
@@ -106,7 +106,8 @@ msgstr "Не удалось зарегистрировать сочетание 
 msgid "File not found"
 msgstr "Файл не найден"
 
-#: MagicKeys/Forms/HelpForm.cs:37 MagicKeys/Forms/SettingsForm.cs:77
+#: MagicKeys/Forms/HelpForm.cs:37 MagicKeys/Forms/MenuForm.cs:17
+#: MagicKeys/Forms/SettingsForm.cs:77
 msgid "Help"
 msgstr "Справка"
 
@@ -121,6 +122,14 @@ msgstr "Выйти из MagicKeys"
 #: MagicKeys/Forms/MenuActions.cs:31 MagicKeys/Forms/MenuActions.cs:42
 msgid "Goodbye"
 msgstr "Пока"
+
+#: MagicKeys/Forms/MenuForm.cs:15 MagicKeys/Forms/RegisterForm.cs:57
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+#: MagicKeys/Forms/MenuForm.cs:16 MagicKeys/Forms/SettingsForm.cs:103
+msgid "Settings"
+msgstr "Настройки"
 
 #: MagicKeys/Forms/MenuForm.cs:38 MagicKeys/Forms/MenuKeys.cs:27
 #, csharp-format
@@ -181,10 +190,6 @@ msgstr "Имя и фамилия:"
 msgid "E-mail:"
 msgstr "E-mail:"
 
-#: MagicKeys/Forms/RegisterForm.cs:57
-msgid "Register"
-msgstr "Зарегистрироваться"
-
 #: MagicKeys/Forms/RegisterForm.cs:63 MagicKeys/Forms/SettingsForm.cs:89
 msgid "Cancel"
 msgstr "Отмена"
@@ -214,10 +219,6 @@ msgstr "Задержка при определении окон (мс):"
 #: MagicKeys/Forms/SettingsForm.cs:83
 msgid "Save"
 msgstr "Сохранить"
-
-#: MagicKeys/Forms/SettingsForm.cs:103
-msgid "Settings"
-msgstr "Настройки"
 
 #: MagicKeys/MagicKeys.cs:29
 msgid ""
