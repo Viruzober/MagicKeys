@@ -58,6 +58,14 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.P)
 {
 DeveloperTool.MouseStepChange();
 }
+else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.R)
+{
+DeveloperTool.RectOCR();
+}
+else if (modifier == (MKC.CTRL) & key == Keys.O)
+{
+DeveloperTool.WindowsOCR();
+}
 break;
 }
 base.WndProc(ref m);
