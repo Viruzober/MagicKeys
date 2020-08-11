@@ -66,6 +66,10 @@ else if (modifier == (MKC.CTRL) & key == Keys.O)
 {
 DeveloperTool.WindowsOCR();
 }
+else if (modifier == (MKC.SHIFT) & key == Keys.O)
+{
+DeveloperTool.VisionBot();
+}
 break;
 }
 base.WndProc(ref m);
