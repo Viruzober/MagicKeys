@@ -74,18 +74,25 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.Z)
 {
 DeveloperTool.OCRZoomChange();
 }
-else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.C)
+else if (key == Keys.OemMinus)
 {
-if (DeveloperTool.ColorMod == 1)
-{
-MagicKeys.Speak("Color mod is disabled");
-DeveloperTool.ColorMod = 0;
+int[] MP = MagicKeys.GetMousePosition();
+MagicKeys.MouseClick("Left", MP[0], MP[1], 1, 0, 0, 10);
+MagicKeys.Speak("Left click");
 }
-else if (DeveloperTool.ColorMod == 0)
+else if (key == Keys.Oemplus)
 {
-MagicKeys.Speak("Color mod is enabled");
-DeveloperTool.ColorMod = 1;
+int[] MP = MagicKeys.GetMousePosition();
+MagicKeys.MouseClick("Right", MP[0], MP[1], 1, 0, 0, 10);
+MagicKeys.Speak("Right click");
 }
+else if (key == Keys.M)
+{
+DeveloperTool.SpeakMousePosition();
+}
+else if (key == Keys.C)
+{
+DeveloperTool.SpeakColor();
 }
 break;
 }

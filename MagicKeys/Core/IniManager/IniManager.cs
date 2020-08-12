@@ -60,17 +60,18 @@ throw new Exception();
 }
 }
 
-for (int R = L+1; R < FileStr.Length; R++)
+for (int R = L+1; R <= FileStr.Length-1; R++)
 {
 if (FileStr[R].Contains("[") || R == FileStr.Length-1)
 {
-End = R-1;
+End = R;
 break;
 }
 }
 
 for (int Start = L+1; Start <= End; Start++)
 {
+if (FileStr[Start].Contains("[") == true) continue;
 string[] KeyValue = FileStr[Start].Split("=", 2);
 temp.Add(KeyValue[0].Trim());
 }
