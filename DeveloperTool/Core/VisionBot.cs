@@ -34,7 +34,7 @@ byte[] BT = (byte[])converter.ConvertTo(S, typeof(byte[]));
 HttpClient HTTPC = new HttpClient();
 var form = new MultipartFormDataContent();
 form.Add(new ByteArrayContent(BT, 0, BT.Length), "file", "OCR.bmp");
-form.Add(new StringContent("target"), "text");
+form.Add(new StringContent("text"), "target");
 HttpResponseMessage response = await HTTPC.PostAsync("https://visionbot.ru/apiv2/in.php", form);
 response.EnsureSuccessStatusCode();
 HTTPC.Dispose();

@@ -74,6 +74,19 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.Z)
 {
 DeveloperTool.OCRZoomChange();
 }
+else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.C)
+{
+if (DeveloperTool.ColorMod == 1)
+{
+MagicKeys.Speak("Color mod is disabled");
+DeveloperTool.ColorMod = 0;
+}
+else if (DeveloperTool.ColorMod == 0)
+{
+MagicKeys.Speak("Color mod is enabled");
+DeveloperTool.ColorMod = 1;
+}
+}
 break;
 }
 base.WndProc(ref m);

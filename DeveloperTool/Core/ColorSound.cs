@@ -9,6 +9,7 @@ public partial class DeveloperTool
 
 public static void ColorSound()
 {
+if (ColorMod == 0) return;
 int[] MP = MagicKeys.GetMousePosition();
 Bitmap Screen = new Bitmap(1, 1);
 Graphics g = Graphics.FromImage(Screen);
