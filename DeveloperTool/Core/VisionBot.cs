@@ -19,22 +19,27 @@ namespace MagicKeys
 
 public static async void VisionBot()
 {
+if (DP[0] == 0)
+{
+MagicKeys.Speak("No rect for OCR");
+return;
+}
 int[] MP = MagicKeys.GetMousePosition();
 Bitmap Screen = new Bitmap(DP[0], DP[1]);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(MP[0], MP[1], 00, 0, Screen.Size);
+Bitmap S = new Bitmap(Screen, new Size(DP[0]*OCRZoom, DP[1]*OCRZoom));
 ImageConverter converter = new ImageConverter();
-byte[] BT = (byte[])converter.ConvertTo(Screen, typeof(byte[]));
+byte[] BT = (byte[])converter.ConvertTo(S, typeof(byte[]));
 HttpClient HTTPC = new HttpClient();
-MultipartFormDataContent form = new MultipartFormDataContent();
-form.Add(new StringContent("target"), "all");
+var form = new MultipartFormDataContent();
 form.Add(new ByteArrayContent(BT, 0, BT.Length), "file", "OCR.bmp");
+form.Add(new StringContent("target"), "text");
 HttpResponseMessage response = await HTTPC.PostAsync("https://visionbot.ru/apiv2/in.php", form);
 response.EnsureSuccessStatusCode();
 HTTPC.Dispose();
 string sd = response.Content.ReadAsStringAsync().Result;
 Dictionary<string, string> J = JsonSerializer.Deserialize<Dictionary<string, string>>(sd);
-Thread.Sleep(3000);
 VisionBotResult(J["id"]);
 }
 
@@ -48,12 +53,22 @@ var Values = new Dictionary<string, string>
 }
 };
 var form = new FormUrlEncodedContent(Values);
+while(true)
+{
 HttpResponseMessage response = await HTTPC.PostAsync("https://visionbot.ru/apiv2/res.php", form);
 response.EnsureSuccessStatusCode();
-HTTPC.Dispose();
 string sd = response.Content.ReadAsStringAsync().Result;
 Dictionary<string, string> J = JsonSerializer.Deserialize<Dictionary<string, string>>(sd);
+if (J["status"] == "notready")
+{
+Thread.Sleep(1000);
+MagicKeys.SoundPlay("PluginDetect", 0);
+continue;
+}
+HTTPC.Dispose();
 MagicKeys.Speak(J["text"]);
+break;
+}
 }
 
 }

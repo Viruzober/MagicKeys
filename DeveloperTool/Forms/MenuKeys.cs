@@ -70,6 +70,10 @@ else if (modifier == (MKC.SHIFT) & key == Keys.O)
 {
 DeveloperTool.VisionBot();
 }
+else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.Z)
+{
+DeveloperTool.OCRZoomChange();
+}
 break;
 }
 base.WndProc(ref m);

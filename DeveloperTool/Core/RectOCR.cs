@@ -9,6 +9,7 @@ public partial class DeveloperTool
 public static void RectOCR()
 {
 KeyUnReg();
+OptionKeyUnReg();
 int[] MP = MagicKeys.GetMousePosition();
 InputBox W = new InputBox();
 W.Text = "OCR Width";
@@ -22,6 +23,8 @@ DP[0] = Convert.ToInt32(W.GetString());
 }
 else
 {
+KeyReg();
+OptionKeyReg();
 return;
 }
 InputBox H = new InputBox();
@@ -38,9 +41,9 @@ else
 {
 DP[0] = 0;
 DP[1] = 0;
-return;
 }
 KeyReg();
+OptionKeyReg();
 }
 
 }

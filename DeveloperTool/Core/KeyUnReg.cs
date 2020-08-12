@@ -13,5 +13,13 @@ MagicKeys.UnregisterHotKey(DeveloperTool.HM.Handle, I);
 }
 }
 
+public static void OptionKeyUnReg()
+{
+for(int I = 0; I <= 2; I++)
+{
+MagicKeys.UnregisterHotKey(DeveloperTool.HM.Handle, I);
+}
+}
+
 }
 }

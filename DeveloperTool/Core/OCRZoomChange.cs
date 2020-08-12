@@ -6,23 +6,23 @@ namespace MagicKeys
 public partial class DeveloperTool
 {
 
-public static void MouseStepChange()
+public static void OCRZoomChange()
 {
 KeyUnReg();
 OptionKeyUnReg();
 InputBox IB = new InputBox();
-IB.Text = "Mouse step";
-IB.InputBoxLabel.Text = "Enter mouse step";
+IB.Text = "OCR Zoom";
+IB.InputBoxLabel.Text = "Enter OCR Zoom";
 IB.Value.Minimum = 1;
-IB.Value.Maximum = 100;
+IB.Value.Maximum = 10;
 IB.ShowDialog();
 if (IB.DialogResult == DialogResult.OK)
 {
-MouseStep = Convert.ToInt32(IB.GetString());
+OCRZoom = Convert.ToInt32(IB.GetString());
 }
 KeyReg();
 OptionKeyReg();
-MagicKeys.Speak(MouseStep.ToString());
+MagicKeys.Speak(OCRZoom.ToString());
 }
 
 }
