@@ -23,8 +23,8 @@ BClass = MKB.GetType("MagicKeys."+API.GetBClass(), true, true);
 }
 if (API.GetPClass() == "MagicKeys")
 {
-Assembly MK = Assembly.LoadFrom("MagicKeys");
-PClass = MK.GetType("MagicKeys.MagicKeys", true, true);
+MagicKeys MK = new MagicKeys();
+PClass = MK.GetType();
 return;
 }
 ModulePath = API.GetModulePath();
