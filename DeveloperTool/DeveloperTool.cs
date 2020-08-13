@@ -12,6 +12,7 @@ public partial class DeveloperTool
 
 public static Menu HM;
 
+[STAThread]
 static void Main()
 {
 HM = new Menu();
