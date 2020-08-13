@@ -22,6 +22,7 @@ public static int NavigationType = 0;
 public static bool SoundTheme = true;
 public static bool SpeakType = false;
 public static bool Exit = true;
+public static bool SendInfoFlag = true;
 // Задержка в цикле обнаружения окон.
 public static int TimeOut = 20;
 // Объектная модель текущего интерфейса.

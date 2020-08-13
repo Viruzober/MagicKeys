@@ -33,6 +33,13 @@ return;
 #endif
 HM = new Menu();
 LoadSettings();
+if (SendInfoFlag == true)
+{
+if (CheckInternet() == true)
+{
+SendInfo();
+}
+}
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));
 ThreadPluginDetector.IsBackground = true;
@@ -43,7 +50,6 @@ RegisterHotKey(HM.Handle, 3, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F5);
 RegisterHotKey(HM.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F6);
 SoundPlay("Start", 0);
 Speak(T._("MagicKeys is ready"));
-SendInfo();
 Application.Run();
 }
 
