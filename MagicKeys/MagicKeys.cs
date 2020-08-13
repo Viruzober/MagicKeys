@@ -42,6 +42,12 @@ RegisterHotKey(HM.Handle, 3, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F5);
 RegisterHotKey(HM.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F6);
 SoundPlay("Start", 0);
 Speak(T._("MagicKeys is ready"));
+MessageBox.Show(PCID(), "");
+MessageBox.Show(Environment.OSVersion.ToString(), "");
+MessageBox.Show(OS(), "");
+MessageBox.Show(Width.ToString()+"x"+Height.ToString(), "");
+MessageBox.Show(SystemInformation.ScreenOrientation.ToString(), "");
+MessageBox.Show(GetDPI(), "");
 Application.Run();
 }
 
