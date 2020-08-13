@@ -14,6 +14,7 @@ public partial class MagicKeys
 public static Menu HM;
 
 [SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.ControlAppDomain)]
+[STAThread]
 static void Main(string[] args)
 {
 Application.ThreadException +=

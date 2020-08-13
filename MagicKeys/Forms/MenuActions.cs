@@ -17,14 +17,7 @@ Ni.Visible = false;
 if (MagicKeys.Exit == true)
 {
 DialogResult result;
-if (sender == null)
-{
 result = MessageBox.Show(T._("Do you really want to exit MagicKeys?"), T._("Exit MagicKeys"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
-}
-else
-{
-result = MessageBox.Show(T._("Do you really want to exit MagicKeys?"), T._("Exit MagicKeys"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-}
 if (result == DialogResult.OK)
 {
 MagicKeys.Speak(T._("Goodbye"));
