@@ -30,15 +30,6 @@ SoundPlay("Error", 0);
 return;
 }
 #endif
-if (CheckInternet() == true)
-{
-string UI = UserInfo(PCID());
-if (UI != "Reg user")
-{
-RegUser = false;
-MessageBox.Show(T._("Please register by clicking Register in the tray context menu."), T._("Information"), MessageBoxButtons.OK, MessageBoxIcon.Information);
-}
-}
 HM = new Menu();
 LoadSettings();
 PluginsListLoader();

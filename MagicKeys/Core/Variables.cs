@@ -9,7 +9,6 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 public static readonly string Version = "1.5.4";
-public static bool RegUser = true;
 public static Size Display = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size;
 public static int Width = Display.Width;
 public static int Height = Display.Height;
