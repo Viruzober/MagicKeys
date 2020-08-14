@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
-public partial class InputBox : Form
+public partial class InputMultiTextBox : Form
 {
 
 public void ButtonOK_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ this.Activate();
 
 public string GetString()
 {
-return Value.Value.ToString();
+return Value.Text;
 }
 
 }

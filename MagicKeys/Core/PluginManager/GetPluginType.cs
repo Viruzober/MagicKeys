@@ -7,6 +7,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
+public static MagicKeys MKOC = new MagicKeys();
 public static Type PClass = null;
 public static Type BClass = null;
 
@@ -23,8 +24,7 @@ BClass = MKB.GetType("MagicKeys."+API.GetBClass(), true, true);
 }
 if (API.GetPClass() == "MagicKeys")
 {
-MagicKeys MK = new MagicKeys();
-PClass = MK.GetType();
+PClass = MKOC.GetType();
 return;
 }
 ModulePath = API.GetModulePath();

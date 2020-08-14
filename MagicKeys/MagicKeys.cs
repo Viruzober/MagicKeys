@@ -15,7 +15,7 @@ public static Menu HM;
 
 [SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.ControlAppDomain)]
 [STAThread]
-static void Main(string[] args)
+static void Main()
 {
 Application.ThreadException +=
 (o, e) => MKDebugForm("ExceptionHook|"+e.Exception.ToString());
@@ -50,6 +50,9 @@ RegisterHotKey(HM.Handle, 3, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F5);
 RegisterHotKey(HM.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F6);
 SoundPlay("Start", 0);
 Speak(T._("MagicKeys is ready"));
+var UF= new UpdateForm();
+UF.Link = "https://viruzober.tk/1.mp3";
+UF.Show();
 Application.Run();
 }
 
