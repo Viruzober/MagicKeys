@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
-"POT-Creation-Date: 2020-08-11 17:43+0300\n"
-"PO-Revision-Date: 2020-08-11 17:55+0300\n"
+"POT-Creation-Date: 2020-08-13 20:11+0300\n"
+"PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -23,7 +23,7 @@ msgid "MagicKeys is already running."
 msgstr "Программа MagicKeys уже запущена."
 
 #: MagicKeys/Core/Common/CheckRunProc.cs:14 MagicKeys/Forms/DebugForm.cs:47
-#: MagicKeys/Forms/RegisterActions.cs:31 MagicKeys/MagicKeys.cs:29
+#: MagicKeys/MagicKeys.cs:30
 msgid "Error"
 msgstr "Ошибка"
 
@@ -40,20 +40,20 @@ msgstr "Метод {0} не реализован"
 msgid "Windows 10 OCR is unavailable"
 msgstr "Компонент Windows 10 OCR недоступен"
 
-#: MagicKeys/Core/IniManager/IniManager.cs:58
-#: MagicKeys/Core/IniManager/IniRead.cs:34
+#: MagicKeys/Core/IniManager/IniManager.cs:59
+#: MagicKeys/Core/IniManager/IniRead.cs:35
 msgid "Section not found"
 msgstr "Раздел не найден"
 
-#: MagicKeys/Core/IniManager/IniRead.cs:60
+#: MagicKeys/Core/IniManager/IniRead.cs:64
 msgid "The value is not correct"
 msgstr "Значение неверно"
 
-#: MagicKeys/Core/IniManager/IniRead.cs:67
+#: MagicKeys/Core/IniManager/IniRead.cs:71
 msgid "Key not found"
 msgstr "Ключ не найден"
 
-#: MagicKeys/Core/IniManager/IniRead.cs:71
+#: MagicKeys/Core/IniManager/IniRead.cs:75
 msgid "Error reading file"
 msgstr "Ошибка чтения файла"
 
@@ -65,7 +65,7 @@ msgstr "Нет доступных плагинов."
 msgid "Warning"
 msgstr "Внимание"
 
-#: MagicKeys/Forms/DebugForm.cs:34 MagicKeys/Forms/MenuForm.cs:18
+#: MagicKeys/Forms/DebugForm.cs:34 MagicKeys/Forms/MenuForm.cs:17
 msgid "Exit"
 msgstr "Выход"
 
@@ -106,32 +106,28 @@ msgstr "Не удалось зарегистрировать сочетание 
 msgid "File not found"
 msgstr "Файл не найден"
 
-#: MagicKeys/Forms/HelpForm.cs:37 MagicKeys/Forms/MenuForm.cs:17
-#: MagicKeys/Forms/SettingsForm.cs:77
+#: MagicKeys/Forms/HelpForm.cs:37 MagicKeys/Forms/MenuForm.cs:16
+#: MagicKeys/Forms/SettingsForm.cs:83
 msgid "Help"
 msgstr "Справка"
 
-#: MagicKeys/Forms/MenuActions.cs:23 MagicKeys/Forms/MenuActions.cs:27
+#: MagicKeys/Forms/MenuActions.cs:20
 msgid "Do you really want to exit MagicKeys?"
 msgstr "Вы действительно хотите завершить работу MagicKeys?"
 
-#: MagicKeys/Forms/MenuActions.cs:23 MagicKeys/Forms/MenuActions.cs:27
+#: MagicKeys/Forms/MenuActions.cs:20
 msgid "Exit MagicKeys"
 msgstr "Выйти из MagicKeys"
 
-#: MagicKeys/Forms/MenuActions.cs:31 MagicKeys/Forms/MenuActions.cs:42
+#: MagicKeys/Forms/MenuActions.cs:23 MagicKeys/Forms/MenuActions.cs:34
 msgid "Goodbye"
 msgstr "Пока"
 
-#: MagicKeys/Forms/MenuForm.cs:15 MagicKeys/Forms/RegisterForm.cs:57
-msgid "Register"
-msgstr "Зарегистрироваться"
-
-#: MagicKeys/Forms/MenuForm.cs:16 MagicKeys/Forms/SettingsForm.cs:103
+#: MagicKeys/Forms/MenuForm.cs:15 MagicKeys/Forms/SettingsForm.cs:109
 msgid "Settings"
 msgstr "Настройки"
 
-#: MagicKeys/Forms/MenuForm.cs:38 MagicKeys/Forms/MenuKeys.cs:27
+#: MagicKeys/Forms/MenuForm.cs:29 MagicKeys/Forms/MenuKeys.cs:27
 #, csharp-format
 msgid "MagicKeys {0} is enabled"
 msgstr "MagicKeys {0} включен"
@@ -157,68 +153,39 @@ msgstr "Звуки выключены"
 msgid "Sounds on"
 msgstr "Звуки включены"
 
-#: MagicKeys/Forms/RegisterActions.cs:26
-msgid "Registration Successful. Restart MagicKeys to apply the changes."
-msgstr ""
-"Вы успешно зарегистрировались. Пожалуйста, перезапустите MagicKeys для "
-"применения изменений."
-
-#: MagicKeys/Forms/RegisterActions.cs:26 MagicKeys/MagicKeys.cs:39
-msgid "Information"
-msgstr "Информация"
-
-#: MagicKeys/Forms/RegisterActions.cs:31
-msgid ""
-"Something has gone wrong. Please try again later or contact the developer."
-msgstr ""
-"Что-то пошло не так. Пожалуйста, попробуйте позже или свяжитесь с "
-"разработчиком."
-
-#: MagicKeys/Forms/RegisterActions.cs:36
-msgid "Incorrect e-mail"
-msgstr "Неправильный e-mail"
-
-#: MagicKeys/Forms/RegisterActions.cs:41
-msgid "Please enter your name"
-msgstr "Пожалуйста, введите ваше имя"
-
-#: MagicKeys/Forms/RegisterForm.cs:30
-msgid "First and last name:"
-msgstr "Имя и фамилия:"
-
-#: MagicKeys/Forms/RegisterForm.cs:36
-msgid "E-mail:"
-msgstr "E-mail:"
-
-#: MagicKeys/Forms/RegisterForm.cs:63 MagicKeys/Forms/SettingsForm.cs:89
-msgid "Cancel"
-msgstr "Отмена"
-
-#: MagicKeys/Forms/SettingsForm.cs:34
+#: MagicKeys/Forms/SettingsForm.cs:35
 msgid "Use left/right arrow keys for navigation"
 msgstr "Использовать клавиши горизонтальных стрелок для навигации"
 
-#: MagicKeys/Forms/SettingsForm.cs:39
+#: MagicKeys/Forms/SettingsForm.cs:40
 msgid "Enable sounds"
 msgstr "Включить звуки"
 
-#: MagicKeys/Forms/SettingsForm.cs:44
+#: MagicKeys/Forms/SettingsForm.cs:45
 msgid "Speak control types"
 msgstr "Говорить типы элементов управления"
 
-#: MagicKeys/Forms/SettingsForm.cs:49
+#: MagicKeys/Forms/SettingsForm.cs:50
 msgid "Ask before exiting"
 msgstr "Спрашивать перед выходом"
 
-#: MagicKeys/Forms/SettingsForm.cs:58
+#: MagicKeys/Forms/SettingsForm.cs:55
+msgid "Send anonymous diagnostic information about the system"
+msgstr "Отправлять анонимную диагностическую информацию о системе"
+
+#: MagicKeys/Forms/SettingsForm.cs:64
 msgid "Window detection timeout (ms):"
 msgstr "Задержка при определении окон (мс):"
 
-#: MagicKeys/Forms/SettingsForm.cs:83
+#: MagicKeys/Forms/SettingsForm.cs:89
 msgid "Save"
 msgstr "Сохранить"
 
-#: MagicKeys/MagicKeys.cs:29
+#: MagicKeys/Forms/SettingsForm.cs:95
+msgid "Cancel"
+msgstr "Отмена"
+
+#: MagicKeys/MagicKeys.cs:30
 msgid ""
 "This version of MagicKeys is built for 32-bit Windows, but you are running a "
 "64-bit version. Please run a 64-bit version of MagicKeys instead."
@@ -227,10 +194,38 @@ msgstr ""
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
 
-#: MagicKeys/MagicKeys.cs:39
-msgid "Please register by clicking Register in the tray context menu."
-msgstr "Пожалуйста, зарегистрируйтесь из меню в системном лотке."
-
-#: MagicKeys/MagicKeys.cs:53
+#: MagicKeys/MagicKeys.cs:52
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
+
+#~ msgid "Register"
+#~ msgstr "Зарегистрироваться"
+
+#~ msgid "Registration Successful. Restart MagicKeys to apply the changes."
+#~ msgstr ""
+#~ "Вы успешно зарегистрировались. Пожалуйста, перезапустите MagicKeys для "
+#~ "применения изменений."
+
+#~ msgid "Information"
+#~ msgstr "Информация"
+
+#~ msgid ""
+#~ "Something has gone wrong. Please try again later or contact the developer."
+#~ msgstr ""
+#~ "Что-то пошло не так. Пожалуйста, попробуйте позже или свяжитесь с "
+#~ "разработчиком."
+
+#~ msgid "Incorrect e-mail"
+#~ msgstr "Неправильный e-mail"
+
+#~ msgid "Please enter your name"
+#~ msgstr "Пожалуйста, введите ваше имя"
+
+#~ msgid "First and last name:"
+#~ msgstr "Имя и фамилия:"
+
+#~ msgid "E-mail:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Please register by clicking Register in the tray context menu."
+#~ msgstr "Пожалуйста, зарегистрируйтесь из меню в системном лотке."
