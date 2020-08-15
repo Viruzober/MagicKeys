@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Platforms>x64;x86</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <AssemblyName>Updater</AssemblyName>
+    <RootNamespace>Updater</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DefineConstants>TRACE;DEBUG;X64</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DefineConstants>TRACE;DEBUG;X86</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;X64</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;X86</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Gettext.Tools" Version="0.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MagicKeys\MagicKeys.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\MenuActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MenuKeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;xcopy /e /i /q /y &quot;%25distdir%25\Locale&quot; &quot;$(TargetDir)Locale&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul" />
+  </Target>
+
+  <Target Name="ProjectCleanup" AfterTargets="Clean">
+    <RemoveDir Directories="$(TargetDir)" />
+  </Target>
+
+</Project>

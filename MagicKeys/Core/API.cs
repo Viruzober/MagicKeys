@@ -10,12 +10,12 @@ public class API
 
 public static string GetVUIPath()
 {
-return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\VUI\";
+return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\VUI\".Replace(@"\\", @"\");
 }
 
 public static string GetImgPath()
 {
-return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\Images\";
+return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\Images\".Replace(@"\\", @"\");
 }
 
 public static string GetModulePath()

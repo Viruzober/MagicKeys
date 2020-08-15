@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IlyaEfimovBayanRight", "Plu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTool", "DeveloperTool\DeveloperTool.csproj", "{B8275EE5-47C8-4599-BC00-99C4F94C2A28}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Updater", "Updater\Updater.csproj", "{B80D725D-19B2-4558-BE90-7E3588D5E1D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -95,6 +97,14 @@ Global
 		{B8275EE5-47C8-4599-BC00-99C4F94C2A28}.Release|x64.Build.0 = Release|x64
 		{B8275EE5-47C8-4599-BC00-99C4F94C2A28}.Release|x86.ActiveCfg = Release|x86
 		{B8275EE5-47C8-4599-BC00-99C4F94C2A28}.Release|x86.Build.0 = Release|x86
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Debug|x64.ActiveCfg = Debug|x64
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Debug|x64.Build.0 = Debug|x64
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Debug|x86.ActiveCfg = Debug|x86
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Debug|x86.Build.0 = Debug|x86
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Release|x64.ActiveCfg = Release|x64
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Release|x64.Build.0 = Release|x64
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Release|x86.ActiveCfg = Release|x86
+		{B80D725D-19B2-4558-BE90-7E3588D5E1D1}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
