@@ -3,6 +3,8 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.IO;
+using System.Threading;
+
 namespace MagicKeys
 {
 public class HttpClientDownloadWithProgress : IDisposable
@@ -45,10 +47,7 @@ using (var fileStream = new FileStream(_destinationFilePath, FileMode.Create, Fi
 {
 do
 {
-if (Cancel == true)
-{
-break;
-}
+if (Cancel == true) break;
 var bytesRead = await contentStream.ReadAsync(buffer, 0, buffer.Length);
 if (bytesRead == 0)
 {
@@ -84,8 +83,12 @@ ProgressChanged(totalDownloadSize, totalBytesRead, progressPercentage);
 
 public void Dispose()
 {
-Cancel = true;
 _httpClient?.Dispose();
+}
+
+public void CancelDownload()
+{
+Cancel = true;
 }
 
 }
