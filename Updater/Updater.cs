@@ -6,11 +6,10 @@ namespace Updater
 {
 public partial class Updater
 {
-
+public static string NV = GetHtmlCode("https://viruzober.tk/ActiveVersion.txt").Result;
 static void Main (string[] Args)
 {	
 //Version Ald = new Version(Args[0]);
-//string NV = GetHtmlCode("https://viruzober.tk/ActiveVersion.txt").Result;
 //Version NewV = new Version(NV);
 //if (Ald <= NewV) return;
 UpdateForm UF = new UpdateForm();
