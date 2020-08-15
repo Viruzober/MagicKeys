@@ -11,48 +11,44 @@ namespace MagicKeys
 {
 public partial class UpdateForm : Form
 {
-public WebClient Web;
+
 public string Link = string.Empty;
-public void ButtonOK_Click(object sender, EventArgs e)
+public HttpClientDownloadWithProgress client;
+
+public async void ButtonOK_Click(object sender, EventArgs e)
 {
-startDownload();
+using (client = new HttpClientDownloadWithProgress(Link, "123.zip"))
+{
+client.ProgressChanged += ProgressCheck;
+await client.StartDownload();
+}
 }
 
 public void ButtonCancel_Click(object sender, EventArgs e)
 {
-Web.CancelAsync();
+client.Dispose();
 this.DialogResult = DialogResult.Cancel;
 }
 
-public void InputBox_Shown(Object sender, EventArgs e)
+public void ProgressCheck(long? totalFileSize, long totalBytesDownloaded, double? progressPercentage)
 {
-this.Activate();
+PB.Value = Convert.ToInt32(progressPercentage);
+this.Text = totalBytesDownloaded.ToString();
 }
 
-public void startDownload()
+public async void StartDownload()
 {
-Web = new WebClient();
-Web.DownloadProgressChanged += Web_DownloadProgressChanged;
-Web.DownloadFileCompleted += Web_DownloadFileCompleted;
-Web.DownloadFileAsync(new System.Uri(Link), "upd.rar");
-}
- 
-public void Web_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
-{
-if (e.Cancelled == true)
-{
-MessageBox.Show("Загрузка файла отменена!");
-return;
-}
-else
-{
-MessageBox.Show("Загрузка файла завершена!");
-}
-}
- 
-public void Web_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
-{
-PB.Value = e.ProgressPercentage;
+byte[] data;
+HttpClient HTTPC = new HttpClient();
+HttpResponseMessage Hresponse = await HTTPC.GetAsync("https://viruzober.tk/123.zip");
+string sd = Hresponse.Content.ReadAsStringAsync().Result;
+MessageBox.Show(sd.ToString(), "");
+var client = new HttpClient();
+HttpResponseMessage response = await client.GetAsync(Link);
+HttpContent content = response.Content;
+data = await content.ReadAsByteArrayAsync();
+FileStream file = File.Create("upd.zip");
+file.Write(data, 0, data.Length);
 }
 
 }

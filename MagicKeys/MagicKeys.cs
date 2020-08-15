@@ -51,7 +51,7 @@ RegisterHotKey(HM.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F6);
 SoundPlay("Start", 0);
 Speak(T._("MagicKeys is ready"));
 var UF= new UpdateForm();
-UF.Link = "https://viruzober.tk/1.mp3";
+UF.Link = "https://viruzober.tk/123.zip";
 UF.Show();
 Application.Run();
 }
