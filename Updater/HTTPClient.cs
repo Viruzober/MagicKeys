@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Threading;
 
-namespace MagicKeys
+namespace Updater
 {
 public class HttpClientDownloadWithProgress : IDisposable
 {
@@ -41,7 +41,7 @@ private async Task ProcessContentStream(long? totalDownloadSize, Stream contentS
 {
 var totalBytesRead = 0L;
 var readCount = 0L;
-var buffer = new byte[8192];
+var buffer = new byte[1024];
 var isMoreToRead = true;
 using (var fileStream = new FileStream(_destinationFilePath, FileMode.Create, FileAccess.Write, FileShare.None, 8192, true))
 {

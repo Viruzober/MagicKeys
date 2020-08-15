@@ -19,11 +19,6 @@ this.DialogResult = DialogResult.Cancel;
 this.Close();
 }
 
-public void InputBox_Shown(Object sender, EventArgs e)
-{
-this.Activate();
-}
-
 public string GetString()
 {
 return Value.Value.ToString();

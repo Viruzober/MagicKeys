@@ -13,7 +13,6 @@ public partial class DebugForm : Form
 public void DebugForm_Shown(object sender, EventArgs e)
 {
 MagicKeys.SoundPlay("Error", 0);
-this.Activate();
 string[] DI = DebugInfo.Split("|");
 switch(DI[0])
 {

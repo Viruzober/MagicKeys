@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.IO;
 using System.Threading;
 
-namespace MagicKeys
+namespace Updater
 {
 public partial class UpdateForm : Form
 {
@@ -33,7 +33,6 @@ this.DialogResult = DialogResult.Cancel;
 public void ProgressCheck(long? totalFileSize, long totalBytesDownloaded, double? progressPercentage)
 {
 PB.Value = Convert.ToInt32(progressPercentage);
-InputBoxLabel.Text = totalBytesDownloaded.ToString();
 }
 
 }

@@ -62,7 +62,6 @@ this.Size = new Size(400, 275);
 this.Name = "InputTextBox";
 this.AcceptButton = ButtonOK;
 this.CancelButton = ButtonCancel;
-this.Shown += InputBox_Shown;
 }
 
 }

@@ -95,16 +95,10 @@
   <ItemGroup>
     <Compile Update="Forms\DebugForm.cs" />
     <Compile Update="Forms\DebugFormActions.cs" />
-    <Compile Update="Forms\UpdateFormActions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\UpdateForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\InputMultiTextBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\InputMultiTextActions.cs">
+    <Compile Update="Forms\InputMultiTextBoxActions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\InputTextBoxActions.cs">

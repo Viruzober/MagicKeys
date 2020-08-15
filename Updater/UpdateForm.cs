@@ -2,19 +2,21 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace MagicKeys
+namespace Updater
 {
 public partial class UpdateForm : Form
 {
 
-public Label InputBoxLabel = new Label();
+public Label UPDL = new Label();
 public ProgressBar PB = new ProgressBar();
+public RichTextBox TB = new RichTextBox();
 public Button ButtonOK = new Button();
 public Button ButtonCancel = new Button();
 
 public UpdateForm()
 {
 InitLabel();
+InitTextBox();
 InitProgressBar();
 InitButton();
 InitForm();
@@ -22,17 +24,27 @@ InitForm();
 
 public void InitLabel()
 {
-InputBoxLabel.AutoSize = false;
-InputBoxLabel.Size = new Size(250, 25);
-InputBoxLabel.Font = new Font(InputBoxLabel.Font, FontStyle.Regular);
-InputBoxLabel.Location = new Point(20, 25);
-this.Controls.Add(InputBoxLabel);
+UPDL.AutoSize = false;
+UPDL.Size = new Size(250, 25);
+UPDL.Font = new Font(UPDL.Font, FontStyle.Regular);
+UPDL.Location = new Point(20, 25);
+UPDL.Text = "Change log";
+this.Controls.Add(UPDL);
+}
+
+public void InitTextBox()
+{
+TB.Size = new Size(450, 175);
+TB.Location = new Point(20, 50);
+TB.ReadOnly = true;
+TB.Multiline = true;
+this.Controls.Add(TB);
 }
 
 public void InitProgressBar()
 {
 PB.Size = new Size(250, 25);
-PB.Location = new Point(20, 50);
+PB.Location = new Point(20, 230);
 PB.Minimum = 0;
 PB.Maximum = 100;
 this.Controls.Add(PB);
@@ -41,12 +53,12 @@ this.Controls.Add(PB);
 public void InitButton()
 {
 ButtonOK.Size = new Size(80, 25);
-ButtonOK.Location = new Point(105, 75);
-ButtonOK.Text = "OK";
+ButtonOK.Location = new Point(305, 225);
+ButtonOK.Text = "Update";
 ButtonOK.Click += ButtonOK_Click;
 this.Controls.Add(ButtonOK);
 ButtonCancel.Size = new Size(80, 25);
-ButtonCancel.Location = new Point(190, 75);
+ButtonCancel.Location = new Point(390, 225);
 ButtonCancel.Text = "Cancel";
 ButtonCancel.Click += ButtonCancel_Click;
 this.Controls.Add(ButtonCancel);
@@ -58,8 +70,9 @@ this.TopMost = true;
 this.StartPosition = FormStartPosition.CenterScreen;
 this.MaximizeBox = false;
 this.MinimizeBox = false;
-this.Size = new Size(300, 150);
-this.Name = "MagicKeys";
+this.Size = new Size(500, 300);
+this.Name = "Updater";
+this.Text = "Update MagicKeys";
 this.AcceptButton = ButtonOK;
 this.CancelButton = ButtonCancel;
 }
