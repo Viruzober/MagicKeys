@@ -8,6 +8,8 @@ public partial class DeveloperTool
 
 public static void Save()
 {
+KeyUnReg();
+OptionKeyUnReg();
 string ITB = MagicKeys.InputTextBox("Enter name", "Enter name for save");
 if	(ITB == "0") return;
 int[] MP = MagicKeys.GetMousePosition();
@@ -22,6 +24,8 @@ using (StreamWriter sw = new StreamWriter(@".\DevSave\"+Module+@"\"+Module+".txt
 {
 sw.Write(WR);
 }
+KeyReg();
+OptionKeyReg();
 }
 
 }
