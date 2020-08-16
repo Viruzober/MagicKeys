@@ -94,6 +94,14 @@ else if (key == Keys.C)
 {
 DeveloperTool.SpeakColor();
 }
+else if (modifier == (MKC.CTRL) & key == Keys.S)
+{
+DeveloperTool.Save();
+}
+else if (modifier == (MKC.CTRL) & key == Keys.I)
+{
+DeveloperTool.ImgSave();
+}
 break;
 }
 base.WndProc(ref m);

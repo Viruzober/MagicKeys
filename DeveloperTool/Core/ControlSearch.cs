@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace MagicKeys
 {
@@ -28,6 +29,7 @@ MagicKeys.MouseMove(P[1], P[2], 0);
 KeyReg();
 OptionKeyReg();
 MagicKeys.SoundPlay("WindowOpened", 0);
+Directory.CreateDirectory(@".\DevSave\"+Module);
 ModuleFound();
 }
 else
