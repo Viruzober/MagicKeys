@@ -8,8 +8,9 @@ namespace MagicKeys
 public partial class NexusSearchForm
 {
 
-public void Form_Shown(object sender, EventArgs e)
+public void NexusSearchForm_Shown(object sender, EventArgs e)
 {
+this.Activate();
 string ScanDir = MagicKeys.RegReader(Microsoft.Win32.Registry.CurrentUser, "SOFTWARE/reFX/Nexus", "ContentPath");
 string[] Dirs = Directory.GetDirectories(ScanDir+"/Presets");
 foreach (string S in Dirs)

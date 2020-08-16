@@ -103,8 +103,9 @@ this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Text = "Search";
 this.TopMost = true;
-this.Shown += Form_Shown;
+this.Shown += NexusSearchForm_Shown;
 this.CancelButton = Cancel;
+this.Shown += NexusSearchForm_Shown;
 }
 
 }
