@@ -51,6 +51,7 @@ ButtonCancel.Enabled = false;
 if (File.Exists("MagicKeys "+MKUpdater.NV+".zip") == true)
 {
 ZipFile.ExtractToDirectory("MagicKeys "+MKUpdater.NV+".zip", "./", true);
+File.Delete("MagicKeys "+MKUpdater.NV+".zip");
 this.Close();
 }
 }
