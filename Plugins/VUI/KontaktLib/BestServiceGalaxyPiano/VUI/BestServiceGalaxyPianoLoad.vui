@@ -1,4 +1,4 @@
 [1]
 Trigger=Img|Logo|true
-TimeOut=30
+TimeOut=200
 Action=1

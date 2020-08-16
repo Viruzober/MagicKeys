@@ -6,12 +6,12 @@ using System.Windows.Forms;
 using System.Text;
 using System.IO;
 
-namespace Updater
+namespace MKUpdater
 {
-public partial class Updater
+public partial class MKUpdater
 {
 
-public static async Task<string> GetHtmlCode(string URL)
+public static string GetHtmlCode(string URL)
 {
 using (HttpClient client = new HttpClient())
 {

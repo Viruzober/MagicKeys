@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Updater
+namespace MKUpdater
 {
 public partial class UpdateForm : Form
 {
@@ -60,6 +60,7 @@ this.Controls.Add(ButtonOK);
 ButtonCancel.Size = new Size(80, 25);
 ButtonCancel.Location = new Point(390, 225);
 ButtonCancel.Text = "Cancel";
+ButtonCancel.Enabled = false;
 ButtonCancel.Click += ButtonCancel_Click;
 this.Controls.Add(ButtonCancel);
 }
@@ -73,8 +74,6 @@ this.MinimizeBox = false;
 this.Size = new Size(500, 300);
 this.Name = "Updater";
 this.Text = "Update MagicKeys";
-this.AcceptButton = ButtonOK;
-this.CancelButton = ButtonCancel;
 }
 
 }

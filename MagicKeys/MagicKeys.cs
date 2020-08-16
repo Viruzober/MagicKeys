@@ -5,6 +5,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Security.Permissions;
+using System.Diagnostics;
 
 namespace MagicKeys
 {
@@ -31,6 +32,7 @@ SoundPlay("Error", 0);
 return;
 }
 #endif
+Update();
 HM = new Menu();
 LoadSettings();
 if (SendInfoFlag == true)

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Threading;
 
-namespace Updater
+namespace MKUpdater
 {
 public class HttpClientDownloadWithProgress : IDisposable
 {
@@ -13,6 +13,7 @@ private bool Cancel = false;
 private readonly string _downloadUrl;
 private readonly string _destinationFilePath;
 private HttpClient _httpClient;
+public FileStream fileStream;
 public delegate void ProgressChangedHandler(long? totalFileSize, long totalBytesDownloaded, double? progressPercentage);
 public event ProgressChangedHandler ProgressChanged;
 
@@ -41,13 +42,16 @@ private async Task ProcessContentStream(long? totalDownloadSize, Stream contentS
 {
 var totalBytesRead = 0L;
 var readCount = 0L;
-var buffer = new byte[1024];
+var buffer = new byte[8192];
 var isMoreToRead = true;
-using (var fileStream = new FileStream(_destinationFilePath, FileMode.Create, FileAccess.Write, FileShare.None, 8192, true))
-{
+fileStream = new FileStream(_destinationFilePath, FileMode.Create, FileAccess.Write, FileShare.None, 8192, true);
 do
 {
-if (Cancel == true) break;
+if (Cancel == true)
+{
+fileStream.Close();
+break;
+}
 var bytesRead = await contentStream.ReadAsync(buffer, 0, buffer.Length);
 if (bytesRead == 0)
 {
@@ -64,7 +68,6 @@ TriggerProgressChanged(totalDownloadSize, totalBytesRead);
 }
 }
 while (isMoreToRead);
-}
 }
 
 private void TriggerProgressChanged(long? totalDownloadSize, long totalBytesRead)
@@ -83,6 +86,7 @@ ProgressChanged(totalDownloadSize, totalBytesRead, progressPercentage);
 
 public void Dispose()
 {
+fileStream.Close();
 _httpClient?.Dispose();
 }
 

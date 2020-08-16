@@ -3,7 +3,6 @@ VUI=BestServiceGalaxyPiano
 PClass=MagicKeys
 BClass=Kontakt
 PluginName=BestServiceGalaxyPiano
-ActivationKey=Enter
 Loader=VUF
 [Keys]
 P=Info

@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IlyaEfimovBayanRight", "Plu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTool", "DeveloperTool\DeveloperTool.csproj", "{B8275EE5-47C8-4599-BC00-99C4F94C2A28}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Updater", "Updater\Updater.csproj", "{B80D725D-19B2-4558-BE90-7E3588D5E1D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MKUpdater", "Updater\MKUpdater.csproj", "{B80D725D-19B2-4558-BE90-7E3588D5E1D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
