@@ -66,6 +66,7 @@ MagicKeys.SoundPlay("PluginDetect", 0);
 continue;
 }
 HTTPC.Dispose();
+OCRR = J["text"];
 MagicKeys.Speak(J["text"]);
 break;
 }

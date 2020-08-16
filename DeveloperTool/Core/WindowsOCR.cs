@@ -16,6 +16,7 @@ return;
 int[] MP = MagicKeys.GetMousePosition();
 string Text = MagicKeys.ImgToText(DP[0], DP[1], MP[0], MP[1], OCRZoom);
 Thread.Sleep(500);
+OCRR = Text;
 MagicKeys.Speak(Text);
 }
 

@@ -7,6 +7,7 @@ public partial class DeveloperTool
 
 public static void MouseMover(string To)
 {
+OCRR = string.Empty;
 KeyUnReg();
 int[] MP = MagicKeys.GetMousePosition();
 if (To == "Left")

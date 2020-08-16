@@ -21,6 +21,6 @@ public static StringBuilder Class = new StringBuilder(nChars);
 public static string Module = string.Empty;
 public static int MouseStep = 1;
 public static int OCRZoom = 1;
-
+public static string OCRR = string.Empty;
 }
 }
