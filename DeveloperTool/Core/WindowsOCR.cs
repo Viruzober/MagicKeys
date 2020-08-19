@@ -14,7 +14,7 @@ MagicKeys.Speak("No rect for OCR");
 return;
 }
 int[] MP = MagicKeys.GetMousePosition();
-string Text = MagicKeys.ImgToText(DP[0], DP[1], MP[0], MP[1], OCRZoom);
+string Text = MagicKeys.ImgToText(DP[0], DP[1], MP[0]-(DP[0]/2), MP[1]-(DP[1]/2), OCRZoom);
 Thread.Sleep(500);
 OCRR = Text;
 MagicKeys.Speak(Text);

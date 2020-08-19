@@ -14,7 +14,7 @@ IntPtr Handle = MagicKeys.GetForegroundWindow();
 int[] RC = MagicKeys.GetWinRect(Handle);
 for (int X = RC[0]; X < RC[2]; X+=50)
 {
-for (int Y = RC[1]; Y < RC[3]; Y+=150)
+for (int Y = RC[1]; Y < RC[3]; Y+=50)
 {
 IntPtr HModule = MagicKeys.GetWinPointHandle(X, Y);
 string ModuleName = MagicKeys.GetDllName(HModule);

@@ -1,0 +1,17 @@
+﻿[Info]
+VUI=OmnisphereMain
+PClass=Omnisphere
+BClass=None
+PluginName=Omnisphere
+Loader=None
+[Keys]
+Ctrl+Home=OmnisphereBankPage|Back
+Ctrl+End=OmnisphereBankPage|Next
+Ctrl+PageUp=OmnispherePatchPage|Back
+Ctrl+PageDown=OmnispherePatchPage|Next
+Home=OmnisphereBank|Back
+End=OmnisphereBank|Next
+PageUp=OmnispherePatch|Back
+PageDown=OmnispherePatch|Next
+B=BankName
+P=PatchName

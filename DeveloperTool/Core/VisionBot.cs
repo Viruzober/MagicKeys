@@ -27,7 +27,7 @@ return;
 int[] MP = MagicKeys.GetMousePosition();
 Bitmap Screen = new Bitmap(DP[0], DP[1]);
 Graphics g = Graphics.FromImage(Screen);
-g.CopyFromScreen(MP[0], MP[1], 00, 0, Screen.Size);
+g.CopyFromScreen(MP[0]-(DP[0]/2), MP[1]-(DP[1]/2), 00, 0, Screen.Size);
 Bitmap S = new Bitmap(Screen, new Size(DP[0]*OCRZoom, DP[1]*OCRZoom));
 ImageConverter converter = new ImageConverter();
 byte[] BT = (byte[])converter.ConvertTo(S, typeof(byte[]));
