@@ -108,6 +108,10 @@ else if (modifier == (MKC.CTRL) & key == Keys.I)
 {
 DeveloperTool.ImgSave();
 }
+else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.G)
+{
+DeveloperTool.MouseGoTo();
+}
 break;
 }
 base.WndProc(ref m);
