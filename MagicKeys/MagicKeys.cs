@@ -32,7 +32,6 @@ SoundPlay("Error", 0);
 return;
 }
 #endif
-Update();
 HM = new Menu();
 LoadSettings();
 if (SendInfoFlag == true)
@@ -42,6 +41,7 @@ if (CheckInternet() == true)
 SendInfo();
 }
 }
+if (CheckInternet() == true) Update();
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));
 ThreadPluginDetector.IsBackground = true;

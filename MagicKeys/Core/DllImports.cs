@@ -7,6 +7,8 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 [DllImport("user32.dll")]
+public static extern int GetDlgCtrlID(IntPtr hwndCtl);
+[DllImport("user32.dll")]
 static extern int GetMenuString(IntPtr hMenu, uint uIDItem, [Out] StringBuilder lpString, int nMaxCount, uint uFlag);
 [DllImport("user32.dll")]
 static extern IntPtr GetClipboardData(uint uFormat);

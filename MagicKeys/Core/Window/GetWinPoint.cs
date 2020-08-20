@@ -5,7 +5,7 @@ namespace MagicKeys
 {
     public partial class MagicKeys
 {
-public static bool GetWinPoint(string HWNDTitle, string HWNDClass, int X, int Y)
+public static bool GetWinPoint1(string HWNDTitle, string HWNDClass, int X, int Y)
 {
 WinPoint WP;
 WP.X = X;
