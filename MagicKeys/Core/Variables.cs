@@ -41,5 +41,6 @@ public static StringBuilder Text = new StringBuilder(nChars);
 public static StringBuilder Title = new StringBuilder(nChars);
 public static StringBuilder Class = new StringBuilder(nChars);
 public static string SubPath = null;
+public static string CopyText = String.Empty;
 }
 }
