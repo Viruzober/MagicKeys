@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace MagicKeys
@@ -13,7 +14,10 @@ if (WinExistsHandle("", Class) == IntPtr.Zero)
 return;
 }
 KeyUnReg();
-while(WinExistsHandle("", Class) != IntPtr.Zero);
+while(WinExistsHandle("", Class) != IntPtr.Zero)
+{
+Thread.Sleep(50);
+}
 KeyReg();
 return;
 }

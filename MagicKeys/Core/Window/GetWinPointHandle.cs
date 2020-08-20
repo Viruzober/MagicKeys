@@ -12,8 +12,6 @@ WinPoint WP;
 WP.X = X;
 WP.Y = Y;
 IntPtr Handle = WindowFromPoint(WP);
-GetWindowText(Handle, Title, nChars);
-GetClassName(Handle, Class, nChars);
 return Handle;
 }
 

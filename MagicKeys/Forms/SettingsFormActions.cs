@@ -12,6 +12,7 @@ public partial class SettingsForm : Form
 
 public void SettingsForm_Shown(object sender, EventArgs e)
 {
+this.Activate();
 NavigationType.CheckState = (CheckState)Convert.ToInt32(Ini.IniRead(@".\Settings.ini", "Settings", "NavigationType"));
 SoundTheme.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SoundTheme")));
 SpeakType.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SpeakType")));

@@ -3,6 +3,7 @@ using System.Drawing;
 using System.ComponentModel;
 using System.Reflection;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace MagicKeys
 {
