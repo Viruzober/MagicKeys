@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace MagicKeys
 {
@@ -8,6 +9,7 @@ public partial class DeveloperTool
 public static void MouseMover(string To)
 {
 OCRR = string.Empty;
+Thread.Sleep(20);
 KeyUnReg();
 int[] MP = MagicKeys.GetMousePosition();
 if (To == "Left")
@@ -27,7 +29,14 @@ if (To == "Right")
 if (MP[0]+MouseStep >= P[3])
 {
 MagicKeys.SoundPlay("End", 0);
+if (P[3] >= Width)
+{
+MagicKeys.MouseMove(Width-1, MP[1], 0);
+}
+else
+{
 MagicKeys.MouseMove(P[3], MP[1], 0);
+}
 KeyReg();
 return;
 }
@@ -51,7 +60,14 @@ if (To == "Down")
 if (MP[1]+MouseStep >= P[4])
 {
 MagicKeys.SoundPlay("End", 0);
+if (P[4] >= Height)
+{
+MagicKeys.MouseMove(MP[0], Height-1, 0);
+}
+else
+{
 MagicKeys.MouseMove(MP[0], P[4], 0);
+}
 KeyReg();
 return;
 }

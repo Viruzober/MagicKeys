@@ -7,9 +7,10 @@ namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-public static int[] ControlCoord;
+
 public static int[] GetPluginCoord()
 {
+int[] ControlCoord;
 IntPtr Handle = MagicKeys.GetForegroundWindow();
 int[] RC = MagicKeys.GetWinRect(Handle);
 for (int X = RC[0]; X < RC[2]; X+=50)
