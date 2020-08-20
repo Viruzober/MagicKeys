@@ -22,7 +22,7 @@ string ModuleName = GetDllName(HModule);
 if (ModuleName.Contains(CurrentPlugin["Module"], StringComparison.OrdinalIgnoreCase) == true)
 {
 int[] RectCTRL = GetWinRect(GetWinPointHandle(X, Y));
-ControlCoord = new int[5] {1, RectCTRL[0], RectCTRL[1], RectCTRL[2], RectCTRL[3]};
+ControlCoord = new int[5] {1, RectCTRL[0], RectCTRL[1], RectCTRL[2]-1, RectCTRL[3]-1};
 return ControlCoord;
 }
 }
