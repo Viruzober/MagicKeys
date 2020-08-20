@@ -29,6 +29,7 @@ OptionKeyReg();
 MagicKeys.SoundPlay("WindowOpened", 0);
 Directory.CreateDirectory(@".\DevSave\"+Module);
 ModuleFound();
+KeyUnReg();
 MagicKeys.SoundPlay("WindowClosed", 0);
 }
 else

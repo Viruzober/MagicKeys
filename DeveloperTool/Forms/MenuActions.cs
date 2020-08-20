@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MagicKeys
@@ -6,38 +7,21 @@ namespace MagicKeys
 public partial class Menu : Form
 {
 
-public void Exit(object sender, EventArgs e)
+public async void Exit(object sender, EventArgs e)
 {
-MagicKeys.UnregisterHotKey(DeveloperTool.HM.Handle, 0);
-MagicKeys.UnregisterHotKey(DeveloperTool.HM.Handle, 1);
+DeveloperTool.KeySwitch = 1;
+DeveloperTool.OptionKeyUnReg();
 Ni.Visible = false;
-DialogResult result;
-if (sender == null)
-{
-result = MessageBox.Show("Do you really want to exit DeveloperTool?", "Exit DeveloperTool", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
-}
-else
-{
-result = MessageBox.Show("Do you really want to exit DeveloperTool?", "Exit DeveloperTool", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-}
+DialogResult result = await Task.Run(()=> MessageBox.Show("Do you really want to exit DeveloperTool?", "Exit DeveloperTool", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification));
 if (result == DialogResult.OK)
 {
 MagicKeys.Speak("Goodbye");
 Application.Exit();
 return;
 }
+DeveloperTool.KeySwitch = 0;
 Ni.Visible = true;
-MagicKeys.RegisterHotKey(DeveloperTool.HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
-MagicKeys.RegisterHotKey(DeveloperTool.HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
-}
-
-public void Help(object sender, EventArgs e)
-{
-string commandText = @"Руководство пользователя.html";
-var proc = new System.Diagnostics.Process();
-proc.StartInfo.FileName = commandText;
-proc.StartInfo.UseShellExecute = true;
-proc.Start();
+DeveloperTool.OptionKeyReg();
 }
 
 }

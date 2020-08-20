@@ -43,6 +43,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MagicKeys\MagicKeys.csproj">
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
     </ProjectReference>
   </ItemGroup>
 

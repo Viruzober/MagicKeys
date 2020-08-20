@@ -21,14 +21,12 @@ if (DeveloperTool.KeySwitch == 0)
 DeveloperTool.KeyUnReg();
 Ni.Text = "Developer tool is disabled";
 MagicKeys.Speak("Developer tool is disabled");
-MagicKeys.UnregisterHotKey(DeveloperTool.HM.Handle, 2);
 DeveloperTool.KeySwitch = 1;
 }
 else if (DeveloperTool.KeySwitch == 1)
 {
 Ni.Text = "Developer tool is enabled";
 MagicKeys.Speak("Developer tool is enabled");
-MagicKeys.RegisterHotKey(DeveloperTool.HM.Handle, 2, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 DeveloperTool.KeySwitch = 0;
 }
 }
