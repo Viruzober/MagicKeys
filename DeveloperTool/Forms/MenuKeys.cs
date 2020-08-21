@@ -110,6 +110,10 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.G)
 {
 DeveloperTool.MouseGoTo();
 }
+else if (key == Keys.R)
+{
+DeveloperTool.SpeakWindowRect();
+}
 break;
 }
 base.WndProc(ref m);
