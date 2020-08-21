@@ -15,14 +15,11 @@ Graphics ToG = Graphics.FromImage(ToScreen);
 int Count = 0;
 while(Count < CT)
 {
-LoopException();
 ToG.CopyFromScreen(X, Y, 00, 0, ToScreen.Size);
 for(int XTo = 0; XTo < ToScreen.Width; XTo+=CXT)
 {
-LoopException();
 for(int YTo = 0; YTo < ToScreen.Height; YTo+=CYT)
 {
-LoopException();
 Color ToColor = ToScreen.GetPixel(XTo, YTo);
 Color OneColor = OneScreen.GetPixel(XTo, YTo);
 if (OneColor != ToColor)

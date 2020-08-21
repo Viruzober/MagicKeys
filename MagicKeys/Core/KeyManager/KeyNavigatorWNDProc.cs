@@ -20,8 +20,7 @@ MagicKeys.HelpForm();
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F4)
 {
-MagicKeys.LoopError = true;
-MagicKeys.Speak("Зацикливание остановленно. Нажмите Ctrl+Shift+F1 чтобы возобновить работу MagicKeys");
+VUILoader(API.GetVUI());
 }
 else if (modifier == MKC.SHIFT & key == Keys.Tab)
 {

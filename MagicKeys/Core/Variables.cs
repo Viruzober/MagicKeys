@@ -14,8 +14,6 @@ public static int Width = Display.Width;
 public static int Height = Display.Height;
 // буфер для функции отслеживания изменений на экране.
 public static Bitmap OneScreen;
-// Флаг для выхода из зависания.
-public static bool LoopError = false;
 // Флаг для включения/отключения MagicKeys.
 public static int KeySwitch = 0;
 public static int NavigationType = 0;
