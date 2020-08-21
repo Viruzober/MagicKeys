@@ -33,7 +33,7 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F2)
 {
 Exit(null, null);
 }
-else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F5)
+else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F4)
 {
 if (MagicKeys.SoundTheme == true)
 {

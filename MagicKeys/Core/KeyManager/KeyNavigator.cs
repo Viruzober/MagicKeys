@@ -26,7 +26,7 @@ RegisterHotKey(KeyNavigatorHandle.Handle, 2, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Ke
 RegisterHotKey(KeyNavigatorHandle.Handle, 3, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Keys.Enter);
 }
 RegisterHotKey(KeyNavigatorHandle.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
-RegisterHotKey(KeyNavigatorHandle.Handle, 5, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
+RegisterHotKey(KeyNavigatorHandle.Handle, 5, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F5);
 }
 
 public static void KeyNavigatorUnReg()

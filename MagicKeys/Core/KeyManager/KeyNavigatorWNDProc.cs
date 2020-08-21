@@ -18,7 +18,7 @@ if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F3)
 {
 MagicKeys.HelpForm();
 }
-else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F4)
+else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F5)
 {
 VUILoader(API.GetVUI());
 }

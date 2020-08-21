@@ -10,6 +10,7 @@ Up=LibNavigator|Back
 I=LibGetInfo
 S=LibGetSnapshot
 D=LibDelete
+Delete=BlockDelete
 [1]
 Text=Midi channel
 ObjectType=Button

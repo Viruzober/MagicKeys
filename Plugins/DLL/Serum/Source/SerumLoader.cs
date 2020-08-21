@@ -7,7 +7,7 @@ namespace MagicKeys
 public partial class Serum
 {
 
-public static void PluginLoad()
+public static void SerumLoader()
 {
 while(
 ImgSearch("SerumLogo", true)[0] == 0 &

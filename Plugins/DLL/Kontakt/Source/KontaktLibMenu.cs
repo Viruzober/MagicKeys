@@ -126,5 +126,10 @@ MouseClick("Left", KLSS[1]+620, KLSS[2]+20, 1, 0, 0, 10);
 Speak(Snapshot);
 }
 
+public static void BlockDelete()
+{
+return;
+}
+
 }
 }

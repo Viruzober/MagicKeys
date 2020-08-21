@@ -6,7 +6,7 @@ PluginName=Kontakt
 Loader=Code
 [Keys]
 Ctrl+D=AllLibDelete
-L=Load
+Delete=BlockDelete
 [1]
 Text=Load
 ObjectType=Button

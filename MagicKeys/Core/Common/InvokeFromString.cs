@@ -9,7 +9,6 @@ namespace MagicKeys
 
 public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
 {
-KeyUnReg();
 Type Class = PClass;
 object OBC = Activator.CreateInstance(PClass);
 MethodInfo Method;
@@ -23,7 +22,6 @@ Method = Class.GetMethod(InvokeFunc);
 if (Method == null)
 {
 Speak(T._("Method {0} is not implemented", InvokeFunc));
-KeyReg();
 return null;
 }
 if (FuncParam != null)
@@ -31,7 +29,6 @@ if (FuncParam != null)
 Param = new object[] {FuncParam};
 }
 string Result = Method.Invoke(OBC, Param) as string;
-KeyReg();
 return Result;
 }
 

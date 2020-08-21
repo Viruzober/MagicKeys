@@ -7,7 +7,7 @@ namespace MagicKeys
 public partial class Omnisphere
 {
 
-public static void PluginLoad()
+public static void OmnisphereLoader()
 {
 MouseClick("Left", P[1]+300, P[2]+10, 1, 0, 0, 10);
 while(
