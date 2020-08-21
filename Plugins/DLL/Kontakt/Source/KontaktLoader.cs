@@ -10,11 +10,13 @@ public partial class Kontakt
 
 public static void PluginLoad()
 {
+KeyUnReg();
 if (API.GetVUI() == "Kontakt")
 {
 KontaktNormalize();
 LibLoaded();
 }
+KeyReg();
 }
 
 }
