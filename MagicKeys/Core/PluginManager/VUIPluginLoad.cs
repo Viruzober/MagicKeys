@@ -12,7 +12,7 @@ public static void VUIPluginLoad()
 {
 if (API.GetLoader() == "Code")
 {
-InvokeFromString("PluginLoad");
+InvokeFromString(API.GetVUI()+"Loader");
 return;
 }
 else if (API.GetLoader() == "VUF")

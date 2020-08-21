@@ -54,6 +54,7 @@ GetPluginType();
 VUIPluginLoad();
 KeyLoader();
 KeyReg();
+SoundPlay("PluginDetect", 0);
 }
 
 }

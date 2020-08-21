@@ -88,7 +88,7 @@ MouseClick("Left", P[1]+550, P[2]+250, 1, 0, 0, 10);
 Speak("Detache on");
 }
 
-public static void PluginLoad()
+public static void IlyaEfimovBayanLeftLoader()
 {
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+190, P[1]+100, P[2]+230, 0)[0] == 1)
 {

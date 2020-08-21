@@ -3,7 +3,7 @@ VUI=LibList
 PClass=Kontakt
 BClass=None
 PluginName=Kontakt
-Loader=None
+Loader=Code
 [Keys]
 Down=LibNavigator|Next
 Up=LibNavigator|Back

@@ -8,15 +8,16 @@ namespace MagicKeys
 public partial class Kontakt
 {
 
-public static void PluginLoad()
-{
-KeyUnReg();
-if (API.GetVUI() == "Kontakt")
+public static void KontaktLoader()
 {
 KontaktNormalize();
 LibLoaded();
 }
-KeyReg();
+
+public static void LibListLoader()
+{
+SubPluginUnLoad();
+LibNormalize();
 }
 
 }

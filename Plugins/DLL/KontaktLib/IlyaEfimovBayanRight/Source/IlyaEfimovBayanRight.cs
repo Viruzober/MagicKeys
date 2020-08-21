@@ -176,7 +176,7 @@ Speak("Bassoon off");
 }
 }
 
-public static void PluginLoad()
+public static void IlyaEfimovBayanRightLoader()
 {
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
 {
