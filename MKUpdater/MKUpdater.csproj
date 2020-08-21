@@ -40,6 +40,7 @@
 
   <ItemGroup>
     <PackageReference Include="Gettext.Tools" Version="0.21.0" />
+    <PackageReference Include="NGettext" Version="0.6.6" />
   </ItemGroup>
 
   <ItemGroup>

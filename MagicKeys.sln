@@ -24,6 +24,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperTool", "DeveloperTool\DeveloperTool.csproj", "{B8275EE5-47C8-4599-BC00-99C4F94C2A28}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MKUpdater", "MKUpdater\MKUpdater.csproj", "{F89EF9BE-85A3-4E1E-A908-36423F69FCF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8C7B0C9C-E076-4AE3-8F77-4CBA3B5AC808} = {8C7B0C9C-E076-4AE3-8F77-4CBA3B5AC808}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

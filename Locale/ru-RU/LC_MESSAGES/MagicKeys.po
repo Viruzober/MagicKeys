@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
-"POT-Creation-Date: 2020-08-13 20:11+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-21 17:29+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -18,174 +19,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: MagicKeys\n"
 
-#: MagicKeys/Core/Common/CheckRunProc.cs:14
-msgid "MagicKeys is already running."
-msgstr "Программа MagicKeys уже запущена."
-
-#: MagicKeys/Core/Common/CheckRunProc.cs:14 MagicKeys/Forms/DebugForm.cs:47
-#: MagicKeys/MagicKeys.cs:30
-msgid "Error"
-msgstr "Ошибка"
-
-#: MagicKeys/Core/Common/Help.cs:16
-msgid "Help file not found"
-msgstr "Файл справки не найден"
-
-#: MagicKeys/Core/Common/InvokeFromString.cs:25
-#, csharp-format
-msgid "Method {0} is not implemented"
-msgstr "Метод {0} не реализован"
-
-#: MagicKeys/Core/ImgManager/ImgToText.cs:27
-msgid "Windows 10 OCR is unavailable"
-msgstr "Компонент Windows 10 OCR недоступен"
-
-#: MagicKeys/Core/IniManager/IniManager.cs:59
-#: MagicKeys/Core/IniManager/IniRead.cs:35
-msgid "Section not found"
-msgstr "Раздел не найден"
-
-#: MagicKeys/Core/IniManager/IniRead.cs:64
-msgid "The value is not correct"
-msgstr "Значение неверно"
-
-#: MagicKeys/Core/IniManager/IniRead.cs:71
-msgid "Key not found"
-msgstr "Ключ не найден"
-
-#: MagicKeys/Core/IniManager/IniRead.cs:75
-msgid "Error reading file"
-msgstr "Ошибка чтения файла"
-
-#: MagicKeys/Core/PluginManager/PluginsListLoader.cs:60
-msgid "No plugins are available."
-msgstr "Нет доступных плагинов."
-
-#: MagicKeys/Core/PluginManager/PluginsListLoader.cs:60
-msgid "Warning"
-msgstr "Внимание"
-
-#: MagicKeys/Forms/DebugForm.cs:34 MagicKeys/Forms/MenuForm.cs:17
-msgid "Exit"
-msgstr "Выход"
-
-#: MagicKeys/Forms/DebugFormActions.cs:48
-#: MagicKeys/Forms/DebugFormActions.cs:58
-#: MagicKeys/Forms/DebugFormActions.cs:67
-#: MagicKeys/Forms/DebugFormActions.cs:75
-msgid "Message:"
-msgstr "Сообщение:"
-
-#: MagicKeys/Forms/DebugFormActions.cs:49
-#: MagicKeys/Forms/DebugFormActions.cs:59
-#: MagicKeys/Forms/DebugFormActions.cs:68
-#: MagicKeys/Forms/DebugFormActions.cs:76
-msgid "File:"
-msgstr "Файл:"
-
-#: MagicKeys/Forms/DebugFormActions.cs:50
-#: MagicKeys/Forms/DebugFormActions.cs:60
-msgid "Line:"
-msgstr "Строка:"
-
-#: MagicKeys/Forms/DebugFormActions.cs:51
-#: MagicKeys/Forms/DebugFormActions.cs:61
-msgid "Section:"
-msgstr "Раздел:"
-
-#: MagicKeys/Forms/DebugFormActions.cs:52
-#: MagicKeys/Forms/DebugFormActions.cs:69
-msgid "Key:"
-msgstr "Ключ:"
-
-#: MagicKeys/Forms/DebugFormActions.cs:67
-msgid "The keyboard shortcut cannot be registered"
-msgstr "Не удалось зарегистрировать сочетание клавиш"
-
-#: MagicKeys/Forms/DebugFormActions.cs:75
-msgid "File not found"
-msgstr "Файл не найден"
-
-#: MagicKeys/Forms/HelpForm.cs:37 MagicKeys/Forms/MenuForm.cs:16
-#: MagicKeys/Forms/SettingsForm.cs:83
-msgid "Help"
-msgstr "Справка"
-
-#: MagicKeys/Forms/MenuActions.cs:20
-msgid "Do you really want to exit MagicKeys?"
-msgstr "Вы действительно хотите завершить работу MagicKeys?"
-
-#: MagicKeys/Forms/MenuActions.cs:20
-msgid "Exit MagicKeys"
-msgstr "Выйти из MagicKeys"
-
-#: MagicKeys/Forms/MenuActions.cs:23 MagicKeys/Forms/MenuActions.cs:34
-msgid "Goodbye"
-msgstr "Пока"
-
-#: MagicKeys/Forms/MenuForm.cs:15 MagicKeys/Forms/SettingsForm.cs:109
-msgid "Settings"
-msgstr "Настройки"
-
-#: MagicKeys/Forms/MenuForm.cs:29 MagicKeys/Forms/MenuKeys.cs:27
-#, csharp-format
-msgid "MagicKeys {0} is enabled"
-msgstr "MagicKeys {0} включен"
-
-#: MagicKeys/Forms/MenuKeys.cs:21
-#, csharp-format
-msgid "MagicKeys {0} is disabled"
-msgstr "MagicKeys {0} выключен"
-
-#: MagicKeys/Forms/MenuKeys.cs:22
-msgid "MagicKeys is disabled"
-msgstr "MagicKeys выключен"
-
-#: MagicKeys/Forms/MenuKeys.cs:28
-msgid "MagicKeys is enabled"
-msgstr "MagicKeys включен"
-
-#: MagicKeys/Forms/MenuKeys.cs:41
-msgid "Sounds off"
-msgstr "Звуки выключены"
-
-#: MagicKeys/Forms/MenuKeys.cs:46
-msgid "Sounds on"
-msgstr "Звуки включены"
-
-#: MagicKeys/Forms/SettingsForm.cs:35
-msgid "Use left/right arrow keys for navigation"
-msgstr "Использовать клавиши горизонтальных стрелок для навигации"
-
-#: MagicKeys/Forms/SettingsForm.cs:40
-msgid "Enable sounds"
-msgstr "Включить звуки"
-
-#: MagicKeys/Forms/SettingsForm.cs:45
-msgid "Speak control types"
-msgstr "Говорить типы элементов управления"
-
-#: MagicKeys/Forms/SettingsForm.cs:50
-msgid "Ask before exiting"
-msgstr "Спрашивать перед выходом"
-
-#: MagicKeys/Forms/SettingsForm.cs:55
-msgid "Send anonymous diagnostic information about the system"
-msgstr "Отправлять анонимную диагностическую информацию о системе"
-
-#: MagicKeys/Forms/SettingsForm.cs:64
-msgid "Window detection timeout (ms):"
-msgstr "Задержка при определении окон (мс):"
-
-#: MagicKeys/Forms/SettingsForm.cs:89
-msgid "Save"
-msgstr "Сохранить"
-
-#: MagicKeys/Forms/SettingsForm.cs:95
-msgid "Cancel"
-msgstr "Отмена"
-
-#: MagicKeys/MagicKeys.cs:30
+#: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:31
 msgid ""
 "This version of MagicKeys is built for 32-bit Windows, but you are running a "
 "64-bit version. Please run a 64-bit version of MagicKeys instead."
@@ -194,9 +28,182 @@ msgstr ""
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
 
-#: MagicKeys/MagicKeys.cs:52
+#: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:31
+#: D:\Root\src\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
+msgid "Error"
+msgstr "Ошибка"
+
+#: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:54
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
+msgid "MagicKeys is already running."
+msgstr "Программа MagicKeys уже запущена."
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\Common\Help.cs:16
+msgid "Help file not found"
+msgstr "Файл справки не найден"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\Common\InvokeFromString.cs:25
+#, csharp-format
+msgid "Method {0} is not implemented"
+msgstr "Метод {0} не реализован"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\ImgManager\ImgToText.cs:27
+msgid "Windows 10 OCR is unavailable"
+msgstr "Компонент Windows 10 OCR недоступен"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\IniManager\IniManager.cs:59
+#: D:\Root\src\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:35
+msgid "Section not found"
+msgstr "Раздел не найден"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:64
+msgid "The value is not correct"
+msgstr "Значение неверно"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:71
+msgid "Key not found"
+msgstr "Ключ не найден"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:75
+msgid "Error reading file"
+msgstr "Ошибка чтения файла"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
+msgid "No plugins are available."
+msgstr "Нет доступных плагинов."
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
+msgid "Warning"
+msgstr "Внимание"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugForm.cs:34
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuForm.cs:18
+msgid "Exit"
+msgstr "Выход"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:48
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:58
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:67
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:75
+msgid "Message:"
+msgstr "Сообщение:"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:49
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:59
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:68
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:76
+msgid "File:"
+msgstr "Файл:"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:50
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:60
+msgid "Line:"
+msgstr "Строка:"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:51
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:61
+msgid "Section:"
+msgstr "Раздел:"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:52
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:69
+msgid "Key:"
+msgstr "Ключ:"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:67
+msgid "The keyboard shortcut cannot be registered"
+msgstr "Не удалось зарегистрировать сочетание клавиш"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:75
+msgid "File not found"
+msgstr "Файл не найден"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\HelpForm.cs:37
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuForm.cs:17
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:83
+msgid "Help"
+msgstr "Справка"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuActions.cs:20
+msgid "Do you really want to exit MagicKeys?"
+msgstr "Вы действительно хотите завершить работу MagicKeys?"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuActions.cs:20
+msgid "Exit MagicKeys"
+msgstr "Выйти из MagicKeys"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuActions.cs:23
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuActions.cs:34
+msgid "Goodbye"
+msgstr "Пока"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuForm.cs:16
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:109
+msgid "Settings"
+msgstr "Настройки"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuForm.cs:30
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuKeys.cs:27
+#, csharp-format
+msgid "MagicKeys {0} is enabled"
+msgstr "MagicKeys {0} включен"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuKeys.cs:21
+#, csharp-format
+msgid "MagicKeys {0} is disabled"
+msgstr "MagicKeys {0} выключен"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuKeys.cs:22
+msgid "MagicKeys is disabled"
+msgstr "MagicKeys выключен"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuKeys.cs:28
+msgid "MagicKeys is enabled"
+msgstr "MagicKeys включен"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuKeys.cs:41
+msgid "Sounds off"
+msgstr "Звуки выключены"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuKeys.cs:46
+msgid "Sounds on"
+msgstr "Звуки включены"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:35
+msgid "Use left/right arrow keys for navigation"
+msgstr "Использовать клавиши горизонтальных стрелок для навигации"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:40
+msgid "Enable sounds"
+msgstr "Включить звуки"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:45
+msgid "Speak control types"
+msgstr "Говорить типы элементов управления"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:50
+msgid "Ask before exiting"
+msgstr "Спрашивать перед выходом"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:55
+msgid "Send anonymous diagnostic information about the system"
+msgstr "Отправлять анонимную диагностическую информацию о системе"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:64
+msgid "Window detection timeout (ms):"
+msgstr "Задержка при определении окон (мс):"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:89
+msgid "Save"
+msgstr "Сохранить"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\SettingsForm.cs:95
+msgid "Cancel"
+msgstr "Отмена"
 
 #~ msgid "Register"
 #~ msgstr "Зарегистрироваться"
