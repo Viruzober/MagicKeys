@@ -9,6 +9,8 @@ namespace MagicKeys
 
 public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
 {
+try
+{
 Type Class = PClass;
 object OBC = Activator.CreateInstance(PClass);
 MethodInfo Method;
@@ -30,6 +32,12 @@ Param = new object[] {FuncParam};
 }
 string Result = Method.Invoke(OBC, Param) as string;
 return Result;
+}
+catch(Exception ex)
+{
+MKDebugForm("ExceptionHook|"+ex.ToString());
+return null;
+}
 }
 
 }

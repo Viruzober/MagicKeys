@@ -7,8 +7,13 @@ namespace MagicKeys
     public partial class MagicKeys
 {
 
-public static void MouseMove (int X, int Y, int TimeMove)
+public static void MouseMove (int GetX, int GetY, int TimeMove)
 {
+int X = GetX, Y = GetY;
+if (GetX >= Width) X = Width-1;
+if (GetY >= Height) Y = Height-1;
+if (GetX <= 0) X = 0;
+if (GetY <= 0) Y = 0;
 INPUT mouseMoveInput = new INPUT();
 int[] MP = GetMousePosition();
 for (int MX = MP[0], MY = MP[1]; MX != X || MY != Y; MX = NumberAlign(MX, X), MY = NumberAlign(MY, Y))

@@ -26,14 +26,7 @@ MagicKeys.MouseMove(MP[0]-MouseStep, MP[1], 0);
 
 if (To == "Right")
 {
-if (MP[0]+MouseStep >= Width-1)
-{
-MagicKeys.SoundPlay("End", 0);
-MagicKeys.MouseMove(Width-1, MP[1], 0);
-KeyReg();
-return;
-}
-else if (MP[0]+MouseStep >= P[3])
+if (MP[0]+MouseStep >= P[3])
 {
 MagicKeys.SoundPlay("End", 0);
 MagicKeys.MouseMove(P[3], MP[1], 0);
@@ -57,14 +50,7 @@ MagicKeys.MouseMove(MP[0], MP[1]-MouseStep, 0);
 
 if (To == "Down")
 {
-if (MP[1]+MouseStep >= Height-1)
-{
-MagicKeys.SoundPlay("End", 0);
-MagicKeys.MouseMove(MP[0], Height-1, 0);
-KeyReg();
-return;
-}
-else if (MP[1]+MouseStep >= P[4])
+if (MP[1]+MouseStep >= P[4])
 {
 MagicKeys.SoundPlay("End", 0);
 MagicKeys.MouseMove(MP[0], P[4], 0);
