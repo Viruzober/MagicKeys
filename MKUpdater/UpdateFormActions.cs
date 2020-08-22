@@ -60,19 +60,10 @@ File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
 this.Close();
 return;
 }
-UnZip();
+ZipFile.ExtractToDirectory("MagicKeys_"+MKUpdater.NV+".zip", "./", true);
 File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
 this.Close();
 }
-}
-}
-
-public void UnZip()
-{
-ZipArchive archive = ZipFile.Open("MagicKeys_"+MKUpdater.NV+".zip", ZipArchiveMode.Read);
-foreach (ZipArchiveEntry entry in archive.Entries)
-{                    
-entry.ExtractToFile("./"+entry.FullName, true);
 }
 }
 
