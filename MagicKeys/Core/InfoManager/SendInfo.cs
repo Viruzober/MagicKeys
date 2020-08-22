@@ -18,7 +18,7 @@ Values.Add("ScreenOrientation", SystemInformation.ScreenOrientation.ToString());
 Values.Add("ScreenDPI", GetDPI());
 Values.Add("ScreenReader", GetScreenReader());
 var form = new FormUrlEncodedContent(Values);
-HttpResponseMessage response = await HTTPC.PostAsync("https://viruzober.tk/Info.php", form);
+HttpResponseMessage response = await HTTPC.PostAsync("https://viruzober.tk/MagicKeys/Info.php", form);
 response.EnsureSuccessStatusCode();
 string sd = response.Content.ReadAsStringAsync().Result;
 HTTPC.Dispose();

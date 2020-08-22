@@ -85,11 +85,15 @@ public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 public static extern int nvdaController_cancelSpeech();
 [DllImport("nvdaControllerClient32.dll", CharSet = CharSet.Unicode)]
 public static extern int nvdaController_speakText(string text);
+[DllImport("nvdaControllerClient32.dll", CharSet = CharSet.Unicode)]
+public static extern int nvdaController_brailleMessage(string Text);
 #elif X64
 [DllImport("nvdaControllerClient64.dll")]
 public static extern int nvdaController_cancelSpeech();
 [DllImport("nvdaControllerClient64.dll", CharSet = CharSet.Unicode)]
 public static extern int nvdaController_speakText(string text);
+[DllImport("nvdaControllerClient64.dll", CharSet = CharSet.Unicode)]
+public static extern int nvdaController_brailleMessage(string Text);
 #endif
 [DllImport("user32.dll")]
 public static extern UInt32 GetWindowThreadProcessId(Int32 hWnd, out Int32 lpdwProcessId);

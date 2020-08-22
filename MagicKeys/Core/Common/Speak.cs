@@ -15,6 +15,7 @@ if (runningProcs.Count(p => p.ProcessName.Contains("nvda")) > 0)
 {
 nvdaController_cancelSpeech();
 nvdaController_speakText(Text);
+nvdaController_brailleMessage(Text);
 }
 else if (runningProcs.Count(p => p.ProcessName.Contains("jhookldr")) > 0)
 {

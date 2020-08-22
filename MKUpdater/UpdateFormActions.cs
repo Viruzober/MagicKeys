@@ -9,6 +9,7 @@ using System.Threading;
 using System.IO.Compression;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 
 namespace MKUpdater
 {
@@ -27,7 +28,7 @@ return;
 }
 ButtonOK.Enabled = false;
 ButtonCancel.Enabled = true;
-using (client = new HttpClientDownloadWithProgress("https://viruzober.tk/MagicKeys "+MKUpdater.NV+".zip", "MagicKeys "+MKUpdater.NV+".zip"))
+using (client = new HttpClientDownloadWithProgress("https://viruzober.tk/MagicKeys/MagicKeys_"+MKUpdater.NV+".zip", "MagicKeys_"+MKUpdater.NV+".zip"))
 {
 client.ProgressChanged += ProgressCheck;
 await client.StartDownload();
@@ -36,9 +37,9 @@ await client.StartDownload();
 
 public void ButtonCancel_Click(object sender, EventArgs e)
 {
-ButtonOK.Enabled = true;
 ButtonCancel.Enabled = false;
 client.CancelDownload();
+this.Close();
 }
 
 public void ProgressCheck(long? totalFileSize, long totalBytesDownloaded, double? progressPercentage)
@@ -48,12 +49,30 @@ if (totalFileSize == totalBytesDownloaded)
 {
 client.Dispose();
 ButtonCancel.Enabled = false;
-if (File.Exists("MagicKeys "+MKUpdater.NV+".zip") == true)
+if (File.Exists("MagicKeys_"+MKUpdater.NV+".zip") == true)
 {
-ZipFile.ExtractToDirectory("MagicKeys "+MKUpdater.NV+".zip", "./", true);
-File.Delete("MagicKeys "+MKUpdater.NV+".zip");
+string DSHA = MKUpdater.GetHtmlCode("https://viruzober.tk/MagicKeys/SHA256.txt");
+string GSHA = MKUpdater.GetSHA("MagicKeys_"+MKUpdater.NV+".zip");
+if (DSHA != GSHA)
+{
+MessageBox.Show("Update file is not correct", "Error");
+File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
+this.Close();
+return;
+}
+UnZip();
+File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
 this.Close();
 }
+}
+}
+
+public void UnZip()
+{
+ZipArchive archive = ZipFile.Open("MagicKeys_"+MKUpdater.NV+".zip", ZipArchiveMode.Read);
+foreach (ZipArchiveEntry entry in archive.Entries)
+{                    
+entry.ExtractToFile("./"+entry.FullName, true);
 }
 }
 

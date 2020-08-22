@@ -18,7 +18,6 @@ OptionKeyReg();
 return;
 }
 Module = ModuleName;
-MagicKeys.SetWindowPos(MagicKeys.GetForegroundWindow(), 0, 10, 10, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
 P = GetPluginCoord();
 if (P[0] == 1)
 {
