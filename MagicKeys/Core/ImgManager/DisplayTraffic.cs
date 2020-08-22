@@ -18,6 +18,7 @@ while(Count < CT)
 ToG.CopyFromScreen(X, Y, 00, 0, ToScreen.Size);
 for(int XTo = 0; XTo < ToScreen.Width; XTo+=CXT)
 {
+if (WinActive(API.GetWTitle(), API.GetWClass()) == false) return;
 for(int YTo = 0; YTo < ToScreen.Height; YTo+=CYT)
 {
 Color ToColor = ToScreen.GetPixel(XTo, YTo);

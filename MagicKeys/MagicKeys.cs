@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Security.Permissions;
 using System.Diagnostics;
+using System.Linq;
 
 namespace MagicKeys
 {
@@ -32,6 +33,12 @@ SoundPlay("Error", 0);
 return;
 }
 #endif
+var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
+if (RunProc.Count(p => p.ProcessName.Contains("DeveloperTool")) > 0)
+{
+MessageBox.Show(T._("You must close DeveloperTool to run MagicKeys."), T._("Error"));
+return;
+}
 HM = new Menu();
 LoadSettings();
 if (SendInfoFlag == true)

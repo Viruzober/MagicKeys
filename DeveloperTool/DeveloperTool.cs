@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Diagnostics;
 
 namespace MagicKeys
 {
@@ -15,6 +16,12 @@ public static Menu HM;
 [STAThread]
 static void Main()
 {
+var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
+if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
+{
+MessageBox.Show("You must close MagicKeys to run DeveloperTool.", "Error");
+return;
+}
 HM = new Menu();
 MagicKeys.Speak("DeveloperTool is ready");
 OptionKeyReg();
