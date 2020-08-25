@@ -1,4 +1,5 @@
 using System;
+using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Threading;
@@ -48,8 +49,15 @@ foreach(var W in LW){
 ORF.WList.Items.Add(W);
 }
 ORF.ShowDialog();
+if(ORF.DialogResult == DialogResult.OK)
+{
 int SI = ORF.WList.SelectedIndex;
-MagicKeys.MouseMove(LX[SI], LY[SI], 0);
+MagicKeys.MouseMove(P[1]+LX[SI], P[2]+LY[SI], 0);
+LW.Clear();
+LX.Clear();
+LY.Clear();
+}
+KeyReg();
         }
 
 }

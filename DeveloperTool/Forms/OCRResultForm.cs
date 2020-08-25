@@ -21,6 +21,7 @@ public void InitListBox()
 WList.Location = new Point(10, 10);
 WList.Size = new Size(400, 150);
 this.Controls.Add(WList);
+WList.KeyDown += Form_KeyDown;
 }
 
 public void InitForm()
