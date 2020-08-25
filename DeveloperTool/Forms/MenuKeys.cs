@@ -114,6 +114,10 @@ else if (key == Keys.R)
 {
 DeveloperTool.SpeakWindowRect();
 }
+else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.O)
+{
+DeveloperTool.OCRWordPosition();
+}
 break;
 }
 base.WndProc(ref m);

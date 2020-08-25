@@ -49,6 +49,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\OCRResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\OCRResultFormActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\MenuActions.cs">
       <SubType>Form</SubType>
     </Compile>
