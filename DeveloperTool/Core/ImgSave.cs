@@ -13,7 +13,7 @@ public static void ImgSave()
 KeyUnReg();
 OptionKeyUnReg();
 int[] MP = MagicKeys.GetMousePosition();
-string ITB = MagicKeys.InputTextBox("Image name", "Enter image name");
+string ITB = MagicKeys.InputTextBox(T._("Image name"), T._("Enter image name."));
 if (ITB == "0")
 {
 KeyReg();

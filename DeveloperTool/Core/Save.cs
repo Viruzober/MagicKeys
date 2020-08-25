@@ -10,7 +10,7 @@ public static void Save()
 {
 KeyUnReg();
 OptionKeyUnReg();
-string ITB = MagicKeys.InputTextBox("Enter name", "Enter name for save");
+string ITB = MagicKeys.InputTextBox(T._("Save"), T._("Enter name for save."));
 if	(ITB == "0") return;
 int[] MP = MagicKeys.GetMousePosition();
 Bitmap Screen = new Bitmap(1, 1);

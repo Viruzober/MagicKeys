@@ -32,7 +32,7 @@ this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Size = new Size(435, 250);
 this.Name = "DebugForm";
-this.Text = T._("Error");
+this.Text = T._("OCR Word List");
 this.Shown += OCRResultForm_Shown;
 }
 

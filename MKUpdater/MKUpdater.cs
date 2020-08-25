@@ -20,7 +20,7 @@ Application.Run(UF);
 }
 catch(Exception)
 {
-MessageBox.Show("Что-то пошло не так. Проверьте интернет соеденение", "Внимание");
+MessageBox.Show(T._("Something has gone wrong. Please check your internet connection."), T._("Error"));
 return;
 }
 }

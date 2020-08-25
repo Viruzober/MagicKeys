@@ -10,7 +10,7 @@ using NGettext;
 //
 namespace MKUpdater
 {
-internal class T
+public class T
 {
 private static readonly ICatalog _Catalog = new Catalog("MagicKeys", "./Locale");
 

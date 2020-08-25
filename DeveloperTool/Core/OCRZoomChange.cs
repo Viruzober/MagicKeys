@@ -11,8 +11,8 @@ public static void OCRZoomChange()
 KeyUnReg();
 OptionKeyUnReg();
 InputBox IB = new InputBox();
-IB.Text = "OCR Zoom";
-IB.InputBoxLabel.Text = "Enter OCR Zoom";
+IB.Text = T._("OCR Zoom");
+IB.InputBoxLabel.Text = T._("Enter OCR Zoom value:");
 IB.Value.Minimum = 1;
 IB.Value.Maximum = 10;
 IB.ShowDialog();

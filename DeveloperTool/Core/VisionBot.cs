@@ -21,7 +21,7 @@ public static async void VisionBot()
 {
 if (DP[0] == 0)
 {
-MagicKeys.Speak("No rect for OCR");
+MagicKeys.Speak(T._("No rectangle for OCR"));
 return;
 }
 int[] MP = MagicKeys.GetMousePosition();

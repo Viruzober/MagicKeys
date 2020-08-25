@@ -23,7 +23,7 @@ public async void ButtonOK_Click(object sender, EventArgs e)
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
 if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
 {
-MessageBox.Show("Для обновления необходимо закрыть MagicKeys", "Внимание");
+MessageBox.Show(T._("Please close MagicKeys before updating."), T._("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 return;
 }
 ButtonOK.Enabled = false;
@@ -55,7 +55,7 @@ string DSHA = MKUpdater.GetHtmlCode("https://viruzober.tk/MagicKeys/SHA256.txt")
 string GSHA = MKUpdater.GetSHA("MagicKeys_"+MKUpdater.NV+".zip");
 if (DSHA != GSHA)
 {
-MessageBox.Show("Update file is not correct", "Error");
+MessageBox.Show(T._("Update file is corrupted."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
 this.Close();
 return;

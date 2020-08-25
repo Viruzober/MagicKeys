@@ -10,7 +10,7 @@ using NGettext;
 //
 namespace DeveloperTool
 {
-internal class T
+public class T
 {
 private static readonly ICatalog _Catalog = new Catalog("MagicKeys", "./Locale");
 

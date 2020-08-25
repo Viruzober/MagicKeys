@@ -28,7 +28,7 @@ UPDL.AutoSize = false;
 UPDL.Size = new Size(250, 25);
 UPDL.Font = new Font(UPDL.Font, FontStyle.Regular);
 UPDL.Location = new Point(20, 25);
-UPDL.Text = "Change log";
+UPDL.Text = T._("Changelog");
 this.Controls.Add(UPDL);
 }
 
@@ -54,12 +54,12 @@ public void InitButton()
 {
 ButtonOK.Size = new Size(80, 25);
 ButtonOK.Location = new Point(305, 225);
-ButtonOK.Text = "Update";
+ButtonOK.Text = T._("Update");
 ButtonOK.Click += ButtonOK_Click;
 this.Controls.Add(ButtonOK);
 ButtonCancel.Size = new Size(80, 25);
 ButtonCancel.Location = new Point(390, 225);
-ButtonCancel.Text = "Cancel";
+ButtonCancel.Text = T._("Cancel");
 ButtonCancel.Enabled = false;
 ButtonCancel.Click += ButtonCancel_Click;
 this.Controls.Add(ButtonCancel);
@@ -73,7 +73,7 @@ this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Size = new Size(500, 300);
 this.Name = "Updater";
-this.Text = "Update MagicKeys";
+this.Text = T._("Update MagicKeys");
 }
 
 }

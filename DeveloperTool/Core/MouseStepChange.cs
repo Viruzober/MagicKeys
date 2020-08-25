@@ -11,8 +11,8 @@ public static void MouseStepChange()
 KeyUnReg();
 OptionKeyUnReg();
 InputBox IB = new InputBox();
-IB.Text = "Mouse step";
-IB.InputBoxLabel.Text = "Enter mouse step";
+IB.Text = T._("Mouse step");
+IB.InputBoxLabel.Text = T._("Enter mouse step:");
 IB.Value.Minimum = 1;
 IB.Value.Maximum = 100;
 IB.ShowDialog();
