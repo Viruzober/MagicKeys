@@ -22,7 +22,7 @@ Y = CI[2];
 Count += 1;
 }
 string Input = InputBox("Save Instrument", "Enter library number from 1 to "+Count.ToString()+".", 1, Count);
-if (Input != "0")
+if (Input != null)
 {
 MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
 MouseMove(P[1]+355, P[2]+170, 0);

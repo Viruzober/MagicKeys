@@ -11,7 +11,7 @@ public static void Save()
 KeyUnReg();
 OptionKeyUnReg();
 string ITB = MagicKeys.InputTextBox(T._("Save"), T._("Enter name for save."));
-if	(ITB == "0") return;
+if(ITB == null) return;
 int[] MP = MagicKeys.GetMousePosition();
 Bitmap Screen = new Bitmap(1, 1);
 Graphics g = Graphics.FromImage(Screen);

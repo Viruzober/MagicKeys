@@ -14,21 +14,21 @@ KeyUnReg();
 OptionKeyUnReg();
 int[] MP = MagicKeys.GetMousePosition();
 string ITB = MagicKeys.InputTextBox(T._("Image name"), T._("Enter image name."));
-if (ITB == "0")
+if (ITB == null)
 {
 KeyReg();
 OptionKeyReg();
 return;
 }
 int Width = Convert.ToInt32(MagicKeys.InputBox("Image width", "Enter image width", 1, P[3]-MP[0]));
-if (Width == 0)
+if (Width == null)
 {
 KeyReg();
 OptionKeyReg();
 return;
 }
 int Height = Convert.ToInt32(MagicKeys.InputBox("Image height", "Enter image height", 1, P[4]-MP[1]));
-if (Height == 0)
+if (Height == null)
 {
 KeyReg();
 OptionKeyReg();

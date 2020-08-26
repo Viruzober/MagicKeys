@@ -12,7 +12,7 @@ public static void ControlSearch()
 KeyUnReg();
 OptionKeyUnReg();
  string ModuleName = MagicKeys.InputTextBox(T._("Enter substring to search for a module."), T._("Control search"));
-if (ModuleName == "0")
+if (ModuleName == null)
 {
 OptionKeyReg();
 return;

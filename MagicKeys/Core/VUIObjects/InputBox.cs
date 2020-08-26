@@ -20,11 +20,11 @@ return IB.GetString();
 }
 else if (IB.DialogResult == DialogResult.Cancel)
 {
-return "0";
+return null;
 }
 else
 {
-return "0";
+return null;
 }
 }
 

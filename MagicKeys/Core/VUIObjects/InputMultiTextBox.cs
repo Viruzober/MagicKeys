@@ -18,11 +18,11 @@ return ITB.GetString();
 }
 else if (ITB.DialogResult == DialogResult.Cancel)
 {
-return "0";
+return null;
 }
 else
 {
-return "0";
+return null;
 }
 }
 
