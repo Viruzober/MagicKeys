@@ -1,0 +1,13 @@
+[Info]
+VUI=H3000 Factory
+PClass=MagicKeys
+BClass=None
+PluginName=H3000 Factory
+Loader=None
+[Keys]
+L=LoadPreset
+[1]
+Text=Load preset
+ObjectType=Button
+Help=Загрузить пресет
+Func=LoadPreset

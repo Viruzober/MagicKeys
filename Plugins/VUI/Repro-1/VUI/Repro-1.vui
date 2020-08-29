@@ -1,0 +1,31 @@
+[Info]
+VUI=Repro-1
+PClass=MagicKeys
+BClass=None
+PluginName=Repro-1
+Loader=None
+[Keys]
+P=PresetsTab
+S=SynthTab
+PageUp=PreviousPreset
+PageDown=NextPreset
+[1]
+Text=Synth tab
+ObjectType=Button
+Help=Вкладка synth
+Func=SynthTab
+[2]
+Text=Presets tab
+ObjectType=Button
+Help=Вкладка Пресетов
+Func=PresetsTab
+[3]
+Text=Next preset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset
+[4]
+Text=Previous preset
+ObjectType=Button
+Help=предыдущий пресет
+Func=PreviousPreset

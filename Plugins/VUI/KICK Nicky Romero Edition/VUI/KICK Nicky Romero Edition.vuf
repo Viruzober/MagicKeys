@@ -1,0 +1,10 @@
+[CategoryMenu]
+1=MouseClick|Left|398|22|1|0|0|10
+[SaveKick]
+1=MouseClick|Left|531|46|1|0|0|10
+[KicksMenu]
+1=MouseClick|Left|630|34|1|0|0|10
+[PreviousKick]
+1=MouseClick|Left|710|26|1|0|0|10
+[NextKick]
+1=MouseClick|Left|735|31|1|0|0|10

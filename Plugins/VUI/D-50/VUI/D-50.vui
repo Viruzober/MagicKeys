@@ -1,0 +1,13 @@
+[Info]
+VUI=D-50
+PClass=MagicKeys
+BClass=None
+PluginName=D-50
+Loader=None
+[Keys]
+P=PresetsMenu
+[1]
+Text=Presets menu
+ObjectType=Button
+Help=Открыть меню пресетов
+Func=PresetsMenu

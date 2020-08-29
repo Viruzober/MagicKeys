@@ -1,0 +1,8 @@
+[BankMenu]
+1=MouseClick|Left|239|31|1|0|0|10
+[PreviousPreset]
+1=MouseClick|Left|292|27|1|0|0|10
+[NextPreset]
+1=MouseClick|Left|332|26|1|0|0|10
+[MainMenu]
+1=MouseClick|Left|384|26|1|0|0|10

@@ -1,0 +1,37 @@
+[Info]
+VUI=KICK Nicky Romero Edition
+PClass=MagicKeys
+BClass=None
+PluginName=KICK Nicky Romero Edition
+Loader=None
+[Keys]
+C=CategoryMenu
+K=KicksMenu
+S=SaveKick
+PageUp=PreviousKick
+PageDown=NextKick
+[1]
+Text=Category menu
+ObjectType=Button
+Help=Открыть меню киков отсортированных по Категориям
+Func=CategoryMenu
+[2]
+Text=Kicks menu
+ObjectType=Button
+Help=Открыть меню киков
+Func=KicksMenu
+[3]
+Text=Next kick
+ObjectType=Button
+Help=Следующий кик
+Func=NextKick
+[4]
+Text=Previous kick
+ObjectType=Button
+Help=Предыдущий кик
+Func=PreviousKick
+[5]
+Text=Save kick
+ObjectType=Button
+Help=Сохранить кик
+Func=SaveKick

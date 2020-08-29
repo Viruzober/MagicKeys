@@ -1,0 +1,13 @@
+[Info]
+VUI=2016 Stereo Room
+PClass=MagicKeys
+BClass=None
+PluginName=2016 Stereo Room
+Loader=None
+[Keys]
+P=LoadPreset
+[1]
+Text=Load preset
+ObjectType=Button
+Help=Загружает пресет
+Func=LoadPreset

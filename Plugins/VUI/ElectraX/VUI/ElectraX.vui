@@ -1,0 +1,13 @@
+[Info]
+VUI=ElectraX
+PClass=MagicKeys
+BClass=None
+PluginName=ElectraX
+Loader=None
+[Keys]
+B=BanksMenu
+[1]
+Text=Banks menu
+ObjectType=Button
+Help=Открыть меню банков
+Func=BanksMenu

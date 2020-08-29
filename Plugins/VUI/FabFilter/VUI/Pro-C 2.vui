@@ -1,0 +1,31 @@
+[Info]
+VUI=Pro-C 2
+PClass=MagicKeys
+BClass=None
+PluginName=Pro-C 2
+Loader=None
+[Keys]
+M=PluginMenu
+P=PresetsMenu
+PageUp=PreviousPreset
+PageDown=NextPreset
+[1]
+Text=Plugin menu
+ObjectType=Button
+Help=Открыть меню плагина
+Func=PluginMenu
+[2]
+Text=Presets menu
+ObjectType=Button
+Help=Открыть меню пресетов
+Func=PresetsMenu
+[3]
+Text=Next preset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset
+[4]
+Text=Previous preset
+ObjectType=Button
+Help=Предыдущий пресет
+Func=PreviousPreset

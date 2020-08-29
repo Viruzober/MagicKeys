@@ -1,0 +1,13 @@
+[Info]
+VUI=Sylenth1
+PClass=MagicKeys
+BClass=None
+PluginName=Sylenth1
+Loader=None
+[Keys]
+M=MainMenu
+[1]
+Text=Main menu
+ObjectType=Button
+Help=Открыть главное меню Sylenth 1
+Func=MainMenu

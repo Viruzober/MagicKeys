@@ -1,0 +1,13 @@
+[Info]
+VUI=Pianoteq 6 STAGE
+PClass=MagicKeys
+BClass=None
+PluginName=Pianoteq 6 STAGE
+Loader=None
+[Keys]
+P=PresetManager
+[1]
+Text=Preset manager
+ObjectType=Button
+Help=Открыть менеджер пресетов
+Func=PresetManager

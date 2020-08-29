@@ -1,0 +1,13 @@
+[Info]
+VUI=sfz
+PClass=MagicKeys
+BClass=None
+PluginName=sfz
+Loader=None
+[Keys]
+L=LoadSample
+[1]
+Text=Load sample
+ObjectType=Button
+Help=Загрузить семпл
+Func=LoadSample

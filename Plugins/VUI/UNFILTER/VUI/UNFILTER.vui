@@ -1,0 +1,31 @@
+[Info]
+VUI=UNFILTER
+PClass=MagicKeys
+BClass=None
+PluginName=UNFILTER
+Loader=None
+[Keys]
+E=ExportFilterResponse
+I=ImportFilterResponse
+L=Learn
+R=ResetLearning
+[1]
+Text=Learn
+ObjectType=Button
+Help=Help not found
+Func=Learn
+[2]
+Text=Reset learning
+ObjectType=Button
+Help=Help not found
+Func=ResetLearning
+[3]
+Text=Import filter response
+ObjectType=Button
+Help=Help not found
+Func=ImportFilterResponse
+[4]
+Text=Export filter response
+ObjectType=Button
+Help=Help not found
+Func=ExportFilterResponse

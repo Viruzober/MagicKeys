@@ -1,0 +1,13 @@
+[Info]
+VUI=Saurus
+PClass=MagicKeys
+BClass=None
+PluginName=Saurus
+Loader=None
+[Keys]
+B=BankMenu
+[1]
+Text=Bank menu
+ObjectType=Button
+Help=Открыть меню банка
+Func=BankMenu

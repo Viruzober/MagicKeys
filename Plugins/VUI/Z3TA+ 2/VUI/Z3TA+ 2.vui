@@ -1,0 +1,37 @@
+[Info]
+VUI=Z3TA+ 2
+PClass=MagicKeys
+BClass=None
+PluginName=Z3TA+ 2
+Loader=None
+[Keys]
+B=BanksMenu
+C=ContentsMenu
+P=PresetsMenu
+PageUp=PreviousPreset
+PageDown=NextPreset
+[1]
+Text=Contents menu
+ObjectType=Button
+Help=Открыть меню контента Z3TA+ 2
+Func=ContentsMenu
+[2]
+Text=Banks menu
+ObjectType=Button
+Help=Открыть меню банков
+Func=BanksMenu
+[3]
+Text=Presets menu
+ObjectType=Button
+Help=Открыть меню пресетов
+Func=PresetsMenu
+[4]
+Text=Next preset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset
+[5]
+Text=Previous preset
+ObjectType=Button
+Help=Предыдущий пресет
+Func=PreviousPreset

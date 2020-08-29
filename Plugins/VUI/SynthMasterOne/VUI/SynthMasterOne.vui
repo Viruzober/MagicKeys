@@ -1,0 +1,13 @@
+[Info]
+VUI=SynthMasterOne
+PClass=MagicKeys
+BClass=None
+PluginName=SynthMasterOne
+Loader=None
+[Keys]
+M=MainMenu
+[1]
+Text=Main menu
+ObjectType=Button
+Help=Открыть главное меню SynthMasterOne
+Func=MainMenu

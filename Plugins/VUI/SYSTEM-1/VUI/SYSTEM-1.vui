@@ -1,0 +1,13 @@
+[Info]
+VUI=SYSTEM-1
+PClass=MagicKeys
+BClass=None
+PluginName=SYSTEM-1
+Loader=None
+[Keys]
+L=LoadPreset
+[1]
+Text=PresetsMenu
+ObjectType=Button
+Help=Открыть меню пресетов
+Func=PresetsMenu

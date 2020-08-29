@@ -1,0 +1,25 @@
+[Info]
+VUI=a.n.a
+PClass=MagicKeys
+BClass=None
+PluginName=a.n.a
+Loader=None
+[Keys]
+B=BankMenu
+PageUp=PreviousPreset
+PageDown=NextPreset
+[1]
+Text=Bank menu
+ObjectType=Button
+Help=Открыть меню банка
+Func=BankMenu
+[2]
+Text=Next preset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset
+[3]
+Text=Previous preset
+ObjectType=Button
+Help=Предыдущий пресет
+Func=PreviousPreset
