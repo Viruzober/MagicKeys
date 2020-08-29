@@ -5,6 +5,7 @@ project.lock.json
 *.pyc
 *.mo
 *.pot
+*.po~
 
 # Visual Studio Code
 .vscode
