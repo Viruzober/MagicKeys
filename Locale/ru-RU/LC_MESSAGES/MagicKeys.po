@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 22:31+0300\n"
+"POT-Creation-Date: 2020-08-27 11:49+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -109,15 +109,9 @@ msgstr ""
 msgid "MagicKeys developer tool"
 msgstr ""
 
-#: D:\Root\src\MagicKeys\DeveloperTool\Forms\OCRResultForm.cs:34
-#: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:32
-#: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:39
-#: D:\Root\src\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
-#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
-#: D:\Root\src\MagicKeys\MKUpdater\MKUpdater.cs:23
-#: D:\Root\src\MagicKeys\MKUpdater\UpdateFormActions.cs:58
-msgid "Error"
-msgstr "Ошибка"
+#: D:\Root\src\MagicKeys\DeveloperTool\Forms\OCRResultForm.cs:35
+msgid "OCR Word List"
+msgstr ""
 
 #: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:32
 msgid ""
@@ -127,6 +121,15 @@ msgstr ""
 "Эта версия MagicKeys предназначена для 32-разрядных версий Windows, но вы "
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
+
+#: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:32
+#: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:39
+#: D:\Root\src\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
+#: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
+#: D:\Root\src\MagicKeys\MKUpdater\MKUpdater.cs:23
+#: D:\Root\src\MagicKeys\MKUpdater\UpdateFormActions.cs:58
+msgid "Error"
+msgstr "Ошибка"
 
 #: D:\Root\src\MagicKeys\MagicKeys\MagicKeys.cs:39
 msgid "You must close DeveloperTool to run MagicKeys."
@@ -178,6 +181,14 @@ msgstr "Нет доступных плагинов."
 #: D:\Root\src\MagicKeys\MKUpdater\UpdateFormActions.cs:26
 msgid "Warning"
 msgstr "Внимание"
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
+msgid "Enter a value for "
+msgstr ""
+
+#: D:\Root\src\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
+msgid " from 1 to 100"
+msgstr ""
 
 #: D:\Root\src\MagicKeys\MagicKeys\Forms\DebugForm.cs:34
 #: D:\Root\src\MagicKeys\MagicKeys\Forms\MenuForm.cs:18
