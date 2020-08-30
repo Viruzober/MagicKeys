@@ -16,6 +16,7 @@ case MKC.WM_HOTKEY:
 string modifier = KeyParse((int)m.LParam & 0xFFFF);
 int K = ((int)m.LParam >> 16) & 0xFFFF;
 string key = GetKeyName(K);
+KeyUnReg();
 if (VUIKeys.ContainsKey(modifier+key) == true)
 {
 (string Func, string Param) = FuncParse(VUIKeys[modifier+key]);
@@ -29,6 +30,7 @@ else
 InvokeFromString(Func, Param);
 }
 }
+KeyReg();
 break;
 }
 base.WndProc(ref m);

@@ -28,10 +28,10 @@ int[] NKLMCN = ImgSearch("KontaktMidiChannelNumber");
 MouseMove(NKLMCN[5], NKLMCN[6], 0);
 int NumberChannel = Convert.ToInt32(Input);
 int X = Convert.ToInt32(NKLMCN[5]);
-int Y = Convert.ToInt32(NKLMCN[2]+(17*NumberChannel));
-MouseClick("Left", X, Y, 1, 0, 0, 10);
+int Y = Convert.ToInt32(NKLMCN[6]+(17*NumberChannel));
+MouseClick("Left", X, Y-10	, 1, 0, 0, 10);
 MouseClick("Left", KLMC[1]+620, KLMC[2]+20, 1, 0, 0, 10);
-Speak("OK");
+Speak("Done");
 }
 }
 
@@ -53,7 +53,7 @@ int X = Convert.ToInt32(NKLAC[5]);
 int Y = Convert.ToInt32(NKLAC[2]+(17*NumberChannel));
 MouseClick("Left", X, Y, 1, 0, 0, 10);
 MouseClick("Left", KLAC[1]+620, KLAC[2]+20, 1, 0, 0, 10);
-Speak("OK");
+Speak("Done");
 }
 else
 {
