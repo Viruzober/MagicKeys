@@ -32,8 +32,9 @@ AudoSelect();
 
 public static void SelectChannel()
 {
-int Input = Convert.ToInt32(InputBox("Select Channel", "Enter channel number from 1 to 8.", 1, 8));
-int CH = Input*35;
+string Input = InputBox("Select Channel", "Enter channel number from 1 to 8.", 1, 8);
+if (Input == null) return;
+int CH = Convert.ToInt32(Input)*35;
 MouseClick("Left", P[1]+485+CH, P[2]+55, 1, 0, 0, 10);
 AudoSelect();
 }

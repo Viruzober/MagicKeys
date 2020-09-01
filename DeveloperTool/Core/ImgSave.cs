@@ -20,23 +20,23 @@ KeyReg();
 OptionKeyReg();
 return;
 }
-int Width = Convert.ToInt32(MagicKeys.InputBox("Image width", "Enter image width", 1, P[3]-MP[0]));
-if (Width == null)
+string IBWidth = MagicKeys.InputBox("Image width", "Enter image width", 1, P[3]-MP[0]);
+if (IBWidth == null)
 {
 KeyReg();
 OptionKeyReg();
 return;
 }
-int Height = Convert.ToInt32(MagicKeys.InputBox("Image height", "Enter image height", 1, P[4]-MP[1]));
-if (Height == null)
+string IBHeight = MagicKeys.InputBox("Image height", "Enter image height", 1, P[4]-MP[1]);
+if (IBHeight == null)
 {
 KeyReg();
 OptionKeyReg();
 return;
 }
-Bitmap Screen = new Bitmap(Width, Height);
+Bitmap Screen = new Bitmap(Convert.ToInt32(IBWidth), Convert.ToInt32(IBHeight));
 Graphics g = Graphics.FromImage(Screen);
-g.CopyFromScreen(MP[0]-(Width/2), MP[1]-(Height/2), 00, 0, Screen.Size);
+g.CopyFromScreen(MP[0]-(Convert.ToInt32(IBWidth)/2), MP[1]-(Convert.ToInt32(IBHeight)/2), 00, 0, Screen.Size);
 Screen.Save(@"DevSave\"+Module+@"\"+ITB+".bmp");
 }
 

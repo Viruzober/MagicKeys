@@ -44,4 +44,4 @@ Func=SelectChannel
 Text=Main
 ObjectType=Tab
 Help=Not found
-Func=Main
+Func=MainTab

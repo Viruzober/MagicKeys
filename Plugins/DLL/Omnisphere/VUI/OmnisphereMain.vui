@@ -15,3 +15,33 @@ PageUp=OmnispherePatch|Back
 PageDown=OmnispherePatch|Next
 B=BankName
 P=PatchName
+[1]
+Text=Voice
+ObjectType=Menu
+Help=Open voice menu
+Func=MainVoiceMenu
+[2]
+Text=Octave
+ObjectType=Menu
+Help=Open octave menu
+Func=MainOctaveMenu
+[3]
+Text=Scale
+ObjectType=Menu
+Help=Open scale menu
+Func=MainScaleMenu
+[4]
+Text=Clock speed
+ObjectType=Menu
+Help=Open clock speed menu
+Func=MainClockSpeedMenu
+[5]
+Text=Signal path
+ObjectType=Menu
+Help=Open signal pathmenu
+Func=MainSignalPathMenu
+[6]
+Text=Lutch
+ObjectType=Button
+Help=Not found
+Func=MainLutchButton
