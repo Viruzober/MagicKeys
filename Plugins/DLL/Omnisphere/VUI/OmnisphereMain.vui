@@ -45,3 +45,18 @@ Text=Lutch
 ObjectType=Button
 Help=Not found
 Func=MainLutchButton
+[7]
+Text=Lutch
+ObjectType=Menu
+Help=Not found
+Func=MainLutchMenu
+[8]
+Text=Gain
+ObjectType=Menu
+Help=Not found
+Func=MainGainMenu
+[9]
+Text=Part lavel
+ObjectType=Slider
+Help=Not found
+Func=MainPartLavelSlider

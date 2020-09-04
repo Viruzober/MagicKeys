@@ -26,10 +26,6 @@ this.Activate();
 
 public string GetString()
 {
-if (this.DialogResult == DialogResult.Cancel)
-{
-return null;
-}
 return Value.Text;
 }
 

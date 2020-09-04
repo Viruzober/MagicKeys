@@ -45,5 +45,24 @@ Thread.Sleep(100);
 Speak(CheckStateImg("Lutch", P[1]+325, P[2]+460, P[1]+365, P[2]+500));
 }
 
+public static void MainLutchMenu()
+{
+MouseClick("Left", P[1]+395, P[2]+480, 1, 0, 0, 10);
+}
+
+public static void MainGainMenu()
+{
+MouseClick("Left", P[1]+370, P[2]+535, 1, 0, 0, 10);
+}
+
+public static void MainPartLavelSlider()
+{
+MouseClick("Right", P[1]+320, P[2]+590, 1, 0, 0, 10);
+Thread.Sleep(100);
+WinWaitClose("#32768");
+Thread.Sleep(100);
+WaitControlClosePoint(P[1]+310, P[2]+570, "Edit");
+}
+
 }
 }
