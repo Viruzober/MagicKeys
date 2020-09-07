@@ -3,7 +3,7 @@
 setlocal enableextensions enabledelayedexpansion
 set gtkeyword=T._
 
-if "%1" == "--help" (
+if "%~1" == "--help" (
 echo The universal NGettext integration script by A11CF0
 echo Usage: %0 [ROOTDIR] [TARGETDIR]
 echo %0 --help
@@ -24,7 +24,7 @@ set localedir=!rootdir!\Locale
 )
 if not "%~2" == "" set destdir=%~2\Locale
 
- if not exist %localedir% (
+ if not exist "%localedir%" (
 echo No locales to process.
 exit /b 1
 )
