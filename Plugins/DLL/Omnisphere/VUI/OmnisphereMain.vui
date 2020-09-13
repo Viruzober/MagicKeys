@@ -46,7 +46,7 @@ ObjectType=Button
 Help=Not found
 Func=MainLutchButton
 [7]
-Text=Lutch
+Text=Lutch type
 ObjectType=Menu
 Help=Not found
 Func=MainLutchMenu
@@ -60,3 +60,8 @@ Text=Part lavel
 ObjectType=Slider
 Help=Not found
 Func=MainPartLavelSlider
+[10]
+Text=M
+ObjectType=CheckBox
+Help=Not found
+Func=MainMCheckBox

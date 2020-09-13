@@ -64,5 +64,12 @@ Thread.Sleep(100);
 WaitControlClosePoint(P[1]+310, P[2]+570, "Edit");
 }
 
+public static void MainMCheckBox()
+{
+MouseClick("Left", P[1]+280, P[2]+555, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("MainMCheck", P[1]+260, P[2]+535, P[1]+300, P[2]+575));
+}
+
 }
 }
