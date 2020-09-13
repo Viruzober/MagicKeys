@@ -9,6 +9,8 @@ public partial class MagicKeys
 
 public static async void SendInfo()
 {
+try
+{
 HttpClient HTTPC = new HttpClient();
 var Values = new Dictionary<string, string>();
 Values.Add("PCID", PCID());
@@ -22,6 +24,11 @@ HttpResponseMessage response = await HTTPC.PostAsync("https://viruzober.tk/Magic
 response.EnsureSuccessStatusCode();
 string sd = response.Content.ReadAsStringAsync().Result;
 HTTPC.Dispose();
+}
+catch (Exception)
+{
+}
+
 }
 
 }

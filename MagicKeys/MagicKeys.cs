@@ -41,16 +41,16 @@ return;
 }
 HM = new Menu();
 LoadSettings();
-if (SendInfoFlag == true)
-{
 if (CheckInternet() == true)
+{
+if (SendInfoFlag == true)
 {
 SendInfo();
 }
+Update();
 }
-if (CheckInternet() == true) Update();
 PluginsListLoader();
-Thread ThreadPluginDetector = new Thread(new ThreadStart(PluginDetector));
+Thread ThreadPluginDetector = new Thread(PluginDetector);
 ThreadPluginDetector.IsBackground = true;
 ThreadPluginDetector.Start();
 RegisterHotKey(HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
