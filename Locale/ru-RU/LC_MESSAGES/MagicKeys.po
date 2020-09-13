@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-08 13:10+0300\n"
+"POT-Creation-Date: 2020-09-13 23:53+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -19,12 +19,12 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: MagicKeys\n"
 
-#: D:\Root\src\MagicKeys\DeveloperTool\Core\ControlSearch.cs:14
-msgid "Enter substring to search for a module."
+#: D:\Root\src\MagicKeys\DeveloperTool\Core\ControlSearch.cs:16
+msgid "Control search"
 msgstr ""
 
-#: D:\Root\src\MagicKeys\DeveloperTool\Core\ControlSearch.cs:14
-msgid "Control search"
+#: D:\Root\src\MagicKeys\DeveloperTool\Core\ControlSearch.cs:17
+msgid "Enter substring to search for a module."
 msgstr ""
 
 #: D:\Root\src\MagicKeys\DeveloperTool\Core\ImgSave.cs:16
