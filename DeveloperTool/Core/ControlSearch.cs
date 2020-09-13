@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MagicKeys
@@ -7,12 +8,21 @@ namespace MagicKeys
 public partial class DeveloperTool
 {
 
-public static void ControlSearch()
+public static async void ControlSearch()
 {
 KeyUnReg();
 OptionKeyUnReg();
- string ModuleName = MagicKeys.InputTextBox(T._("Enter substring to search for a module."), T._("Control search"));
-if (ModuleName == null)
+InputTextBox ITB = new InputTextBox();
+ITB.Text = T._("Control search");
+ITB.InputBoxLabel.Text = T._("Enter substring to search for a module.");
+ITB.Value.Text = Module;
+await Task.Run(() => ITB.ShowDialog());
+ string ModuleName = string.Empty;
+if (ITB.DialogResult == DialogResult.OK)
+{
+ModuleName = ITB.GetString();
+}
+if (ModuleName == string.Empty)
 {
 OptionKeyReg();
 return;
@@ -22,7 +32,6 @@ P = GetPluginCoord();
 if (P[0] == 1)
 {
 MagicKeys.Speak("Module found");
-MagicKeys.MouseMove(P[1], P[2], 0);
 KeyReg();
 OptionKeyReg();
 MagicKeys.SoundPlay("WindowOpened", 0);
