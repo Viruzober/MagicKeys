@@ -7,7 +7,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void WaitControlClosePoint(int X, int Y, string CClass)
+public static void WaitControlClose(int X, int Y, string CClass)
 {
 KeyUnReg();
 while(true)

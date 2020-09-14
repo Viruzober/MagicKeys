@@ -59,9 +59,9 @@ public static void MainPartLavelSlider()
 {
 MouseClick("Right", P[1]+320, P[2]+590, 1, 0, 0, 10);
 Thread.Sleep(100);
-WinWaitClose("#32768");
+WaitWinClose("#32768");
 Thread.Sleep(100);
-WaitControlClosePoint(P[1]+310, P[2]+570, "Edit");
+WaitControlClose(P[1]+310, P[2]+570, "Edit");
 }
 
 public static void MainMCheckBox()

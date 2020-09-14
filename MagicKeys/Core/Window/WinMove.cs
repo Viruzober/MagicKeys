@@ -6,7 +6,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-        public static void WindowMover(int X, int Y, bool RecP)
+        public static void WinMove(int X, int Y, bool RecP)
         {
 P = GetPluginCoord();
 IntPtr Handle = GetForegroundWindow();

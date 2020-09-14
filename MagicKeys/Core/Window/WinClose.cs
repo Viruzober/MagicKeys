@@ -25,7 +25,7 @@ if (KeySwitch == 1)
 {
 return true;
 }
-WinWaitClose("#32768");
+WaitWinClose("#32768");
 IntPtr Handle = GetForegroundWindow();
 GetWindowText(Handle, Title, nChars);
 GetClassName(Handle, Class, nChars);
