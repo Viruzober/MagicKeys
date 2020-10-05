@@ -12,7 +12,7 @@ int[] Img = ImgSearchArea(PR[0], P[1], P[2], P[3], P[4], 20);
 if (Img[0] == 1)
 {
 MouseClick(PR[1], Img[5], Img[6], 1, 0, 0, 10);
-Speak("OK");
+Speak("Done");
 return;
 }
 Speak("Image not found");

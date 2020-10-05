@@ -102,7 +102,7 @@ LibNormalize();
 LibSwitchFolder(To);
 }
 Thread.Sleep(200);
-Speak("OK");
+Speak("Done");
 }
 
 public static void LibSwitchSnapshot(string To)

@@ -27,7 +27,7 @@ int V = P[2]+Y-Convert.ToInt32(Convert.ToInt32(Convert.ToInt32(Input)*OnePercent
 MouseClickDrag("Left", P[1]+X, P[2]+Y, P[1]+X, V, 0, 10);
 WinMove(DP[1], DP[2], false);
 }
-Speak("OK");
+Speak("Done");
 }
 
 }
