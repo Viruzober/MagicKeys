@@ -1,3 +1,4 @@
+// Я никогда не добавлю рандомные имена секций!!!
 using System;
 using System.Reflection;
 using System.IO;
