@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
-using SpeechLib;
 
 namespace MagicKeys
 {
@@ -26,8 +25,10 @@ System.Reflection.BindingFlags.InvokeMethod,null,o,new Object[1] {Text});
 }
 else
 {
-SpeechLib.SpVoice synth = new SpeechLib.SpVoice();
-synth.Speak(Text, (SpeechVoiceSpeakFlags.SVSFDefault));
+Type Sapi = Type.GetTypeFromProgID("Sapi.SpVoice");
+object o = Activator.CreateInstance( Sapi);
+Sapi.InvokeMember("Speak",
+System.Reflection.BindingFlags.InvokeMethod,null,o,new Object[2] {Text, 3});
 }
 }
 

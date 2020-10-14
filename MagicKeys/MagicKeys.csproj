@@ -72,17 +72,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <COMReference Include="SpeechLib.dll">
-      <Guid>c866ca3a-32f7-11d2-9602-00c04f8ee628</Guid>
-      <VersionMajor>5</VersionMajor>
-      <VersionMinor>4</VersionMinor>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Lcid>0</Lcid>
-      <Isolated>false</Isolated>
-    </COMReference>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Gettext.Tools" Version="0.21.0" />
     <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.19041.1" />
     <PackageReference Include="NGettext" Version="0.6.6" />
