@@ -1,0 +1,100 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build Debug x64",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "/property:Configuration=Debug",
+                "/property:Platform=x64",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build Release x64",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "/property:Configuration=Release",
+                "/property:Platform=x64",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build Debug x86",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "/property:Configuration=Debug",
+                "/property:Platform=x86",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build Release x86",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "/property:Configuration=Release",
+                "/property:Platform=x86",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish x64",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "/property:PublishProfile=x64",
+                "/property:Configuration=Release",
+                "/property:Platform=x64",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish x86",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "/property:PublishProfile=x86",
+                "/property:Configuration=Release",
+                "/property:Platform=x86",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "clean",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

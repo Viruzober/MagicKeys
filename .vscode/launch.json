@@ -1,0 +1,66 @@
+{
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+   "version": "0.2.0",
+   "configurations": [
+        {
+            "name": "Launch Debug x64",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Debug x64",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/MagicKeys/bin/x64/Debug/MagicKeys.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/MagicKeys/bin/x64/Debug",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Launch Release x64",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Release x64",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/MagicKeys/bin/x64/Release/MagicKeys.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/MagicKeys/bin/x64/Release",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Launch  Debug x86",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Debug x86",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/MagicKeys/bin/x86/Debug/MagicKeys.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/MagicKeys/bin/x86/Debug",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Launch Release x86",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build Release x86",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/MagicKeys/bin/x86/Release/MagicKeys.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/MagicKeys/bin/x86/Release",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
