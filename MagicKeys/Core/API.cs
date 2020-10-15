@@ -10,17 +10,18 @@ public class API
 
 public static string GetVUIPath()
 {
-return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\VUI\".Replace(@"\\", @"\");
+return Path.Combine("Plugins", SubPath, GetPluginName(), @"VUI\");
 }
 
 public static string GetImgPath()
 {
-return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\Images\".Replace(@"\\", @"\");
+return Path.Combine("Plugins", SubPath, GetPluginName(), @"Images\");
 }
 
 public static string GetModulePath()
 {
-return @"Plugins\"+SubPath+@"\"+GetPluginName()+@"\"+GetPluginName()+".dll".Replace(@"\\", @"\");
+var PluginName = GetPluginName();
+return Path.Combine("Plugins", SubPath, PluginName, PluginName+".dll");
 }
 
 public static string GetWTitle()

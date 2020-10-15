@@ -16,7 +16,7 @@ return API.GetVUIPath()+VUIName+".vui";
 string Temp = API.GetVUIPath().Split(@"\")[1];
 string BaseVUIPath = Temp.Remove(Temp.IndexOf("Lib"));
 SubPluginUnLoad();
-return @"Plugins\"+BaseVUIPath+@"\VUI\"+VUIName+".vui";
+return Path.Combine("Plugins", BaseVUIPath, "VUI", VUIName+".vui");
 }
 
 }
