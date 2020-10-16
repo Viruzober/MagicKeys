@@ -19,7 +19,7 @@ static void Main()
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
 if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
 {
-MessageBox.Show("You must close MagicKeys to run DeveloperTool.", "Error");
+MessageBox.Show("You must close MagicKeys to run DeveloperTool.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 HM = new Menu();

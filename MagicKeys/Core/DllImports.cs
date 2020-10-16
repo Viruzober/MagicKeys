@@ -65,7 +65,7 @@ public static extern bool CloseHandle(IntPtr hObject);
 #if X86
 [DllImport("ImageSearch32.dll")]
 public static extern IntPtr ImageSearch(int x, int y, int right, int bottom, string imagePath);
-#elif X64
+#else
 [DllImport("ImageSearch64.dll")]
 public static extern IntPtr ImageSearch(int x, int y, int right, int bottom, string imagePath);
 #endif
@@ -87,7 +87,7 @@ public static extern int nvdaController_cancelSpeech();
 public static extern int nvdaController_speakText(string text);
 [DllImport("nvdaControllerClient32.dll", CharSet = CharSet.Unicode)]
 public static extern int nvdaController_brailleMessage(string Text);
-#elif X64
+#else
 [DllImport("nvdaControllerClient64.dll")]
 public static extern int nvdaController_cancelSpeech();
 [DllImport("nvdaControllerClient64.dll", CharSet = CharSet.Unicode)]
@@ -100,7 +100,7 @@ public static extern UInt32 GetWindowThreadProcessId(Int32 hWnd, out Int32 lpdwP
 #if X86
 [DllImport("user32.dll", EntryPoint="GetWindowLong")]
 public static extern IntPtr GetWindowLongPtr32(IntPtr hWnd, GWL nIndex);
-#elif X64
+#else
 [DllImport("user32.dll", EntryPoint="GetWindowLongPtr")]
 public static extern IntPtr GetWindowLongPtr64(IntPtr hWnd, GWL nIndex);
 #endif

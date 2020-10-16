@@ -16,7 +16,7 @@ GetWindowThreadProcessId(Handle.ToInt32(), out ProcessID);
 IntPtr OP = OpenProcess(ProcessAccessFlags.QueryInformation | ProcessAccessFlags.VirtualMemoryRead, false, ProcessID);
 #if X86
 IntPtr GGWL = GetWindowLongPtr32(Handle, GWL.GWL_HINSTANCE);
-#elif X64
+#else
 IntPtr GGWL = GetWindowLongPtr64(Handle, GWL.GWL_HINSTANCE);
 #endif
 GetModuleFileNameEx(OP, GGWL, Text, nChars);
