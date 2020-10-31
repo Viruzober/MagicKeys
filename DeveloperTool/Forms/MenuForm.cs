@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
-public partial class Menu : Form
+public partial class DevMenu : Form
 {
 
 public NotifyIcon Ni;
@@ -14,7 +14,7 @@ public System.ComponentModel.IContainer components;
 public ContextMenuStrip MainMenu = new ContextMenuStrip();
 public ToolStripMenuItem ExitMenuItem = new ToolStripMenuItem("Exit");
 
-        public Menu()
+        public DevMenu()
 {
 this.components = new System.ComponentModel.Container();
 this.Ni = new System.Windows.Forms.NotifyIcon(this.components);

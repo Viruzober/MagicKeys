@@ -11,7 +11,7 @@ namespace MagicKeys
 public partial class DeveloperTool
 {
 
-public static Menu HM;
+public static DevMenu HM;
 
 [STAThread]
 static void Main()
@@ -22,7 +22,7 @@ if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
 MessageBox.Show("You must close MagicKeys to run DeveloperTool.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
-HM = new Menu();
+HM = new DevMenu();
 MagicKeys.Speak("DeveloperTool is ready");
 OptionKeyReg();
 Application.Run();

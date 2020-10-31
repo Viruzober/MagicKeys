@@ -4,7 +4,7 @@ using System.IO;
 
 namespace MagicKeys
 {
-public partial class Menu : Form
+public partial class DevMenu : Form
 {
 
 protected override void WndProc(ref Message m)

@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
-public partial class Menu : Form
+public partial class DevMenu : Form
 {
 
 public async void Exit(object sender, EventArgs e)
