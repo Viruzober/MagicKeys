@@ -15,7 +15,7 @@ public static void SubPluginUnLoad()
 if (API.GetVUIPath().Contains("Lib") == true)
 {
 string Temp = API.GetVUIPath().Split(@"\")[1];
-string BackPluginName = Temp.Remove(Temp.IndexOf("Lib"));
+string BackPluginName = Temp.Remove(Temp.IndexOf("Lib", StringComparison.Ordinal));
 CurrentPlugin["PluginName"] = BackPluginName;
 SubPath = "";
 }

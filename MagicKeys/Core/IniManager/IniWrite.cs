@@ -19,7 +19,7 @@ for(int K = I; K < FileStr.Length; K++)
 {
 if(FileStr[K].Contains(GetKey))
 {
-string KeyStr = FileStr[K].Substring(0, FileStr[K].IndexOf("=")+1);
+string KeyStr = FileStr[K].Substring(0, FileStr[K].IndexOf("=", StringComparison.Ordinal) + 1);
 FileStr[K] = KeyStr+GetValue;
 for(int R = 0; R < FileStr.Length; R++)
 {
@@ -30,7 +30,7 @@ File.WriteAllText(GetFile, FullStr);
 }
 }
 }
-}	
+}
 
 }
 }

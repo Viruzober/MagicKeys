@@ -1,11 +1,9 @@
-// Я никогда не добавлю рандомные имена секций!!!
 using System;
 using System.Reflection;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using System.Collections.Generic;
-using System.Security.Permissions;
 using System.Diagnostics;
 using System.Linq;
 
@@ -16,8 +14,6 @@ public partial class MagicKeys
 
 public static Menu HM;
 
-[SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.ControlAppDomain)]
-[STAThread]
 static void Main()
 {
 Application.ThreadException +=
@@ -30,7 +26,7 @@ if (CheckRunProc("MagicKeys") == true) return;
 if (OS() == "64")
 {
 SoundPlay("Error", 0);
-                MessageBox.Show(T._("This version of MagicKeys is built for 32-bit Windows, but you are running a 64-bit version. Please run a 64-bit version of MagicKeys instead."), T._("Error"));
+MessageBox.Show(T._("This version of MagicKeys is built for 32-bit Windows, but you are running a 64-bit version. Please run a 64-bit version of MagicKeys instead."), T._("Error"));
 return;
 }
 #endif

@@ -14,7 +14,7 @@ if (File.Exists(API.GetVUIPath()+VUIName+".vui") == true)
 return API.GetVUIPath()+VUIName+".vui";
 }
 string Temp = API.GetVUIPath().Split(@"\")[1];
-string BaseVUIPath = Temp.Remove(Temp.IndexOf("Lib"));
+string BaseVUIPath = Temp.Remove(Temp.IndexOf("Lib", StringComparison.Ordinal));
 SubPluginUnLoad();
 return Path.Combine("Plugins", BaseVUIPath, "VUI", VUIName+".vui");
 }
