@@ -17,15 +17,15 @@ namespace MagicKeys
 
 public static string ImgToText(int W, int H, int X, int Y, int Zoom)
 {
-try
-{
-var GetOCR = Task.Run(async () => await OCR(W, H, X, Y, Zoom));
+//try
+//{
+var GetOCR = Task.Run(() => OCR(W, H, X, Y, Zoom));
 return GetOCR.Result;
-}
-catch(Exception)
-{
-return T._("Windows 10 OCR is unavailable");
-}
+//}
+//catch(Exception)
+//{
+//return T._("Windows 10 OCR is unavailable");
+//}
 }
 
 public async static Task<string> OCR(int W, int H, int X, int Y, int Zoom)
@@ -35,7 +35,7 @@ Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
 Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
 var engine = Windows.Media.Ocr.OcrEngine.TryCreateFromLanguage(new Windows.Globalization.Language("en"));
-var memoryStream = new MemoryStream();
+MemoryStream memoryStream = new ();
 S.Save(memoryStream, ImageFormat.Bmp);
 var WMS = WindowsRuntimeStreamExtensions.AsRandomAccessStream(memoryStream);
 var decoder = await Windows.Graphics.Imaging.BitmapDecoder.CreateAsync(WMS);
