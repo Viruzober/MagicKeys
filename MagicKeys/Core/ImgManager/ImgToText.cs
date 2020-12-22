@@ -19,7 +19,7 @@ public static string ImgToText(int W, int H, int X, int Y, int Zoom)
 {
             try
 {
-var ocrText = Task.Run(async () => await OCR(W, H, X, Y, Zoom));
+var ocrText = Task.Run(async () => await OCR(W, H, X, Y, Zoom)).GetAwaiter().GetResult();
 return ocrText;
 }
 catch(Exception)
