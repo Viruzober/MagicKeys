@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-12 00:13+0300\n"
+"POT-Creation-Date: 2020-12-12 23:45+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -151,10 +151,6 @@ msgstr "Файл справки не найден"
 #, csharp-format
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
-
-#: D:\Root\src\MagicKeys\MagicKeys\Core\ImgManager\ImgToText.cs:27
-msgid "Windows 10 OCR is unavailable"
-msgstr "Компонент Windows 10 OCR недоступен"
 
 #: D:\Root\src\MagicKeys\MagicKeys\Core\IniManager\IniManager.cs:59
 #: D:\Root\src\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:35
@@ -339,6 +335,9 @@ msgstr ""
 #: D:\Root\src\MagicKeys\MKUpdater\UpdateFormActions.cs:58
 msgid "Update file is corrupted."
 msgstr ""
+
+#~ msgid "Windows 10 OCR is unavailable"
+#~ msgstr "Компонент Windows 10 OCR недоступен"
 
 #~ msgid "Register"
 #~ msgstr "Зарегистрироваться"

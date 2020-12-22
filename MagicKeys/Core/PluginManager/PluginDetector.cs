@@ -39,7 +39,7 @@ WinClose(WH[0], WH[1]);
 KeyUnReg();
 SoundPlay("WindowClosed", 0);
 }
-SubPath = "";
+SubPath = string.Empty;
 CurrentPlugin.Clear();
 }
 }
