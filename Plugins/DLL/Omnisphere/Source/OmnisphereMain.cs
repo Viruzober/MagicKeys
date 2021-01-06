@@ -66,9 +66,16 @@ WaitControlClose(P[1]+310, P[2]+570, "Edit");
 
 public static void MainMCheckBox()
 {
-MouseClick("Left", P[1]+280, P[2]+555, 1, 0, 0, 10);
+MouseClick("Left", P[1]+315, P[2]+620, 1, 0, 0, 10);
 Thread.Sleep(100);
-Speak(CheckStateImg("MainMCheck", P[1]+260, P[2]+535, P[1]+300, P[2]+575));
+Speak(CheckStateImg("MainMCheck", P[1]+290, P[2]+590, P[1]+340, P[2]+650));
+}
+
+public static void MainSCheckBox()
+{
+MouseClick("Left", P[1]+420, P[2]+620, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("MainSCheck", P[1]+390, P[2]+590, P[1]+470, P[2]+650));
 }
 
 }

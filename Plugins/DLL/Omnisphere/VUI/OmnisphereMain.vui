@@ -65,3 +65,8 @@ Text=M
 ObjectType=CheckBox
 Help=Not found
 Func=MainMCheckBox
+[11]
+Text=S
+ObjectType=CheckBox
+Help=Not found
+Func=MainSCheckBox
