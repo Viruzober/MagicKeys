@@ -78,5 +78,10 @@ Thread.Sleep(100);
 Speak(CheckStateImg("MainSCheck", P[1]+390, P[2]+590, P[1]+470, P[2]+650));
 }
 
+public static void MainCutOfSlider()
+{
+Slider("CutOf", 490, 598, "H", 1.7, 1);
+}
+
 }
 }

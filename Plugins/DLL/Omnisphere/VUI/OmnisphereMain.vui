@@ -70,3 +70,8 @@ Text=S
 ObjectType=CheckBox
 Help=Not found
 Func=MainSCheckBox
+[12]
+Text=CutOf
+ObjectType=Slider
+Help=Not found
+Func=MainCutOfSlider
