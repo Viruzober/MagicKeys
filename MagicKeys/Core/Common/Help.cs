@@ -17,15 +17,11 @@ MagicKeys.Speak(T._("Help file not found"));
 }
 else
 {
-MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
-MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 2);
 KeyUnReg();
 using HelpForm HF = new HelpForm();
 HF.HelpFile = HelpFile;
 HF.ShowDialog();
 KeyReg();
-MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 2, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
-MagicKeys.RegisterHotKey(MagicKeys.HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
 }
 }
 
