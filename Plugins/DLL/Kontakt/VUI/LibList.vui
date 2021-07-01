@@ -11,6 +11,7 @@ I=LibGetInfo
 S=LibGetSnapshot
 D=LibDelete
 Delete=BlockDelete
+Ctrl+Delete=BlockDelete
 [1]
 Text=Midi channel
 ObjectType=Button
