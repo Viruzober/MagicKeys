@@ -9,7 +9,7 @@ public partial class Serum
 
 public static void SerumLoader()
 {
-while(
+        while (
 ImgSearch("SerumLogo", true)[0] == 0 &
 ImgSearch("SerumReg", true)[0] == 0)
 {
