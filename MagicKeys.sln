@@ -28,7 +28,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MKUpdater", "MKUpdater\MKUp
 		{8C7B0C9C-E076-4AE3-8F77-4CBA3B5AC808} = {8C7B0C9C-E076-4AE3-8F77-4CBA3B5AC808}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigInstaller", "ConfigInstaller\ConfigInstaller.csproj", "{63FA6CAC-62E2-40FD-84A5-8F269AE448A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigInstaller", "ConfigInstaller\ConfigInstaller.csproj", "{63FA6CAC-62E2-40FD-84A5-8F269AE448A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -43,7 +43,7 @@ Log.TabIndex = 3;
 this.Controls.Add(Log);
 }
 
-ListBox LB = new ListBox();
+CheckedListBox LB = new CheckedListBox();
 public void InitListBox()
 {
 LB.Location = new Point(10, 40);
