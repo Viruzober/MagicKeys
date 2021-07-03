@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-01 06:01+0300\n"
+"POT-Creation-Date: 2021-07-03 13:51+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -19,101 +19,101 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: MagicKeys\n"
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\ControlSearch.cs:16
+#: D:\MagicKeys\DeveloperTool\Core\ControlSearch.cs:16
 msgid "Control search"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\ControlSearch.cs:17
+#: D:\MagicKeys\DeveloperTool\Core\ControlSearch.cs:17
 msgid "Enter substring to search for a module."
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\ImgSave.cs:16
+#: D:\MagicKeys\DeveloperTool\Core\ImgSave.cs:16
 msgid "Image name"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\ImgSave.cs:16
+#: D:\MagicKeys\DeveloperTool\Core\ImgSave.cs:16
 msgid "Enter image name."
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:15
+#: D:\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:15
 msgid "Mouse X"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:16
+#: D:\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:16
 msgid "Enter new mouse position X"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:32
+#: D:\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:32
 msgid "Mouse Y"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:33
+#: D:\MagicKeys\DeveloperTool\Core\MouseGoTo.cs:33
 msgid "Enter new mouse position Y"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\MouseStepChange.cs:14
+#: D:\MagicKeys\DeveloperTool\Core\MouseStepChange.cs:14
 msgid "Mouse step"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\MouseStepChange.cs:15
+#: D:\MagicKeys\DeveloperTool\Core\MouseStepChange.cs:15
 msgid "Enter mouse step:"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\OCRZoomChange.cs:14
+#: D:\MagicKeys\DeveloperTool\Core\OCRZoomChange.cs:14
 msgid "OCR Zoom"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\OCRZoomChange.cs:15
+#: D:\MagicKeys\DeveloperTool\Core\OCRZoomChange.cs:15
 msgid "Enter OCR Zoom value:"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\RectOCR.cs:15
+#: D:\MagicKeys\DeveloperTool\Core\RectOCR.cs:15
 msgid "OCR Width"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\RectOCR.cs:16
+#: D:\MagicKeys\DeveloperTool\Core\RectOCR.cs:16
 msgid "Enter OCR width:"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\RectOCR.cs:31
+#: D:\MagicKeys\DeveloperTool\Core\RectOCR.cs:31
 msgid "OCR Height"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\RectOCR.cs:32
+#: D:\MagicKeys\DeveloperTool\Core\RectOCR.cs:32
 msgid "Enter OCR height:"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\Save.cs:13
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:89
+#: D:\MagicKeys\DeveloperTool\Core\Save.cs:13
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:89
 msgid "Save"
 msgstr "Сохранить"
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\Save.cs:13
+#: D:\MagicKeys\DeveloperTool\Core\Save.cs:13
 msgid "Enter name for save."
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\SpeakWindowRect.cs:11
+#: D:\MagicKeys\DeveloperTool\Core\SpeakWindowRect.cs:11
 msgid "Width"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\SpeakWindowRect.cs:11
+#: D:\MagicKeys\DeveloperTool\Core\SpeakWindowRect.cs:11
 msgid "Height"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\VisionBot.cs:24
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Core\WindowsOCR.cs:13
+#: D:\MagicKeys\DeveloperTool\Core\VisionBot.cs:24
+#: D:\MagicKeys\DeveloperTool\Core\WindowsOCR.cs:13
 msgid "No rectangle for OCR"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Forms\MenuForm.cs:25
+#: D:\MagicKeys\DeveloperTool\Forms\MenuForm.cs:25
 msgid "MagicKeys developer tool"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\DeveloperTool\Forms\OCRResultForm.cs:35
+#: D:\MagicKeys\DeveloperTool\Forms\OCRResultForm.cs:35
 msgid "OCR Word List"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\MagicKeys.cs:29
+#: D:\MagicKeys\MagicKeys\MagicKeys.cs:29
 msgid ""
 "This version of MagicKeys is built for 32-bit Windows, but you are running a "
 "64-bit version. Please run a 64-bit version of MagicKeys instead."
@@ -122,221 +122,221 @@ msgstr ""
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\MagicKeys.cs:29
-#: D:\MagicKeys\MagicKeys\MagicKeys\MagicKeys.cs:36
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
-#: D:\MagicKeys\MagicKeys\MKUpdater\MKUpdater.cs:23
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateFormActions.cs:58
+#: D:\MagicKeys\MagicKeys\MagicKeys.cs:29
+#: D:\MagicKeys\MagicKeys\MagicKeys.cs:36
+#: D:\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
+#: D:\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
+#: D:\MagicKeys\MKUpdater\MKUpdater.cs:23
+#: D:\MagicKeys\MKUpdater\UpdateFormActions.cs:58
 msgid "Error"
 msgstr "Ошибка"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\MagicKeys.cs:36
+#: D:\MagicKeys\MagicKeys\MagicKeys.cs:36
 msgid "You must close DeveloperTool to run MagicKeys."
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\MagicKeys.cs:58
+#: D:\MagicKeys\MagicKeys\MagicKeys.cs:58
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
+#: D:\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
 msgid "MagicKeys is already running."
 msgstr "Программа MagicKeys уже запущена."
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\Common\Help.cs:16
+#: D:\MagicKeys\MagicKeys\Core\Common\Help.cs:16
 msgid "Help file not found"
 msgstr "Файл справки не найден"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\Common\InvokeFromString.cs:26
+#: D:\MagicKeys\MagicKeys\Core\Common\InvokeFromString.cs:26
 #, csharp-format
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\ImgManager\ImgToText.cs:27
+#: D:\MagicKeys\MagicKeys\Core\ImgManager\ImgToText.cs:27
 msgid "Windows 10 OCR is unavailable"
 msgstr "Компонент Windows 10 OCR недоступен"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\IniManager\IniManager.cs:59
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:35
+#: D:\MagicKeys\MagicKeys\Core\IniManager\IniManager.cs:59
+#: D:\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:35
 msgid "Section not found"
 msgstr "Раздел не найден"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:64
+#: D:\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:64
 msgid "The value is not correct"
 msgstr "Значение неверно"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:71
+#: D:\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:71
 msgid "Key not found"
 msgstr "Ключ не найден"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:75
+#: D:\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:75
 msgid "Error reading file"
 msgstr "Ошибка чтения файла"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
+#: D:\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
 msgid "No plugins are available."
 msgstr "Нет доступных плагинов."
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateFormActions.cs:26
+#: D:\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
+#: D:\MagicKeys\MKUpdater\UpdateFormActions.cs:26
 msgid "Warning"
 msgstr "Внимание"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
+#: D:\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
 msgid "Enter a value for "
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
+#: D:\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
 msgid " from 1 to 100"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugForm.cs:34
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuForm.cs:18
+#: D:\MagicKeys\MagicKeys\Forms\DebugForm.cs:34
+#: D:\MagicKeys\MagicKeys\Forms\MenuForm.cs:18
 msgid "Exit"
 msgstr "Выход"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:48
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:58
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:67
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:75
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:48
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:58
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:67
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:75
 msgid "Message:"
 msgstr "Сообщение:"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:49
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:59
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:68
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:76
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:49
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:59
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:68
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:76
 msgid "File:"
 msgstr "Файл:"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:50
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:60
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:50
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:60
 msgid "Line:"
 msgstr "Строка:"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:51
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:61
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:51
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:61
 msgid "Section:"
 msgstr "Раздел:"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:52
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:69
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:52
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:69
 msgid "Key:"
 msgstr "Ключ:"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:67
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:67
 msgid "The keyboard shortcut cannot be registered"
 msgstr "Не удалось зарегистрировать сочетание клавиш"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:75
+#: D:\MagicKeys\MagicKeys\Forms\DebugFormActions.cs:75
 msgid "File not found"
 msgstr "Файл не найден"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\HelpForm.cs:37
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuForm.cs:17
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:83
+#: D:\MagicKeys\MagicKeys\Forms\HelpForm.cs:37
+#: D:\MagicKeys\MagicKeys\Forms\MenuForm.cs:17
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:83
 msgid "Help"
 msgstr "Справка"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuActions.cs:20
+#: D:\MagicKeys\MagicKeys\Forms\MenuActions.cs:20
 msgid "Do you really want to exit MagicKeys?"
 msgstr "Вы действительно хотите завершить работу MagicKeys?"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuActions.cs:20
+#: D:\MagicKeys\MagicKeys\Forms\MenuActions.cs:20
 msgid "Exit MagicKeys"
 msgstr "Выйти из MagicKeys"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuActions.cs:23
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuActions.cs:34
+#: D:\MagicKeys\MagicKeys\Forms\MenuActions.cs:23
+#: D:\MagicKeys\MagicKeys\Forms\MenuActions.cs:34
 msgid "Goodbye"
 msgstr "Пока"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuForm.cs:16
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:109
+#: D:\MagicKeys\MagicKeys\Forms\MenuForm.cs:16
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:109
 msgid "Settings"
 msgstr "Настройки"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuForm.cs:30
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuKeys.cs:27
+#: D:\MagicKeys\MagicKeys\Forms\MenuForm.cs:30
+#: D:\MagicKeys\MagicKeys\Forms\MenuKeys.cs:27
 #, csharp-format
 msgid "MagicKeys {0} is enabled"
 msgstr "MagicKeys {0} включен"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuKeys.cs:21
+#: D:\MagicKeys\MagicKeys\Forms\MenuKeys.cs:21
 #, csharp-format
 msgid "MagicKeys {0} is disabled"
 msgstr "MagicKeys {0} выключен"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuKeys.cs:22
+#: D:\MagicKeys\MagicKeys\Forms\MenuKeys.cs:22
 msgid "MagicKeys is disabled"
 msgstr "MagicKeys выключен"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuKeys.cs:28
+#: D:\MagicKeys\MagicKeys\Forms\MenuKeys.cs:28
 msgid "MagicKeys is enabled"
 msgstr "MagicKeys включен"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuKeys.cs:41
+#: D:\MagicKeys\MagicKeys\Forms\MenuKeys.cs:41
 msgid "Sounds off"
 msgstr "Звуки выключены"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\MenuKeys.cs:46
+#: D:\MagicKeys\MagicKeys\Forms\MenuKeys.cs:46
 msgid "Sounds on"
 msgstr "Звуки включены"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:35
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:35
 msgid "Use left/right arrow keys for navigation"
 msgstr "Использовать клавиши горизонтальных стрелок для навигации"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:40
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:40
 msgid "Enable sounds"
 msgstr "Включить звуки"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:45
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:45
 msgid "Speak control types"
 msgstr "Говорить типы элементов управления"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:50
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:50
 msgid "Ask before exiting"
 msgstr "Спрашивать перед выходом"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:55
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:55
 msgid "Send anonymous diagnostic information about the system"
 msgstr "Отправлять анонимную диагностическую информацию о системе"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:64
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:64
 msgid "Window detection timeout (ms):"
 msgstr "Задержка при определении окон (мс):"
 
-#: D:\MagicKeys\MagicKeys\MagicKeys\Forms\SettingsForm.cs:95
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateForm.cs:62
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:95
+#: D:\MagicKeys\MKUpdater\UpdateForm.cs:62
 msgid "Cancel"
 msgstr "Отмена"
 
-#: D:\MagicKeys\MagicKeys\MKUpdater\MKUpdater.cs:23
+#: D:\MagicKeys\MKUpdater\MKUpdater.cs:23
 #, fuzzy
 msgid "Something has gone wrong. Please check your internet connection."
 msgstr ""
 "Что-то пошло не так. Пожалуйста, попробуйте позже или свяжитесь с "
 "разработчиком."
 
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateForm.cs:31
+#: D:\MagicKeys\MKUpdater\UpdateForm.cs:31
 msgid "Changelog"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateForm.cs:57
+#: D:\MagicKeys\MKUpdater\UpdateForm.cs:57
 msgid "Update"
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateForm.cs:76
+#: D:\MagicKeys\MKUpdater\UpdateForm.cs:76
 #, fuzzy
 msgid "Update MagicKeys"
 msgstr "Выйти из MagicKeys"
 
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateFormActions.cs:26
+#: D:\MagicKeys\MKUpdater\UpdateFormActions.cs:26
 msgid "Please close MagicKeys before updating."
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MKUpdater\UpdateFormActions.cs:58
+#: D:\MagicKeys\MKUpdater\UpdateFormActions.cs:58
 msgid "Update file is corrupted."
 msgstr ""
 
