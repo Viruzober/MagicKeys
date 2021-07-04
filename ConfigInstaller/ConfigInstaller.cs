@@ -10,6 +10,7 @@ public partial class ConfigInstaller
 [STAThread]
 static void Main()
 {
+ChangeDPI(-1);
 Application.Run(new ConfigInstallerForm());
 }
 
