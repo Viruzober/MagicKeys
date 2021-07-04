@@ -44,6 +44,7 @@
 <ItemGroup>
     <PackageReference Include="Gettext.Tools" Version="0.21.0" />
     <PackageReference Include="NGettext" Version="0.6.6" />
+    <PackageReference Include="System.Management" Version="5.0.0" />
   </ItemGroup>
 
 <Target Name="PostBuild" AfterTargets="PostBuildEvent">

@@ -70,17 +70,17 @@ static extern int ChangeDisplaySettings([In] ref DEVMODE lpDevMode, int dwFlags)
 
 public static void ChangeDPI(int dpi)
 {
+SetResolution(1024, 768);
 RegistryKey key = Registry.CurrentUser.OpenSubKey("Control Panel", true);
 key = key.OpenSubKey("Desktop", true);
 key = key.OpenSubKey("PerMonitorSettings", true);
-key = key.OpenSubKey("LGD044F0_00_07DE_13^675D668B1431BA2633AE082B2D11E21C", true); // my second monitor here
-key.SetValue("DpiValue", dpi);
-
-int ADW = DWidth;
-int ADH = DHeight;
-SetResolution(1024, 768);
-SetResolution(ADW, ADH);
-SetResolution(1920, 1080);
+foreach(var RegDSP in key.GetSubKeyNames())
+{
+var Gkey = key.OpenSubKey(RegDSP, true);
+Gkey.SetValue("DpiValue", dpi);
+}
+int[] DS = GetMaxScreenSize();
+SetResolution(DS[0], DS[1]);
 }
 
 public static void SetResolution(int w, int h)
@@ -93,5 +93,24 @@ dm.dmPelsHeight = h;
 dm.dmFields = DEVMODE.DM_PELSWIDTH | DEVMODE.DM_PELSHEIGHT;
 RetVal = ChangeDisplaySettings(ref dm, 0);
 }
+
+public static int[] GetMaxScreenSize()
+{
+var scope = new System.Management.ManagementScope();
+            var q = new System.Management.ObjectQuery("SELECT * FROM CIM_VideoControllerResolution");
+var searcher = new System.Management.ManagementObjectSearcher(scope, q);
+var results = searcher.Get();
+UInt32 maxHResolution = 0;
+                UInt32 maxVResolution = 0;
+foreach (var item in results)
+{
+if ((UInt32)item["HorizontalResolution"] > maxHResolution)
+maxHResolution = (UInt32)item["HorizontalResolution"];
+if ((UInt32)item["VerticalResolution"] > maxVResolution)
+maxVResolution = (UInt32)item["VerticalResolution"];
+}
+return new int[2]{Convert.ToInt32(maxHResolution), Convert.ToInt32(maxVResolution)};
+}
+
 }
 }
