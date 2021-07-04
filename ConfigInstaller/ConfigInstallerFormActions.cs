@@ -1,12 +1,10 @@
 ﻿using System;
 using System.IO;
-using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace ConfigInstaller
 {
-public partial class ConfigInstallerForm : Form
+    public partial class ConfigInstallerForm : Form
 {
 
 public void FormLoad(object sender, EventArgs e)

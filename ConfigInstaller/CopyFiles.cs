@@ -12,11 +12,10 @@ Process proc = new Process();
 try
 {
 proc.StartInfo.FileName = "cmd.exe";
-proc.StartInfo.RedirectStandardInput = true;
 proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-string command = "xcopy /e /i /q /y /r /k \""+In+"\" \""+To+"\"\r\nexit";
+string command = "/C xcopy /e /i /q /y /r /k \""+In+"\" \""+To+"\"";
+proc.StartInfo.Arguments = command;
 proc.Start();
-proc.StandardInput.WriteLine(command);
 proc.WaitForExit();
 return "Success";
 }
