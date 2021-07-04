@@ -18,7 +18,6 @@ SoundTheme.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRea
 SpeakType.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SpeakType")));
 Time.Value = Convert.ToDecimal(Ini.IniRead(@".\Settings.ini", "Settings", "TimeOut"));
 Exit.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "Exit")));
-Info.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SendInfo")));
 }
 
 public void Save_Click(object sender, EventArgs e)
@@ -28,7 +27,6 @@ Ini.IniWrite(@".\Settings.ini", "Settings", "SoundTheme", Convert.ToBoolean(Soun
 Ini.IniWrite(@".\Settings.ini", "Settings", "TimeOut", (Time.Value).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "SpeakType", Convert.ToBoolean(SpeakType.Checked).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "Exit", Convert.ToBoolean(Exit.Checked).ToString());
-Ini.IniWrite(@".\Settings.ini", "Settings", "SendInfo", Convert.ToBoolean(Info.Checked).ToString());
 MagicKeys.LoadSettings();
 this.Close();
 }

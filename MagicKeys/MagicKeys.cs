@@ -40,10 +40,6 @@ HM = new Menu();
 LoadSettings();
 if (CheckInternet() == true)
 {
-if (SendInfoFlag == true)
-{
-SendInfo();
-}
 Update();
 }
 PluginsListLoader();

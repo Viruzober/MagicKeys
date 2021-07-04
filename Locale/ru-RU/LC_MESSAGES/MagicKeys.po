@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-03 13:51+0300\n"
+"POT-Creation-Date: 2021-07-04 14:49+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -84,7 +84,7 @@ msgid "Enter OCR height:"
 msgstr ""
 
 #: D:\MagicKeys\DeveloperTool\Core\Save.cs:13
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:89
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:83
 msgid "Save"
 msgstr "Сохранить"
 
@@ -135,7 +135,7 @@ msgstr "Ошибка"
 msgid "You must close DeveloperTool to run MagicKeys."
 msgstr ""
 
-#: D:\MagicKeys\MagicKeys\MagicKeys.cs:58
+#: D:\MagicKeys\MagicKeys\MagicKeys.cs:54
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
 
@@ -234,7 +234,7 @@ msgstr "Файл не найден"
 
 #: D:\MagicKeys\MagicKeys\Forms\HelpForm.cs:37
 #: D:\MagicKeys\MagicKeys\Forms\MenuForm.cs:17
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:83
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:77
 msgid "Help"
 msgstr "Справка"
 
@@ -252,7 +252,7 @@ msgid "Goodbye"
 msgstr "Пока"
 
 #: D:\MagicKeys\MagicKeys\Forms\MenuForm.cs:16
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:109
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:103
 msgid "Settings"
 msgstr "Настройки"
 
@@ -283,31 +283,27 @@ msgstr "Звуки выключены"
 msgid "Sounds on"
 msgstr "Звуки включены"
 
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:35
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:34
 msgid "Use left/right arrow keys for navigation"
 msgstr "Использовать клавиши горизонтальных стрелок для навигации"
 
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:40
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:39
 msgid "Enable sounds"
 msgstr "Включить звуки"
 
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:45
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:44
 msgid "Speak control types"
 msgstr "Говорить типы элементов управления"
 
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:50
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:49
 msgid "Ask before exiting"
 msgstr "Спрашивать перед выходом"
 
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:55
-msgid "Send anonymous diagnostic information about the system"
-msgstr "Отправлять анонимную диагностическую информацию о системе"
-
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:64
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:58
 msgid "Window detection timeout (ms):"
 msgstr "Задержка при определении окон (мс):"
 
-#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:95
+#: D:\MagicKeys\MagicKeys\Forms\SettingsForm.cs:89
 #: D:\MagicKeys\MKUpdater\UpdateForm.cs:62
 msgid "Cancel"
 msgstr "Отмена"
@@ -339,6 +335,9 @@ msgstr ""
 #: D:\MagicKeys\MKUpdater\UpdateFormActions.cs:58
 msgid "Update file is corrupted."
 msgstr ""
+
+#~ msgid "Send anonymous diagnostic information about the system"
+#~ msgstr "Отправлять анонимную диагностическую информацию о системе"
 
 #~ msgid "Register"
 #~ msgstr "Зарегистрироваться"

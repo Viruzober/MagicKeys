@@ -14,7 +14,6 @@ public Label TimeOut = new Label();
 public NumericUpDown Time = new NumericUpDown();
 public CheckBox SpeakType = new CheckBox();
 public CheckBox Exit = new CheckBox();
-public CheckBox Info = new CheckBox();
 public Button Help = new Button();
 public Button Save = new Button();
 public Button Cancel = new Button();
@@ -50,11 +49,6 @@ Exit.Size = new Size(400, 30);
 Exit.Text = T._("Ask before exiting");
 Exit.TabIndex = 5;
 this.Controls.Add(Exit);
-Info.Location = new Point(10, 180);
-Info.Size = new Size(400, 30);
-Info.Text = T._("Send anonymous diagnostic information about the system");
-Info.TabIndex = 6;
-this.Controls.Add(Info);
 }
 
 public void InitLabel()
