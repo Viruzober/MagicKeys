@@ -16,19 +16,12 @@ string[] WH = new string[2];
 while(true)
 {
 Thread.Sleep(TimeOut);
-if (KeySwitch == 1)
-{
-continue;
-}
+if (KeySwitch == 1) continue;
 foreach(string Item in PluginsList.Keys)
 {
-if (Item == "Info")
-{
-continue;
-}
 WH = WinHook(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
-if (WH[0] != null)
-{
+if (WH[0] == null) continue;
+if (WH[1] == null) continue;
 GlobalPluginLoad(Item, WH[0], WH[1]);
 P = GetPluginCoord();
 if (P[0] == 1)
@@ -41,7 +34,6 @@ SoundPlay("WindowClosed", 0);
 }
 SubPath = string.Empty;
 CurrentPlugin.Clear();
-}
 }
 }
 }

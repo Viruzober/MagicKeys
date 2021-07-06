@@ -1,0 +1,31 @@
+[Info]
+VUI=Pro-L 2
+PClass=MagicKeys
+BClass=None
+PluginName=FabFilter Pro-L 2
+Loader=None
+[Keys]
+P=PresetsMenu
+PageUp=PreviousPreset
+PageDown=NextPreset
+H=Help menu
+[1]
+Text=Presets menu
+ObjectType=Button
+Help=Open presets menu
+Func=PresetsMenu
+[2]
+Text=Previous preset
+ObjectType=Button
+Help=Go to previous preset
+Func=PreviousPreset
+[3]
+Text=Next preset
+ObjectType=Button
+Help=Go to next preset
+Func=NextPreset
+[4]
+Text=Help menu
+ObjectType=Button
+Help=Open help menu
+Func=Help

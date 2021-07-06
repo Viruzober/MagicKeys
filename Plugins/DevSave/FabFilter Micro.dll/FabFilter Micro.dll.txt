@@ -1,0 +1,25 @@
+Name: preset menu
+X: 431
+Y: 17
+Color: #DCDCDC
+
+Name: пресет назад
+X: 356
+Y: 17
+Color: #FFFFFF
+
+Name: left
+X: 355
+Y: 9
+Color: #0E3839
+
+Name: right
+X: 496
+Y: 12
+Color: #235657
+
+Name: help
+X: 531
+Y: 15
+Color: #184647
+

@@ -1,0 +1,20 @@
+Name: preset menu
+X: 1004
+Y: 14
+Color: #28252C
+
+Name: back
+X: 914
+Y: 16
+Color: #232127
+
+Name: next
+X: 1159
+Y: 12
+Color: #2A282E
+
+Name: help
+X: 1231
+Y: 17
+Color: #C8C8C8
+

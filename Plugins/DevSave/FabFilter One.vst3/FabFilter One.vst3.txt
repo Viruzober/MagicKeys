@@ -1,0 +1,20 @@
+Name: preset menu
+X: 336
+Y: 13
+Color: #4573D0
+
+Name: left
+X: 301
+Y: 19
+Color: #FFFFFF
+
+Name: right
+X: 434
+Y: 17
+Color: #FFFFFF
+
+Name: help
+X: 470
+Y: 18
+Color: #F0F0F0
+
