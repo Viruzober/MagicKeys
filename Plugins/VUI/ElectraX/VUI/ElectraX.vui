@@ -5,9 +5,15 @@ BClass=None
 PluginName=ElectraX
 Loader=None
 [Keys]
-B=BanksMenu
+B=BankMenu
+P=PatchMenu
 [1]
-Text=Banks menu
+Text=Bank menu
 ObjectType=Button
 Help=Открыть меню банков
-Func=BanksMenu
+Func=BankMenu
+[2]
+Text=Patch menu
+ObjectType=Button
+Help=Открыть меню патчей
+Func=PatchMenu
