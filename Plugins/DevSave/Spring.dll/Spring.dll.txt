@@ -1,0 +1,14 @@
+Name: save
+X: 320
+Y: 20
+Color: #888888
+OCR:
+SAVE C
+
+Name: load
+X: 280
+Y: 20
+Color: #AFAFAF
+OCR:
+LOAD S
+

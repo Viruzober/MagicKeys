@@ -1,0 +1,14 @@
+Name: save
+X: 270
+Y: 20
+Color: #1B1C1C
+OCR:
+SAVE
+
+Name: load
+X: 230
+Y: 20
+Color: #1B1C1C
+OCR:
+LOAD
+
