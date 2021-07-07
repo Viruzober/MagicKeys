@@ -19,15 +19,18 @@ if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F1)
 if (DeveloperTool.KeySwitch == 0)
 {
 DeveloperTool.KeyUnReg();
+DeveloperTool.OptionKeyUnReg();
 Ni.Text = "Developer tool is disabled";
 MagicKeys.Speak("Developer tool is disabled");
 DeveloperTool.KeySwitch = 1;
+DeveloperTool.OptionKeyReg();
 }
 else if (DeveloperTool.KeySwitch == 1)
 {
 Ni.Text = "Developer tool is enabled";
 MagicKeys.Speak("Developer tool is enabled");
 DeveloperTool.KeySwitch = 0;
+DeveloperTool.OptionKeyReg();
 }
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F2)
