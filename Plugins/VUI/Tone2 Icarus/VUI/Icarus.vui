@@ -2,12 +2,12 @@
 VUI=Icarus
 PClass=MagicKeys
 BClass=None
-PluginName=Icarus
+PluginName=Tone2 Icarus
 Loader=None
 [Keys]
 B=BankMenu
 [1]
 Text=Bank menu
 ObjectType=Button
-Help=Открыть меню банка
+Help=Open banks menu
 Func=BankMenu
