@@ -1,0 +1,19 @@
+[Info]
+VUI=Electra
+PClass=MagicKeys
+BClass=None
+PluginNameTone2 Electra
+Loader=None
+[Keys]
+B=BankMenu
+P=PatchMenu
+[1]
+Text=Bank menu
+ObjectType=Button
+Help=Открыть меню банков
+Func=BankMenu
+[2]
+Text=Patch menu
+ObjectType=Button
+Help=Открыть меню патчей
+Func=PatchMenu
