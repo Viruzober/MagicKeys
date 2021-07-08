@@ -94,6 +94,14 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.Z)
 {
 DeveloperTool.OCRZoomChange();
 }
+else if (modifier == (MKC.CTRL) & key == Keys.Oemplus)
+{
+DeveloperTool.OCRClick("Right");
+}
+else if (modifier == (MKC.CTRL) & key == Keys.OemMinus)
+{
+DeveloperTool.OCRClick("Left");
+}
 else if (key == Keys.OemMinus)
 {
 int[] MP = MagicKeys.GetMousePosition();
@@ -133,14 +141,6 @@ DeveloperTool.SpeakWindowRect();
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.O)
 {
 DeveloperTool.OCRWordPosition();
-}
-else if (modifier == (MKC.CTRL) & key == Keys.Oemplus)
-{
-DeveloperTool.OCRClick("Left");
-}
-else if (modifier == (MKC.CTRL) & key == Keys.OemMinus)
-{
-DeveloperTool.OCRClick("Right");
 }
 break;
 }
