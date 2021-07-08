@@ -2,7 +2,7 @@
 VUI=JUPITER-8
 PClass=MagicKeys
 BClass=None
-PluginName=JUPITER-8
+PluginName=Roland JUPITER-8
 Loader=None
 [Keys]
 P=PresetsMenu

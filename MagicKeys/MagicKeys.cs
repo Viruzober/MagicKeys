@@ -16,11 +16,11 @@ public static Menu HM;
 
 static void Main()
 {
-//Application.ThreadException +=
-//(o, e) => MKDebugForm("ExceptionHook|"+e.Exception.ToString());
-//Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
-//AppDomain.CurrentDomain.UnhandledException +=
-//(o, e) => MKDebugForm("ExceptionHook|"+e.ExceptionObject.ToString());
+Application.ThreadException +=
+(o, e) => MKDebugForm("ExceptionHook|"+e.Exception.ToString());
+Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+AppDomain.CurrentDomain.UnhandledException +=
+(o, e) => MKDebugForm("ExceptionHook|"+e.ExceptionObject.ToString());
 if (CheckRunProc("MagicKeys") == true) return;
 #if X86
 if (OS() == "64")

@@ -2,7 +2,7 @@
 VUI=SYSTEM-1
 PClass=MagicKeys
 BClass=None
-PluginName=SYSTEM-1
+PluginName=Roland SYSTEM-1
 Loader=None
 [Keys]
 L=LoadPreset

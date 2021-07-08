@@ -2,7 +2,7 @@
 VUI=Repro-1
 PClass=MagicKeys
 BClass=None
-PluginName=Repro-1
+PluginName=u-he Repro-1
 Loader=None
 [Keys]
 P=PresetsTab
