@@ -4,5 +4,9 @@
 1=MouseClick|Left|487|106|1|0|0|10
 [PreviousPreset]
 1=MouseClick|Left|574|70|1|0|0|10
+2=Sleep|500
+3=OCR|250|50|420|80|2
 [NextPreset]
 1=MouseClick|Left|596|71|1|0|0|10
+2=Sleep|500
+3=OCR|250|50|420|80|2

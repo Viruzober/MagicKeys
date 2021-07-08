@@ -1,4 +1,12 @@
-[PresetsMenu]
-1=MouseClick|Left|455|102|1|0|0|10
 [BanksMenu]
 1=MouseClick|Left|479|71|1|0|0|10
+[PresetsMenu]
+1=MouseClick|Left|455|102|1|0|0|10
+[PreviousPreset]
+1=MouseClick|Left|705|75|1|0|0|10
+2=Sleep|500
+3=OCR|250|50|420|80|2
+[NextPreset]
+1=MouseClick|Left|735|75|1|0|0|10
+2=Sleep|500
+3=OCR|250|50|420|80|2

@@ -7,6 +7,8 @@ Loader=None
 [Keys]
 B=BanksMenu
 P=PresetsMenu
+PageUp=PreviousPreset
+PageDown=NextPreset
 [1]
 Text=Banks menu
 ObjectType=Button
@@ -17,3 +19,13 @@ Text=Presets menu
 ObjectType=Button
 Help=Открыть меню пресетов
 Func=PresetsMenu
+[3]
+Text=PreviousPreset
+ObjectType=Button
+Help=Предыдущий пресет
+Func=PreviousPreset
+[4]
+Text=NextPreset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset

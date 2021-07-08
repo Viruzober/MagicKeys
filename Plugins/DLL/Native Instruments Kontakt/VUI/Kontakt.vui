@@ -2,7 +2,7 @@
 VUI=Kontakt
 PClass=Kontakt
 BClass=None
-PluginName=Kontakt
+PluginName=Native Instruments Kontakt
 Loader=Code
 [Keys]
 Ctrl+D=AllLibDelete

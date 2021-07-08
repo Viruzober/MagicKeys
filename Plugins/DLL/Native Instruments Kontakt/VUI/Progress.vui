@@ -2,7 +2,7 @@
 VUI=Progress
 PClass=Kontakt
 BClass=None
-PluginName=Kontakt
+PluginName=Native Instruments Kontakt
 Loader=None
 [1]
 Text=Loading

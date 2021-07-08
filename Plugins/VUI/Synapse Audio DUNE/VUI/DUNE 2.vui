@@ -20,12 +20,12 @@ ObjectType=Button
 Help=Открыть меню пресетов
 Func=PresetsMenu
 [3]
-Text=NextPreset
-ObjectType=Button
-Help=Следующий пресет
-Func=NextPreset
-[4]
 Text=PreviousPreset
 ObjectType=Button
 Help=Предыдущий пресет
 Func=PreviousPreset
+[4]
+Text=NextPreset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset
