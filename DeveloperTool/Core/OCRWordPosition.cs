@@ -25,6 +25,7 @@ public static List<int> LY = new List<int>();
 public static async void OCRWordPosition()
 {
 KeyUnReg();
+OptionKeyUnReg();
 Bitmap Screen = new Bitmap(P[3]-P[1], P[4]-P[2]);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(P[1], P[2], 00, 0, Screen.Size);
@@ -57,6 +58,7 @@ LW.Clear();
 LX.Clear();
 LY.Clear();
 }
+OptionKeyReg();
 KeyReg();
         }
 

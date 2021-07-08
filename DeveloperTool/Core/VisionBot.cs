@@ -19,6 +19,7 @@ namespace MagicKeys
 
 public static async void VisionBot()
 {
+try{
 if (DP[0] == 0)
 {
 MagicKeys.Speak(T._("No rectangle for OCR"));
@@ -41,6 +42,11 @@ HTTPC.Dispose();
 string sd = response.Content.ReadAsStringAsync().Result;
 Dictionary<string, string> J = JsonSerializer.Deserialize<Dictionary<string, string>>(sd);
 VisionBotResult(J["id"]);
+}
+catch(Exception)
+{
+MagicKeys.Speak("Error");
+}
 }
 
 public static async void VisionBotResult(string ID)

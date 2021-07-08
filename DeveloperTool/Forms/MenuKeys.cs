@@ -33,6 +33,19 @@ DeveloperTool.KeySwitch = 0;
 DeveloperTool.OptionKeyReg();
 }
 }
+else if (modifier == (MKC.CTRL|MKC.ALT) & key == Keys.A)
+{
+if (DeveloperTool.AutoOCR == 1)
+{
+MagicKeys.Speak("Auto OCR is disabled");
+DeveloperTool.AutoOCR = 0;
+}
+else if (DeveloperTool.AutoOCR == 0)
+{
+MagicKeys.Speak("Auto OCR is enabled");
+DeveloperTool.AutoOCR = 1;
+}
+}
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F2)
 {
 Exit(null, null);
@@ -120,6 +133,14 @@ DeveloperTool.SpeakWindowRect();
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.O)
 {
 DeveloperTool.OCRWordPosition();
+}
+else if (modifier == (MKC.CTRL) & key == Keys.Oemplus)
+{
+DeveloperTool.OCRClick("Left");
+}
+else if (modifier == (MKC.CTRL) & key == Keys.OemMinus)
+{
+DeveloperTool.OCRClick("Right");
 }
 break;
 }

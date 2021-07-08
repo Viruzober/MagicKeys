@@ -26,6 +26,9 @@ MagicKeys.RegisterHotKey(HM.Handle, 18, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Keys.I);
 MagicKeys.RegisterHotKey(HM.Handle, 19, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.G);
 MagicKeys.RegisterHotKey(HM.Handle, 20, MKC.MOD_NOREPEAT, (int)Keys.R);
 MagicKeys.RegisterHotKey(HM.Handle, 21, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.O);
+MagicKeys.RegisterHotKey(HM.Handle, 22, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Keys.OemMinus);
+MagicKeys.RegisterHotKey(HM.Handle, 23, MKC.CTRL|MKC.MOD_NOREPEAT, (int)Keys.Oemplus);
+MagicKeys.RegisterHotKey(HM.Handle, 24, MKC.CTRL|MKC.ALT|MKC.MOD_NOREPEAT, (int)Keys.A);
 }
 
 public static void OptionKeyReg()

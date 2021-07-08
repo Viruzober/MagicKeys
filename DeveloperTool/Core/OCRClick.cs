@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Threading;
 
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
 
-public static void WindowsOCR()
+public static void OCRClick(string BTN)
 {
 if (DP[0] == 0)
 {
@@ -14,10 +13,8 @@ MagicKeys.Speak(T._("No rectangle for OCR"));
 return;
 }
 int[] MP = MagicKeys.GetMousePosition();
-string Text = MagicKeys.ImgToText(DP[0], DP[1], MP[0], MP[1], OCRZoom);
-Thread.Sleep(500);
-OCRR = Text;
-MagicKeys.Speak(Text);
+MagicKeys.MouseClick(BTN, MP[0]-(DP[0]/2), MP[1]-(DP[1]/2), 1, 0, 0, 10);
+MagicKeys.MouseMove(MP[0], MP[1], 0);
 }
 
 }

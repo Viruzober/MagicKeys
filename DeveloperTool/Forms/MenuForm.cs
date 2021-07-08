@@ -22,7 +22,7 @@ ExitMenuItem.Click += Exit;
 MainMenu.Items.AddRange(new[] {ExitMenuItem});
 Ni.ContextMenuStrip = MainMenu;
 Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
-Ni.Text = T._("MagicKeys developer tool");
+Ni.Text = T._("Developer tool");
 Ni.Visible = true;
 }
 
