@@ -51,8 +51,8 @@
   <Exec Command="xcopy /e /i /q /y &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul" />
 </Target>
 
-	<Target Name="ProjectCleanup" AfterTargets="Clean">
-		<RemoveDir Directories="$(TargetDir)" />
-	</Target>
+  <Target Name="ProjectCleanup" BeforeTargets="PreBuildEvent" AfterTargets="Clean">
+    <RemoveDir Directories="$(TargetDir)" />
+  </Target>
 
 </Project>

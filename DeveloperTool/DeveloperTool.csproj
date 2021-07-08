@@ -71,7 +71,7 @@
     <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;xcopy /e /i /q /y &quot;%25distdir%25\Locale&quot; &quot;$(TargetDir)Locale&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;$(TargetDir)&quot; &gt; nul" />
   </Target>
 
-  <Target Name="ProjectCleanup" AfterTargets="Clean">
+  <Target Name="ProjectCleanup" BeforeTargets="PreBuildEvent" AfterTargets="Clean">
     <RemoveDir Directories="$(TargetDir)" />
   </Target>
 
