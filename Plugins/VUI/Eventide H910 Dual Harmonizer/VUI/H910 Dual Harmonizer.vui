@@ -1,0 +1,16 @@
+[Info]
+VUI=H910 Dual Harmonizer
+PClass=MagicKeys
+BClass=None
+PluginName=Eventide H910 Dual Harmonizer
+Loader=None
+[1]
+Text=Load preset
+ObjectType=Button
+Help=Open presets menu
+Func=LoadPreset
+[2]
+Text=Save preset
+ObjectType=Button
+Help=Save preset
+Func=SavePreset

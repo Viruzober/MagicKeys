@@ -1,0 +1,16 @@
+[Info]
+VUI=H949 Harmonizer
+PClass=MagicKeys
+BClass=None
+PluginName=Eventide H949 Harmonizer
+Loader=None
+[1]
+Text=Load preset
+ObjectType=Button
+Help=Open presets menu
+Func=LoadPreset
+[2]
+Text=Save preset
+ObjectType=Button
+Help=Save preset
+Func=SavePreset

@@ -1,0 +1,16 @@
+[Info]
+VUI=Crystals
+PClass=MagicKeys
+BClass=None
+PluginName=Eventide Crystals
+Loader=None
+[1]
+Text=Load preset
+ObjectType=Button
+Help=Open presets menu
+Func=LoadPreset
+[2]
+Text=Save preset
+ObjectType=Button
+Help=Save preset
+Func=SavePreset
