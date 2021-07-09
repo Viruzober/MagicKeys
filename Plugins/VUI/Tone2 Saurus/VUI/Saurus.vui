@@ -1,0 +1,25 @@
+[Info]
+VUI=Saurus
+PClass=MagicKeys
+BClass=None
+PluginName=Tone2 Saurus
+Loader=None
+[Keys]
+B=BanksMenu
+P=PatchesMenu
+F=FileMenu
+[1]
+Text=Banks menu
+ObjectType=Button
+Help=Open bamks menu
+Func=BanksMenu
+[2]
+Text=Patches menu
+ObjectType=Button
+Help=Open patches menu
+Func=PatchesMenu
+[3]
+Text=File menu
+ObjectType=Button
+Help=Open file menu
+Func=FileMenu
