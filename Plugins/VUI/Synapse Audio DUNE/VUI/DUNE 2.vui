@@ -10,21 +10,26 @@ P=PresetsMenu
 PageUp=PreviousPreset
 PageDown=NextPreset
 [1]
-Text=Bank menu
+Text=Patch menu
 ObjectType=Button
-Help=Открыть меню банка
-Func=BankMenu
+Help=Open patch menu
+Func=PatchMenu
 [2]
+Text=Banks menu
+ObjectType=Button
+Help=Открыть меню банков
+Func=BanksMenu
+[3]
 Text=Presets menu
 ObjectType=Button
 Help=Открыть меню пресетов
 Func=PresetsMenu
-[3]
+[4]
 Text=PreviousPreset
 ObjectType=Button
 Help=Предыдущий пресет
 Func=PreviousPreset
-[4]
+[5]
 Text=NextPreset
 ObjectType=Button
 Help=Следующий пресет
