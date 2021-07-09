@@ -1,5 +1,5 @@
 [Info]
-VUI=DUNE 3
+VUI=DUNE 2
 PClass=MagicKeys
 BClass=None
 PluginName=Synapse Audio DUNE
@@ -10,15 +10,15 @@ P=PresetsMenu
 PageUp=PreviousPreset
 PageDown=NextPreset
 [1]
-Text=Patch menu
-ObjectType=Button
-Help=Open patch menu
-Func=PatchMenu
-[2]
 Text=Banks menu
 ObjectType=Button
-Help=Открыть меню банков
+Help=Open banks menu
 Func=BanksMenu
+[2]
+Text=Patches menu
+ObjectType=Button
+Help=Open patches menu
+Func=PatchesMenu
 [3]
 Text=Presets menu
 ObjectType=Button

@@ -1,7 +1,7 @@
-[PatchMenu]
-1=MouseClick|Left|645|75|1|0|0|10
 [BanksMenu]
 1=MouseClick|Left|479|71|1|0|0|10
+[PatchesMenu]
+1=MouseClick|Left|645|75|1|0|0|10
 [PresetsMenu]
 1=MouseClick|Left|455|102|1|0|0|10
 [PreviousPreset]
