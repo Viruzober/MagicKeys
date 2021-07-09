@@ -1,0 +1,11 @@
+[Info]
+VUI=Register
+PClass=LUXONIXPurity
+BClass=None
+PluginName=LUXONIX Purity
+Loader=None
+[1]
+Text=Register
+ObjectType=Button
+Help=Register LUXONIX Purity
+Func=Register

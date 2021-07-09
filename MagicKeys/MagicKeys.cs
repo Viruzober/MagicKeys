@@ -13,7 +13,7 @@ public partial class MagicKeys
 {
 
 public static Menu HM;
-
+[STAThread]
 static void Main()
 {
 Application.ThreadException +=

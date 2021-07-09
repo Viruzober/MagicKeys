@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IlyaEfimovBayanRight", "Plu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IlyaEfimovBayanLeft", "Plugins\DLL\Native Instruments KontaktLib\IlyaEfimovBayanLeft\IlyaEfimovBayanLeft.csproj", "{5B0F1EFE-60F7-4D7D-B599-BAEBEDBC0588}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LUXONIX Purity", "Plugins\DLL\LUXONIX.Purity\LUXONIX Purity.csproj", "{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,13 @@ Global
 		{5B0F1EFE-60F7-4D7D-B599-BAEBEDBC0588}.Release|x64.Build.0 = Release|x64
 		{5B0F1EFE-60F7-4D7D-B599-BAEBEDBC0588}.Release|x86.ActiveCfg = Release|x86
 		{5B0F1EFE-60F7-4D7D-B599-BAEBEDBC0588}.Release|x86.Build.0 = Release|x86
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}.Debug|x64.ActiveCfg = Debug|x64
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}.Debug|x86.ActiveCfg = Debug|x86
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}.Release|Any CPU.ActiveCfg = Release|x86
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}.Release|x64.ActiveCfg = Release|x64
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}.Release|x64.Build.0 = Release|x64
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -157,6 +166,7 @@ Global
 		{5DF1AC13-CAEF-40A4-8AEA-793FE7D8F41D} = {878DD0D9-4954-4E5F-937B-89B30F6A0C48}
 		{912C81C1-1ABA-4C25-B839-BF0EDC5F9863} = {8A4CBDDF-890D-42DC-A709-3961003939E0}
 		{5B0F1EFE-60F7-4D7D-B599-BAEBEDBC0588} = {8A4CBDDF-890D-42DC-A709-3961003939E0}
+		{27C5EB54-B0F1-4DA9-BFCC-87EF89FCFD7F} = {878DD0D9-4954-4E5F-937B-89B30F6A0C48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6E62627-522B-4CBE-9193-D457EA605A5A}

@@ -1,0 +1,11 @@
+[Info]
+VUI=Purity
+PClass=LUXONIXPurity
+BClass=None
+PluginName=LUXONIX Purity
+Loader=Code
+[1]
+Text=Bank and patch menu
+ObjectType=Button
+Help=Open banks and patches menu
+Func=BPMenu
