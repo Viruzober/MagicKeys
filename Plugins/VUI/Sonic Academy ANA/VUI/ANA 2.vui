@@ -5,21 +5,9 @@ BClass=None
 PluginName=Sonic Academy ANA
 Loader=None
 [Keys]
-B=BankMenu
-PageUp=PreviousPreset
-PageDown=NextPreset
+L=LoadPreset
 [1]
-Text=Bank menu
+Text=Load preset
 ObjectType=Button
-Help=Открыть меню банка
-Func=BankMenu
-[2]
-Text=Next preset
-ObjectType=Button
-Help=Следующий пресет
-Func=NextPreset
-[3]
-Text=Previous preset
-ObjectType=Button
-Help=Предыдущий пресет
-Func=PreviousPreset
+Help=Load preset from file
+Func=LoadPreset

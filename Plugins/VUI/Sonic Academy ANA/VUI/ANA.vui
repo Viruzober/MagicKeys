@@ -5,21 +5,33 @@ BClass=None
 PluginName=Sonic Academy ANA
 Loader=None
 [Keys]
+F=FactoryMenu
 B=BankMenu
+P=PatchMenu
 PageUp=PreviousPreset
 PageDown=NextPreset
 [1]
+Text=Factory menu
+ObjectType=Button
+Help=Open factory menu
+Func=FactoryMenu
+[2]
 Text=Bank menu
 ObjectType=Button
-Help=Открыть меню банка
+Help=Open banks menu
 Func=BankMenu
-[2]
-Text=Next preset
-ObjectType=Button
-Help=Следующий пресет
-Func=NextPreset
 [3]
+Text=Patch menu
+ObjectType=Button
+Help=Open patches menu
+Func=PatchMenu
+[4]
 Text=Previous preset
 ObjectType=Button
 Help=Предыдущий пресет
 Func=PreviousPreset
+[5]
+Text=Next preset
+ObjectType=Button
+Help=Следующий пресет
+Func=NextPreset

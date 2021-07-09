@@ -7,13 +7,12 @@ namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
+public static int[] ControlCoord;
 public static int[] GetPluginCoord()
 {
-int[] ControlCoord;
 IntPtr Handle = GetForegroundWindow();
 int[] RC = GetWinRect(Handle);
-for (int X = RC[0]; X < RC[2]; X+=100)
+for (int X = RC[0]; X < RC[2]; X+=150)
 {
 for (int Y = RC[1]; Y < RC[3]; Y+=150)
 {

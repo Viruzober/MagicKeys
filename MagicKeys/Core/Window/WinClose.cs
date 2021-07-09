@@ -11,7 +11,6 @@ namespace MagicKeys
 
 public static bool WinClose(string HWNDTitle, string HWNDClass)
 {
-SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
 while(true)
 {
 Thread.Sleep(20);

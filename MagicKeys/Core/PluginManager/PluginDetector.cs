@@ -9,10 +9,9 @@ namespace MagicKeys
 {
     public partial class MagicKeys
 {
-
+public static string[] WH = new string[2];
 public static void PluginDetector()
 {
-string[] WH = new string[2];
 while(true)
 {
 Thread.Sleep(TimeOut);
@@ -28,6 +27,7 @@ if (P[0] == 1)
 {
 VUILoader(API.GetVUI());
 SoundPlay("WindowOpened", 0);
+SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
 WinClose(WH[0], WH[1]);
 KeyUnReg();
 SoundPlay("WindowClosed", 0);
