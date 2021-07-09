@@ -95,7 +95,7 @@
   </Target>
 
   <Target Name="ProjectCleanup" BeforeTargets="PreBuildEvent" AfterTargets="Clean">
-    <RemoveDir Directories="$(TargetDir);$(SolutionDir)Dist" />
+    <RemoveDir Directories="$(TargetDir);$(SolutionDir)Dist\$(PlatformName)" />
   </Target>
 
 </Project>
