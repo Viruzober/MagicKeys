@@ -1,6 +1,0 @@
-[EnterEmail]
-1=MouseClick|Left|305|296|1|0|0|10
-[EnterSerialNumber]
-1=MouseClick|Left|338|360|1|0|0|10
-[RegisterButton]
-1=MouseClick|Left|335|500|1|0|0|10

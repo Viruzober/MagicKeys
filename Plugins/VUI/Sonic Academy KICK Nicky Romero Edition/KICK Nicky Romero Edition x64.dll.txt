@@ -1,0 +1,15 @@
+Name: left
+X: 716
+Y: 32
+Color: #FFFFFF
+
+Name: right
+X: 733
+Y: 27
+Color: #C1C1C1
+
+Name: name preset
+X: 356
+Y: 23
+Color: #000000
+

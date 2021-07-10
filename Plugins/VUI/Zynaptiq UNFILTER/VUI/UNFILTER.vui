@@ -2,7 +2,7 @@
 VUI=UNFILTER
 PClass=MagicKeys
 BClass=None
-PluginName=UNFILTER
+PluginName=Zynaptiq UNFILTER
 Loader=None
 [Keys]
 E=ExportFilterResponse

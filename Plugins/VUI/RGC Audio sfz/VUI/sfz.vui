@@ -2,12 +2,12 @@
 VUI=sfz
 PClass=MagicKeys
 BClass=None
-PluginName=sfz
+PluginName=RGC Audio sfz
 Loader=None
 [Keys]
 L=LoadSample
 [1]
 Text=Load sample
 ObjectType=Button
-Help=Загрузить семпл
+Help=Load sample from file
 Func=LoadSample

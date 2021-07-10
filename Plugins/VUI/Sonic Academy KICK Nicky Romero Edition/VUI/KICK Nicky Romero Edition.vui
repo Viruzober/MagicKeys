@@ -2,7 +2,7 @@
 VUI=KICK Nicky Romero Edition
 PClass=MagicKeys
 BClass=None
-PluginName=KICK Nicky Romero Edition
+PluginName=Sonic Academy KICK Nicky Romero Edition
 Loader=None
 [Keys]
 C=CategoryMenu
@@ -21,16 +21,26 @@ ObjectType=Button
 Help=Открыть меню киков
 Func=KicksMenu
 [3]
-Text=Next kick
+Text=Previous category
+ObjectType=Button
+Help=Предыдущий кик
+Func=PreviousCategory
+[4]
+Text=Next category
 ObjectType=Button
 Help=Следующий кик
-Func=NextKick
-[4]
+Func=NextCategory
+[5]
 Text=Previous kick
 ObjectType=Button
 Help=Предыдущий кик
 Func=PreviousKick
-[5]
+[6]
+Text=Next kick
+ObjectType=Button
+Help=Следующий кик
+Func=NextKick
+[7]
 Text=Save kick
 ObjectType=Button
 Help=Сохранить кик

@@ -1,31 +1,25 @@
 [Info]
-VUI=Repro-1
+VUI=Kick 2
 PClass=MagicKeys
 BClass=None
-PluginName=u-he Repro-1
+PluginName=Sonic Academy Kick 2
 Loader=None
 [Keys]
-P=PresetsTab
-S=SynthTab
+L=LoadPreset
 PageUp=PreviousPreset
 PageDown=NextPreset
 [1]
-Text=Synth tab
+Text=Load preset
 ObjectType=Button
-Help=Вкладка synth
-Func=SynthTab
+Help=Load preset from file
+Func=LoadPreset
 [2]
-Text=Presets tab
-ObjectType=Button
-Help=Вкладка Пресетов
-Func=PresetsTab
-[3]
 Text=Next preset
 ObjectType=Button
 Help=Следующий пресет
 Func=NextPreset
-[4]
+[3]
 Text=Previous preset
 ObjectType=Button
-Help=предыдущий пресет
+Help=Предыдущий пресет
 Func=PreviousPreset
