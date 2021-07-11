@@ -9,28 +9,19 @@ public partial class Serum
 
 public static void SerumLoader()
 {
-        while (
-ImgSearch("SerumLogo", true)[0] == 0 &
-ImgSearch("SerumReg", true)[0] == 0)
+        while(ImgSearchArea("Reg", P[1], P[2], P[1]+P[3], P[2]+P[4], 0)[0] == 0)
 {
 if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
 {
 return;
 }
 }
-if (ImgSearch("SerumLogo", true)[0] == 1)
+if (ImgSearchArea("Reg", P[1], P[2], P[1]+P[3], P[2]+P[4], 0)[0] == 1)
 {
-VUIObjectSwitcher(true, "false", 6, 6);
-}
-else if (ImgSearch("SerumReg", true)[0] == 1)
-{
-VUIObjectSwitcher(true, "false", 1, 5);
-}
-else
-{
-Speak("Before using this plugin follow the instructions found in the corresponding Settings folder");
+VUILoader("Register");
 return;
 }
+Speak("Before using this plugin follow the instructions found in the corresponding Settings folder");
 }
 
 }

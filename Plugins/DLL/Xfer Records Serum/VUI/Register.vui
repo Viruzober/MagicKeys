@@ -1,0 +1,11 @@
+[Info]
+VUI=Register
+PClass=Serum
+BClass=None
+PluginName=Xfer Records Serum
+Loader=None
+[1]
+Text=Register
+ObjectType=Button
+Help=Автоматическая регистрация Serum с ключом из буфера обмена
+Func=Register

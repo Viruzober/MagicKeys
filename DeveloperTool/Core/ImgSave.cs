@@ -36,7 +36,7 @@ return;
 }
 Bitmap Screen = new Bitmap(Convert.ToInt32(IBWidth), Convert.ToInt32(IBHeight));
 Graphics g = Graphics.FromImage(Screen);
-g.CopyFromScreen(MP[0]-(Convert.ToInt32(IBWidth)/2), MP[1]-(Convert.ToInt32(IBHeight)/2), 00, 0, Screen.Size);
+g.CopyFromScreen(MP[0], MP[1], 00, 0, Screen.Size);
 Screen.Save(@"DevSave\"+Module+@"\"+ITB+".bmp");
 KeyReg();
 OptionKeyReg();
