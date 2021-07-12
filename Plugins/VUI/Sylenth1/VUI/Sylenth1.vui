@@ -10,4 +10,4 @@ M=MainMenu
 Text=Main menu
 ObjectType=Button
 Help=Открыть главное меню Sylenth 1
-Func=MainMenu
+Func=Load

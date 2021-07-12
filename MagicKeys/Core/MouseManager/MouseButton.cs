@@ -11,28 +11,28 @@ public static void MouseButton(string Button, string Event)
 if (Event == "Down")
 {
 INPUT mouseDownInput = new INPUT();
-mouseDownInput.type = SendInputEventType.InputMouse;
+mouseDownInput.type = InputType.Mouse;
 if (Button == "Left")
 {
-	mouseDownInput.m.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_LEFTDOWN;
+	mouseDownInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_LEFTDOWN;
 }
 else if (Button == "Right")
 {
-mouseDownInput.m.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_RIGHTDOWN;
+mouseDownInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_RIGHTDOWN;
 }
 SendInput(1, ref mouseDownInput, Marshal.SizeOf(new INPUT()));
 }
 else
 {
 INPUT mouseUpInput = new INPUT();
-mouseUpInput.type = SendInputEventType.InputMouse;
+mouseUpInput.type = InputType.Mouse;
 if (Button == "Left")
 {
-mouseUpInput.m.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_LEFTUP;
+mouseUpInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_LEFTUP;
 }
 else if (Button == "Right")
 {
-mouseUpInput.m.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_RIGHTUP;
+mouseUpInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_RIGHTUP;
 }
 SendInput(1, ref mouseUpInput, Marshal.SizeOf(new INPUT()));
 }

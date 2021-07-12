@@ -34,24 +34,40 @@ public int Bottom;
 [StructLayout(LayoutKind.Sequential)]
 public struct INPUT
 {
-public SendInputEventType type;
-public Mouse m;
+public InputType type;
+public InputUnion U;
 }
+
 [StructLayout(LayoutKind.Explicit)]
-public struct Mouse
+public struct InputUnion
 {
 [FieldOffset(0)]
 public MouseInputData mi;
+[FieldOffset(0)]
+public KeyboardInputData ki;
 }
+
+[StructLayout(LayoutKind.Sequential)]
 public struct MouseInputData
 {
 public int dx;
 public int dy;
 public uint mouseData;
 public MouseEventFlags dwFlags;
-public uint time;
+public int time;
 public IntPtr dwExtraInfo;
 }
+
+[StructLayout(LayoutKind.Sequential)]
+public struct KeyboardInputData
+{
+public int wVk;
+public int wScan;
+public KeyEventFlags dwFlags;
+public int time;
+public IntPtr dwExtraInfo;
+}
+
 [Flags]
 public enum MouseEventFlags : uint
 {
@@ -69,9 +85,21 @@ MOUSEEVENTF_WHEEL = 0x0800,
 MOUSEEVENTF_VIRTUALDESK = 0x4000,
 MOUSEEVENTF_ABSOLUTE = 0x8000
 }
-public enum SendInputEventType : int
+
+[Flags]
+public enum KeyEventFlags : uint
 {
-InputMouse,
+KeyDown = 0x0000,
+ExtendedKey = 0x0001,
+KeyUp = 0x0002,
+Unicode = 0x0004,
+Scancode = 0x0008
+}
+
+public enum InputType
+{
+Mouse = 0,
+Keyboard = 1
 }
 
 }

@@ -20,10 +20,10 @@ for (int MX = MP[0], MY = MP[1]; MX != X || MY != Y; MX = NumberAlign(MX, X), MY
 {
 Sleep(TimeMove);
 Tuple<int, int> mouseEventCoords = VirtualScreenExtender.MouseEventCoords(MX, MY);
-mouseMoveInput.type = SendInputEventType.InputMouse;
-mouseMoveInput.m.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_MOVE | MouseEventFlags.MOUSEEVENTF_ABSOLUTE;
-mouseMoveInput.m.mi.dx = mouseEventCoords.Item1;
-mouseMoveInput.m.mi.dy = mouseEventCoords.Item2;
+mouseMoveInput.type = InputType.Mouse;
+mouseMoveInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_MOVE | MouseEventFlags.MOUSEEVENTF_ABSOLUTE;
+mouseMoveInput.U.mi.dx = mouseEventCoords.Item1;
+mouseMoveInput.U.mi.dy = mouseEventCoords.Item2;
 SendInput(1, ref mouseMoveInput, Marshal.SizeOf(new INPUT()));
 }
 while(true)
@@ -33,31 +33,31 @@ if (MP[0] == X & MP[1] ==Y)
 {
 return;
 }
-mouseMoveInput.type = SendInputEventType.InputMouse;
-mouseMoveInput.m.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_MOVE;
+mouseMoveInput.type = InputType.Mouse;
+mouseMoveInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_MOVE;
 if (MP[0] < X)
 {
-mouseMoveInput.m.mi.dx = 1;
+mouseMoveInput.U.mi.dx = 1;
 }
 else if (MP[0] > X)
 {
-mouseMoveInput.m.mi.dx = -1;
+mouseMoveInput.U.mi.dx = -1;
 }
 else if (MP[0] == X)
 {
-mouseMoveInput.m.mi.dx = 0;
+mouseMoveInput.U.mi.dx = 0;
 }
 if (MP[1] < Y)
 {
-mouseMoveInput.m.mi.dy = 1;
+mouseMoveInput.U.mi.dy = 1;
 }
 else if (MP[1] > Y)
 {
-mouseMoveInput.m.mi.dy = -1;
+mouseMoveInput.U.mi.dy = -1;
 }
 else if (MP[1] == Y)
 {
-mouseMoveInput.m.mi.dy = 0;
+mouseMoveInput.U.mi.dy = 0;
 }
 SendInput(1, ref mouseMoveInput, Marshal.SizeOf(new INPUT()));
 }
