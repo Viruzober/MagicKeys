@@ -7,7 +7,7 @@ public partial class DeveloperTool
 
 public static void KeyUnReg()
 {
-for(int I = 4; I <= 24; I++)
+for(int I = 4; I <= 25; I++)
 {
 MagicKeys.UnregisterHotKey(DeveloperTool.HM.Handle, I);
 }
