@@ -9,8 +9,9 @@ public partial class MagicKeys
 
 public static void VUFSendKey(string Param)
 {
+//MouseClick("Left", P[1]+10, P[2]+10, 1, 0, 0, 10);
 string[] FP = Param.Split("+");
-KeySend("Control+O", 100);
+KeySend("Shift+A", 100);
 }
 
 }

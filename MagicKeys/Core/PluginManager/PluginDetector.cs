@@ -14,6 +14,7 @@ public static void PluginDetector()
 {
 while(true)
 {
+//
 Thread.Sleep(TimeOut);
 if (KeySwitch == 1) continue;
 foreach(string Item in PluginsList.Keys)
