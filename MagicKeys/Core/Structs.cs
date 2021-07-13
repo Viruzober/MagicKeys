@@ -62,7 +62,7 @@ public IntPtr dwExtraInfo;
 public struct KeyboardInputData
 {
 public int wVk;
-public ushort wScan;
+public int wScan;
 public KeyEventFlags dwFlags;
 public int time;
 public IntPtr dwExtraInfo;

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-09 14:45+0300\n"
+"POT-Creation-Date: 2021-07-13 21:12+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -335,6 +335,28 @@ msgstr ""
 
 #: D:\Root\src\import\MagicKeys\MKUpdater\UpdateFormActions.cs:58
 msgid "Update file is corrupted."
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\Plugins\DLL\LUXONIX.Purity\Source\LUXONIX
+#: Purity.cs:23
+msgid "Enter serial"
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\Plugins\DLL\LUXONIX.Purity\Source\LUXONIX
+#: Purity.cs:24
+msgid "Enter serial key."
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\Plugins\DLL\LUXONIX.Purity\Source\LUXONIX
+#: Purity.cs:27 D:\Root\src\import\MagicKeys\Plugins\DLL\Xfer Records
+#: Serum\Source\Serum.cs:47
+msgid "Enter Activation code"
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\Plugins\DLL\LUXONIX.Purity\Source\LUXONIX
+#: Purity.cs:28 D:\Root\src\import\MagicKeys\Plugins\DLL\Xfer Records
+#: Serum\Source\Serum.cs:48
+msgid "Enter activation code."
 msgstr ""
 
 #~ msgid "Send anonymous diagnostic information about the system"

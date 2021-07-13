@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
 
 public static void MouseMove (int GetX, int GetY, int TimeMove)
