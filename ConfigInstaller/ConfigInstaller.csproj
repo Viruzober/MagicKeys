@@ -4,15 +4,13 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-	  <Platforms>x86;x64</Platforms>
-	  <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
-	  <ApplicationManifest>app.manifest</ApplicationManifest>
-	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-	  <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-	  <AssemblyName>ConfigInstaller</AssemblyName>
-<RootNamespace>ConfigInstaller</RootNamespace>
-<ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Platforms>x64;x86</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <AssemblyName>ConfigInstaller</AssemblyName>
+    <RootNamespace>ConfigInstaller</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -41,18 +39,18 @@
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
-<ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Gettext.Tools" Version="0.21.0" />
     <PackageReference Include="NGettext" Version="0.6.6" />
     <PackageReference Include="System.Management" Version="5.0.0" />
   </ItemGroup>
 
-<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-  <Exec Command="xcopy /e /i /q /y &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul" />
-</Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;xcopy /e /i /q /y &quot;%25distdir%25\Locale&quot; &quot;$(TargetDir)Locale&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul" />
+  </Target>
 
   <Target Name="ProjectCleanup" BeforeTargets="PreBuildEvent" AfterTargets="Clean">
     <RemoveDir Directories="$(TargetDir)" />
   </Target>
 
-</Project>
+  </Project>
