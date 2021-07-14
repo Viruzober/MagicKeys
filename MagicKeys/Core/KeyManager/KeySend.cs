@@ -58,8 +58,24 @@ I += 1;
 }
 SendInput((uint)KeyInputs.Length, KeyInputs, Marshal.SizeOf(typeof(INPUT)));
 }
-    
-    }
+}
+
+public static void TestKeySend(string Type, string Send, int Time)
+{
+if (string.IsNullOrEmpty(Send)) return;
+char[] Chars = Send.ToCharArray();
+INPUT[] KeyInputs = new INPUT[Chars.Length*2];
+for (int I = 0, CH = 0; I < KeyInputs.Length || CH < Chars.Length; I+=2, CH++)
+{
+KeyInputs[I].type = InputType.Keyboard;
+KeyInputs[I].U.ki.wScan = (UInt16)Chars[CH];
+KeyInputs[I].U.ki.dwFlags = KeyEventFlags.Unicode|KeyEventFlags.KeyDown;
+KeyInputs[I+1].type = InputType.Keyboard;
+KeyInputs[I+1].U.ki.wScan = (UInt16)Chars[CH];
+KeyInputs[I+1].U.ki.dwFlags = KeyEventFlags.Unicode|KeyEventFlags.KeyUp;
+}
+SendInput((uint)KeyInputs.Length, KeyInputs, Marshal.SizeOf(typeof(INPUT)));
+}
 
 }
 }
