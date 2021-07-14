@@ -61,10 +61,10 @@ public IntPtr dwExtraInfo;
 [StructLayout(LayoutKind.Sequential)]
 public struct KeyboardInputData
 {
-public int wVk;
-public int wScan;
+public ushort wVk;
+public ushort wScan;
 public KeyEventFlags dwFlags;
-public int time;
+public uint time;
 public IntPtr dwExtraInfo;
 }
 
