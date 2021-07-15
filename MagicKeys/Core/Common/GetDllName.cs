@@ -12,7 +12,7 @@ public partial class MagicKeys
 public static string GetDllName(IntPtr Handle)
 {
 Int32 ProcessID;
-GetWindowThreadProcessId(Handle.ToInt32(), out ProcessID);
+GetWindowThreadProcessId(Handle, out ProcessID);
 IntPtr OP = OpenProcess(ProcessAccessFlags.QueryInformation | ProcessAccessFlags.VirtualMemoryRead, false, ProcessID);
 #if X86
 IntPtr GGWL = GetWindowLongPtr32(Handle, GWL.GWL_HINSTANCE);

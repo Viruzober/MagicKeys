@@ -23,8 +23,7 @@ MouseClick("Left", P[1]+575, P[2]+120, 1, 0, 0, 10);
 MenuItemClick("Right", P[1]+450, P[2]+230, "rename");
 Thread.Sleep(100);
 string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", P[1]+450, P[2]+230, 2, 0, 0, 10);
 Speak(Patch);
 }
@@ -41,8 +40,7 @@ MouseClick("Left", P[1]+575, P[2]+220, 1, 0, 0, 10);
 MenuItemClick("Right", P[1]+450, P[2]+105, "rename");
 Thread.Sleep(100);
 string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
 Speak(Patch);
 }

@@ -28,8 +28,7 @@ MouseClick("Left", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
 MenuItemClick("Right", NXBP[1]+15, NXBP[2]-5, "rename");
 Thread.Sleep(100);
 string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 50);
 Speak(Bank);
 }
@@ -59,8 +58,7 @@ MouseClick("Left", NXBP[1]+15, NXBP[2]+15, 1, 0, 0, 50);
 MenuItemClick("Right", NXBP[1]+15, NXBP[2]+15, "rename");
 Thread.Sleep(100);
 string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 50);
 Speak(Bank);
 }
@@ -78,8 +76,7 @@ if (F.DialogResult == DialogResult.OK)
 MenuItemClick("Right", P[1]+330, P[2]+230, "new 'search'");
 Thread.Sleep(100);
 ControlSetText(API.GetWTitle(), API.GetWClass(), "Edit", F.GetString());
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
 }
 }

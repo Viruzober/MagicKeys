@@ -26,8 +26,7 @@ if (NXBP[0] == 1)
 MenuItemClick("Right", NXBP[1]+15, NXBP[2]-5, "rename");
 Thread.Sleep(100);
 string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", NXBP[1]+15, NXBP[2]-5, 2, 0, 0, 10);
 Speak(Patch);
 }
@@ -56,8 +55,7 @@ else if (NXEND[0] == 0)
 MenuItemClick("Right", NXBP[1]+15, NXBP[2]+15, "rename");
 Thread.Sleep(100);
 string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", NXBP[1]+15, NXBP[2]+15, 2, 0, 0, 10);
 Speak(Patch);
 }

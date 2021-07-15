@@ -95,8 +95,12 @@ public static extern int nvdaController_speakText(string text);
 [DllImport("nvdaControllerClient64.dll", CharSet = CharSet.Unicode)]
 public static extern int nvdaController_brailleMessage(string Text);
 #endif
+[DllImport( "user32.dll", SetLastError = true )]
+public static extern int GetWindowThreadProcessId ( IntPtr hWnd, out int lpdwProcessId );
+[DllImport("kernel32.dll")]
+public static extern uint GetCurrentThreadId();
 [DllImport("user32.dll")]
-public static extern UInt32 GetWindowThreadProcessId(Int32 hWnd, out Int32 lpdwProcessId);
+public static extern bool AttachThreadInput(uint idAttach, uint idAttachTo, bool fAttach);
 #if X86
 [DllImport("user32.dll", EntryPoint="GetWindowLong")]
 public static extern IntPtr GetWindowLongPtr32(IntPtr hWnd, GWL nIndex);
@@ -108,5 +112,7 @@ public static extern IntPtr GetWindowLongPtr64(IntPtr hWnd, GWL nIndex);
 public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId);
 [DllImport("psapi.dll")]
 public static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, [Out] StringBuilder lpBaseName, [In] [MarshalAs(UnmanagedType.U4)] int nSize);
+[DllImport("user32.dll", SetLastError = true)]
+public static extern IntPtr SetFocus(IntPtr hWnd);
 }
 }

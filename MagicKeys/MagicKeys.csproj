@@ -67,6 +67,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Core\Common\SendKey.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove=".gitignore" />
     <None Remove="app.manifest" />
   </ItemGroup>

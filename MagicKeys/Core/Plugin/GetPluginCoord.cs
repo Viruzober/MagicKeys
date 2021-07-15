@@ -3,6 +3,7 @@ using System.Threading;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
@@ -19,6 +20,7 @@ foreach(var H in HModule)
 if (ModuleName.Contains(CurrentPlugin["Module"], StringComparison.OrdinalIgnoreCase) == true)
 {
 int[] RectCTRL = GetWinRect(H);
+SetFocusControlPoint(RectCTRL[0], RectCTRL[1]);
 ControlCoord = new int[5] {1, RectCTRL[0], RectCTRL[1], RectCTRL[2]-1, RectCTRL[3]-1};
 return ControlCoord;
 }

@@ -16,10 +16,7 @@ Thread.Sleep(50);
 if (FP[2] == "Key")
 {
 Clipboard.SetText(CopyText);
-Keyboard.KeyDown(Keys.Control);
-Keyboard.KeyDown(Keys.V);
-Keyboard.KeyUp(Keys.V);
-Keyboard.KeyUp(Keys.Control);
+KeySend("Keys", "LControlKey", 50, 50);
 }
 else if (FP[2] == "Message")
 {

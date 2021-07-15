@@ -2,12 +2,11 @@
 VUI=Sylenth1
 PClass=MagicKeys
 BClass=None
-PluginName=Sylenth1
+PluginName=LennarDigital Sylenth1
 Loader=None
 [Keys]
-M=MainMenu
 [1]
-Text=Main menu
+Text=Load
 ObjectType=Button
-Help=Открыть главное меню Sylenth 1
+Help=Open general menu
 Func=Load

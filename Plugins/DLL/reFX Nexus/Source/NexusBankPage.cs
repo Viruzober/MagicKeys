@@ -36,8 +36,7 @@ MenuItemClick("Right", P[1]+330, P[2]+105, "rename");
 }
 Thread.Sleep(100);
 string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
-Keyboard.KeyDown(Keys.Enter);
-Keyboard.KeyUp(Keys.Enter);
+KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
 Speak(Bank);
 }
