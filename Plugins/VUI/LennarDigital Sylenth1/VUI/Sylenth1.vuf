@@ -1,2 +1,6 @@
-[Load]
+[LoadBank]
+1=KeySend|Keys|LShiftKey+O|10|10
+[LoadPreset]
 1=KeySend|Keys|LShiftKey+L|10|10
+[SavePreset]
+1=KeySend|Keys|LShiftKey+P|10|10

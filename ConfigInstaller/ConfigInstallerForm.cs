@@ -19,6 +19,7 @@ InitForm();
 public void InitForm()
 {
 this.StartPosition = FormStartPosition.CenterScreen;
+this.TopMost = true;
 this.Size = new Size(800, 450);
 this.Text = "ConfigInstaller";
 this.MinimizeBox = false;
@@ -32,13 +33,13 @@ public void InitLabel()
 Label List = new Label();
 List.Size = new Size(190, 20);
 List.Location = new Point(20, 10);
-List.Text = "Плагины";
+List.Text = T._("Плагины");
 List.TabIndex = 1;
 this.Controls.Add(List);
 Label Log = new Label();
 Log.Size = new Size(190, 20);
 Log.Location = new Point(220, 10);
-Log.Text = "Результат";
+Log.Text = T._("Результат");
 Log.TabIndex = 3;
 this.Controls.Add(Log);
 }
@@ -66,7 +67,7 @@ public void InitButton()
 {
 Ins.Size = new Size(200, 40);
 Ins.Location = new Point(575, 350);
-Ins.Text = "Установить";
+Ins.Text = T._("Установить");
 Ins.Click += Ins_Click;
 this.Controls.Add(Ins);
 }

@@ -6,7 +6,17 @@ PluginName=LennarDigital Sylenth1
 Loader=None
 [Keys]
 [1]
-Text=Load
+Text=Load bank
 ObjectType=Button
-Help=Open general menu
-Func=Load
+Help=Load bank from file
+Func=LoadBank
+[2]
+Text=Load preset
+ObjectType=Button
+Help=Load preset from file
+Func=LoadPreset
+[3]
+Text=Save preset
+ObjectType=Button
+Help=Save preset to file
+Func=SavePreset
