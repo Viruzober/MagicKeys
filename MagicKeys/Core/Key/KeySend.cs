@@ -9,8 +9,6 @@ namespace MagicKeys
 {
 public partial class MagicKeys
 {
-[DllImport("user32.dll", SetLastError = true)]
-public static extern uint SendInput(uint nInputs, INPUT[] pInputs, int cbSize);
 
 public static void KeySend(string Type, string Send, int Time, int PostTime)
 {

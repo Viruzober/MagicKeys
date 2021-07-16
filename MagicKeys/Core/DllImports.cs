@@ -114,5 +114,7 @@ public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool b
 public static extern uint GetModuleFileNameEx(IntPtr hProcess, IntPtr hModule, [Out] StringBuilder lpBaseName, [In] [MarshalAs(UnmanagedType.U4)] int nSize);
 [DllImport("user32.dll", SetLastError = true)]
 public static extern IntPtr SetFocus(IntPtr hWnd);
+[DllImport("user32.dll", SetLastError = true)]
+public static extern uint SendInput(uint nInputs, INPUT[] pInputs, int cbSize);
 }
 }

@@ -11,6 +11,8 @@ public partial class ConfigInstaller
 static void Main()
 {
 ChangeDPI(-1);
+int[] DS = GetMaxScreenSize();
+SetResolution(DS[0], DS[1]);
 Application.Run(new ConfigInstallerForm());
 }
 

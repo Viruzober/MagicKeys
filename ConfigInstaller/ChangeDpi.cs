@@ -70,6 +70,7 @@ static extern int ChangeDisplaySettings([In] ref DEVMODE lpDevMode, int dwFlags)
 
 public static void ChangeDPI(int dpi)
 {
+int WR = DWidth, HR = DHeight;
 SetResolution(1024, 768);
 RegistryKey key = Registry.CurrentUser.OpenSubKey("Control Panel", true);
 key = key.OpenSubKey("Desktop", true);
@@ -79,8 +80,7 @@ foreach(var RegDSP in key.GetSubKeyNames())
 var Gkey = key.OpenSubKey(RegDSP, true);
 Gkey.SetValue("DpiValue", dpi);
 }
-int[] DS = GetMaxScreenSize();
-SetResolution(DS[0], DS[1]);
+SetResolution(WR, HR);
 }
 
 public static void SetResolution(int w, int h)
