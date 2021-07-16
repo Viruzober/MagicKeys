@@ -19,11 +19,10 @@ int[] MP = GetMousePosition();
 for (int MX = MP[0], MY = MP[1]; MX != X || MY != Y; MX = NumberAlign(MX, X), MY = NumberAlign(MY, Y))
 {
 Sleep(TimeMove);
-Tuple<int, int> mouseEventCoords = VirtualScreenExtender.MouseEventCoords(MX, MY);
 mouseMoveInput.type = InputType.Mouse;
 mouseMoveInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_MOVE | MouseEventFlags.MOUSEEVENTF_ABSOLUTE;
-mouseMoveInput.U.mi.dx = mouseEventCoords.Item1;
-mouseMoveInput.U.mi.dy = mouseEventCoords.Item2;
+mouseMoveInput.U.mi.dx = MouseConvertX(MX);
+mouseMoveInput.U.mi.dy = MouseConvertY(MY);
 SendInput(1, ref mouseMoveInput, Marshal.SizeOf(new INPUT()));
 }
 while(true)

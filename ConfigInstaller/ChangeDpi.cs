@@ -75,10 +75,11 @@ SetResolution(1024, 768);
 RegistryKey key = Registry.CurrentUser.OpenSubKey("Control Panel", true);
 key = key.OpenSubKey("Desktop", true);
 key = key.OpenSubKey("PerMonitorSettings", true);
-foreach(var RegDSP in key.GetSubKeyNames())
+foreach (var RegDSP in key.GetSubKeyNames())
 {
 var Gkey = key.OpenSubKey(RegDSP, true);
 Gkey.SetValue("DpiValue", dpi);
+Gkey.Close();
 }
 SetResolution(WR, HR);
 }

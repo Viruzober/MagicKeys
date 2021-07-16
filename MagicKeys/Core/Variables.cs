@@ -12,6 +12,8 @@ public static readonly string Version = "1.5.4";
 public static Size Display = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size;
 public static int Width = Display.Width;
 public static int Height = Display.Height;
+public static int MXDC = 65535/Width;
+public static int MYDC = 65535/Height;
 public static Bitmap OneScreen;
 public static int KeySwitch = 0;
 public static int NavigationType = 0;
