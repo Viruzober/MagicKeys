@@ -68,6 +68,7 @@
 
   <ItemGroup>
     <Compile Remove="Core\Common\SendKey.cs" />
+    <Compile Remove="Core\Window\WinExists.cs" />
   </ItemGroup>
 
   <ItemGroup>

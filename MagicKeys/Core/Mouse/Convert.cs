@@ -9,12 +9,12 @@ public partial class MagicKeys
 
 public static int MouseConvertX(int X)
 {
-return MXDC*X;
+return Convert.ToInt32(MXDC*(decimal)X);
 }
 
 public static int MouseConvertY(int Y)
 {
-return MYDC*Y;
+return Convert.ToInt32(MYDC*(Decimal)Y);
 }
 
 }
