@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sylenth1Settings>
+	<DefaultSkin name="Sylenth 3.0" scale="2"/>
+	<DefaultBank name="FactoryBank1.fxb"/>
+	<SoundBankCustomFolder path="" recursive="1"/>
+	<PresetFolder remember="1" path="" usefilename="0"/>
+	<CheckForUpdates enabled="0"/>
+	<Compatibility useV2Engine="1" displayCutoffInHz="0"/>
+	<Oversampling realtime="1" render="1"/>
+	<GlobalTuning frequency="440"/>
+	<MIDI controlchanges="1" programchanges="1" autoswitchonlearn="1"/>
+	<KeyboardInput enabled="1" usebrackets="1"/>
+	<KEYMAPPINGS basedOnDefaults="0">
+		<MAPPING commandId="10001" description="Switch to default skin" key="shift + D"/>
+		<MAPPING commandId="10002" description="Switch to default size" key="shift + S"/>
+		<MAPPING commandId="10003" description="Set skin as default" key="shift + U"/>
+		<MAPPING commandId="10004" description="Load Preset" key="shift + L"/>
+		<MAPPING commandId="10005" description="Save Preset" key="shift + P"/>
+		<MAPPING commandId="10006" description="Copy Preset" key="shift + C"/>
+		<MAPPING commandId="10007" description="Paste Preset" key="shift + V"/>
+		<MAPPING commandId="10008" description="Insert Preset" key="ctrl + I"/>
+		<MAPPING commandId="10009" description="Delete Preset" key="ctrl + shift + Y"/>
+		<MAPPING commandId="10010" description="Clear Preset" key="ctrl + J"/>
+		<MAPPING commandId="10011" description="Randomize Preset" key="shift + R"/>
+		<MAPPING commandId="10012" description="Rename Preset" key="shift + N"/>
+		<MAPPING commandId="10013" description="Reset Preset" key="shift + Z"/>
+		<MAPPING commandId="10014" description="Load Bank" key="shift + O"/>
+		<MAPPING commandId="10015" description="Save Bank" key="shift + B"/>
+		<MAPPING commandId="10016" description="Export Bank" key="ctrl + E"/>
+		<MAPPING commandId="10017" description="Clear Bank" key="ctrl + shift + J"/>
+	</KEYMAPPINGS>
+	<Internal data="32.DnphWhX7fk9oAnUFM8OzJt0gfr5xQUu1hs84ws9VWcD"/>
+</Sylenth1Settings>
