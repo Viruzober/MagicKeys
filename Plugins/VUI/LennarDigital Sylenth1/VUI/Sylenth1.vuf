@@ -4,3 +4,9 @@
 1=KeySend|Keys|LShiftKey+L|10|10
 [SavePreset]
 1=KeySend|Keys|LShiftKey+P|10|10
+[PreviousPreset]
+1=MouseClick|Left|1195|330|1|0|0|10
+2=OCR|150|60|940|320|4
+[NextPreset]
+1=MouseClick|Left|1225|330|1|0|0|10
+2=OCR|150|60|940|320|4

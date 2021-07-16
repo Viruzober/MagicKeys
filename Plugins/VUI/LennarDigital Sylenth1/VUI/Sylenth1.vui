@@ -20,3 +20,13 @@ Text=Save preset
 ObjectType=Button
 Help=Save preset to file
 Func=SavePreset
+[4]
+Text=Previous preset
+ObjectType=Button
+Help=Not found
+Func=PreviousPreset
+[5]
+Text=Next preset
+ObjectType=Button
+Help=Not found
+Func=NextPreset
