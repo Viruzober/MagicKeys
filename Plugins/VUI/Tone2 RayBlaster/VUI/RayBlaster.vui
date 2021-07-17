@@ -1,0 +1,27 @@
+[Info]
+VUI=RayBlaster
+PClass=MagicKeys
+BClass=None
+PluginName=Tone2 RayBlaster
+Loader=None
+[Keys]
+[1]
+Text=Option menu
+ObjectType=Button
+Help=Open option menu
+Func=OptionMenu
+[2]
+Text=Banks menu
+ObjectType=Button
+Help=Open banks menu
+Func=BanksMenu
+[3]
+Text=Patches menu
+ObjectType=Button
+Help=Open patches menu
+Func=PatchesMenu
+[4]
+Text=Presets menu
+ObjectType=Button
+Help=Open presets menu
+Func=PresetsMenu

@@ -1,0 +1,8 @@
+[OptionMenu]
+1=MouseClick|Left|585|345|1|0|0|10
+[BanksMenu]
+1=MouseClick|Left|585|375|1|0|0|10
+[PatchesMenu]
+1=MouseClick|Left|520|345|1|0|0|10
+[PresetsMenu]
+1=MouseClick|Left|520|405|1|0|0|10

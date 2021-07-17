@@ -54,10 +54,10 @@ if(ORF.DialogResult == DialogResult.OK)
 {
 int SI = ORF.WList.SelectedIndex;
 MagicKeys.MouseMove(P[1]+LX[SI], P[2]+LY[SI], 0);
+}
 LW.Clear();
 LX.Clear();
 LY.Clear();
-}
 OptionKeyReg();
 KeyReg();
         }

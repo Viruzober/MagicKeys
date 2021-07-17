@@ -1,0 +1,19 @@
+[Info]
+VUI=Gladiator
+PClass=MagicKeys
+BClass=None
+PluginName=Tone2 Gladiator
+Loader=None
+[Keys]
+B=BanksMenu
+P=Presets menu
+[1]
+Text=Banks menu
+ObjectType=Button
+Help=Open bamks menu
+Func=BanksMenu
+[2]
+Text=Presets menu
+ObjectType=Button
+Help=Open presets menu
+Func=PresetsMenu
