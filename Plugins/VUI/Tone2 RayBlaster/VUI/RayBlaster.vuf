@@ -1,8 +1,6 @@
-[OptionMenu]
-1=MouseClick|Left|585|345|1|0|0|10
+[FileMenu]
+1=MouseClick|Left|780|515|1|0|0|10
 [BanksMenu]
-1=MouseClick|Left|585|375|1|0|0|10
+1=MouseClick|Left|860|560|1|0|0|10
 [PatchesMenu]
-1=MouseClick|Left|520|345|1|0|0|10
-[PresetsMenu]
-1=MouseClick|Left|520|405|1|0|0|10
+1=MouseClick|Left|740|605|1|0|0|10

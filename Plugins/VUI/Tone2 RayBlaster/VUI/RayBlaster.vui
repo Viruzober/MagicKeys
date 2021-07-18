@@ -6,10 +6,10 @@ PluginName=Tone2 RayBlaster
 Loader=None
 [Keys]
 [1]
-Text=Option menu
+Text=File menu
 ObjectType=Button
-Help=Open option menu
-Func=OptionMenu
+Help=Open file menu
+Func=FileMenu
 [2]
 Text=Banks menu
 ObjectType=Button
@@ -20,8 +20,3 @@ Text=Patches menu
 ObjectType=Button
 Help=Open patches menu
 Func=PatchesMenu
-[4]
-Text=Presets menu
-ObjectType=Button
-Help=Open presets menu
-Func=PresetsMenu

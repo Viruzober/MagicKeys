@@ -1,0 +1,12 @@
+[Info]
+VUI=NEMESIS
+PClass=MagicKeys
+BClass=None
+PluginName=UJAM Beatmaker NEMESIS
+Loader=None
+[Keys]
+[1]
+Text=Open category
+ObjectType=Button
+Help=Open category
+Func=OpenCategory
