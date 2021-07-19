@@ -1,0 +1,17 @@
+[Info]
+VUI=EZKeys
+PClass=MagicKeys
+BClass=None
+PluginName=Toontrack EZKeys
+Loader=None
+[Keys]
+[1]
+Text=Banks menu
+ObjectType=Button
+Help=Open banks menu
+Func=BanksMenu
+[2]
+Text=Presets menu
+ObjectType=Button
+Help=Open presets menu
+Func=PresetsMenu
