@@ -28,7 +28,7 @@ return;
 }
 ButtonOK.Enabled = false;
 ButtonCancel.Enabled = true;
-using (client = new HttpClientDownloadWithProgress("https://viruzober.github.io/MagicKeys/MagicKeys_"+MKUpdater.NV+".zip", "MagicKeys_"+MKUpdater.NV+".zip"))
+using (client = new HttpClientDownloadWithProgress("https://viruzober.ru/MagicKeys/"+MKUpdater.UpdCH+"/MagicKeys_"+MKUpdater.NV+".zip", "MagicKeys_"+MKUpdater.NV+".zip"))
 {
 client.ProgressChanged += ProgressCheck;
 await client.StartDownload();
@@ -49,11 +49,7 @@ if (totalFileSize == totalBytesDownloaded)
 {
 client.Dispose();
 ButtonCancel.Enabled = false;
-if (File.Exists("MagicKeys_"+MKUpdater.NV+".zip") == true)
-{
-string DSHA = MKUpdater.GetHtmlCode("https://viruzober.github.io/MagicKeys/SHA256.txt");
-string GSHA = MKUpdater.GetSHA("MagicKeys_"+MKUpdater.NV+".zip");
-if (DSHA != GSHA)
+if (File.Exists("MagicKeys_"+MKUpdater.NV+".zip") == false)
 {
 MessageBox.Show(T._("Update file is corrupted."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
@@ -63,7 +59,6 @@ return;
 ZipFile.ExtractToDirectory("MagicKeys_"+MKUpdater.NV+".zip", "./", true);
 File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
 this.Close();
-}
 }
 }
 

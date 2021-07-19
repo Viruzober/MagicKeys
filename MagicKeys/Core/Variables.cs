@@ -21,6 +21,7 @@ public static bool SoundTheme = true;
 public static bool SpeakType = false;
 public static bool Exit = true;
 public static int TimeOut = 20;
+public static string UpdCH = "Release";
 public static Dictionary<int, Dictionary<string, string>> VUIObjects = new Dictionary<int, Dictionary<string, string>>();
 public static List<int> ActiveObjects = new List<int>();
 public static int Count;
