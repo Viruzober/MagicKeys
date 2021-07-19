@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 21:12+0300\n"
+"POT-Creation-Date: 2021-07-19 12:54+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -18,6 +18,35 @@ msgstr ""
 "X-Poedit-KeywordsList: T._\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: MagicKeys\n"
+
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:14
+msgid ""
+"For MagicKeys to work correctly, you need to set the screen scale to 100%. "
+"When you click on the \"yes\" button, this will be done automatically."
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:15
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:26
+msgid "Attention"
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:25
+msgid ""
+"Also, for the MagicKeys to work properly, you need to set the maximum "
+"display resolution. Click \"Yes\" to automatically apply the parameter."
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstallerForm.cs:36
+msgid "Плагины"
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstallerForm.cs:42
+msgid "Результат"
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstallerForm.cs:70
+msgid "Установить"
+msgstr ""
 
 #: D:\Root\src\import\MagicKeys\DeveloperTool\Core\ControlSearch.cs:16
 msgid "Control search"
@@ -153,43 +182,43 @@ msgstr "Файл справки не найден"
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\ImgManager\ImgToText.cs:27
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Img\ImgToText.cs:27
 msgid "Windows 10 OCR is unavailable"
 msgstr "Компонент Windows 10 OCR недоступен"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\IniManager\IniManager.cs:59
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:35
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Ini\IniManager.cs:59
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Ini\IniRead.cs:35
 msgid "Section not found"
 msgstr "Раздел не найден"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:64
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Ini\IniRead.cs:64
 msgid "The value is not correct"
 msgstr "Значение неверно"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:71
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Ini\IniRead.cs:71
 msgid "Key not found"
 msgstr "Ключ не найден"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\IniManager\IniRead.cs:75
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Ini\IniRead.cs:75
 msgid "Error reading file"
 msgstr "Ошибка чтения файла"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
-msgid "No plugins are available."
-msgstr "Нет доступных плагинов."
-
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\PluginManager\PluginsListLoader.cs:60
-#: D:\Root\src\import\MagicKeys\MKUpdater\UpdateFormActions.cs:26
-msgid "Warning"
-msgstr "Внимание"
-
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Objects\Slider.cs:10
 msgid "Enter a value for "
 msgstr ""
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Core\VUIObjects\Slider.cs:10
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Objects\Slider.cs:10
 msgid " from 1 to 100"
 msgstr ""
+
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Plugin\PluginsListLoader.cs:60
+msgid "No plugins are available."
+msgstr "Нет доступных плагинов."
+
+#: D:\Root\src\import\MagicKeys\MagicKeys\Core\Plugin\PluginsListLoader.cs:60
+#: D:\Root\src\import\MagicKeys\MKUpdater\UpdateFormActions.cs:26
+msgid "Warning"
+msgstr "Внимание"
 
 #: D:\Root\src\import\MagicKeys\MagicKeys\Forms\DebugForm.cs:34
 #: D:\Root\src\import\MagicKeys\MagicKeys\Forms\MenuForm.cs:18
