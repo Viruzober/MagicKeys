@@ -1,0 +1,12 @@
+[Info]
+VUI=Spire
+PClass=RevealSoundSpire
+BClass=None
+PluginName=Reveal Sound Spire
+Loader=None
+[Keys]
+[1]
+Text=Presets manager
+ObjectType=Button
+Help=Not found
+Func=PresetsManager

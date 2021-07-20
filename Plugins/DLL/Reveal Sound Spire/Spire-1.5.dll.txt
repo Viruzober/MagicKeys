@@ -1,0 +1,35 @@
+Name: menu
+X: 381
+Y: 25
+Color: #59666F
+
+Name: lib
+X: 324
+Y: 22
+Color: #1B6D88
+
+Name: rescan
+X: 354
+Y: 512
+Color: #DFEEF9
+
+Name: one preset item
+X: 196
+Y: 83
+Color: #926441
+
+Name: left top one
+X: 125
+Y: 73
+Color: #090F17
+
+Name: left down one
+X: 123
+Y: 88
+Color: #090F17
+
+Name: color
+X: 284
+Y: 84
+Color: #2F3541
+
