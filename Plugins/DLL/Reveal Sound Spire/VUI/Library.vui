@@ -5,12 +5,13 @@ BClass=None
 PluginName=Reveal Sound Spire
 Loader=None
 [Keys]
-Home=PreviewsBank
-End=NextBank
-Up=SpeakPreset|Up
-Down=SpeakPreset|Down
-Left=SpeakPreset|Left
-Right=SpeakPreset|Right
+Home=ChangeBank|Up
+End=ChangeBank|Down
+Space=SelectBank
+Up=ChangePreset|Up
+Down=ChangePreset|Down
+Left=ChangePreset|Left
+Right=ChangePreset|Right
 Ctrl+R=Rescan
 [1]
 Text=Back

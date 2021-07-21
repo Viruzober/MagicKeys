@@ -5,6 +5,8 @@ BClass=None
 PluginName=Reveal Sound Spire
 Loader=None
 [Keys]
+PageUp=SpeakPreset|Previews
+PageDown=SpeakPreset|Next
 [1]
 Text=Library
 ObjectType=Button
@@ -15,3 +17,15 @@ Text=Options
 ObjectType=Button
 Help=Not found
 Func=Options
+[3]
+Text=Previews preset
+ObjectType=Button
+Help=Not found
+Func=SpeakPreset
+Param=Previews
+[4]
+Text=Next preset
+ObjectType=Button
+Help=Not found
+Func=SpeakPreset
+Param=Next
