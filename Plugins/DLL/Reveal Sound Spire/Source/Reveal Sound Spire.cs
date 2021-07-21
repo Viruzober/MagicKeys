@@ -7,12 +7,23 @@ namespace MagicKeys
 public class RevealSoundSpire
 {
 
-public static void PresetsManager()
+public static void Library()
 {
+if (ImgSearch("Lib", true)[0] == 0)
+{
+Speak("Button library is not found. Please reload the plugin.");
+return;
+}
 MouseClick("Left", P[1]+325, P[2]+20, 1, 0, 0, 10);
 Thread.Sleep(500);
-MouseClick("Left", P[1]+195, P[2]+85, 1, 0, 0, 10);
-VUILoader("PresetsManager");
+MouseClick("Left", P[1]+200, P[2]+85, 1, 0, 0, 10);
+VUILoader("Library");
+}
+
+public static void GoToMain()
+{
+MouseClick("Left", P[1]+325, P[2]+20, 1, 0, 0, 10);
+VUILoader("Spire");
 }
 
 public static void PreviewsBank()
@@ -52,7 +63,7 @@ return;
 }
 KeySend("Keys", Key, 50, 50);
 int[] BImg = ImgSearchArea("Presets", P[1]+340, P[2]+50, P[1]+1000, P[2]+500, 20);
-Speak(ImgToText(150, 20, BImg[1], BImg[2], 2));
+Speak(ImgToText(150, 15, BImg[1], BImg[2], 4));
 }
 
 public static void Rescan()

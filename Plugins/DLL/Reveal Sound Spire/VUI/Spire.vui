@@ -6,10 +6,10 @@ PluginName=Reveal Sound Spire
 Loader=None
 [Keys]
 [1]
-Text=Presets manager
+Text=Library
 ObjectType=Button
 Help=Not found
-Func=PresetsManager
+Func=Library
 [2]
 Text=Options
 ObjectType=Button
