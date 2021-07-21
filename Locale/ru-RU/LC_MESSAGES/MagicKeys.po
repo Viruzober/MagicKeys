@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-19 12:54+0300\n"
+"POT-Creation-Date: 2021-07-19 20:45+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -119,7 +119,7 @@ msgid "Enter OCR height:"
 msgstr ""
 
 #: D:\Root\src\import\MagicKeys\DeveloperTool\Core\Save.cs:13
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:83
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:93
 msgid "Save"
 msgstr "Сохранить"
 
@@ -156,8 +156,8 @@ msgstr ""
 #: D:\Root\src\import\MagicKeys\MagicKeys\MagicKeys.cs:36
 #: D:\Root\src\import\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
 #: D:\Root\src\import\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
-#: D:\Root\src\import\MagicKeys\MKUpdater\MKUpdater.cs:23
-#: D:\Root\src\import\MagicKeys\MKUpdater\UpdateFormActions.cs:58
+#: D:\Root\src\import\MagicKeys\MKUpdater\MKUpdater.cs:25
+#: D:\Root\src\import\MagicKeys\MKUpdater\UpdateFormActions.cs:54
 msgid "Error"
 msgstr "Ошибка"
 
@@ -264,7 +264,7 @@ msgstr "Файл не найден"
 
 #: D:\Root\src\import\MagicKeys\MagicKeys\Forms\HelpForm.cs:37
 #: D:\Root\src\import\MagicKeys\MagicKeys\Forms\MenuForm.cs:17
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:77
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:87
 msgid "Help"
 msgstr "Справка"
 
@@ -282,7 +282,7 @@ msgid "Goodbye"
 msgstr "Пока"
 
 #: D:\Root\src\import\MagicKeys\MagicKeys\Forms\MenuForm.cs:16
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:103
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:113
 msgid "Settings"
 msgstr "Настройки"
 
@@ -317,28 +317,32 @@ msgstr "Звуки включены"
 msgid "Use left/right arrow keys for navigation"
 msgstr "Использовать клавиши горизонтальных стрелок для навигации"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:39
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:40
 msgid "Enable sounds"
 msgstr "Включить звуки"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:44
-msgid "Speak control types"
-msgstr "Говорить типы элементов управления"
-
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:49
-msgid "Ask before exiting"
-msgstr "Спрашивать перед выходом"
-
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:58
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:46
 msgid "Window detection timeout (ms):"
 msgstr "Задержка при определении окон (мс):"
 
-#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:89
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:59
+msgid "Speak control types"
+msgstr "Говорить типы элементов управления"
+
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:65
+msgid "Ask before exiting"
+msgstr "Спрашивать перед выходом"
+
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:71
+msgid "Channel update"
+msgstr ""
+
+#: D:\Root\src\import\MagicKeys\MagicKeys\Forms\SettingsForm.cs:99
 #: D:\Root\src\import\MagicKeys\MKUpdater\UpdateForm.cs:62
 msgid "Cancel"
 msgstr "Отмена"
 
-#: D:\Root\src\import\MagicKeys\MKUpdater\MKUpdater.cs:23
+#: D:\Root\src\import\MagicKeys\MKUpdater\MKUpdater.cs:25
 #, fuzzy
 msgid "Something has gone wrong. Please check your internet connection."
 msgstr ""
@@ -362,7 +366,7 @@ msgstr "Выйти из MagicKeys"
 msgid "Please close MagicKeys before updating."
 msgstr ""
 
-#: D:\Root\src\import\MagicKeys\MKUpdater\UpdateFormActions.cs:58
+#: D:\Root\src\import\MagicKeys\MKUpdater\UpdateFormActions.cs:54
 msgid "Update file is corrupted."
 msgstr ""
 
