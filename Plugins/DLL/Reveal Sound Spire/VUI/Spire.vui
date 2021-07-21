@@ -10,3 +10,8 @@ Text=Presets manager
 ObjectType=Button
 Help=Not found
 Func=PresetsManager
+[2]
+Text=Options
+ObjectType=Button
+Help=Not found
+Func=Options

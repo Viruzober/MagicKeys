@@ -1,0 +1,28 @@
+[Info]
+VUI=PresetsManager
+PClass=RevealSoundSpire
+BClass=None
+PluginName=Reveal Sound Spire
+Loader=None
+[Keys]
+Home=PreviewsBank
+End=NextBank
+Up=SpeakPreset|Up
+Down=SpeakPreset|Down
+Left=SpeakPreset|Left
+Right=SpeakPreset|Right
+[1]
+Text=Previews bank
+ObjectType=Button
+Help=Not found
+Func=PreviewsBank
+[2]
+Text=Next bank
+ObjectType=Button
+Help=Not found
+Func=NextBank
+[3]
+Text=Rescan
+ObjectType=Button
+Help=Not found
+Func=Rescan
