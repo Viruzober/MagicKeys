@@ -24,13 +24,20 @@ MouseClick("Left", P[1]+355, P[2]+247, 1, 0, 0, 10);
 
 public static void AddLibrary()
 {
+try
+{
 if (OS() == "64")
 {
-Process.Start(@"Settings\Kontakt\Add Library Tool x64\Add Library.exe");
+Process.Start(@"Settings\Native Instruments Kontakt\Add Library Tool x64\Add Library.exe");
 }
 else
 {
-Process.Start(@"Settings\Kontakt\Add Library Tool x32\Add Library.exe");
+Process.Start(@"Settings\Native Instruments Kontakt\Add Library Tool x32\Add Library.exe");
+}
+}
+catch(Exception)
+{
+Speak("Add library tool not found");
 }
 }
 
