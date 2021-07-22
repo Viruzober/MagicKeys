@@ -1,16 +1,12 @@
-name: ci
+name: Release
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  release:
+    types: [ published ]
 
 jobs:
-
   windowsBuild:
     name: Windows build
-
     runs-on: windows-latest
     steps:
     - name: Checkout
@@ -26,8 +22,11 @@ jobs:
     - name: build
       run: Scripts/PublishAll.cmd /ni
 
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v2
+    - name: Upload to FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        name: MagicKeys
-        path: dist
+        server: ${{ secrets.FTPADDRESS }}
+        username: ${{ secrets.FTPUSER }}
+        password: ${{ secrets.FTPPASSWORD }}
+        local-dir: Dist/Packages/
+        server-dir: Releases/
