@@ -25,10 +25,11 @@ jobs:
       run: Scripts/PublishAll.cmd /ni
 
     - name: Upload to FTP
-      uses: sebastianpopp/ftp-action@releases/v2
+      uses: isthatcentered/dist-to-ftp@master
       with:
         host: ${{ secrets.FTPADDRESS }}
         user: ${{ secrets.FTPUSER }}
         password: ${{ secrets.FTPPASSWORD }}
-        localDir: Dist/Packages/
-        remoteDir: Nightlies/
+        path: Dist/Packages/
+        into: Nightlies/
+        cleanupExisting: false
