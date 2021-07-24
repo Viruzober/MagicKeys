@@ -142,6 +142,10 @@ else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.O)
 {
 DeveloperTool.OCRWordPosition();
 }
+else if (modifier == (MKC.CTRL) & key == Keys.W)
+{
+DeveloperTool.SpeakControlInfo();
+}
 else if (key == Keys.W)
 {
 DeveloperTool.SpeakWindowInfo();

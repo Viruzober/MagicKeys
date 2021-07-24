@@ -3,7 +3,7 @@ VUI=Sylenth1
 PClass=MagicKeys
 BClass=None
 PluginName=LennarDigital Sylenth1
-Loader=None
+Loader=VUF
 [Keys]
 [1]
 Text=Load bank

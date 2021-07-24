@@ -1,5 +1,5 @@
 [BankManager]
 1=MouseClick|Left|80|450|1|0|0|10
-1=WaitWinClose|SysTreeView32
+2=WaitWinClose|SysTreeView32
 [Options]
 1=MouseClick|Left|450|480|1|0|0|10
