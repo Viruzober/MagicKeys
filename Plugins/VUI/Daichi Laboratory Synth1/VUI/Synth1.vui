@@ -1,0 +1,19 @@
+[Info]
+VUI=Synth1
+PClass=MagicKeys
+BClass=None
+PluginName=Daichi Laboratory Synth1
+Loader=None
+[Keys]
+B=BankManager
+O=Options
+[1]
+Text=Bank manager
+ObjectType=Button
+Help=Open bank manager
+Func=BankManager
+[2]
+Text=Options
+ObjectType=Button
+Help=Open options
+Func=Options
