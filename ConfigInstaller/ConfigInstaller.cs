@@ -15,8 +15,7 @@ T._("For MagicKeys to work correctly, you need to set the screen scale to 100%. 
 T._("Attention"),
 MessageBoxButtons.YesNo,
 MessageBoxIcon.Information,
-MessageBoxDefaultButton.Button1,
-MessageBoxOptions.ServiceNotification);
+MessageBoxDefaultButton.Button1);
 if (DPI == DialogResult.OK)
 {
 ChangeDPI(-1);
@@ -26,8 +25,7 @@ T._("Also, for the MagicKeys to work properly, you need to set the maximum displ
 T._("Attention"),
 MessageBoxButtons.YesNo,
 MessageBoxIcon.Information,
-MessageBoxDefaultButton.Button1,
-MessageBoxOptions.ServiceNotification);
+MessageBoxDefaultButton.Button1);
 if (SSize == DialogResult.OK)
 {
 int[] DS = GetMaxScreenSize();

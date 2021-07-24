@@ -95,7 +95,7 @@ if (ImgSearch("Lib", true)[0] == 1)
 Speak("Please open library and select bank");
 return;
 }
-if (To == "Previews")
+if (To == "Previous")
 {
 MouseClick("Left", P[1]+295, P[2]+25, 1, 0, 0, 10);
 }
