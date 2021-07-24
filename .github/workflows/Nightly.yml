@@ -1,0 +1,34 @@
+name: Nightly
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  windowsBuild:
+    name: Windows build
+    runs-on: windows-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+
+    - name: build
+      run: Scripts/PublishAll.cmd /ni
+
+    - name: Upload to FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ${{ secrets.FTPADDRESS }}
+        username: ${{ secrets.FTPUSER }}
+        password: ${{ secrets.FTPPASSWORD }}
+        local-dir: Dist/Packages/
+        server-dir: Nightlies/
