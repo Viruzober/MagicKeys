@@ -25,7 +25,6 @@ return;
 int VUICount = Ini.IniCountSections(VUIPath);
 for(int I = 1; I <= VUICount; I++)
 {
-List<string> VUIItems = Ini.IniReadKeys(VUIPath, I.ToString());
 List<string> VUIValues = Ini.IniReadValues(VUIPath, I.ToString());
 string[] Trigger = VUIValues[0].Split("|");
 if (Trigger[0] == "Img")
