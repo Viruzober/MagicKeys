@@ -68,7 +68,7 @@ Directory.Delete(@".\Temp\", true);
 this.Close();
 return;
 }
-if(MKUpdater.GetSHA(@".\Temp\"+UpdateFileName) != MKUpdater.GetHttpContent("https://viruzober.ru/MagicKeys/"+MKUpdater.UpdateChannel+"/"+UpdateFileName+".sum"))
+if(MKUpdater.GetSHA(@".\Temp\"+UpdateFileName).ToLower() != MKUpdater.GetHttpContent("https://viruzober.ru/MagicKeys/"+MKUpdater.UpdateChannel+"/"+UpdateFileName+".sum"))
 {
 MessageBox.Show(T._("Update file is corrupted."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 Directory.Delete(@".\Temp\", true);
