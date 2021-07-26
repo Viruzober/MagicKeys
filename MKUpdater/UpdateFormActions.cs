@@ -10,6 +10,9 @@ using System.IO.Compression;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using Pluralize.NET.Core;
+using static MagicKeys.MagicKeys;
+using System.Collections.Generic;
 
 namespace MKUpdater
 {
@@ -17,18 +20,20 @@ public partial class UpdateForm : Form
 {
 
 public HttpClientDownloadWithProgress client;
-
+public string UpdateFileName = string.Empty;
 public async void ButtonOK_Click(object sender, EventArgs e)
 {
-var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
-if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
+string Proc = MKUpdater.CheckProc();
+if (Proc != string.Empty)
 {
-MessageBox.Show(T._("Please close MagicKeys before updating."), T._("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+MessageBox.Show(T._("Please close these programs before updating.")+"\r\n"+Proc, T._("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 return;
 }
 ButtonOK.Enabled = false;
 ButtonCancel.Enabled = true;
-using (client = new HttpClientDownloadWithProgress("https://viruzober.ru/MagicKeys/"+MKUpdater.UpdCH+"/MagicKeys_"+MKUpdater.NV+".zip", "MagicKeys_"+MKUpdater.NV+".zip"))
+UpdateFileName = "MagicKeys_"+new Pluralizer().Singularize(MKUpdater.UpdateChannel)+"_"+MKUpdater.NewVersion+"_x"+MagicKeys.MagicKeys.OS()+".zip";
+Directory.CreateDirectory("./Temp/");
+using (client = new HttpClientDownloadWithProgress("https://viruzober.ru/MagicKeys/"+MKUpdater.UpdateChannel+"/"+UpdateFileName, @".\Temp\"+UpdateFileName))
 {
 client.ProgressChanged += ProgressCheck;
 await client.StartDownload();
@@ -49,15 +54,16 @@ if (totalFileSize == totalBytesDownloaded)
 {
 client.Dispose();
 ButtonCancel.Enabled = false;
-if (File.Exists("MagicKeys_"+MKUpdater.NV+".zip") == false)
+if (File.Exists(@".\Temp\"+UpdateFileName) == false)
 {
 MessageBox.Show(T._("Update file is corrupted."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
-File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
+File.Delete(@".\Temp\"+UpdateFileName);
 this.Close();
 return;
 }
-ZipFile.ExtractToDirectory("MagicKeys_"+MKUpdater.NV+".zip", "./", true);
-File.Delete("MagicKeys_"+MKUpdater.NV+".zip");
+ZipFile.ExtractToDirectory(@".\Temp\"+UpdateFileName, @".\Temp\", true);
+File.Delete(@".\Temp\"+UpdateFileName);
+Process.Start(@"Temp\MKUpdater.exe", "Move");
 this.Close();
 }
 }

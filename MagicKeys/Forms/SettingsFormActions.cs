@@ -18,7 +18,8 @@ SoundTheme.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRea
 SpeakType.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SpeakType")));
 Time.Value = Convert.ToDecimal(Ini.IniRead(@".\Settings.ini", "Settings", "TimeOut"));
 Exit.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "Exit")));
-UpdCH.SelectedItem = Ini.IniRead(@".\Settings.ini", "Settings", "UpdCH");
+UpdateChannel.SelectedItem = Ini.IniRead(@".\Settings.ini", "Settings", "UpdateChannel");
+CheckUpdate.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "CheckUpdate")));
 }
 
 public void Save_Click(object sender, EventArgs e)
@@ -28,7 +29,8 @@ Ini.IniWrite(@".\Settings.ini", "Settings", "SoundTheme", Convert.ToBoolean(Soun
 Ini.IniWrite(@".\Settings.ini", "Settings", "TimeOut", (Time.Value).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "SpeakType", Convert.ToBoolean(SpeakType.Checked).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "Exit", Convert.ToBoolean(Exit.Checked).ToString());
-Ini.IniWrite(@".\Settings.ini", "Settings", "UpdCH", UpdCH.SelectedItem.ToString());
+Ini.IniWrite(@".\Settings.ini", "Settings", "UpdateChannel", UpdateChannel.SelectedItem.ToString());
+Ini.IniWrite(@".\Settings.ini", "Settings", "CheckUpdate", Convert.ToBoolean(CheckUpdate.Checked).ToString());
 MagicKeys.LoadSettings();
 this.Close();
 }

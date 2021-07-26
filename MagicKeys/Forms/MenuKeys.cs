@@ -18,13 +18,13 @@ if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F1)
 {
 if (MagicKeys.KeySwitch == 0)
 {
-Ni.Text = T._("MagicKeys {0} is disabled", ThisAssembly.Git.Tag);
+Ni.Text = T._("MagicKeys {0} is disabled", MagicKeys.GetVersion());
 MagicKeys.Speak(T._("MagicKeys is disabled"));
 MagicKeys.KeySwitch = 1;
 }
 else if (MagicKeys.KeySwitch == 1)
 {
-Ni.Text = T._("MagicKeys {0} is enabled", ThisAssembly.Git.Tag);
+Ni.Text = T._("MagicKeys {0} is enabled", MagicKeys.GetVersion());
 MagicKeys.Speak(T._("MagicKeys is enabled"));
 MagicKeys.KeySwitch = 0;
 }

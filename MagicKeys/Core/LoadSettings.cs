@@ -15,13 +15,14 @@ SoundTheme = Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "Sound
 TimeOut = Convert.ToInt32(Ini.IniRead(@".\Settings.ini", "Settings", "TimeOut"));
 SpeakType = Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "SpeakType"));
 Exit = Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "Exit"));
-UpdCH = Ini.IniRead(@".\Settings.ini", "Settings", "UpdCH");
+UpdateChannel = Ini.IniRead(@".\Settings.ini", "Settings", "UpdateChannel");
+CheckUpdate = Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "CheckUpdate"));
 }
 else
 {
 using (StreamWriter sw = new StreamWriter(@".\Settings.ini", true, System.Text.Encoding.Default))
 {
-sw.Write("[Settings]\r\nNavigationType=0\r\nSoundTheme=true\r\nTimeOut=20\r\nSpeakType=false\r\nExit=true\r\nUpdCH=Release\r\n");
+sw.Write("[Settings]\r\nNavigationType=0\r\nSoundTheme=true\r\nTimeOut=20\r\nSpeakType=false\r\nExit=true\r\nUpdateChannel="+GetUpdateChannel()+"\r\nCheckUpdate=true\r\n");
 }
 }
 }

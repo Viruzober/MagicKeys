@@ -1,23 +1,31 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
-
+using System.IO;
+using Pluralize.NET.Core;
 namespace MKUpdater
 {
 public partial class MKUpdater
 {
-public static string NV;
-public static string UpdCH;
+public static string UpdateChannel;
+public static string NewVersion;
 static void Main (string[] Args)
 {
 if(Args[0] == null) return;
+if (Args[0] == "Move")
+{
+Thread.Sleep(1000);
+CopyDirectory(@".\", @"..\");
+return;
+}
 try
 {
-UpdCH = Args[1];
-NV = GetHtmlCode("https://viruzober.ru/MagicKeys/"+UpdCH+"/ActiveVersion.txt");
-if (Args[0] == NV) return;
+UpdateChannel = new Pluralizer().Pluralize(Args[1]);
+NewVersion = GetHtmlCode("https://viruzober.ru/MagicKeys/"+UpdateChannel+"/Version.txt").Trim();
+if (Args[0] == NewVersion) return;
 UpdateForm UF = new UpdateForm();
-string Change = GetHtmlCode("https://viruzober.github.io/MagicKeys/ChangeLog.txt");
-UF.TB.Text = Change;
+string ChangeLog = GetHtmlCode("https://viruzober.ru/MagicKeys/Changelog.txt");
+UF.TB.Text = ChangeLog;
 Application.Run(UF);
 }
 catch(Exception)

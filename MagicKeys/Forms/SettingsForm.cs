@@ -14,8 +14,9 @@ public Label TimeOut = new Label();
 public NumericUpDown Time = new NumericUpDown();
 public CheckBox SpeakType = new CheckBox();
 public CheckBox Exit = new CheckBox();
-public Label LUpdCH = new Label();
-public ComboBox UpdCH = new ComboBox();
+public Label LUpdateChannel = new Label();
+public ComboBox UpdateChannel = new ComboBox();
+public CheckBox CheckUpdate = new CheckBox();
 public Button Help = new Button();
 public Button Save = new Button();
 public Button Cancel = new Button();
@@ -66,18 +67,24 @@ Exit.Text = T._("Ask before exiting");
 Exit.TabIndex = 5;
 this.Controls.Add(Exit);
 
-LUpdCH.Location = new Point(10, 190);
-LUpdCH.Size = new Size(100, 30);
-LUpdCH.Text = T._("Channel update");
-LUpdCH.TabIndex = 6;
-this.Controls.Add(LUpdCH);
+LUpdateChannel.Location = new Point(10, 190);
+LUpdateChannel.Size = new Size(100, 30);
+LUpdateChannel.Text = T._("Update channel");
+LUpdateChannel.TabIndex = 6;
+this.Controls.Add(LUpdateChannel);
 
-UpdCH.Location = new Point(110, 180);
-UpdCH.Size = new Size(100, 30);
-UpdCH.Items.AddRange(new string[2] {"Release", "Nightly"});
-UpdCH.DropDownStyle = ComboBoxStyle.DropDownList;
-UpdCH.TabIndex = 7;
-this.Controls.Add(UpdCH);
+UpdateChannel.Location = new Point(110, 180);
+UpdateChannel.Size = new Size(100, 30);
+UpdateChannel.Items.AddRange(new string[2] {"Release", "Nightly"});
+UpdateChannel.DropDownStyle = ComboBoxStyle.DropDownList;
+UpdateChannel.TabIndex = 7;
+this.Controls.Add(UpdateChannel);
+
+CheckUpdate.Location = new Point(10, 210);
+CheckUpdate.Size = new Size(400, 30);
+CheckUpdate.TabIndex = 8;
+CheckUpdate.Text = T._("check for updates when magicKeys starts");
+this.Controls.Add(CheckUpdate);
 }
 
 public void InitButton()
@@ -86,19 +93,19 @@ Help.Location = new Point(10, 310);
 Help.Size = new Size(100, 40);
 Help.Text = T._("Help");
 Help.Click += Help_Click;
-Help.TabIndex = 8;
+Help.TabIndex = 9;
 this.Controls.Add(Help);
 Save.Location = new Point(250, 310);
 Save.Size = new Size(100, 40);
 Save.Text = T._("Save");
 Save.Click += Save_Click;
-Save.TabIndex = 9;
+Save.TabIndex = 10;
 this.Controls.Add(Save);
 Cancel.Location = new Point(370, 310);
 Cancel.Size = new Size(100, 40);
 Cancel.Text = T._("Cancel");
 Cancel.Click += Cancel_Click;
-Cancel.TabIndex = 10;
+Cancel.TabIndex = 11;
 this.Controls.Add(Cancel);
 }
 
