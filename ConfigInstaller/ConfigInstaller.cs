@@ -11,7 +11,7 @@ public partial class ConfigInstaller
 [STAThread]
 static void Main()
 {
-Directory.SetCurrentDirectory(Path.GetDirectoryName(Application.ExecutablePath));
+Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
 DialogResult DPI = MessageBox.Show(
 T._("For MagicKeys to work correctly, you need to set the screen scale to 100%. When you click on the \"yes\" button, this will be done automatically."),
 T._("Attention"),

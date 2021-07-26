@@ -17,7 +17,7 @@ public static DevMenu HM;
 [STAThread]
 static void Main()
 {
-Directory.SetCurrentDirectory(Path.GetDirectoryName(Application.ExecutablePath));
+Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
 if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
 {

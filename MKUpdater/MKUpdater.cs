@@ -12,7 +12,7 @@ public static string UpdateChannel;
 public static string NewVersion;
 static void Main (string[] Args)
 {
-Directory.SetCurrentDirectory(Path.GetDirectoryName(Application.ExecutablePath));
+Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
 if(Args[0] == null)
 {
 return;

@@ -1,0 +1,1 @@
+start Dist\x64/MagicKeys.exe
