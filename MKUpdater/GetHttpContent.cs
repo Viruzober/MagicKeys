@@ -20,7 +20,7 @@ using (HttpResponseMessage response = client.GetAsync(URL).Result)
 using (HttpContent content = response.Content)
 {
 string result = content.ReadAsStringAsync().Result.ToString();
-return result;
+return result.Trim();
 }
 }
 }

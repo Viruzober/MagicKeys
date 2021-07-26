@@ -34,7 +34,7 @@ return;
 try
 {
 UpdateChannel = new Pluralizer().Pluralize(Args[1]);
-NewVersion = GetHttpContent("https://viruzober.ru/MagicKeys/"+UpdateChannel+"/Version.txt").Trim();
+NewVersion = GetHttpContent("https://viruzober.ru/MagicKeys/"+UpdateChannel+"/Version.txt");
 if (Args[0] == NewVersion)
 {
 if (Args[2] == "true")
