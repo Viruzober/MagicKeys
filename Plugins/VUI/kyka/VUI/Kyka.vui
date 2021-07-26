@@ -1,0 +1,13 @@
+[Info]
+VUI=Kyka
+PClass=MagicKeys
+BClass=None
+PluginName=Kyka
+Loader=None
+[Keys]
+M=Menu
+[1]
+Text=Bank and patch menu
+ObjectType=Button
+Help=Открыть меню банков и патчей
+Func=Menu
