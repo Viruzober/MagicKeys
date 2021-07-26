@@ -11,7 +11,7 @@ namespace MKUpdater
 public partial class MKUpdater
 {
 
-public static string GetHtmlCode(string URL)
+public static string GetHttpContent(string URL)
 {
 using (HttpClient client = new HttpClient())
 {

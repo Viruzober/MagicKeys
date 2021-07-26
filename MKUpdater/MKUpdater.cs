@@ -34,7 +34,7 @@ return;
 try
 {
 UpdateChannel = new Pluralizer().Pluralize(Args[1]);
-NewVersion = GetHtmlCode("https://viruzober.ru/MagicKeys/"+UpdateChannel+"/Version.txt").Trim();
+NewVersion = GetHttpContent("https://viruzober.ru/MagicKeys/"+UpdateChannel+"/Version.txt").Trim();
 if (Args[0] == NewVersion)
 {
 if (Args[2] == "true")
@@ -44,7 +44,7 @@ MessageBox.Show(T._("No updates available."), T._("Information"), MessageBoxButt
 return;
 }
 UpdateForm UF = new UpdateForm();
-string ChangeLog = GetHtmlCode("https://viruzober.ru/MagicKeys/Changelog.txt");
+string ChangeLog = GetHttpContent("https://viruzober.ru/MagicKeys/Changelog.txt");
 UF.TB.Text = ChangeLog;
 Application.Run(UF);
 }

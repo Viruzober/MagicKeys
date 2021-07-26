@@ -2,7 +2,7 @@ using System.Threading;
 
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
 
 public static void MouseClick(string Button, int X, int Y, int Count, int TimeMove, int TimeClick, int TimeUp)
