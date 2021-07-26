@@ -39,7 +39,7 @@ if (Args[0] == NewVersion)
 {
 if (Args[2] == "true")
 {
-MessageBox.Show(T._("No updates available."), T._("Attention"));
+MessageBox.Show(T._("No updates available."), T._("Information"), MessageBoxButtons.OK, MessageBoxIcon.Information);
 }
 return;
 }

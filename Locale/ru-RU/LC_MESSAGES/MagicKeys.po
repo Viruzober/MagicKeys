@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 21:21+0300\n"
+"POT-Creation-Date: 2021-07-26 22:54+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -27,7 +27,6 @@ msgstr ""
 
 #: D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.cs:17
 #: D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.cs:27
-#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:42
 msgid "Attention"
 msgstr ""
 
@@ -357,6 +356,10 @@ msgstr "Отмена"
 msgid "No updates available."
 msgstr "Нет доступных плагинов."
 
+#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:42
+msgid "Information"
+msgstr "Информация"
+
 #: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:53
 #, fuzzy
 msgid "Something has gone wrong. Please check your internet connection."
@@ -413,9 +416,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Вы успешно зарегистрировались. Пожалуйста, перезапустите MagicKeys для "
 #~ "применения изменений."
-
-#~ msgid "Information"
-#~ msgstr "Информация"
 
 #~ msgid "Incorrect e-mail"
 #~ msgstr "Неправильный e-mail"
