@@ -8,7 +8,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void Update()
+public static void Update(string Quiet = "false")
 {
 if (File.Exists(@".\MKUpdater.exe") == false)
 {
@@ -18,7 +18,7 @@ var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc
 if (RunProc.Count(p => p.ProcessName.Contains("MKUpdater")) > 0) return;
 ProcessStartInfo startInfo = new ProcessStartInfo();
 startInfo.FileName = "MKUpdater.exe";
-startInfo.Arguments = GetVersion()+" "+GetUpdateChannel();
+startInfo.Arguments = GetVersion()+" "+GetUpdateChannel()+" "+Quiet;
 Process.Start(startInfo);
 }
 

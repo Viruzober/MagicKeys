@@ -41,7 +41,7 @@ HM = new Menu();
 LoadSettings();
 if (CheckInternet() == true)
 {
-Update();
+if (CheckUpdate == true) Update();
 }
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(PluginDetector);

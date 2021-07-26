@@ -60,5 +60,10 @@ WSettings.Activate();
 }
 }
 
+public void CheckUpdates(object sender, EventArgs e)
+{
+MagicKeys.Update("true");
+}
+
 }
 }
