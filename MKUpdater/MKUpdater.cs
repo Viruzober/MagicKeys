@@ -27,7 +27,7 @@ return;
 if (Args[0] == "Clean")
 {
 Thread.Sleep(1000);
-Directory.Delete(@".\Temp\");
+Directory.Delete(@".\Temp\", true);
 Process.Start(@".\MagicKeys.exe");
 return;
 }
