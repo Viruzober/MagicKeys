@@ -64,7 +64,7 @@ return;
 ZipFile.ExtractToDirectory(@".\Temp\"+UpdateFileName, @".\Temp\", true);
 File.Delete(@".\Temp\"+UpdateFileName);
 this.Close();
-Process.Start(@"Temp\MKUpdater.exe", "Move");
+Process.Start(@".\Temp\MKUpdater.exe", "Move");
 }
 }
 

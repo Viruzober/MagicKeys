@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 using Pluralize.NET.Core;
 namespace MKUpdater
 {
@@ -11,15 +12,23 @@ public static string UpdateChannel;
 public static string NewVersion;
 static void Main (string[] Args)
 {
+Directory.SetCurrentDirectory(Path.GetDirectoryName(Application.ExecutablePath));
 if(Args[0] == null)
 {
 return;
 }
 if (Args[0] == "Move")
 {
-MessageBox.Show(Args[0], "");
 Thread.Sleep(1000);
 CopyDirectory(@".\", @"..\");
+Process.Start(@"..\MKUpdater.exe", "Clean");
+return;
+}
+if (Args[0] == "Clean")
+{
+Thread.Sleep(1000);
+Directory.Delete(@".\Temp\");
+Process.Start(@".\MagicKeys.exe");
 return;
 }
 try

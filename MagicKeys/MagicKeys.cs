@@ -16,6 +16,7 @@ public static Menu HM;
 [STAThread]
 static void Main()
 {
+Directory.SetCurrentDirectory(Path.GetDirectoryName(Application.ExecutablePath));
 Application.ThreadException +=
 (o, e) => MKDebugForm("ExceptionHook|"+e.Exception.ToString());
 Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
