@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
+using System.IO;
 
 namespace MagicKeys
 {
@@ -16,6 +17,7 @@ public static DevMenu HM;
 [STAThread]
 static void Main()
 {
+Directory.SetCurrentDirectory(Path.GetDirectoryName(Application.ExecutablePath));
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
 if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
 {
