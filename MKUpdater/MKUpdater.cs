@@ -35,7 +35,7 @@ try
 {
 UpdateChannel = new Pluralizer().Pluralize(Args[1]);
 NewVersion = GetHtmlCode("https://viruzober.ru/MagicKeys/"+UpdateChannel+"/Version.txt").Trim();
-if (Args[0] != NewVersion) return;
+if (Args[0] == NewVersion) return;
 UpdateForm UF = new UpdateForm();
 string ChangeLog = GetHtmlCode("https://viruzober.ru/MagicKeys/Changelog.txt");
 UF.TB.Text = ChangeLog;
