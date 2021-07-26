@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-19 20:45+0300\n"
+"POT-Creation-Date: 2021-07-26 12:10+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -26,11 +26,11 @@ msgid ""
 msgstr ""
 
 #: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:15
-#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:26
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:25
 msgid "Attention"
 msgstr ""
 
-#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:25
+#: D:\Root\src\import\MagicKeys\ConfigInstaller\ConfigInstaller.cs:24
 msgid ""
 "Also, for the MagicKeys to work properly, you need to set the maximum "
 "display resolution. Click \"Yes\" to automatically apply the parameter."
