@@ -10,7 +10,7 @@ call :exit 1
 goto :eof
 )
 
-set packagedir=%distdir%\Packages
+set packagedir=Packages
 for %%D in ("%cd%\.") do set name=%%~nxD
 for /f "useback" %%V in (`call "%~dp0GetVersion.cmd"`) do set version=%%V
 if not "%version%" == "" (
@@ -20,9 +20,12 @@ set package=%name%
 )
 
 echo Packing %package%...
-if not exist "%packagedir%" mkdir "%packagedir%"
-for /f "usebackq" %%D in (`dir /b /a:d "%distdir%"`) do powershell Compress-Archive -Force "%distdir%\%%D\*" "%packagedir%\%package%_%%D.zip"
-for /f "delims=_ tokens=2" %%V in ("%version%") do echo %%V> "%packagedir%\Version.txt"
+if not exist "%distdir%\%packagedir%" mkdir "%distdir%\%packagedir%"
+for /f "usebackq" %%D in (`dir /b /a:d "%distdir%"`) do if not "%%D" == "%packagedir%" powershell Compress-Archive -Force "%distdir%\%%D\*" "%distdir%\%packagedir%\%package%_%%D.zip"
+echo Generating checksums...
+for %%P in ("%distdir%\%packagedir%\*.zip") do certutil -hashfile %%P SHA256 | findstr /v ":"> "%%P.sum"
+echo Creating version manifest...
+for /f "delims=_ tokens=2" %%V in ("%version%") do echo %%V> "%distdir%\%packagedir%\Version.txt"
 echo Done
 call :exit
 goto :eof
