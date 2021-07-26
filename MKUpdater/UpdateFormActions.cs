@@ -33,10 +33,17 @@ ButtonOK.Enabled = false;
 ButtonCancel.Enabled = true;
 UpdateFileName = "MagicKeys_"+new Pluralizer().Singularize(MKUpdater.UpdateChannel)+"_"+MKUpdater.NewVersion+"_x"+MagicKeys.MagicKeys.OS()+".zip";
 Directory.CreateDirectory("./Temp/");
+try
+{
 using (client = new HttpClientDownloadWithProgress("https://viruzober.ru/MagicKeys/"+MKUpdater.UpdateChannel+"/"+UpdateFileName, @".\Temp\"+UpdateFileName))
 {
 client.ProgressChanged += ProgressCheck;
 await client.StartDownload();
+}
+}
+catch(Exception)
+{
+MessageBox.Show(T._("Error Downloading update. Please try again later."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 }
 }
 
@@ -55,6 +62,12 @@ if (totalFileSize == totalBytesDownloaded)
 client.Dispose();
 ButtonCancel.Enabled = false;
 if (File.Exists(@".\Temp\"+UpdateFileName) == false)
+{
+MessageBox.Show(T._("Update file is corrupted."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+this.Close();
+return;
+}
+if(MKUpdater.GetSHA(@".\Temp\"+UpdateFileName) != MKUpdater.GetHtmlCode("https://viruzober.ru/MagicKeys/"+MKUpdater.UpdateChannel+"/"+UpdateFileName+".sum"))
 {
 MessageBox.Show(T._("Update file is corrupted."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 File.Delete(@".\Temp\"+UpdateFileName);
