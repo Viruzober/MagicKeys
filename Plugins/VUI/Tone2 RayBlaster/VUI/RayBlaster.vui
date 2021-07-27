@@ -4,7 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Tone2 RayBlaster
 Loader=None
-[Keys]
 [1]
 Text=File menu
 ObjectType=Button

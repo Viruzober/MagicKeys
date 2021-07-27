@@ -4,8 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=RGC Audio sfz
 Loader=None
-[Keys]
-L=LoadSample
 [1]
 Text=Load sample
 ObjectType=Button

@@ -4,9 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Tone2 Gladiator
 Loader=None
-[Keys]
-B=BanksMenu
-P=Presets menu
 [1]
 Text=Banks menu
 ObjectType=Button

@@ -4,8 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Roland SYSTEM-1
 Loader=None
-[Keys]
-L=LoadPreset
 [1]
 Text=PresetsMenu
 ObjectType=Button

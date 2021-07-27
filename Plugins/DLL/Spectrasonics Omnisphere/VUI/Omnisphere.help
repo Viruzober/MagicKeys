@@ -1,10 +1,10 @@
-Home - Предыдущий банк.
-End - Следующий банк.
-Ctrl+Home - Предыдущая страница банков.
-Ctrl+End - Следующая страница банков.
-PageUp - Предыдущий патч.
-PageDown - Следующий патч.
-Ctrl+PageUp - Предыдущая страница патчей.
-Ctrl+PageDown - Следующая страница патчей.
-B - Имя текущего банка.
-P - Имя текущего патча.
+Home - Previous bank.
+End - Next bank.
+Ctrl + Home - Previous page of banks.
+Ctrl + End - Next page of banks.
+PageUp - Previous patch.
+PageDown - Next patch.
+Ctrl + PageUp - Previous page of patches.
+Ctrl + PageDown - Next page of patches.
+B - The name of the current bank.
+P - The name of the current patch.

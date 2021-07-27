@@ -4,7 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=LennarDigital Sylenth1
 Loader=VUF
-[Keys]
 [1]
 Text=Load bank
 ObjectType=Button

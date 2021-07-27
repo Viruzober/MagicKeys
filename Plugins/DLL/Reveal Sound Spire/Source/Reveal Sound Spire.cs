@@ -4,7 +4,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
-public class RevealSoundSpire
+public partial class RevealSoundSpire
 {
 public static string BP = "Bank";
 public static void Library()

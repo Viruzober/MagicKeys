@@ -4,7 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Toontrack EZKeys
 Loader=None
-[Keys]
 [1]
 Text=Banks menu
 ObjectType=Button

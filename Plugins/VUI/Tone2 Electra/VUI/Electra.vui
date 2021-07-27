@@ -4,9 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginNameTone2 Electra
 Loader=None
-[Keys]
-B=BankMenu
-P=PatchMenu
 [1]
 Text=Bank menu
 ObjectType=Button

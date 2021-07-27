@@ -8,7 +8,7 @@ Loader=None
 P=PresetsMenu
 PageUp=PreviousPreset
 PageDown=NextPreset
-H=Help menu
+H=Help
 [1]
 Text=Presets menu
 ObjectType=Button

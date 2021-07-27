@@ -4,8 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Roland JUPITER-8
 Loader=None
-[Keys]
-P=PresetsMenu
 [1]
 Text=Presets menu
 ObjectType=Button

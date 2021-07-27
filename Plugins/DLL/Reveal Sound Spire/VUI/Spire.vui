@@ -7,6 +7,12 @@ Loader=None
 [Keys]
 PageUp=SpeakPreset|Previous
 PageDown=SpeakPreset|Next
+Ctrl+D1=Oscillator1
+Ctrl+D2=Oscillator2
+Ctrl+D3=Oscillator3
+Ctrl+D4=Oscillator4
+Ctrl+C=CopyOscillator
+Ctrl+V=PasteOscillator
 [1]
 Text=Library
 ObjectType=Button

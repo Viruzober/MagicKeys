@@ -4,8 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Xfer Records LFOTool
 Loader=None
-[Keys]
-P=PresetsMenu
 [1]
 Text=Presets menu
 ObjectType=Button

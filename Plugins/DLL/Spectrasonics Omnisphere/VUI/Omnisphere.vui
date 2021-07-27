@@ -18,7 +18,7 @@ P=PatchName
 [1]
 Text=Search
 ObjectType=Edit
-Help=Поиск пресетов
+Help=Help not found
 Func=Search
 [2]
 Text=Category
@@ -43,5 +43,5 @@ Func=SelectChannel
 [6]
 Text=Main
 ObjectType=Tab
-Help=Not found
+Help=Help not found
 Func=MainTab

@@ -4,8 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Sonic Academy ANA
 Loader=None
-[Keys]
-L=LoadPreset
 [1]
 Text=Load preset
 ObjectType=Button

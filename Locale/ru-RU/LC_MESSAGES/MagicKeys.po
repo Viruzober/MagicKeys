@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-27 16:57+0300\n"
+"POT-Creation-Date: 2021-07-27 17:42+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -157,6 +157,7 @@ msgstr ""
 #: D:\Projects\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
 #: D:\Projects\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
 #: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:54
+#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:59
 #: D:\Projects\MagicKeys\MKUpdater\UpdateFormActions.cs:46
 #: D:\Projects\MagicKeys\MKUpdater\UpdateFormActions.cs:66
 #: D:\Projects\MagicKeys\MKUpdater\UpdateFormActions.cs:73
@@ -363,6 +364,10 @@ msgid "Information"
 msgstr "Информация"
 
 #: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:54
+msgid "the update server returned an error. Please try again later."
+msgstr ""
+
+#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:59
 #, fuzzy
 msgid "Something has gone wrong. Please check your internet connection."
 msgstr ""

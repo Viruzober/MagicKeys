@@ -4,7 +4,6 @@ PClass=MagicKeys
 BClass=None
 PluginName=Vember Audio Surge
 Loader=None
-[Keys]
 [1]
 Text=Presets menu
 ObjectType=Button

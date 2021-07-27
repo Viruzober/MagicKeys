@@ -9,5 +9,5 @@ P=LoadPreset
 [1]
 Text=Load preset
 ObjectType=Button
-Help=Загружает пресет
+Help=Help not found
 Func=LoadPreset
