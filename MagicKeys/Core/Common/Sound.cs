@@ -8,7 +8,7 @@ using System.Text;
 
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
 
 public static void SoundPlay(string SoundFile, int Wait)

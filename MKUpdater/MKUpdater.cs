@@ -51,11 +51,13 @@ Application.Run(UF);
 }
 catch(HttpRequestException)
 {
+if(Args[2] == "false") return;
 MessageBox.Show(T._("the update server returned an error. Please try again later."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 catch(Exception)
 {
+if(Args[2] == "false") return;
 MessageBox.Show(T._("Something has gone wrong. Please check your internet connection."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
