@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Net.Http;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
@@ -48,9 +49,14 @@ string ChangeLog = GetHttpContent("https://viruzober.ru/MagicKeys/Changelog.txt"
 UF.TB.Text = ChangeLog;
 Application.Run(UF);
 }
+catch(HttpRequestException)
+{
+MessageBox.Show(T._("the update server returned an error. Please try again later."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+return;
+}
 catch(Exception)
 {
-MessageBox.Show(T._("Something has gone wrong. Please check your internet connection."), T._("Error"));
+MessageBox.Show(T._("Something has gone wrong. Please check your internet connection."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 }
