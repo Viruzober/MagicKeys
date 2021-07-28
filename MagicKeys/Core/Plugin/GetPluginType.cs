@@ -18,8 +18,8 @@ public static void GetPluginType()
 {
 string ModulePath = string.Empty;
 Cals = new CustomAssemblyLoadContext();
-            //try
-            //{
+            try
+            {
 if (API.GetBClass() != "None")
 {
 ModulePath = Path.Combine(Directory.GetCurrentDirectory(), @"Plugins\"+API.GetBClass()+@"\"+API.GetBClass()+".dll");
@@ -36,12 +36,12 @@ ModulePath = Path.Combine(Directory.GetCurrentDirectory(), API.GetModulePath());
 Assembly PC = Cals.LoadFromAssemblyPath(ModulePath);
 var PTY = PC.GetType("MagicKeys."+API.GetPClass());
 PClass =  Activator.CreateInstance(PTY);
-//}
-//catch(Exception)
-//{
-//MKDebugForm("FileNotFound|"+ModulePath);
-//return;
-//}
+}
+catch(Exception)
+{
+MKDebugForm("FileNotFound|"+ModulePath);
+return;
+}
 }
 
 }
