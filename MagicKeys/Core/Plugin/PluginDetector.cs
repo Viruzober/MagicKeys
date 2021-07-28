@@ -34,6 +34,9 @@ KeyUnReg();
 SoundPlay("WindowClosed", 0);
 PClass = null;
 BClass = null;
+Cals.Unload();
+GC.Collect();
+GC.WaitForPendingFinalizers();
 }
 SubPath = string.Empty;
 CurrentPlugin.Clear();
