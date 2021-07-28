@@ -11,15 +11,13 @@ public static string InvokeFromString(string InvokeFunc, string FuncParam = null
 {
 try
 {
-Type Class = PClass;
-object OBC = Activator.CreateInstance(PClass);
+object Class = PClass;
 MethodInfo Method;
 object[] Param = null;
-if ((Method = Class.GetMethod(InvokeFunc)) == null && BClass != null)
+if ((Method = Class.GetType().GetMethod(InvokeFunc)) == null && BClass != null)
 {
 Class = BClass;
-OBC = Activator.CreateInstance(BClass);
-Method = Class.GetMethod(InvokeFunc);
+Method = Class.GetType().GetMethod(InvokeFunc);
 }
 if (Method == null)
 {
@@ -30,7 +28,7 @@ if (FuncParam != null)
 {
 Param = new object[] {FuncParam};
 }
-string Result = Method.Invoke(OBC, Param) as string;
+string Result = Method.Invoke(Class, Param) as string;
 return Result;
 }
 catch(Exception ex)

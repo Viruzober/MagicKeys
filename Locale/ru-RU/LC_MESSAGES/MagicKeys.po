@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-27 17:42+0300\n"
+"POT-Creation-Date: 2021-07-28 19:11+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -156,8 +156,8 @@ msgstr ""
 #: D:\Projects\MagicKeys\MagicKeys\MagicKeys.cs:37
 #: D:\Projects\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs:14
 #: D:\Projects\MagicKeys\MagicKeys\Forms\DebugForm.cs:47
-#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:54
-#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:59
+#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:55
+#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:61
 #: D:\Projects\MagicKeys\MKUpdater\UpdateFormActions.cs:46
 #: D:\Projects\MagicKeys\MKUpdater\UpdateFormActions.cs:66
 #: D:\Projects\MagicKeys\MKUpdater\UpdateFormActions.cs:73
@@ -180,7 +180,7 @@ msgstr "Программа MagicKeys уже запущена."
 msgid "Help file not found"
 msgstr "Файл справки не найден"
 
-#: D:\Projects\MagicKeys\MagicKeys\Core\Common\InvokeFromString.cs:26
+#: D:\Projects\MagicKeys\MagicKeys\Core\Common\InvokeFromString.cs:24
 #, csharp-format
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
@@ -363,11 +363,11 @@ msgstr "Нет доступных плагинов."
 msgid "Information"
 msgstr "Информация"
 
-#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:54
+#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:55
 msgid "the update server returned an error. Please try again later."
 msgstr ""
 
-#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:59
+#: D:\Projects\MagicKeys\MKUpdater\MKUpdater.cs:61
 #, fuzzy
 msgid "Something has gone wrong. Please check your internet connection."
 msgstr ""
