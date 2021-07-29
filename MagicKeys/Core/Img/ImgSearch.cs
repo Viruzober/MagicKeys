@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -10,20 +11,14 @@ namespace MagicKeys
 public static int[] ImgSearch(string imgPath, bool Window)
 {
 IntPtr result;
-string PImg = imgPath;
-string[] TPImg = imgPath.Split(@"\");
-if (TPImg.Length == 1)
-{
-PImg = API.GetImgPath()+imgPath;
-}
 if (Window == true)
 {
 int[] RC = GetWinRect(GetForegroundWindow());
-result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+PImg+".bmp");
+result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
 }
 else
 {
-result = ImageSearch(0, 0, Width, Height, "*20 "+PImg+".bmp");
+result = ImageSearch(0, 0, Width, Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
 }
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
@@ -47,13 +42,7 @@ return pos;
 
 public static int[] ImgSearch(string imgPath)
 {
-string PImg = imgPath;
-string[] TPImg = imgPath.Split(@"\");
-if (TPImg.Length == 1)
-{
-PImg = API.GetImgPath()+imgPath;
-}
-IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+PImg+".bmp");
+IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {

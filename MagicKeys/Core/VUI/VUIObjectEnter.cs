@@ -12,7 +12,7 @@ public static void VUIObjectEnter()
 KeyUnReg();
 if (API.GetPluginClass() == "MagicKeys")
 {
-List<string> VUFValues = Ini.IniReadValues(API.GetVUIPath()+API.GetVUI()+".vuf", API.GetFunc());
+List<string> VUFValues = Ini.IniReadValues(API.GetCurrentVUF(), API.GetFunc());
 VUFInvoke(VUFValues);
 KeyReg();
 return;

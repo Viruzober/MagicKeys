@@ -6,15 +6,12 @@ Loader=None
 [1]
 Text=Copy serial code
 ObjectType=Button
-Help=Help not found
 Func=CopySerial
 [2]
 Text=Paste activation code
 ObjectType=Button
-Help=Help not found
 Func=PasteCode
 [3]
 Text=Continue
 ObjectType=Button
-Help=Help not found
 Func=ActiveCode

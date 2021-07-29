@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -8,13 +9,7 @@ namespace MagicKeys
 {
 public static int[] ImgSearchArea(string imgPath, int X, int Y, int W, int H, int Variant)
 {
-string PImg = imgPath;
-string[] TPImg = imgPath.Split(@"\");
-if (TPImg.Length == 1)
-{
-PImg = API.GetImgPath()+imgPath;
-}
-IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+PImg+".bmp");
+IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {

@@ -6,45 +6,36 @@ Loader=None
 [1]
 Text=Amp modifier
 ObjectType=CheckBox
-Help=Help not found
 Func=AmpModifierOnOff
 [2]
 Text=Pan
 ObjectType=Slider
-Help=Help not found
 Func=AmpModifierPan
 [3]
 Text=Spread
 ObjectType=Slider
-Help=Help not found
 Func=AmpModifierSpread
 [4]
 Text=Spike
 ObjectType=Slider
-Help=Help not found
 Func=AmpModifierSpike
 [5]
 Text=Dec
 ObjectType=Slider
-Help=Help not found
 Func=AmpModifierDec
 [6]
 Text=Afk
 ObjectType=Slider
-Help=Help not found
 Func=AmpModifierAfk
 [7]
 Text=Rel
 ObjectType=Slider
-Help=Help not found
 Func=AmpModifierRel
 [8]
 Text=Sus
 ObjectType=Slider
-Help=Help not found
 Func=AmpModifierSus
 [9]
 Text=Back
 ObjectType=Button
-Help=Help not found
 Func=Back

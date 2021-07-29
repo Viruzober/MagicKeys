@@ -7,17 +7,14 @@ Loader=Code
 [1]
 Text=Round Robin
 ObjectType=CheckBox
-Help=Help not found
 Func=RoundRobin
 [2]
 Text=Auto Attack
 ObjectType=CheckBox
-Help=Help not found
 Func=AutoAttack
 [3]
 Text=Attack Time
 ObjectType=Slider
-Help=Help not found
 Func=AttackTime
 [4]
 Text=Key noise
@@ -27,70 +24,56 @@ Func=KeyNoise
 [5]
 Text=Bellow
 ObjectType=Slider
-Help=Help not found
 Func=Bellow
 [6]
 Text=Release
 ObjectType=Slider
-Help=Help not found
 Func=Release
 [7]
 Text=Reverb
 ObjectType=CheckBox
-Help=Help not found
 Func=Reverb
 [8]
 Text=Reverb Level
 ObjectType=Slider
-Help=Help not found
 Func=ReverbLevel
 [9]
 Text=Detune
 ObjectType=CheckBox
-Help=Help not found
 Func=Detune
 [10]
 Text=Sustain
 ObjectType=RadioBox
-Help=Help not found
 Func=Sustain
 [11]
 Text=Staccato
 ObjectType=RadioBox
-Help=Help not found
 Func=Staccato
 [12]
 Text=Crescendo
 ObjectType=RadioBox
-Help=Help not found
 Func=Crescendo
 [13]
 Text=Detache
 ObjectType=RadioBox
-Help=Help not found
 Func=Detache
 [14]
 Text=Piccolo
 ObjectType=CheckBox
-Help=Help not found
 Func=Piccolo
 [15]
 Text=Concertina
 ObjectType=CheckBox
-Help=Help not found
 Func=Concertina
 [16]
 Text=Clarinet
 ObjectType=CheckBox
-Help=Help not found
 Func=Clarinet
 [17]
 Text=Bossoon
 ObjectType=CheckBox
-Help=Help not found
 Func=Bossoon
 [18]
 Text=Back
 ObjectType=Button
-Help=Help not found
 Func=Back

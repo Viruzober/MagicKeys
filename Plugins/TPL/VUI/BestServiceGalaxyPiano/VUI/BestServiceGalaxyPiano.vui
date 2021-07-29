@@ -9,11 +9,9 @@ P=Info
 [1]
 Text=Presets
 ObjectType=Button
-Help=Help not found
 AutoFunc=Info
 Func=Presets
 [2]
 Text=Back
 ObjectType=Button
-Help=Help not found
 Func=Back

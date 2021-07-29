@@ -11,25 +11,20 @@ Func=MasterFilterOnOff
 [2]
 Text=CutOff
 ObjectType=Slider
-Help=Help not found
 Func=MasterFilterCutOff
 [3]
 Text=Res
 ObjectType=Slider
-Help=Help not found
 Func=MasterFilterRes
 [4]
 Text=Type
 ObjectType=RadioBoxGroup
-Help=Help not found
 Func=MasterFilterType
 [5]
 Text=Slope
 ObjectType=RadioBoxGroup
-Help=Help not found
 Func=MasterFilterSlope
 [6]
 Text=Back
 ObjectType=Button
-Help=Help not found
 Func=Back

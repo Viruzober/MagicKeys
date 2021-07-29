@@ -28,6 +28,11 @@ public static string GetCurrentVUI()
 return Path.Combine(GetVUIPath(), GetVUI()+".VUI");
 }
 
+public static string GetCurrentVUF()
+{
+return Path.Combine(GetVUIPath(), GetVUI()+".VUF");
+}
+
 public static string GetImgPath()
 {
 return Path.Combine(GetPluginPath(), "Images");

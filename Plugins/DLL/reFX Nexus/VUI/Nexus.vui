@@ -16,30 +16,24 @@ S=NexusSearch
 [1]
 Text=filter modifier
 ObjectType=Button
-Help=Help not found
 Func=FilterModifier
 [2]
 Text=Master filter
 ObjectType=Button
-Help=Help not found
 Func=MasterFilter
 [3]
 Text=Delay
 ObjectType=Button
-Help=Help not found
 Func=Delay
 [4]
 Text=Reverb
 ObjectType=Button
-Help=Help not found
 Func=Reverb
 [5]
 Text=Output
 ObjectType=Button
-Help=Help not found
 Func=Output
 [6]
 Text=Amp modifier
 ObjectType=Button
-Help=Help not found
 Func=AmpModifier

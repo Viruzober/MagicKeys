@@ -15,7 +15,6 @@ VUIKeys.Clear();
 SoundPlay("ChangeVUI", 0);
 CurrentPlugin["VUI"] = File;
 CurrentPlugin["PluginClass"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "PluginClass");
-CurrentPlugin["PluginName"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "PluginName");
 CurrentPlugin["Loader"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "Loader");
 Count = Ini.IniCountSections(API.GetCurrentVUI())-1;
 if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true)
@@ -31,7 +30,14 @@ VUIObjects.Add(I, new Dictionary<string, string>());
 VUIObjects[I].Add("Active", "true");
 VUIObjects[I].Add("Text", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Text"));
 VUIObjects[I].Add("ObjectType", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "ObjectType"));
+if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "Help") == true)
+{
 VUIObjects[I].Add("Help", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Help"));
+}
+else
+{
+VUIObjects[I].Add("Help", "Help not found");
+}
 if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "AutoFunc") == true)
 {
 VUIObjects[I].Add("AutoFunc", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "AutoFunc"));

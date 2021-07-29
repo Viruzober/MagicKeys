@@ -17,30 +17,24 @@ P=PatchName
 [1]
 Text=Search
 ObjectType=Edit
-Help=Help not found
 Func=Search
 [2]
 Text=Category
 ObjectType=Tab
-Help=Help not found
 Func=Category
 [3]
 Text=Type
 ObjectType=Tab
-Help=Help not found
 Func=Type
 [4]
 Text=Genre
 ObjectType=Tab
-Help=Help not found
 Func=Genre
 [5]
 Text=Select channel
 ObjectType=Button
-Help=Help not found
 Func=SelectChannel
 [6]
 Text=Main
 ObjectType=Tab
-Help=Help not found
 Func=MainTab

@@ -6,5 +6,4 @@ Loader=None
 [1]
 Text=Presets menu
 ObjectType=Button
-Help=Открыть меню пресетов
 Func=PresetsMenu
