@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-29 15:02+0300\n"
+"POT-Creation-Date: 2021-07-30 02:02+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -214,11 +214,11 @@ msgstr ""
 msgid " from 1 to 100"
 msgstr ""
 
-#: D:\Projects\MagicKeys\MagicKeys\Core\Plugin\PluginsListLoader.cs:59
+#: D:\Projects\MagicKeys\MagicKeys\Core\Plugin\PluginsListLoader.cs:68
 msgid "No plugins are available."
 msgstr "Нет доступных плагинов."
 
-#: D:\Projects\MagicKeys\MagicKeys\Core\Plugin\PluginsListLoader.cs:59
+#: D:\Projects\MagicKeys\MagicKeys\Core\Plugin\PluginsListLoader.cs:68
 #: D:\Projects\MagicKeys\MKUpdater\UpdateFormActions.cs:29
 msgid "Warning"
 msgstr "Внимание"
