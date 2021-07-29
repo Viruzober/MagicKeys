@@ -12,8 +12,7 @@ namespace MagicKeys
 
 public static bool SubPluginLoad()
 {
-SubPath = API.GetPluginName()+"Lib";
-string[] dir = Directory.GetDirectories(@"Plugins\"+SubPath);
+string[] dir = new string[10];
 for (int D = 0; D <= dir.Length-1; D++)
 {
 if (File.Exists(dir[D]+@"\Manifest.ini") == false)

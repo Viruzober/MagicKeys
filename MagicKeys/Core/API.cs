@@ -8,20 +8,34 @@ namespace MagicKeys
 public class API
 {
 
+public static string GetPluginPath()
+{
+string[] TempPath = GetPluginName().Split("|");
+if (TempPath.Length == 2)
+{
+return Path.Combine("Plugins", TempPath[0], "Plugins", TempPath[1]);
+}
+return Path.Combine("Plugins", TempPath[0]);
+}
+
 public static string GetVUIPath()
 {
-return Path.Combine("Plugins", SubPath, GetPluginName(), @"VUI\");
+return Path.Combine(GetPluginPath(), "VUI");
+}
+
+public static string GetCurrentVUI()
+{
+return Path.Combine(GetVUIPath(), GetVUI()+".VUI");
 }
 
 public static string GetImgPath()
 {
-return Path.Combine("Plugins", SubPath, GetPluginName(), @"Images\");
+return Path.Combine(GetPluginPath(), "Images");
 }
 
 public static string GetModulePath()
 {
-var PluginName = GetPluginName();
-return Path.Combine("Plugins", SubPath, PluginName, PluginName+".dll");
+return Path.Combine(GetPluginPath(), GetPluginName()+".dll");
 }
 
 public static string GetWTitle()
@@ -37,11 +51,6 @@ return CurrentPlugin["WClass"];
 public static string GetPluginClass()
 {
 return CurrentPlugin["PluginClass"];
-}
-
-public static string GetBClass()
-{
-return CurrentPlugin["BClass"];
 }
 
 public static string GetVUI()

@@ -10,7 +10,7 @@ public static KeyNavigator KeyNavigatorHandle = new KeyNavigator();
 
 public static void KeyNavigatorReg()
 {
-if (Ini.IniSectionExists(API.GetVUIPath()+API.GetVUIExt(), "1") == true)
+if (Ini.IniSectionExists(API.GetCurrentVUI(), "1") == true)
 {
 if (NavigationType == 0)
 {

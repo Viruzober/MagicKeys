@@ -13,38 +13,37 @@ public static void VUILoader(string File)
 KeyUnReg();
 VUIKeys.Clear();
 SoundPlay("ChangeVUI", 0);
-string VUIFile = VUIPathDetect(File);
 CurrentPlugin["VUI"] = File;
-CurrentPlugin["PluginClass"] = Ini.IniRead(VUIFile, "Info", "PluginClass");
-CurrentPlugin["PluginName"] = Ini.IniRead(VUIFile, "Info", "PluginName");
-CurrentPlugin["Loader"] = Ini.IniRead(VUIFile, "Info", "Loader");
-Count = Ini.IniCountSections(VUIFile)-1;
-if (Ini.IniSectionExists(VUIFile, "Keys") == true)
+CurrentPlugin["PluginClass"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "PluginClass");
+CurrentPlugin["PluginName"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "PluginName");
+CurrentPlugin["Loader"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "Loader");
+Count = Ini.IniCountSections(API.GetCurrentVUI())-1;
+if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true)
 {
-Count = Ini.IniCountSections(VUIFile)-2;
+Count = Ini.IniCountSections(API.GetCurrentVUI())-2;
 }
 VUIObjects.Clear();
-if (Ini.IniSectionExists(VUIFile, "1") == true)
+if (Ini.IniSectionExists(API.GetCurrentVUI(), "1") == true)
 {
 for (int I = 1; I <= Count; I++)
 {
 VUIObjects.Add(I, new Dictionary<string, string>());
 VUIObjects[I].Add("Active", "true");
-VUIObjects[I].Add("Text", Ini.IniRead(VUIFile, I.ToString(), "Text"));
-VUIObjects[I].Add("ObjectType", Ini.IniRead(VUIFile, I.ToString(), "ObjectType"));
-VUIObjects[I].Add("Help", Ini.IniRead(VUIFile, I.ToString(), "Help"));
-if (Ini.IniKeyExists(VUIFile, I.ToString(), "AutoFunc") == true)
+VUIObjects[I].Add("Text", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Text"));
+VUIObjects[I].Add("ObjectType", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "ObjectType"));
+VUIObjects[I].Add("Help", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Help"));
+if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "AutoFunc") == true)
 {
-VUIObjects[I].Add("AutoFunc", Ini.IniRead(VUIFile, I.ToString(), "AutoFunc"));
+VUIObjects[I].Add("AutoFunc", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "AutoFunc"));
 }
-VUIObjects[I].Add("Func", Ini.IniRead(VUIFile, I.ToString(), "Func"));
-if (Ini.IniKeyExists(VUIFile, I.ToString(), "Param") == true)
+VUIObjects[I].Add("Func", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Func"));
+if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "Param") == true)
 {
-VUIObjects[I].Add("Param", Ini.IniRead(VUIFile, I.ToString(), "Param"));
+VUIObjects[I].Add("Param", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Param"));
 }
-if (Ini.IniKeyExists(VUIFile, I.ToString(), "Key") == true)
+if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "Key") == true)
 {
-VUIObjects[I].Add("Key", Ini.IniRead(VUIFile, I.ToString(), "Key"));
+VUIObjects[I].Add("Key", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Key"));
 }
 }
 VUIObjectsUpdate(true);

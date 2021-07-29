@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 using System.Collections.Specialized;
 using System.Collections.Generic;
@@ -35,7 +36,7 @@ IDKey+=1;
 }
 catch(Exception)
 {
-MKDebugForm("KeyReg|"+API.GetVUIPath()+API.GetVUIExt()+"|"+KeyItems[^1]);
+MKDebugForm("KeyReg|"+API.GetCurrentVUI()+"|"+KeyItems[^1]);
 return;
 }
 }

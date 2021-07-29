@@ -37,7 +37,6 @@ ASMLoader.Unload();
 GC.Collect();
 GC.WaitForPendingFinalizers();
 }
-SubPath = string.Empty;
 CurrentPlugin.Clear();
 }
 }
