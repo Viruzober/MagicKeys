@@ -1,7 +1,5 @@
-[Info]
-VUI=Kontakt
+[Params]
 PluginClass=Kontakt
-PluginName=Native Instruments Kontakt
 Loader=Code
 [Keys]
 Ctrl+D=AllLibDelete

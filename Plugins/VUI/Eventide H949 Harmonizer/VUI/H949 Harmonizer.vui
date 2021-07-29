@@ -1,7 +1,5 @@
-[Info]
-VUI=H949 Harmonizer
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide H949 Harmonizer
 Loader=None
 [1]
 Text=Load preset

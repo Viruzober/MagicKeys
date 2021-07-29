@@ -1,7 +1,5 @@
-[Info]
-VUI=Quadravox
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Quadravox
 Loader=None
 [1]
 Text=Load preset

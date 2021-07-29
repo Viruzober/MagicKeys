@@ -1,7 +1,5 @@
-[Info]
-VUI=Instant Phaser Mk II
+[Params]
 PluginClass=MagicKeys
-PluginName=Instant Phaser Mk II
 Loader=None
 [1]
 Text=Load preset

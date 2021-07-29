@@ -1,7 +1,5 @@
-[Info]
-VUI=MicroPitch
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide MicroPitch
 Loader=None
 [1]
 Text=Load preset

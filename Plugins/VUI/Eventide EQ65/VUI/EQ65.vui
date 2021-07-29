@@ -1,7 +1,5 @@
-[Info]
-VUI=EQ65
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide EQ65
 Loader=None
 [1]
 Text=Load preset

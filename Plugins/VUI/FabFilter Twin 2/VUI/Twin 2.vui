@@ -1,7 +1,5 @@
-[Info]
-VUI=Twin 2
+[Params]
 PluginClass=MagicKeys
-PluginName=FabFilter Twin 2
 Loader=None
 [Keys]
 P=PresetsMenu

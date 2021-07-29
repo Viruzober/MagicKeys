@@ -1,7 +1,5 @@
-[Info]
-VUI=Spring
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Spring
 Loader=None
 [1]
 Text=Load preset

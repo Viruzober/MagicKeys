@@ -1,7 +1,5 @@
-﻿[Info]
-VUI=OmnisphereMain
+﻿[Params]
 PluginClass=Omnisphere
-PluginName=Omnisphere
 Loader=None
 [1]
 Text=Voice

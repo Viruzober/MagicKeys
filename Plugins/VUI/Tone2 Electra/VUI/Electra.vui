@@ -1,5 +1,4 @@
-[Info]
-VUI=Electra
+[Params]
 PluginClass=MagicKeys
 PluginNameTone2 Electra
 Loader=None

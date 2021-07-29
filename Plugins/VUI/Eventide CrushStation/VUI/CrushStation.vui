@@ -1,7 +1,5 @@
-[Info]
-VUI=CrushStation
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide CrushStation
 Loader=None
 [1]
 Text=Load preset

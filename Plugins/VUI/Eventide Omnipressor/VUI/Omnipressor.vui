@@ -1,7 +1,5 @@
-[Info]
-VUI=Omnipressor
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Omnipressor
 Loader=None
 [1]
 Text=Load preset

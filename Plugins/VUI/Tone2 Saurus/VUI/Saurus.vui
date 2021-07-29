@@ -1,7 +1,5 @@
-[Info]
-VUI=Saurus
+[Params]
 PluginClass=MagicKeys
-PluginName=Tone2 Saurus
 Loader=None
 [Keys]
 B=BanksMenu

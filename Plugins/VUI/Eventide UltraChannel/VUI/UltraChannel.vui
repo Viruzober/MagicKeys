@@ -1,7 +1,5 @@
-[Info]
-VUI=UltraChannel
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide UltraChannel
 Loader=None
 [1]
 Text=Load preset

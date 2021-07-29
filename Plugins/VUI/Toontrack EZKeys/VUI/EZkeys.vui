@@ -1,7 +1,5 @@
-[Info]
-VUI=EZKeys
+[Params]
 PluginClass=MagicKeys
-PluginName=Toontrack EZKeys
 Loader=None
 [1]
 Text=Banks menu

@@ -1,7 +1,5 @@
-[Info]
-VUI=Register
+[Params]
 PluginClass=LUXONIXPurity
-PluginName=LUXONIX Purity
 Loader=None
 [1]
 Text=Register

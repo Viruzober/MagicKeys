@@ -1,7 +1,5 @@
-[Info]
-VUI=MangledVerb
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide MangledVerb
 Loader=None
 [1]
 Text=Load preset

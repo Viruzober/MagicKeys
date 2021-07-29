@@ -1,7 +1,5 @@
-[Info]
-VUI=UltraReverb
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide UltraReverb
 Loader=None
 [1]
 Text=Load preset

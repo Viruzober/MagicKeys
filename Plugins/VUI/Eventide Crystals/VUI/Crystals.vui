@@ -1,7 +1,5 @@
-[Info]
-VUI=Crystals
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Crystals
 Loader=None
 [1]
 Text=Load preset

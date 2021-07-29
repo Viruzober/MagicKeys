@@ -1,7 +1,5 @@
-[Info]
-VUI=SYSTEM-1
+[Params]
 PluginClass=MagicKeys
-PluginName=Roland SYSTEM-1
 Loader=None
 [1]
 Text=PresetsMenu

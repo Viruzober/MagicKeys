@@ -1,7 +1,5 @@
-[Info]
-VUI=Tverb
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Tverb
 Loader=None
 [1]
 Text=Load preset

@@ -1,7 +1,5 @@
-[Info]
-VUI=H3000 Factory
+[Params]
 PluginClass=MagicKeys
-PluginName=H3000 Factory
 Loader=None
 [1]
 Text=Load preset

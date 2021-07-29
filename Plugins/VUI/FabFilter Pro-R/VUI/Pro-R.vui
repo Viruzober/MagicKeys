@@ -1,7 +1,5 @@
-[Info]
-VUI=Pro-R
+[Params]
 PluginClass=MagicKeys
-PluginName=FabFilter Pro-R
 Loader=None
 [Keys]
 P=PresetsMenu

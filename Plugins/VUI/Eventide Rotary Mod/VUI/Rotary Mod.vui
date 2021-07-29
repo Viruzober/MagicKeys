@@ -1,7 +1,5 @@
-[Info]
-VUI=Rotary Mod
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Rotary Mod
 Loader=None
 [1]
 Text=Load preset

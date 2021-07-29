@@ -1,7 +1,5 @@
-[Info]
-VUI=Instant Flanger Mk II
+[Params]
 PluginClass=MagicKeys
-PluginName=Instant Flanger Mk II
 Loader=None
 [1]
 Text=Load preset

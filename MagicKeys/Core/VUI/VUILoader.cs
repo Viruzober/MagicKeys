@@ -12,16 +12,27 @@ public static void VUILoader(string File)
 {
 KeyUnReg();
 VUIKeys.Clear();
+VUIObjects.Clear();
 SoundPlay("ChangeVUI", 0);
 CurrentPlugin["VUI"] = File;
-CurrentPlugin["PluginClass"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "PluginClass");
-CurrentPlugin["Loader"] = Ini.IniRead(API.GetCurrentVUI(), "Info", "Loader");
-Count = Ini.IniCountSections(API.GetCurrentVUI())-1;
-if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true)
+Count = Ini.IniCountSections(API.GetCurrentVUI());
+if (Ini.IniSectionExists(API.GetCurrentVUI(), "Params") == true)
 {
-Count = Ini.IniCountSections(API.GetCurrentVUI())-2;
+if (Ini.IniKeyExists(API.GetCurrentVUI(), "Params", "PluginClass") == true)
+{
+CurrentPlugin["PluginClass"] = Ini.IniRead(API.GetCurrentVUI(), "Params", "PluginClass");
 }
-VUIObjects.Clear();
+if (Ini.IniKeyExists(API.GetCurrentVUI(), "Params", "Loader") == true)
+{
+CurrentPlugin["Loader"] = Ini.IniRead(API.GetCurrentVUI(), "Params", "Loader");
+}
+else
+{
+CurrentPlugin["Loader"] = "None";
+}
+Count--;
+}
+if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true) Count--;
 if (Ini.IniSectionExists(API.GetCurrentVUI(), "1") == true)
 {
 for (int I = 1; I <= Count; I++)

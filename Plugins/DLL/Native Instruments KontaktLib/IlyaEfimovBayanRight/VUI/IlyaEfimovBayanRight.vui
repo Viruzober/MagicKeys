@@ -1,8 +1,6 @@
-[Info]
-VUI=IlyaEfimovBayanRight
+[Params]
 PluginClass=IlyaEfimovBayanRight
 BClass=Kontakt
-PluginName=IlyaEfimovBayanRight
 Loader=Code
 [1]
 Text=Round Robin

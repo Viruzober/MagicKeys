@@ -1,7 +1,5 @@
-[Info]
-VUI=Undulator
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Undulator
 Loader=None
 [1]
 Text=Load preset

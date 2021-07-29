@@ -1,7 +1,5 @@
-[Info]
-VUI=Surge
+[Params]
 PluginClass=MagicKeys
-PluginName=Vember Audio Surge
 Loader=None
 [1]
 Text=Presets menu

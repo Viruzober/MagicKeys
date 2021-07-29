@@ -1,7 +1,5 @@
-[Info]
-VUI=Pro-Q 3
+[Params]
 PluginClass=MagicKeys
-PluginName=FabFilter Pro-Q 3
 Loader=None
 [Keys]
 P=PresetsMenu

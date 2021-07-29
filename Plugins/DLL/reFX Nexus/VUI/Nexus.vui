@@ -1,7 +1,5 @@
-[Info]
-VUI=Nexus
+[Params]
 PluginClass=Nexus
-PluginName=Nexus
 Loader=None
 [Keys]
 Ctrl+Home=NexusBankPage|Back

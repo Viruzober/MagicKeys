@@ -1,7 +1,5 @@
-[Info]
-VUI=SP2016 Reverb
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide SP2016 Reverb
 Loader=None
 [1]
 Text=Load preset

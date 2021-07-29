@@ -1,7 +1,5 @@
-[Info]
-VUI=Register
+[Params]
 PluginClass=Serum
-PluginName=Xfer Records Serum
 Loader=None
 [1]
 Text=Register

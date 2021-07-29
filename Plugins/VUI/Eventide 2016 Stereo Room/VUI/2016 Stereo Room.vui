@@ -1,7 +1,5 @@
-[Info]
-VUI=2016 Stereo Room
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide 2016 Stereo Room
 Loader=None
 [Keys]
 P=LoadPreset

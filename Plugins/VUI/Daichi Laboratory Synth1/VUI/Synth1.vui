@@ -1,7 +1,5 @@
-[Info]
-VUI=Synth1
+[Params]
 PluginClass=MagicKeys
-PluginName=Daichi Laboratory Synth1
 Loader=None
 [Keys]
 B=BankManager

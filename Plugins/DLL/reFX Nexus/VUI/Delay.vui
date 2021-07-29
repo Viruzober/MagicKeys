@@ -1,7 +1,5 @@
-[Info]
-VUI=Delay
+[Params]
 PluginClass=Nexus
-PluginName=Nexus
 Loader=None
 [1]
 Text=Delay

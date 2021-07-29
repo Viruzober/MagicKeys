@@ -1,7 +1,5 @@
-[Info]
-VUI=Gladiator
+[Params]
 PluginClass=MagicKeys
-PluginName=Tone2 Gladiator
 Loader=None
 [1]
 Text=Banks menu

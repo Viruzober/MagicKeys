@@ -1,7 +1,5 @@
-[Info]
-VUI=Simplon
+[Params]
 PluginClass=MagicKeys
-PluginName=FabFilter Simplon
 Loader=None
 [Keys]
 P=PresetsMenu

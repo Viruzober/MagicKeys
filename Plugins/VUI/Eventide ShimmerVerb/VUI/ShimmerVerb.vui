@@ -1,7 +1,5 @@
-[Info]
-VUI=ShimmerVerb
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide ShimmerVerb
 Loader=None
 [1]
 Text=Load preset

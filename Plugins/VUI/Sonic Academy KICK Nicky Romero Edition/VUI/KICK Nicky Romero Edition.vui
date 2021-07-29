@@ -1,7 +1,5 @@
-[Info]
-VUI=KICK Nicky Romero Edition
+[Params]
 PluginClass=MagicKeys
-PluginName=Sonic Academy KICK Nicky Romero Edition
 Loader=None
 [Keys]
 C=CategoryMenu

@@ -1,7 +1,5 @@
-[Info]
-VUI=PlugSound
+[Params]
 PluginClass=MagicKeys
-PluginName=KVR Audio PlugSound
 Loader=None
 [1]
 Text=Bank and patch menu

@@ -1,7 +1,5 @@
-[Info]
-VUI=MAYA22USBPan
+[Params]
 PluginClass=MagicKeys
-PluginName=ESI MAYA22USBPan
 Loader=None
 [Keys]
 Home=Volume1Up

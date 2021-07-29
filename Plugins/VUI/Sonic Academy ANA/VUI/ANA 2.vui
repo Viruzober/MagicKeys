@@ -1,7 +1,5 @@
-[Info]
-VUI=ANA 2
+[Params]
 PluginClass=MagicKeys
-PluginName=Sonic Academy ANA
 Loader=None
 [1]
 Text=Load preset

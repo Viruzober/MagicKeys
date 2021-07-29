@@ -1,7 +1,5 @@
-[Info]
-VUI=Micro
+[Params]
 PluginClass=MagicKeys
-PluginName=FabFilter Micro
 Loader=None
 [Keys]
 P=PresetsMenu

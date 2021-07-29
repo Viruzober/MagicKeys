@@ -1,7 +1,5 @@
-[Info]
-VUI=Octavox
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Octavox
 Loader=None
 [1]
 Text=Load preset

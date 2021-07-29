@@ -1,7 +1,5 @@
-[Info]
-VUI=UNFILTER
+[Params]
 PluginClass=MagicKeys
-PluginName=Zynaptiq UNFILTER
 Loader=None
 [Keys]
 E=ExportFilterResponse

@@ -1,7 +1,5 @@
-[Info]
-VUI=Icarus
+[Params]
 PluginClass=MagicKeys
-PluginName=Tone2 Icarus
 Loader=None
 [1]
 Text=Bank menu

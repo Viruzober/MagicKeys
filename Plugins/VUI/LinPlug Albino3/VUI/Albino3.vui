@@ -1,7 +1,5 @@
-[Info]
-VUI=Albino3
+[Params]
 PluginClass=MagicKeys
-PluginName=LinPlug Albino3
 Loader=None
 [Keys]
 P=PresetsMenu

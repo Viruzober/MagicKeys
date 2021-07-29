@@ -1,7 +1,5 @@
-[Info]
-VUI=Purity
+[Params]
 PluginClass=LUXONIXPurity
-PluginName=LUXONIX Purity
 Loader=Code
 [1]
 Text=Bank and patch menu

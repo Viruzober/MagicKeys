@@ -1,7 +1,5 @@
-[Info]
-VUI=EChannel
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide EChannel
 Loader=None
 [1]
 Text=Load preset

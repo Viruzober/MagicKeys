@@ -1,7 +1,5 @@
-[Info]
-VUI=Omnisphere
+[Params]
 PluginClass=Omnisphere
-PluginName=Omnisphere
 Loader=Code
 [Keys]
 Ctrl+Home=OmnisphereBankPage|Back

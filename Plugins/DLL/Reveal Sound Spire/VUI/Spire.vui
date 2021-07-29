@@ -1,7 +1,5 @@
-[Info]
-VUI=Spire
+[Params]
 PluginClass=RevealSoundSpire
-PluginName=Reveal Sound Spire
 Loader=None
 [Keys]
 PageUp=SpeakPreset|Previous

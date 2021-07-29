@@ -1,7 +1,5 @@
-[Info]
-VUI=DUNE 2
+[Params]
 PluginClass=MagicKeys
-PluginName=Synapse Audio DUNE
 Loader=None
 [Keys]
 B=BanksMenu

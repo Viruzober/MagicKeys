@@ -1,7 +1,5 @@
-[Info]
-VUI=Precision Time Delay
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide Precision Time Delay
 Loader=None
 [1]
 Text=Load preset

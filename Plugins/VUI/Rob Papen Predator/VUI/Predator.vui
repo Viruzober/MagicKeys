@@ -1,7 +1,5 @@
-[Info]
-VUI=Predator
+[Params]
 PluginClass=MagicKeys
-PluginName=Rob Papen Predator
 Loader=None
 [Keys]
 B=BanksMenu

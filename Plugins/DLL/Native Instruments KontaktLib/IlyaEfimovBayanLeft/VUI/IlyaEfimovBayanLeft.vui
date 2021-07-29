@@ -1,8 +1,6 @@
-[Info]
-VUI=IlyaEfimovBayanLeft
+[Params]
 PluginClass=IlyaEfimovBayanLeft
 BClass=Kontakt
-PluginName=IlyaEfimovBayanLeft
 Loader=Code
 [1]
 Text=Auto Attack

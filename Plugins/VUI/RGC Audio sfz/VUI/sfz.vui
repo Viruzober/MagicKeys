@@ -1,7 +1,5 @@
-[Info]
-VUI=sfz
+[Params]
 PluginClass=MagicKeys
-PluginName=RGC Audio sfz
 Loader=None
 [1]
 Text=Load sample

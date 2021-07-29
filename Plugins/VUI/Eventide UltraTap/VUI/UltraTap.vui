@@ -1,7 +1,5 @@
-[Info]
-VUI=UltraTap
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide UltraTap
 Loader=None
 [1]
 Text=Load preset

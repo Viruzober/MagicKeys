@@ -1,7 +1,5 @@
-[Info]
-VUI=H3000 Band Delays
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide H3000 Band Delays
 Loader=None
 [1]
 Text=Load preset

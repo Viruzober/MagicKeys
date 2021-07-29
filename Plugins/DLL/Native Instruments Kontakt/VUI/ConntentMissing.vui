@@ -1,7 +1,5 @@
-[Info]
-VUI=ConntentMissing
+[Params]
 PluginClass=Kontakt
-PluginName=Native Instruments Kontakt
 Loader=None
 [1]
 Text=Browse for folder

@@ -1,7 +1,5 @@
-[Info]
-VUI=TriceraChorus
+[Params]
 PluginClass=MagicKeys
-PluginName=Eventide TriceraChorus
 Loader=None
 [1]
 Text=Load preset

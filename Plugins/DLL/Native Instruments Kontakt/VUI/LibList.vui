@@ -1,7 +1,5 @@
-[Info]
-VUI=LibList
+[Params]
 PluginClass=Kontakt
-PluginName=Native Instruments Kontakt
 Loader=Code
 [Keys]
 Down=LibNavigator|Next

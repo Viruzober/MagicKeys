@@ -1,7 +1,5 @@
-[Info]
-VUI=ANA
+[Params]
 PluginClass=MagicKeys
-PluginName=Sonic Academy ANA
 Loader=None
 [Keys]
 F=FactoryMenu

@@ -1,7 +1,5 @@
-[Info]
-VUI=Library
+[Params]
 PluginClass=RevealSoundSpire
-PluginName=Reveal Sound Spire
 Loader=None
 [Keys]
 Home=ChangeBank|Up

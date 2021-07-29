@@ -1,7 +1,5 @@
-[Info]
-VUI=Volcano 2
+[Params]
 PluginClass=MagicKeys
-PluginName=FabFilter Volcano 2
 Loader=None
 [Keys]
 P=PresetsMenu

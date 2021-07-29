@@ -1,7 +1,5 @@
-[Info]
-VUI=LFOTool
+[Params]
 PluginClass=MagicKeys
-PluginName=Xfer Records LFOTool
 Loader=None
 [1]
 Text=Presets menu

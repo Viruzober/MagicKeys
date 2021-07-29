@@ -1,7 +1,5 @@
-[Info]
-VUI=RayBlaster
+[Params]
 PluginClass=MagicKeys
-PluginName=Tone2 RayBlaster
 Loader=None
 [1]
 Text=File menu
