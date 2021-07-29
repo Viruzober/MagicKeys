@@ -11,15 +11,17 @@ public static string InvokeFromString(string InvokeFunc, string FuncParam = null
 {
 try
 {
-object Class = PClass;
-MethodInfo Method;
+Object Class = null;
 object[] Param = null;
-if ((Method = Class.GetType().GetMethod(InvokeFunc)) == null && BClass != null)
+if (PluginClass.GetType().GetMethod(InvokeFunc) != null)
 {
-Class = BClass;
-Method = Class.GetType().GetMethod(InvokeFunc);
+Class = PluginClass;
 }
-if (Method == null)
+ else if (MKOBJ.GetType().GetMethod(InvokeFunc) != null)
+{
+Class = MKOBJ;
+}
+else
 {
 Speak(T._("Method {0} is not implemented", InvokeFunc));
 return null;
@@ -28,6 +30,7 @@ if (FuncParam != null)
 {
 Param = new object[] {FuncParam};
 }
+MethodInfo Method = Class.GetType().GetMethod(InvokeFunc);
 string Result = Method.Invoke(Class, Param) as string;
 return Result;
 }

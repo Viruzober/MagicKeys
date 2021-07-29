@@ -1,7 +1,6 @@
 [Info]
 VUI=Omnipressor
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Omnipressor
 Loader=None
 [1]

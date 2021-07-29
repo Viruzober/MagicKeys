@@ -1,7 +1,6 @@
 [Info]
 VUI=Timeless 3
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=FabFilter Timeless 3
 Loader=None
 [Keys]

@@ -1,7 +1,6 @@
 [Info]
 VUI=D-50
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Roland D-50
 Loader=None
 [1]

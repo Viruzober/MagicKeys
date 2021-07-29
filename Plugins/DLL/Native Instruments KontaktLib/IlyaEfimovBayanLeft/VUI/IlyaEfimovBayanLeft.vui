@@ -1,6 +1,6 @@
 [Info]
 VUI=IlyaEfimovBayanLeft
-PClass=IlyaEfimovBayanLeft
+PluginClass=IlyaEfimovBayanLeft
 BClass=Kontakt
 PluginName=IlyaEfimovBayanLeft
 Loader=Code

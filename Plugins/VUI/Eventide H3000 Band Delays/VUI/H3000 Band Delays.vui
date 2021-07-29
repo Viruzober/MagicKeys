@@ -1,7 +1,6 @@
 [Info]
 VUI=H3000 Band Delays
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide H3000 Band Delays
 Loader=None
 [1]

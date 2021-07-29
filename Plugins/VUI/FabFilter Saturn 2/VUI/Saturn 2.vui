@@ -1,7 +1,6 @@
 [Info]
 VUI=Saturn 2
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=FabFilter Saturn 2
 Loader=None
 [Keys]

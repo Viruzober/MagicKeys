@@ -1,7 +1,6 @@
 [Info]
 VUI=Nexus
-PClass=Nexus
-BClass=None
+PluginClass=Nexus
 PluginName=Nexus
 Loader=None
 [Keys]

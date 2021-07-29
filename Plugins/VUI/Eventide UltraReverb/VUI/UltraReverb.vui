@@ -1,7 +1,6 @@
 [Info]
 VUI=UltraReverb
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide UltraReverb
 Loader=None
 [1]

@@ -1,7 +1,6 @@
 [Info]
 VUI=Serum
-PClass=Serum
-BClass=None
+PluginClass=Serum
 PluginName=Xfer Records Serum
 Loader=Code
 [1]

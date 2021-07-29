@@ -1,7 +1,6 @@
 [Info]
 VUI=ShimmerVerb
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide ShimmerVerb
 Loader=None
 [1]

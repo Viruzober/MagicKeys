@@ -1,7 +1,6 @@
 [Info]
 VUI=Register
-PClass=LUXONIXPurity
-BClass=None
+PluginClass=LUXONIXPurity
 PluginName=LUXONIX Purity
 Loader=None
 [1]

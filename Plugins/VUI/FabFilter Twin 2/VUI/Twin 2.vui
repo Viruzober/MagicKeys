@@ -1,7 +1,6 @@
 [Info]
 VUI=Twin 2
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=FabFilter Twin 2
 Loader=None
 [Keys]

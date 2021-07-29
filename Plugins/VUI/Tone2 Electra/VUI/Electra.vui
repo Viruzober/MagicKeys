@@ -1,7 +1,6 @@
 [Info]
 VUI=Electra
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginNameTone2 Electra
 Loader=None
 [1]

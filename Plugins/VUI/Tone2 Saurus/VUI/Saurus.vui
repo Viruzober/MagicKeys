@@ -1,7 +1,6 @@
 [Info]
 VUI=Saurus
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Tone2 Saurus
 Loader=None
 [Keys]

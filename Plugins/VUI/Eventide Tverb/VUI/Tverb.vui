@@ -1,7 +1,6 @@
 [Info]
 VUI=Tverb
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Tverb
 Loader=None
 [1]

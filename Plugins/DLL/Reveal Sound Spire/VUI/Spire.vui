@@ -1,7 +1,6 @@
 [Info]
 VUI=Spire
-PClass=RevealSoundSpire
-BClass=None
+PluginClass=RevealSoundSpire
 PluginName=Reveal Sound Spire
 Loader=None
 [Keys]

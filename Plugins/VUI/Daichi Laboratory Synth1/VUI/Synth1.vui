@@ -1,7 +1,6 @@
 [Info]
 VUI=Synth1
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Daichi Laboratory Synth1
 Loader=None
 [Keys]

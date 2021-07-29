@@ -14,8 +14,7 @@ public static void GlobalPluginLoad(string Item, string WTitle, string WClass)
 {
 CurrentPlugin.Add("WTitle", WTitle);
 CurrentPlugin.Add("WClass", WClass);
-CurrentPlugin.Add("PClass", PluginsList[Item]["PClass"]);
-CurrentPlugin.Add("BClass", PluginsList[Item]["BClass"]);
+CurrentPlugin.Add("PluginClass", PluginsList[Item]["PluginClass"]);
 CurrentPlugin.Add("VUI", PluginsList[Item]["VUI"]);
 CurrentPlugin.Add("PluginName", PluginsList[Item]["PluginName"]);
 CurrentPlugin.Add("Module", PluginsList[Item]["Module"]);

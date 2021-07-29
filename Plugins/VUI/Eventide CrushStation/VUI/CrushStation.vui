@@ -1,7 +1,6 @@
 [Info]
 VUI=CrushStation
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide CrushStation
 Loader=None
 [1]

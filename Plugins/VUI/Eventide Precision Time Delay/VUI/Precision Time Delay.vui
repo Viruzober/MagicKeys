@@ -1,7 +1,6 @@
 [Info]
 VUI=Precision Time Delay
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Precision Time Delay
 Loader=None
 [1]

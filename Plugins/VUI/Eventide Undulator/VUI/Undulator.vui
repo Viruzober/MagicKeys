@@ -1,7 +1,6 @@
 [Info]
 VUI=Undulator
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Undulator
 Loader=None
 [1]

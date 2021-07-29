@@ -9,33 +9,25 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static MagicKeys MKOC = new MagicKeys();
-public static object PClass = null;
-public static object BClass = null;
-public static CustomAssemblyLoadContext Cals = new CustomAssemblyLoadContext();
+public static MagicKeys MKOBJ = new MagicKeys();
+public static object PluginClass = null;
+public static CustomAssemblyLoadContext ASMLoader = new CustomAssemblyLoadContext();
 
 public static void GetPluginType()
 {
 string ModulePath = string.Empty;
-Cals = new CustomAssemblyLoadContext();
+ASMLoader = new CustomAssemblyLoadContext();
             try
             {
-if (API.GetBClass() != "None")
+if (API.GetPluginClass() == "MagicKeys")
 {
-ModulePath = Path.Combine(Directory.GetCurrentDirectory(), @"Plugins\"+API.GetBClass()+@"\"+API.GetBClass()+".dll");
-Assembly MKB = Cals.LoadFromAssemblyPath(ModulePath);
-var BTY = MKB.GetType("MagicKeys."+API.GetBClass(), true, true);
-BClass = Activator.CreateInstance(BTY);
-}
-if (API.GetPClass() == "MagicKeys")
-{
-PClass = MKOC.GetType();
+PluginClass = MKOBJ.GetType();
 return;
 }
 ModulePath = Path.Combine(Directory.GetCurrentDirectory(), API.GetModulePath());
-Assembly PC = Cals.LoadFromAssemblyPath(ModulePath);
-var PTY = PC.GetType("MagicKeys."+API.GetPClass());
-PClass =  Activator.CreateInstance(PTY);
+Assembly PluginClasASM = ASMLoader.LoadFromAssemblyPath(ModulePath);
+var ClassType = PluginClasASM.GetType("MagicKeys."+API.GetPluginClass());
+PluginClass =  Activator.CreateInstance(ClassType);
 }
 catch(Exception)
 {

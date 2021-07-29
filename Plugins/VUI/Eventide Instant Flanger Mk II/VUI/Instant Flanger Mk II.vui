@@ -1,7 +1,6 @@
 [Info]
 VUI=Instant Flanger Mk II
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Instant Flanger Mk II
 Loader=None
 [1]

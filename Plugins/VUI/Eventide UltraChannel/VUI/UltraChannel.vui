@@ -1,7 +1,6 @@
 [Info]
 VUI=UltraChannel
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide UltraChannel
 Loader=None
 [1]

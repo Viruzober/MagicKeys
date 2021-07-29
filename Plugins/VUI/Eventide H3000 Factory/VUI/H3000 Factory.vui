@@ -1,7 +1,6 @@
 [Info]
 VUI=H3000 Factory
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=H3000 Factory
 Loader=None
 [1]

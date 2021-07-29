@@ -1,7 +1,6 @@
 [Info]
 VUI=Instant Phaser Mk II
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Instant Phaser Mk II
 Loader=None
 [1]

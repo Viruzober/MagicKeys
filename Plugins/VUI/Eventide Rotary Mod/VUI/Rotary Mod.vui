@@ -1,7 +1,6 @@
 [Info]
 VUI=Rotary Mod
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Rotary Mod
 Loader=None
 [1]

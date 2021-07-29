@@ -1,7 +1,6 @@
 [Info]
 VUI=Quadravox
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Quadravox
 Loader=None
 [1]

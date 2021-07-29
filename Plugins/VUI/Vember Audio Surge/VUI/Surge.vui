@@ -1,7 +1,6 @@
 [Info]
 VUI=Surge
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Vember Audio Surge
 Loader=None
 [1]

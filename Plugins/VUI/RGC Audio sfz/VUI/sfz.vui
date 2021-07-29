@@ -1,7 +1,6 @@
 [Info]
 VUI=sfz
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=RGC Audio sfz
 Loader=None
 [1]

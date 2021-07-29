@@ -1,7 +1,6 @@
 [Info]
 VUI=MicroPitch
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide MicroPitch
 Loader=None
 [1]

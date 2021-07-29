@@ -1,7 +1,6 @@
 [Info]
 VUI=Physion
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Physion
 Loader=None
 [1]

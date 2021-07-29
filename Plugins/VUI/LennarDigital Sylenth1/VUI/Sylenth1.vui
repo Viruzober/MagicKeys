@@ -1,7 +1,6 @@
 [Info]
 VUI=Sylenth1
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=LennarDigital Sylenth1
 Loader=VUF
 [1]

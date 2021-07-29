@@ -1,7 +1,6 @@
 [Info]
 VUI=TriceraChorus
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide TriceraChorus
 Loader=None
 [1]

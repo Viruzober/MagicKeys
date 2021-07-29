@@ -1,7 +1,6 @@
 [Info]
 VUI=H910 Dual Harmonizer
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide H910 Dual Harmonizer
 Loader=None
 [1]

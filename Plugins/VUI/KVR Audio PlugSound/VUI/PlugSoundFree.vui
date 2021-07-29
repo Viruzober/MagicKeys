@@ -1,7 +1,6 @@
 [Info]
 VUI=PlugSoundFree
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=KVR Audio PlugSound
 Loader=None
 [1]

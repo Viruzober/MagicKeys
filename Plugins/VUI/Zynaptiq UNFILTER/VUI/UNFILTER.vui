@@ -1,7 +1,6 @@
 [Info]
 VUI=UNFILTER
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Zynaptiq UNFILTER
 Loader=None
 [Keys]

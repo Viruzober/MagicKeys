@@ -1,7 +1,6 @@
 [Info]
 VUI=Micro
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=FabFilter Micro
 Loader=None
 [Keys]

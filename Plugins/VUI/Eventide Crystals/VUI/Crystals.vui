@@ -1,7 +1,6 @@
 [Info]
 VUI=Crystals
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Crystals
 Loader=None
 [1]

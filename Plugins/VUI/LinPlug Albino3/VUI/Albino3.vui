@@ -1,7 +1,6 @@
 [Info]
 VUI=Albino3
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=LinPlug Albino3
 Loader=None
 [Keys]

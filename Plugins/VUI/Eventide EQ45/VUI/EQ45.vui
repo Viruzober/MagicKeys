@@ -1,7 +1,6 @@
 [Info]
 VUI=EQ45
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide EQ45
 Loader=None
 [1]

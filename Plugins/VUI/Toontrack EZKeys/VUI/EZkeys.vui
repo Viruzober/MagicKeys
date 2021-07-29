@@ -1,7 +1,6 @@
 [Info]
 VUI=EZKeys
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Toontrack EZKeys
 Loader=None
 [1]

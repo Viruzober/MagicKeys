@@ -1,7 +1,6 @@
 [Info]
 VUI=Gladiator
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Tone2 Gladiator
 Loader=None
 [1]

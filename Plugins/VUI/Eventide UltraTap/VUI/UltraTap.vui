@@ -1,7 +1,6 @@
 [Info]
 VUI=UltraTap
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide UltraTap
 Loader=None
 [1]

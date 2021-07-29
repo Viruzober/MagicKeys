@@ -1,7 +1,6 @@
 [Info]
 VUI=MangledVerb
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide MangledVerb
 Loader=None
 [1]

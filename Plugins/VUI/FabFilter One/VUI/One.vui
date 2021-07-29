@@ -1,7 +1,6 @@
 [Info]
 VUI=One
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=FabFilter One
 Loader=None
 [Keys]

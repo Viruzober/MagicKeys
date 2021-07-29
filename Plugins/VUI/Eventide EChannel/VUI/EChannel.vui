@@ -1,7 +1,6 @@
 [Info]
 VUI=EChannel
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide EChannel
 Loader=None
 [1]

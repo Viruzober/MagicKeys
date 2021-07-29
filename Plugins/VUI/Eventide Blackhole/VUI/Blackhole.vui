@@ -1,7 +1,6 @@
 [Info]
 VUI=Blackhole
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Blackhole
 Loader=None
 [Keys]

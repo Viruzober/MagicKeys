@@ -1,7 +1,6 @@
 [Info]
 VUI=Pro-DS
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=FabFilter Pro-DS
 Loader=None
 [Keys]

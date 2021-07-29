@@ -36,7 +36,7 @@ public static extern bool IsWindowEnabled(IntPtr hWnd);
 [DllImport("user32.dll", SetLastError = true)]
 public static extern IntPtr SendMessage(IntPtr hWnd, WM Msg, int wParam, StringBuilder lParam);
 [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
-public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName,int nMaxCount);
+public static extern int GetClassName(IntPtr hWnd, StringBuilder lClassName,int nMaxCount);
 [DllImport("user32.dll")]
 public static extern IntPtr GetForegroundWindow();
 [DllImport("user32.dll", SetLastError=true)]

@@ -1,7 +1,6 @@
 [Info]
 VUI=Octavox
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Octavox
 Loader=None
 [1]

@@ -1,7 +1,6 @@
 [Info]
 VUI=Predator
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Rob Papen Predator
 Loader=None
 [Keys]

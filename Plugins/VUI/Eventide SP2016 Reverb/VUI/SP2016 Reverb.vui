@@ -1,7 +1,6 @@
 [Info]
 VUI=SP2016 Reverb
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide SP2016 Reverb
 Loader=None
 [1]

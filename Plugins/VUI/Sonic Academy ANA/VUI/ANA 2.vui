@@ -1,7 +1,6 @@
 [Info]
 VUI=ANA 2
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Sonic Academy ANA
 Loader=None
 [1]

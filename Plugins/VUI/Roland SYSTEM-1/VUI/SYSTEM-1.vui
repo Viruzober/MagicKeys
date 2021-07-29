@@ -1,7 +1,6 @@
 [Info]
 VUI=SYSTEM-1
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Roland SYSTEM-1
 Loader=None
 [1]

@@ -1,7 +1,6 @@
 [Info]
 VUI=AmpModifier
-PClass=Nexus
-BClass=None
+PluginClass=Nexus
 PluginName=Nexus
 Loader=None
 [1]

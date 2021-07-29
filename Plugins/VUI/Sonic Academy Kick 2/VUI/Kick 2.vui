@@ -1,7 +1,6 @@
 [Info]
 VUI=Kick 2
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Sonic Academy Kick 2
 Loader=None
 [Keys]

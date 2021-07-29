@@ -1,7 +1,6 @@
 [Info]
 VUI=Spring
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Eventide Spring
 Loader=None
 [1]

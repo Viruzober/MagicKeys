@@ -1,7 +1,6 @@
 [Info]
 VUI=RayBlaster
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Tone2 RayBlaster
 Loader=None
 [1]

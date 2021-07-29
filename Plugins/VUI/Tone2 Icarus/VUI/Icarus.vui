@@ -1,7 +1,6 @@
 [Info]
 VUI=Icarus
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Tone2 Icarus
 Loader=None
 [1]

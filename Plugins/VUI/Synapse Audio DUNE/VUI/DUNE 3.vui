@@ -1,7 +1,6 @@
 [Info]
 VUI=DUNE 2
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=Synapse Audio DUNE
 Loader=None
 [Keys]

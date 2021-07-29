@@ -32,9 +32,8 @@ SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOAC
 WinClose(WH[0], WH[1]);
 KeyUnReg();
 SoundPlay("WindowClosed", 0);
-PClass = null;
-BClass = null;
-Cals.Unload();
+PluginClass = null;
+ASMLoader.Unload();
 GC.Collect();
 GC.WaitForPendingFinalizers();
 }

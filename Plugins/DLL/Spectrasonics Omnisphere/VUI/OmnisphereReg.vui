@@ -1,7 +1,6 @@
 ﻿[Info]
 VUI=Omnisphere
-PClass=Omnisphere
-BClass=None
+PluginClass=Omnisphere
 PluginName=Omnisphere
 Loader=None
 [1]

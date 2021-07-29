@@ -1,7 +1,6 @@
 [Info]
 VUI=Simplon
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=FabFilter Simplon
 Loader=None
 [Keys]

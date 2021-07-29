@@ -34,9 +34,9 @@ public static string GetWClass()
 return CurrentPlugin["WClass"];
 }
 
-public static string GetPClass()
+public static string GetPluginClass()
 {
-return CurrentPlugin["PClass"];
+return CurrentPlugin["PluginClass"];
 }
 
 public static string GetBClass()

@@ -1,7 +1,6 @@
 [Info]
 VUI=Kontakt
-PClass=Kontakt
-BClass=None
+PluginClass=Kontakt
 PluginName=Native Instruments Kontakt
 Loader=Code
 [Keys]

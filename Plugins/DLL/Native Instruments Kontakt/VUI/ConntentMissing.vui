@@ -1,7 +1,6 @@
 [Info]
 VUI=ConntentMissing
-PClass=Kontakt
-BClass=None
+PluginClass=Kontakt
 PluginName=Native Instruments Kontakt
 Loader=None
 [1]

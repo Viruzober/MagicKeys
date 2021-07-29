@@ -1,7 +1,6 @@
 [Info]
 VUI=MAYA22USBPan
-PClass=MagicKeys
-BClass=None
+PluginClass=MagicKeys
 PluginName=ESI MAYA22USBPan
 Loader=None
 [Keys]
