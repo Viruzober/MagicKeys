@@ -57,7 +57,7 @@ else
 PluginsList[Point].Add("PluginClass", "MagicKeys");
 }
 PluginsList[Point].Add("VUI", Ini.IniRead(IVUI, Point, "VUI"));
-PluginsList[Point].Add("PluginName", Point);
+PluginsList[Point].Add("PluginName", new DirectoryInfo(dir[D]).Name);
 PluginsList[Point].Add("Module", Ini.IniRead(IVUI, Point, "Module"));
 }
 }
