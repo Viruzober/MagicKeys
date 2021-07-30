@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
@@ -199,7 +200,7 @@ VUIObjectSwitcher(false, "false", 8, 8);
 public static void Back()
 {
 SubPluginUnLoad();
-Kontakt.GoToLibList();
+VUILoader("LibList");
 }
 
 }

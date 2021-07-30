@@ -10,12 +10,12 @@ public class API
 
 public static string GetPluginPath()
 {
-string[] TempPath = GetPluginName().Split("|");
-if (TempPath.Length == 2)
+string[] TempPluginName = CurrentPlugin["PluginName"].Split(".");
+if (TempPluginName.Length == 2)
 {
-return Path.Combine("Plugins", TempPath[0], "Plugins", TempPath[1]);
+return Path.Combine("Plugins", TempPluginName[0], "Subplugins", TempPluginName[1]);
 }
-return Path.Combine("Plugins", TempPath[0]);
+return Path.Combine("Plugins", TempPluginName[0]);
 }
 
 public static string GetVUIPath()
@@ -55,12 +55,22 @@ return CurrentPlugin["WClass"];
 
 public static string GetPluginClass()
 {
-string[] TempClass = CurrentPlugin["PluginClass"].Split(".");;
+string[] TempClass = CurrentPlugin["PluginClass"].Split(".");
+if (TempClass.Length == 2)
+{
+return TempClass[0];
+}
+return TempClass[0];
+}
+
+public static string GetSubClass()
+{
+string[] TempClass = CurrentPlugin["PluginClass"].Split(".");
 if (TempClass.Length == 2)
 {
 return TempClass[1];
 }
-return TempClass[0];
+return string.Empty;
 }
 
 public static string GetVUI()
@@ -75,6 +85,11 @@ return CurrentPlugin["VUI"]+".vui";
 
 public static string GetPluginName()
 {
+string[] TempPluginName = CurrentPlugin["PluginName"].Split(".");
+if (TempPluginName.Length == 2)
+{
+return TempPluginName[1];
+}
 return CurrentPlugin["PluginName"];
 }
 

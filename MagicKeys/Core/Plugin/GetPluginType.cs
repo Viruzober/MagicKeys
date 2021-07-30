@@ -10,13 +10,13 @@ public partial class MagicKeys
 {
 
 public static MagicKeys MKOBJ = new MagicKeys();
-public static object PluginClass = null;
-public static CustomAssemblyLoadContext ASMLoader = new CustomAssemblyLoadContext();
+public static object PluginClass = new object();
+public static CustomAssemblyLoadContext PluginClassLoader = new CustomAssemblyLoadContext();
 
 public static void GetPluginType()
 {
 string ModulePath = string.Empty;
-ASMLoader = new CustomAssemblyLoadContext();
+PluginClassLoader = new CustomAssemblyLoadContext();
             try
             {
 if (API.GetPluginClass() == "MagicKeys")
@@ -25,7 +25,7 @@ PluginClass = MKOBJ.GetType();
 return;
 }
 ModulePath = Path.Combine(Directory.GetCurrentDirectory(), API.GetModulePath());
-Assembly PluginClasASM = ASMLoader.LoadFromAssemblyPath(ModulePath);
+Assembly PluginClasASM = PluginClassLoader.LoadFromAssemblyPath(ModulePath);
 var ClassType = PluginClasASM.GetType("MagicKeys."+API.GetPluginClass());
 PluginClass =  Activator.CreateInstance(ClassType);
 }

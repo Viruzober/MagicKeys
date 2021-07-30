@@ -1,6 +1,5 @@
 [Params]
 PluginClass=IlyaEfimovBayanRight
-BClass=Kontakt
 Loader=Code
 [1]
 Text=Round Robin
