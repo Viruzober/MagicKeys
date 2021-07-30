@@ -42,7 +42,7 @@ call :exit 1 && goto :eof
 )
 
 set filelist=Files.txt
-for /r "%localedir%" %%D in (*.po) do if not defined projname set projname=%%~nxD
+for /r "%localedir%" %%F in (*.po) do if not defined projname set projname=%%~nF
 for /r "%rootdir%" %%F in (*.cs) do (
 set p=%%F
 echo !p:%__cd__%=!>> "%filelist%"
