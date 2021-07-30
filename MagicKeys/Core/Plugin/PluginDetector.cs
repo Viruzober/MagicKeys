@@ -33,7 +33,11 @@ WinClose(WH[0], WH[1]);
 KeyUnReg();
 SoundPlay("WindowClosed", 0);
 PluginClass = null;
-ASMLoader.Unload();
+PluginClassLoader.Unload();
+if (API.GetSubClass() != string.Empty && API.GetSubClass() != "MagicKeys")
+{
+SubClassLoader.Unload();
+}
 GC.Collect();
 GC.WaitForPendingFinalizers();
 }

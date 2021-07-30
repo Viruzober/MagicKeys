@@ -12,7 +12,8 @@ namespace MagicKeys
 
 public static void SubPluginUnLoad()
 {
-return;
+CurrentPlugin["PluginName"] = CurrentPlugin["PluginName"].Split(".")[0];
+CurrentPlugin["PluginClass"] = CurrentPlugin["PluginClass"].Split(".")[0];
 }
 
 }

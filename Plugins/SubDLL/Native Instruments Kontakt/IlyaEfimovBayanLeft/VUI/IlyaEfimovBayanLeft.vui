@@ -1,6 +1,5 @@
 [Params]
 PluginClass=IlyaEfimovBayanLeft
-BClass=Kontakt
 Loader=Code
 [1]
 Text=Auto Attack
