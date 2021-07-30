@@ -31,7 +31,12 @@ call :exit
 goto :eof
 
 :exit
+set err=%errorlevel%
 popd
+if not "%~1" == "" (
 exit /b %~1
+) else (
+exit /b %err%
+)
 
 endlocal
