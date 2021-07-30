@@ -48,9 +48,16 @@ else
 {
 PluginsList[Point].Add("WClass", WClass);
 }
+if (Ini.IniKeyExists(IVUI, Point, "PluginClass") == true)
+{
 PluginsList[Point].Add("PluginClass", Ini.IniRead(IVUI, Point, "PluginClass"));
+}
+else
+{
+PluginsList[Point].Add("PluginClass", "MagicKeys");
+}
 PluginsList[Point].Add("VUI", Ini.IniRead(IVUI, Point, "VUI"));
-PluginsList[Point].Add("PluginName", Ini.IniRead(IVUI, Point, "PluginName"));
+PluginsList[Point].Add("PluginName", Point);
 PluginsList[Point].Add("Module", Ini.IniRead(IVUI, Point, "Module"));
 }
 }
