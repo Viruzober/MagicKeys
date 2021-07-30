@@ -55,7 +55,12 @@ return CurrentPlugin["WClass"];
 
 public static string GetPluginClass()
 {
-return CurrentPlugin["PluginClass"];
+string[] TempClass = CurrentPlugin["PluginClass"].Split(".");;
+if (TempClass.Length == 2)
+{
+return TempClass[1];
+}
+return TempClass[0];
 }
 
 public static string GetVUI()
