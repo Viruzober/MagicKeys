@@ -30,9 +30,6 @@ public static extern bool EnumWindows(EnumWindowsProc lpEnumFunc, IntPtr lParam)
 public static extern bool EnumChildWindows(IntPtr hwndParent, EnumChildProcDelegate lpEnumFunc, IntPtr lParam);
 [DllImport("user32.dll")]
 public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-[DllImport("user32.dll")]
-[return: MarshalAs(UnmanagedType.Bool)]
-public static extern bool IsWindowEnabled(IntPtr hWnd);
 [DllImport("user32.dll", SetLastError = true)]
 public static extern IntPtr SendMessage(IntPtr hWnd, WM Msg, int wParam, StringBuilder lParam);
 [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Auto)]
@@ -49,8 +46,6 @@ public static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int 
 public static extern IntPtr WindowFromPoint(WinPoint p);
 [DllImport("user32.dll", CharSet = CharSet.Auto)]
 public static extern IntPtr SendMessage(IntPtr hWnd, int Msg, int wParam, IntPtr lParam);
-[DllImport("user32.dll", ExactSpelling = true)]
-public static extern IntPtr GetAncestor(IntPtr hwnd, uint flags);
 [DllImport("user32.dll")]
 static extern int GetMenuItemCount(IntPtr hMenu);
 [DllImport("user32.dll")]
