@@ -32,6 +32,10 @@ CurrentPlugin["Loader"] = "None";
 }
 Count--;
 }
+else
+{
+CurrentPlugin["Loader"] = "None";
+}
 if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true) Count--;
 if (Ini.IniSectionExists(API.GetCurrentVUI(), "1") == true)
 {
@@ -65,7 +69,10 @@ VUIObjects[I].Add("Key", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Key"));
 }
 VUIObjectsUpdate(true);
 }
+if (API.GetSubClass() == string.Empty)
+{
 GetPluginType();
+}
 VUIPluginLoad();
 KeyLoader();
 KeyReg();

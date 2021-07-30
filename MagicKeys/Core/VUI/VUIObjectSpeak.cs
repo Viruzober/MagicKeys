@@ -16,9 +16,9 @@ SpeakObject += " "+API.GetObjectType();
 if (API.GetAutoFunc() != null)
 {
 string AutoFunc;
-if (API.GetPluginClass() == "MagicKeys")
+if (API.GetPluginClass() == "MagicKeys" | API.GetSubClass() == "MagicKeys")
 {
-List<string> VUFValues = Ini.IniReadValues(API.GetVUIPath()+API.GetVUI()+".vuf", API.GetAutoFunc());
+List<string> VUFValues = Ini.IniReadValues(API.GetCurrentVUF(), API.GetAutoFunc());
 AutoFunc = VUFAutoFunc(VUFValues);
 }
 else

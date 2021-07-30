@@ -10,7 +10,7 @@ namespace MagicKeys
 public static void VUIObjectEnter()
 {
 KeyUnReg();
-if (API.GetPluginClass() == "MagicKeys")
+if (API.GetPluginClass() == "MagicKeys" | API.GetSubClass() == "MagicKeys")
 {
 List<string> VUFValues = Ini.IniReadValues(API.GetCurrentVUF(), API.GetFunc());
 VUFInvoke(VUFValues);

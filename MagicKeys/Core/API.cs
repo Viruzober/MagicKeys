@@ -106,7 +106,7 @@ return CurrentPlugin["Loader"];
 }
 else
 {
-return null;
+return "None";
 }
 }
 

@@ -5,9 +5,10 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void VUFSpeak(String Param)
+public static string VUFSpeak(String Param)
 {
 Speak(Param);
+return Param;
 }
 
 }
