@@ -27,7 +27,6 @@ AutoFunc = InvokeFromString(API.GetAutoFunc());
 }
 SpeakObject += " "+AutoFunc;
 }
-SpeakObject += " "+API.GetObjectKey();
 Speak(SpeakObject);
 }
 

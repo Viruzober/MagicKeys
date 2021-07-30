@@ -62,10 +62,6 @@ if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "Param") == true)
 {
 VUIObjects[I].Add("Param", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Param"));
 }
-if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "Key") == true)
-{
-VUIObjects[I].Add("Key", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Key"));
-}
 }
 VUIObjectsUpdate(true);
 }

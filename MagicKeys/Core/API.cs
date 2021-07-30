@@ -148,14 +148,5 @@ return VUIObjects[ActiveObjects[Section]]["Param"];
 return null;
 }
 
-public static string GetObjectKey()
-{
-if (VUIObjects[ActiveObjects[Section]].ContainsKey("Key") == true)
-{
-return VUIObjects[ActiveObjects[Section]]["Key"];
-}
-return null;
-}
-
 }
 }
