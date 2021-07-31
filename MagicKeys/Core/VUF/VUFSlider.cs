@@ -7,7 +7,7 @@ public partial class MagicKeys
 
 public static void VUFSlider(string Param)
 {
-string[] FP = Param.Split("|");
+string[] FP = Param.Split(",");
 Slider(
 FP[0],
 P[1]+Convert.ToInt32(FP[1]),

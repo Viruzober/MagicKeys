@@ -7,7 +7,7 @@ public partial class MagicKeys
 
 public static string VUFOCR(String Param)
 {
-string[] PR = Param.Split("|");
+string[] PR = Param.Split(",");
 string R = ImgToText(
 Convert.ToInt32(PR[0]),
 Convert.ToInt32(PR[1]),

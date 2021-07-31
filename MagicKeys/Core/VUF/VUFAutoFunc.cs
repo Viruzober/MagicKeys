@@ -13,10 +13,10 @@ public static string VUFAutoFunc(List<string> Action)
 string R = null;
 for(int I = 0 ; I <= Action.Count-1; I++)
 {
-string[] FP = Action[I].Split("|", 2);
+string[] FP = Action[I].Split(",", 2);
 if (FP[0] == "Func")
 {
-string[] Param = FP[1].Split("|", 2);
+string[] Param = FP[1].Split(",", 2);
 if (Param.Length == 1)
 {
 R += " "+InvokeFromString(Param[0]);

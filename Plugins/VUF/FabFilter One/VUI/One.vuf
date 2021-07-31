@@ -1,8 +1,8 @@
 [PresetsMenu]
-1=MouseClick|Left|335|17|1|0|0|10
+1=MouseClick,Left,335,17,1,0,0,10
 [PreviousPreset]
-1=MouseClick|Left|300|17|1|0|0|10
+1=MouseClick,Left,300,17,1,0,0,10
 [NextPreset]
-1=MouseClick|Left|435|17|1|0|0|10
+1=MouseClick,Left,435,17,1,0,0,10
 [Help]
-1=MouseClick|Left|470|17|1|0|0|10
+1=MouseClick,Left,470,17,1,0,0,10

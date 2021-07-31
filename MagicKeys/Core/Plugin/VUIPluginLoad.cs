@@ -26,7 +26,7 @@ int VUICount = Ini.IniCountSections(VUIPath);
 for(int I = 1; I <= VUICount; I++)
 {
 List<string> VUIValues = Ini.IniReadValues(VUIPath, I.ToString());
-string[] Trigger = VUIValues[0].Split("|");
+string[] Trigger = VUIValues[0].Split(",");
 if (Trigger[0] == "Img")
 {
 if (ImgSearch(Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))

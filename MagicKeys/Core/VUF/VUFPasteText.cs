@@ -10,7 +10,7 @@ public partial class MagicKeys
 public static void VUFPasteText(string Param)
 {
 if (CopyText == string.Empty) return;
-string[] FP = Param.Split("|");
+string[] FP = Param.Split(",");
 MouseClick("Left", P[1]+Convert.ToInt32(FP[0]), P[2]+Convert.ToInt32(FP[1]), 1, 0, 0, 10);
 Thread.Sleep(50);
 if (FP[2] == "Key")

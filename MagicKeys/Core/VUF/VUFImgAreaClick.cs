@@ -7,7 +7,7 @@ public partial class MagicKeys
 
 public static void VUFImgAreaClick(String Param)
 {
-string[] PR = Param.Split("|");
+string[] PR = Param.Split(",");
 int[] Img = ImgSearchArea(PR[0],
 P[1]+Convert.ToInt32(PR[2]),
 P[2]+Convert.ToInt32(PR[3]),

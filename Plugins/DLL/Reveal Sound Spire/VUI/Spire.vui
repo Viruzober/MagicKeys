@@ -2,8 +2,8 @@
 PluginClass=RevealSoundSpire
 Loader=None
 [Keys]
-PageUp=SpeakPreset|Previous
-PageDown=SpeakPreset|Next
+PageUp=SpeakPreset,Previous
+PageDown=SpeakPreset,Next
 Ctrl+D1=Oscillator1
 Ctrl+D2=Oscillator2
 Ctrl+D3=Oscillator3

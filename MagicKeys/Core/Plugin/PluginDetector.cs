@@ -14,7 +14,6 @@ public static void PluginDetector()
 {
 while(true)
 {
-//
 Thread.Sleep(TimeOut);
 if (KeySwitch == 1) continue;
 foreach(string Item in PluginsList.Keys)
@@ -36,6 +35,7 @@ PluginClass = null;
 PluginClassLoader.Unload();
 if (API.GetSubClass() != string.Empty && API.GetSubClass() != "MagicKeys")
 {
+SubClass = null;
 SubClassLoader.Unload();
 }
 GC.Collect();

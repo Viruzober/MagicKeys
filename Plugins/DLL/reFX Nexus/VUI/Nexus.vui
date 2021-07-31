@@ -2,14 +2,14 @@
 PluginClass=Nexus
 Loader=None
 [Keys]
-Ctrl+Home=NexusBankPage|Back
-Ctrl+End=NexusBankPage|Next
-Ctrl+PageUp=NexusPatchPage|Back
-Ctrl+PageDown=NexusPatchPage|Next
-Home=NexusBank|Back
-End=NexusBank|Next
-PageUp=NexusPatch|Back
-PageDown=NexusPatch|Next
+Ctrl+Home=NexusBankPage,Back
+Ctrl+End=NexusBankPage,Next
+Ctrl+PageUp=NexusPatchPage,Back
+Ctrl+PageDown=NexusPatchPage,Next
+Home=NexusBank,Back
+End=NexusBank,Next
+PageUp=NexusPatch,Back
+PageDown=NexusPatch,Next
 S=NexusSearch
 [1]
 Text=filter modifier

@@ -1,8 +1,8 @@
 [Learn]
-1=MouseClick|Left|38|307|1|0|0|10
+1=MouseClick,Left,38,307,1,0,0,10
 [ExportFilterResponse]
-1=MouseClick|Left|98|372|1|0|0|10
+1=MouseClick,Left,98,372,1,0,0,10
 [ResetLearning]
-1=MouseClick|Left|108|307|1|0|0|10
+1=MouseClick,Left,108,307,1,0,0,10
 [ImportFilterResponse]
-1=MouseClick|Left|143|372|1|0|0|10
+1=MouseClick,Left,143,372,1,0,0,10

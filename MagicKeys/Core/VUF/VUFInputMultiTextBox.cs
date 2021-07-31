@@ -8,7 +8,7 @@ public partial class MagicKeys
 
 public static void VUFInputMultiTextBox(string Param)
 {
-string[] FP = Param.Split("|");
+string[] FP = Param.Split(",");
 string ITB = InputMultiTextBox(FP[0], FP[1]);
 if (ITB == "0")
 {

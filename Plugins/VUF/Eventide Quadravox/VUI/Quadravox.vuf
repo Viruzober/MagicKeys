@@ -1,4 +1,4 @@
 [LoadPreset]
-1=MouseClick|Left|230|20|1|0|0|10
+1=MouseClick,Left,230,20,1,0,0,10
 [SavePreset]
-1=MouseClick|Left|270|20|1|0|0|10
+1=MouseClick,Left,270,20,1,0,0,10

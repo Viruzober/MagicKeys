@@ -8,7 +8,7 @@ public partial class MagicKeys
 
 public static void VUFVUIObjectSwitcher(String Param)
 {
-string[] PR = Param.Split("|");
+string[] PR = Param.Split(",");
 VUIObjectSwitcher(
 Convert.ToBoolean(PR[0]),
 PR[1],

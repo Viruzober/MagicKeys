@@ -7,7 +7,7 @@ public partial class MagicKeys
 
 public static void VUFMouseOCR(String Param)
 {
-string[] PR = Param.Split("|");
+string[] PR = Param.Split(",");
 int[] MP = GetMousePosition();
 string R = ImgToText(
 Convert.ToInt32(PR[0]),

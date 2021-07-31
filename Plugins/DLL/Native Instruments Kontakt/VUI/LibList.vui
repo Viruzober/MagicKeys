@@ -2,8 +2,8 @@
 PluginClass=Kontakt
 Loader=Code
 [Keys]
-Down=LibNavigator|Next
-Up=LibNavigator|Back
+Down=LibNavigator,Next
+Up=LibNavigator,Back
 I=LibGetInfo
 S=LibGetSnapshot
 D=LibDelete

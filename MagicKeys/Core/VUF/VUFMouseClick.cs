@@ -7,7 +7,7 @@ public partial class MagicKeys
 
 public static void VUFMouseClick(String Param)
 {
-string[] PR = Param.Split("|");
+string[] PR = Param.Split(",");
 MouseClick(PR[0],
 P[1]+Convert.ToInt32(PR[1]),
 P[2]+Convert.ToInt32(PR[2]),
