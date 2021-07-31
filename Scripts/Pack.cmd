@@ -21,14 +21,17 @@ set package=%name%
 
 echo Packing %package%...
 if not exist "%distdir%\%packagedir%" mkdir "%distdir%\%packagedir%"
-for /f "usebackq" %%D in (`dir /b /a:d "%distdir%"`) do if not "%%D" == "%packagedir%" powershell Compress-Archive -Force "%distdir%\%%D\*" "%distdir%\%packagedir%\%package%_%%D.zip"
+for /f "usebackq" %%D in (`dir /b /a:d "%distdir%"`) do (
+if not "%%D" == "%packagedir%" (
+powershell Compress-Archive -Force "%distdir%\%%D\*" "%distdir%\%packagedir%\%package%_%%D.zip"
+)
+)
 echo Generating checksums...
 for %%P in ("%distdir%\%packagedir%\*.zip") do certutil -hashfile %%P SHA256 | findstr /v ":"> "%%P.sum"
 echo Creating version manifest...
 for /f "delims=_ tokens=2" %%V in ("%version%") do echo %%V> "%distdir%\%packagedir%\Version.txt"
 echo Done
-call :exit
-goto :eof
+call :exit && goto :eof
 
 :exit
 set err=%errorlevel%

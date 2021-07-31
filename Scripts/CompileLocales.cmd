@@ -4,6 +4,7 @@ setlocal enableextensions enabledelayedexpansion
 set gtkeyword=T._
 
 pushd "%~dp0\.."
+
 if "%~1" == "--help" (
 echo The universal NGettext integration script by A11CF0
 echo Usage: %0 [ROOTDIR] [TARGETDIR]

@@ -1,17 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
     <Platforms>x86;x64</Platforms>
-    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <AssemblyName>MagicKeys</AssemblyName>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
@@ -73,21 +73,15 @@
 
   <ItemGroup>
     <None Remove=".gitignore" />
-    <None Remove="app.manifest" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Gettext.Tools" Version="0.21.0" />
+    <PackageReference Include="Gettext.Tools" Version="0.21.0.1" />
     <PackageReference Include="GitInfo" Version="2.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.19041.1" />
     <PackageReference Include="NGettext" Version="0.6.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="app.manifest" />
   </ItemGroup>
 
   <ItemGroup>
@@ -100,7 +94,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;set subvufdir=$(SolutionDir)Plugins\SubVUF&#xD;&#xA;call &quot;$(SolutionDir)Scripts\CompileLocales.cmd&quot; &quot;$(SolutionDir)&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Plugins\VUF&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;for /f &quot;usebackq tokens=*&quot; %25%25P in (`dir /b /a:d &quot;%25subvufdir%25&quot;`) do for /f &quot;usebackq tokens=*&quot; %25%25D in (`dir /b /a:d &quot;%25subvufdir%25\%25%25P&quot;`) do (&#xD;&#xA;xcopy /e /i /q /y &quot;%25subvufdir%25\%25%25P\%25%25D&quot; &quot;$(TargetDir)Plugins\%25%25P\Subplugins\%25%25D&quot; &gt; nul&#xD;&#xA;)&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Lib&quot; &quot;%25distdir%25\Lib&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Locale&quot; &quot;%25distdir%25\Locale&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Plugins&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Sounds&quot; &quot;%25distdir%25\Sounds&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;%25distdir%25&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;%25distdir%25&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.txt&quot; &quot;%25distdir%25\&quot; &gt; nul" />
+    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;set subvufdir=$(SolutionDir)Plugins\SubVUF&#xD;&#xA;call &quot;$(SolutionDir)Scripts\CompileLocales.cmd&quot; &quot;$(SolutionDir)&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Plugins\VUF&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;for /f &quot;usebackq tokens=*&quot; %25%25P in (`dir /b /a:d &quot;%25subvufdir%25&quot;`) do for /f &quot;usebackq tokens=*&quot; %25%25D in (`dir /b /a:d &quot;%25subvufdir%25\%25%25P&quot;`) do (&#xD;&#xA;xcopy /e /i /q /y &quot;%25subvufdir%25\%25%25P\%25%25D&quot; &quot;$(TargetDir)Plugins\%25%25P\Subplugins\%25%25D&quot; &gt; nul&#xD;&#xA;)&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Locale&quot; &quot;%25distdir%25\Locale&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Plugins&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Sounds&quot; &quot;%25distdir%25\Sounds&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x86&quot; copy /y &quot;$(SolutionDir)Lib\*32.dll&quot; &quot;%25distdir%25&quot; &gt; nul&#xD;&#xA;if &quot;$(PlatformName)&quot; == &quot;x64&quot; copy /y &quot;$(SolutionDir)Lib\*64.dll&quot; &quot;%25distdir%25&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.txt&quot; &quot;%25distdir%25\&quot; &gt; nul" />
   </Target>
 
   <Target Name="ProjectCleanup" BeforeTargets="PreBuildEvent" AfterTargets="Clean">
