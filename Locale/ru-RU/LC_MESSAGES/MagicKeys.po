@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-30 18:00+0300\n"
+"POT-Creation-Date: 2021-07-31 18:26+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -161,7 +161,7 @@ msgstr "Ошибка"
 msgid "You must close DeveloperTool to run MagicKeys."
 msgstr ""
 
-#: MagicKeys\MagicKeys.cs:55
+#: MagicKeys\MagicKeys.cs:52
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
 

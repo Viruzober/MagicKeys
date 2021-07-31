@@ -39,10 +39,7 @@ return;
 }
 HM = new Menu();
 LoadSettings();
-if (CheckInternet() == true)
-{
 if (CheckUpdate == true) Update();
-}
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(PluginDetector);
 ThreadPluginDetector.IsBackground = true;
