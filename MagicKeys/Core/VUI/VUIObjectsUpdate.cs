@@ -1,4 +1,5 @@
 using System;
+using Microsoft.Collections.Extensions;
 
 namespace MagicKeys
 {

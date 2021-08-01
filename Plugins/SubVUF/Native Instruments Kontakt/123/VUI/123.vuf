@@ -1,7 +1,7 @@
 [Test]
-1=Speak,Test
+Speak=Test
 [Back]
-1=Func,SubPluginUnLoad
-2=VUILoader,LibList
+Func=SubPluginUnLoad
+VUILoader=LibList
 [Super]
-1=Speak,This super down testing
+Speak=This super down testing

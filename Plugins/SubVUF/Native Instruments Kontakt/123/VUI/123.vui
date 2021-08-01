@@ -5,9 +5,7 @@ Text=Test
 ObjectType=Button
 Func=Test
 AutoFunc=Super
-Key=Ctrl+T
 [2]
 Text=Back
 ObjectType=Button
 Func=Back
-Key=F10

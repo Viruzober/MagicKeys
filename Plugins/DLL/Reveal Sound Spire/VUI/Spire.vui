@@ -4,10 +4,10 @@ Loader=None
 [Keys]
 PageUp=SpeakPreset,Previous
 PageDown=SpeakPreset,Next
-Ctrl+D1=Oscillator1
-Ctrl+D2=Oscillator2
-Ctrl+D3=Oscillator3
-Ctrl+D4=Oscillator4
+Ctrl+1=Oscillator1
+Ctrl+2=Oscillator2
+Ctrl+3=Oscillator3
+Ctrl+4=Oscillator4
 Ctrl+C=CopyOscillator
 Ctrl+V=PasteOscillator
 [1]

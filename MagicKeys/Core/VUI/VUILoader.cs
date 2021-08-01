@@ -1,6 +1,9 @@
 using System;
+using Microsoft.Collections.Extensions;
 using System.IO;
 using System.Collections.Generic;
+using System.Text;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace MagicKeys
@@ -13,62 +16,37 @@ public static void VUILoader(string File)
 KeyUnReg();
 VUIKeys.Clear();
 VUIObjects.Clear();
+ActiveObjects.Clear();
 SoundPlay("ChangeVUI", 0);
 CurrentPlugin["VUI"] = File;
-Count = Ini.IniCountSections(API.GetCurrentVUI());
-if (Ini.IniSectionExists(API.GetCurrentVUI(), "Params") == true)
+ParamsLoader();
+string[] AllVUIObjects = Ini.IniReadSections(API.GetCurrentVUI()).Where(ParamSections => ParamSections != "Params" && ParamSections != "Keys").ToArray();
+foreach(var ObjectName in AllVUIObjects)
 {
-if (Ini.IniKeyExists(API.GetCurrentVUI(), "Params", "PluginClass") == true)
+VUIObjects.Add(ObjectName, new OrderedDictionary<string, string>());
+VUIObjects.GetValueOrDefault(ObjectName).Add("Active", "true");
+VUIObjects.GetValueOrDefault(ObjectName).Add("Text", Ini.IniRead(API.GetCurrentVUI(), ObjectName, "Text"));
+VUIObjects.GetValueOrDefault(ObjectName).Add("ObjectType", Ini.IniRead(API.GetCurrentVUI(), ObjectName, "ObjectType"));
+if (Ini.IniKeyExists(API.GetCurrentVUI(), ObjectName, "Help") == true)
 {
-CurrentPlugin["PluginClass"] = Ini.IniRead(API.GetCurrentVUI(), "Params", "PluginClass");
-}
-if (Ini.IniKeyExists(API.GetCurrentVUI(), "Params", "Loader") == true)
-{
-CurrentPlugin["Loader"] = Ini.IniRead(API.GetCurrentVUI(), "Params", "Loader");
-}
-else
-{
-CurrentPlugin["Loader"] = "None";
-}
-Count--;
+VUIObjects.GetValueOrDefault(ObjectName).Add("Help", Ini.IniRead(API.GetCurrentVUI(), ObjectName, "Help"));
 }
 else
 {
-CurrentPlugin["Loader"] = "None";
+VUIObjects.GetValueOrDefault(ObjectName).Add("Help", "Help not found");
 }
-if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true) Count--;
-if (Ini.IniSectionExists(API.GetCurrentVUI(), "1") == true)
+if (Ini.IniKeyExists(API.GetCurrentVUI(), ObjectName, "AutoFunc") == true)
 {
-for (int I = 1; I <= Count; I++)
-{
-VUIObjects.Add(I, new Dictionary<string, string>());
-VUIObjects[I].Add("Active", "true");
-VUIObjects[I].Add("Text", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Text"));
-VUIObjects[I].Add("ObjectType", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "ObjectType"));
-if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "Help") == true)
-{
-VUIObjects[I].Add("Help", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Help"));
+VUIObjects.GetValueOrDefault(ObjectName).Add("AutoFunc", Ini.IniRead(API.GetCurrentVUI(), ObjectName, "AutoFunc"));
 }
-else
+VUIObjects.GetValueOrDefault(ObjectName).Add("Func", Ini.IniRead(API.GetCurrentVUI(), ObjectName, "Func"));
+if (Ini.IniKeyExists(API.GetCurrentVUI(), ObjectName, "Param") == true)
 {
-VUIObjects[I].Add("Help", "Help not found");
-}
-if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "AutoFunc") == true)
-{
-VUIObjects[I].Add("AutoFunc", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "AutoFunc"));
-}
-VUIObjects[I].Add("Func", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Func"));
-if (Ini.IniKeyExists(API.GetCurrentVUI(), I.ToString(), "Param") == true)
-{
-VUIObjects[I].Add("Param", Ini.IniRead(API.GetCurrentVUI(), I.ToString(), "Param"));
+VUIObjects.GetValueOrDefault(ObjectName).Add("Param", Ini.IniRead(API.GetCurrentVUI(), ObjectName, "Param"));
 }
 }
 VUIObjectsUpdate(true);
-}
-if (API.GetSubClass() == string.Empty)
-{
 GetPluginType();
-}
 VUIPluginLoad();
 KeyLoader();
 KeyReg();

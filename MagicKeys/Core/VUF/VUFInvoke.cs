@@ -8,24 +8,32 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void VUFInvoke(List<string> Action, int TimeOut = 0)
+public static string VUFInvoke(List<string> Funcs, List<string> Params, int TimeOut = 0, bool AudoFunc = false)
 {
-for(int I = 0 ; I <= Action.Count-1; I++)
+string R = null;
+for(int I = 0 ; I <= Funcs.Count-1; I++)
 {
 if (TimeOut != 0) Thread.Sleep(TimeOut);
-string[] FP = Action[I].Split(",", 2);
-if (FP[0] == "Func")
+if (Funcs[I] == "Func")
 {
-string[] Param = FP[1].Split(",", 2);
+string[] Param = Params[I].Split(",", 2);
 if (Param.Length == 1)
 {
-InvokeFromString(Param[0]);
+R = InvokeFromString(Param[0]);
 continue;
 }
-InvokeFromString(Param[0], Param[1]);
+R = InvokeFromString(Param[0], Param[1]);
 continue;
 }
-InvokeFromString("VUF"+FP[0], FP[1]);
+R = InvokeFromString("VUF"+Funcs[I], Params[I]);
+}
+if (AudoFunc == true)
+{
+return R;
+}
+else
+{
+return string.Empty;
 }
 }
 

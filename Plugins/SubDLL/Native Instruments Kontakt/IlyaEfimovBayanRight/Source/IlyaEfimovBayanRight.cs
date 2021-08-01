@@ -29,12 +29,12 @@ Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
 {
 Speak("AutoAttack checked");
-VUIObjectSwitcher(false, "false", 3, 3);
+VUIObjectSwitcher(false, "false", 2, 2);
 }
 else
 {
 Speak("AutoAttack not checked");
-VUIObjectSwitcher(false, "true", 3, 3);
+VUIObjectSwitcher(false, "true", 2, 2);
 }
 }
 
@@ -65,12 +65,12 @@ Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
 Speak("Reverb checked");
-VUIObjectSwitcher(false, "true", 8, 8);
+VUIObjectSwitcher(false, "true", 7, 7);
 }
 else
 {
 Speak("Reverb not checked");
-VUIObjectSwitcher(false, "false", 8, 8);
+VUIObjectSwitcher(false, "false", 7, 7);
 }
 }
 
@@ -181,19 +181,19 @@ public static void IlyaEfimovBayanRightLoader()
 {
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
 {
-VUIObjectSwitcher(false, "false", 3, 3);
+VUIObjectSwitcher(false, "false", 2, 2);
 }
 else
 {
-VUIObjectSwitcher(false, "true", 3, 3);
+VUIObjectSwitcher(false, "true", 2, 2);
 }
 if (ImgSearchArea("BayanCheckBox", P[1]+280, P[2]+190, P[1]+350, P[2]+230, 0)[0] == 1)
 {
-VUIObjectSwitcher(false, "true", 8, 8);
+VUIObjectSwitcher(false, "true", 7, 7);
 }
 else
 {
-VUIObjectSwitcher(false, "false", 8, 8);
+VUIObjectSwitcher(false, "false", 7, 7);
 }
 }
 

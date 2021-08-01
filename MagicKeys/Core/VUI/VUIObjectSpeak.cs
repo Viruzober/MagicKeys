@@ -18,8 +18,9 @@ if (API.GetAutoFunc() != null)
 string AutoFunc;
 if (API.GetPluginClass() == "MagicKeys" | API.GetSubClass() == "MagicKeys")
 {
-List<string> VUFValues = Ini.IniReadValues(API.GetCurrentVUF(), API.GetAutoFunc());
-AutoFunc = VUFAutoFunc(VUFValues);
+List<string> Funcs = Ini.IniReadKeys(API.GetCurrentVUF(), API.GetAutoFunc());
+List<string> Params = Ini.IniReadValues(API.GetCurrentVUF(), API.GetAutoFunc());
+AutoFunc = VUFInvoke(Funcs, Params, AudoFunc:true);
 }
 else
 {

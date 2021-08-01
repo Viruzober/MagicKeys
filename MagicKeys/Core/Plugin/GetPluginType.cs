@@ -15,6 +15,7 @@ public static CustomAssemblyLoadContext PluginClassLoader = new CustomAssemblyLo
 
 public static void GetPluginType()
 {
+if (API.GetSubClass() != string.Empty) return;
 string ModulePath = string.Empty;
 PluginClassLoader = new CustomAssemblyLoadContext();
             try

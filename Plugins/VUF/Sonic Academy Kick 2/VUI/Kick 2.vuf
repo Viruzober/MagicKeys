@@ -1,7 +1,7 @@
 [LoadPreset]
-1=MouseClick,Left,455,40,1,5,0,20
-2=MouseClick,Left,480,60,1,10,0,20
+MouseClick=Left,455,40,1,5,0,20
+MouseClick=Left,480,60,1,10,0,20
 [PreviousPreset]
-1=MouseClick,Left,703,19,1,0,0,10
+MouseClick=Left,703,19,1,0,0,10
 [NextPreset]
-1=MouseClick,Left,723,19,1,0,0,10
+MouseClick=Left,723,19,1,0,0,10

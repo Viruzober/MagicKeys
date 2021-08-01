@@ -1,6 +1,6 @@
 using System;
 using System.Drawing;
-using System.Collections.Specialized;
+using Microsoft.Collections.Extensions;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,8 +22,8 @@ public static bool Exit = true;
 public static int TimeOut = 20;
 public static string UpdateChannel = GetUpdateChannel();
 public static bool CheckUpdate= true;
-public static Dictionary<int, Dictionary<string, string>> VUIObjects = new Dictionary<int, Dictionary<string, string>>();
-public static List<int> ActiveObjects = new List<int>();
+public static OrderedDictionary<string, OrderedDictionary<string, string>> VUIObjects = new OrderedDictionary<string, OrderedDictionary<string, string>>();
+public static List<string> ActiveObjects = new List<string>();
 public static int Count;
 public static int Section;
 public static int[] P = new int[10];

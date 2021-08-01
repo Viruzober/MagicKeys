@@ -33,6 +33,16 @@ public static string GetCurrentVUF()
 return Path.Combine(GetVUIPath(), GetVUI()+".VUF");
 }
 
+public static string GetCurrentVUILoader()
+{
+return Path.Combine(GetVUIPath(), GetVUI()+"Load.VUI");
+}
+
+public static string GetCurrentVUFLoader()
+{
+return Path.Combine(GetVUIPath(), GetVUI()+"Load.VUF");
+}
+
 public static string GetImgPath()
 {
 return Path.Combine(GetPluginPath(), "Images");

@@ -17,32 +17,29 @@ return;
 }
 else if (API.GetLoader() == "VUF")
 {
-string VUIPath = Path.Combine(API.GetVUIPath(), API.GetVUI()+"Load.vui");
-if (File.Exists(@VUIPath) == false)
+if (File.Exists(API.GetCurrentVUILoader()) == false)
 {
 return;
 }
-int VUICount = Ini.IniCountSections(VUIPath);
-for(int I = 1; I <= VUICount; I++)
+List<string> LoaderSections = Ini.IniReadSections(API.GetCurrentVUILoader());
+foreach(var LoadItem in LoaderSections)
 {
-List<string> VUIValues = Ini.IniReadValues(VUIPath, I.ToString());
-string[] Trigger = VUIValues[0].Split(",");
+List<string> LoadValues = Ini.IniReadValues(API.GetCurrentVUILoader(), LoadItem);
+string[] Trigger = LoadValues[0].Split(",");
+List<string> Funcs = Ini.IniReadKeys(API.GetCurrentVUFLoader(), LoadItem);
+List<string> Params = Ini.IniReadValues(API.GetCurrentVUFLoader(), LoadItem);
 if (Trigger[0] == "Img")
 {
 if (ImgSearch(Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))
 {
-string VUFPath = Path.Combine(API.GetVUIPath(), API.GetVUI()+"Load.vuf");
-List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
-VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
+VUFInvoke(Funcs, Params, Convert.ToInt32(LoadValues[1]));
 }
 }
-else if (Trigger[0] == "VUI")
+else if(Trigger[0] == "VUI")
 {
 if (Trigger[1] == API.GetVUI())
 {
-string VUFPath = API.GetVUIPath()+API.GetVUI()+"Load.vuf";
-List<string> VUFValues = Ini.IniReadValues(VUFPath, I.ToString());
-VUFInvoke(VUFValues, Convert.ToInt32(VUIValues[1]));
+VUFInvoke(Funcs, Params, Convert.ToInt32(LoadValues[1]));
 }
 }
 }

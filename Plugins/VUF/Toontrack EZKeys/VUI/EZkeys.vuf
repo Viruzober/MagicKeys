@@ -1,4 +1,4 @@
 [BanksMenu]
-1=MouseClick,Left,405,17,1,0,0,10
+MouseClick=Left,405,17,1,0,0,10
 [PresetsMenu]
-1=MouseClick,Left,605,17,1,0,0,10
+MouseClick=Left,605,17,1,0,0,10
