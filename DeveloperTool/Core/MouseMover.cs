@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Threading;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static void MouseMover(string To)
 {
 OCRR = string.Empty;
@@ -23,7 +21,6 @@ return;
 }
 MagicKeys.MouseMove(MP[0]-MouseStep, MP[1], 0);
 }
-
 if (To == "Right")
 {
 if (MP[0]+MouseStep >= P[3])
@@ -35,7 +32,6 @@ return;
 }
 MagicKeys.MouseMove(MP[0]+MouseStep, MP[1], 0);
 }
-
 if (To == "Up")
 {
 if (MP[1]-MouseStep <= P[2])
@@ -47,7 +43,6 @@ return;
 }
 MagicKeys.MouseMove(MP[0], MP[1]-MouseStep, 0);
 }
-
 if (To == "Down")
 {
 if (MP[1]+MouseStep >= P[4])
@@ -65,6 +60,5 @@ VisionBot();
 }
 KeyReg();
 }
-
 }
 }

@@ -1,12 +1,10 @@
 using System;
 using System.Windows.Forms;
 using System.IO;
-
 namespace MagicKeys
 {
 public partial class DevMenu : Form
 {
-
 protected override void WndProc(ref Message m)
 {
 switch (m.Msg)
@@ -154,6 +152,5 @@ break;
 }
 base.WndProc(ref m);
 }
-
 }
 }

@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static void VUIObjectSpeak()
 {
 string SpeakObject = API.GetText();
@@ -30,6 +28,5 @@ SpeakObject += " "+AutoFunc;
 }
 Speak(SpeakObject);
 }
-
 }
 }

@@ -3,7 +3,6 @@ using System.Drawing;
 using Microsoft.Collections.Extensions;
 using System.Collections.Generic;
 using System.Text;
-
 namespace MagicKeys
 {
 public partial class MagicKeys

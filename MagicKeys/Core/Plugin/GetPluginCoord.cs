@@ -4,12 +4,10 @@ using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static int[] GetPluginCoord()
 {
 int[] ControlCoord;
@@ -18,7 +16,7 @@ HModule.Add(GetForegroundWindow());
 HModule.AddRange(GetAllWindows(GetForegroundWindow()));
 foreach(var H in HModule)
 {
- string ModuleName = GetDllName(H);
+string ModuleName = GetDllName(H);
 if (ModuleName.Contains(CurrentPlugin["Module"], StringComparison.OrdinalIgnoreCase) == true)
 {
 int[] RectCTRL = GetWinRect(H);
@@ -29,6 +27,5 @@ return ControlCoord;
 ControlCoord = new int[5] {0, 0, 0, 0, 0};
 return ControlCoord;
 }
-
 }
 }

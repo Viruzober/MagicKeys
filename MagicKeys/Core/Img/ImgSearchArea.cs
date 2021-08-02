@@ -2,10 +2,9 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
 public static int[] ImgSearchArea(string imgPath, int X, int Y, int W, int H, int Variant)
 {
@@ -29,6 +28,5 @@ int[] pos = new int[7] {r, x, y, w, h, cx, cy};
 result = IntPtr.Zero;
 return pos;
 }
-
 }
 }

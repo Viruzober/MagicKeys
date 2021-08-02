@@ -1,8 +1,7 @@
 using System;
-
 namespace MagicKeys
 {
-    public class MKC
+public class MKC
 {
 [Flags] 
 public enum ModKeys : uint 

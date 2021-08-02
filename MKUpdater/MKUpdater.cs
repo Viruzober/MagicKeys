@@ -62,6 +62,5 @@ MessageBox.Show(T._("Something has gone wrong. Please check your internet connec
 return;
 }
 }
-
 }
 }

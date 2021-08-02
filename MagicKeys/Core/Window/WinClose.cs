@@ -3,12 +3,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static bool WinClose(string HWNDTitle, string HWNDClass)
 {
 while(true)
@@ -29,6 +27,5 @@ continue;
 return true;
 }
 }
-
 }
 }

@@ -4,15 +4,12 @@ using System.Windows.Forms;
 using System.Collections.Specialized;
 using System.Collections.Generic;
 using System.Linq;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static KeyWNDProc KeyWndProcHandle = new KeyWNDProc();
 public static KeysConverter kc = new KeysConverter();
-
 public static void KeyReg()
 {
 if (VUIKeys.Count != 0)
@@ -31,7 +28,7 @@ Mod = Mod|(uint)Enum.Parse(typeof(MKC.ModKeys), KeyItems[K]);
 }
 try{
 Keys key = (Keys)kc.ConvertFrom(KeyItems[^1]);
- RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, (uint)key);
+RegisterHotKey(KeyWndProcHandle.Handle, IDKey, Mod, (uint)key);
 IDKey+=1;
 }
 catch(Exception)
@@ -43,9 +40,7 @@ return;
 }
 KeyNavigatorReg();
 {
-
 }
 }
-
 }
 }

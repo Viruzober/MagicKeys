@@ -6,14 +6,11 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
 using System.IO;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static DevMenu HM;
-
 [STAThread]
 static void Main()
 {
@@ -29,7 +26,6 @@ MagicKeys.Speak("DeveloperTool is ready");
 OptionKeyReg();
 Application.Run();
 }
-
 public static void ModuleFound()
 {
 while(true)
@@ -48,6 +44,5 @@ return;
 }
 }
 }
-
 }
 }

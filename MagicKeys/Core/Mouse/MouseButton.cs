@@ -1,11 +1,9 @@
 using System.Runtime.InteropServices;
 using System.Threading;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static void MouseButton(string Button, string Event)
 {
 if (Event == "Down")
@@ -14,7 +12,7 @@ INPUT mouseDownInput = new INPUT();
 mouseDownInput.type = InputType.Mouse;
 if (Button == "Left")
 {
-	mouseDownInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_LEFTDOWN;
+mouseDownInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_LEFTDOWN;
 }
 else if (Button == "Right")
 {
@@ -37,6 +35,5 @@ mouseUpInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_RIGHTUP;
 SendInput(1, ref mouseUpInput, Marshal.SizeOf(new INPUT()));
 }
 }
-
 }
 }

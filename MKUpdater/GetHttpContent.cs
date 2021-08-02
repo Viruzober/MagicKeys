@@ -9,7 +9,6 @@ namespace MKUpdater
 {
 public partial class MKUpdater
 {
-
 public static string GetHttpContent(string URL)
 {
 using (HttpClient client = new HttpClient())
@@ -25,6 +24,5 @@ return result.Trim();
 }
 }
 }
-
 }
 }

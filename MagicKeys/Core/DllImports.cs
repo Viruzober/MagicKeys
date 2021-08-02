@@ -1,10 +1,9 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
 [DllImport("user32.dll")]
 public static extern int GetDlgCtrlID(IntPtr hwndCtl);

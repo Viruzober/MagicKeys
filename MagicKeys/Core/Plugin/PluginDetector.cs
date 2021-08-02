@@ -4,7 +4,6 @@ using System.Threading;
 using System.Reflection;
 using System.Collections.Generic;
 using System.IO;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -45,6 +44,5 @@ CurrentPlugin.Clear();
 }
 }
 }
-
 }
 }

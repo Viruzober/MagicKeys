@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-
 namespace MKUpdater
 {
 public partial class UpdateForm : Form
 {
-
 public Label UPDL = new Label();
 public ProgressBar PB = new ProgressBar();
 public RichTextBox TB = new RichTextBox();
 public Button ButtonOK = new Button();
 public Button ButtonCancel = new Button();
-
 public UpdateForm()
 {
 InitLabel();
@@ -21,7 +18,6 @@ InitProgressBar();
 InitButton();
 InitForm();
 }
-
 public void InitLabel()
 {
 UPDL.AutoSize = false;
@@ -31,7 +27,6 @@ UPDL.Location = new Point(20, 25);
 UPDL.Text = T._("Changelog");
 this.Controls.Add(UPDL);
 }
-
 public void InitTextBox()
 {
 TB.Size = new Size(450, 175);
@@ -40,7 +35,6 @@ TB.ReadOnly = true;
 TB.Multiline = true;
 this.Controls.Add(TB);
 }
-
 public void InitProgressBar()
 {
 PB.Size = new Size(250, 25);
@@ -49,7 +43,6 @@ PB.Minimum = 0;
 PB.Maximum = 100;
 this.Controls.Add(PB);
 }
-
 public void InitButton()
 {
 ButtonOK.Size = new Size(80, 25);
@@ -64,7 +57,6 @@ ButtonCancel.Enabled = false;
 ButtonCancel.Click += ButtonCancel_Click;
 this.Controls.Add(ButtonCancel);
 }
-
 public void InitForm()
 {
 this.TopMost = true;
@@ -75,6 +67,5 @@ this.Size = new Size(500, 300);
 this.Name = "Updater";
 this.Text = T._("Update MagicKeys");
 }
-
 }
 }

@@ -2,12 +2,10 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static int[] ImgSearch(string imgPath, bool Window)
 {
 IntPtr result;
@@ -39,7 +37,6 @@ int[] pos = new int[7] {r, x, y, w, h, cx, cy};
 result = IntPtr.Zero;
 return pos;
 }
-
 public static int[] ImgSearch(string imgPath)
 {
 IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
@@ -62,6 +59,5 @@ int[] pos = new int[7] {r, x, y, w, h, cx, cy};
 result = IntPtr.Zero;
 return pos;
 }
-
 }
 }

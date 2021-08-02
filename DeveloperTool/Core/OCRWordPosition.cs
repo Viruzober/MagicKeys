@@ -13,15 +13,13 @@ using Windows.Media.Ocr;
 using System.Collections.Generic;
 using DeveloperTool;
 using Windows.Devices.PointOfService;
-
 namespace MagicKeys
 {
-    public partial class DeveloperTool
+public partial class DeveloperTool
 {
 public static List<String> LW = new List<string>();
 public static List<int> LX = new List<int>();
 public static List<int> LY = new List<int>();
-
 public static async void OCRWordPosition()
 {
 KeyUnReg();
@@ -60,7 +58,6 @@ LX.Clear();
 LY.Clear();
 OptionKeyReg();
 KeyReg();
-        }
-
+}
 }
 }

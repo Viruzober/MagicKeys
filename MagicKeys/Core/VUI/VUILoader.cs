@@ -6,12 +6,10 @@ using System.Text;
 using System.Linq;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static void VUILoader(string File)
 {
 KeyUnReg();
@@ -50,6 +48,5 @@ KeyLoader();
 KeyReg();
 SoundPlay("PluginDetect", 0);
 }
-
 }
 }

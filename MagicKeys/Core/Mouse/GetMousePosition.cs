@@ -1,6 +1,6 @@
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
 public static int[] GetMousePosition()
 {

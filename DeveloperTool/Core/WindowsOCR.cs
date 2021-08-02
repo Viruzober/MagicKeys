@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Threading;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static void WindowsOCR()
 {
 if (DP[0] == 0)
@@ -19,6 +17,5 @@ Thread.Sleep(500);
 OCRR = Text;
 MagicKeys.Speak(Text);
 }
-
 }
 }

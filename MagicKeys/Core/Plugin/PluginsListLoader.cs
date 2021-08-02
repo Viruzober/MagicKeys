@@ -4,14 +4,11 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Reflection;
 using System.Collections.Generic;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static Dictionary<string, Dictionary<string, string>> PluginsList = new Dictionary<string, Dictionary<string, string>>();
-
 public static void PluginsListLoader()
 {
 string WTitle = Ini.IniRead(@"Plugins\Hosts.ini", "Hosts", "WTitle");
@@ -29,7 +26,7 @@ foreach(string Point in MainPoints)
 {
 if (Point == "Info")
 {
- continue;
+continue;
 }
 PluginsList.Add(Point, new Dictionary<string, string>());
 if (Ini.IniKeyExists(IVUI, Point, "WTitle") == true)
@@ -66,6 +63,5 @@ if (PluginsList.Count == 0)
 MessageBox.Show(T._("No plugins are available."), T._("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 }
 }
-
 }
 }

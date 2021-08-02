@@ -7,12 +7,10 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static Menu HM;
 [STAThread]
 static void Main()
@@ -53,6 +51,5 @@ SoundPlay("Start", 0);
 Speak(T._("MagicKeys is ready"));
 Application.Run();
 }
-
 }
 }

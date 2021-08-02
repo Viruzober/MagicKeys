@@ -1,13 +1,10 @@
 using System;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class Menu : Form
 {
-
 public static SettingsForm WSettings;
-
 public void Exit(object sender, EventArgs e)
 {
 MagicKeys.KeySwitch = 1;
@@ -35,7 +32,6 @@ MagicKeys.Speak(T._("Goodbye"));
 Application.Exit();
 }
 }
-
 public void Help(object sender, EventArgs e)
 {
 string commandText = @"Руководство пользователя.html";
@@ -44,7 +40,6 @@ proc.StartInfo.FileName = commandText;
 proc.StartInfo.UseShellExecute = true;
 proc.Start();
 }
-
 public void Settings(object sender, EventArgs e)
 {
 if (WSettings == null || WSettings.IsDisposed == true)
@@ -59,11 +54,9 @@ else
 WSettings.Activate();
 }
 }
-
 public void CheckUpdates(object sender, EventArgs e)
 {
 MagicKeys.Update("true");
 }
-
 }
 }

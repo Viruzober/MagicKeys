@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static void RectOCR()
 {
 KeyUnReg();
@@ -45,6 +43,5 @@ DP[1] = 0;
 KeyReg();
 OptionKeyReg();
 }
-
 }
 }

@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 const uint CF_UNICODETEXT = 13;
-
 public static string GetText()
 {
 if (!IsClipboardFormatAvailable(CF_UNICODETEXT))
@@ -32,6 +29,5 @@ GlobalUnlock(lpwcstr);
 CloseClipboard();
 return data;
 }
-
 }
 }

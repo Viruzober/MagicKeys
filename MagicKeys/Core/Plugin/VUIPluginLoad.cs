@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void VUIPluginLoad()
 {
 if (API.GetLoader() == "Code")
@@ -45,6 +43,5 @@ VUFInvoke(Funcs, Params, Convert.ToInt32(LoadValues[1]));
 }
 }
 }
-
 }
 }

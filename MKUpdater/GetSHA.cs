@@ -6,7 +6,6 @@ namespace MKUpdater
 {
 public partial class MKUpdater
 {
-
 public static string GetSHA(string file)
 {
 using (FileStream stream = File.OpenRead(file))
@@ -16,6 +15,5 @@ byte[] checksum = sha.ComputeHash(stream);
 return BitConverter.ToString(checksum).Replace("-", String.Empty);
 }
 }
-
 }
 }

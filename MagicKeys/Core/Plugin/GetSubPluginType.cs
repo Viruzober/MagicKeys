@@ -3,21 +3,18 @@ using System.Reflection;
 using System.Runtime.Loader;
 using System.Windows.Forms;
 using System.IO;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static object SubClass = new object();
 public static CustomAssemblyLoadContext SubClassLoader = new CustomAssemblyLoadContext();
-
 public static void GetSubPluginType()
 {
 string ModulePath = string.Empty;
 SubClassLoader = new CustomAssemblyLoadContext();
-            try
-            {
+try
+{
 if (API.GetSubClass() == string.Empty | API.GetSubClass() == "MagicKeys")
 {
 SubClass = MKOBJ.GetType();
@@ -34,6 +31,5 @@ MKDebugForm("FileNotFound|"+ModulePath);
 return;
 }
 }
-
 }
 }

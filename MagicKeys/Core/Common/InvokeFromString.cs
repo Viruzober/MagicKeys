@@ -1,12 +1,10 @@
 using System;
 using System.Reflection;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
 {
 try
@@ -21,7 +19,7 @@ else if (SubClass.GetType().GetMethod(InvokeFunc) != null)
 {
 Class = SubClass;
 }
- else if (MKOBJ.GetType().GetMethod(InvokeFunc) != null)
+else if (MKOBJ.GetType().GetMethod(InvokeFunc) != null)
 {
 Class = MKOBJ;
 }
@@ -44,6 +42,5 @@ MKDebugForm("ExceptionHook|"+ex.ToString());
 return null;
 }
 }
-
 }
 }

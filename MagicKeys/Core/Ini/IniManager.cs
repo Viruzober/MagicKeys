@@ -4,12 +4,10 @@ using System.IO;
 using System.Text;
 using System.Reflection;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public static partial class Ini
 {
-
 public static List<string> IniReadSections(string GetFile)
 {
 List<string> temp = new List<string>();
@@ -30,7 +28,6 @@ temp.Add(S.Substring(1, S.Length - 2));
 }
 return temp;
 }
-
 public static List<string> IniReadKeys(string GetFile, string GetSection)
 {
 List<string> temp = new List<string>();
@@ -60,7 +57,6 @@ Error = T._("Section not found");
 throw new Exception();
 }
 }
-
 for (int R = L+1; R <= FileStr.Length-1; R++)
 {
 if (FileStr[R].StartsWith(":") == true || FileStr[R].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[R])) continue;
@@ -70,7 +66,6 @@ End = R;
 break;
 }
 }
-
 for (int Start = L+1; Start <= End; Start++)
 {
 if (FileStr[Start].StartsWith(":") == true || FileStr[Start].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[Start])) continue;
@@ -86,12 +81,10 @@ MagicKeys.MKDebugForm("IniReadKeys|"+L.ToString()+","+GetFile+","+GetSection+","
 return null;
 }
 }
-
 public static int IniCountSections( string File)
 {
 List<string> Count = IniReadSections(File);
 return Count.Count;
 }
-
 }
 }

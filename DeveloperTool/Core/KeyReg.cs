@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static void KeyReg()
 {
 MagicKeys.RegisterHotKey(HM.Handle, 4, MKC.NOMOD, (int)Keys.Left);
@@ -32,7 +30,6 @@ MagicKeys.RegisterHotKey(HM.Handle, 24, MKC.CTRL|MKC.ALT|MKC.MOD_NOREPEAT, (int)
 MagicKeys.RegisterHotKey(HM.Handle, 25, MKC.MOD_NOREPEAT, (int)Keys.W);
 MagicKeys.RegisterHotKey(HM.Handle, 26, MKC.MOD_NOREPEAT|MKC.CTRL, (int)Keys.W);
 }
-
 public static void OptionKeyReg()
 {
 MagicKeys.RegisterHotKey(HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
@@ -41,6 +38,5 @@ if (KeySwitch == 1) return;
 MagicKeys.RegisterHotKey(HM.Handle, 2, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 MagicKeys.RegisterHotKey(HM.Handle, 3, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
 }
-
 }
 }

@@ -2,12 +2,10 @@ using System;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
- 
 namespace MagicKeys
 {
 public partial class NexusSearchForm : Form
 {
-
 public string Result;
 public Label SearchLabel = new Label();
 public TextBox SearchText = new TextBox();
@@ -17,7 +15,6 @@ public Label LabelBank = new Label();
 public Label LabelPatch = new Label();
 public ListView ListPatch = new ListView();
 public ListView ListBank = new ListView();
-
 public NexusSearchForm()
 {
 InitForm();
@@ -26,7 +23,6 @@ InitLabel();
 InitListView();
 InitButton();
 }
-
 public void InitButton()
 {
 OK.Location = new Point(320, 10);
@@ -43,7 +39,6 @@ Cancel.Text = "Cancel";
 Cancel.Click += ButtonCancel_Click;
 this.Controls.Add(Cancel);
 }
-
 public void InitTextBox()
 {
 SearchText.Location = new Point(100, 10);
@@ -52,7 +47,6 @@ SearchText.TabIndex = 1;
 SearchText.KeyDown += SearchText_KeyDown;
 this.Controls.Add(SearchText);
 }
-
 public void InitLabel()
 {
 SearchLabel.Location = new Point(10, 10);
@@ -71,7 +65,6 @@ LabelPatch.Size = new Size(200, 25);
 LabelPatch.TabIndex = 4;
 this.Controls.Add(LabelPatch);
 }
-
 public void InitListView()
 {
 ListBank.Location = new Point(10, 80);
@@ -93,7 +86,6 @@ ListPatch.Columns.Add(new ColumnHeader());
 ListPatch.Columns[0].Text = "Patches";
 this.Controls.Add(ListPatch);
 }
-
 public void InitForm()
 {
 this.Size = new Size(555, 430);
@@ -107,6 +99,5 @@ this.Shown += NexusSearchForm_Shown;
 this.CancelButton = Cancel;
 this.Shown += NexusSearchForm_Shown;
 }
-
 }
 }

@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static string KeyParse(int Mod)
 {
 string KeyMod = ((MKC.ModKeys)Mod).ToString().Replace(", ", "+");
@@ -15,6 +13,5 @@ return "";
 }
 return KeyMod+"+";
 }
-
 }
 }

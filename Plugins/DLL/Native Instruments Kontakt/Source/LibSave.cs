@@ -2,12 +2,10 @@ using System;
 using System.Windows.Forms;
 using System.Threading;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Kontakt
 {
-
 public static void LibSave()
 {
 LibNormalize();
@@ -32,6 +30,5 @@ int[] LS = ImgSearch("KontaktLibSave");
 MouseClick("Left", LS[5]+10, LS[2]+(17*(Convert.ToInt32(Input))), 1, 0, 0, 10);
 }
 }
-
 }
 }

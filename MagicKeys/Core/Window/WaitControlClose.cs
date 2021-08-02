@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Threading;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void WaitControlClose(int X, int Y, string CClass)
 {
 KeyUnReg();
@@ -24,6 +22,5 @@ KeyReg();
 return;
 }
 }
-
 }
 }

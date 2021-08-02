@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Linq;
 using System.IO;
-
 namespace MKUpdater
 {
 public partial class MKUpdater
 {
-
 public static void CopyDirectory(string source, string target) 
 { 
 var sourcePath = source.TrimEnd('\\', ' '); 
@@ -24,6 +22,5 @@ File.Move(file, targetFile);
 }
 }
 }
-
 }
 }

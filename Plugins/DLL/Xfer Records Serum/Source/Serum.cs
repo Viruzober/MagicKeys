@@ -2,17 +2,14 @@ using System;
 using System.Windows.Forms;
 using System.Threading;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Serum
 {
-
 public static void PresetsMenu()
 {
 MouseClick("Left", P[1]+660, P[2]+10, 1, 0, 0, 10);
 }
-
 public static void PreviousPreset()
 {
 MouseClick("Left", P[1]+690, P[2]+10, 1, 0, 0, 10);
@@ -21,7 +18,6 @@ if (API.GetWClass() == "#32770")
 Speak(ControlGetTextPoint(P[1]+100, P[2]-20));
 }
 }
-
 public static void NextPreset()
 {
 MouseClick("Left", P[1]+710, P[2]+10, 1, 0, 0, 10);
@@ -30,17 +26,14 @@ if (API.GetWClass() == "#32770")
 Speak(ControlGetTextPoint(P[1]+100, P[2]-20));
 }
 }
-
 public static void Menu()
 {
 MouseClick("Left", P[1]+770, P[2]+10, 1, 0, 0, 10);
 }
-
 public static void SavePresetAs()
 {
 MouseClick("Left", P[1]+440, P[2]+10, 1, 0, 0, 10);
 }
-
 public static void Register()
 {
 InputTextBox ITBC = new InputTextBox();
@@ -56,6 +49,5 @@ MouseClick("Left", P[1]+710, P[2]+340, 1, 0, 0, 10);
 Speak("please reload the plugin");
 }
 }
-
 }
 }

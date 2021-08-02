@@ -1,12 +1,10 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void MouseMove (int GetX, int GetY, int TimeMove)
 {
 int X = GetX, Y = GetY;
@@ -61,6 +59,5 @@ mouseMoveInput.U.mi.dy = 0;
 SendInput(1, ref mouseMoveInput, Marshal.SizeOf(new INPUT()));
 }
 }
-
 }
 }

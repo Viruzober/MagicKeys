@@ -1,11 +1,9 @@
 using System;
 using System.IO;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void LoadSettings()
 {
 if (File.Exists(@".\Settings.ini") == true)
@@ -26,6 +24,5 @@ sw.Write("[Settings]\r\nNavigationType=0\r\nSoundTheme=true\r\nTimeOut=20\r\nSpe
 }
 }
 }
-
 }
 }

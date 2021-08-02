@@ -9,15 +9,13 @@ using Windows;
 using Windows.Graphics.Imaging;
 using System.Threading.Tasks;
 using Windows.Media.Ocr;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static string ImgToText(int W, int H, int X, int Y, int Zoom)
 {
-            try
+try
 {
 var ocrText = Task.Run(async () => await OCR(W, H, X, Y, Zoom)).GetAwaiter().GetResult();
 return ocrText;
@@ -27,7 +25,6 @@ catch(Exception)
 return T._("Windows 10 OCR is unavailable");
 }
 }
-
 public async static Task<string> OCR(int W, int H, int X, int Y, int Zoom)
 {
 using var memoryStream = new MemoryStream();
@@ -43,6 +40,5 @@ var softwareBitmap = await decoder.GetSoftwareBitmapAsync();
 var ocrResult = await engine.RecognizeAsync(softwareBitmap);
 return ocrResult.Text;
 }
-
 }
 }

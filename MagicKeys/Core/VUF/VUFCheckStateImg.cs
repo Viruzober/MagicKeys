@@ -1,10 +1,8 @@
 ﻿using System;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static string VUFCheckStateImg(string Param)
 {
 string[] FP = Param.Split(",");
@@ -18,6 +16,5 @@ P[2]+Convert.ToInt32(FP[4])
 Speak(R);
 return R;
 }
-
 }
 }

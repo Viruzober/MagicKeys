@@ -28,6 +28,5 @@ return true;
 Speak(Text+" not checked");
 return false;
 }
-
 }
 }

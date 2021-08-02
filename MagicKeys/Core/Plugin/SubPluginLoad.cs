@@ -4,12 +4,10 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Reflection;
 using System.Collections.Generic;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static bool SubPluginLoad()
 {
 string[] dir = Directory.GetDirectories(Path.Combine(API.GetPluginPath(), "Subplugins"));
@@ -26,7 +24,7 @@ foreach(string Point in MainPoints)
 {
 if (Point == "Info")
 {
- continue;
+continue;
 }
 if (Ini.IniKeyExists(IVUI, Point, "PluginClass") == true)
 {
@@ -53,6 +51,5 @@ CurrentPlugin["PluginClass"] = CurrentPlugin["PluginClass"].Split(".")[0];
 }
 return false;
 }
-
 }
 }

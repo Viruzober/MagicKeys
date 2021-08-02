@@ -2,12 +2,10 @@
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static async void ControlSearch()
 {
 KeyUnReg();
@@ -17,7 +15,7 @@ ITB.Text = T._("Control search");
 ITB.InputBoxLabel.Text = T._("Enter substring to search for a module.");
 ITB.Value.Text = Module;
 await Task.Run(() => ITB.ShowDialog());
- string ModuleName = string.Empty;
+string ModuleName = string.Empty;
 if (ITB.DialogResult == DialogResult.OK)
 {
 ModuleName = ITB.GetString();
@@ -46,6 +44,5 @@ MagicKeys.Speak("Not found");
 OptionKeyReg();
 }
 }
-
 }
 }

@@ -2,12 +2,10 @@
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static void ImgSave()
 {
 KeyUnReg();
@@ -41,6 +39,5 @@ Screen.Save(@"DevSave\"+Module+@"\"+ITB+".bmp");
 KeyReg();
 OptionKeyReg();
 }
-
 }
 }

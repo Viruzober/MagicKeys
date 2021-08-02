@@ -3,12 +3,10 @@ using System.Windows.Forms;
 using System.Collections.Specialized;
 using System.Collections.Generic;
 using System.Linq;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void KeyUnReg()
 {
 KeyNavigatorUnReg();
@@ -18,6 +16,5 @@ for(int I = 0; I <= Count; I++)
 UnregisterHotKey(KeyWndProcHandle.Handle, I);
 }
 }
-
 }
 }

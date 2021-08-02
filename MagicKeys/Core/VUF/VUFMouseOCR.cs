@@ -1,10 +1,8 @@
 ﻿using System;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void VUFMouseOCR(String Param)
 {
 string[] PR = Param.Split(",");
@@ -18,6 +16,5 @@ Convert.ToInt32(PR[2])
 );
 Speak(R);
 }
-
 }
 }

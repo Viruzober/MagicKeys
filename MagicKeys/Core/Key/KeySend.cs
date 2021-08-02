@@ -4,12 +4,10 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Text.Unicode;
 using System.Text;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void KeySend(string Type, string Send, int Time, int PostTime)
 {
 if (string.IsNullOrEmpty(Send)) return;
@@ -39,7 +37,6 @@ KeyInput(false, "Up", K);
 Thread.Sleep(PostTime);
 }
 }
-
 public static void KeyInput(bool Type, string UpDown, string Key)
 {
 try
@@ -70,6 +67,5 @@ catch(Exception)
 return;
 }
 }
-
 }
 }

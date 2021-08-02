@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void VUFInputTextBox(string Param)
 {
 string[] FP = Param.Split(",");
@@ -17,6 +15,5 @@ return;
 }
 Clipboard.SetText(ITB);
 }
-
 }
 }

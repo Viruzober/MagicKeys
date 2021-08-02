@@ -2,12 +2,10 @@ using System;
 using System.Threading;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Kontakt
 {
-
 public static void GoToLibInterface()
 {
 Speak("Searching for an interface");
@@ -19,6 +17,5 @@ Thread.Sleep(300);
 LibNormalize();
 LoadLibInterface();
 }
-
 }
 }

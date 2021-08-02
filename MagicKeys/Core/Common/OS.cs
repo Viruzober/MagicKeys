@@ -2,12 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static string OS()
 {
 bool Bit = Environment.Is64BitOperatingSystem;
@@ -17,6 +15,5 @@ return "64";
 }
 return "86";
 }
-
 }
 }

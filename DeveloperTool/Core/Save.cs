@@ -5,7 +5,6 @@ namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static void Save()
 {
 KeyUnReg();
@@ -28,6 +27,5 @@ sw.Write(WR);
 KeyReg();
 OptionKeyReg();
 }
-
 }
 }

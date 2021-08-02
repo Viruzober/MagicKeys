@@ -1,10 +1,8 @@
 ﻿using System;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static string VUFOCR(String Param)
 {
 string[] PR = Param.Split(",");
@@ -18,6 +16,5 @@ Convert.ToInt32(PR[4])
 Speak(R);
 return R;
 }
-
 }
 }

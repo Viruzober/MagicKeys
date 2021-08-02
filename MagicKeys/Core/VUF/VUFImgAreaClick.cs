@@ -1,10 +1,8 @@
 ﻿using System;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void VUFImgAreaClick(String Param)
 {
 string[] PR = Param.Split(",");
@@ -26,6 +24,5 @@ return;
 }
 Speak("Image not found");
 }
-
 }
 }

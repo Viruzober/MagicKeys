@@ -1,12 +1,10 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static void Speak(string Text)
 {
 var runningProcs = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
@@ -31,6 +29,5 @@ Sapi.InvokeMember("Speak",
 System.Reflection.BindingFlags.InvokeMethod,null,o,new Object[2] {Text, 3});
 }
 }
-
 }
 }

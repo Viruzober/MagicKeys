@@ -2,12 +2,10 @@ using System;
 using System.Threading;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Omnisphere
 {
-
 public static void OmnisphereBankPage(string To)
 {
 if (To == "Back")
@@ -42,6 +40,5 @@ int[] OBP = ImgSearchArea("BP", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20);
 string Bank = ImgToText(150, 20, OBP[1], OBP[2], 3);
 Speak(Bank);
 }
-
 }
 }

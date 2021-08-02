@@ -2,12 +2,10 @@ using System;
 using System.Threading;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Kontakt
 {
-
 public static void LoadLibInterface()
 {
 int[] KTL = ImgSearch("KontaktTopLine");
@@ -23,6 +21,5 @@ MouseClickDrag("Left", KTL[1]+5, KTL[2]+5, DP[1]+5, DP[2]+5, 1, 500);
 LibNormalize();
 Speak("This library is currently inaccessible");
 }
-
 }
 }

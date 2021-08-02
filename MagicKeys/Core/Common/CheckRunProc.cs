@@ -3,7 +3,7 @@ using System.Linq;
 using System.Windows.Forms;
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
 public static bool CheckRunProc(string Proc)
 {
@@ -16,6 +16,5 @@ return true;
 }
 else return false;
 }
-
 }
 }

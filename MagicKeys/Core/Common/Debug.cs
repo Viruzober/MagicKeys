@@ -2,12 +2,10 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 using System.Reflection;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void MKDebugForm(string DebugInfo)
 {
 //MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
@@ -18,6 +16,5 @@ using DebugForm DF = new DebugForm();
 DF.DebugInfo = DebugInfo;
 DF.ShowDialog();
 }
-
 }
 }

@@ -5,12 +5,10 @@ using System.IO;
 using System.Media;
 using System.Reflection;
 using System.Text;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void SoundPlay(string SoundFile, int Wait)
 {
 if (SoundTheme == true)
@@ -25,9 +23,8 @@ Player.Play();
 else
 {
 Player.PlaySync();
-}    
 }
 }
-
+}
 }
 }

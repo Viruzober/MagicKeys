@@ -1,12 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static void VUIObjectEnter()
 {
 KeyUnReg();
@@ -27,6 +25,5 @@ return;
 InvokeFromString(API.GetFunc(), API.GetParam());
 KeyReg();
 }
-
 }
 }

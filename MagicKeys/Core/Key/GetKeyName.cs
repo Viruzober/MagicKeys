@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static string GetKeyName(int Key)
 {
 if (Key == 33) return "PageUp";
@@ -16,6 +14,5 @@ return ((char)Key).ToString();
 }
 return ((Keys)Key).ToString();
 }
-
 }
 }

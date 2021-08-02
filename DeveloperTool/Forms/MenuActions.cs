@@ -1,12 +1,10 @@
 using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class DevMenu : Form
 {
-
 public async void Exit(object sender, EventArgs e)
 {
 DeveloperTool.KeySwitch = 1;
@@ -23,6 +21,5 @@ DeveloperTool.KeySwitch = 0;
 Ni.Visible = true;
 DeveloperTool.OptionKeyReg();
 }
-
 }
 }

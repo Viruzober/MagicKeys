@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
-
 namespace ConfigInstaller
 {
 public partial class ConfigInstaller
 {
-
 public static string RegImport(string PluginName)
 {
 Process proc = new Process();
@@ -18,6 +16,5 @@ proc.Start();
 proc.WaitForExit();
 return "Success";
 }
-
 }
 }

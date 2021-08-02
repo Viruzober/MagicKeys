@@ -1,12 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
-
 namespace ConfigInstaller
 {
-    public partial class ConfigInstallerForm : Form
+public partial class ConfigInstallerForm : Form
 {
-
 public void FormLoad(object sender, EventArgs e)
 {
 string[] Dir = Directory.GetDirectories("./Settings");
@@ -15,7 +13,6 @@ foreach(string d in Dir)
 LB.Items.Add(Path.GetFileName(d));
 }
 }
-
 public void Ins_Click(object sender, EventArgs e)
 {
 Ins.Enabled = false;
@@ -41,6 +38,5 @@ TB.Text += "Copying "+Copy[0]+" to "+Copy[1]+" "+ConfigInstaller.CopyFiles(Copy[
 LB.Enabled = true;
 Ins.Enabled = true;
 }
-
 }
 }

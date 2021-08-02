@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static void OCRZoomChange()
 {
 KeyUnReg();
@@ -24,6 +22,5 @@ KeyReg();
 OptionKeyReg();
 MagicKeys.Speak(OCRZoom.ToString());
 }
-
 }
 }

@@ -2,12 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static IntPtr WinExistsHandle(string HWNDTitle, string HWNDClass)
 {
 List<IntPtr> result = new List<IntPtr>();
@@ -25,6 +23,5 @@ return Handle;
 }
 return IntPtr.Zero;
 }
-
 }
 }

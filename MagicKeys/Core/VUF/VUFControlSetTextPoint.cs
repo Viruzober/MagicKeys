@@ -1,10 +1,8 @@
 ﻿using System;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void VUFControlSetTextPoint(string Param)
 {
 string[] FP = Param.Split(",");
@@ -14,6 +12,5 @@ P[2]+Convert.ToInt32(FP[1]),
 FP[2]
 );
 }
-
 }
 }

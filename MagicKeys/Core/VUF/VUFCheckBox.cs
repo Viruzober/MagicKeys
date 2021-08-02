@@ -5,7 +5,6 @@ namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void VUFCheckBox(string Param)
 {
 string[] FP = Param.Split(",");
@@ -16,6 +15,5 @@ FP[2],
 FP[3]
 );
 }
-
 }
 }

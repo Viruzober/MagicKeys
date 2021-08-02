@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-
 namespace ConfigInstaller
 {
 public partial class ConfigInstallerForm : Form
 {
-
 public ConfigInstallerForm()
 {
 InitLabel();
@@ -15,7 +13,6 @@ InitTextBox();
 InitButton();
 InitForm();
 }
-
 public void InitForm()
 {
 this.StartPosition = FormStartPosition.CenterScreen;
@@ -27,7 +24,6 @@ this.MaximizeBox = false;
 this.Name = "ConfigInstaller";
 this.Load += FormLoad;
 }
-
 public void InitLabel()
 {
 Label List = new Label();
@@ -43,7 +39,6 @@ Log.Text = T._("Результат");
 Log.TabIndex = 3;
 this.Controls.Add(Log);
 }
-
 CheckedListBox LB = new CheckedListBox();
 public void InitListBox()
 {
@@ -71,6 +66,5 @@ Ins.Text = T._("Установить");
 Ins.Click += Ins_Click;
 this.Controls.Add(Ins);
 }
-
 }
 }

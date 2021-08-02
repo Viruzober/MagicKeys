@@ -13,12 +13,10 @@ using System.Text;
 using Pluralize.NET.Core;
 using static MagicKeys.MagicKeys;
 using System.Collections.Generic;
-
 namespace MKUpdater
 {
 public partial class UpdateForm : Form
 {
-
 public HttpClientDownloadWithProgress client;
 public string UpdateFileName = string.Empty;
 public async void ButtonOK_Click(object sender, EventArgs e)
@@ -46,14 +44,12 @@ catch(Exception)
 MessageBox.Show(T._("Error Downloading update. Please try again later."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 }
 }
-
 public void ButtonCancel_Click(object sender, EventArgs e)
 {
 ButtonCancel.Enabled = false;
 client.CancelDownload();
 this.Close();
 }
-
 public void ProgressCheck(long? totalFileSize, long totalBytesDownloaded, double? progressPercentage)
 {
 PB.Value = Convert.ToInt32(progressPercentage);
@@ -81,6 +77,5 @@ this.Close();
 Process.Start(@".\Temp\MKUpdater.exe", "Move");
 }
 }
-
 }
 }

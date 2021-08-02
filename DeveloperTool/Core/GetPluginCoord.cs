@@ -3,12 +3,10 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-
 namespace MagicKeys
 {
 public partial class DeveloperTool
 {
-
 public static int[] GetPluginCoord()
 {
 int[] ControlCoord;
@@ -29,6 +27,5 @@ return ControlCoord;
 ControlCoord = new int[5] {0, 0, 0, 0, 0};
 return ControlCoord;
 }
-
 }
 }

@@ -1,11 +1,9 @@
 using System;
 using Microsoft.Collections.Extensions;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static void VUIObjectsUpdate(bool StartObject)
 {
 ActiveObjects.Clear();
@@ -19,6 +17,5 @@ ActiveObjects.Add(O.Key);
 CountObjects = ActiveObjects.Count-1;
 if (StartObject == true) CurrentObject = 0;
 }
-
 }
 }

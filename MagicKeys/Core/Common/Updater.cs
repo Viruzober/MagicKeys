@@ -2,12 +2,10 @@
 using System.IO;
 using System.Diagnostics;
 using System.Linq;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void Update(string Quiet = "false")
 {
 if (File.Exists(@".\MKUpdater.exe") == false)
@@ -21,6 +19,5 @@ startInfo.FileName = "MKUpdater.exe";
 startInfo.Arguments = GetVersion()+" "+UpdateChannel+" "+Quiet;
 Process.Start(startInfo);
 }
-
 }
 }

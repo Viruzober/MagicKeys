@@ -1,10 +1,8 @@
 ﻿using System;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void VUFSlider(string Param)
 {
 string[] FP = Param.Split(",");
@@ -17,6 +15,5 @@ Convert.ToDouble(FP[4]),
 Convert.ToDouble(FP[5])
 );
 }
-
 }
 }

@@ -1,12 +1,10 @@
 using System.Threading.Tasks;
 using System.Threading;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Kontakt
 {
-
 public static void LibNavigator(string NavigateTo)
 {
 if (NavigateTo == "Back")
@@ -42,6 +40,5 @@ Speak(text);
 }
 }
 }
-
 }
 }

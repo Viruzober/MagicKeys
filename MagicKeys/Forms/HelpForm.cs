@@ -2,20 +2,17 @@ using System;
 using System.Drawing;
 using System.ComponentModel;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
 public partial class HelpForm : Form
 {
 public string HelpFile;
 public TextBox HelpText = new TextBox();
-
-        public HelpForm()
+public HelpForm()
 {
 InitTextBox();
 InitForm();
 }
-
 public void InitTextBox()
 {
 HelpText.Location = new Point(10, 10);
@@ -25,7 +22,6 @@ HelpText.ReadOnly = true;
 HelpText.KeyDown += HelpForm_KeyDown;
 this.Controls.Add(HelpText);
 }
-
 public void InitForm()
 {
 this.TopMost = true;
@@ -37,6 +33,5 @@ this.Name = "HelpForm";
 this.Text = T._("Help");
 this.Shown += HelpForm_Shown;
 }
-
 }
 }

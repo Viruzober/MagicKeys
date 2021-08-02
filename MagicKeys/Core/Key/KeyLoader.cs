@@ -3,7 +3,6 @@ using System.IO;
 using System.Windows.Forms;
 using System.Collections.Specialized;
 using System.Collections.Generic;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -20,6 +19,5 @@ VUIKeys.Add(KeyList[I], Ini.IniRead(API.GetCurrentVUI(), "Keys", KeyList[I]));
 }
 }
 }
-
 }
 }

@@ -1,12 +1,10 @@
 using System;
 using System.Reflection;
 using System.IO;
-
 namespace MagicKeys
 {
 public static partial class Ini
 {
-
 public static void IniWrite(string GetFile, string GetSection, string GetKey, string GetValue)
 {
 string[] FileStr = File.ReadAllLines(GetFile);
@@ -31,6 +29,5 @@ File.WriteAllText(GetFile, FullStr);
 }
 }
 }
-
 }
 }

@@ -11,12 +11,10 @@ using System.Drawing;
 using System.Text.Json;
 using System.Collections.Generic;
 using System.Windows.Forms;
-
 namespace MagicKeys
 {
-    public partial class DeveloperTool
+public partial class DeveloperTool
 {
-
 public static async void VisionBot()
 {
 try{
@@ -48,7 +46,6 @@ catch(Exception)
 MagicKeys.Speak("Error");
 }
 }
-
 public static async void VisionBotResult(string ID)
 {
 HttpClient HTTPC = new HttpClient();
@@ -77,6 +74,5 @@ MagicKeys.Speak(J["text"]);
 break;
 }
 }
-
 }
 }

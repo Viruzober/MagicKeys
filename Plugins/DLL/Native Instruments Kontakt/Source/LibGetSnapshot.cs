@@ -1,12 +1,10 @@
 using System.Threading.Tasks;
 using System.Threading;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Kontakt
 {
-
 public static void LibGetSnapshot()
 {
 int[] KLSS = ImgSearch("KontaktTopLine");
@@ -18,6 +16,5 @@ string Snapshot = ImgToText(140, 25, KLSS[1] + 70, KLSS[2] + 35, 2);
 MouseClick("Left", KLSS[1]+620, KLSS[2]+20, 1, 0, 0, 10);
 Speak(Snapshot);
 }
-
 }
 }

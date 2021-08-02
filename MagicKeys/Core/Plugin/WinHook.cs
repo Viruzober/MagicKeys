@@ -1,10 +1,8 @@
 ﻿using System;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static string[] WinHook(string WTitle, string WClass)
 {
 string[] T = WTitle.Split(",");
@@ -21,6 +19,5 @@ return new string[2] {Title, Class};
 }
 return new string[2] {null, null};
 }
-
 }
 }

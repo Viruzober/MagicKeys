@@ -2,12 +2,10 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 using System.Reflection;
-
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-
 public static void HelpForm()
 {
 string HelpFile = API.GetVUIPath()+API.GetVUI()+".help";
@@ -24,6 +22,5 @@ HF.ShowDialog();
 KeyReg();
 }
 }
-
 }
 }

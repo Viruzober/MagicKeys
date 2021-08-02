@@ -3,12 +3,10 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Threading.Tasks;
 using static MagicKeys.MagicKeys;
-
 namespace MagicKeys
 {
 public partial class Kontakt
 {
-
 public static void LibMidiChannel()
 {
 string Input = InputBox("MIDI Channel", "Enter MIDI channel number from 1 to 16.", 1, 16);
@@ -34,7 +32,6 @@ MouseClick("Left", KLMC[1]+620, KLMC[2]+20, 1, 0, 0, 10);
 Speak("Done");
 }
 }
-
 public static void LibAudioChannel()
 {
 string Input = InputBox("Audio Channel", "Enter audio channel number from 1 to 16.", 1, 16);
@@ -60,7 +57,6 @@ else
 return;
 }
 }
-
 public static void LibDelete()
 {
 int[] KLD = ImgSearch("KontaktTopLine");
@@ -80,8 +76,7 @@ LibNormalize();
 Speak(Name+" deleted");
 return;
 }
-		}
-
+}
 public static void LibSwitchFolder(string To)
 {
 try
@@ -104,7 +99,6 @@ LibSwitchFolder(To);
 Thread.Sleep(200);
 Speak("Done");
 }
-
 public static void LibSwitchSnapshot(string To)
 {
 int[] KLSS = ImgSearch("KontaktTopLine");
@@ -125,11 +119,9 @@ string Snapshot = ImgToText(140, 25, KLSS[1] + 70, KLSS[2] + 35, 2);
 MouseClick("Left", KLSS[1]+620, KLSS[2]+20, 1, 0, 0, 10);
 Speak(Snapshot);
 }
-
 public static void BlockDelete()
 {
 return;
 }
-
 }
 }

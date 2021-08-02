@@ -1,10 +1,8 @@
 using System;
-
 namespace MagicKeys
 {
-    public partial class MagicKeys
+public partial class MagicKeys
 {
-
 public static void VUIObjectNavigator(string Navigate)
 {
 if (Navigate == "Next")
@@ -31,6 +29,5 @@ CurrentObject -= 1;
 }
 VUIObjectSpeak();
 }
-
 }
 }
