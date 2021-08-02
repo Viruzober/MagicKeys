@@ -16,8 +16,8 @@ if (O.Value["Active"] == "true")
 ActiveObjects.Add(O.Key);
 }
 }
-Count = ActiveObjects.Count-1;
-if (StartObject == true) Section = 0;
+CountObjects = ActiveObjects.Count-1;
+if (StartObject == true) CurrentObject = 0;
 }
 
 }

@@ -29,6 +29,9 @@ break;
 case "FileNotFound":
 FileNotFoundError(DI);
 break;
+case "VUILoader":
+VUILoaderError(DI);
+break;
 case "ExceptionHook":
 ExceptionHookError(DI);
 break;
@@ -74,6 +77,14 @@ public void FileNotFoundError(string[] EX)
 DebugText.Text =
 T._("Message:")+" "+T._("File not found")+"\r\n"+
 T._("File:")+" "+EX[1];
+}
+
+public void VUILoaderError(string[] EX)
+{
+DebugText.Text =
+T._("Message:")+" "+T._("The key or value doesn't exist.")+"\r\n"+
+T._("File:")+" "+EX[1]+"\r\n"+
+T._("Object:")+" "+EX[2]+"\r\n";
 }
 
 public void ExceptionHookError(string[] EX)

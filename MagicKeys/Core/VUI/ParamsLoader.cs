@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MagicKeys
 {
@@ -7,28 +8,15 @@ public partial class MagicKeys
 
 public static void ParamsLoader()
 {
-Count = Ini.IniCountSections(API.GetCurrentVUI());
 if (Ini.IniSectionExists(API.GetCurrentVUI(), "Params") == true)
 {
-if (Ini.IniKeyExists(API.GetCurrentVUI(), "Params", "PluginClass") == true)
+List<string> Keys = Ini.IniReadKeys(API.GetCurrentVUI(), "Params");
+List<string> Values = Ini.IniReadValues(API.GetCurrentVUI(), "Params");
+for(int I = 0; I <= Keys.Count-1; I++)
 {
-CurrentPlugin["PluginClass"] = Ini.IniRead(API.GetCurrentVUI(), "Params", "PluginClass");
+CurrentPlugin[Keys[I]] = Values[I];
 }
-if (Ini.IniKeyExists(API.GetCurrentVUI(), "Params", "Loader") == true)
-{
-CurrentPlugin["Loader"] = Ini.IniRead(API.GetCurrentVUI(), "Params", "Loader");
 }
-else
-{
-CurrentPlugin["Loader"] = "None";
-}
-Count--;
-}
-else
-{
-CurrentPlugin["Loader"] = "None";
-}
-if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true) Count--;
 }
 
 }

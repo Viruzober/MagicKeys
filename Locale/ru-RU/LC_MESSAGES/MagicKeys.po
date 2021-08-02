@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-01 01:36+0300\n"
+"POT-Creation-Date: 2021-08-02 10:53+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -219,42 +219,52 @@ msgstr "Внимание"
 msgid "Exit"
 msgstr "Выход"
 
-#: MagicKeys\Forms\DebugFormActions.cs:48
-#: MagicKeys\Forms\DebugFormActions.cs:58
-#: MagicKeys\Forms\DebugFormActions.cs:67
-#: MagicKeys\Forms\DebugFormActions.cs:75
+#: MagicKeys\Forms\DebugFormActions.cs:51
+#: MagicKeys\Forms\DebugFormActions.cs:61
+#: MagicKeys\Forms\DebugFormActions.cs:70
+#: MagicKeys\Forms\DebugFormActions.cs:78
+#: MagicKeys\Forms\DebugFormActions.cs:85
 msgid "Message:"
 msgstr "Сообщение:"
 
-#: MagicKeys\Forms\DebugFormActions.cs:49
-#: MagicKeys\Forms\DebugFormActions.cs:59
-#: MagicKeys\Forms\DebugFormActions.cs:68
-#: MagicKeys\Forms\DebugFormActions.cs:76
+#: MagicKeys\Forms\DebugFormActions.cs:52
+#: MagicKeys\Forms\DebugFormActions.cs:62
+#: MagicKeys\Forms\DebugFormActions.cs:71
+#: MagicKeys\Forms\DebugFormActions.cs:79
+#: MagicKeys\Forms\DebugFormActions.cs:86
 msgid "File:"
 msgstr "Файл:"
 
-#: MagicKeys\Forms\DebugFormActions.cs:50
-#: MagicKeys\Forms\DebugFormActions.cs:60
+#: MagicKeys\Forms\DebugFormActions.cs:53
+#: MagicKeys\Forms\DebugFormActions.cs:63
 msgid "Line:"
 msgstr "Строка:"
 
-#: MagicKeys\Forms\DebugFormActions.cs:51
-#: MagicKeys\Forms\DebugFormActions.cs:61
+#: MagicKeys\Forms\DebugFormActions.cs:54
+#: MagicKeys\Forms\DebugFormActions.cs:64
 msgid "Section:"
 msgstr "Раздел:"
 
-#: MagicKeys\Forms\DebugFormActions.cs:52
-#: MagicKeys\Forms\DebugFormActions.cs:69
+#: MagicKeys\Forms\DebugFormActions.cs:55
+#: MagicKeys\Forms\DebugFormActions.cs:72
 msgid "Key:"
 msgstr "Ключ:"
 
-#: MagicKeys\Forms\DebugFormActions.cs:67
+#: MagicKeys\Forms\DebugFormActions.cs:70
 msgid "The keyboard shortcut cannot be registered"
 msgstr "Не удалось зарегистрировать сочетание клавиш"
 
-#: MagicKeys\Forms\DebugFormActions.cs:75
+#: MagicKeys\Forms\DebugFormActions.cs:78
 msgid "File not found"
 msgstr "Файл не найден"
+
+#: MagicKeys\Forms\DebugFormActions.cs:85
+msgid "The key or value doesn't exist."
+msgstr ""
+
+#: MagicKeys\Forms\DebugFormActions.cs:87
+msgid "Object:"
+msgstr ""
 
 #: MagicKeys\Forms\HelpForm.cs:37 MagicKeys\Forms\MenuForm.cs:18
 #: MagicKeys\Forms\SettingsForm.cs:94

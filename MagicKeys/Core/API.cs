@@ -114,46 +114,47 @@ if (CurrentPlugin.ContainsKey("Loader") == true)
 {
 return CurrentPlugin["Loader"];
 }
-else
-{
 return "None";
-}
 }
 
 public static string GetText()
 {
-return VUIObjects[ActiveObjects[Section]]["Text"];
+return VUIObjects[ActiveObjects[CurrentObject]]["Text"];
 }
 
 public static string GetObjectType()
 {
-return VUIObjects[ActiveObjects[Section]]["ObjectType"];
+return VUIObjects[ActiveObjects[CurrentObject]]["ObjectType"];
 }
 
 public static string GetHelp()
 {
-return VUIObjects[ActiveObjects[Section]]["Help"];
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("Help") == true)
+{
+return VUIObjects[ActiveObjects[CurrentObject]]["Help"];
+}
+return "Help not found";
 }
 
 public static string GetAutoFunc()
 {
-if (VUIObjects[ActiveObjects[Section]].ContainsKey("AutoFunc") == true)
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("AutoFunc") == true)
 {
-return VUIObjects[ActiveObjects[Section]]["AutoFunc"];
+return VUIObjects[ActiveObjects[CurrentObject]]["AutoFunc"];
 }
 return null;
 }
 
 public static string GetFunc()
 {
-return VUIObjects[ActiveObjects[Section]]["Func"];
+return VUIObjects[ActiveObjects[CurrentObject]]["Func"];
 }
 
 public static string GetParam()
 {
-if (VUIObjects[ActiveObjects[Section]].ContainsKey("Param") == true)
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("Param") == true)
 {
-return VUIObjects[ActiveObjects[Section]]["Param"];
+return VUIObjects[ActiveObjects[CurrentObject]]["Param"];
 }
 return null;
 }

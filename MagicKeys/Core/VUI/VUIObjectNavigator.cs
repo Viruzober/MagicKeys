@@ -9,24 +9,24 @@ public static void VUIObjectNavigator(string Navigate)
 {
 if (Navigate == "Next")
 {
-if (Section >= Count)
+if (CurrentObject >= CountObjects)
 {
-Section = 0;
+CurrentObject = 0;
 }
 else
 {
-Section += 1;
+CurrentObject += 1;
 }
 }
 else if (Navigate == "Back")
 {
-if (Section == 0)
+if (CurrentObject == 0)
 {
-Section = Count;
+CurrentObject = CountObjects;
 }
 else
 {
-Section -= 1;
+CurrentObject -= 1;
 }
 }
 VUIObjectSpeak();
