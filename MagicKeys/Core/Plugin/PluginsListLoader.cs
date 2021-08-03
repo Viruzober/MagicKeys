@@ -3,12 +3,13 @@ using System.IO;
 using System.Windows.Forms;
 using System.Threading;
 using System.Reflection;
+using Microsoft.Collections.Extensions;
 using System.Collections.Generic;
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
-public static Dictionary<string, Dictionary<string, string>> PluginsList = new Dictionary<string, Dictionary<string, string>>();
+public static OrderedDictionary<string, OrderedDictionary<string, string>> PluginsList = new OrderedDictionary<string, OrderedDictionary<string, string>>();
 public static void PluginsListLoader()
 {
 string WTitle = Ini.IniRead(@"Plugins\Hosts.ini", "Hosts", "WTitle");
@@ -28,7 +29,7 @@ if (Point == "Info")
 {
 continue;
 }
-PluginsList.Add(Point, new Dictionary<string, string>());
+PluginsList.Add(Point, new OrderedDictionary<string, string>());
 if (Ini.IniKeyExists(IVUI, Point, "WTitle") == true)
 {
 PluginsList[Point].Add("WTitle", Ini.IniRead(IVUI, Point, "WTitle"));
