@@ -37,6 +37,7 @@ if (API.GetSubClass() != string.Empty && API.GetSubClass() != "MagicKeys")
 SubClass = null;
 SubClassLoader.Unload();
 }
+LUAScript.Globals.Clear();
 GC.Collect();
 GC.WaitForPendingFinalizers();
 }
@@ -44,5 +45,6 @@ CurrentPlugin.Clear();
 }
 }
 }
+
 }
 }

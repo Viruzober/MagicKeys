@@ -17,6 +17,11 @@ string ModulePath = string.Empty;
 PluginClassLoader = new CustomAssemblyLoadContext();
 try
 {
+if (API.GetPluginClass() == "lua")
+{
+LUAInit();
+return;
+}
 if (API.GetPluginClass() == "MagicKeys")
 {
 PluginClass = MKOBJ.GetType();

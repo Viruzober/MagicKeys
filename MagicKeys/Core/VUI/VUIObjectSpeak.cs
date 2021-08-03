@@ -14,10 +14,14 @@ SpeakObject += " "+API.GetObjectType();
 if (API.GetAutoFunc() != null)
 {
 string AutoFunc;
-if (API.GetPluginClass() == "MagicKeys" | API.GetSubClass() == "MagicKeys")
+if (API.GetActiveClass() == "lua")
 {
-List<string> Funcs = Ini.IniReadKeys(API.GetCurrentVUF(), API.GetAutoFunc());
-List<string> Params = Ini.IniReadValues(API.GetCurrentVUF(), API.GetAutoFunc());
+AutoFunc = LUAInvoke(API.GetAutoFunc(), AutoFunc:true);
+}
+else if (API.GetActiveClass() == "MagicKeys")
+{
+List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), API.GetAutoFunc());
+List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), API.GetAutoFunc());
 AutoFunc = VUFInvoke(Funcs, Params, AudoFunc:true);
 }
 else

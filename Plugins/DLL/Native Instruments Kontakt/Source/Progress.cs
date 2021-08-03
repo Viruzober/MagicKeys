@@ -20,7 +20,7 @@ return "0";
 }
 public static void ProgressCancel()
 {
-MouseClick("Left", P[1]+350, P[2]+35, 1, 0, 0, 10);
+MouseClick("Left", P[1]+340, P[2]+55, 1, 0, 0, 10);
 }
 }
 }

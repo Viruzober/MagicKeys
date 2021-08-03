@@ -15,7 +15,12 @@ string ModulePath = string.Empty;
 SubClassLoader = new CustomAssemblyLoadContext();
 try
 {
-if (API.GetSubClass() == string.Empty | API.GetSubClass() == "MagicKeys")
+if (API.GetSubClass() == "lua")
+{
+LUAInit();
+return;
+}
+if (API.GetSubClass() == string.Empty || API.GetSubClass() == "MagicKeys")
 {
 SubClass = MKOBJ.GetType();
 return;

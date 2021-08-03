@@ -18,10 +18,14 @@ KeyUnReg();
 if (VUIKeys.ContainsKey(modifier+key) == true)
 {
 (string Func, string Param) = FuncParse(VUIKeys[modifier+key]);
-if (API.GetPluginClass() == "MagicKeys" | API.GetSubClass() == "MagicKeys")
+if (API.GetActiveClass() == "lua")
 {
-List<string> Funcs = Ini.IniReadKeys(API.GetCurrentVUF(), (string)Func);
-List<string> Params = Ini.IniReadKeys(API.GetCurrentVUF(), (string)Param);
+LUAInvoke(Func, Param);
+}
+else if (API.GetActiveClass() == "MagicKeys")
+{
+List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), (string)Func);
+List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), (string)Func);
 VUFInvoke(Funcs, Params);
 }
 else

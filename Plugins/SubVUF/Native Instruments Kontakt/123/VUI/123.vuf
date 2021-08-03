@@ -1,7 +1,0 @@
-[Test]
-Speak=Test
-[Back]
-Func=SubPluginUnLoad
-VUILoader=LibList
-[Super]
-Speak=This super down testing

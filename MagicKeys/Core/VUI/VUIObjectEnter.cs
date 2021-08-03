@@ -8,10 +8,16 @@ public partial class MagicKeys
 public static void VUIObjectEnter()
 {
 KeyUnReg();
-if (API.GetPluginClass() == "MagicKeys" | API.GetSubClass() == "MagicKeys")
+if (API.GetActiveClass() == "lua")
 {
-List<string> Funcs = Ini.IniReadKeys(API.GetCurrentVUF(), API.GetFunc());
-List<string> Params = Ini.IniReadValues(API.GetCurrentVUF(), API.GetFunc());
+LUAInvoke(API.GetFunc(), API.GetParam());
+KeyReg();
+return;
+}
+if (API.GetActiveClass() == "MagicKeys")
+{
+List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), API.GetFunc());
+List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), API.GetFunc());
 VUFInvoke(Funcs, Params);
 KeyReg();
 return;

@@ -37,8 +37,8 @@ CurrentPlugin["PluginClass"] += ".MagicKeys";
 CurrentPlugin["PluginName"] += "."+PluginName;
 if (ImgSearch(Ini.IniRead(IVUI, Point, "Img"), true)[0] == 1)
 {
-GetSubPluginType();
 VUILoader(Ini.IniRead(IVUI, Point, "VUI"));
+GetSubPluginType();
 Speak(PluginName+" loaded");
 return true;
 }

@@ -82,6 +82,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Experimental.Collections" Version="1.0.6-e190117-3" />
+    <PackageReference Include="MoonSharp" Version="2.0.0" />
     <PackageReference Include="NGettext" Version="0.6.6" />
   </ItemGroup>
 

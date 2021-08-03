@@ -77,7 +77,7 @@ return temp;
 }
 catch(Exception)
 {
-MagicKeys.MKDebugForm("IniReadKeys|"+L.ToString()+","+GetFile+","+GetSection+","+Error);
+MagicKeys.MKDebugForm("IniReadKeys|"+L.ToString()+"|"+GetFile+"|"+GetSection+"|"+Error);
 return null;
 }
 }
