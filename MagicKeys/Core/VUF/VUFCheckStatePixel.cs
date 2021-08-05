@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string VUFCheckStatePixel(string Param)
 {
 string[] FP = Param.Split(",");

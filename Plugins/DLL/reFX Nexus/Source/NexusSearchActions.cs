@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class NexusSearchForm
 {
+
 public void NexusSearchForm_Shown(object sender, EventArgs e)
 {
 this.Activate();

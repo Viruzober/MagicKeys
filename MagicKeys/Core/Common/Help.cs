@@ -2,8 +2,10 @@ using System.IO;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void HelpForm()
 {
 string HelpFile = API.GetVUIPath()+API.GetVUI()+".help";

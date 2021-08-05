@@ -5,8 +5,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static OrderedDictionary<string, OrderedDictionary<string, string>> PluginsList = new OrderedDictionary<string, OrderedDictionary<string, string>>();
 public static void PluginsListLoader()
 {

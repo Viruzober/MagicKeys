@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string ImgToText(int W, int H, int X, int Y, int Zoom)
 {
 try

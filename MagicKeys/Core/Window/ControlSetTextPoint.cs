@@ -2,8 +2,10 @@ using System;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void ControlSetTextPoint(int X, int Y, string SetText)
 {
 IntPtr CHandle = GetWinPointHandle(X, Y);

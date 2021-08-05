@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class InputBox : Form
 {
+
 public Label InputBoxLabel = new Label();
 public NumericUpDown Value = new NumericUpDown();
 public Button ButtonOK = new Button();

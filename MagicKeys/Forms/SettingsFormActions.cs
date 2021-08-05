@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class SettingsForm : Form
 {
+
 public void SettingsForm_Shown(object sender, EventArgs e)
 {
 this.Activate();

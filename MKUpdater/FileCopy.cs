@@ -3,8 +3,10 @@ using System.Linq;
 
 namespace MKUpdater
 {
+
 public partial class MKUpdater
 {
+
 public static void CopyDirectory(string source, string target) 
 { 
 var sourcePath = source.TrimEnd('\\', ' '); 

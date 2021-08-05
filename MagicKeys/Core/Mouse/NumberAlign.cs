@@ -1,7 +1,9 @@
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static int NumberAlign(int NumberIn, int NumberTo)
 {
 if (NumberTo > NumberIn)

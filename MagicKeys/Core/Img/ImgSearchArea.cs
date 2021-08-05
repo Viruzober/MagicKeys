@@ -4,8 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static int[] ImgSearchArea(string imgPath, int X, int Y, int W, int H, int Variant)
 {
 IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));

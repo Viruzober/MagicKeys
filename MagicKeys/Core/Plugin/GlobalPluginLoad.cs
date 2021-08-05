@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static Dictionary<string, string> CurrentPlugin = new Dictionary<string, string>();
 public static void GlobalPluginLoad(string Item, string WTitle, string WClass)
 {

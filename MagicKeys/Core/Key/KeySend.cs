@@ -5,8 +5,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void KeySend(string Type, string Send, int Time, int PostTime)
 {
 if (string.IsNullOrEmpty(Send))

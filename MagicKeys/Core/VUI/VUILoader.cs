@@ -5,8 +5,10 @@ using System.Linq;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUILoader(string File)
 {
 KeyUnReg();

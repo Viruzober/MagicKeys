@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void SetFocusControlPoint(int X, int Y)
 {
 IntPtr Handle = GetWinPointHandle(X, Y);

@@ -2,8 +2,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Nexus
 {
+
 public static void ReverbOnOff()
 {
 MouseClick("Left", P[1]+480, P[2]+365, 1, 0, 0, 10);

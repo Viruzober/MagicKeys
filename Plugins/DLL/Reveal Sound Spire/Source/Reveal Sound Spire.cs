@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class RevealSoundSpire
 {
+
 public string BP = "Bank";
 public void Library()
 {

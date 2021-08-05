@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string GetMIText(int ID)
 {
 IntPtr HMenu = WinExistsHandle("", "#32768");

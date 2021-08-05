@@ -2,8 +2,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static void LoadLibInterface()
 {
 int[] KTL = ImgSearch("KontaktTopLine");

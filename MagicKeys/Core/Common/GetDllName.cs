@@ -3,8 +3,10 @@ using System.IO;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string GetDllName(IntPtr Handle)
 {
 Int32 ProcessID;

@@ -2,8 +2,10 @@ using Microsoft.Win32;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string RegReader(RegistryKey HK, string Path, string GetKey)
 {
 string[] PR = Path.Split("/");

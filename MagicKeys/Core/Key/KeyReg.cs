@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static KeyWNDProc KeyWndProcHandle = new KeyWNDProc();
 public static KeysConverter kc = new KeysConverter();
 public static void KeyReg()

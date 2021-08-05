@@ -2,8 +2,10 @@ using System;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string OS()
 {
 bool Bit = Environment.Is64BitOperatingSystem;

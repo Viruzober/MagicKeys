@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class DevMenu : Form
 {
+
 public NotifyIcon Ni;
 public System.ComponentModel.IContainer components;
 public ContextMenuStrip MainMenu = new ContextMenuStrip();

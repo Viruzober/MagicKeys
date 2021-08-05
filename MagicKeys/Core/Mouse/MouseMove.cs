@@ -2,8 +2,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void MouseMove (int GetX, int GetY, int TimeMove)
 {
 int X = GetX, Y = GetY;

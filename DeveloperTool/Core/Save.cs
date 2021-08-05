@@ -4,8 +4,10 @@ using System.IO;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void Save()
 {
 KeyUnReg();

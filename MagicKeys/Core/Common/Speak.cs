@@ -4,8 +4,10 @@ using System.Linq;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void Speak(string Text)
 {
 var runningProcs = from proc in Process.GetProcesses(".") orderby proc.Id select proc;

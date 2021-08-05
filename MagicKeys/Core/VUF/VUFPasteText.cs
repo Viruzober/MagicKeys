@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUFPasteText(string Param)
 {
 if (CopyText == string.Empty)

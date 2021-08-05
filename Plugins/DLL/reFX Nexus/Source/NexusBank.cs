@@ -4,8 +4,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Nexus
 {
+
 public static void NexusBank(string To)
 {
 if (To == "Back")

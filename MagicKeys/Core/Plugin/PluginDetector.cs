@@ -3,8 +3,10 @@ using System.Threading;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string[] WH = new string[2];
 public static void PluginDetector()
 {

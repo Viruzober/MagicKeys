@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void ParamsLoader()
 {
 if (Ini.IniSectionExists(API.GetCurrentVUI(), "Params") == true)

@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static string Progress()
 {
 int[] X = ImgSearchArea("Progress", P[1], P[2], P[3], P[4], 0);

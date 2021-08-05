@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string GetKeyName(int Key)
 {
 if (Key == 33)

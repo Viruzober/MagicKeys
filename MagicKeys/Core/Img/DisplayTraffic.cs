@@ -2,8 +2,10 @@ using System.Drawing;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void DisplayTraffic(int X, int Y, int W, int H, int CXT, int CYT, int CT)
 {
 Bitmap ToScreen = new Bitmap(W, H);

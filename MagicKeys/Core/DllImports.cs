@@ -4,6 +4,7 @@ using System.Text;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
 [DllImport("user32.dll")]

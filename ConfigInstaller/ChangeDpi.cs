@@ -5,8 +5,10 @@ using System.Runtime.InteropServices;
 
 namespace ConfigInstaller
 {
+
 public partial class ConfigInstaller
 {
+
 public static Size Display = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size;
 public static int DWidth = Display.Width;
 public static int DHeight = Display.Height;
@@ -20,6 +22,7 @@ D270 = 3
 [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
 struct DEVMODE
 {
+
 public const int DM_PELSWIDTH = 0x80000;
 public const int DM_PELSHEIGHT = 0x100000;
 private const int CCHDEVICENAME = 32;

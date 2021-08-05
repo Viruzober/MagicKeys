@@ -3,8 +3,10 @@ using System.Text;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static Size Display = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size;
 public static int Width = Display.Width;
 public static int Height = Display.Height;

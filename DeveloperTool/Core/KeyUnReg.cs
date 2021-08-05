@@ -1,7 +1,9 @@
 ﻿namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void KeyUnReg()
 {
 for(int I = 4; I <= 26; I++)

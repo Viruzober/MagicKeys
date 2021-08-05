@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Omnisphere
 {
+
 public static void OmnispherePatch(string To)
 {
 if (To == "Back")

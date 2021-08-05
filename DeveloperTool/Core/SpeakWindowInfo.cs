@@ -3,8 +3,10 @@ using System.Text;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void SpeakWindowInfo()
 {
 StringBuilder Title = new StringBuilder(512);

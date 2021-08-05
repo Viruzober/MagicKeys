@@ -3,8 +3,10 @@ using System.Reflection;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
 {
 try

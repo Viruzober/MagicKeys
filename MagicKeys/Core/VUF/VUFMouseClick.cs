@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUFMouseClick(String Param)
 {
 string[] PR = Param.Split(",");

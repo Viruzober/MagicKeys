@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class SettingsForm : Form
 {
+
 public CheckBox NavigationType = new CheckBox();
 public CheckBox SoundTheme = new CheckBox();
 public Label TimeOut = new Label();

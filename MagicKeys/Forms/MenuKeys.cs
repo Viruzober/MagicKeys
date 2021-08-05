@@ -2,6 +2,7 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class Menu : Form
 {
 protected override void WndProc(ref Message m)

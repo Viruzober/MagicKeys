@@ -2,8 +2,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string InputBox(string Title, string Text, int Start, int End)
 {
 InputBox IB = new InputBox();

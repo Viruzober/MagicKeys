@@ -8,6 +8,7 @@ using System.Text;
 
 namespace MKUpdater
 {
+
 public partial class MKUpdater
 {
 [Flags]

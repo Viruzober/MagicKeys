@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public class IlyaEfimovBayanLeft
 {
+
 public static void AutoAttack()
 {
 MouseClick("Left", P[1]+45, P[2]+190, 1, 0, 0, 10);

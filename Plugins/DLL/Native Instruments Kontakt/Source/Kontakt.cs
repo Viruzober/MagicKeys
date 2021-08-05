@@ -4,8 +4,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static void Load()
 {
 MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);

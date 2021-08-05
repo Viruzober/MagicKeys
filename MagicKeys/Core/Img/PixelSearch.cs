@@ -3,8 +3,10 @@ using System.Drawing;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static bool PixelSearch(int X, int Y, string Color)
 {
 Bitmap Screen = new Bitmap(8, 8);

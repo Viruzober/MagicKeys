@@ -4,8 +4,10 @@ using System.Threading;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static bool CheckBox(int X, int Y, string Color, string Text)
 {
 MouseMove(X+15, Y+15, 0);

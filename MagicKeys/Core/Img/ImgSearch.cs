@@ -4,8 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static int[] ImgSearch(string imgPath, bool Window)
 {
 IntPtr result;

@@ -4,8 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public delegate bool EnumChildProcDelegate(IntPtr hwnd, IntPtr lParam);
 public static IntPtr ControlExistsHandle(IntPtr Parent, string HWNDTitle, string HWNDClass)
 {

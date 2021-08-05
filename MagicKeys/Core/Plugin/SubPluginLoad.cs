@@ -3,8 +3,10 @@ using System.IO;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static bool SubPluginLoad()
 {
 string[] dir = Directory.GetDirectories(Path.Combine(API.GetPluginPath(), "Subplugins"));

@@ -4,8 +4,10 @@ using MoonSharp.Interpreter.Loaders;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static Script LUAScript = new Script();
 public static void LUAInit()
 {

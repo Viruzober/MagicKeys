@@ -2,8 +2,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static void CmBFD()
 {
 MouseClick("Left", P[1]+220, P[2]+270, 1, 0, 0, 10);

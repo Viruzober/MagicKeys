@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static int[] GetPluginCoord()
 {
 int[] ControlCoord;

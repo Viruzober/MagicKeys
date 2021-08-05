@@ -2,8 +2,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static void LibNormalize()
 {
 CreateOneBitmap(P[1], P[2], P[3], P[4]);

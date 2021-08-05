@@ -3,8 +3,10 @@ using System.Threading;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string VUFInvoke(List<string> Funcs, List<string> Params, int TimeOut = 0, bool AudoFunc = false)
 {
 string R = null;

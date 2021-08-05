@@ -2,8 +2,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Omnisphere
 {
+
 public static void CopySerial()
 {
 int[] CS = ImgSearch("CopySerial", true);

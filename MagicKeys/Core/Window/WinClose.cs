@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static bool WinClose(string HWNDTitle, string HWNDClass)
 {
 while(true)

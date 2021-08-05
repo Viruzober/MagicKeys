@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public static partial class Ini
 {
+
 public static List<string> IniReadValues(string File, string Section)
 {
 List<string> Temp = new List<string>();

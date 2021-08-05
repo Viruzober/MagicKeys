@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class RevealSoundSpire
 {
+
 public void Oscillator1()
 {
 MouseClick("Left", P[1]+145, P[2]+60, 1, 0, 0, 10);

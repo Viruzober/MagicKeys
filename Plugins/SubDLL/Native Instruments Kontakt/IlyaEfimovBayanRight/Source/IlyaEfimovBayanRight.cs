@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public class IlyaEfimovBayanRight
 {
+
 public static void RoundRobin()
 {
 MouseClick("Left", P[1]+45, P[2]+190, 1, 0, 0, 10);

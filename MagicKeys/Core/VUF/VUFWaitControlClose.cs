@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUFWaitControlClose(String Param)
 {
 string[] FP = Param.Split(",");

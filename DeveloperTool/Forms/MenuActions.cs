@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class DevMenu : Form
 {
+
 public async void Exit(object sender, EventArgs e)
 {
 DeveloperTool.KeySwitch = 1;

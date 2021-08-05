@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace DeveloperTool
 {
+
 public partial class OCRResultForm : Form
 {
+
 public void OCRResultForm_Shown(object sender, EventArgs e)
 {
 this.Activate();

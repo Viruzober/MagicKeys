@@ -2,8 +2,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static KeyNavigator KeyNavigatorHandle = new KeyNavigator();
 public static void KeyNavigatorReg()
 {

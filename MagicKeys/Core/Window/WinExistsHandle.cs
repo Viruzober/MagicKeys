@@ -4,8 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static IntPtr WinExistsHandle(string HWNDTitle, string HWNDClass)
 {
 List<IntPtr> result = new List<IntPtr>();

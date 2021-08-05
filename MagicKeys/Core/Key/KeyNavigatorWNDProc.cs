@@ -3,6 +3,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public class KeyNavigator : Form
 {
 protected override void WndProc(ref Message m)

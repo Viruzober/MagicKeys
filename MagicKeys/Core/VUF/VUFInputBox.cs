@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUFInputBox(string Param)
 {
 string[] FP = Param.Split(",");

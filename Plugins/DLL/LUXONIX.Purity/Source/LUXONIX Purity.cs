@@ -4,8 +4,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class LUXONIXPurity
 {
+
 public static void PurityLoader()
 {
 if (ImgSearch("Register", true)[0] == 1)

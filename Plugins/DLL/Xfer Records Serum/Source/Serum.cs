@@ -4,8 +4,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Serum
 {
+
 public static void PresetsMenu()
 {
 MouseClick("Left", P[1]+660, P[2]+10, 1, 0, 0, 10);

@@ -4,8 +4,10 @@ using System.Reflection;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static object SubClass = new object();
 public static CustomAssemblyLoadContext SubClassLoader = new CustomAssemblyLoadContext();
 public static void GetSubPluginType()

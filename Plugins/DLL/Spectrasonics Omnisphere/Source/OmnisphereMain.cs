@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Omnisphere
 {
+
 public static void MainTab()
 {
 MouseClick("Left", P[1]+545, P[2]+210, 1, 0, 0, 10);

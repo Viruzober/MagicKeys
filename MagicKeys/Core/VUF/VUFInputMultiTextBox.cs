@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUFInputMultiTextBox(string Param)
 {
 string[] FP = Param.Split(",");

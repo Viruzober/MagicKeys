@@ -8,8 +8,10 @@ using System.Windows.Forms;
 
 namespace MKUpdater
 {
+
 public partial class MKUpdater
 {
+
 public static string UpdateChannel;
 public static string NewVersion;
 static void Main (string[] Args)

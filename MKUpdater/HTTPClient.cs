@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 
 namespace MKUpdater
 {
+
 public class HttpClientDownloadWithProgress : IDisposable
 {
+
 private bool Cancel = false;
 private readonly string _downloadUrl;
 private readonly string _destinationFilePath;

@@ -1,7 +1,9 @@
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUIObjectSwitcher(bool Update, string Switch, int Start, int End = 0)
 {
 int ObjectEnd = End;

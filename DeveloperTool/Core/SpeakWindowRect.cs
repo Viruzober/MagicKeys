@@ -1,7 +1,9 @@
 ﻿namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void SpeakWindowRect()
 {
 int[] Rect = MagicKeys.GetWinRect(MagicKeys.GetForegroundWindow());

@@ -1,7 +1,9 @@
 ﻿namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUFControlSetText(string Param)
 {
 string[] FP = Param.Split(",");

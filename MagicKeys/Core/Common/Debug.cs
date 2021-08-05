@@ -1,7 +1,9 @@
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void MKDebugForm(string DebugInfo)
 {
 //MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);

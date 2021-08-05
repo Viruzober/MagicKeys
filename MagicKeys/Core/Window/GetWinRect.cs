@@ -2,8 +2,10 @@ using System;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static int[] GetWinRect(IntPtr Handle)
 {
 WinRect WR;

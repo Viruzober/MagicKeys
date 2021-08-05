@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class DebugForm : Form
 {
+
 public string DebugInfo;
 public TextBox DebugText = new TextBox();
 public Button Exit = new Button();

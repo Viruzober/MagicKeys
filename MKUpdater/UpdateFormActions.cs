@@ -7,8 +7,10 @@ using System.Windows.Forms;
 
 namespace MKUpdater
 {
+
 public partial class UpdateForm : Form
 {
+
 public HttpClientDownloadWithProgress client;
 public string UpdateFileName = string.Empty;
 public async void ButtonOK_Click(object sender, EventArgs e)

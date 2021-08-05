@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace ConfigInstaller
 {
+
 public partial class ConfigInstallerForm : Form
 {
+
 public ConfigInstallerForm()
 {
 InitLabel();

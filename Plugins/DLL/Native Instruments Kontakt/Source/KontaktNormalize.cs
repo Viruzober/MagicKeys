@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static void KontaktNormalize()
 {
 while (ImgSearch("KontaktLogo", true)[0] == 0)

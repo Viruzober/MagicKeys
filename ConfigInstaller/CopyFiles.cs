@@ -3,8 +3,10 @@ using System.Diagnostics;
 
 namespace ConfigInstaller
 {
+
 public partial class ConfigInstaller
 {
+
 public static string CopyFiles(string In, string To)
 {
 Process proc = new Process();

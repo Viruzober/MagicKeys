@@ -4,8 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static List<IntPtr> GetAllWindows(IntPtr Parent)
 {
 List<IntPtr> result = new List<IntPtr>();

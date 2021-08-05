@@ -1,7 +1,9 @@
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public enum WM 
 {
 WM_NULL= 0x0000,

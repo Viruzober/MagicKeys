@@ -1,7 +1,9 @@
 ﻿namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static (string, string) FuncParse(string FuncParam)
 {
 string[] Temp = FuncParam.Split(",", 2);

@@ -5,8 +5,10 @@ using System.Linq;
 
 namespace MagicKeys
 {
+
 public static partial class Ini
 {
+
 public static bool IniFileExists(string ExistsFile)
 {
 return File.Exists(ExistsFile);

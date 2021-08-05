@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static void LibNavigator(string NavigateTo)
 {
 if (NavigateTo == "Back")

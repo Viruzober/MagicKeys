@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string ProgressState(string Img, int X, int Y, int W, int H)
 {
 int[] S = ImgSearchArea(Img, X, Y, W, H, 10);

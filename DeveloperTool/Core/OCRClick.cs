@@ -1,7 +1,9 @@
 ﻿namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void OCRClick(string BTN)
 {
 if (DP[0] == 0)

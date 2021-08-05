@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class HelpForm : Form
 {
+
 public void HelpForm_Shown(object sender, EventArgs e)
 {
 this.Activate();

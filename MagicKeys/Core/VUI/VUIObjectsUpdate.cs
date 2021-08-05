@@ -1,7 +1,9 @@
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUIObjectsUpdate(bool StartObject)
 {
 ActiveObjects.Clear();

@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public class API
 {
+
 public static string GetPluginPath()
 {
 string[] TempPluginName = CurrentPlugin["PluginName"].Split(".");

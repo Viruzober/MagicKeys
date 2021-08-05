@@ -7,8 +7,10 @@ using System.Threading;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static async void VisionBot()
 {
 try{

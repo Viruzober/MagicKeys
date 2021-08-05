@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string VUFOCR(String Param)
 {
 string[] PR = Param.Split(",");

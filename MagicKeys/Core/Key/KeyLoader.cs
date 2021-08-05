@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static OrderedDictionary<string, string> VUIKeys = new OrderedDictionary<string, string>();
 public static void KeyLoader()
 {

@@ -8,8 +8,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static List<String> LW = new List<string>();
 public static List<int> LX = new List<int>();
 public static List<int> LY = new List<int>();

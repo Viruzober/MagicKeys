@@ -4,8 +4,10 @@ using System.IO;
 
 namespace MagicKeys
 {
+
 public static partial class Ini
 {
+
 public static List<string> IniReadSections(string GetFile)
 {
 List<string> temp = new List<string>();

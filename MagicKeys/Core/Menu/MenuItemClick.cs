@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void MenuItemClick(string Button, int X, int Y, string MIText)
 {
 MouseClick(Button, X, Y, 1, 0, 0, 10);

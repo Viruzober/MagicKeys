@@ -2,8 +2,10 @@ using System.Collections.Generic;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUIObjectSpeak()
 {
 string SpeakObject = API.GetText();

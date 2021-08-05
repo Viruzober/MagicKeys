@@ -3,17 +3,20 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
 [StructLayout(LayoutKind.Sequential)]
 public struct WinPoint
 {
+
 public int X;
 public int Y;
 }
 [StructLayout(LayoutKind.Sequential)]
 public struct WinRect
 {
+
 public int Left;
 public int Top;
 public int Right;
@@ -22,6 +25,7 @@ public int Bottom;
 [StructLayout(LayoutKind.Sequential)]
 public struct MenuRect
 {
+
 public int Left;
 public int Top;
 public int Right;
@@ -30,6 +34,7 @@ public int Bottom;
 [StructLayout(LayoutKind.Sequential)]
 public struct INPUT
 {
+
 public InputType type;
 public InputUnion U;
 }
@@ -44,6 +49,7 @@ public KeyboardInputData ki;
 [StructLayout(LayoutKind.Sequential)]
 public struct MouseInputData
 {
+
 public int dx;
 public int dy;
 public uint mouseData;
@@ -54,6 +60,7 @@ public IntPtr dwExtraInfo;
 [StructLayout(LayoutKind.Sequential)]
 public struct KeyboardInputData
 {
+
 public ushort wVk;
 public ushort wScan;
 public KeyEventFlags dwFlags;

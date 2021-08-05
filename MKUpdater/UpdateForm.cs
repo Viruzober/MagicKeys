@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MKUpdater
 {
+
 public partial class UpdateForm : Form
 {
+
 public Label UPDL = new Label();
 public ProgressBar PB = new ProgressBar();
 public RichTextBox TB = new RichTextBox();

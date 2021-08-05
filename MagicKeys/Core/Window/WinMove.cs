@@ -3,8 +3,10 @@ using System.Threading;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void WinMove(int X, int Y, bool RecP)
 {
 P = GetPluginCoord();

@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void MouseGoTo()
 {
 KeyUnReg();

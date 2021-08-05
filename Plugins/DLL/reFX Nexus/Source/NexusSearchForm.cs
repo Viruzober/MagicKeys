@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class NexusSearchForm : Form
 {
+
 public string Result;
 public Label SearchLabel = new Label();
 public TextBox SearchText = new TextBox();

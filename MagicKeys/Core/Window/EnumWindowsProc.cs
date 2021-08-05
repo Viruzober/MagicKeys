@@ -4,8 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public delegate bool EnumWindowsProc(IntPtr HWND, IntPtr HWNDList);
 public static bool EnumWindowsProcDelegate(IntPtr HWND, IntPtr HWNDList)
 {

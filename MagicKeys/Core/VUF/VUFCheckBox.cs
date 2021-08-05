@@ -2,8 +2,10 @@ using System;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUFCheckBox(string Param)
 {
 string[] FP = Param.Split(",");

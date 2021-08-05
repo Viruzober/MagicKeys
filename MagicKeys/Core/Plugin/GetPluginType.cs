@@ -5,8 +5,10 @@ using System.Runtime.Loader;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static MagicKeys MKOBJ = new MagicKeys();
 public static object PluginClass = new object();
 public static CustomAssemblyLoadContext PluginClassLoader = new CustomAssemblyLoadContext();
@@ -46,6 +48,7 @@ return;
 
 public class CustomAssemblyLoadContext : AssemblyLoadContext
 {
+
 public CustomAssemblyLoadContext() : base(isCollectible: true)
 { }
 protected override Assembly Load(AssemblyName assemblyName)

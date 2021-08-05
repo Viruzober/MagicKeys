@@ -9,8 +9,10 @@ using NGettext;
 
 namespace ConfigInstaller
 {
+
 public class T
 {
+
 private static readonly ICatalog _Catalog = new Catalog("ConfigInstaller", "./Locale");
 public static string _(string text)
 {

@@ -4,8 +4,10 @@ using System.Security.Cryptography;
 
 namespace MKUpdater
 {
+
 public partial class MKUpdater
 {
+
 public static string GetSHA(string file)
 {
 using (FileStream stream = File.OpenRead(file))

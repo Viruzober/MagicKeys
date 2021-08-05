@@ -3,8 +3,10 @@ using System.Threading;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void WaitWinClose(string Class)
 {
 if (WinExistsHandle("", Class) == IntPtr.Zero)

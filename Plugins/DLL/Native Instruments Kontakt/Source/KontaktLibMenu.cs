@@ -4,8 +4,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Kontakt
 {
+
 public static void LibMidiChannel()
 {
 string Input = InputBox("MIDI Channel", "Enter MIDI channel number from 1 to 16.", 1, 16);

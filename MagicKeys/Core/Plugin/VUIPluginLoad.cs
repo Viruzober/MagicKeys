@@ -4,8 +4,10 @@ using System.IO;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static void VUIPluginLoad()
 {
 if (API.GetLoader() == "Code")

@@ -2,6 +2,7 @@ using System;
 
 namespace MagicKeys
 {
+
 public class MKC
 {
 [Flags] 

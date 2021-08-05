@@ -2,8 +2,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Nexus
 {
+
 public static void AmpModifierOnOff()
 {
 MouseClick("Left", P[1]+685, P[2]+80, 1, 0, 0, 10);

@@ -2,8 +2,10 @@ using System;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static IntPtr GetWinPointHandle(int X, int Y)
 {
 WinPoint WP;

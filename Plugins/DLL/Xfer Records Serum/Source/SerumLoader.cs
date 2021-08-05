@@ -3,8 +3,10 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public partial class Serum
 {
+
 public static void SerumLoader()
 {
 Thread.Sleep(100);

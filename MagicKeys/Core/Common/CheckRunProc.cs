@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static bool CheckRunProc(string Proc)
 {
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;

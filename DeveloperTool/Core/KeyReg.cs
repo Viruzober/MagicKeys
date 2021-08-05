@@ -2,8 +2,10 @@
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void KeyReg()
 {
 MagicKeys.RegisterHotKey(HM.Handle, 4, MKC.NOMOD, (int)Keys.Left);

@@ -7,8 +7,10 @@ using System.Windows.Forms;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static Menu HM;
 [STAThread]
 static void Main()

@@ -4,8 +4,10 @@ using System.Runtime.InteropServices;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static bool EnumChildProc(IntPtr handle, IntPtr pointer)
 {
 GCHandle gch = GCHandle.FromIntPtr(pointer);

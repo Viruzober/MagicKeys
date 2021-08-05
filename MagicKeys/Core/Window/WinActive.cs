@@ -2,8 +2,10 @@ using System;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static bool WinActive(string HWNDTitle, string HWNDClass)
 {
 IntPtr Handle = GetForegroundWindow();

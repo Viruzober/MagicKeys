@@ -1,7 +1,9 @@
 ﻿namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void SpeakMousePosition()
 {
 int[] MP = MagicKeys.GetMousePosition();

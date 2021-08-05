@@ -3,8 +3,10 @@ using System.Windows.Forms;
 
 namespace DeveloperTool
 {
+
 public partial class OCRResultForm : Form
 {
+
 public ListBox WList = new ListBox();
 public OCRResultForm()
 {

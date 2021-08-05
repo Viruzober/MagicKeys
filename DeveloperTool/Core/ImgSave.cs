@@ -3,8 +3,10 @@ using System.Drawing;
 
 namespace MagicKeys
 {
+
 public partial class DeveloperTool
 {
+
 public static void ImgSave()
 {
 KeyUnReg();

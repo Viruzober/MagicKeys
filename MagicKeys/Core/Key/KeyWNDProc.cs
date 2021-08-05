@@ -4,6 +4,7 @@ using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
 {
+
 public class KeyWNDProc : Form
 {
 protected override void WndProc(ref Message m)

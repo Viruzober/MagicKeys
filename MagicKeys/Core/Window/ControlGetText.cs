@@ -2,8 +2,10 @@ using System;
 
 namespace MagicKeys
 {
+
 public partial class MagicKeys
 {
+
 public static string ControlGetText(string HWNDTitle, string HWNDClass, string CTRLClass)
 {
 IntPtr WHandle = WinExistsHandle(HWNDTitle, HWNDClass);
