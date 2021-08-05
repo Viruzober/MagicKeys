@@ -1,5 +1,5 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -60,5 +60,6 @@ VisionBot();
 }
 KeyReg();
 }
+
 }
 }

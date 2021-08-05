@@ -1,6 +1,6 @@
 using System;
 using System.Reflection;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -42,5 +42,6 @@ MKDebugForm("ExceptionHook|"+ex.ToString());
 return null;
 }
 }
+
 }
 }

@@ -1,9 +1,7 @@
-using System;
 using System.Drawing;
-using System.ComponentModel;
 using System.Reflection;
 using System.Windows.Forms;
-using System.Threading;
+
 namespace MagicKeys
 {
 public partial class Menu : Form
@@ -29,5 +27,6 @@ Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
 Ni.Text = T._("MagicKeys {0} is enabled", MagicKeys.GetVersion());
 Ni.Visible = true;
 }
+
 }
 }

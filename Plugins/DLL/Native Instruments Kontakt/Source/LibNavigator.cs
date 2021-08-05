@@ -1,6 +1,6 @@
-using System.Threading.Tasks;
 using System.Threading;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class Kontakt
@@ -40,5 +40,6 @@ Speak(text);
 }
 }
 }
+
 }
 }

@@ -1,18 +1,10 @@
-using System;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Net;
-using System.ComponentModel;
-using System.Net.Http;
-using System.IO;
-using System.Threading;
-using System.IO.Compression;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using Pluralize.NET.Core;
-using static MagicKeys.MagicKeys;
-using System.Collections.Generic;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.IO.Compression;
+using System.Windows.Forms;
+
 namespace MKUpdater
 {
 public partial class UpdateForm : Form
@@ -44,12 +36,14 @@ catch(Exception)
 MessageBox.Show(T._("Error Downloading update. Please try again later."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 }
 }
+
 public void ButtonCancel_Click(object sender, EventArgs e)
 {
 ButtonCancel.Enabled = false;
 client.CancelDownload();
 this.Close();
 }
+
 public void ProgressCheck(long? totalFileSize, long totalBytesDownloaded, double? progressPercentage)
 {
 PB.Value = Convert.ToInt32(progressPercentage);
@@ -77,5 +71,6 @@ this.Close();
 Process.Start(@".\Temp\MKUpdater.exe", "Move");
 }
 }
+
 }
 }

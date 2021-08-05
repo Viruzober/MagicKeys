@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -24,5 +25,6 @@ sw.Write("[Settings]\r\nNavigationType=0\r\nSoundTheme=true\r\nTimeOut=20\r\nSpe
 }
 }
 }
+
 }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -11,5 +12,6 @@ IntPtr Handle = GetWinPointHandle(X, Y);
 SendMessage(Handle, WM.WM_GETTEXT, 256, B);
 return B.ToString();
 }
+
 }
 }

@@ -9,5 +9,6 @@ GetCursorPos(out WP);
 int[] MP = new int[2] {WP.X, WP.Y};
 return MP;
 }
+
 }
 }

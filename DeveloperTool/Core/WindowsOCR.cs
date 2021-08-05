@@ -1,5 +1,5 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -17,5 +17,6 @@ Thread.Sleep(500);
 OCRR = Text;
 MagicKeys.Speak(Text);
 }
+
 }
 }

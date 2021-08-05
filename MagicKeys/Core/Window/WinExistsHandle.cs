@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -23,5 +23,6 @@ return Handle;
 }
 return IntPtr.Zero;
 }
+
 }
 }

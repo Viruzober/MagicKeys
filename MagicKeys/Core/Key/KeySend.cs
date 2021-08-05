@@ -1,16 +1,19 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Threading;
-using System.Text.Unicode;
-using System.Text;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
 {
 public static void KeySend(string Type, string Send, int Time, int PostTime)
 {
-if (string.IsNullOrEmpty(Send)) return;
+if (string.IsNullOrEmpty(Send))
+{
+return;
+}
+
 if (Type == "Text")
 {
 for (int CH = 0; CH < Send.Length; CH++)
@@ -37,6 +40,7 @@ KeyInput(false, "Up", K);
 Thread.Sleep(PostTime);
 }
 }
+
 public static void KeyInput(bool Type, string UpDown, string Key)
 {
 try
@@ -46,7 +50,7 @@ KeyInput.type = InputType.Keyboard;
 if (Type == true)
 {
 KeyInput.U.ki.dwFlags = KeyEventFlags.Unicode;
-KeyInput.U.ki.wScan = (UInt16)Key[0];
+KeyInput.U.ki.wScan = Key[0];
 }
 else
 {
@@ -67,5 +71,6 @@ catch(Exception)
 return;
 }
 }
+
 }
 }

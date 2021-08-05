@@ -1,10 +1,5 @@
-using System;
-using System.Threading;
-using System.Runtime.InteropServices;
-using System.IO;
 using System.Media;
-using System.Reflection;
-using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -26,5 +21,6 @@ Player.PlaySync();
 }
 }
 }
+
 }
 }

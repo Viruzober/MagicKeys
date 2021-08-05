@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -15,5 +16,6 @@ Convert.ToDouble(FP[4]),
 Convert.ToDouble(FP[5])
 );
 }
+
 }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+
 namespace ConfigInstaller
 {
 public partial class ConfigInstaller
@@ -22,5 +23,6 @@ catch(Exception)
 return "Error";
 }
 }
+
 }
 }

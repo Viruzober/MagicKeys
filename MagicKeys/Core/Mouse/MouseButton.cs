@@ -1,5 +1,5 @@
 using System.Runtime.InteropServices;
-using System.Threading;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -35,5 +35,6 @@ mouseUpInput.U.mi.dwFlags = MouseEventFlags.MOUSEEVENTF_RIGHTUP;
 SendInput(1, ref mouseUpInput, Marshal.SizeOf(new INPUT()));
 }
 }
+
 }
 }

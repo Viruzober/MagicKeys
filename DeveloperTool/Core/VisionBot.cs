@@ -1,16 +1,10 @@
 using System;
-using System.Buffers.Text;
-using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
-using System.Threading;
-using System.Diagnostics;
-using System.Drawing;
-using System.Text.Json;
 using System.Collections.Generic;
-using System.Windows.Forms;
+using System.Drawing;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -46,6 +40,7 @@ catch(Exception)
 MagicKeys.Speak("Error");
 }
 }
+
 public static async void VisionBotResult(string ID)
 {
 HttpClient HTTPC = new HttpClient();
@@ -74,5 +69,6 @@ MagicKeys.Speak(J["text"]);
 break;
 }
 }
+
 }
 }

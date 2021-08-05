@@ -1,5 +1,4 @@
-﻿using System;
-namespace MagicKeys
+﻿namespace MagicKeys
 {
 public partial class MagicKeys
 {
@@ -19,5 +18,6 @@ return new string[2] {Title, Class};
 }
 return new string[2] {null, null};
 }
+
 }
 }

@@ -1,5 +1,5 @@
-using System;
 using Microsoft.Win32;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -15,5 +15,6 @@ Key = Key.OpenSubKey(PR[I]);
 string Result = (Key.GetValue(GetKey)).ToString();
 return Result;
 }
+
 }
 }

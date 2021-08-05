@@ -1,6 +1,6 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class InputMultiTextBox : Form
@@ -16,6 +16,7 @@ InitTextBox();
 InitButton();
 InitForm();
 }
+
 public void InitLabel()
 {
 InputBoxLabel.AutoSize = false;
@@ -24,6 +25,7 @@ InputBoxLabel.Font = new Font(InputBoxLabel.Font, FontStyle.Regular);
 InputBoxLabel.Location = new Point(20, 25);
 this.Controls.Add(InputBoxLabel);
 }
+
 public void InitTextBox()
 {
 Value.Size = new Size(350, 150);
@@ -32,6 +34,7 @@ Value.Location = new Point(20, 50);
 Value.Multiline = true;
 this.Controls.Add(Value);
 }
+
 public void InitButton()
 {
 ButtonOK.Size = new Size(80, 25);
@@ -45,6 +48,7 @@ ButtonCancel.Text = "Cancel";
 ButtonCancel.Click += ButtonCancel_Click;
 this.Controls.Add(ButtonCancel);
 }
+
 public void InitForm()
 {
 this.TopMost = true;
@@ -57,5 +61,6 @@ this.AcceptButton = ButtonOK;
 this.CancelButton = ButtonCancel;
 this.Shown += InputMultiTextBox_Shown;
 }
+
 }
 }

@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -32,5 +32,6 @@ SpeakObject += " "+AutoFunc;
 }
 Speak(SpeakObject);
 }
+
 }
 }

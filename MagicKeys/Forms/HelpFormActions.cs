@@ -1,9 +1,7 @@
 using System;
-using System.Drawing;
-using System.ComponentModel;
-using System.Windows.Forms;
 using System.IO;
-using System.Reflection;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class HelpForm : Form
@@ -15,6 +13,7 @@ StreamReader HelpStreamReader = new StreamReader(HelpFile);
 string FileStr = HelpStreamReader.ReadToEnd().ToString();
 HelpText.Text = FileStr;
 }
+
 public void HelpForm_KeyDown(Object Sender, KeyEventArgs e)
 {
 if (e.KeyCode == Keys.Escape)
@@ -22,5 +21,6 @@ if (e.KeyCode == Keys.Escape)
 this.Close();
 }
 }
+
 }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Threading;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -28,5 +29,6 @@ return true;
 Speak("Not checked "+Text);
 return false;
 }
+
 }
 }

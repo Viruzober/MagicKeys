@@ -1,7 +1,7 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class LUXONIXPurity
@@ -14,6 +14,7 @@ VUILoader("Register");
 return;
 }
 }
+
 public static void Register()
 {
 InputTextBox ITBS = new InputTextBox();
@@ -47,9 +48,11 @@ VUILoader("Purity");
 }
 }
 }
+
 public static void BPMenu()
 {
 MouseClick("Right", P[1]+70, P[2]+30, 1, 0, 0, 10);
 }
+
 }
 }

@@ -1,8 +1,7 @@
-using System;
 using System.Drawing;
-using System.ComponentModel;
 using System.Reflection;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DevMenu : Form
@@ -22,5 +21,6 @@ Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
 Ni.Text = T._("Developer tool");
 Ni.Visible = true;
 }
+
 }
 }

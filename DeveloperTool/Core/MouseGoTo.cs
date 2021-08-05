@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -47,5 +48,6 @@ MagicKeys.MouseMove(P[1]+NewX, P[2]+NewY, 0);
 KeyReg();
 OptionKeyReg();
 }
+
 }
 }

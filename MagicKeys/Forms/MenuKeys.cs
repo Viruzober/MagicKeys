@@ -1,6 +1,5 @@
-using System;
 using System.Windows.Forms;
-using System.IO;
+
 namespace MagicKeys
 {
 public partial class Menu : Form
@@ -52,5 +51,6 @@ break;
 }
 base.WndProc(ref m);
 }
+
 }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -13,5 +14,6 @@ AttachThreadInput(IN, (uint)TO, true);
 SetFocus(Handle);
 AttachThreadInput(IN, (uint)TO, false);
 }
+
 }
 }

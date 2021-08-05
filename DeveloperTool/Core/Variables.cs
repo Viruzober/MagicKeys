@@ -1,8 +1,6 @@
-using System;
 using System.Drawing;
-using System.Collections.Specialized;
-using System.Collections.Generic;
 using System.Text;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool

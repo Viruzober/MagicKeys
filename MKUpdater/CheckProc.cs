@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Data;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.IO;
+
 namespace MKUpdater
 {
 public partial class MKUpdater
@@ -36,6 +37,7 @@ return String.Empty;
 }
 return builder.ToString();
 }
+
 public static string CheckProc()
 {
 Process[] proc = Process.GetProcesses();
@@ -44,13 +46,18 @@ var MKProc = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileNa
 string CloseProc = string.Empty;
 foreach (int id in pIds)
 {
-if(GetProcessFilepath(id).Contains("MKUpdater")) continue;
-if(GetProcessFilepath(id).Contains(MKProc))
+if(GetProcessFilepath(id).Contains("MKUpdater"))
+{
+continue;
+}
+
+if (GetProcessFilepath(id).Contains(MKProc))
 {
 CloseProc += Path.GetFileName(GetProcessFilepath(id))+"\r\n";
 }
 }
 return CloseProc;
 }
+
 }
 }

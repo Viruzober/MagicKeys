@@ -1,6 +1,6 @@
 using System;
 using System.Drawing;
-using System.Threading;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -24,5 +24,6 @@ return true;
 }
 return false;
 }
+
 }
 }

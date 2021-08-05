@@ -1,5 +1,5 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -15,5 +15,6 @@ return;
 }
 Clipboard.SetText(ITB);
 }
+
 }
 }

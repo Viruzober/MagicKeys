@@ -1,6 +1,6 @@
 using System;
-using System.Reflection;
 using System.IO;
+
 namespace MagicKeys
 {
 public static partial class Ini
@@ -29,5 +29,6 @@ File.WriteAllText(GetFile, FullStr);
 }
 }
 }
+
 }
 }

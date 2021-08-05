@@ -1,11 +1,8 @@
-using System;
 using Microsoft.Collections.Extensions;
-using System.IO;
+using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
-using System.Windows.Forms;
-using System.Drawing.Imaging;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -32,7 +29,11 @@ for(int I = 0; I <= Keys.Count-1; I++)
 {
 try
 {
-if(Keys[I] == "" || Values[I] == "") throw new IndexOutOfRangeException();
+if(Keys[I] == "" || Values[I] == "")
+{
+throw new IndexOutOfRangeException();
+}
+
 VUIObjects.GetValueOrDefault(ObjectName).Add(Keys[I], Values[I]);
 }
 catch(IndexOutOfRangeException)
@@ -48,5 +49,6 @@ KeyLoader();
 KeyReg();
 SoundPlay("PluginDetect", 0);
 }
+
 }
 }

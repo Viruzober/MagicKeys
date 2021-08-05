@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -15,5 +16,6 @@ return;
 }
 Speak("Image not found");
 }
+
 }
 }

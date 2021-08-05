@@ -1,5 +1,4 @@
-﻿using System;
-namespace MagicKeys
+﻿namespace MagicKeys
 {
 public partial class MagicKeys
 {
@@ -11,5 +10,6 @@ return "Checked";
 }
 return "Not checked";
 }
+
 }
 }

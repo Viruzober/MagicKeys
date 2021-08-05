@@ -1,8 +1,6 @@
 using System;
-using System.Diagnostics;
-using System.Text;
-using System.Runtime.InteropServices;
 using System.IO;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -21,6 +19,7 @@ GetModuleFileNameEx(OP, GGWL, Text, nChars);
 CloseHandle(OP);
 return Path.GetFileName(Text.ToString());
 }
+
 public enum ProcessAccessFlags : uint
 {
 All = 0x001F0FFF,
@@ -37,6 +36,7 @@ QueryInformation = 0x00000400,
 QueryLimitedInformation = 0x00001000,
 Synchronize = 0x00100000
 }
+
 public enum GWL
 {
 GWL_WNDPROC =    (-4),
@@ -47,5 +47,6 @@ GWL_EXSTYLE =    (-20),
 GWL_USERDATA =   (-21),
 GWL_ID =     (-12)
 }
+
 }
 }

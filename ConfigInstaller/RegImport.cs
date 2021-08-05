@@ -1,5 +1,5 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+
 namespace ConfigInstaller
 {
 public partial class ConfigInstaller
@@ -16,5 +16,6 @@ proc.Start();
 proc.WaitForExit();
 return "Success";
 }
+
 }
 }

@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -16,5 +16,6 @@ CurrentPlugin[Keys[I]] = Values[I];
 }
 }
 }
+
 }
 }

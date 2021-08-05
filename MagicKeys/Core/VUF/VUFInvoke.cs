@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -11,7 +10,11 @@ public static string VUFInvoke(List<string> Funcs, List<string> Params, int Time
 string R = null;
 for(int I = 0 ; I <= Funcs.Count-1; I++)
 {
-if (TimeOut != 0) Thread.Sleep(TimeOut);
+if (TimeOut != 0)
+{
+Thread.Sleep(TimeOut);
+}
+
 if (Funcs[I] == "Func")
 {
 string[] Param = Params[I].Split(",", 2);
@@ -34,5 +37,6 @@ else
 return string.Empty;
 }
 }
+
 }
 }

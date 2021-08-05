@@ -1,7 +1,5 @@
-using System;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -16,8 +14,12 @@ while(Count < CT)
 ToG.CopyFromScreen(X, Y, 00, 0, ToScreen.Size);
 for(int XTo = 0; XTo < ToScreen.Width; XTo+=CXT)
 {
-if (WinActive(API.GetWTitle(), API.GetWClass()) == false) return;
-for(int YTo = 0; YTo < ToScreen.Height; YTo+=CYT)
+if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
+{
+return;
+}
+
+for (int YTo = 0; YTo < ToScreen.Height; YTo+=CYT)
 {
 Color ToColor = ToScreen.GetPixel(XTo, YTo);
 Color OneColor = OneScreen.GetPixel(XTo, YTo);
@@ -33,11 +35,13 @@ return;
 }
 }
 }
+
 public static void CreateOneBitmap(int X, int Y, int W, int H)
 {
 OneScreen = new Bitmap(W, H);
 Graphics OneG = Graphics.FromImage(OneScreen);
 OneG.CopyFromScreen(X, Y, 00, 0, OneScreen.Size);
 }
+
 }
 }

@@ -1,8 +1,7 @@
 using System;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -14,8 +13,16 @@ while(true)
 Thread.Sleep(20);
 Application.DoEvents();
 P = GetPluginCoord();
-if (Array.TrueForAll(P[0..4], V => V == 0)) return true;
-if (KeySwitch == 1) return true;
+if (Array.TrueForAll(P[0..4], V => V == 0))
+{
+return true;
+}
+
+if (KeySwitch == 1)
+{
+return true;
+}
+
 WaitWinClose("#32768");
 IntPtr Handle = GetForegroundWindow();
 GetWindowText(Handle, Title, nChars);
@@ -27,5 +34,6 @@ continue;
 return true;
 }
 }
+
 }
 }

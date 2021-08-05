@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -13,5 +14,6 @@ P[2]+Convert.ToInt32(FP[1])
 Speak(R);
 return R;
 }
+
 }
 }

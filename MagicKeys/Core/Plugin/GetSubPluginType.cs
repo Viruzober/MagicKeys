@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Reflection;
-using System.Runtime.Loader;
-using System.Windows.Forms;
 using System.IO;
+using System.Reflection;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -36,5 +35,6 @@ MKDebugForm("FileNotFound|"+ModulePath);
 return;
 }
 }
+
 }
 }

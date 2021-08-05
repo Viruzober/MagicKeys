@@ -1,7 +1,6 @@
-using System;
 using System.Drawing;
-using System.ComponentModel;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class SettingsForm : Form
@@ -24,6 +23,7 @@ InitControls();
 InitButton();
 InitForm();
 }
+
 public void InitControls()
 {
 NavigationType.Location = new Point(10, 10);
@@ -74,6 +74,7 @@ CheckUpdate.TabIndex = 8;
 CheckUpdate.Text = T._("check for updates when magicKeys starts");
 this.Controls.Add(CheckUpdate);
 }
+
 public void InitButton()
 {
 Help.Location = new Point(10, 310);
@@ -95,6 +96,7 @@ Cancel.Click += Cancel_Click;
 Cancel.TabIndex = 11;
 this.Controls.Add(Cancel);
 }
+
 public void InitForm()
 {
 this.TopMost = true;
@@ -108,5 +110,6 @@ this.Shown += SettingsForm_Shown;
 this.AcceptButton = Save;
 this.CancelButton = Cancel;
 }
+
 }
 }

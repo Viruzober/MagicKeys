@@ -1,9 +1,5 @@
-﻿using System;
-using System.Windows.Forms;
-using System.Threading;
-using System.Reflection;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -18,5 +14,6 @@ CurrentPlugin.Add("VUI", PluginsList[Item]["VUI"]);
 CurrentPlugin.Add("PluginName", PluginsList[Item]["PluginName"]);
 CurrentPlugin.Add("Module", PluginsList[Item]["Module"]);
 }
+
 }
 }

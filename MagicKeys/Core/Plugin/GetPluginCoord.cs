@@ -1,9 +1,6 @@
 using System;
-using System.Threading;
-using System.Windows.Forms;
-using static MagicKeys.MagicKeys;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -27,5 +24,6 @@ return ControlCoord;
 ControlCoord = new int[5] {0, 0, 0, 0, 0};
 return ControlCoord;
 }
+
 }
 }

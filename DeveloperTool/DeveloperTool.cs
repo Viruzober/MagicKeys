@@ -1,11 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Threading;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Threading;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -26,14 +25,19 @@ MagicKeys.Speak("DeveloperTool is ready");
 OptionKeyReg();
 Application.Run();
 }
+
 public static void ModuleFound()
 {
 while(true)
 {
 Thread.Sleep(20);
 Application.DoEvents();
-if (DeveloperTool.KeySwitch == 1) return;
-if(Module != string.Empty)
+if (DeveloperTool.KeySwitch == 1)
+{
+return;
+}
+
+if (Module != string.Empty)
 {
 P = GetPluginCoord();
 if(P[0] == 0)
@@ -44,5 +48,6 @@ return;
 }
 }
 }
+
 }
 }

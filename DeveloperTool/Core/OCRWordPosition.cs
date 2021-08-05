@@ -1,18 +1,11 @@
-using System;
-using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
-using System.Threading;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using Windows;
-using Windows.Graphics.Imaging;
-using System.Threading.Tasks;
-using Windows.Media.Ocr;
-using System.Collections.Generic;
 using DeveloperTool;
-using Windows.Devices.PointOfService;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -59,5 +52,6 @@ LY.Clear();
 OptionKeyReg();
 KeyReg();
 }
+
 }
 }

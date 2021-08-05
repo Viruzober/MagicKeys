@@ -1,7 +1,7 @@
 using System;
-using System.Windows.Forms;
-using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class NexusSearchForm
@@ -17,6 +17,7 @@ ListBank.Items.Add(Path.GetFileName(S));
 }
 ListBank.Items[0].Selected = true;
 }
+
 public void ListBank_SelectedIndexChanged(object sender, EventArgs e)
 {
 try
@@ -34,6 +35,7 @@ catch(Exception)
 {
 }
 }
+
 public void SearchText_KeyDown(object sender, KeyEventArgs e)
 {
 if (e.KeyCode == Keys.Enter)
@@ -57,6 +59,7 @@ ListPatch.Items.Add(Path.GetFileNameWithoutExtension(Path.GetFileName(Patch)));
 }
 }
 }
+
 public void ListPatch_SelectedIndexChanged(object sender, EventArgs e)
 {
 if (ListPatch.FocusedItem != null)
@@ -68,19 +71,23 @@ else
 OK.Enabled = false;
 }
 }
+
 public void ButtonOK_Click(object sender, EventArgs e)
 {
 this.DialogResult = DialogResult.OK;
 this.Close();
 Result = ListPatch.FocusedItem.Text;
 }
+
 public void ButtonCancel_Click(object sender, EventArgs e)
 {
 this.Close();
 }
+
 public string GetString()
 {
 return Result;
 }
+
 }
 }

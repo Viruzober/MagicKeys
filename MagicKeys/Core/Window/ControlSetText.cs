@@ -1,5 +1,5 @@
 using System;
-using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -10,5 +10,6 @@ IntPtr WHandle = WinExistsHandle(HWNDTitle, HWNDClass);
 IntPtr CHandle = ControlExistsHandle(WHandle, "", CTRLClass);
 SendMessage(CHandle, 0x000C, 0, SetText);
 }
+
 }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-namespace MagicKeys
+﻿namespace MagicKeys
 {
 public partial class MagicKeys
 {
@@ -13,5 +11,6 @@ return "";
 }
 return KeyMod+"+";
 }
+
 }
 }

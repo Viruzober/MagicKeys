@@ -1,8 +1,8 @@
-using System;
-using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using Microsoft.Win32;
+using System;
 using System.Drawing;
+using System.Runtime.InteropServices;
+
 namespace ConfigInstaller
 {
 public partial class ConfigInstaller
@@ -74,6 +74,7 @@ Gkey.Close();
 }
 SetResolution(WR, HR);
 }
+
 public static void SetResolution(int w, int h)
 {
 long RetVal = 0;
@@ -84,6 +85,7 @@ dm.dmPelsHeight = h;
 dm.dmFields = DEVMODE.DM_PELSWIDTH | DEVMODE.DM_PELSHEIGHT;
 RetVal = ChangeDisplaySettings(ref dm, 0);
 }
+
 public static int[] GetMaxScreenSize()
 {
 var scope = new System.Management.ManagementScope();
@@ -95,11 +97,17 @@ UInt32 maxVResolution = 0;
 foreach (var item in results)
 {
 if ((UInt32)item["HorizontalResolution"] > maxHResolution)
+{
 maxHResolution = (UInt32)item["HorizontalResolution"];
+}
+
 if ((UInt32)item["VerticalResolution"] > maxVResolution)
+{
 maxVResolution = (UInt32)item["VerticalResolution"];
+}
 }
 return new int[2]{Convert.ToInt32(maxHResolution), Convert.ToInt32(maxVResolution)};
 }
+
 }
 }

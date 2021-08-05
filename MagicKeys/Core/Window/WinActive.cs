@@ -1,5 +1,5 @@
 using System;
-using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -18,5 +18,6 @@ else
 return false;
 }
 }
+
 }
 }

@@ -1,12 +1,10 @@
 using System;
-using System.Reflection;
-using System.IO;
-using System.Threading;
-using Microsoft.Collections.Extensions;
-using System.Windows.Forms;
-using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Threading;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -21,7 +19,10 @@ Application.ThreadException +=
 Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
 AppDomain.CurrentDomain.UnhandledException +=
 (o, e) => MKDebugForm("ExceptionHook|"+e.ExceptionObject.ToString());
-if (CheckRunProc("MagicKeys") == true) return;
+if (CheckRunProc("MagicKeys") == true)
+{
+return;
+}
 #if X86
 if (OS() == "64")
 {
@@ -38,7 +39,11 @@ return;
 }
 HM = new Menu();
 LoadSettings();
-if (CheckUpdate == true) Update();
+if (CheckUpdate == true)
+{
+Update();
+}
+
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(PluginDetector);
 ThreadPluginDetector.IsBackground = true;
@@ -51,5 +56,6 @@ SoundPlay("Start", 0);
 Speak(T._("MagicKeys is ready"));
 Application.Run();
 }
+
 }
 }

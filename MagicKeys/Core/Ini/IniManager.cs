@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using System.Reflection;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public static partial class Ini
@@ -28,6 +26,7 @@ temp.Add(S.Substring(1, S.Length - 2));
 }
 return temp;
 }
+
 public static List<string> IniReadKeys(string GetFile, string GetSection)
 {
 List<string> temp = new List<string>();
@@ -44,7 +43,11 @@ return null;
 string[] FileStr = File.ReadAllLines(GetFile);
 for (int S = 0; S <= FileStr.Length-1; S++)
 {
-if (FileStr[S].StartsWith(":") == true || FileStr[S].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[S])) continue;
+if (FileStr[S].StartsWith(":") == true || FileStr[S].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[S]))
+{
+continue;
+}
+
 if (FileStr[S].Trim() == "["+GetSection+"]")
 {
 L = S;
@@ -59,7 +62,11 @@ throw new Exception();
 }
 for (int R = L+1; R <= FileStr.Length-1; R++)
 {
-if (FileStr[R].StartsWith(":") == true || FileStr[R].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[R])) continue;
+if (FileStr[R].StartsWith(":") == true || FileStr[R].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[R]))
+{
+continue;
+}
+
 if (FileStr[R].Contains("[") || R == FileStr.Length-1)
 {
 End = R;
@@ -68,8 +75,16 @@ break;
 }
 for (int Start = L+1; Start <= End; Start++)
 {
-if (FileStr[Start].StartsWith(":") == true || FileStr[Start].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[Start])) continue;
-if (FileStr[Start].Contains("[") == true) continue;
+if (FileStr[Start].StartsWith(":") == true || FileStr[Start].StartsWith("#") == true || string.IsNullOrWhiteSpace(FileStr[Start]))
+{
+continue;
+}
+
+if (FileStr[Start].Contains("[") == true)
+{
+continue;
+}
+
 string[] KeyValue = FileStr[Start].Split("=", 2);
 temp.Add(KeyValue[0].Trim());
 }
@@ -81,10 +96,12 @@ MagicKeys.MKDebugForm("IniReadKeys|"+L.ToString()+"|"+GetFile+"|"+GetSection+"|"
 return null;
 }
 }
+
 public static int IniCountSections( string File)
 {
 List<string> Count = IniReadSections(File);
 return Count.Count;
 }
+
 }
 }

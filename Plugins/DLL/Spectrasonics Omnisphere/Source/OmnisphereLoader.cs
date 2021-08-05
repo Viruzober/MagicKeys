@@ -1,6 +1,5 @@
-using System;
-using System.Threading;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class Omnisphere
@@ -26,5 +25,6 @@ else
 AudoSelect();
 }
 }
+
 }
 }

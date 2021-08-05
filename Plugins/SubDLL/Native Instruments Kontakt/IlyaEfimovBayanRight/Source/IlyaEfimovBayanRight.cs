@@ -1,7 +1,6 @@
-using System;
 using System.Threading;
-using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public class IlyaEfimovBayanRight
@@ -19,6 +18,7 @@ else
 Speak("RoundRobin not checked");
 }
 }
+
 public static void AutoAttack()
 {
 MouseClick("Left", P[1]+45, P[2]+230, 1, 0, 0, 10);
@@ -34,22 +34,27 @@ Speak("AutoAttack not checked");
 VUIObjectSwitcher(false, "true", 2, 2);
 }
 }
+
 public static void AttackTime()
 {
 Slider("Attack Time", 45, 270, "H", 0.86, 1.4);
 }
+
 public static void KeyNoise()
 {
 Slider("Key Noise", 170, 190, "H", 0.86, 1.4);
 }
+
 public static void Bellow()
 {
 Slider("Bellow", 170, 230, "H", 0.86, 1.4);
 }
+
 public static void Release()
 {
 Slider("Release", 170, 270, "H", 0.86, 1.4);
 }
+
 public static void Reverb()
 {
 MouseClick("Left", P[1]+280, P[2]+190, 1, 0, 0, 10);
@@ -65,10 +70,12 @@ Speak("Reverb not checked");
 VUIObjectSwitcher(false, "false", 7, 7);
 }
 }
+
 public static void ReverbLevel()
 {
 Slider("ReverbLevel", 280, 230, "H", 0.86, 1.4);
 }
+
 public static void Detune()
 {
 MouseClick("Left", P[1]+280, P[2]+270, 1, 0, 0, 10);
@@ -82,26 +89,31 @@ else
 Speak("Detune not checked");
 }
 }
+
 public static void Sustain()
 {
 MouseClick("Left", P[1]+550, P[2]+190, 1, 0, 0, 10);
 Speak("Sustain включено");
 }
+
 public static void Staccato()
 {
 MouseClick("Left", P[1]+550, P[2]+210, 1, 0, 0, 10);
 Speak("Staccato on");
 }
+
 public static void Crescendo()
 {
 MouseClick("Left", P[1]+550, P[2]+230, 1, 0, 0, 10);
 Speak("Crescendo on");
 }
+
 public static void Detache()
 {
 MouseClick("Left", P[1]+590, P[2]+250, 1, 0, 0, 10);
 Speak("Detache on");
 }
+
 public static void Piccolo()
 {
 MouseClick("Left", P[1]+75, P[2]+310, 1, 0, 0, 10);
@@ -116,6 +128,7 @@ else
 Speak("Piccolo off");
 }
 }
+
 public static void Concertina()
 {
 MouseClick("Left", P[1]+155, P[2]+310, 1, 0, 0, 10);
@@ -130,6 +143,7 @@ else
 Speak("Concertina off");
 }
 }
+
 public static void Clarinet()
 {
 MouseClick("Left", P[1]+235, P[2]+310, 1, 0, 0, 10);
@@ -144,6 +158,7 @@ else
 Speak("Clarinet off");
 }
 }
+
 public static void Bossoon()
 {
 MouseClick("Left", P[1]+315, P[2]+310, 1, 0, 0, 10);
@@ -158,6 +173,7 @@ else
 Speak("Bassoon off");
 }
 }
+
 public static void IlyaEfimovBayanRightLoader()
 {
 if (ImgSearchArea("BayanCheckBox", P[1]+45, P[2]+230, P[1]+100, P[2]+260, 0)[0] == 1)
@@ -177,10 +193,12 @@ else
 VUIObjectSwitcher(false, "false", 7, 7);
 }
 }
+
 public static void Back()
 {
 SubPluginUnLoad();
 VUILoader("LibList");
 }
+
 }
 }

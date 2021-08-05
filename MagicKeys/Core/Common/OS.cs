@@ -1,7 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Runtime.InteropServices;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -15,5 +13,6 @@ return "64";
 }
 return "86";
 }
+
 }
 }

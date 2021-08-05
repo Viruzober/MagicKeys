@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -28,5 +28,6 @@ int[] pos = new int[7] {r, x, y, w, h, cx, cy};
 result = IntPtr.Zero;
 return pos;
 }
+
 }
 }

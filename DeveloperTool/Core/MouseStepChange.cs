@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -22,5 +23,6 @@ KeyReg();
 OptionKeyReg();
 MagicKeys.Speak(MouseStep.ToString());
 }
+
 }
 }

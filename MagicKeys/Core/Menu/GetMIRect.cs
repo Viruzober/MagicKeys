@@ -1,4 +1,5 @@
 using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -10,6 +11,7 @@ GetMenuItemRect(HWND, HMenu, (uint)IdItem, out MR);
 int[] Rect = new int[4] {MR.Left, MR.Top, MR.Right, MR.Bottom};
 return Rect;
 }
+
 public static int[] GetMIRect(int IdItem)
 {
 IntPtr HMenu = WinExistsHandle("", "#32768");
@@ -19,5 +21,6 @@ GetMenuItemRect(HMenu, MIHandle, (uint)IdItem, out MR);
 int[] Rect = new int[4] {MR.Left, MR.Top, MR.Right, MR.Bottom};
 return Rect;
 }
+
 }
 }

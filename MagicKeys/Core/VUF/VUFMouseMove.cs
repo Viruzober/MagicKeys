@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -10,5 +11,6 @@ MouseMove(P[1]+Convert.ToInt32(PR[0]),
 P[2]+Convert.ToInt32(PR[1]),
 Convert.ToInt32(PR[2]));
 }
+
 }
 }

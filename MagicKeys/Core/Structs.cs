@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.InteropServices;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -85,10 +86,12 @@ KeyUp = 0x0002,
 Unicode = 0x0004,
 Scancode = 0x0008
 }
+
 public enum InputType
 {
 Mouse = 0,
 Keyboard = 1
 }
+
 }
 }

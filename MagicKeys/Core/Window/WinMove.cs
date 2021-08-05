@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -18,5 +19,6 @@ SetWindowPos(GetForegroundWindow(), 0, X, Y, 0, 0, MKC.SWP_NOSIZE);
 Thread.Sleep(50);
 P = GetPluginCoord();
 }
+
 }
 }

@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -14,7 +15,11 @@ SoundPlay("Error", 0);
 MessageBox.Show(T._("MagicKeys is already running."), T._("Error"));
 return true;
 }
-else return false;
+else
+{
+return false;
 }
+}
+
 }
 }

@@ -1,7 +1,6 @@
-using System;
 using System.Threading;
-using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class Nexus
@@ -38,5 +37,6 @@ KeySend("Keys", "Enter", 50, 50);
 MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
 Speak(Bank);
 }
+
 }
 }

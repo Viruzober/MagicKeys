@@ -1,9 +1,7 @@
-﻿using System;
-using Microsoft.Collections.Extensions;
-using System.IO;
-using System.Windows.Forms;
+﻿using Microsoft.Collections.Extensions;
 
 using System.Collections.Generic;
+
 namespace MagicKeys
 {
 public partial class MagicKeys

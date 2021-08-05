@@ -1,7 +1,5 @@
-﻿using System;
-using System.IO;
-using MoonSharp.Interpreter;
-using MoonSharp.Interpreter.Loaders;
+﻿using MoonSharp.Interpreter;
+
 
 namespace MagicKeys
 {

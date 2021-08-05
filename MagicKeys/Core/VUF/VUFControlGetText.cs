@@ -1,5 +1,4 @@
-﻿using System;
-namespace MagicKeys
+﻿namespace MagicKeys
 {
 public partial class MagicKeys
 {
@@ -10,5 +9,6 @@ string R = ControlGetText(FP[0], FP[1], FP[2]);
 Speak(R);
 return R;
 }
+
 }
 }

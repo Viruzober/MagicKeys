@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+
 namespace ConfigInstaller
 {
 public partial class ConfigInstaller
@@ -33,5 +34,6 @@ SetResolution(DS[0], DS[1]);
 }
 Application.Run(new ConfigInstallerForm());
 }
+
 }
 }

@@ -1,6 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -31,5 +30,6 @@ return;
 InvokeFromString(API.GetFunc(), API.GetParam());
 KeyReg();
 }
+
 }
 }

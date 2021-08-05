@@ -1,5 +1,4 @@
-﻿using System;
-namespace MagicKeys
+﻿namespace MagicKeys
 {
 public partial class MagicKeys
 {
@@ -14,5 +13,6 @@ else
 return "Nightly";
 }
 }
+
 }
 }

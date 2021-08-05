@@ -1,5 +1,5 @@
-using System;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -25,6 +25,7 @@ RegisterHotKey(KeyNavigatorHandle.Handle, 3, MKC.NOMOD|MKC.MOD_NOREPEAT, (int)Ke
 RegisterHotKey(KeyNavigatorHandle.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F3);
 RegisterHotKey(KeyNavigatorHandle.Handle, 5, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F5);
 }
+
 public static void KeyNavigatorUnReg()
 {
 for(int I = 0; I <= 5; I++)
@@ -32,5 +33,6 @@ for(int I = 0; I <= 5; I++)
 UnregisterHotKey(KeyNavigatorHandle.Handle, I);
 }
 }
+
 }
 }

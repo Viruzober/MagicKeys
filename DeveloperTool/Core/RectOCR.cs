@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -43,5 +44,6 @@ DP[1] = 0;
 KeyReg();
 OptionKeyReg();
 }
+
 }
 }

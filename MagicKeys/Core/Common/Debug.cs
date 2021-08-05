@@ -1,7 +1,3 @@
-using System;
-using System.IO;
-using System.Windows.Forms;
-using System.Reflection;
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -16,5 +12,6 @@ using DebugForm DF = new DebugForm();
 DF.DebugInfo = DebugInfo;
 DF.ShowDialog();
 }
+
 }
 }

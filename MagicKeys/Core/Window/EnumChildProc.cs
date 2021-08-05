@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -13,5 +13,6 @@ List<IntPtr> list = gch.Target as List<IntPtr>;
 list.Add(handle);
 return true;
 }
+
 }
 }

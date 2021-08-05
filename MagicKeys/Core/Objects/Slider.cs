@@ -1,4 +1,5 @@
 using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -27,5 +28,6 @@ WinMove(DP[1], DP[2], false);
 }
 Speak("Done");
 }
+
 }
 }

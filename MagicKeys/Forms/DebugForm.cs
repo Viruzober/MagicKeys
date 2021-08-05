@@ -1,7 +1,6 @@
-using System;
 using System.Drawing;
-using System.ComponentModel;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DebugForm : Form
@@ -15,6 +14,7 @@ InitTextBox();
 InitButton();
 InitForm();
 }
+
 public void InitTextBox()
 {
 DebugText.Location = new Point(10, 10);
@@ -23,6 +23,7 @@ DebugText.Multiline = true;
 DebugText.ReadOnly = true;
 this.Controls.Add(DebugText);
 }
+
 public void InitButton()
 {
 Exit.Size = new Size(400, 25);
@@ -31,6 +32,7 @@ Exit.Text = T._("Exit");
 Exit.Click += Exit_Click;
 this.Controls.Add(Exit);
 }
+
 public void InitForm()
 {
 this.TopMost = true;
@@ -44,5 +46,6 @@ this.AcceptButton = Exit;
 this.CancelButton = Exit;
 this.Shown += DebugForm_Shown;
 }
+
 }
 }

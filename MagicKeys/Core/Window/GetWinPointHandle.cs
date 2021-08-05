@@ -1,5 +1,5 @@
 using System;
-using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -12,5 +12,6 @@ WP.Y = Y;
 IntPtr Handle = WindowFromPoint(WP);
 return Handle;
 }
+
 }
 }

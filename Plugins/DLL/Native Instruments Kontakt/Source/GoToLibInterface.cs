@@ -1,7 +1,6 @@
-using System;
 using System.Threading;
-using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class Kontakt
@@ -17,5 +16,6 @@ Thread.Sleep(300);
 LibNormalize();
 LoadLibInterface();
 }
+
 }
 }

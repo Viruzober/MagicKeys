@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
+﻿using System.Collections.Generic;
+
 namespace MagicKeys
 {
 public static partial class Ini
@@ -15,5 +14,6 @@ Temp.Add(IniRead(@File, Section, Keys[I]));
 }
 return Temp;
 }
+
 }
 }

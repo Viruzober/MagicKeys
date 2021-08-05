@@ -1,6 +1,6 @@
-using System.Threading.Tasks;
 using System.Threading;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class Kontakt
@@ -18,5 +18,6 @@ string MidiChannel = ImgToText(120, 45, KTL[1] + 70, KTL[2] + 40, 4);
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 Speak(Name+", Audio Channel "+AudioChannel+", Midi channel "+MidiChannel);
 }
+
 }
 }

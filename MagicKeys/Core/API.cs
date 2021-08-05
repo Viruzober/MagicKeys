@@ -1,7 +1,6 @@
-﻿using System;
-using System.IO;
-using System.Windows.Forms;
+﻿using System.IO;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public class API
@@ -49,22 +48,27 @@ public static string GetCurrentVUILoader()
 {
 return Path.Combine(GetVUIPath(), GetVUI()+"Load.VUI");
 }
+
 public static string GetCurrentVUFLoader()
 {
 return Path.Combine(GetVUIPath(), GetVUI()+"Load.VUF");
 }
+
 public static string GetImgPath()
 {
 return Path.Combine(GetPluginPath(), "Images");
 }
+
 public static string GetModulePath()
 {
 return Path.Combine(GetPluginPath(), GetPluginName()+".dll");
 }
+
 public static string GetWTitle()
 {
 return CurrentPlugin["WTitle"];
 }
+
 public static string GetWClass()
 {
 return CurrentPlugin["WClass"];

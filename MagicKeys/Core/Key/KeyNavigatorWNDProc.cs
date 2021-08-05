@@ -1,6 +1,6 @@
-using System;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public class KeyNavigator : Form
@@ -40,5 +40,6 @@ break;
 }
 base.WndProc(ref m);
 }
+
 }
 }

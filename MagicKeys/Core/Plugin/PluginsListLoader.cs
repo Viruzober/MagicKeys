@@ -1,10 +1,8 @@
-using System;
-using System.IO;
-using System.Windows.Forms;
-using System.Threading;
-using System.Reflection;
 using Microsoft.Collections.Extensions;
 using System.Collections.Generic;
+using System.IO;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -64,5 +62,6 @@ if (PluginsList.Count == 0)
 MessageBox.Show(T._("No plugins are available."), T._("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 }
 }
+
 }
 }

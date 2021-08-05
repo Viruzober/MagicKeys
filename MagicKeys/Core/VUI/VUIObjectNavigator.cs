@@ -1,4 +1,3 @@
-using System;
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -29,5 +28,6 @@ CurrentObject -= 1;
 }
 VUIObjectSpeak();
 }
+
 }
 }

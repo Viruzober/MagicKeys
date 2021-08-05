@@ -1,9 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.Linq;
-namespace MagicKeys
+﻿namespace MagicKeys
 {
 public partial class MagicKeys
 {
@@ -16,5 +11,6 @@ for(int I = 0; I <= Count; I++)
 UnregisterHotKey(KeyWndProcHandle.Handle, I);
 }
 }
+
 }
 }

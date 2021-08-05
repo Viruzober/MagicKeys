@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -43,5 +43,6 @@ VUFInvoke(Funcs, Params, Convert.ToInt32(LoadValues[1]));
 }
 }
 }
+
 }
 }

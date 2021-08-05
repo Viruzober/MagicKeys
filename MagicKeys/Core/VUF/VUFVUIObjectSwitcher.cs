@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -29,5 +29,6 @@ else
 VUIObjectSwitcher(Convert.ToBoolean(PR[0]), PR[1], PR[2], PR[3]);
 }
 }
+
 }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading;
-using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -19,5 +19,6 @@ Thread.Sleep(50);
 KeyReg();
 return;
 }
+
 }
 }

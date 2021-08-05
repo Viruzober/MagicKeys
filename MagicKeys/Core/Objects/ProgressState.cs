@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -17,5 +18,6 @@ Speak("0%");
 return "0";
 }
 }
+
 }
 }

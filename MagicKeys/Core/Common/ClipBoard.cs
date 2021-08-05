@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -29,5 +30,6 @@ GlobalUnlock(lpwcstr);
 CloseClipboard();
 return data;
 }
+
 }
 }

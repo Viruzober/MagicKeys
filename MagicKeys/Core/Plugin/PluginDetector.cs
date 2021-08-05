@@ -1,9 +1,6 @@
 using System;
-using System.Windows.Forms;
 using System.Threading;
-using System.Reflection;
-using System.Collections.Generic;
-using System.IO;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -14,12 +11,24 @@ public static void PluginDetector()
 while(true)
 {
 Thread.Sleep(TimeOut);
-if (KeySwitch == 1) continue;
-foreach(string Item in PluginsList.Keys)
+if (KeySwitch == 1)
+{
+continue;
+}
+
+foreach (string Item in PluginsList.Keys)
 {
 WH = WinHook(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
-if (WH[0] == null) continue;
-if (WH[1] == null) continue;
+if (WH[0] == null)
+{
+continue;
+}
+
+if (WH[1] == null)
+{
+continue;
+}
+
 GlobalPluginLoad(Item, WH[0], WH[1]);
 P = GetPluginCoord();
 if (P[0] == 1)

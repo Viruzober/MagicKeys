@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -10,5 +11,6 @@ IntPtr MIHandle = SendMessage(HMenu, 0x01E1, 0, IntPtr.Zero);
 int MICount = GetMenuItemCount(MIHandle);
 return MICount;
 }
+
 }
 }

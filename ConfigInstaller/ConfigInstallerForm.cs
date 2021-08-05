@@ -1,6 +1,6 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
+
 namespace ConfigInstaller
 {
 public partial class ConfigInstallerForm : Form
@@ -13,6 +13,7 @@ InitTextBox();
 InitButton();
 InitForm();
 }
+
 public void InitForm()
 {
 this.StartPosition = FormStartPosition.CenterScreen;
@@ -24,6 +25,7 @@ this.MaximizeBox = false;
 this.Name = "ConfigInstaller";
 this.Load += FormLoad;
 }
+
 public void InitLabel()
 {
 Label List = new Label();
@@ -66,5 +68,6 @@ Ins.Text = T._("Установить");
 Ins.Click += Ins_Click;
 this.Controls.Add(Ins);
 }
+
 }
 }

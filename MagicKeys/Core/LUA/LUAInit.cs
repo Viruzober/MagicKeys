@@ -1,7 +1,6 @@
-﻿using System;
-using System.Windows.Forms;
-using MoonSharp.Interpreter;
+﻿using MoonSharp.Interpreter;
 using MoonSharp.Interpreter.Loaders;
+
 
 namespace MagicKeys
 {

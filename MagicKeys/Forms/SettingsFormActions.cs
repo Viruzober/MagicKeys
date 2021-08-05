@@ -1,9 +1,6 @@
 using System;
-using System.Drawing;
-using System.ComponentModel;
 using System.Windows.Forms;
-using System.IO;
-using System.Reflection;
+
 namespace MagicKeys
 {
 public partial class SettingsForm : Form
@@ -19,6 +16,7 @@ Exit.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\
 UpdateChannel.SelectedItem = Ini.IniRead(@".\Settings.ini", "Settings", "UpdateChannel");
 CheckUpdate.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRead(@".\Settings.ini", "Settings", "CheckUpdate")));
 }
+
 public void Save_Click(object sender, EventArgs e)
 {
 Ini.IniWrite(@".\Settings.ini", "Settings", "NavigationType", Convert.ToInt32(NavigationType.Checked).ToString());
@@ -31,14 +29,17 @@ Ini.IniWrite(@".\Settings.ini", "Settings", "CheckUpdate", Convert.ToBoolean(Che
 MagicKeys.LoadSettings();
 this.Close();
 }
+
 public void Cancel_Click(object sender, EventArgs e)
 {
 MagicKeys.LoadSettings();
 this.Close();
 }
+
 public void Help_Click(object sender, EventArgs e)
 {
 MagicKeys.HM.Help(null, null);
 }
+
 }
 }

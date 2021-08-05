@@ -1,8 +1,9 @@
-using System;
-using System.Drawing;
 using Microsoft.Collections.Extensions;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys

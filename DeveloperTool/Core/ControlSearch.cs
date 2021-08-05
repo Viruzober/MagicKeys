@@ -2,6 +2,7 @@
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class DeveloperTool
@@ -44,5 +45,6 @@ MagicKeys.Speak("Not found");
 OptionKeyReg();
 }
 }
+
 }
 }

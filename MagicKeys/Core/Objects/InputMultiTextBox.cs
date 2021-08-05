@@ -1,5 +1,5 @@
-using System;
 using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -23,5 +23,6 @@ else
 return null;
 }
 }
+
 }
 }

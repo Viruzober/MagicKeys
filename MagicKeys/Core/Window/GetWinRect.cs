@@ -1,4 +1,5 @@
 using System;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -10,5 +11,6 @@ GetWindowRect(Handle, out WR);
 int[] Rect = new int[4] {WR.Left, WR.Top, WR.Right, WR.Bottom};
 return Rect;
 }
+
 }
 }

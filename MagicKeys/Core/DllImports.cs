@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
+
 namespace MagicKeys
 {
 public partial class MagicKeys

@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Net;
+using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.IO;
-using System.Threading;
+
 namespace MKUpdater
 {
 public class HttpClientDownloadWithProgress : IDisposable
@@ -20,19 +19,26 @@ public HttpClientDownloadWithProgress(string downloadUrl, string destinationFile
 _downloadUrl = downloadUrl;
 _destinationFilePath = destinationFilePath;
 }
+
 public async Task StartDownload()
 {
 _httpClient = new HttpClient { Timeout = TimeSpan.FromDays(1) };
 using (var response = await _httpClient.GetAsync(_downloadUrl, HttpCompletionOption.ResponseHeadersRead))
+{
 await DownloadFileFromHttpResponseMessage(response);
 }
+}
+
 private async Task DownloadFileFromHttpResponseMessage(HttpResponseMessage response)
 {
 response.EnsureSuccessStatusCode();
 var totalBytes = response.Content.Headers.ContentLength;
 using (var contentStream = await response.Content.ReadAsStreamAsync())
+{
 await ProcessContentStream(totalBytes, contentStream);
 }
+}
+
 private async Task ProcessContentStream(long? totalDownloadSize, Stream contentStream)
 {
 var totalBytesRead = 0L;
@@ -64,6 +70,7 @@ TriggerProgressChanged(totalDownloadSize, totalBytesRead);
 }
 while (isMoreToRead);
 }
+
 private void TriggerProgressChanged(long? totalDownloadSize, long totalBytesRead)
 {
 if (ProgressChanged == null)
@@ -77,14 +84,17 @@ progressPercentage = Math.Round((double)totalBytesRead / totalDownloadSize.Value
 }
 ProgressChanged(totalDownloadSize, totalBytesRead, progressPercentage);
 }
+
 public void Dispose()
 {
 fileStream.Close();
 _httpClient?.Dispose();
 }
+
 public void CancelDownload()
 {
 Cancel = true;
 }
+
 }
 }

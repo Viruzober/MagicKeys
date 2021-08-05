@@ -1,7 +1,6 @@
 using System;
-using System.Windows.Forms;
-using System.Threading;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class Kontakt
@@ -25,10 +24,15 @@ if (Input != null)
 MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
 MouseMove(P[1]+355, P[2]+170, 0);
 MouseMove(P[1]+320, P[2]+170, 1);
-while (ImgSearch("KontaktLibSave")[0] == 0);
+while (ImgSearch("KontaktLibSave")[0] == 0)
+{
+;
+}
+
 int[] LS = ImgSearch("KontaktLibSave");
 MouseClick("Left", LS[5]+10, LS[2]+(17*(Convert.ToInt32(Input))), 1, 0, 0, 10);
 }
 }
+
 }
 }

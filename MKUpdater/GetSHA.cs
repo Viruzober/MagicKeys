@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-using System.Windows.Forms;
 using System.Security.Cryptography;
+
 namespace MKUpdater
 {
 public partial class MKUpdater
@@ -15,5 +15,6 @@ byte[] checksum = sha.ComputeHash(stream);
 return BitConverter.ToString(checksum).Replace("-", String.Empty);
 }
 }
+
 }
 }

@@ -1,7 +1,6 @@
-using System;
-using System.Windows.Forms;
 using System.Drawing;
-using System.IO;
+using System.Windows.Forms;
+
 namespace MagicKeys
 {
 public partial class NexusSearchForm : Form
@@ -23,6 +22,7 @@ InitLabel();
 InitListView();
 InitButton();
 }
+
 public void InitButton()
 {
 OK.Location = new Point(320, 10);
@@ -39,6 +39,7 @@ Cancel.Text = "Cancel";
 Cancel.Click += ButtonCancel_Click;
 this.Controls.Add(Cancel);
 }
+
 public void InitTextBox()
 {
 SearchText.Location = new Point(100, 10);
@@ -47,6 +48,7 @@ SearchText.TabIndex = 1;
 SearchText.KeyDown += SearchText_KeyDown;
 this.Controls.Add(SearchText);
 }
+
 public void InitLabel()
 {
 SearchLabel.Location = new Point(10, 10);
@@ -65,6 +67,7 @@ LabelPatch.Size = new Size(200, 25);
 LabelPatch.TabIndex = 4;
 this.Controls.Add(LabelPatch);
 }
+
 public void InitListView()
 {
 ListBank.Location = new Point(10, 80);
@@ -86,6 +89,7 @@ ListPatch.Columns.Add(new ColumnHeader());
 ListPatch.Columns[0].Text = "Patches";
 this.Controls.Add(ListPatch);
 }
+
 public void InitForm()
 {
 this.Size = new Size(555, 430);
@@ -99,5 +103,6 @@ this.Shown += NexusSearchForm_Shown;
 this.CancelButton = Cancel;
 this.Shown += NexusSearchForm_Shown;
 }
+
 }
 }

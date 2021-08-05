@@ -1,9 +1,6 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Windows.Forms;
-using System.Threading;
-using System.Reflection;
-using System.Collections.Generic;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -51,5 +48,6 @@ CurrentPlugin["PluginClass"] = CurrentPlugin["PluginClass"].Split(".")[0];
 }
 return false;
 }
+
 }
 }

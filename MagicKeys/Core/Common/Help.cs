@@ -1,7 +1,5 @@
-using System;
 using System.IO;
-using System.Windows.Forms;
-using System.Reflection;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -22,5 +20,6 @@ HF.ShowDialog();
 KeyReg();
 }
 }
+
 }
 }

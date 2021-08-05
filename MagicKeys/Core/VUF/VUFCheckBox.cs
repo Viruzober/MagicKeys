@@ -1,6 +1,5 @@
 using System;
-using System.Drawing;
-using System.Threading;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -15,5 +14,6 @@ FP[2],
 FP[3]
 );
 }
+
 }
 }

@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public class KeyWNDProc : Form
@@ -24,8 +24,8 @@ LUAInvoke(Func, Param);
 }
 else if (API.GetActiveClass() == "MagicKeys")
 {
-List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), (string)Func);
-List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), (string)Func);
+List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), Func);
+List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), Func);
 VUFInvoke(Funcs, Params);
 }
 else
@@ -38,5 +38,6 @@ break;
 }
 base.WndProc(ref m);
 }
+
 }
 }

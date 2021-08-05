@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
+
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -29,5 +30,6 @@ Sapi.InvokeMember("Speak",
 System.Reflection.BindingFlags.InvokeMethod,null,o,new Object[2] {Text, 3});
 }
 }
+
 }
 }

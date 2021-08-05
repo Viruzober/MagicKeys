@@ -1,5 +1,6 @@
 using System;
 using static MagicKeys.MagicKeys;
+
 namespace MagicKeys
 {
 public partial class Kontakt
@@ -18,9 +19,11 @@ Speak("0");
 return "0";
 }
 }
+
 public static void ProgressCancel()
 {
 MouseClick("Left", P[1]+340, P[2]+55, 1, 0, 0, 10);
 }
+
 }
 }

@@ -1,5 +1,3 @@
-using System;
-using Microsoft.Collections.Extensions;
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -15,7 +13,11 @@ ActiveObjects.Add(O.Key);
 }
 }
 CountObjects = ActiveObjects.Count-1;
-if (StartObject == true) CurrentObject = 0;
+if (StartObject == true)
+{
+CurrentObject = 0;
 }
+}
+
 }
 }

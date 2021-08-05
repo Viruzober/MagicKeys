@@ -1,6 +1,6 @@
-﻿using System;
+﻿using System.IO;
 using System.Linq;
-using System.IO;
+
 namespace MKUpdater
 {
 public partial class MKUpdater
@@ -17,10 +17,15 @@ Directory.CreateDirectory(targetFolder);
 foreach (var file in folder) 
 { 
 var targetFile = Path.Combine(targetFolder, Path.GetFileName(file)); 
-if (File.Exists(targetFile)) File.Delete(targetFile); 
+if (File.Exists(targetFile))
+{
+File.Delete(targetFile);
+}
+
 File.Move(file, targetFile); 
 }
 }
 }
+
 }
 }

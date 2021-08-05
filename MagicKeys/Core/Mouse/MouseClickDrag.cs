@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices;
-using System.Threading;
 namespace MagicKeys
 {
 public partial class MagicKeys
@@ -12,5 +10,6 @@ MouseMove(X2, Y2, TimeMove);
 Sleep(TimeUp);
 MouseButton(Button, "Up");
 }
+
 }
 }
