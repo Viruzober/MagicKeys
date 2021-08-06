@@ -182,5 +182,14 @@ return VUIObjects[ActiveObjects[CurrentObject]]["Param"];
 return null;
 }
 
+public static string GetAutoFuncParam()
+{
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("AutoFunc Param") == true)
+{
+return VUIObjects[ActiveObjects[CurrentObject]]["AutoFuncParam"];
+}
+return null;
+}
+
 }
 }

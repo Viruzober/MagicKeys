@@ -8,7 +8,7 @@ function Speak(Text)( ... )
 MK.Speak(Text)
 end
 function OCR(idth, Height, X, Y, Zoom)
-MK.ImgToText(Width, Height, X, Y, Zoom)
+MK.ImgToText(Width, Height, MK.P[2]+X, MP.P[3]+Y, Zoom)
 end
 function SubPluginLoad()( ... )
 MK.SubPluginLoad()

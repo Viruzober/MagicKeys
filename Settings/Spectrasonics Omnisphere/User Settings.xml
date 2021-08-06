@@ -54,7 +54,7 @@
 </NVP>
  </PROPERTIES_SCOPE>
  <PROPERTIES_SCOPE  NAME="General" >
-<NVP  NAME="Scale"  VALUE="1.00" >
+<NVP  NAME="Scale"  VALUE="1.0" >
 </NVP>
  <NVP  NAME="BrDir0"  VALUE="All Spectrasonics" >
 </NVP>
