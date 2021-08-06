@@ -18,7 +18,7 @@ if (API.GetAutoFunc() != null)
 string AutoFunc;
 if (API.GetActiveClass() == "lua")
 {
-AutoFunc = LUAInvoke(API.GetAutoFunc(), AutoFunc:true);
+AutoFunc = LUAInvoke(API.GetAutoFunc(), API.GetAutoFuncParam(), AutoFunc:true);
 }
 else if (API.GetActiveClass() == "MagicKeys")
 {
@@ -28,7 +28,7 @@ AutoFunc = VUFInvoke(Funcs, Params, AudoFunc:true);
 }
 else
 {
-AutoFunc = InvokeFromString(API.GetAutoFunc());
+AutoFunc = InvokeFromString(API.GetAutoFunc(), API.GetAutoFuncParam());
 }
 SpeakObject += " "+AutoFunc;
 }
