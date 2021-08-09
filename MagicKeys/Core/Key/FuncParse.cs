@@ -7,6 +7,10 @@ public partial class MagicKeys
 public static (string, string) FuncParse(string FuncParam)
 {
 string[] Temp = FuncParam.Split(",", 2);
+if (Temp[0] == "Background")
+{
+Temp = Temp[1].Split(",", 2);
+}
 if (Temp.Length > 1)
 {
 return (Temp[0], Temp[1]);

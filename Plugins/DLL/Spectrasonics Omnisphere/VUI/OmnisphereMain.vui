@@ -61,3 +61,15 @@ Text=CutOf
 ObjectType=Slider
 Help=Not found
 Func=MainCutOfSlider
+[13]
+Text=LPF
+ObjectType=RadioBox
+Func=MainLPFCheckBox
+[14]
+Text=HPF
+ObjectType=RadioBox
+Func=MainHPFCheckBox
+[15]
+Text=Back
+ObjectType=Button
+Func=MainBack

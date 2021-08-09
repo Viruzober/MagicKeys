@@ -8,7 +8,7 @@ public partial class MagicKeys
 
 public static void HelpForm()
 {
-string HelpFile = API.GetVUIPath()+API.GetVUI()+".help";
+string HelpFile = Path.Combine(API.GetVUIPath(), API.GetVUI()+".help");
 if (File.Exists(HelpFile) == false)
 {
 MagicKeys.Speak(T._("Help file not found"));

@@ -29,26 +29,22 @@ Func=LibDelete
 Text=previous library in folder
 ObjectType=Button
 Help=Переход к предыдущей библиотеке в папке
-Func=LibSwitchFolder
-Param=Back
+Func=LibSwitchFolder,Back
 [5]
 Text=Next library in folder
 ObjectType=Button
 Help=Переход к следующей библиотеке в папке
-Func=LibSwitchFolder
-Param=Next
+Func=LibSwitchFolder,Next
 [6]
 Text=previous snapshot
 ObjectType=Button
 Help=Предыдущий снапшот
-Func=LibSwitchSnapshot
-Param=Back
+Func=LibSwitchSnapshot,Back
 [7]
 Text=Next Snapshot
 ObjectType=Button
 Help=Следующий снапшот
-Func=LibSwitchSnapshot
-Param=Next
+Func=LibSwitchSnapshot,Next
 [8]
 Text=Go to library interface
 ObjectType=Button

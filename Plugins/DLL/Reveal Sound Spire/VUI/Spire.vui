@@ -1,6 +1,3 @@
-[Params]
-PluginClass=RevealSoundSpire
-Loader=None
 [Keys]
 PageUp=SpeakPreset,Previous
 PageDown=SpeakPreset,Next
@@ -24,11 +21,9 @@ Func=Options
 Text=Previous preset
 ObjectType=Button
 Help=Not found
-Func=SpeakPreset
-Param=Previous
+Func=SpeakPreset,Previous
 [4]
 Text=Next preset
 ObjectType=Button
 Help=Not found
-Func=SpeakPreset
-Param=Next
+Func=SpeakPreset,Next

@@ -16,6 +16,7 @@ VUIKeys.Clear();
 VUIObjects.Clear();
 ActiveObjects.Clear();
 CurrentPlugin.Remove("Loader");
+ThreadFunc = string.Empty;
 SoundPlay("ChangeVUI", 0);
 CurrentPlugin["VUI"] = File;
 ParamsLoader();

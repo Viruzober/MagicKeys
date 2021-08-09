@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
@@ -140,6 +143,15 @@ return CurrentPlugin["Loader"];
 return "None";
 }
 
+public static string GetNameCurrentObject()
+{
+if (ActiveObjects.Any() == true)
+{
+return ActiveObjects[CurrentObject];
+}
+return null;
+}
+
 public static string GetText()
 {
 return VUIObjects[ActiveObjects[CurrentObject]]["Text"];
@@ -159,36 +171,60 @@ return VUIObjects[ActiveObjects[CurrentObject]]["Help"];
 return "Help not found";
 }
 
-public static string GetAutoFunc()
+public static bool FuncIsBackground(string TypeFunc)
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("AutoFunc") == true)
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey(TypeFunc) == true)
 {
-return VUIObjects[ActiveObjects[CurrentObject]]["AutoFunc"];
+string[] Temp = VUIObjects[ActiveObjects[CurrentObject]][TypeFunc].Split(",", 2);
+if (Temp[0] == "Background")
+{
+return true;
+}
+return false;
+}
+return false;
+}
+
+public static string GetFunc(string TypeFunc)
+{
+try
+{
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey(TypeFunc) == true)
+{
+string[] Temp = VUIObjects[ActiveObjects[CurrentObject]][TypeFunc].Split(",", 2);
+if (Temp[0] == "Background")
+{
+return Temp[1].Split(",", 2)[0].Trim();
+}
+return Temp[0].Split(",", 2)[0].Trim();
 }
 return null;
 }
-
-public static string GetFunc()
-{
-return VUIObjects[ActiveObjects[CurrentObject]]["Func"];
+catch(Exception)
+        {
+        return null;
 }
+        }
 
-public static string GetParam()
+        public static string GetParam(string TypeParam)
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("Param") == true)
+try
 {
-return VUIObjects[ActiveObjects[CurrentObject]]["Param"];
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey(TypeParam) == true)
+{
+string[] Temp = VUIObjects[ActiveObjects[CurrentObject]][TypeParam].Split(",");
+if (Temp[0] == "Background")
+{
+return Temp[1].Split(",", 2)[1].Trim();
+}
+return Temp[1].Trim();
 }
 return null;
 }
-
-public static string GetAutoFuncParam()
+catch(Exception)
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("AutoFunc Param") == true)
-{
-return VUIObjects[ActiveObjects[CurrentObject]]["AutoFuncParam"];
-}
 return null;
+}
 }
 
 }

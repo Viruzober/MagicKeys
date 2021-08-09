@@ -32,6 +32,7 @@ g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
 Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
 var engine = Windows.Media.Ocr.OcrEngine.TryCreateFromLanguage(new Windows.Globalization.Language("en"));
 S.Save(memoryStream, ImageFormat.Bmp);
+byte[] b = memoryStream.ToArray();
 using var RAS = memoryStream.AsRandomAccessStream();
 var decoder = await Windows.Graphics.Imaging.BitmapDecoder.CreateAsync(RAS);
 var softwareBitmap = await decoder.GetSoftwareBitmapAsync();

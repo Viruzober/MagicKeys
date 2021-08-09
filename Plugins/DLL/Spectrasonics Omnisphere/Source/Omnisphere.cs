@@ -11,24 +11,28 @@ public partial class Omnisphere
 public static void Search()
 {
 MouseClick("Left", P[1]+35, P[2]+85, 1, 0, 0, 10);
+Speak("Search");
 }
 
 public static void Category()
 {
 MouseClick("Left", P[1]+40, P[2]+150, 1, 0, 0, 10);
 AudoSelect();
+Speak("Category");
 }
 
 public static void Type()
 {
 MouseClick("Left", P[1]+100, P[2]+150, 1, 0, 0, 10);
 AudoSelect();
+Speak("Type");
 }
 
 public static void Genre()
 {
 MouseClick("Left", P[1]+160, P[2]+150, 1, 0, 0, 10);
 AudoSelect();
+Speak("Genre");
 }
 
 public static void SelectChannel()

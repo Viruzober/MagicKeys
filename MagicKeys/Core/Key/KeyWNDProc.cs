@@ -12,13 +12,11 @@ protected override void WndProc(ref Message m)
 switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
-string modifier = KeyParse((int)m.LParam & 0xFFFF);
-int K = ((int)m.LParam >> 16) & 0xFFFF;
-string key = GetKeyName(K);
+string Key = KeyParse((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
 KeyUnReg();
-if (VUIKeys.ContainsKey(modifier+key) == true)
+if (VUIKeys.ContainsKey(Key) == true)
 {
-(string Func, string Param) = FuncParse(VUIKeys[modifier+key]);
+(string Func, string Param) = FuncParse(VUIKeys[Key]);
 if (API.GetActiveClass() == "lua")
 {
 LUAInvoke(Func, Param);
@@ -31,7 +29,22 @@ VUFInvoke(Funcs, Params);
 }
 else
 {
+if(VUIKeys[Key].Split(",", 2)[0] == "Background")
+{
+if (Func == ThreadFunc.Split(",")[0])
+{
+ThreadFunc = string.Empty;
+}
+else
+{
+var BFObj = new BackgroundFuncObject(Func, Param);
+BackgroundInvoke(BFObj);
+}
+}
+else
+{
 InvokeFromString(Func, Param);
+}
 }
 }
 KeyReg();

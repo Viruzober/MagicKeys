@@ -1,0 +1,4 @@
+export WinNativeOCR* stdcall winNativeOCR_initialize(const wchar_t* language, winNativeOCR_Callback callback);
+export void stdcall winNativeOCR_terminate(WinNativeOCR* instance);
+export void stdcall winNativeOCR_recognize(WinNativeOCR* instance, const RGBQUAD* image, unsigned int width, unsigned int height);
+export BSTR stdcall winNativeOCR_getLanguages();

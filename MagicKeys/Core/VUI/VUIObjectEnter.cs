@@ -11,25 +11,25 @@ public static void VUIObjectEnter()
 KeyUnReg();
 if (API.GetActiveClass() == "lua")
 {
-LUAInvoke(API.GetFunc(), API.GetParam());
+LUAInvoke(API.GetFunc("Func"), API.GetParam("Func"));
 KeyReg();
 return;
 }
 if (API.GetActiveClass() == "MagicKeys")
 {
-List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), API.GetFunc());
-List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), API.GetFunc());
+List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), API.GetFunc("Func"));
+List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), API.GetFunc("Func"));
 VUFInvoke(Funcs, Params);
 KeyReg();
 return;
 }
-if (API.GetParam() == null)
+if (API.GetParam("Func") == null)
 {
-InvokeFromString(API.GetFunc());
+InvokeFromString(API.GetFunc("Func"));
 KeyReg();
 return;
 }
-InvokeFromString(API.GetFunc(), API.GetParam());
+InvokeFromString(API.GetFunc("Func"), API.GetParam("Func"));
 KeyReg();
 }
 

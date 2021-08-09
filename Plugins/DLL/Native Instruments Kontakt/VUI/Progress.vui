@@ -1,7 +1,6 @@
-[Params]
-PluginClass=Kontakt
-Loader=None
-[1]
+[Keys]
+P=Background,Progress
+[ProgressLoad]
 Text=Loading
 ObjectType=Progress
 Help=Прогресс загрузки библиотеки

@@ -1,6 +1,3 @@
-[Params]
-PluginClass=RevealSoundSpire
-Loader=None
 [Keys]
 Home=ChangeBank,Up
 End=ChangeBank,Down

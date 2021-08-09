@@ -83,5 +83,24 @@ public static void MainCutOfSlider()
 Slider("CutOf", 490, 598, "H", 1.7, 1);
 }
 
+public static void MainLPFCheckBox()
+{
+MouseClick("Left", P[1]+705, P[2]+590, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("MainLPF", P[1]+715, P[2]+585, P[1]+735, P[2]+610));
+}
+
+public static void MainHPFCheckBox()
+{
+MouseClick("Left", P[1]+705, P[2]+610, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("MainHPF", P[1]+715, P[2]+595, P[1]+735, P[2]+620));
+}
+
+public static void MainBack()
+{
+VUILoader("Omnisphere");
+}
+
 }
 }
