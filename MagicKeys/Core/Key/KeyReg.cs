@@ -13,7 +13,7 @@ public static void KeyReg()
 {
 if (VUIKeys.Count != 0)
 {
-int IDKey = 0;
+int IDKey = 6;
 foreach(var OBJKey in VUIKeys)
 {
 uint Mod = MKC.MOD_NOREPEAT;

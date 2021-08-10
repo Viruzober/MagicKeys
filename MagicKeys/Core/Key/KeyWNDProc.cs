@@ -30,7 +30,32 @@ break;
 else
 {
 Invoker(Func, Param);
+break;
 }
+}
+if (Key == "Ctrl+Shift+F3")
+{
+MagicKeys.HelpForm();
+}
+else if (Key == "Ctrl+Shift+F5")
+{
+VUILoader(API.GetVUI());
+}
+else if (Key == "Shift+Tab" || Key == "Left")
+{
+MagicKeys.VUIObjectNavigator("Back");
+}
+else if (Key == "Tab" || Key == "Right")
+{
+MagicKeys.VUIObjectNavigator("Next");
+}
+else if (Key == "F1")
+{
+MagicKeys.Speak(API.GetHelp());
+}
+else if (Key == "Enter")
+{
+MagicKeys.Invoker(API.GetFunc("Func"), API.GetParam("Func"));
 }
 break;
 }
