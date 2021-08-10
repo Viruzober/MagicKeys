@@ -39,11 +39,12 @@ VUILoader(API.GetVUI());
 SoundPlay("WindowOpened", 0);
 SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
 WinClose(WH[0], WH[1]);
+KeyUnReg();
 VUIKeys.Clear();
 VUIObjects.Clear();
 ActiveObjects.Clear();
-KeyUnReg();
 SoundPlay("WindowClosed", 0);
+ThreadFunc = string.Empty;
 PluginClass = null;
 PluginClassLoader.Unload();
 if (API.GetSubClass() != string.Empty && API.GetSubClass() != "MagicKeys")

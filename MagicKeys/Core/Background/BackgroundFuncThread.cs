@@ -14,16 +14,14 @@ if (BFObj.AutoFunc == true)
 while(Thread.CurrentThread.Name == ThreadFunc)
 {
 if (BFObj.ObjectName != API.GetNameCurrentObject()) return;
-InvokeFromString(BFObj.Func, BFObj.Params);
-Thread.Sleep(1000);
+Invoker(BFObj.Func, BFObj.Params);
 }
 }
 else
 {
 while(Thread.CurrentThread.Name == ThreadFunc)
 {
-InvokeFromString(BFObj.Func, BFObj.Params);
-Thread.Sleep(1000);
+Invoker(BFObj.Func, BFObj.Params);
 }
 }
 }

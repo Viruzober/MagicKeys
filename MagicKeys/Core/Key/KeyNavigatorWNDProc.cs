@@ -31,11 +31,11 @@ MagicKeys.VUIObjectNavigator("Next");
 }
 else if (key == Keys.F1)
 {
-MagicKeys.VUIObjectHelp();
+MagicKeys.Speak(API.GetHelp());
 }
 else if (key == Keys.Enter)
 {
-MagicKeys.VUIObjectEnter();
+MagicKeys.Invoker(API.GetFunc("Func"), API.GetParam("Func"));
 }
 break;
 }

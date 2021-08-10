@@ -36,7 +36,6 @@ if(Keys[I] == "" || Values[I] == "")
 {
 throw new IndexOutOfRangeException();
 }
-
 VUIObjects.GetValueOrDefault(ObjectName).Add(Keys[I], Values[I]);
 }
 catch(IndexOutOfRangeException)

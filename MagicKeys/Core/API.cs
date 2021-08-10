@@ -137,10 +137,9 @@ public static string GetLoader()
 {
 if (CurrentPlugin.ContainsKey("Loader") == true)
 {
-
 return CurrentPlugin["Loader"];
 }
-return "None";
+return null;
 }
 
 public static string GetNameCurrentObject()
@@ -159,7 +158,11 @@ return VUIObjects[ActiveObjects[CurrentObject]]["Text"];
 
 public static string GetObjectType()
 {
+if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("ObjectType") == true)
+{
 return VUIObjects[ActiveObjects[CurrentObject]]["ObjectType"];
+}
+return string.Empty;
 }
 
 public static string GetHelp()

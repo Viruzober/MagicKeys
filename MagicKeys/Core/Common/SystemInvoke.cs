@@ -7,7 +7,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static string InvokeFromString(string InvokeFunc, string FuncParam = null)
+public static string SystemInvoke(string InvokeFunc, string FuncParam = null)
 {
 try
 {

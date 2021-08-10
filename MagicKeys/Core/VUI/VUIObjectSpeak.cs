@@ -15,22 +15,7 @@ SpeakObject += " "+API.GetObjectType();
 }
 if (API.GetFunc("AutoFunc") != null)
 {
-string AutoFunc;
-if (API.GetActiveClass() == "lua")
-{
-AutoFunc = LUAInvoke(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"));
-}
-else if (API.GetActiveClass() == "MagicKeys")
-{
-List<string> Funcs = Ini.IniReadKeys(API.GetCurrentScript(), API.GetFunc("AutoFunc"));
-List<string> Params = Ini.IniReadValues(API.GetCurrentScript(), API.GetParam("AutoFunc"));
-AutoFunc = VUFInvoke(Funcs, Params, AudoFunc:true);
-}
-else
-{
-AutoFunc = InvokeFromString(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"));
-}
-SpeakObject += " "+AutoFunc;
+SpeakObject += " "+Invoker(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"));;
 }
 Speak(SpeakObject);
 if (API.FuncIsBackground("AutoFunc") == true)

@@ -99,11 +99,5 @@ return null;
 }
 }
 
-public static int IniCountSections( string File)
-{
-List<string> Count = IniReadSections(File);
-return Count.Count;
-}
-
 }
 }

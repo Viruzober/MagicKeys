@@ -32,7 +32,7 @@ IDKey+=1;
 }
 catch(Exception)
 {
-MKDebugForm("KeyReg|"+API.GetCurrentVUI()+","+KeyItems[^1]);
+MKDebugForm("KeyReg|"+API.GetCurrentVUI()+"|"+KeyItems[^1]);
 return;
 }
 }

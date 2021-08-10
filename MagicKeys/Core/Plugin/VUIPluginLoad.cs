@@ -12,7 +12,7 @@ public static void VUIPluginLoad()
 {
 if (API.GetLoader() == "Code")
 {
-InvokeFromString(API.GetVUI()+"Loader");
+SystemInvoke(API.GetVUI()+"Loader");
 return;
 }
 else if (API.GetLoader() == "VUF")
@@ -32,14 +32,14 @@ if (Trigger[0] == "Img")
 {
 if (ImgSearch(Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))
 {
-VUFInvoke(Funcs, Params, Convert.ToInt32(LoadValues[1]));
+VUFInvoke(Funcs, Params);
 }
 }
 else if(Trigger[0] == "VUI")
 {
 if (Trigger[1] == API.GetVUI())
 {
-VUFInvoke(Funcs, Params, Convert.ToInt32(LoadValues[1]));
+VUFInvoke(Funcs, Params);
 }
 }
 }
