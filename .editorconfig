@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0006: Не удалось найти файл метаданных "D:\Projects\MagicKeys\MagicKeys\bin\x64\Debug\MagicKeys.dll".
+dotnet_diagnostic.CS0006.severity = error

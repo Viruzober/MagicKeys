@@ -29,7 +29,8 @@ ControlSetTextPoint(P[1]+Convert.ToInt32(FP[0]), P[2]+Convert.ToInt32(FP[1]), Co
 }
 else if (FP[2] == "Menu")
 {
-MenuItemClick("Right", P[1]+Convert.ToInt32(FP[0]), P[2]+Convert.ToInt32(FP[1]), 4);
+MouseClick("Right", P[1]+Convert.ToInt32(FP[0]), P[2]+Convert.ToInt32(FP[1]), 1, 0, 0, 10);
+MenuItemClick(4);
 }
 }
 

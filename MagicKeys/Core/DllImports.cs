@@ -91,6 +91,13 @@ public static extern int nvdaController_speakText(string text);
 [DllImport("nvdaControllerClient64.dll", CharSet = CharSet.Unicode)]
 public static extern int nvdaController_brailleMessage(string Text);
 #endif
+#if X64
+[DllImport("WinRTOCR64.dll")]
+public static extern IntPtr Recognize(IntPtr Img, uint Size, IntPtr Lang);
+#else
+[DllImport("WinRTOCR32.dll")]
+public static extern IntPtr Recognize(IntPtr Img, uint Size, IntPtr Lang);
+#endif
 [DllImport( "user32.dll", SetLastError = true )]
 public static extern int GetWindowThreadProcessId ( IntPtr hWnd, out int lpdwProcessId );
 [DllImport("kernel32.dll")]

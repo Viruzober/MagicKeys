@@ -6,29 +6,32 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void MenuItemClick(string Button, int X, int Y, string MIText)
+public static bool MenuItemClick(string MIText)
 {
-MouseClick(Button, X, Y, 1, 0, 0, 10);
 Thread.Sleep(100);
 int Count = GetMICount();
 for(int I = 0; I <= Count-1; I++)
 {
-if (GetMIText(I).Contains(MIText) == true)
+if (GetMIText(I).Contains(MIText, System.StringComparison.OrdinalIgnoreCase) == true)
 {
 int[] RC = GetMIRect(I);
 MouseClick("Left", RC[0], RC[1], 1, 0, 0, 10);
-return;
+return true;
 }
 }
+return false;
 }
 
-public static void MenuItemClick(string Button, int X, int Y, int IDItem)
+public static bool MenuItemClick(int IDItem)
 {
-MouseClick(Button, X, Y, 1, 0, 0, 10);
 Thread.Sleep(100);
 int[] RC = GetMIRect(IDItem);
+if(RC[0] != 0)
+{
 MouseClick("Left", RC[0], RC[1], 1, 0, 0, 10);
-return;
+return true;
+}
+return false;
 }
 
 }

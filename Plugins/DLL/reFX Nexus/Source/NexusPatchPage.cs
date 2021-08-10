@@ -19,7 +19,8 @@ return;
 }
 SoundPlay("Scrol", 0);
 MouseClick("Left", P[1]+575, P[2]+120, 1, 0, 0, 10);
-MenuItemClick("Right", P[1]+450, P[2]+230, "rename");
+MouseClick("Right", P[1]+450, P[2]+230, 1, 0, 0, 10);
+MenuItemClick("rename");
 Thread.Sleep(100);
 string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
 KeySend("Keys", "Enter", 50, 50);
@@ -36,7 +37,8 @@ return;
 }
 SoundPlay("Scrol", 0);
 MouseClick("Left", P[1]+575, P[2]+220, 1, 0, 0, 10);
-MenuItemClick("Right", P[1]+450, P[2]+105, "rename");
+MouseClick("Right", P[1]+450, P[2]+105, 1, 0, 0, 10);
+MenuItemClick("rename");
 Thread.Sleep(100);
 string Patch = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
 KeySend("Keys", "Enter", 50, 50);

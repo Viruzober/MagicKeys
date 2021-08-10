@@ -42,7 +42,7 @@ public static void MainLutchButton()
 {
 MouseClick("Left", P[1]+345, P[2]+480, 1, 0, 0, 10);
 Thread.Sleep(100);
-Speak(CheckStateImg("Lutch", P[1]+325, P[2]+460, P[1]+365, P[2]+500));
+Speak(CheckStateImg("Lutch", P[1]+325, P[2]+460, P[1]+380, P[2]+510));
 }
 
 public static void MainLutchMenu()
@@ -58,10 +58,7 @@ MouseClick("Left", P[1]+370, P[2]+535, 1, 0, 0, 10);
 public static void MainPartLavelSlider()
 {
 MouseClick("Right", P[1]+320, P[2]+590, 1, 0, 0, 10);
-Thread.Sleep(100);
-WaitWinClose("#32768");
-Thread.Sleep(100);
-WaitControlClose(P[1]+310, P[2]+570, "Edit");
+MenuItemClick("enable host automation");
 }
 
 public static void MainMCheckBox()

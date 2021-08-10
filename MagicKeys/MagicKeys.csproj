@@ -76,6 +76,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CSCore" Version="1.2.1.2" />
     <PackageReference Include="Gettext.Tools" Version="0.21.0.1" />
     <PackageReference Include="GitInfo" Version="2.1.2">
