@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-11 02:24+0300\n"
+"POT-Creation-Date: 2021-08-11 02:53+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "OCR Word List"
 msgstr ""
 
-#: MagicKeys\MagicKeys.cs:36
+#: MagicKeys\MagicKeys.cs:35
 msgid ""
 "This version of MagicKeys is built for 32-bit Windows, but you are running a "
 "64-bit version. Please run a 64-bit version of MagicKeys instead."
@@ -149,7 +149,7 @@ msgstr ""
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
 
-#: MagicKeys\MagicKeys.cs:36 MagicKeys\MagicKeys.cs:43
+#: MagicKeys\MagicKeys.cs:35 MagicKeys\MagicKeys.cs:42
 #: MagicKeys\Core\Common\CheckRunProc.cs:17 MagicKeys\Forms\DebugForm.cs:46
 #: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
 #: MKUpdater\UpdateFormActions.cs:38 MKUpdater\UpdateFormActions.cs:58
@@ -157,11 +157,11 @@ msgstr ""
 msgid "Error"
 msgstr "Ошибка"
 
-#: MagicKeys\MagicKeys.cs:43
+#: MagicKeys\MagicKeys.cs:42
 msgid "You must close DeveloperTool to run MagicKeys."
 msgstr ""
 
-#: MagicKeys\MagicKeys.cs:62
+#: MagicKeys\MagicKeys.cs:61
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
 

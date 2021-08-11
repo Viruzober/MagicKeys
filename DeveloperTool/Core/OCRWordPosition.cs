@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Runtime.InteropServices;
+using System.Text.Json;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MagicKeys
@@ -15,28 +18,28 @@ public partial class DeveloperTool
 public static List<String> LW = new List<string>();
 public static List<int> LX = new List<int>();
 public static List<int> LY = new List<int>();
-public static async void OCRWordPosition()
+public static void OCRWordPosition()
 {
 KeyUnReg();
 OptionKeyUnReg();
 Bitmap Screen = new Bitmap(P[3]-P[1], P[4]-P[2]);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(P[1], P[2], 00, 0, Screen.Size);
-var engine = Windows.Media.Ocr.OcrEngine.TryCreateFromLanguage(new Windows.Globalization.Language("en"));
 var memoryStream = new MemoryStream();
 Screen.Save(memoryStream, ImageFormat.Bmp);
-var WMS = WindowsRuntimeStreamExtensions.AsRandomAccessStream(memoryStream);
-var decoder = await Windows.Graphics.Imaging.BitmapDecoder.CreateAsync(WMS);
-var softwareBitmap = await decoder.GetSoftwareBitmapAsync();
-var OCRR = await engine.RecognizeAsync(softwareBitmap);
+byte[] b = memoryStream.ToArray();
+IntPtr Handle = Marshal.AllocHGlobal(b.Length);
+Marshal.Copy(b, 0, Handle, b.Length);
+string Resulte = Task.Run(() => MagicKeys.OCR(Handle, (uint)b.Length, "en")).Result;
+OCRResulte JsonResulte = JsonSerializer.Deserialize<OCRResulte>(Resulte);
 OCRResultForm ORF = new		OCRResultForm();
-foreach(var Line in OCRR.Lines)
+foreach(var Line in JsonResulte.lines)
 {
-for(int I = 0; I <= Line.Words.Count-1; I++)
+for(int I = 0; I <= Line.words.Count-1; I++)
 {
-LW.Add(Line.Words[I].Text);
-LX.Add(Convert.ToInt32(Line.Words[I].BoundingRect.X));
-LY.Add(Convert.ToInt32(Line.Words[I].BoundingRect.Y));
+LW.Add(Line.words[I].text);
+LX.Add(Convert.ToInt32(Line.words[I].rect.x));
+LY.Add(Convert.ToInt32(Line.words[I].rect.y));
 }
 }
 foreach(var W in LW){
