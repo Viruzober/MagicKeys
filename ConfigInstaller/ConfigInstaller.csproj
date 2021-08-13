@@ -41,12 +41,8 @@
 
   <ItemGroup>
     <PackageReference Include="Gettext.Tools" Version="0.21.0.1" />
-    <PackageReference Include="GitInfo" Version="2.1.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Management.Infrastructure" Version="2.0.0" />
     <PackageReference Include="NGettext" Version="0.6.6" />
-    <PackageReference Include="System.Management" Version="5.0.0" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

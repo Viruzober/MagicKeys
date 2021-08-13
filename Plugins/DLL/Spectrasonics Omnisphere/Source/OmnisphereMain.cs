@@ -57,8 +57,7 @@ MouseClick("Left", P[1]+370, P[2]+535, 1, 0, 0, 10);
 
 public static void MainPartLavelSlider()
 {
-MouseClick("Right", P[1]+320, P[2]+590, 1, 0, 0, 10);
-MenuItemClick("enable host automation");
+HostAutomation(P[1]+320, P[2]+590);
 }
 
 public static void MainMCheckBox()
@@ -77,7 +76,7 @@ Speak(CheckStateImg("MainSCheck", P[1]+390, P[2]+590, P[1]+470, P[2]+650));
 
 public static void MainCutOfSlider()
 {
-Slider("CutOf", 490, 598, "H", 1.7, 1);
+HostAutomation(P[1]+530, P[2]+610);
 }
 
 public static void MainLPFCheckBox()
@@ -92,6 +91,11 @@ public static void MainHPFCheckBox()
 MouseClick("Left", P[1]+705, P[2]+610, 1, 0, 0, 10);
 Thread.Sleep(100);
 Speak(CheckStateImg("MainHPF", P[1]+715, P[2]+595, P[1]+735, P[2]+620));
+}
+
+public static void MainResonanseSlider()
+{
+HostAutomation(P[1]+810, P[2]+610);
 }
 
 public static void MainBack()

@@ -42,7 +42,6 @@ if (Input == null)
 {
 return;
 }
-
 int CH = Convert.ToInt32(Input)*35;
 MouseClick("Left", P[1]+485+CH, P[2]+55, 1, 0, 0, 10);
 AudoSelect();
@@ -59,6 +58,21 @@ Thread.Sleep(200);
 if (ImgSearchArea("BP", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20)[0] == 0)
 {
 MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
+}
+}
+
+public static void HostAutomation(int X, int Y)
+{
+MouseClick("Right", X, Y, 1, 0, 0, 1);
+if (MenuItemClick("Enable Host") == true)
+{
+Speak("Enable host automation");
+return;
+}
+else
+{
+MenuItemClick("Unlearn Host Automation ID");
+Speak("Disable host automation");
 }
 }
 

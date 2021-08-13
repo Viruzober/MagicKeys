@@ -70,6 +70,11 @@ Text=HPF
 ObjectType=RadioBox
 Func=MainHPFCheckBox
 [15]
+Text=Resonanse
+ObjectType=Slider
+Help=Not found
+Func=MainResonanseSlider
+[BackToStartWindow]
 Text=Back
 ObjectType=Button
 Func=MainBack

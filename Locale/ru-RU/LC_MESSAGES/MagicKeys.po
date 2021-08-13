@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-11 02:53+0300\n"
+"POT-Creation-Date: 2021-08-13 13:08+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -35,15 +35,15 @@ msgid ""
 "display resolution. Click \"Yes\" to automatically apply the parameter."
 msgstr ""
 
-#: ConfigInstaller\ConfigInstallerForm.cs:36
+#: ConfigInstaller\Forms\ConfigInstallerForm.cs:36
 msgid "Плагины"
 msgstr ""
 
-#: ConfigInstaller\ConfigInstallerForm.cs:42
+#: ConfigInstaller\Forms\ConfigInstallerForm.cs:42
 msgid "Результат"
 msgstr ""
 
-#: ConfigInstaller\ConfigInstallerForm.cs:69
+#: ConfigInstaller\Forms\ConfigInstallerForm.cs:69
 msgid "Установить"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid "Height"
 msgstr ""
 
-#: DeveloperTool\Forms\MenuForm.cs:23
+#: DeveloperTool\Forms\MenuForm.cs:24
 msgid "Developer tool"
 msgstr ""
 
@@ -152,8 +152,9 @@ msgstr ""
 #: MagicKeys\MagicKeys.cs:35 MagicKeys\MagicKeys.cs:42
 #: MagicKeys\Core\Common\CheckRunProc.cs:17 MagicKeys\Forms\DebugForm.cs:46
 #: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
-#: MKUpdater\UpdateFormActions.cs:38 MKUpdater\UpdateFormActions.cs:58
-#: MKUpdater\UpdateFormActions.cs:65
+#: MKUpdater\Forms\UpdateFormActions.cs:38
+#: MKUpdater\Forms\UpdateFormActions.cs:58
+#: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Error"
 msgstr "Ошибка"
 
@@ -207,7 +208,7 @@ msgid "No plugins are available."
 msgstr "Нет доступных плагинов."
 
 #: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
-#: MKUpdater\UpdateFormActions.cs:21
+#: MKUpdater\Forms\UpdateFormActions.cs:21
 msgid "Warning"
 msgstr "Внимание"
 
@@ -342,7 +343,7 @@ msgstr "Выйти из MagicKeys"
 msgid "check for updates when magicKeys starts"
 msgstr ""
 
-#: MagicKeys\Forms\SettingsForm.cs:96 MKUpdater\UpdateForm.cs:61
+#: MagicKeys\Forms\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -366,28 +367,29 @@ msgstr ""
 "Что-то пошло не так. Пожалуйста, попробуйте позже или свяжитесь с "
 "разработчиком."
 
-#: MKUpdater\UpdateForm.cs:30
+#: MKUpdater\Forms\UpdateForm.cs:30
 msgid "Changelog"
 msgstr ""
 
-#: MKUpdater\UpdateForm.cs:56
+#: MKUpdater\Forms\UpdateForm.cs:56
 msgid "Update"
 msgstr ""
 
-#: MKUpdater\UpdateForm.cs:75
+#: MKUpdater\Forms\UpdateForm.cs:75
 #, fuzzy
 msgid "Update MagicKeys"
 msgstr "Выйти из MagicKeys"
 
-#: MKUpdater\UpdateFormActions.cs:21
+#: MKUpdater\Forms\UpdateFormActions.cs:21
 msgid "Please close these programs before updating."
 msgstr ""
 
-#: MKUpdater\UpdateFormActions.cs:38
+#: MKUpdater\Forms\UpdateFormActions.cs:38
 msgid "Error Downloading update. Please try again later."
 msgstr ""
 
-#: MKUpdater\UpdateFormActions.cs:58 MKUpdater\UpdateFormActions.cs:65
+#: MKUpdater\Forms\UpdateFormActions.cs:58
+#: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Update file is corrupted."
 msgstr ""
 

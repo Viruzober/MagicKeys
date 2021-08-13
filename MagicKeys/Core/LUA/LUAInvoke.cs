@@ -9,16 +9,16 @@ public partial class MagicKeys
 
 public static string LUAInvoke(string Func, string Param = null)
 {
-DynValue Resulte;
+DynValue Result;
 if (Param == null)
 {
-Resulte = LUAScript.Call(LUAScript.Globals[Func]);
+Result = LUAScript.Call(LUAScript.Globals[Func]);
 }
 else
 {
-Resulte = LUAScript.Call(LUAScript.Globals[Func], Param);
+Result = LUAScript.Call(LUAScript.Globals[Func], Param);
 }
-return Resulte.String;
+return Result.String;
 }
 
 }

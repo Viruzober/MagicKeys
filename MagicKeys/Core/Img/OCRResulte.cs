@@ -23,7 +23,7 @@ public string text { get; set; }
 public List<Word> words { get; set; }
 }
 
-public class OCRResulte
+public class OCRResult
 {
 public string text { get; set; }
 public List<Line> lines { get; set; }

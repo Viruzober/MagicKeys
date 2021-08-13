@@ -2,6 +2,9 @@ using Microsoft.Win32;
 using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using Microsoft.Management.Infrastructure;
+using System.Linq;
 
 namespace ConfigInstaller
 {
@@ -91,22 +94,20 @@ RetVal = ChangeDisplaySettings(ref dm, 0);
 
 public static int[] GetMaxScreenSize()
 {
-var scope = new System.Management.ManagementScope();
-var q = new System.Management.ObjectQuery("SELECT * FROM CIM_VideoControllerResolution");
-var searcher = new System.Management.ManagementObjectSearcher(scope, q);
-var results = searcher.Get();
+CimSession Connect = CimSession.Create(null);
+List<CimInstance> cimInstances = Connect.QueryInstances(@"root/cimv2", "WQL", @"SELECT * FROM CIM_VideoControllerResolution").ToList();
 UInt32 maxHResolution = 0;
 UInt32 maxVResolution = 0;
-foreach (var item in results)
+foreach (var item in cimInstances) 
 {
-if ((UInt32)item["HorizontalResolution"] > maxHResolution)
+if ((UInt32)item.CimInstanceProperties["HorizontalResolution"].Value > maxHResolution)
 {
-maxHResolution = (UInt32)item["HorizontalResolution"];
+maxHResolution = (UInt32)item.CimInstanceProperties["HorizontalResolution"].Value;
 }
 
-if ((UInt32)item["VerticalResolution"] > maxVResolution)
+if ((UInt32)item.CimInstanceProperties["VerticalResolution"].Value > maxVResolution)
 {
-maxVResolution = (UInt32)item["VerticalResolution"];
+maxVResolution = (UInt32)item.CimInstanceProperties["VerticalResolution"].Value;
 }
 }
 return new int[2]{Convert.ToInt32(maxHResolution), Convert.ToInt32(maxVResolution)};

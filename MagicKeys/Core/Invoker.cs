@@ -9,24 +9,24 @@ public partial class MagicKeys
 public static string Invoker(string Func, string Param = null)
 {
 KeyUnReg();
-string Resulte;
+string Result;
 if (API.GetActiveClass() == "lua")
 {
-Resulte = LUAInvoke(Func, Param);
+Result = LUAInvoke(Func, Param);
 KeyReg();
-return Resulte;
+return Result;
 }
 if (API.GetActiveClass() == "MagicKeys")
 {
 List<string> VUFFuncs = Ini.IniReadKeys(API.GetCurrentScript(), Func);
 List<string> VUFParams = Ini.IniReadValues(API.GetCurrentScript(), Func);
-Resulte = VUFInvoke(VUFFuncs, VUFParams);
+Result = VUFInvoke(VUFFuncs, VUFParams);
 KeyReg();
-return Resulte;
+return Result;
 }
- Resulte = SystemInvoke(Func, Param);
+ Result = SystemInvoke(Func, Param);
 KeyReg();
-return Resulte;
+return Result;
 }
 
 }

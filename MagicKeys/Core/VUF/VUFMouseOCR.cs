@@ -15,7 +15,8 @@ Convert.ToInt32(PR[0]),
 Convert.ToInt32(PR[1]),
 MP[0],
 MP[1],
-Convert.ToInt32(PR[2])
+Convert.ToInt32(PR[2]),
+PR.Length == 4?PR[3]:"en"
 );
 Speak(R);
 }

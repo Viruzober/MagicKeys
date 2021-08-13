@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreAudio;
+using System;
 using System.Threading;
 
 namespace MagicKeys
@@ -14,14 +15,29 @@ if (BFObj.AutoFunc == true)
 while(Thread.CurrentThread.Name == ThreadFunc)
 {
 if (BFObj.ObjectName != API.GetNameCurrentObject()) return;
-Invoker(BFObj.Func, BFObj.Params);
+if (API.GetActiveClass() == "lua")
+{
+LUAInvoke(BFObj.Func, BFObj.Params);
+}
+else
+{
+SystemInvoke(BFObj.Func, BFObj.Params);
+}
+if (BFObj.ObjectName != API.GetNameCurrentObject()) return;
 }
 }
 else
 {
 while(Thread.CurrentThread.Name == ThreadFunc)
 {
-Invoker(BFObj.Func, BFObj.Params);
+if (API.GetActiveClass() == "lua")
+{
+LUAInvoke(BFObj.Func, BFObj.Params);
+}
+else
+{
+SystemInvoke(BFObj.Func, BFObj.Params);
+}
 }
 }
 }

@@ -8,6 +8,8 @@ if "%configuration%" == "" set configuration=Debug
 if "%platform%" == "" set platform=x64
 
 pushd "%~dp0.."
-dotnet publish -p:PublishProfile=%platform% -c %configuration% -p:Platform=%platform%
+for /f "usebackq" %%D in (`dir /b /a:d`) do if exist "%%D\%%D.csproj" (
+dotnet publish -p:PublishProfile=%platform% -c %configuration% -p:Platform=%platform% "%%D\%%D.csproj"
+)
 popd
 endlocal

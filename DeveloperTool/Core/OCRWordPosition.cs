@@ -31,7 +31,7 @@ byte[] b = memoryStream.ToArray();
 IntPtr Handle = Marshal.AllocHGlobal(b.Length);
 Marshal.Copy(b, 0, Handle, b.Length);
 string Resulte = Task.Run(() => MagicKeys.OCR(Handle, (uint)b.Length, "en")).Result;
-OCRResulte JsonResulte = JsonSerializer.Deserialize<OCRResulte>(Resulte);
+OCRResult JsonResulte = JsonSerializer.Deserialize<OCRResult>(Resulte);
 OCRResultForm ORF = new		OCRResultForm();
 foreach(var Line in JsonResulte.lines)
 {

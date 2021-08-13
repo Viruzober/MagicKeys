@@ -1,6 +1,7 @@
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace MagicKeys
 {
@@ -19,7 +20,7 @@ this.Ni = new System.Windows.Forms.NotifyIcon(this.components);
 ExitMenuItem.Click += Exit;
 MainMenu.Items.AddRange(new[] {ExitMenuItem});
 Ni.ContextMenuStrip = MainMenu;
-Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
+Ni.Icon = Icon.ExtractAssociatedIcon(Process.GetCurrentProcess().MainModule.FileName);
 Ni.Text = T._("Developer tool");
 Ni.Visible = true;
 }

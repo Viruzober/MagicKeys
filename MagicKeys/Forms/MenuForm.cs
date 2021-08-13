@@ -25,7 +25,7 @@ HelpMenuItem.Click += Help;
 ExitMenuItem.Click += Exit;
 MainMenu.Items.AddRange(new[] {SettingsMenuItem, CheckUpdatesMenuItem, HelpMenuItem, ExitMenuItem});
 Ni.ContextMenuStrip = MainMenu;
-Ni.Icon = Icon.ExtractAssociatedIcon(Assembly.GetEntryAssembly().Location);
+Ni.Icon = Icon.ExtractAssociatedIcon(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName);
 Ni.Text = T._("MagicKeys {0} is enabled", MagicKeys.GetVersion());
 Ni.Visible = true;
 }

@@ -3,7 +3,7 @@ using System;
 namespace MagicKeys
 {
 
-public class MKC
+public static class MKC
 {
 [Flags] 
 public enum ModKeys : uint 

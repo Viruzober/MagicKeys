@@ -23,7 +23,7 @@ return;
 }
 ButtonOK.Enabled = false;
 ButtonCancel.Enabled = true;
-UpdateFileName = "MagicKeys_"+new Pluralizer().Singularize(MKUpdater.UpdateChannel)+"_"+MKUpdater.NewVersion+"_x"+MagicKeys.MagicKeys.OS()+".zip";
+UpdateFileName = "MagicKeys_"+new Pluralizer().Singularize(MKUpdater.UpdateChannel)+"_"+MKUpdater.NewVersion+"_x"+MKUpdater.OS()+".zip";
 Directory.CreateDirectory("./Temp/");
 try
 {
