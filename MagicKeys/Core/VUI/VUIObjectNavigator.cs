@@ -8,7 +8,7 @@ public static void VUIObjectNavigator(string Navigate)
 {
 if (Navigate == "Next")
 {
-if (CurrentObject >= CountObjects)
+if (CurrentObject >= ObjectsCount)
 {
 CurrentObject = 0;
 }
@@ -21,7 +21,7 @@ else if (Navigate == "Back")
 {
 if (CurrentObject == 0)
 {
-CurrentObject = CountObjects;
+CurrentObject = ObjectsCount;
 }
 else
 {

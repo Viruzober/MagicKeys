@@ -18,7 +18,7 @@ result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+Path.Combine
 }
 else
 {
-result = ImageSearch(0, 0, Width, Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
+result = ImageSearch(0, 0, GetDisplayResolution().Width, GetDisplayResolution().Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
 }
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
@@ -42,7 +42,7 @@ return pos;
 
 public static int[] ImgSearch(string imgPath)
 {
-IntPtr result = ImageSearch(0, 0, Width, Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
+IntPtr result = ImageSearch(0, 0, GetDisplayResolution().Width, GetDisplayResolution().Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {

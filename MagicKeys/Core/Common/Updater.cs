@@ -22,7 +22,7 @@ return;
 
 ProcessStartInfo startInfo = new ProcessStartInfo();
 startInfo.FileName = "MKUpdater.exe";
-startInfo.Arguments = GetVersion()+" "+UpdateChannel+" "+Quiet;
+startInfo.Arguments = GetVersion()+" "+Settings.UpdateChannel+" "+Quiet;
 Process.Start(startInfo);
 }
 

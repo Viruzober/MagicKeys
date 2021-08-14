@@ -13,20 +13,21 @@ if (Input == null)
 {
 return;
 }
+int[] TempCoords;
 if (Type == "H")
 {
-MouseClickDrag("Left", P[1]+X, P[2]+Y, 0, P[2]+Y, 1, 10);
-int V = P[1]+X+Convert.ToInt32((Convert.ToInt32(Input)*OnePercent)*SlidePercent);
-MouseClickDrag("Left", P[1]+X, P[2]+Y, V, P[2]+Y, 1, 10);
+MouseClickDrag("Left", Coords.X+X, Coords.Y+Y, 0, Coords.Y+Y, 1, 10);
+int V = Coords.X+X+Convert.ToInt32((Convert.ToInt32(Input)*OnePercent)*SlidePercent);
+MouseClickDrag("Left", Coords.X+X, Coords.Y+Y, V, Coords.Y+Y, 1, 10);
 }
 else if (Type == "V")
 {
-WinMove(50, 0, true);
-MouseClickDrag("Left", P[1]+X, P[2]+Y, P[1]+X, Height-30, 0, 10);
-WinMove(50, 250, false);
-int V = P[2]+Y-Convert.ToInt32(Convert.ToInt32(Convert.ToInt32(Input)*OnePercent)*SlidePercent);
-MouseClickDrag("Left", P[1]+X, P[2]+Y, P[1]+X, V, 0, 10);
-WinMove(DP[1], DP[2], false);
+TempCoords = WinMove(50, 0);
+MouseClickDrag("Left", Coords.X+X, Coords.Y+Y, Coords.X+X, GetDisplayResolution().Height-30, 0, 10);
+WinMove(50, 250);
+int V = Coords.Y+Y-Convert.ToInt32(Convert.ToInt32(Convert.ToInt32(Input)*OnePercent)*SlidePercent);
+MouseClickDrag("Left", Coords.X+X, Coords.Y+Y, Coords.X+X, V, 0, 10);
+WinMove(TempCoords[0], TempCoords[1]);
 }
 Speak("Done");
 }

@@ -7,19 +7,15 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void WinMove(int X, int Y, bool RecP)
+public static int[] WinMove(int X, int Y)
 {
-P = GetPluginCoord();
+Coords = GetModuleCoords(CurrentPlugin["Module"]);
 IntPtr Handle = GetForegroundWindow();
 int[] Rect = GetWinRect(Handle);
-if (RecP == true)
-{
-DP[1] = Rect[0];
-DP[2] = Rect[1];
-}
 SetWindowPos(GetForegroundWindow(), 0, X, Y, 0, 0, MKC.SWP_NOSIZE);
 Thread.Sleep(50);
-P = GetPluginCoord();
+Coords = GetModuleCoords(CurrentPlugin["Module"]);
+return Rect;
 }
 
 }

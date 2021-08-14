@@ -10,10 +10,10 @@ public static void VUFImgAreaClick(String Param)
 {
 string[] PR = Param.Split(",");
 int[] Img = ImgSearchArea(PR[0],
-P[1]+Convert.ToInt32(PR[2]),
-P[2]+Convert.ToInt32(PR[3]),
-P[1]+Convert.ToInt32(PR[4]),
-P[2]+Convert.ToInt32(PR[5]),
+Coords.X+Convert.ToInt32(PR[2]),
+Coords.Y+Convert.ToInt32(PR[3]),
+Coords.X+Convert.ToInt32(PR[4]),
+Coords.Y+Convert.ToInt32(PR[5]),
 20);
 if (Img[0] == 1)
 {

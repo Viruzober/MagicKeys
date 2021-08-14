@@ -1,14 +1,25 @@
 using System;
 using System.IO;
+using System.Text;
 
 namespace MagicKeys
 {
+
+public record ModuleCoords
+{
+public int X;
+public int Y;
+public int W;
+public int H;
+}
 
 public partial class MagicKeys
 {
 
 public static string GetDllName(IntPtr Handle)
 {
+int nChars = 256;
+StringBuilder Text = new StringBuilder(nChars);
 Int32 ProcessID;
 GetWindowThreadProcessId(Handle, out ProcessID);
 IntPtr OP = OpenProcess(ProcessAccessFlags.QueryInformation | ProcessAccessFlags.VirtualMemoryRead, false, ProcessID);

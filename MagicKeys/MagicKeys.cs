@@ -44,7 +44,7 @@ return;
 }
 HM = new Menu();
 LoadSettings();
-if (CheckUpdate == true)
+if (Settings.CheckUpdate == true)
 {
 Update();
 }

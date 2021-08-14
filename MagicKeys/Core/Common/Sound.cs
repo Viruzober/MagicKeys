@@ -11,7 +11,7 @@ public partial class MagicKeys
 
 public static void SoundPlay(string SoundFile, int Wait)
 {
-if (SoundTheme == true)
+if (Settings.SoundTheme == true)
 {
 string SoundPath = @$".\Sounds\{SoundFile}.ogg";
 using (var file = new FileStream(SoundPath, FileMode.Open, FileAccess.Read))

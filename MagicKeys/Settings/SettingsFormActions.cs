@@ -21,7 +21,7 @@ CheckUpdate.CheckState = (CheckState)Convert.ToInt32(Convert.ToBoolean(Ini.IniRe
 
 public void Save_Click(object sender, EventArgs e)
 {
-Ini.IniWrite(@".\Settings.ini", "Settings", "NavigationType", Convert.ToInt32(NavigationType.Checked).ToString());
+Ini.IniWrite(@".\Settings.ini", "Settings", "NavigationType", Convert.ToBoolean(NavigationType.Checked).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "SoundTheme", Convert.ToBoolean(SoundTheme.Checked).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "TimeOut", (Time.Value).ToString());
 Ini.IniWrite(@".\Settings.ini", "Settings", "SpeakType", Convert.ToBoolean(SpeakType.Checked).ToString());

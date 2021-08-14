@@ -33,20 +33,20 @@ Exit(null, null);
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F4)
 {
-if (MagicKeys.SoundTheme == true)
+if (Settings.SoundTheme == true)
 {
-MagicKeys.SoundTheme = false;
+Settings.SoundTheme = false;
 MagicKeys.Speak(T._("Sounds off"));
 }
 else
 {
-MagicKeys.SoundTheme = true;
+Settings.SoundTheme = true;
 MagicKeys.Speak(T._("Sounds on"));
 }
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F6)
 {
-Settings(null, null);
+SettingsShow(null, null);
 }
 break;
 }

@@ -9,14 +9,14 @@ public partial class MagicKeys
 public static void MouseMove (int GetX, int GetY, int TimeMove)
 {
 int X = GetX, Y = GetY;
-if (GetX >= Width)
+if (GetX >= GetDisplayResolution().Width)
 {
-X = Width-1;
+X = GetDisplayResolution().Width-1;
 }
 
-if (GetY >= Height)
+if (GetY >= GetDisplayResolution().Height)
 {
-Y = Height-1;
+Y = GetDisplayResolution().Height-1;
 }
 
 if (GetX <= 0)

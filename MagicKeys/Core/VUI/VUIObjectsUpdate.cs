@@ -14,7 +14,7 @@ if (O.Value["Active"] == "true")
 ActiveObjects.Add(O.Key);
 }
 }
-CountObjects = ActiveObjects.Count-1;
+ObjectsCount = ActiveObjects.Count-1;
 if (StartObject == true)
 {
 CurrentObject = 0;

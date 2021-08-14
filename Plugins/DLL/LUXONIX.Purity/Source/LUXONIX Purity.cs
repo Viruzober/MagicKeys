@@ -34,15 +34,15 @@ string[] Code = ITBC.GetString().Split("-");
 int temp = 0;
 for(int I = 0; I <= 4; I++)
 {
-MouseClick("Left", P[1]+383+temp, P[2]+303, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+383+temp, Coords.Y+303, 1, 0, 0, 10);
 int[] MP = GetMousePosition();
 ControlSetTextPoint(MP[0], MP[1], Serial[I]);
-MouseClick("Left", P[1]+383+temp, P[2]+365, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+383+temp, Coords.Y+365, 1, 0, 0, 10);
 int[] MPC = GetMousePosition();
 ControlSetTextPoint(MPC[0], MPC[1], Code[I]);
 temp += 70;
 }
-MouseClick("Left", P[1]+667, P[2]+416, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+667, Coords.Y+416, 1, 0, 0, 10);
 Thread.Sleep(1000);
 if (ImgSearch("Register", true)[0] == 0)
 {
@@ -53,7 +53,7 @@ VUILoader("Purity");
 
 public static void BPMenu()
 {
-MouseClick("Right", P[1]+70, P[2]+30, 1, 0, 0, 10);
+MouseClick("Right", Coords.X+70, Coords.Y+30, 1, 0, 0, 10);
 }
 
 }

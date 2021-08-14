@@ -1,3 +1,4 @@
+using System.Drawing;
 using static MagicKeys.MagicKeys;
 
 namespace MagicKeys
@@ -8,33 +9,32 @@ public partial class Kontakt
 
 public static void LibNormalize()
 {
-CreateOneBitmap(P[1], P[2], P[3], P[4]);
-MouseClick("Left", P[1]+15, P[2]+75, 1, 0, 0, 10);
-DisplayTraffic(P[1], P[2], P[3], P[4], 3, 3, 10);
+Bitmap FixTopLine = CreateBitmap(Coords.X, Coords.Y, Coords.W, Coords.H);
+MouseClick("Left", Coords.X+15, Coords.Y+75, 1, 0, 0, 10);
+DisplayTraffic(Coords.X, Coords.Y, Coords.W, Coords.H, 3, 3, 10, FixTopLine);
 while (ImgSearch("KontaktTopLine", true)[0] == 0)
 {
 if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
 {
 return;
 }
-
-CreateOneBitmap(P[1], P[2], P[3], P[4]);
-MouseClick("Left", P[1]+15, P[2]+75, 1, 0, 0, 10);
-DisplayTraffic(P[1], P[2], P[3], P[4], 3, 3, 10);
+Bitmap SearchTopLine = CreateBitmap(Coords.X, Coords.Y, Coords.W, Coords.H);
+MouseClick("Left", Coords.X+15, Coords.Y+75, 1, 0, 0, 10);
+DisplayTraffic(Coords.X, Coords.Y, Coords.W, Coords.H, 3, 3, 10, SearchTopLine);
 }
-CreateOneBitmap(P[1], P[2], P[3], P[4]);
-MouseClick("Left", P[1]+640, P[2]+50, 1, 0, 0, 10);
-DisplayTraffic(P[1], P[2], P[3], P[4], 3, 3, 10);
+
+Bitmap ShowLibInterface = CreateBitmap(Coords.X, Coords.Y, Coords.W, Coords.H);
+MouseClick("Left", Coords.X+640, Coords.Y+50, 1, 0, 0, 10);
+DisplayTraffic(Coords.X, Coords.Y, Coords.W, Coords.H, 3, 3, 10, ShowLibInterface);
 while (ImgSearch("KontaktLeftLine", true)[0] == 1)
 {
 if (WinActive(API.GetWTitle(), API.GetWClass()) == false)
 {
 return;
 }
-
-CreateOneBitmap(P[1], P[2], P[3], P[4]);
-MouseClick("Left", P[1]+640, P[2]+50, 1, 0, 0, 10);
-DisplayTraffic(P[1], P[2], P[3], P[4], 3, 3, 10);
+Bitmap SearchLeftLine = CreateBitmap(Coords.X, Coords.Y, Coords.W, Coords.H);
+MouseClick("Left", Coords.X+640, Coords.Y+50, 1, 0, 0, 10);
+DisplayTraffic(Coords.X, Coords.Y, Coords.W, Coords.H, 3, 3, 10, SearchLeftLine);
 }
 }
 

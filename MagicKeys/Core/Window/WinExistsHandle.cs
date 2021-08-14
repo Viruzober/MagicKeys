@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace MagicKeys
 {
@@ -10,6 +11,9 @@ public partial class MagicKeys
 
 public static IntPtr WinExistsHandle(string HWNDTitle, string HWNDClass)
 {
+int nChars = 256;
+StringBuilder Title = new StringBuilder(nChars);
+StringBuilder Class = new StringBuilder(nChars);
 List<IntPtr> result = new List<IntPtr>();
 GCHandle listHandle = GCHandle.Alloc(result);
 EnumWindowsProc CallBack = new EnumWindowsProc(EnumWindowsProcDelegate);

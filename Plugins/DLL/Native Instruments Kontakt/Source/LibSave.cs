@@ -10,12 +10,12 @@ public partial class Kontakt
 public static void LibSave()
 {
 LibNormalize();
-int X = P[1];
-int Y = P[2];
+int X = Coords.X;
+int Y = Coords.Y;
 int Count = 0;
-while (ImgSearchArea("KontaktLibCount", X-10, Y+10, Width, Height, 20)[0] == 1)
+while (ImgSearchArea("KontaktLibCount", X-10, Y+10, GetDisplayResolution().Width, GetDisplayResolution().Height, 20)[0] == 1)
 {
-int[] CI = ImgSearchArea("KontaktLibCount", X-10, Y+10, Width, Height, 20);
+int[] CI = ImgSearchArea("KontaktLibCount", X-10, Y+10, GetDisplayResolution().Width, GetDisplayResolution().Height, 20);
 X = CI[1];
 Y = CI[2];
 Count += 1;
@@ -23,9 +23,9 @@ Count += 1;
 string Input = InputBox("Save Instrument", "Enter library number from 1 to "+Count.ToString()+".", 1, Count);
 if (Input != null)
 {
-MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
-MouseMove(P[1]+355, P[2]+170, 0);
-MouseMove(P[1]+320, P[2]+170, 1);
+MouseClick("Left", Coords.X+355, Coords.Y+17, 1, 0, 0, 10);
+MouseMove(Coords.X+355, Coords.Y+170, 0);
+MouseMove(Coords.X+320, Coords.Y+170, 1);
 while (ImgSearch("KontaktLibSave")[0] == 0)
 {
 ;

@@ -8,29 +8,29 @@ public partial class Nexus
 
 public static void DelayOnOff()
 {
-MouseClick("Left", P[1]+245, P[2]+365, 1, 0, 0, 10);
-CheckBox(P[1]+245, P[2]+345, "#3AA1FF", "Delay");
+MouseClick("Left", Coords.X+245, Coords.Y+365, 1, 0, 0, 10);
+CheckBox(Coords.X+245, Coords.Y+345, "#3AA1FF", "Delay");
 }
 
 public static void DelayType()
 {
-MouseClick("Left", P[1]+270, P[2]+365, 1, 0, 0, 10);
-if (PixelSearch(P[1]+290, P[2]+340, "#3AA1FF") == true)
+MouseClick("Left", Coords.X+270, Coords.Y+365, 1, 0, 0, 10);
+if (PixelSearch(Coords.X+290, Coords.Y+340, "#3AA1FF") == true)
 {
 Speak("Mono");
 }
 
-if (PixelSearch(P[1]+290, P[2]+355, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+290, Coords.Y+355, "#3AA1FF") == true)
 {
 Speak("Stereo");
 }
 
-if (PixelSearch(P[1]+290, P[2]+365, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+290, Coords.Y+365, "#3AA1FF") == true)
 {
 Speak("Cross");
 }
 
-if (PixelSearch(P[1]+290, P[2]+375, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+290, Coords.Y+375, "#3AA1FF") == true)
 {
 Speak("Pingpong");
 }

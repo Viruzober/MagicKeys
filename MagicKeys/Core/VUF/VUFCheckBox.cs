@@ -10,8 +10,8 @@ public static void VUFCheckBox(string Param)
 {
 string[] FP = Param.Split(",");
 CheckBox(
-P[1]+Convert.ToInt32(FP[0]),
-P[2]+Convert.ToInt32(FP[1]),
+Coords.X+Convert.ToInt32(FP[0]),
+Coords.Y+Convert.ToInt32(FP[1]),
 FP[2],
 FP[3]
 );

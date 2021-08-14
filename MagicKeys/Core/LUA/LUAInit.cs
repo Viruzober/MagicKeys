@@ -12,6 +12,7 @@ public static Script LUAScript = new Script();
 public static void LUAInit()
 {
 UserData.RegisterType<MagicKeys>();
+UserData.RegisterType<ModuleCoords>();
 LUAScript = new Script();
 LUAScript.Globals["MK"] = typeof(MagicKeys);
 ((ScriptLoaderBase)LUAScript.Options.ScriptLoader).IgnoreLuaPathGlobal = true;

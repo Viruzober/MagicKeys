@@ -11,34 +11,34 @@ public static void NexusBankPage(string To)
 {
 if (To == "Back")
 {
-int[] FH = ImgSearchArea("FullHome", P[1]+350, P[2]+50, P[1]+460, P[2]+160, 20);
+int[] FH = ImgSearchArea("FullHome", Coords.X+350, Coords.Y+50, Coords.X+460, Coords.Y+160, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End", 0);
 return;
 }
 SoundPlay("Scrol", 0);
-MouseClick("Left", P[1]+400, P[2]+105, 1, 0, 0, 10);
-MouseClick("Right", P[1]+330, P[2]+230, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+400, Coords.Y+105, 1, 0, 0, 10);
+MouseClick("Right", Coords.X+330, Coords.Y+230, 1, 0, 0, 10);
 MenuItemClick("rename");
 }
 else if (To == "Next")
 {
-int[] FH = ImgSearchArea("FullEnd", P[1]+350, P[2]+200, P[1]+460, P[2]+260, 20);
+int[] FH = ImgSearchArea("FullEnd", Coords.X+350, Coords.Y+200, Coords.X+460, Coords.Y+260, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End", 0);
 return;
 }
 SoundPlay("Scrol", 0);
-MouseClick("Left", P[1]+400, P[2]+220, 1, 0, 0, 10);
-MouseClick("Right", P[1]+330, P[2]+105, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+400, Coords.Y+220, 1, 0, 0, 10);
+MouseClick("Right", Coords.X+330, Coords.Y+105, 1, 0, 0, 10);
 MenuItemClick("rename");
 }
 Thread.Sleep(100);
 string Bank = ControlGetText(API.GetWTitle(), API.GetWClass(), "Edit");
 KeySend("Keys", "Enter", 50, 50);
-MouseClick("Left", P[1]+450, P[2]+105, 2, 0, 0, 10);
+MouseClick("Left", Coords.X+450, Coords.Y+105, 2, 0, 0, 10);
 Speak(Bank);
 }
 

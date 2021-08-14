@@ -21,7 +21,7 @@ SoundPlay("ChangeVUI", 0);
 CurrentPlugin["VUI"] = File;
 ParamsLoader();
 string[] AllVUIObjects = Ini.IniReadSections(API.GetCurrentVUI()).Where(ParamSections => ParamSections != "Params" && ParamSections != "Keys").ToArray();
-CountObjects = AllVUIObjects.Length-1;
+ObjectsCount = AllVUIObjects.Length-1;
 foreach(var ObjectName in AllVUIObjects)
 {
 VUIObjects.Add(ObjectName, new OrderedDictionary<string, string>());

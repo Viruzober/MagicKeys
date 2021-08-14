@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using System.Threading;
 
 namespace MagicKeys
@@ -12,7 +13,7 @@ public static void PluginDetector()
 {
 while(true)
 {
-Thread.Sleep(TimeOut);
+Thread.Sleep(Settings.TimeOut);
 if (KeySwitch == 1)
 {
 continue;
@@ -32,13 +33,13 @@ continue;
 }
 
 GlobalPluginLoad(Item, WH[0], WH[1]);
-P = GetPluginCoord();
-if (P[0] == 1)
+Coords = GetModuleCoords(CurrentPlugin["Module"]);
+if (Coords != new ModuleCoords())
 {
 VUILoader(API.GetVUI());
 SoundPlay("WindowOpened", 0);
-SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
-WinClose(WH[0], WH[1]);
+//SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
+WaitPluginClose(WH[0], WH[1]);
 KeyUnReg();
 VUIKeys.Clear();
 VUIObjects.Clear();
@@ -53,6 +54,7 @@ SubClass = null;
 SubClassLoader.Unload();
 }
 LUAScript.Globals.Clear();
+LUAScript = null;
 GC.Collect();
 GC.WaitForPendingFinalizers();
 }

@@ -10,27 +10,27 @@ public partial class Omnisphere
 
 public static void Search()
 {
-MouseClick("Left", P[1]+35, P[2]+85, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+35, Coords.Y+85, 1, 0, 0, 10);
 Speak("Search");
 }
 
 public static void Category()
 {
-MouseClick("Left", P[1]+40, P[2]+150, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+40, Coords.Y+150, 1, 0, 0, 10);
 AudoSelect();
 Speak("Category");
 }
 
 public static void Type()
 {
-MouseClick("Left", P[1]+100, P[2]+150, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+100, Coords.Y+150, 1, 0, 0, 10);
 AudoSelect();
 Speak("Type");
 }
 
 public static void Genre()
 {
-MouseClick("Left", P[1]+160, P[2]+150, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+160, Coords.Y+150, 1, 0, 0, 10);
 AudoSelect();
 Speak("Genre");
 }
@@ -43,21 +43,21 @@ if (Input == null)
 return;
 }
 int CH = Convert.ToInt32(Input)*35;
-MouseClick("Left", P[1]+485+CH, P[2]+55, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+485+CH, Coords.Y+55, 1, 0, 0, 10);
 AudoSelect();
 }
 
 public static void AudoSelect()
 {
 Thread.Sleep(200);
-if (ImgSearchArea("BP", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20)[0] == 0)
+if (ImgSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20)[0] == 0)
 {
-MouseClick("Left", P[1]+220, P[2]+170, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+220, Coords.Y+170, 1, 0, 0, 10);
 }
 Thread.Sleep(200);
-if (ImgSearchArea("BP", P[1]+10, P[2]+390, P[1]+50, P[2]+620, 20)[0] == 0)
+if (ImgSearchArea("BP", Coords.X+10, Coords.Y+390, Coords.X+50, Coords.Y+620, 20)[0] == 0)
 {
-MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+220, Coords.Y+400, 1, 0, 0, 10);
 }
 }
 

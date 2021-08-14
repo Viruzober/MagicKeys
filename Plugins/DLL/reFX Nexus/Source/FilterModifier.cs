@@ -8,8 +8,8 @@ public partial class Nexus
 
 public static void FilterModifierOnOff()
 {
-MouseClick("Left", P[1]+95, P[2]+80, 1, 0, 0, 10);
-CheckBox(P[1]+90, P[2]+60, "#3AA1FF", "FilterModifier");
+MouseClick("Left", Coords.X+95, Coords.Y+80, 1, 0, 0, 10);
+CheckBox(Coords.X+90, Coords.Y+60, "#3AA1FF", "FilterModifier");
 }
 
 public static void FilterModifierEnv()

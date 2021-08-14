@@ -10,12 +10,12 @@ public partial class Serum
 public static void SerumLoader()
 {
 Thread.Sleep(100);
-if (ImgSearchArea("Reg", P[1], P[2], P[1]+P[3], P[2]+P[4], 0)[0] == 1)
+if (ImgSearchArea("Reg", Coords.X, Coords.Y, Coords.X+Coords.W, Coords.Y+Coords.H, 0)[0] == 1)
 {
 VUILoader("Register");
 return;
 }
-if (ImgSearchArea("Logo", P[1], P[2], P[1]+P[3], P[2]+P[4], 0)[0] == 1)
+if (ImgSearchArea("Logo", Coords.X, Coords.Y, Coords.X+Coords.W, Coords.Y+Coords.H, 0)[0] == 1)
 {
 return;
 }

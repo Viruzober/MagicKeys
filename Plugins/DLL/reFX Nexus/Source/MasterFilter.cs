@@ -8,8 +8,8 @@ public partial class Nexus
 
 public static void MasterFilterOnOff()
 {
-MouseClick("Left", P[1]+70, P[2]+365, 1, 0, 0, 10);
-CheckBox(P[1]+70, P[2]+345, "#3AA1FF", "MasterFilter");
+MouseClick("Left", Coords.X+70, Coords.Y+365, 1, 0, 0, 10);
+CheckBox(Coords.X+70, Coords.Y+345, "#3AA1FF", "MasterFilter");
 }
 
 public static void MasterFilterCutOff()
@@ -24,23 +24,23 @@ Slider("Res", 185, 350, "V", 1.38, 1.6);
 
 public static void MasterFilterType()
 {
-MouseClick("Left", P[1]+70, P[2]+420, 1, 0, 0, 10);
-if (PixelSearch(P[1]+90, P[2]+400, "#3AA1FF") == true)
+MouseClick("Left", Coords.X+70, Coords.Y+420, 1, 0, 0, 10);
+if (PixelSearch(Coords.X+90, Coords.Y+400, "#3AA1FF") == true)
 {
 Speak("Lp");
 }
 
-if (PixelSearch(P[1]+90, P[2]+410, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+90, Coords.Y+410, "#3AA1FF") == true)
 {
 Speak("Hp");
 }
 
-if (PixelSearch(P[1]+90, P[2]+425, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+90, Coords.Y+425, "#3AA1FF") == true)
 {
 Speak("Bp");
 }
 
-if (PixelSearch(P[1]+90, P[2]+440, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+90, Coords.Y+440, "#3AA1FF") == true)
 {
 Speak("Ntch");
 }
@@ -48,18 +48,18 @@ Speak("Ntch");
 
 public static void MasterFilterSlope()
 {
-MouseClick("Left", P[1]+145, P[2]+420, 1, 0, 0, 10);
-if (PixelSearch(P[1]+165, P[2]+410, "#3AA1FF") == true)
+MouseClick("Left", Coords.X+145, Coords.Y+420, 1, 0, 0, 10);
+if (PixelSearch(Coords.X+165, Coords.Y+410, "#3AA1FF") == true)
 {
 Speak("6");
 }
 
-if (PixelSearch(P[1]+165, P[2]+420, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+165, Coords.Y+420, "#3AA1FF") == true)
 {
 Speak("12");
 }
 
-if (PixelSearch(P[1]+165, P[2]+430, "#3AA1FF") == true)
+if (PixelSearch(Coords.X+165, Coords.Y+430, "#3AA1FF") == true)
 {
 Speak("24");
 }

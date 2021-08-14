@@ -9,7 +9,7 @@ public partial class MagicKeys
 public static void VUIObjectSpeak()
 {
 string SpeakObject = API.GetText();
-if (SpeakType == true)
+if (Settings.SpeakType == true)
 {
 SpeakObject += " "+API.GetObjectType();
 }

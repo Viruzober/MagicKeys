@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using Microsoft.Collections.Extensions;
+using System.Linq;
 
 namespace MagicKeys
 {
@@ -11,10 +13,11 @@ public static KeyWNDProc KeyWndProcHandle = new KeyWNDProc();
 public static KeysConverter kc = new KeysConverter();
 public static void KeyReg()
 {
-if (VUIKeys.Count != 0)
+var AllKeys = GetOptionKeys().Concat(VUIKeys).ToDictionary(x=>x.Key, x=>x.Value);
+if (AllKeys.Count != 0)
 {
-int IDKey = 6;
-foreach(var OBJKey in VUIKeys)
+int IDKey = 0;
+foreach(var OBJKey in AllKeys)
 {
 uint Mod = MKC.MOD_NOREPEAT;
 string[] KeyItems = OBJKey.Key.Split("+");
@@ -37,7 +40,6 @@ return;
 }
 }
 }
-KeyNavigatorReg();
 {
 }
 }

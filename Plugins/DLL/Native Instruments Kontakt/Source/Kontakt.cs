@@ -10,14 +10,14 @@ public partial class Kontakt
 
 public static void Load()
 {
-MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
-MouseClick("Left", P[1]+355, P[2]+87, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+355, Coords.Y+17, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+355, Coords.Y+87, 1, 0, 0, 10);
 }
 
 public static void BatchResave()
 {
-MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
-MouseClick("Left", P[1]+355, P[2]+247, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+355, Coords.Y+17, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+355, Coords.Y+247, 1, 0, 0, 10);
 }
 
 public static void AddLibrary()
@@ -46,8 +46,8 @@ if (ImgSearch("KontaktLibLoaded")[0] == 1)
 Speak("No loaded libraries");
 return;
 }
-MouseClick("Left", P[1]+355, P[2]+17, 1, 0, 0, 10);
-MouseClick("Left", P[1]+355, P[2]+235, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+355, Coords.Y+17, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+355, Coords.Y+235, 1, 0, 0, 10);
 }
 
 public static void GoToLibList()

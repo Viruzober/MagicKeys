@@ -14,7 +14,7 @@ MagicKeys.KeySwitch = 1;
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 0);
 MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
 Ni.Visible = false;
-if (MagicKeys.Exit == true)
+if (Settings.Exit == true)
 {
 DialogResult result;
 result = MessageBox.Show(T._("Do you really want to exit MagicKeys?"), T._("Exit MagicKeys"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
@@ -45,7 +45,7 @@ proc.StartInfo.UseShellExecute = true;
 proc.Start();
 }
 
-public void Settings(object sender, EventArgs e)
+public void SettingsShow(object sender, EventArgs e)
 {
 if (WSettings == null || WSettings.IsDisposed == true)
 {

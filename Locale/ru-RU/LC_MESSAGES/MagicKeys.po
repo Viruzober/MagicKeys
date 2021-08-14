@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-13 13:08+0300\n"
+"POT-Creation-Date: 2021-08-14 23:52+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Enter OCR height:"
 msgstr ""
 
-#: DeveloperTool\Core\Save.cs:15 MagicKeys\Forms\SettingsForm.cs:90
+#: DeveloperTool\Core\Save.cs:15 MagicKeys\Settings\SettingsForm.cs:90
 msgid "Save"
 msgstr "Сохранить"
 
@@ -264,7 +264,7 @@ msgid "Object:"
 msgstr ""
 
 #: MagicKeys\Forms\HelpForm.cs:36 MagicKeys\Forms\MenuForm.cs:16
-#: MagicKeys\Forms\SettingsForm.cs:84
+#: MagicKeys\Settings\SettingsForm.cs:84
 msgid "Help"
 msgstr "Справка"
 
@@ -280,7 +280,7 @@ msgstr "Выйти из MagicKeys"
 msgid "Goodbye"
 msgstr "Пока"
 
-#: MagicKeys\Forms\MenuForm.cs:14 MagicKeys\Forms\SettingsForm.cs:110
+#: MagicKeys\Forms\MenuForm.cs:14 MagicKeys\Settings\SettingsForm.cs:110
 msgid "Settings"
 msgstr "Настройки"
 
@@ -314,36 +314,36 @@ msgstr "Звуки выключены"
 msgid "Sounds on"
 msgstr "Звуки включены"
 
-#: MagicKeys\Forms\SettingsForm.cs:33
+#: MagicKeys\Settings\SettingsForm.cs:33
 msgid "Use left/right arrow keys for navigation"
 msgstr "Использовать клавиши горизонтальных стрелок для навигации"
 
-#: MagicKeys\Forms\SettingsForm.cs:38
+#: MagicKeys\Settings\SettingsForm.cs:38
 msgid "Enable sounds"
 msgstr "Включить звуки"
 
-#: MagicKeys\Forms\SettingsForm.cs:43
+#: MagicKeys\Settings\SettingsForm.cs:43
 msgid "Window detection timeout (ms):"
 msgstr "Задержка при определении окон (мс):"
 
-#: MagicKeys\Forms\SettingsForm.cs:54
+#: MagicKeys\Settings\SettingsForm.cs:54
 msgid "Speak control types"
 msgstr "Говорить типы элементов управления"
 
-#: MagicKeys\Forms\SettingsForm.cs:59
+#: MagicKeys\Settings\SettingsForm.cs:59
 msgid "Ask before exiting"
 msgstr "Спрашивать перед выходом"
 
-#: MagicKeys\Forms\SettingsForm.cs:64
+#: MagicKeys\Settings\SettingsForm.cs:64
 #, fuzzy
 msgid "Update channel"
 msgstr "Выйти из MagicKeys"
 
-#: MagicKeys\Forms\SettingsForm.cs:76
+#: MagicKeys\Settings\SettingsForm.cs:76
 msgid "check for updates when magicKeys starts"
 msgstr ""
 
-#: MagicKeys\Forms\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
+#: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
 msgid "Cancel"
 msgstr "Отмена"
 

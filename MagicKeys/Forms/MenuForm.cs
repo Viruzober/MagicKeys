@@ -19,7 +19,7 @@ public Menu()
 {
 this.components = new System.ComponentModel.Container();
 this.Ni = new System.Windows.Forms.NotifyIcon(this.components);
-SettingsMenuItem.Click += Settings;
+SettingsMenuItem.Click += SettingsShow;
 CheckUpdatesMenuItem.Click += CheckUpdates;
 HelpMenuItem.Click += Help;
 ExitMenuItem.Click += Exit;

@@ -11,33 +11,33 @@ public static void OmnisphereBankPage(string To)
 {
 if (To == "Back")
 {
-int[] FH = ImgSearchArea("FullHome", P[1]+230, P[2]+150, P[1]+270, P[2]+190, 20);
+int[] FH = ImgSearchArea("FullHome", Coords.X+230, Coords.Y+150, Coords.X+270, Coords.Y+190, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End", 0);
 return;
 }
 SoundPlay("Scrol", 0);
-MouseClick("Left", P[1]+250, P[2]+170, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+250, Coords.Y+170, 1, 0, 0, 10);
 Thread.Sleep(300);
-MouseClick("Left", P[1]+220, P[2]+370, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+220, Coords.Y+370, 1, 0, 0, 10);
 }
 else if (To == "Next")
 {
-int[] FH = ImgSearchArea("FullEnd", P[1]+230, P[2]+350, P[1]+270, P[2]+390, 20);
+int[] FH = ImgSearchArea("FullEnd", Coords.X+230, Coords.Y+350, Coords.X+270, Coords.Y+390, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End", 0);
 return;
 }
 SoundPlay("Scrol", 0);
-MouseClick("Left", P[1]+250, P[2]+370, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+250, Coords.Y+370, 1, 0, 0, 10);
 Thread.Sleep(300);
-MouseClick("Left", P[1]+220, P[2]+170, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+220, Coords.Y+170, 1, 0, 0, 10);
 }
 Thread.Sleep(600);
-MouseClick("Left", P[1]+220, P[2]+400, 1, 0, 0, 10);
-int[] OBP = ImgSearchArea("BP", P[1]+10, P[2]+160, P[1]+50, P[2]+385, 20);
+MouseClick("Left", Coords.X+220, Coords.Y+400, 1, 0, 0, 10);
+int[] OBP = ImgSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20);
 string Bank = ImgToText(150, 20, OBP[1], OBP[2], 3);
 Speak(Bank);
 }
