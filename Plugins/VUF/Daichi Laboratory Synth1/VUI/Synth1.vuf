@@ -1,5 +1,7 @@
 [BankManager]
 MouseClick=Left,80,450,1,0,0,10
+Func=KeyUnReg
 WaitWinClose=SysTreeView32
+Func=KeyReg
 [Options]
 MouseClick=Left,450,480,1,0,0,10
