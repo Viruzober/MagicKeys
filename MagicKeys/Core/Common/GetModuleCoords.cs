@@ -4,6 +4,14 @@ using System.Collections.Generic;
 namespace MagicKeys
 {
 
+public record ModuleCoords
+{
+public int X;
+public int Y;
+public int W;
+public int H;
+}
+
 public partial class MagicKeys
 {
 

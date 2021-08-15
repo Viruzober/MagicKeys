@@ -36,6 +36,7 @@ GlobalPluginLoad(Item, WH[0], WH[1]);
 Coords = GetModuleCoords(CurrentPlugin["Module"]);
 if (Coords != new ModuleCoords())
 {
+KeyRegisterInfo.HandleFromWNDProc = KeyWndProcHandle.Handle;
 VUILoader(API.GetVUI());
 SoundPlay("WindowOpened", 0);
 //SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
