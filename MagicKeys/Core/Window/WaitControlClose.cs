@@ -11,7 +11,6 @@ public partial class MagicKeys
 
 public static void WaitControlClose(int X, int Y, string CClass)
 {
-KeyUnReg();
 while(true)
 {
 Thread.Sleep(20);
@@ -24,7 +23,6 @@ if (Class.ToString() == CClass)
 {
 continue;
 }
-KeyReg();
 return;
 }
 }

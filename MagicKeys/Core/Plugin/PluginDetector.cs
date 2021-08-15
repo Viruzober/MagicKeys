@@ -54,7 +54,6 @@ SubClass = null;
 SubClassLoader.Unload();
 }
 LUAScript.Globals.Clear();
-LUAScript = null;
 GC.Collect();
 GC.WaitForPendingFinalizers();
 }

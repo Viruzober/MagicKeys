@@ -22,7 +22,12 @@ if (KeySwitch == 1)
 {
 return;
 }
+if (WinExistsHandle("", "#32768") != IntPtr.Zero)
+{
+KeyUnReg();
 WaitWinClose("#32768");
+KeyReg();
+}
 if (WinClosed(HWNDTitle, HWNDClass) == true) return;
 }
 }
