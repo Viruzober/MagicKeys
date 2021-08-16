@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using static MagicKeys.MagicKeys;
+using static MKLib;
 
 namespace MagicKeys
 {

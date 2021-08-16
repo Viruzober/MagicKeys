@@ -1,5 +1,4 @@
-﻿using CoreAudio;
-using System;
+﻿using System;
 using System.Threading;
 
 namespace MagicKeys

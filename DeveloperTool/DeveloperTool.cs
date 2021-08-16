@@ -23,7 +23,7 @@ MessageBox.Show("You must close MagicKeys to run DeveloperTool.", "Error", Messa
 return;
 }
 HM = new DevMenu();
-MagicKeys.Speak("DeveloperTool is ready");
+MKLib.Speak("DeveloperTool is ready");
 OptionKeyReg();
 Application.Run();
 }

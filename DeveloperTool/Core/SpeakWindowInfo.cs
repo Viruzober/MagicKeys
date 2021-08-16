@@ -11,10 +11,10 @@ public static void SpeakWindowInfo()
 {
 StringBuilder Title = new StringBuilder(512);
 StringBuilder Class = new StringBuilder(512);
-IntPtr H = MagicKeys.GetForegroundWindow();
-MagicKeys.GetWindowText(H, Title, 512);
-MagicKeys.GetClassName(H, Class, 512);
-MagicKeys.Speak("Title: "+Title.ToString()+"\r\n Class: "+Class.ToString());
+IntPtr H = MKLib.GetForegroundWindow();
+MKLib.GetWindowText(H, Title, 512);
+MKLib.GetClassName(H, Class, 512);
+MKLib.Speak("Title: "+Title.ToString()+"\r\n Class: "+Class.ToString());
 }
 
 }

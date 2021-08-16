@@ -1,4 +1,5 @@
-﻿using System;
+﻿using static MKLib;
+using System;
 using System.Collections.Generic;
 
 namespace MagicKeys

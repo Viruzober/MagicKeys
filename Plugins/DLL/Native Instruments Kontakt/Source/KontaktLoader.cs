@@ -1,4 +1,5 @@
 ﻿using static MagicKeys.MagicKeys;
+using static MKLib;
 
 namespace MagicKeys
 {

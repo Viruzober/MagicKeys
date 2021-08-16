@@ -23,7 +23,7 @@ MouseStep = Convert.ToInt32(IB.GetString());
 }
 KeyReg();
 OptionKeyReg();
-MagicKeys.Speak(MouseStep.ToString());
+MKLib.Speak(MouseStep.ToString());
 }
 
 }

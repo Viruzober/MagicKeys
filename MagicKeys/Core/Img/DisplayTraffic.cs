@@ -1,8 +1,8 @@
 using System.Drawing;
+using static MKLib;
 
 namespace MagicKeys
 {
-
 public partial class MagicKeys
 {
 

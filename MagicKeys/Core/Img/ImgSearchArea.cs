@@ -1,10 +1,10 @@
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
+using static MKLib;
 
 namespace MagicKeys
 {
-
 public partial class MagicKeys
 {
 

@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace DeveloperTool
+namespace MagicKeys
 {
 
 public partial class OCRResultForm : Form

@@ -1,0 +1,554 @@
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 16.08.2021 22:42:08.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" в узле 1 (целевые объекты Clean).
+     1>ValidateSolutionConfiguration:
+         Создание конфигурации решения "Debug|x64".
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" (14) в узле 5 (целевые объекты Clean).
+    14>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Debug\" не существует. Пропускается.
+    14>Сборка проекта "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" (13) в узле 8 (целевые объекты Clean).
+    13>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\MKUpdater\bin\x64\Debug\" не существует. Пропускается.
+    13>Сборка проекта "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" (11:9) в узле 4 (целевые объекты Clean).
+    11>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\MagicKeys\bin\x64\Debug\" не существует. Пропускается.
+    11>Сборка проекта "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" (12) в узле 2 (целевые объекты Clean).
+    12>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Debug\" не существует. Пропускается.
+    12>Сборка проекта "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" завершена (целевые объекты Clean).
+     1>Сборка проекта "D:\Projects\MagicKeys\MagicKeys.sln" завершена (целевые объекты Clean).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.10
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 16.08.2021 22:42:10.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" в узле 1 (целевые объекты Clean).
+     1>ValidateSolutionConfiguration:
+         Создание конфигурации решения "Debug|x86".
+       ValidateProjects:
+         Проект"LUXONIX Purity" не выбран для сборки в конфигурации решения "Debug|x86".
+         Проект"MKLib" не выбран для сборки в конфигурации решения "Debug|x86".
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" (3) в узле 8 (целевые объекты Clean).
+     3>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Debug\" не существует. Пропускается.
+     3>Сборка проекта "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" (9) в узле 8 (целевые объекты Clean).
+     9>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\MKUpdater\bin\x86\Debug\" не существует. Пропускается.
+     9>Сборка проекта "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" (11) в узле 6 (целевые объекты Clean).
+    11>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Debug\" не существует. Пропускается.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj" (4) в узле 3 (целевые объекты Clean).
+     4>Проект "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj" (4) выполняет сборку "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" (12:7) в узле 3 (целевые объекты Clean).
+    12>ProjectCleanup:
+         Каталог "D:\Projects\MagicKeys\MagicKeys\bin\x86\Debug\" не существует. Пропускается.
+    11>Сборка проекта "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" завершена (целевые объекты Clean).
+    12>Сборка проекта "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" завершена (целевые объекты Clean).
+     4>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj" завершена (целевые объекты Clean).
+     1>Сборка проекта "D:\Projects\MagicKeys\MagicKeys.sln" завершена (целевые объекты Clean).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.15
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 16.08.2021 22:42:12.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" в узле 1 (целевые объекты Clean).
+     1>ValidateSolutionConfiguration:
+         Создание конфигурации решения "Release|x64".
+       ValidateProjects:
+         Проект"MKLib" не выбран для сборки в конфигурации решения "Release|x64".
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\IlyaEfimovBayanRight.csproj" (5) в узле 2 (целевые объекты Clean).
+     5>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\obj\x64\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\LUXONIX.Purity\LUXONIX Purity.csproj" (4) в узле 4 (целевые объекты Clean).
+     4>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\LUXONIX.Purity\obj\x64\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\Xfer Records Serum.csproj" (7) в узле 7 (целевые объекты Clean).
+     7>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\obj\x64\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\reFX Nexus.csproj" (2) в узле 6 (целевые объекты Clean).
+     2>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\obj\x64\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\Native Instruments Kontakt.csproj" (6) в узле 8 (целевые объекты Clean).
+     6>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\obj\x64\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj" (8) в узле 3 (целевые объекты Clean).
+     8>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\obj\x64\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\Spectrasonics Omnisphere.csproj" (3) в узле 5 (целевые объекты Clean).
+     3>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\obj\x64\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" (11) в узле 2 (целевые объекты Clean).
+    11>CoreClean:
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\ConfigInstaller.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\ConfigInstaller.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\ConfigInstaller.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\ConfigInstaller.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\ConfigInstaller.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\NGettext.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.csproj.AssemblyReference.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x64\Release\ConfigInstaller.genruntimeconfig.cache" удаляется.
+       ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\".
+    11>Сборка проекта "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" (13) в узле 7 (целевые объекты Clean).
+    13>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\MKUpdater.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\MKUpdater.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\MKUpdater.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\MKUpdater.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\MKUpdater.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\NGettext.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\Pluralize.NET.Core.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\System.ComponentModel.Composition.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x64\Release\MKUpdater.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x64\Release\MKUpdater.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x64\Release\MKUpdater.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x64\Release\MKUpdater.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x64\Release\MKUpdater.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x64\Release\MKUpdater.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x64\Release\MKUpdater.genruntimeconfig.cache" удаляется.
+       ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\".
+    13>Сборка проекта "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" завершена (целевые объекты Clean).
+     2>Проект "D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\reFX Nexus.csproj" (2) выполняет сборку "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" (12:8) в узле 6 (целевые объекты Clean).
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MagicKeys.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MagicKeys.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MagicKeys.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MagicKeys.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MagicKeys.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\Microsoft.Experimental.Collections.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MoonSharp.Interpreter.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\NGettext.dll" удаляется.
+     4>Проект "D:\Projects\MagicKeys\Plugins\DLL\LUXONIX.Purity\LUXONIX Purity.csproj" (4) выполняет сборку "D:\Projects\MagicKeys\MKLib\MKLib.csproj" (10:8) в узле 4 (целевые объекты Clean).
+    10>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKLib\bin\x64\Release\MKLib.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\bin\x64\Release\MKLib.dll" удаляется.
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MKLib.dll" удаляется.
+    10>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKLib\bin\x64\Release\ref\MKLib.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\bin\x64\Release\CoreAudio.dll" удаляется.
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\CoreAudio.dll" удаляется.
+    10>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKLib\bin\x64\Release\csogg.dll" удаляется.
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\csogg.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\csvorbis.dll" удаляется.
+    10>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKLib\bin\x64\Release\csvorbis.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\MKLib.csproj.AssemblyReference.cache" удаляется.
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\GitInfo.cache" удаляется.
+    10>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\MKLib.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\MKLib.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\MKLib.AssemblyInfo.cs" удаляется.
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.csproj.AssemblyReference.cache" удаляется.
+    10>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\MKLib.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\MKLib.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\MKLib.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKLib\obj\x64\Release\ref\MKLib.dll" удаляется.
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x64\Release\MagicKeys.genruntimeconfig.cache" удаляется.
+    10>Сборка проекта "D:\Projects\MagicKeys\MKLib\MKLib.csproj" завершена (целевые объекты Clean).
+    12>ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\".
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" (14) в узле 3 (целевые объекты Clean).
+    14>CoreClean:
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\DeveloperTool.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\DeveloperTool.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\DeveloperTool.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\DeveloperTool.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\DeveloperTool.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\NGettext.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\MKLib.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\CoreAudio.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\csogg.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\csvorbis.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\GitInfo.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.csproj.AssemblyReference.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x64\Release\DeveloperTool.genruntimeconfig.cache" удаляется.
+       ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\".
+    14>Сборка проекта "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" завершена (целевые объекты Clean).
+    12>Сборка проекта "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\IlyaEfimovBayanLeft.csproj" (9) в узле 1 (целевые объекты Clean).
+     9>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\obj\x64\Release\GitInfo.cache" удаляется.
+     8>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj" завершена (целевые объекты Clean).
+     2>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\reFX Nexus.csproj" завершена (целевые объекты Clean).
+     3>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\Spectrasonics Omnisphere.csproj" завершена (целевые объекты Clean).
+     7>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\Xfer Records Serum.csproj" завершена (целевые объекты Clean).
+     4>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\LUXONIX.Purity\LUXONIX Purity.csproj" завершена (целевые объекты Clean).
+     6>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\Native Instruments Kontakt.csproj" завершена (целевые объекты Clean).
+     5>Сборка проекта "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\IlyaEfimovBayanRight.csproj" завершена (целевые объекты Clean).
+     9>Сборка проекта "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\IlyaEfimovBayanLeft.csproj" завершена (целевые объекты Clean).
+     1>Сборка проекта "D:\Projects\MagicKeys\MagicKeys.sln" завершена (целевые объекты Clean).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.23
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 16.08.2021 22:42:13.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" в узле 1 (целевые объекты Clean).
+     1>ValidateSolutionConfiguration:
+         Создание конфигурации решения "Release|x86".
+       ValidateProjects:
+         Проект"LUXONIX Purity" не выбран для сборки в конфигурации решения "Release|x86".
+         Проект"MKLib" не выбран для сборки в конфигурации решения "Release|x86".
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" (8) в узле 8 (целевые объекты Clean).
+     8>CoreClean:
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\ConfigInstaller.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\ConfigInstaller.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\ConfigInstaller.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\ConfigInstaller.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\ConfigInstaller.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\NGettext.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x86\Release\ConfigInstaller.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x86\Release\ConfigInstaller.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x86\Release\ConfigInstaller.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x86\Release\ConfigInstaller.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x86\Release\ConfigInstaller.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x86\Release\ConfigInstaller.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\ConfigInstaller\obj\x86\Release\ConfigInstaller.genruntimeconfig.cache" удаляется.
+       ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\".
+     8>Сборка проекта "D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\Xfer Records Serum.csproj" (5) в узле 6 (целевые объекты Clean).
+     5>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\obj\x86\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\Native Instruments Kontakt.csproj" (7) в узле 7 (целевые объекты Clean).
+     7>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\obj\x86\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\Spectrasonics Omnisphere.csproj" (6) в узле 4 (целевые объекты Clean).
+     6>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\obj\x86\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\IlyaEfimovBayanRight.csproj" (2) в узле 2 (целевые объекты Clean).
+     2>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\obj\x86\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\reFX Nexus.csproj" (4) в узле 5 (целевые объекты Clean).
+     4>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\obj\x86\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj" (3) в узле 3 (целевые объекты Clean).
+     3>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\obj\x86\Release\GitInfo.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" (10) в узле 8 (целевые объекты Clean).
+    10>CoreClean:
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\MKUpdater.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\MKUpdater.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\MKUpdater.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\MKUpdater.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\MKUpdater.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\NGettext.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\Pluralize.NET.Core.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\System.ComponentModel.Composition.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x86\Release\MKUpdater.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x86\Release\MKUpdater.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x86\Release\MKUpdater.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x86\Release\MKUpdater.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x86\Release\MKUpdater.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x86\Release\MKUpdater.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MKUpdater\obj\x86\Release\MKUpdater.genruntimeconfig.cache" удаляется.
+       ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\".
+    10>Сборка проекта "D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" (11:7) в узле 6 (целевые объекты Clean).
+    11>CoreClean:
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MagicKeys.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MagicKeys.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MagicKeys.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MagicKeys.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MagicKeys.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\Microsoft.Experimental.Collections.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MoonSharp.Interpreter.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\NGettext.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MKLib.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\CoreAudio.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\csogg.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\csvorbis.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\GitInfo.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.csproj.AssemblyReference.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\MagicKeys\obj\x86\Release\MagicKeys.genruntimeconfig.cache" удаляется.
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" (12) в узле 7 (целевые объекты Clean).
+    12>CoreClean:
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\DeveloperTool.exe" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\DeveloperTool.deps.json" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\DeveloperTool.runtimeconfig.json" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\DeveloperTool.runtimeconfig.dev.json" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\DeveloperTool.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\NGettext.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\MKLib.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\CoreAudio.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\csogg.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\csvorbis.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\GitInfo.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.GeneratedMSBuildEditorConfig.editorconfig" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.AssemblyInfoInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.AssemblyInfo.cs" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.csproj.CoreCompileInputs.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.csproj.AssemblyReference.cache" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.csproj.CopyComplete" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.dll" удаляется.
+         Файл "D:\Projects\MagicKeys\DeveloperTool\obj\x86\Release\DeveloperTool.genruntimeconfig.cache" удаляется.
+    11>ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\".
+    12>ProjectCleanup:
+         Удаление каталога "D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\".
+    12>Сборка проекта "D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj" завершена (целевые объекты Clean).
+     1>Проект "D:\Projects\MagicKeys\MagicKeys.sln" (1) выполняет сборку "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\IlyaEfimovBayanLeft.csproj" (9) в узле 1 (целевые объекты Clean).
+     9>CoreClean:
+         Файл "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\obj\x86\Release\GitInfo.cache" удаляется.
+    11>Сборка проекта "D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj" завершена (целевые объекты Clean).
+     5>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\Xfer Records Serum.csproj" завершена (целевые объекты Clean).
+     6>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\Spectrasonics Omnisphere.csproj" завершена (целевые объекты Clean).
+     7>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\Native Instruments Kontakt.csproj" завершена (целевые объекты Clean).
+     4>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\reFX Nexus.csproj" завершена (целевые объекты Clean).
+     3>Сборка проекта "D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj" завершена (целевые объекты Clean).
+     2>Сборка проекта "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\IlyaEfimovBayanRight.csproj" завершена (целевые объекты Clean).
+     9>Сборка проекта "D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\IlyaEfimovBayanLeft.csproj" завершена (целевые объекты Clean).
+     1>Сборка проекта "D:\Projects\MagicKeys\MagicKeys.sln" завершена (целевые объекты Clean).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:01.29
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Определение проектов для восстановления...
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\reFX Nexus.csproj (за 313 ms).
+  Восстановлен D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj (за 259 ms).
+  Восстановлен D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj (за 313 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\IlyaEfimovBayanRight.csproj (за 313 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\Native Instruments Kontakt.csproj (за 313 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\IlyaEfimovBayanLeft.csproj (за 313 ms).
+  Восстановлен D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj (за 313 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\Xfer Records Serum.csproj (за 313 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\Spectrasonics Omnisphere.csproj (за 14 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj (за 14 ms).
+  Восстановлен D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj (за 48 ms).
+  Проектов обновлено для восстановления: 2 из 13.
+  ConfigInstaller -> D:\Projects\MagicKeys\ConfigInstaller\bin\x64\Release\ConfigInstaller.dll
+  MKUpdater -> D:\Projects\MagicKeys\MKUpdater\bin\x64\Release\MKUpdater.dll
+  Не найден файл: Locale
+  Не найден файл: Locale
+  Для некоторых компиляций ReadyToRun возникли предупреждения, которые могут указывать на недостающие зависимости. Отсутствующие зависимости могут вызвать сбои среды выполнения. Чтобы отобразить предупреждения, установите значение true для свойства PublishReadyToRunShowWarnings.
+  ConfigInstaller -> D:\Projects\MagicKeys\Dist\X64\
+  MKUpdater -> D:\Projects\MagicKeys\Dist\x64\
+D:\Projects\MagicKeys\DeveloperTool\Core\Save.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj]
+D:\Projects\MagicKeys\DeveloperTool\Core\SoundPlay.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\API.cs(6,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\Debug.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\Help.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\SoundPlay.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\SystemInvoke.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Img\DisplayTraffic.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Img\ImgSearch.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Img\ImgSearchArea.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Invoker.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Key\KeyLoader.cs(5,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Key\KeyWNDProc.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\CheckBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\CheckStatePixel.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\ProgressState.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\Slider.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\PluginDetector.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\SubPluginLoad.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\WaitPluginClose.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\WinHook.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFCheckBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFCheckStateImg.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFCheckStatePixel.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlGetText.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlGetTextPoint.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlSetText.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlSetTextPoint.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFImgAreaClick.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFImgClick.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFInputBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFInputTextBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFKeySend.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFMouseClick.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFMouseMove.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFMouseOCR.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFOCR.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFProgressState.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSetFocusControlPoint.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSleep.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSlider.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSpeak.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFVUILoader.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFVUIObjectSwitcher.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFWaitControlClose.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFWaitWinClose.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUI\VUILoader.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Forms\DebugFormActions.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\MagicKeys.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Variables.cs(17,15): error CS0246: Не удалось найти тип или имя пространства имен "ModuleCoords" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Определение проектов для восстановления...
+  Все проекты обновлены для восстановления.
+  MKLib -> D:\Projects\MagicKeys\MKLib\bin\x64\Release\MKLib.dll
+  DeveloperTool -> D:\Projects\MagicKeys\DeveloperTool\bin\x64\Release\DeveloperTool.dll
+  Не найден файл: Locale
+  DeveloperTool -> D:\Projects\MagicKeys\Dist\X64\
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Определение проектов для восстановления...
+  Все проекты обновлены для восстановления.
+  MKLib -> D:\Projects\MagicKeys\MKLib\bin\x64\Release\MKLib.dll
+D:\Projects\MagicKeys\MagicKeys\Core\Common\GetUpdateChannel.cs(11,1): warning CS0162: Обнаружен недостижимый код [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+  MagicKeys -> D:\Projects\MagicKeys\MagicKeys\bin\x64\Release\MagicKeys.dll
+  ......................... чртхЁ°хэю.
+  MagicKeys -> D:\Projects\MagicKeys\Dist\X64\
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Определение проектов для восстановления...
+  Восстановлен D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanLeft\IlyaEfimovBayanLeft.csproj (за 336 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\reFX Nexus\reFX Nexus.csproj (за 336 ms).
+  Восстановлен D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj (за 336 ms).
+  Восстановлен D:\Projects\MagicKeys\MKUpdater\MKUpdater.csproj (за 336 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\SubDLL\Native Instruments Kontakt\IlyaEfimovBayanRight\IlyaEfimovBayanRight.csproj (за 336 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Reveal Sound Spire\Reveal Sound Spire.csproj (за 336 ms).
+  Восстановлен D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj (за 336 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Xfer Records Serum\Xfer Records Serum.csproj (за 287 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Spectrasonics Omnisphere\Spectrasonics Omnisphere.csproj (за 12 ms).
+  Восстановлен D:\Projects\MagicKeys\Plugins\DLL\Native Instruments Kontakt\Native Instruments Kontakt.csproj (за 12 ms).
+  Восстановлен D:\Projects\MagicKeys\ConfigInstaller\ConfigInstaller.csproj (за 49 ms).
+  Проектов обновлено для восстановления: 1 из 12.
+  ConfigInstaller -> D:\Projects\MagicKeys\ConfigInstaller\bin\x86\Release\ConfigInstaller.dll
+  MKUpdater -> D:\Projects\MagicKeys\MKUpdater\bin\x86\Release\MKUpdater.dll
+  Не найден файл: Locale
+  Не найден файл: Locale
+  Для некоторых компиляций ReadyToRun возникли предупреждения, которые могут указывать на недостающие зависимости. Отсутствующие зависимости могут вызвать сбои среды выполнения. Чтобы отобразить предупреждения, установите значение true для свойства PublishReadyToRunShowWarnings.
+  ConfigInstaller -> D:\Projects\MagicKeys\Dist\x86\
+  MKUpdater -> D:\Projects\MagicKeys\Dist\x86\
+D:\Projects\MagicKeys\MagicKeys\Core\API.cs(6,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\CheckRunProc.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\Debug.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\Help.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\SoundPlay.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Common\SystemInvoke.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Img\DisplayTraffic.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Img\ImgSearch.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Img\ImgSearchArea.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Invoker.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\DeveloperTool\Core\Save.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Key\KeyLoader.cs(5,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Key\KeyWNDProc.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\CheckBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\CheckStatePixel.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\ProgressState.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Objects\Slider.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\PluginDetector.cs(4,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\SubPluginLoad.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\WaitPluginClose.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Plugin\WinHook.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFCheckBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFCheckStateImg.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFCheckStatePixel.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlGetText.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlGetTextPoint.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlSetText.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFControlSetTextPoint.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFImgAreaClick.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFImgClick.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFInputBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFInputTextBox.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFKeySend.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFMouseClick.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFMouseMove.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFMouseOCR.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFOCR.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFProgressState.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSetFocusControlPoint.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSleep.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSlider.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFSpeak.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFVUILoader.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFVUIObjectSwitcher.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFWaitControlClose.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUF\VUFWaitWinClose.cs(2,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\VUI\VUILoader.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Forms\DebugFormActions.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\MagicKeys.cs(1,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\MagicKeys\Core\Variables.cs(17,15): error CS0246: Не удалось найти тип или имя пространства имен "ModuleCoords" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+D:\Projects\MagicKeys\DeveloperTool\Core\SoundPlay.cs(3,14): error CS0246: Не удалось найти тип или имя пространства имен "MKLib" (возможно, отсутствует директива using или ссылка на сборку). [D:\Projects\MagicKeys\DeveloperTool\DeveloperTool.csproj]
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Определение проектов для восстановления...
+  Все проекты обновлены для восстановления.
+  MKLib -> D:\Projects\MagicKeys\MKLib\bin\x86\Release\MKLib.dll
+  DeveloperTool -> D:\Projects\MagicKeys\DeveloperTool\bin\x86\Release\DeveloperTool.dll
+  Не найден файл: Locale
+  DeveloperTool -> D:\Projects\MagicKeys\Dist\x86\
+Microsoft (R) Build Engine версии 16.11.0+0538acc04 для .NET
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Определение проектов для восстановления...
+  Все проекты обновлены для восстановления.
+  MKLib -> D:\Projects\MagicKeys\MKLib\bin\x86\Release\MKLib.dll
+D:\Projects\MagicKeys\MagicKeys\Core\Common\GetUpdateChannel.cs(11,1): warning CS0162: Обнаружен недостижимый код [D:\Projects\MagicKeys\MagicKeys\MagicKeys.csproj]
+  MagicKeys -> D:\Projects\MagicKeys\MagicKeys\bin\x86\Release\MagicKeys.dll
+  ......................... чртхЁ°хэю.
+  MagicKeys -> D:\Projects\MagicKeys\Dist\x86\
+Packing MagicKeys_Nightly_b434a5e...
+Generating checksums...
+Creating version manifest...
+Done
+Для продолжения нажмите любую клавишу . . . 

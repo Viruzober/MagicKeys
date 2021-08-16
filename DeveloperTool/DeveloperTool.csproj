@@ -48,7 +48,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MagicKeys\MagicKeys.csproj" />
+    <ProjectReference Include="..\MKLib\MKLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

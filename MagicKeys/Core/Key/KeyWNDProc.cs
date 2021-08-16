@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
+using static MKLib;
 
 namespace MagicKeys
 {
@@ -51,7 +52,7 @@ MagicKeys.VUIObjectNavigator("Next");
 }
 else if (Key == "F1")
 {
-MagicKeys.Speak(API.GetHelp());
+MKLib.Speak(API.GetHelp());
 }
 else if (Key == "Enter")
 {

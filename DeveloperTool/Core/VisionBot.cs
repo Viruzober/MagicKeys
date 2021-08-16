@@ -16,10 +16,10 @@ public static async void VisionBot()
 try{
 if (DP[0] == 0)
 {
-MagicKeys.Speak(T._("No rectangle for OCR"));
+MKLib.Speak(T._("No rectangle for OCR"));
 return;
 }
-int[] MP = MagicKeys.GetMousePosition();
+int[] MP = MKLib.GetMousePosition();
 Bitmap Screen = new Bitmap(DP[0], DP[1]);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(MP[0], MP[1], 00, 0, Screen.Size);
@@ -39,7 +39,7 @@ VisionBotResult(J["id"]);
 }
 catch(Exception)
 {
-MagicKeys.Speak("Error");
+MKLib.Speak("Error");
 }
 }
 
@@ -62,12 +62,12 @@ Dictionary<string, string> J = JsonSerializer.Deserialize<Dictionary<string, str
 if (J["status"] == "notready")
 {
 Thread.Sleep(1000);
-MagicKeys.SoundPlay("PluginDetect", 0);
+SoundPlay("PluginDetect", 0);
 continue;
 }
 HTTPC.Dispose();
 OCRR = J["text"];
-MagicKeys.Speak(J["text"]);
+MKLib.Speak(J["text"]);
 break;
 }
 }

@@ -1,3 +1,4 @@
+using static MKLib;
 namespace MagicKeys
 {
 

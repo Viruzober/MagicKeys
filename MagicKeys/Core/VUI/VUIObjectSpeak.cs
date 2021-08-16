@@ -17,7 +17,7 @@ if (API.GetFunc("AutoFunc") != null)
 {
 SpeakObject += " "+Invoker(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"));;
 }
-Speak(SpeakObject);
+MKLib.Speak(SpeakObject);
 if (API.FuncIsBackground("AutoFunc") == true)
 {
 var BFObj = new BackgroundFuncObject(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"), API.GetNameCurrentObject(), true);

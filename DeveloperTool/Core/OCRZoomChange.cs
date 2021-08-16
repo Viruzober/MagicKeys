@@ -23,7 +23,7 @@ OCRZoom = Convert.ToInt32(IB.GetString());
 }
 KeyReg();
 OptionKeyReg();
-MagicKeys.Speak(OCRZoom.ToString());
+MKLib.Speak(OCRZoom.ToString());
 }
 
 }

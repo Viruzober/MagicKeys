@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
-
+using static MKLib;
 namespace MagicKeys
 {
 

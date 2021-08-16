@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.Collections.Extensions;
-
 using System.Collections.Generic;
-
+using static MKLib;
 namespace MagicKeys
 {
 
@@ -25,7 +24,10 @@ VUIKeys.Add(Keys[I], Values[I]);
 }
 }
 var AllKeys = GetOptionKeys().Concat(VUIKeys).ToDictionary(x=>x.Key, x=>x.Value).Keys.ToList();
-KeyRegisterInfo.KeysList = AllKeys;
+var SendKeyInfo = new KeyInfo();
+SendKeyInfo.WNDProcHandle = KeyWndProcHandle.Handle;
+SendKeyInfo.KeyList = AllKeys;
+SetKeyRegContext(SendKeyInfo);
 }
 
 }

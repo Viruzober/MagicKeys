@@ -11,22 +11,22 @@ public static void ImgSave()
 {
 KeyUnReg();
 OptionKeyUnReg();
-int[] MP = MagicKeys.GetMousePosition();
-string ITB = MagicKeys.InputTextBox(T._("Image name"), T._("Enter image name."));
+int[] MP = MKLib.GetMousePosition();
+string ITB = MKLib.InputTextBox(T._("Image name"), T._("Enter image name."));
 if (ITB == null)
 {
 KeyReg();
 OptionKeyReg();
 return;
 }
-string IBWidth = MagicKeys.InputBox("Image width", "Enter image width", 1, P[3]-MP[0]);
+string IBWidth = MKLib.InputBox("Image width", "Enter image width", 1, P[3]-MP[0]);
 if (IBWidth == null)
 {
 KeyReg();
 OptionKeyReg();
 return;
 }
-string IBHeight = MagicKeys.InputBox("Image height", "Enter image height", 1, P[4]-MP[1]);
+string IBHeight = MKLib.InputBox("Image height", "Enter image height", 1, P[4]-MP[1]);
 if (IBHeight == null)
 {
 KeyReg();

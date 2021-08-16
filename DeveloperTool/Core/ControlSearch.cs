@@ -32,18 +32,18 @@ Module = ModuleName;
 P = GetPluginCoord();
 if (P[0] == 1)
 {
-MagicKeys.Speak("Module found");
+MKLib.Speak("Module found");
 KeyReg();
 OptionKeyReg();
-MagicKeys.SoundPlay("WindowOpened", 0);
+SoundPlay("WindowOpened", 0);
 Directory.CreateDirectory(@".\DevSave\"+Module);
 ModuleFound();
 KeyUnReg();
-MagicKeys.SoundPlay("WindowClosed", 0);
+SoundPlay("WindowClosed", 0);
 }
 else
 {
-MagicKeys.Speak("Not found");
+MKLib.Speak("Not found");
 OptionKeyReg();
 }
 }

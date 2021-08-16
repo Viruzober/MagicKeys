@@ -1,4 +1,5 @@
-﻿namespace MagicKeys
+﻿using static MKLib;
+namespace MagicKeys
 {
 
 public partial class MagicKeys

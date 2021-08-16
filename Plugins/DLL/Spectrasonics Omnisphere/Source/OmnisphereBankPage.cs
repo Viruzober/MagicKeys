@@ -1,5 +1,6 @@
 using System.Threading;
 using static MagicKeys.MagicKeys;
+using static MKLib;
 
 namespace MagicKeys
 {

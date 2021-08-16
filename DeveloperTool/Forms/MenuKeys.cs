@@ -19,14 +19,14 @@ if (DeveloperTool.KeySwitch == 0)
 DeveloperTool.KeyUnReg();
 DeveloperTool.OptionKeyUnReg();
 Ni.Text = "Developer tool is disabled";
-MagicKeys.Speak("Developer tool is disabled");
+MKLib.Speak("Developer tool is disabled");
 DeveloperTool.KeySwitch = 1;
 DeveloperTool.OptionKeyReg();
 }
 else if (DeveloperTool.KeySwitch == 1)
 {
 Ni.Text = "Developer tool is enabled";
-MagicKeys.Speak("Developer tool is enabled");
+MKLib.Speak("Developer tool is enabled");
 DeveloperTool.KeySwitch = 0;
 DeveloperTool.OptionKeyReg();
 }
@@ -35,12 +35,12 @@ else if (modifier == (MKC.CTRL|MKC.ALT) & key == Keys.A)
 {
 if (DeveloperTool.AutoOCR == 1)
 {
-MagicKeys.Speak("Auto OCR is disabled");
+MKLib.Speak("Auto OCR is disabled");
 DeveloperTool.AutoOCR = 0;
 }
 else if (DeveloperTool.AutoOCR == 0)
 {
-MagicKeys.Speak("Auto OCR is enabled");
+MKLib.Speak("Auto OCR is enabled");
 DeveloperTool.AutoOCR = 1;
 }
 }
@@ -102,15 +102,15 @@ DeveloperTool.OCRClick("Left");
 }
 else if (key == Keys.OemMinus)
 {
-int[] MP = MagicKeys.GetMousePosition();
-MagicKeys.MouseClick("Left", MP[0], MP[1], 1, 0, 0, 10);
-MagicKeys.Speak("Left click");
+int[] MP = MKLib.GetMousePosition();
+MKLib.MouseClick("Left", MP[0], MP[1], 1, 0, 0, 10);
+MKLib.Speak("Left click");
 }
 else if (key == Keys.Oemplus)
 {
-int[] MP = MagicKeys.GetMousePosition();
-MagicKeys.MouseClick("Right", MP[0], MP[1], 1, 0, 0, 10);
-MagicKeys.Speak("Right click");
+int[] MP = MKLib.GetMousePosition();
+MKLib.MouseClick("Right", MP[0], MP[1], 1, 0, 0, 10);
+MKLib.Speak("Right click");
 }
 else if (key == Keys.M)
 {

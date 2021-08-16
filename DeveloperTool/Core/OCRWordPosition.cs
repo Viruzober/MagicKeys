@@ -1,4 +1,3 @@
-using DeveloperTool;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -30,7 +29,7 @@ Screen.Save(memoryStream, ImageFormat.Bmp);
 byte[] b = memoryStream.ToArray();
 IntPtr Handle = Marshal.AllocHGlobal(b.Length);
 Marshal.Copy(b, 0, Handle, b.Length);
-string Resulte = Task.Run(() => MagicKeys.OCR(Handle, (uint)b.Length, "en")).Result;
+string Resulte = Task.Run(() => MKLib.OCR(Handle, (uint)b.Length, "en")).Result;
 OCRResult JsonResulte = JsonSerializer.Deserialize<OCRResult>(Resulte);
 OCRResultForm ORF = new		OCRResultForm();
 foreach(var Line in JsonResulte.lines)
@@ -49,7 +48,7 @@ ORF.ShowDialog();
 if(ORF.DialogResult == DialogResult.OK)
 {
 int SI = ORF.WList.SelectedIndex;
-MagicKeys.MouseMove(P[1]+LX[SI], P[2]+LY[SI], 0);
+MKLib.MouseMove(P[1]+LX[SI], P[2]+LY[SI], 0);
 }
 LW.Clear();
 LX.Clear();

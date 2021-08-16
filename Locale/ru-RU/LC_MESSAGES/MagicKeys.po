@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-14 23:52+0300\n"
+"POT-Creation-Date: 2021-08-16 20:00+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "OCR Word List"
 msgstr ""
 
-#: MagicKeys\MagicKeys.cs:35
+#: MagicKeys\MagicKeys.cs:36
 msgid ""
 "This version of MagicKeys is built for 32-bit Windows, but you are running a "
 "64-bit version. Please run a 64-bit version of MagicKeys instead."
@@ -149,7 +149,7 @@ msgstr ""
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
 
-#: MagicKeys\MagicKeys.cs:35 MagicKeys\MagicKeys.cs:42
+#: MagicKeys\MagicKeys.cs:36 MagicKeys\MagicKeys.cs:43
 #: MagicKeys\Core\Common\CheckRunProc.cs:17 MagicKeys\Forms\DebugForm.cs:46
 #: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
 #: MKUpdater\Forms\UpdateFormActions.cs:38
@@ -158,11 +158,11 @@ msgstr ""
 msgid "Error"
 msgstr "Ошибка"
 
-#: MagicKeys\MagicKeys.cs:42
+#: MagicKeys\MagicKeys.cs:43
 msgid "You must close DeveloperTool to run MagicKeys."
 msgstr ""
 
-#: MagicKeys\MagicKeys.cs:61
+#: MagicKeys\MagicKeys.cs:62
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
 
@@ -170,7 +170,7 @@ msgstr "Сервис MagicKeys запущен"
 msgid "MagicKeys is already running."
 msgstr "Программа MagicKeys уже запущена."
 
-#: MagicKeys\Core\Common\Help.cs:14
+#: MagicKeys\Core\Common\Help.cs:15
 msgid "Help file not found"
 msgstr "Файл справки не найден"
 
@@ -195,11 +195,11 @@ msgstr "Ключ не найден"
 msgid "Error reading file"
 msgstr "Ошибка чтения файла"
 
-#: MagicKeys\Core\Objects\Slider.cs:11
+#: MagicKeys\Core\Objects\Slider.cs:12
 msgid "Enter a value for "
 msgstr ""
 
-#: MagicKeys\Core\Objects\Slider.cs:11
+#: MagicKeys\Core\Objects\Slider.cs:12
 msgid " from 1 to 100"
 msgstr ""
 
@@ -393,21 +393,21 @@ msgstr ""
 msgid "Update file is corrupted."
 msgstr ""
 
-#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:23
+#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:24
 msgid "Enter serial"
 msgstr ""
 
-#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:24
+#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:25
 msgid "Enter serial key."
-msgstr ""
-
-#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:27 Plugins\DLL\Xfer
-#: Records Serum\Source\Serum.cs:47
-msgid "Enter Activation code"
 msgstr ""
 
 #: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:28 Plugins\DLL\Xfer
 #: Records Serum\Source\Serum.cs:48
+msgid "Enter Activation code"
+msgstr ""
+
+#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:29 Plugins\DLL\Xfer
+#: Records Serum\Source\Serum.cs:49
 msgid "Enter activation code."
 msgstr ""
 

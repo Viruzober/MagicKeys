@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
-
+using static MKLib;
 namespace MagicKeys
 {
 
@@ -12,13 +12,13 @@ public static void Save()
 {
 KeyUnReg();
 OptionKeyUnReg();
-string Name = MagicKeys.InputTextBox(T._("Save"), T._("Enter name for save."));
+string Name = InputTextBox(T._("Save"), T._("Enter name for save."));
 if(Name == null)
 {
 return;
 }
 
-int[] MP = MagicKeys.GetMousePosition();
+int[] MP = MKLib.GetMousePosition();
 Bitmap Screen = new Bitmap(1, 1);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(MP[0], MP[1], 00, 0, Screen.Size);

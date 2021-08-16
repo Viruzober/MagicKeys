@@ -11,7 +11,7 @@ public static void RectOCR()
 {
 KeyUnReg();
 OptionKeyUnReg();
-int[] MP = MagicKeys.GetMousePosition();
+int[] MP = MKLib.GetMousePosition();
 InputBox W = new InputBox();
 W.Text = T._("OCR Width");
 W.InputBoxLabel.Text = T._("Enter OCR width:");

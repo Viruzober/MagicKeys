@@ -11,7 +11,7 @@ public static void MouseGoTo()
 {
 KeyUnReg();
 OptionKeyUnReg();
-int[] MP = MagicKeys.GetMousePosition();
+int[] MP = MKLib.GetMousePosition();
 InputBox X = new InputBox();
 X.Text = T._("Mouse X");
 X.InputBoxLabel.Text = T._("Enter new mouse position X");
@@ -46,7 +46,7 @@ KeyReg();
 OptionKeyReg();
 return;
 }
-MagicKeys.MouseMove(P[1]+NewX, P[2]+NewY, 0);
+MKLib.MouseMove(P[1]+NewX, P[2]+NewY, 0);
 KeyReg();
 OptionKeyReg();
 }

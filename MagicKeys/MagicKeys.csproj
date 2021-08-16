@@ -68,7 +68,6 @@
 
   <ItemGroup>
     <Compile Remove="Core\Common\SendKey.cs" />
-    <Compile Remove="Core\Window\WinExists.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -87,15 +86,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="CoreAudio">
-      <HintPath>..\Lib\CoreAudio.dll</HintPath>
-    </Reference>
-    <Reference Include="csogg">
-      <HintPath>..\Lib\csogg.dll</HintPath>
-    </Reference>
-    <Reference Include="csvorbis">
-      <HintPath>..\Lib\csvorbis.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\MKLib\MKLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -111,7 +102,6 @@
 
 	<Target Name="ProjectCleanup" BeforeTargets="PreBuildEvent" AfterTargets="Clean">
 		<RemoveDir Directories="$(TargetDir)" />
-		<Delete Files="$(SolutionDir)Dist\$(PlatformName)\$(TargetName).runtimeconfig.json" />
 	</Target>
 
 </Project>

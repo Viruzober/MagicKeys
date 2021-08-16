@@ -16,7 +16,7 @@ Ni.Visible = false;
 DialogResult result = await Task.Run(()=> MessageBox.Show("Do you really want to exit DeveloperTool?", "Exit DeveloperTool", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification));
 if (result == DialogResult.OK)
 {
-MagicKeys.Speak("Goodbye");
+MKLib.Speak("Goodbye");
 Application.Exit();
 return;
 }

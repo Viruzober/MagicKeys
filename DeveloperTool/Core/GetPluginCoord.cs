@@ -11,15 +11,15 @@ public static int[] GetPluginCoord()
 {
 int[] ControlCoord;
 List<IntPtr> HModule = new List<IntPtr>();
-HModule.Add(MagicKeys.GetForegroundWindow());
-HModule.AddRange(MagicKeys.GetAllWindows(MagicKeys.GetForegroundWindow()));
+HModule.Add(MKLib.GetForegroundWindow());
+HModule.AddRange(MKLib.GetAllWindows(MKLib.GetForegroundWindow()));
 foreach(var H in HModule)
 {
-string ModuleName = MagicKeys.GetDllName(H);
+string ModuleName = MKLib.GetDllName(H);
 if (ModuleName.Contains(Module, StringComparison.OrdinalIgnoreCase) == true)
 {
 Module = ModuleName;
-int[] RectCTRL = MagicKeys.GetWinRect(H);
+int[] RectCTRL = MKLib.GetWinRect(H);
 ControlCoord = new int[5] {1, RectCTRL[0], RectCTRL[1], RectCTRL[2]-1, RectCTRL[3]-1};
 return ControlCoord;
 }

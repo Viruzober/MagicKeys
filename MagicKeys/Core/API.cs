@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using static MagicKeys.MagicKeys;
+using static MKLib;
 
 namespace MagicKeys
 {
