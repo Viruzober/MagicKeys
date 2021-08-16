@@ -1,4 +1,6 @@
-﻿namespace MagicKeys
+﻿using System;
+using System.Linq;
+namespace MagicKeys
 {
 
 public partial class MagicKeys
@@ -6,8 +8,8 @@ public partial class MagicKeys
 
 public static void KeyUnReg()
 {
-int KeysCount = VUIKeys.Count+GetOptionKeys().Count;
-for(int I = 0; I <= KeysCount; I++)
+if (KeyRegisterInfo.KeysList == new KeyInformation().KeysList) return;
+for(int I = 0; I < KeyRegisterInfo.KeysList.Count; I++)
 {
 UnregisterHotKey(KeyRegisterInfo.HandleFromWNDProc, I);
 }

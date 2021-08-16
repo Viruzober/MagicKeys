@@ -19,8 +19,7 @@ public static KeyInformation KeyRegisterInfo = new KeyInformation();
 
 public static void KeyReg()
 {
-if (KeyRegisterInfo.KeysList.Count != 0)
-{
+if (KeyRegisterInfo.KeysList == new KeyInformation().KeysList) return;
 int IDKey = 0;
 foreach(var OBJKey in KeyRegisterInfo.KeysList)
 {
@@ -33,7 +32,8 @@ if (KeyItems[K] == "Ctrl" | KeyItems[K] == "Alt" | KeyItems[K] == "Shift" | KeyI
 Mod = Mod|(uint)Enum.Parse(typeof(MKC.ModKeys), KeyItems[K]);
 }
 }
-try{
+try
+{
 Keys key = (Keys)new KeysConverter().ConvertFrom(KeyItems[^1]);
 RegisterHotKey(KeyRegisterInfo.HandleFromWNDProc, IDKey, Mod, (uint)key);
 IDKey+=1;
@@ -45,7 +45,6 @@ return;
 }
 }
 }
-{
 }
 }
 
