@@ -15,6 +15,7 @@ public List<string> KeysList;
 
 public partial class MagicKeys
 {
+
 public static KeyInformation KeyRegisterInfo = new KeyInformation();
 
 public static void KeyReg()
@@ -42,8 +43,6 @@ catch(Exception)
 {
 MKDebugForm("KeyReg|"+API.GetCurrentVUI()+"|"+KeyItems[^1]);
 return;
-}
-}
 }
 }
 }
