@@ -8,8 +8,9 @@ if "%configuration%" == "" set configuration=Debug
 if "%platform%" == "" set platform=x64
 
 pushd "%~dp0.."
-set distdir=Dist
+set distdir=Dist\%platform%
 
+call "%~dp0CompileLocales.cmd" "%cd%" "%distdir%" > nul 2>&1
 dotnet publish -p:PublishProfile=%platform% -c %configuration% -p:Platform=%platform% || call :exit && goto :eof
 call :exit && goto :eof
 
