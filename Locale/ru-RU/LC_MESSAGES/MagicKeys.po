@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-16 20:00+0300\n"
+"POT-Creation-Date: 2021-08-17 15:57+0300\n"
 "PO-Revision-Date: 2020-08-13 20:12+0300\n"
 "Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
 "Language-Team: \n"
@@ -116,11 +116,11 @@ msgstr ""
 msgid "Enter OCR height:"
 msgstr ""
 
-#: DeveloperTool\Core\Save.cs:15 MagicKeys\Settings\SettingsForm.cs:90
+#: DeveloperTool\Core\Save.cs:16 MagicKeys\Settings\SettingsForm.cs:90
 msgid "Save"
 msgstr "Сохранить"
 
-#: DeveloperTool\Core\Save.cs:15
+#: DeveloperTool\Core\Save.cs:16
 msgid "Enter name for save."
 msgstr ""
 
@@ -150,7 +150,7 @@ msgstr ""
 "MagicKeys."
 
 #: MagicKeys\MagicKeys.cs:36 MagicKeys\MagicKeys.cs:43
-#: MagicKeys\Core\Common\CheckRunProc.cs:17 MagicKeys\Forms\DebugForm.cs:46
+#: MagicKeys\Core\Common\CheckRunProc.cs:18 MagicKeys\Forms\DebugForm.cs:46
 #: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
 #: MKUpdater\Forms\UpdateFormActions.cs:38
 #: MKUpdater\Forms\UpdateFormActions.cs:58
@@ -166,7 +166,7 @@ msgstr ""
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
 
-#: MagicKeys\Core\Common\CheckRunProc.cs:17
+#: MagicKeys\Core\Common\CheckRunProc.cs:18
 msgid "MagicKeys is already running."
 msgstr "Программа MagicKeys уже запущена."
 
@@ -174,7 +174,7 @@ msgstr "Программа MagicKeys уже запущена."
 msgid "Help file not found"
 msgstr "Файл справки не найден"
 
-#: MagicKeys\Core\Common\SystemInvoke.cs:30
+#: MagicKeys\Core\Common\SystemInvoke.cs:31
 #, csharp-format
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
@@ -216,50 +216,50 @@ msgstr "Внимание"
 msgid "Exit"
 msgstr "Выход"
 
-#: MagicKeys\Forms\DebugFormActions.cs:48
-#: MagicKeys\Forms\DebugFormActions.cs:58
-#: MagicKeys\Forms\DebugFormActions.cs:67
-#: MagicKeys\Forms\DebugFormActions.cs:75
-#: MagicKeys\Forms\DebugFormActions.cs:82
-msgid "Message:"
-msgstr "Сообщение:"
-
 #: MagicKeys\Forms\DebugFormActions.cs:49
 #: MagicKeys\Forms\DebugFormActions.cs:59
 #: MagicKeys\Forms\DebugFormActions.cs:68
 #: MagicKeys\Forms\DebugFormActions.cs:76
 #: MagicKeys\Forms\DebugFormActions.cs:83
-msgid "File:"
-msgstr "Файл:"
+msgid "Message:"
+msgstr "Сообщение:"
 
 #: MagicKeys\Forms\DebugFormActions.cs:50
 #: MagicKeys\Forms\DebugFormActions.cs:60
-msgid "Line:"
-msgstr "Строка:"
+#: MagicKeys\Forms\DebugFormActions.cs:69
+#: MagicKeys\Forms\DebugFormActions.cs:77
+#: MagicKeys\Forms\DebugFormActions.cs:84
+msgid "File:"
+msgstr "Файл:"
 
 #: MagicKeys\Forms\DebugFormActions.cs:51
 #: MagicKeys\Forms\DebugFormActions.cs:61
+msgid "Line:"
+msgstr "Строка:"
+
+#: MagicKeys\Forms\DebugFormActions.cs:52
+#: MagicKeys\Forms\DebugFormActions.cs:62
 msgid "Section:"
 msgstr "Раздел:"
 
-#: MagicKeys\Forms\DebugFormActions.cs:52
-#: MagicKeys\Forms\DebugFormActions.cs:69
+#: MagicKeys\Forms\DebugFormActions.cs:53
+#: MagicKeys\Forms\DebugFormActions.cs:70
 msgid "Key:"
 msgstr "Ключ:"
 
-#: MagicKeys\Forms\DebugFormActions.cs:67
+#: MagicKeys\Forms\DebugFormActions.cs:68
 msgid "The keyboard shortcut cannot be registered"
 msgstr "Не удалось зарегистрировать сочетание клавиш"
 
-#: MagicKeys\Forms\DebugFormActions.cs:75
+#: MagicKeys\Forms\DebugFormActions.cs:76
 msgid "File not found"
 msgstr "Файл не найден"
 
-#: MagicKeys\Forms\DebugFormActions.cs:82
+#: MagicKeys\Forms\DebugFormActions.cs:83
 msgid "The key or value doesn't exist."
 msgstr ""
 
-#: MagicKeys\Forms\DebugFormActions.cs:84
+#: MagicKeys\Forms\DebugFormActions.cs:85
 msgid "Object:"
 msgstr ""
 
@@ -372,8 +372,9 @@ msgid "Changelog"
 msgstr ""
 
 #: MKUpdater\Forms\UpdateForm.cs:56
+#, fuzzy
 msgid "Update"
-msgstr ""
+msgstr "Выйти из MagicKeys"
 
 #: MKUpdater\Forms\UpdateForm.cs:75
 #, fuzzy

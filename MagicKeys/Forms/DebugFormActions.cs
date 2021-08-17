@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Forms;
 using static MKLib;
+
 namespace MagicKeys
 {
 
