@@ -9,16 +9,8 @@ if "%platform%" == "" set platform=x64
 
 pushd "%~dp0.."
 set distdir=Dist
-for %%N in (*.sln) do if not defined projname set projname=%%~nN
 
-dotnet publish -p:PublishProfile=%platform% -c %configuration% -p:Platform=%platform% "%projname%.sln" || call :exit && goto :eof
-for /f "usebackq" %%P in (`dir /b /a:d`) do if exist "%%P\%%P.csproj" (
-if not exist "%distdir%\%platform%\%%P.exe" (
-if exist "%%P\Properties\PublishProfiles\%platform%.pubxml" (
-dotnet publish -p:PublishProfile=%platform% -c %configuration% -p:Platform=%platform% "%%P\%%P.csproj"
-)
-)
-)
+dotnet publish -p:PublishProfile=%platform% -c %configuration% -p:Platform=%platform% || call :exit && goto :eof
 call :exit && goto :eof
 
 :exit

@@ -10,8 +10,8 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <AssemblyName>MagicKeys</AssemblyName>
-    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
