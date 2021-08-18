@@ -1,6 +1,5 @@
 [Params]
 PluginClass=MagicKeys
-PluginNameTone2 Electra
 Loader=None
 [1]
 Text=Bank menu
