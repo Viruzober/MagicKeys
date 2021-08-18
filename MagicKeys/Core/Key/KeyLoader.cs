@@ -12,7 +12,7 @@ public partial class MagicKeys
 
 public static OrderedDictionary<string, string> VUIKeys = new OrderedDictionary<string, string>();
 public static KeyWNDProc KeyWndProcHandle = new KeyWNDProc();
-
+public static KeyInfo PluginKeyRegInfo = new KeyInfo();
 public static void KeyLoader()
 {
 if (Ini.IniSectionExists(API.GetCurrentVUI(), "Keys") == true)
@@ -25,10 +25,9 @@ VUIKeys.Add(Keys[I], Values[I]);
 }
 }
 var AllKeys = GetOptionKeys().Concat(VUIKeys).ToDictionary(x=>x.Key, x=>x.Value).Keys.ToList();
-var SendKeyInfo = new KeyInfo();
-SendKeyInfo.WNDProcHandle = KeyWndProcHandle.Handle;
-SendKeyInfo.KeyList = AllKeys;
-SetKeyRegContext(SendKeyInfo);
+PluginKeyRegInfo.WNDProcHandle = KeyWndProcHandle.Handle;
+PluginKeyRegInfo.KeyList = AllKeys;
+SetKeyRegContext(PluginKeyRegInfo);
 }
 
 }

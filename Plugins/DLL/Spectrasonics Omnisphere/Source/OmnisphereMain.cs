@@ -99,6 +99,34 @@ public static void MainResonanseSlider()
 HostAutomation(Coords.X+810, Coords.Y+610);
 }
 
+public static void MainVelocityLinear()
+{
+MouseClick("Left", Coords.X+1000, Coords.Y+375, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("VelocityLinear", Coords.X+995, Coords.Y+370, Coords.X+1020, Coords.Y+390));
+}
+
+public static void MainVelocityExponentialPositive()
+{
+MouseClick("Left", Coords.X+1040, Coords.Y+375, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("VelocityExponentialPositive", Coords.X+1035, Coords.Y+370, Coords.X+1060, Coords.Y+390));
+}
+
+public static void MainVelocityExponentialNegative()
+{
+MouseClick("Left", Coords.X+1000, Coords.Y+430, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("VelocityExponentialNegative", Coords.X+995, Coords.Y+425, Coords.X+1020, Coords.Y+450));
+}
+
+public static void MainVelocityFlat()
+{
+MouseClick("Left", Coords.X+1040, Coords.Y+430, 1, 0, 0, 10);
+Thread.Sleep(100);
+Speak(CheckStateImg("VelocityFlat", Coords.X+1035, Coords.Y+425, Coords.X+1060, Coords.Y+450));
+}
+
 public static void MainBack()
 {
 VUILoader("Omnisphere");

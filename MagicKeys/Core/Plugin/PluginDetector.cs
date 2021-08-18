@@ -8,41 +8,39 @@ namespace MagicKeys
 
 public partial class MagicKeys
 {
-
-public static string[] WH = new string[2];
+public static Mutex SyncThreads = new Mutex();
 public static void PluginDetector()
 {
 while(true)
 {
 Thread.Sleep(Settings.TimeOut);
-if (KeySwitch == 1)
+if (LockPluginDetect == true)
 {
 continue;
 }
-
 foreach (string Item in PluginsList.Keys)
 {
-WH = WinHook(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
-if (WH[0] == null)
+string[] OptionWindowInfo = WinHook(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
+if (OptionWindowInfo[0] == null)
 {
 continue;
 }
-
-if (WH[1] == null)
+if (OptionWindowInfo[1] == null)
 {
 continue;
 }
-
-GlobalPluginLoad(Item, WH[0], WH[1]);
+GlobalPluginLoad(Item, OptionWindowInfo[0], OptionWindowInfo[1]);
 Coords = GetModuleCoords(CurrentPlugin["Module"]);
 if (Coords != new ModuleCoords())
 {
-KeyRegInfo.WNDProcHandle = KeyWndProcHandle.Handle;
 VUILoader(API.GetVUI());
 SoundPlay("WindowOpened", 0);
 //SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
-WaitPluginClose(WH[0], WH[1]);
+SyncThreads.WaitOne();
+WaitPluginClose(OptionWindowInfo[0], OptionWindowInfo[1]);
 KeyUnReg();
+SyncThreads.ReleaseMutex();
+
 VUIKeys.Clear();
 VUIObjects.Clear();
 ActiveObjects.Clear();

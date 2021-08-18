@@ -67,13 +67,15 @@ public static void HostAutomation(int X, int Y)
 MouseClick("Right", X, Y, 1, 0, 0, 1);
 if (MenuItemClick("Enable Host") == true)
 {
-Speak("Enable host automation");
+KeySend("Keys", "LCtrl", 50, 50);
+Speak("Enabled host automation");
 return;
 }
 else
 {
 MenuItemClick("Unlearn Host Automation ID");
-Speak("Disable host automation");
+KeySend("Keys", "LCtrl", 50, 50);
+Speak("Disabled host automation");
 }
 }
 

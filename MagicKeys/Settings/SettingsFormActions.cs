@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using static MKLib;
 
 namespace MagicKeys
 {
@@ -30,12 +31,18 @@ Ini.IniWrite(@".\Settings.ini", "Settings", "UpdateChannel", UpdateChannel.Selec
 Ini.IniWrite(@".\Settings.ini", "Settings", "CheckUpdate", Convert.ToBoolean(CheckUpdate.Checked).ToString());
 MagicKeys.LoadSettings();
 this.Close();
+this.Dispose();
+MKLib.KeyReg();
+MagicKeys.LockPluginDetect = false;
 }
 
 public void Cancel_Click(object sender, EventArgs e)
 {
 MagicKeys.LoadSettings();
 this.Close();
+this.Dispose();
+MKLib.KeyReg();
+MagicKeys.LockPluginDetect = false;
 }
 
 public void Help_Click(object sender, EventArgs e)

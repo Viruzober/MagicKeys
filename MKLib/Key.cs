@@ -13,23 +13,29 @@ public static partial class MKLib
 
 public static KeyInfo KeyRegInfo = new KeyInfo();
 
-public static void SetKeyRegContext(KeyInfo keyInfo)
+public static void SetKeyRegContext(KeyInfo GetKeyInfo)
 {
-KeyRegInfo = keyInfo;
+KeyRegInfo = GetKeyInfo;
 }
 
 public static void KeyUnReg()
 {
-if (KeyRegInfo.KeyList == new KeyInfo().KeyList) return;
 for(int I = 0; I < KeyRegInfo.KeyList.Count; I++)
 {
 UnregisterHotKey(KeyRegInfo.WNDProcHandle, I);
 }
 }
 
+public static void KeyUnReg(string KeyName)
+{
+if (KeyRegInfo.KeyList.IndexOf(KeyName) != -1)
+{
+UnregisterHotKey(KeyRegInfo.WNDProcHandle, KeyRegInfo.KeyList.IndexOf(KeyName));
+}
+}
+
 public static void KeyReg()
 {
-if (KeyRegInfo.KeyList == new KeyInfo().KeyList) return;
 int IDKey = 0;
 foreach(var OBJKey in KeyRegInfo.KeyList)
 {

@@ -92,8 +92,6 @@
   <ItemGroup>
     <Compile Update="Forms\DebugForm.cs" />
     <Compile Update="Forms\DebugFormActions.cs" />
-    <Compile Update="Forms\InputTextBoxActions.cs" />
-    <Compile Update="Forms\InputTextBox.cs" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

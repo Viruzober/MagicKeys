@@ -16,6 +16,8 @@ public partial class MagicKeys
 {
 
 public static Menu HM;
+public static KeyInfo OptionKeyRegInfo = new KeyInfo();
+public static List<string> OptionKeyList = new List<string>();
 [STAThread]
 static void Main()
 {
@@ -54,10 +56,11 @@ PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(PluginDetector);
 ThreadPluginDetector.IsBackground = true;
 ThreadPluginDetector.Start();
-RegisterHotKey(HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
-RegisterHotKey(HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
-RegisterHotKey(HM.Handle, 3, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F4);
-RegisterHotKey(HM.Handle, 4, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F6);
+OptionKeyList.AddRange(new string[] {"Ctrl+Shift+F1", "Ctrl+Shift+F2", "Ctrl+Shift+F4", "Ctrl+Shift+F6"} );
+OptionKeyRegInfo.WNDProcHandle = HM.Handle;
+OptionKeyRegInfo.KeyList = OptionKeyList;
+SetKeyRegContext(OptionKeyRegInfo);
+KeyReg();
 SoundPlay("Start", 0);
 Speak(T._("MagicKeys is ready"));
 Application.Run();

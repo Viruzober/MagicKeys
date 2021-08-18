@@ -1,6 +1,7 @@
 using System;
+using System.Threading;
 using System.Windows.Forms;
-
+using static MKLib;
 namespace MagicKeys
 {
 
@@ -8,16 +9,19 @@ public partial class Menu : Form
 {
 
 public static SettingsForm WSettings;
+
 public void Exit(object sender, EventArgs e)
 {
-MagicKeys.KeySwitch = 1;
-MKLib.UnregisterHotKey(MagicKeys.HM.Handle, 0);
-MKLib.UnregisterHotKey(MagicKeys.HM.Handle, 1);
+MagicKeys.LockPluginDetect = true;
+MagicKeys.SyncThreads.WaitOne();
+SetKeyRegContext(MagicKeys.OptionKeyRegInfo);
+KeyUnReg();
+MagicKeys.SyncThreads.ReleaseMutex();
 Ni.Visible = false;
 if (Settings.Exit == true)
 {
 DialogResult result;
-result = MessageBox.Show(T._("Do you really want to exit MagicKeys?"), T._("Exit MagicKeys"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
+result = MessageBox.Show(T._("Do you really want to exit MagicKeys?"), T._("Exit MagicKeys"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 if (result == DialogResult.OK)
 {
 MKLib.Speak(T._("Goodbye"));
@@ -25,9 +29,8 @@ Application.Exit();
 return;
 }
 Ni.Visible = true;
-MKLib.RegisterHotKey(MagicKeys.HM.Handle, 0, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F1);
-MKLib.RegisterHotKey(MagicKeys.HM.Handle, 1, MKC.CTRL|MKC.SHIFT|MKC.MOD_NOREPEAT, (int)Keys.F2);
-MagicKeys.KeySwitch = 0;
+KeyReg();
+MagicKeys.LockPluginDetect = false;
 }
 else
 {
@@ -47,12 +50,15 @@ proc.Start();
 
 public void SettingsShow(object sender, EventArgs e)
 {
+MagicKeys.LockPluginDetect = true;
+MagicKeys.SyncThreads.WaitOne();
+SetKeyRegContext(MagicKeys.OptionKeyRegInfo);
+KeyUnReg();
+MagicKeys.SyncThreads.ReleaseMutex();
 if (WSettings == null || WSettings.IsDisposed == true)
 {
 WSettings = new SettingsForm();
-WSettings.ShowDialog();
-WSettings.Dispose();
-WSettings = null;
+WSettings.Show      ();
 }
 else
 {

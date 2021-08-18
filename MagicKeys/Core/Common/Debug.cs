@@ -11,7 +11,7 @@ public static void MKDebugForm(string DebugInfo)
 //MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 1);
 //MagicKeys.UnregisterHotKey(MagicKeys.HM.Handle, 2);
 KeyUnReg();
-KeySwitch = 1;
+LockPluginDetect = true;
 using DebugForm DF = new DebugForm();
 DF.DebugInfo = DebugInfo;
 DF.ShowDialog();

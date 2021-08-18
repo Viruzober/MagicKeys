@@ -14,17 +14,17 @@ int modifier = (int)m.LParam & 0xFFFF;
 Keys key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);
 if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F1)
 {
-if (MagicKeys.KeySwitch == 0)
+if (MagicKeys.LockPluginDetect == false)
 {
 Ni.Text = T._("MagicKeys {0} is disabled", MagicKeys.GetVersion());
 MKLib.Speak(T._("MagicKeys is disabled"));
-MagicKeys.KeySwitch = 1;
+MagicKeys.LockPluginDetect = true;
 }
-else if (MagicKeys.KeySwitch == 1)
+else if (MagicKeys.LockPluginDetect == true)
 {
 Ni.Text = T._("MagicKeys {0} is enabled", MagicKeys.GetVersion());
 MKLib.Speak(T._("MagicKeys is enabled"));
-MagicKeys.KeySwitch = 0;
+MagicKeys.LockPluginDetect = false;
 }
 }
 else if (modifier == (MKC.CTRL|MKC.SHIFT) & key == Keys.F2)

@@ -9,7 +9,7 @@ namespace MagicKeys
 
 public partial class MagicKeys
 {
-public static int KeySwitch = 0;
+public static bool LockPluginDetect = false;
 public static OrderedDictionary<string, OrderedDictionary<string, string>> VUIObjects = new OrderedDictionary<string, OrderedDictionary<string, string>>();
 public static List<string> ActiveObjects = new List<string>();
 public static int ObjectsCount;

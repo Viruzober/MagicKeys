@@ -19,7 +19,7 @@ if (Coords == new ModuleCoords())
 {
 return;
 }
-if (KeySwitch == 1)
+if (LockPluginDetect == true)
 {
 return;
 }
@@ -29,7 +29,10 @@ KeyUnReg();
 WaitWinClose("#32768");
 KeyReg();
 }
-if (WinClosed(HWNDTitle, HWNDClass) == true) return;
+if (WinClosed(HWNDTitle, HWNDClass) == true)
+{
+return;
+}
 }
 }
 

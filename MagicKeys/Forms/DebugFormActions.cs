@@ -38,7 +38,7 @@ break;
 
 public void Exit_Click(Object Sender, EventArgs e)
 {
-MagicKeys.KeySwitch = 1;
+MagicKeys.LockPluginDetect = true;
 MagicKeys.HM.Ni.Visible = false;
 Environment.Exit(1);
 }

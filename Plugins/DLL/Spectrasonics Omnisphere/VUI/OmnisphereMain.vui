@@ -1,7 +1,4 @@
-﻿[Params]
-PluginClass=Omnisphere
-Loader=None
-[1]
+﻿[1]
 Text=Voice
 ObjectType=Menu
 Help=Open voice menu
@@ -74,6 +71,22 @@ Text=Resonanse
 ObjectType=Slider
 Help=Not found
 Func=MainResonanseSlider
+[16]
+Text=Velocity Linear
+Help=The linear curve is the most commonly used velocity setting.  Playing harder on the keyboard will have a direct effect on any parameter that is modulated with velocity in an even and linear way.
+Func=MainVelocityLinear
+[17]
+Text=Velocity Exponential Positive
+Help=The Exponential Positive curve means that when playing softly not much effect will be heard, but when playing at a moderate intensity on the keyboard the velocity modulation will be more dramatic than with a linear curve.
+Func=MainVelocityExponentialPositive
+[18]
+Text=Velocity Exponential Negative
+Help=Exponential Negative has the opposite effect of Exponential positive – meaning that it’s better suited for more intense touch and provides the widest musical dynamic range.
+Func=MainVelocityExponentialNegative
+[19]
+Text=Velocity Flat
+Help=Omnisphere will receive the same velocity value with this flat curve.  Useful if a totally consistent and predictable result is desired.
+Func=MainVelocityFlat
 [BackToStartWindow]
 Text=Back
 ObjectType=Button
