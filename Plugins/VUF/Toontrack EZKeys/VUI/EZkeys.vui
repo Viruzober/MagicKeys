@@ -1,6 +1,6 @@
 [Params]
 PluginClass=MagicKeys
-Loader=None
+Loader=VUF
 [1]
 Text=Banks menu
 ObjectType=Button

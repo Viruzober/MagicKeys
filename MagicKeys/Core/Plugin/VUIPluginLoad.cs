@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.IO;
 
@@ -30,6 +31,7 @@ List<string> Funcs = Ini.IniReadKeys(API.GetCurrentVUFLoader(), LoadItem);
 List<string> Params = Ini.IniReadValues(API.GetCurrentVUFLoader(), LoadItem);
 if (Trigger[0] == "Img")
 {
+Thread.Sleep(Convert.ToInt32(LoadValues[1]));
 if (ImgSearch(Trigger[1], true)[0] == Convert.ToInt32(Convert.ToBoolean(Trigger[2])))
 {
 VUFInvoke(Funcs, Params);
