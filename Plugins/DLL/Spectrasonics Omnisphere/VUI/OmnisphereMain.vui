@@ -87,6 +87,18 @@ Func=MainVelocityExponentialNegative
 Text=Velocity Flat
 Help=Omnisphere will receive the same velocity value with this flat curve.  Useful if a totally consistent and predictable result is desired.
 Func=MainVelocityFlat
+[20]
+Text=Solo legato
+Func=MainSoloLegato
+[21]
+Text=Solo
+Func=MainSolo
+[22]
+Text=Glide Legato
+Func=MainGlideLegato
+[23]
+Text=Glide
+Func=MainGlide
 [BackToStartWindow]
 Text=Back
 ObjectType=Button

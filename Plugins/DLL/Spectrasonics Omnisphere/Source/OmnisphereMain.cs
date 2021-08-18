@@ -101,30 +101,58 @@ HostAutomation(Coords.X+810, Coords.Y+610);
 
 public static void MainVelocityLinear()
 {
-MouseClick("Left", Coords.X+1000, Coords.Y+375, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+1030, Coords.Y+270, 1, 0, 0, 10);
 Thread.Sleep(100);
-Speak(CheckStateImg("VelocityLinear", Coords.X+995, Coords.Y+370, Coords.X+1020, Coords.Y+390));
+Speak(CheckStateImg("VelocityLinear", Coords.X+1025, Coords.Y+265, Coords.X+1055, Coords.Y+290));
 }
 
 public static void MainVelocityExponentialPositive()
 {
-MouseClick("Left", Coords.X+1040, Coords.Y+375, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+1060, Coords.Y+270, 1, 0, 0, 10);
 Thread.Sleep(100);
-Speak(CheckStateImg("VelocityExponentialPositive", Coords.X+1035, Coords.Y+370, Coords.X+1060, Coords.Y+390));
+Speak(CheckStateImg("VelocityExponentialPositive", Coords.X+1055, Coords.Y+265, Coords.X+1080, Coords.Y+290));
 }
 
 public static void MainVelocityExponentialNegative()
 {
-MouseClick("Left", Coords.X+1000, Coords.Y+430, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+1030, Coords.Y+290, 1, 0, 0, 10);
 Thread.Sleep(100);
-Speak(CheckStateImg("VelocityExponentialNegative", Coords.X+995, Coords.Y+425, Coords.X+1020, Coords.Y+450));
+Speak(CheckStateImg("VelocityExponentialNegative", Coords.X+1025, Coords.Y+285, Coords.X+1050, Coords.Y+300));
 }
 
 public static void MainVelocityFlat()
 {
-MouseClick("Left", Coords.X+1040, Coords.Y+430, 1, 0, 0, 10);
+MouseClick("Left", Coords.X+1060, Coords.Y+290, 1, 0, 0, 10);
 Thread.Sleep(100);
-Speak(CheckStateImg("VelocityFlat", Coords.X+1035, Coords.Y+425, Coords.X+1060, Coords.Y+450));
+Speak(CheckStateImg("VelocityFlat", Coords.X+1055, Coords.Y+285, Coords.X+1080, Coords.Y+300));
+}
+
+public static void MainSoloLegato()
+{
+MouseClick("Left", Coords.X+1000, Coords.Y+380, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("SoloLegato", Coords.X+995, Coords.Y+375, Coords.X+1020, Coords.Y+400));
+}
+
+public static void MainSolo()
+{
+MouseClick("Left", Coords.X+1040, Coords.Y+365, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("Solo", Coords.X+1035, Coords.Y+360, Coords.X+1060, Coords.Y+380));
+}
+
+public static void MainGlideLegato()
+{
+MouseClick("Left", Coords.X+1000, Coords.Y+425, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("GlideLegato", Coords.X+995, Coords.Y+420, Coords.X+1020, Coords.Y+445));
+}
+
+public static void MainGlide()
+{
+MouseClick("Left", Coords.X+1040, Coords.Y+425, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("Glide", Coords.X+1035, Coords.Y+420, Coords.X+1060, Coords.Y+445));
 }
 
 public static void MainBack()
