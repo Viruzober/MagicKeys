@@ -99,6 +99,18 @@ Func=MainGlideLegato
 [23]
 Text=Glide
 Func=MainGlide
+[24]
+Text=Glide A
+Func=MainGlideA
+[25]
+Text=Glide B
+Func=MainGlideB
+[26]
+Text=Glide C
+Func=MainGlideC
+[27]
+Text=Glide D
+Func=MainGlideD
 [BackToStartWindow]
 Text=Back
 ObjectType=Button

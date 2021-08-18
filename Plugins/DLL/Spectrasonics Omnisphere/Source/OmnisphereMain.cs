@@ -152,7 +152,42 @@ public static void MainGlide()
 {
 MouseClick("Left", Coords.X+1040, Coords.Y+425, 1, 0, 0, 10);
 Thread.Sleep(200);
-Speak(CheckStateImg("Glide", Coords.X+1035, Coords.Y+420, Coords.X+1060, Coords.Y+445));
+string CheckState = CheckStateImg("Glide", Coords.X+1035, Coords.Y+420, Coords.X+1060, Coords.Y+445);
+Speak(CheckState);
+if(CheckState == "Checked")
+{
+VUIObjectSwitcher(false, "true", "24", "27");
+return;
+}
+VUIObjectSwitcher(false, "false", "24", "27");
+}
+
+public static void MainGlideA()
+{
+MouseClick("Left", Coords.X+1030, Coords.Y+465, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("GlideA", Coords.X+1000, Coords.Y+450, Coords.X+1090, Coords.Y+490));
+}
+
+public static void MainGlideB()
+{
+MouseClick("Left", Coords.X+1040, Coords.Y+465, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("GlideB", Coords.X+1000, Coords.Y+450, Coords.X+1090, Coords.Y+490));
+}
+
+public static void MainGlideC()
+{
+MouseClick("Left", Coords.X+1055, Coords.Y+465, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("GlideC", Coords.X+1000, Coords.Y+450, Coords.X+1090, Coords.Y+490));
+}
+
+public static void MainGlideD()
+{
+MouseClick("Left", Coords.X+1075, Coords.Y+465, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("GlideD", Coords.X+1000, Coords.Y+450, Coords.X+1090, Coords.Y+490));
 }
 
 public static void MainBack()

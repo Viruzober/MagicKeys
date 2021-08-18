@@ -1,0 +1,20 @@
+Name: Glide A
+X: 1030
+Y: 465
+Color: #68B5E9
+
+Name: Glide B
+X: 1040
+Y: 465
+Color: #50535C
+
+Name: Glide C
+X: 1055
+Y: 465
+Color: #868B9C
+
+Name: Glide D
+X: 1075
+Y: 465
+Color: #5392BC
+
