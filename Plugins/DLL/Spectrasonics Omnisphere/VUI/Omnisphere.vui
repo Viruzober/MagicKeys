@@ -21,3 +21,7 @@ Ctrl+C=SelectChannel
 Text=Main
 ObjectType=Tab
 Func=MainTab
+[2]
+Text=Layers
+ObjectType=Tab
+Func=LayersTab

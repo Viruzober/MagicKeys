@@ -73,44 +73,88 @@ Help=Not found
 Func=MainResonanseSlider
 [16]
 Text=Velocity Linear
+ObjectType=RadioBox
 Help=The linear curve is the most commonly used velocity setting.  Playing harder on the keyboard will have a direct effect on any parameter that is modulated with velocity in an even and linear way.
 Func=MainVelocityLinear
 [17]
 Text=Velocity Exponential Positive
+ObjectType=RadioBox
 Help=The Exponential Positive curve means that when playing softly not much effect will be heard, but when playing at a moderate intensity on the keyboard the velocity modulation will be more dramatic than with a linear curve.
 Func=MainVelocityExponentialPositive
 [18]
 Text=Velocity Exponential Negative
+ObjectType=RadioBox
 Help=Exponential Negative has the opposite effect of Exponential positive – meaning that it’s better suited for more intense touch and provides the widest musical dynamic range.
 Func=MainVelocityExponentialNegative
 [19]
 Text=Velocity Flat
+ObjectType=RadioBox
 Help=Omnisphere will receive the same velocity value with this flat curve.  Useful if a totally consistent and predictable result is desired.
 Func=MainVelocityFlat
 [20]
 Text=Solo legato
+ObjectType=CheckBox
 Func=MainSoloLegato
 [21]
 Text=Solo
+ObjectType=CheckBox
 Func=MainSolo
 [22]
 Text=Glide Legato
+ObjectType=CheckBox
 Func=MainGlideLegato
 [23]
-Text=Glide
+Text=Option glide
+ObjectType=CheckBox
 Func=MainGlide
 [24]
 Text=Glide A
+ObjectType=CheckBox
 Func=MainGlideA
 [25]
 Text=Glide B
+ObjectType=CheckBox
 Func=MainGlideB
 [26]
 Text=Glide C
+ObjectType=CheckBox
 Func=MainGlideC
 [27]
 Text=Glide D
+ObjectType=CheckBox
 Func=MainGlideD
+[28]
+Text=Glide time
+ObjectType=Slider
+Func=MainGlideTimeSlider
+[29]
+Text=Pitch band up
+ObjectType=Menu
+Func=MainPitchBandUp
+[30]
+Text=Pitch band down
+ObjectType=Menu
+Func=MainPitchBandDown
+[31]
+Text=Sustain
+ObjectType=Slider
+Func=MainSustainSlider
+[32]
+Text=Sustain
+ObjectType=CheckBox
+Func=MainSustainCheckBox
+[33]
+Text=Sustain 1
+ObjectType=RadioBox
+Func=MainSustainBtn1
+[34]
+Text=Sustain 2
+ObjectType=RadioBox
+Func=MainSustainBtn2
+[35]
+Text=Expression
+ObjectType=RadioBox
+Func=MainExpressionCheckBox
 [BackToStartWindow]
 Text=Back
 ObjectType=Button

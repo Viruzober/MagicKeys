@@ -1,0 +1,16 @@
+﻿[TypeLayerA]
+Text=Type layer A
+ObjectType=Menu
+Func=TypeLayerA
+[TypeLayerB]
+Text=Type layer B
+ObjectType=Menu
+Func=TypeLayerB
+[TypeLayerC]
+Text=Type layer C
+ObjectType=Menu
+Func=TypeLayerC
+[TypeLayerD]
+Text=Type layer D
+ObjectType=Menu
+Func=TypeLayerD

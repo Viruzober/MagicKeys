@@ -190,6 +190,54 @@ Thread.Sleep(200);
 Speak(CheckStateImg("GlideD", Coords.X+1000, Coords.Y+450, Coords.X+1090, Coords.Y+490));
 }
 
+public static void MainGlideTimeSlider()
+{
+HostAutomation(Coords.X+1105, Coords.Y+435);
+}
+
+public static void MainPitchBandUp()
+{
+MouseClick("Left", Coords.X+1020, Coords.Y+510, 1, 0, 0, 10);
+}
+
+public static void MainPitchBandDown()
+{
+MouseClick("Left", Coords.X+1090, Coords.Y+510, 1, 0, 0, 10);
+}
+
+public static void MainSustainSlider()
+{
+HostAutomation(Coords.X+990, Coords.Y+600);
+}
+
+public static void MainSustainCheckBox()
+{
+MouseClick("Left", Coords.X+1030, Coords.Y+590, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("MainSustainCheckBox", Coords.X+1025, Coords.Y+585, Coords.X+1050, Coords.Y+610));
+}
+
+public static void MainSustainBtn1()
+{
+MouseClick("Left", Coords.X+995, Coords.Y+585, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("MainSustain1", Coords.X+990, Coords.Y+570, Coords.X+1010, Coords.Y+610));
+}
+
+public static void MainSustainBtn2()
+{
+MouseClick("Left", Coords.X+995, Coords.Y+595, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("MainSustain2", Coords.X+990, Coords.Y+570, Coords.X+1010, Coords.Y+610));
+}
+
+public static void MainExpressionCheckBox()
+{
+MouseClick("Left", Coords.X+1090, Coords.Y+595, 1, 0, 0, 10);
+Thread.Sleep(200);
+Speak(CheckStateImg("ExpressionCheckBox", Coords.X+1085, Coords.Y+570, Coords.X+1110, Coords.Y+610));
+}
+
 public static void MainBack()
 {
 VUILoader("Omnisphere");
