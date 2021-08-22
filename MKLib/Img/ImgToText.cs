@@ -25,9 +25,7 @@ g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
 Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
 S.Save(memoryStream, ImageFormat.Png);
 byte[] b = memoryStream.GetBuffer();
-IntPtr Handle = Marshal.AllocHGlobal(b.Length);
-Marshal.Copy(b, 0, Handle, b.Length);
-string Result = Task.Run(() => OCR(Handle, (uint)b.Length, Lang)).Result;
+string Result = Task.Run(() => OCR(b, Lang)).Result;
 OCRResult JsonResult = JsonSerializer.Deserialize<OCRResult>(Result);
 return JsonResult.text;
 }
@@ -53,9 +51,7 @@ g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
 Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
 S.Save(memoryStream, ImageFormat.Png);
 byte[] b = memoryStream.GetBuffer();
-IntPtr Handle = Marshal.AllocHGlobal(b.Length);
-Marshal.Copy(b, 0, Handle, b.Length);
-string Result = Task.Run(() => OCR(Handle, (uint)b.Length, Lang)).Result;
+string Result = Task.Run(() => OCR(b, Lang)).Result;
 OCRResult JsonResult = JsonSerializer.Deserialize<OCRResult>(Result);
 return JsonResult;
 }
@@ -66,9 +62,13 @@ return null;
 }
 }
 
-public static string OCR(IntPtr Handle, uint Size, string Lang)
+public static string OCR(byte[] b, string Lang)
 {
-return Marshal.PtrToStringUni(Recognize(Handle, Size, Marshal.StringToHGlobalUni(Lang)));
+IntPtr Handle = Marshal.AllocHGlobal(b.Length);
+Marshal.Copy(b, 0, Handle, b.Length);
+var Result = Marshal.PtrToStringUni(Recognize(Handle, (uint)b.Length, Lang));
+Marshal.FreeHGlobal(Handle);
+return Result;
 }
 
 }

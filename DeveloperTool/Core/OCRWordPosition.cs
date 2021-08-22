@@ -27,9 +27,7 @@ g.CopyFromScreen(P[1], P[2], 00, 0, Screen.Size);
 var memoryStream = new MemoryStream();
 Screen.Save(memoryStream, ImageFormat.Bmp);
 byte[] b = memoryStream.ToArray();
-IntPtr Handle = Marshal.AllocHGlobal(b.Length);
-Marshal.Copy(b, 0, Handle, b.Length);
-string Resulte = Task.Run(() => MKLib.OCR(Handle, (uint)b.Length, "en")).Result;
+string Resulte = Task.Run(() => MKLib.OCR(b, "en")).Result;
 OCRResult JsonResulte = JsonSerializer.Deserialize<OCRResult>(Resulte);
 OCRResultForm ORF = new		OCRResultForm();
 foreach(var Line in JsonResulte.lines)

@@ -18,11 +18,9 @@ VUILoader("LibraryManager");
 
 public static void LibraryManager()
 {
-KeyUnReg();
-OCRResult r =  GetOCRResult(Coords.W, Coords.H, Coords.X, Coords.Y, 1);
-OmnisphereLibraryManager omnisphereLibraryManager = new OmnisphereLibraryManager(r);
-omnisphereLibraryManager.ShowDialog();
-KeyReg();
+OCRResult OCRLibraryManager =  GetOCRResult(720, 520, Coords.X, Coords.Y+100, 1);
+OmnisphereLibraryManager manager = new OmnisphereLibraryManager(OCRLibraryManager);
+manager.ShowDialog();
 }
 
 }
@@ -30,24 +28,16 @@ KeyReg();
 public class OmnisphereLibraryManager : Form
 {
 
-public OmnisphereLibraryManager(OCRResult r)
+public OmnisphereLibraryManager(OCRResult OCRLibraryManager)
 {
-this.Size = new System.Drawing.Size(100, 100);
-this.Location = new System.Drawing.Point(100, 100);
-ComboBox t = new ComboBox();
-t.Location = new System.Drawing.Point(10, 10);
-t.Size = new System.Drawing.Size(100, 100);
-t.DropDownStyle = ComboBoxStyle.DropDownList;
-foreach(var item in r.lines)
+foreach(var item in OCRLibraryManager.lines)
 {
-t.Items.Add(item.text);
+
 }
-this.Controls.Add(t);
-this.Load += wshow;
+this.Load += Form_Load;
 }
 
-
-public void wshow(object sender, EventArgs e)
+public void Form_Load(object sender, EventArgs e)
 {
 this.Activate();
 }
