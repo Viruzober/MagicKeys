@@ -18,10 +18,13 @@ Ctrl+3=Genre
 Ctrl+F=Search
 Ctrl+C=SelectChannel
 [1]
+Text=Library manager
+Func=GoToLibraryManager
+[2]
 Text=Main
 ObjectType=Tab
 Func=MainTab
-[2]
+[3]
 Text=Layers
 ObjectType=Tab
 Func=LayersTab

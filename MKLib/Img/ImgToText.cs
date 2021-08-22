@@ -37,6 +37,35 @@ return "Error OCR angine";
 }
 }
 
+public static OCRResult GetOCRResult(int W, int H, int X, int Y, int Zoom, string Lang = "en")
+{
+if (Environment.OSVersion.Version.Major < 10)
+{
+Speak("Windows 10 OCR is not evalable");
+return null;
+}
+try
+{
+using var memoryStream = new MemoryStream();
+Bitmap Screen = new Bitmap(W, H);
+Graphics g = Graphics.FromImage(Screen);
+g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
+Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
+S.Save(memoryStream, ImageFormat.Png);
+byte[] b = memoryStream.GetBuffer();
+IntPtr Handle = Marshal.AllocHGlobal(b.Length);
+Marshal.Copy(b, 0, Handle, b.Length);
+string Result = Task.Run(() => OCR(Handle, (uint)b.Length, Lang)).Result;
+OCRResult JsonResult = JsonSerializer.Deserialize<OCRResult>(Result);
+return JsonResult;
+}
+catch(Exception)
+{
+Speak("Error OCR angine");
+return null;
+}
+}
+
 public static string OCR(IntPtr Handle, uint Size, string Lang)
 {
 return Marshal.PtrToStringUni(Recognize(Handle, Size, Marshal.StringToHGlobalUni(Lang)));

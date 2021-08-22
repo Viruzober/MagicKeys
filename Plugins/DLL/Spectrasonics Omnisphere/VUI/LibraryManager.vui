@@ -1,0 +1,4 @@
+﻿[Keys]
+Ctrl+L=LibraryManager
+Home=LibraryManagerPreset,Back
+End=LibraryManagerPreset,Next

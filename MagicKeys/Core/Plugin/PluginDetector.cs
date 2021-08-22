@@ -35,12 +35,11 @@ if (Coords != new ModuleCoords())
 {
 VUILoader(API.GetVUI());
 SoundPlay("WindowOpened", 0);
-//SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
+SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
 SyncThreads.WaitOne();
 WaitPluginClose(OptionWindowInfo[0], OptionWindowInfo[1]);
 KeyUnReg();
 SyncThreads.ReleaseMutex();
-
 VUIKeys.Clear();
 VUIObjects.Clear();
 ActiveObjects.Clear();

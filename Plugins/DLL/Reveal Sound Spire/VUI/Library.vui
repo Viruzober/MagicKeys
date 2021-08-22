@@ -1,3 +1,5 @@
+[Params]
+Loader=Code
 [Keys]
 Home=ChangeBank,Up
 End=ChangeBank,Down

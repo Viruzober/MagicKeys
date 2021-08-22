@@ -1,3 +1,5 @@
+[Params]
+Loader=Code
 [Keys]
 PageUp=SpeakPreset,Previous
 PageDown=SpeakPreset,Next
