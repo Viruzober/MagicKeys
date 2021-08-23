@@ -2,7 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2021-08-23 15:40+0300\n"
+=======
+"POT-Creation-Date: 2021-08-23 20:43+0300\n"
+>>>>>>> 98ee1fc691dbbd0a638d0b72cfab10820c1fb3a4
 "PO-Revision-Date: 2021-08-23 13:44+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
