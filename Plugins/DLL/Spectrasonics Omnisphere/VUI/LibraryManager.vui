@@ -1,4 +1,11 @@
 ﻿[Keys]
 Ctrl+L=LibraryManager
-Home=LibraryManagerPreset,Back
-End=LibraryManagerPreset,Next
+Shift+L=SelectLibrary
+[SelectLibrary]
+Text= Select library
+ObjectType=Button
+Func=SelectLibrary
+[LibraryManager]
+Text=Open library manager selector
+ObjectType=Button
+Func=LibraryManager
