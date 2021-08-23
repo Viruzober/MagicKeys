@@ -45,8 +45,8 @@ MouseClick("Left", Coords.X+440, Coords.Y+10, 1, 0, 0, 10);
 public static void Register()
 {
 InputTextBox ITBC = new InputTextBox();
-ITBC.Text = T._("Enter Activation code");
-ITBC.InputBoxLabel.Text = T._("Enter activation code.");
+ITBC.Text = "Enter Activation code";
+ITBC.InputBoxLabel.Text = "Enter activation code.";
 ITBC.ShowDialog();
 if (ITBC.DialogResult == DialogResult.OK)
 {
