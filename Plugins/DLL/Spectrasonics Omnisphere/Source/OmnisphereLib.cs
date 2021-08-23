@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using Microsoft.Collections.Extensions;
 using System.Threading;
 using static MagicKeys.MagicKeys;
 using static MKLib;
 using System.Windows.Forms;
-
+using System.Drawing;
 namespace MagicKeys
 {
 
@@ -18,8 +20,17 @@ VUILoader("LibraryManager");
 
 public static void LibraryManager()
 {
-OCRResult OCRLibraryManager =  GetOCRResult(720, 520, Coords.X, Coords.Y+100, 5);
-OmnisphereLibraryManager Manager = new OmnisphereLibraryManager(OCRLibraryManager);
+int OldX = Coords.X;
+List<OCRResult> TableLines = new List<OCRResult>();
+while(true)
+{
+int[] ColumnSeparator = ImgSearchArea("LibraryManagerLine", OldX, Coords.Y+100, Coords.X+Coords.W, Coords.Y+Coords.H, 50);
+if (ColumnSeparator[0] == 0) break;
+OCRResult OCRLibraryManager =  GetOCRResult(ColumnSeparator[1] - OldX, 520, OldX, Coords.Y+100, 1);
+OldX = ColumnSeparator[1]+5;
+TableLines.Add(OCRLibraryManager);
+}
+OmnisphereLibraryManager Manager = new OmnisphereLibraryManager(TableLines);
 Manager.ShowDialog();
 }
 
@@ -28,18 +39,28 @@ Manager.ShowDialog();
 public class OmnisphereLibraryManager : Form
 {
 
-public OmnisphereLibraryManager(OCRResult OCRLibraryManager)
-{
-this.Text = "Omnisphere library manager";
-foreach(var item in OCRLibraryManager.Lines)
-{
+public OrderedDictionary<string, ComboBox> LinesComboBoxes = new OrderedDictionary<string, ComboBox>();
 
+public OmnisphereLibraryManager(List<OCRResult> OCRLibraryManager)
+{
+this.StartPosition = FormStartPosition.CenterScreen;
+this.Text = "Omnisphere library manager";
+this.Size = new Size(400, 300);
+TableLayoutPanel Table = new TableLayoutPanel();
+Table.Size = this.Size;
+Table.Location = new Point(0, 0);
+Table.ColumnCount = 2;
+foreach(var OcrItem in OCRLibraryManager)
+{
+Table.Controls.Add(new Label() {Text = "курац"});
 }
+this.Controls.Add(Table);
 this.Load += Form_Load;
 }
 
 public void Form_Load(object sender, EventArgs e)
 {
+Application.DoEvents();
 this.Activate();
 }
 
