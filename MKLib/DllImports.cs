@@ -93,7 +93,7 @@ public static extern int nvdaController_brailleMessage(string Text);
 [return: MarshalAs(UnmanagedType.BStr)]
 public static extern string Recognize(byte[] Img, uint Size, [MarshalAs(UnmanagedType.BStr)] string Lang);
 #else
-[DllImport("WinRTOCR32.dll", , CharSet = CharSet.Auto)]
+[DllImport("WinRTOCR32.dll", CharSet = CharSet.Auto)]
 [return: MarshalAs(UnmanagedType.BStr)]
 public static extern string Recognize(byte[] Img, uint Size, [MarshalAs(UnmanagedType.BStr)] string Lang);
 #endif

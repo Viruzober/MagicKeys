@@ -66,7 +66,7 @@ public void InitButton()
 {
 Ins.Size = new Size(200, 40);
 Ins.Location = new Point(575, 350);
-Ins.Text = T._("Установить");
+Ins.Text = T._("Install");
 Ins.Click += Ins_Click;
 this.Controls.Add(Ins);
 }

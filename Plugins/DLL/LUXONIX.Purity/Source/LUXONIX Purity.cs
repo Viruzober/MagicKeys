@@ -21,12 +21,12 @@ return;
 public static void Register()
 {
 InputTextBox ITBS = new InputTextBox();
-ITBS.Text = T._("Enter serial");
-ITBS.InputBoxLabel.Text = T._("Enter serial key.");
+ITBS.Text = "Enter serial";
+ITBS.InputBoxLabel.Text = "Enter serial key.";
 ITBS.ShowDialog();
 InputTextBox ITBC = new InputTextBox();
-ITBC.Text = T._("Enter Activation code");
-ITBC.InputBoxLabel.Text = T._("Enter activation code.");
+ITBC.Text = "Enter Activation code";
+ITBC.InputBoxLabel.Text = "Enter activation code.";
 ITBC.ShowDialog();
 if (ITBS.DialogResult == DialogResult.OK)
 {

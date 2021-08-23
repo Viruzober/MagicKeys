@@ -18,10 +18,11 @@ public partial class MagicKeys
 public static Menu HM;
 public static KeyInfo OptionKeyRegInfo = new KeyInfo();
 public static List<string> OptionKeyList = new List<string>();
+
 [STAThread]
 static void Main()
 {
-//Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
+Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
 Application.ThreadException +=
 (o, e) => MKDebugForm("ExceptionHook|"+e.Exception.ToString());
 Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
