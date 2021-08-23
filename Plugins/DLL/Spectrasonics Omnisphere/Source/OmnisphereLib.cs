@@ -19,7 +19,8 @@ VUILoader("LibraryManager");
 public static void LibraryManager()
 {
 OCRResult OCRLibraryManager =  GetOCRResult(720, 520, Coords.X, Coords.Y+100, 5);
-Speak(OCRLibraryManager.Text);
+OmnisphereLibraryManager Manager = new OmnisphereLibraryManager(OCRLibraryManager);
+Manager.ShowDialog();
 }
 
 }
