@@ -18,9 +18,8 @@ VUILoader("LibraryManager");
 
 public static void LibraryManager()
 {
-OCRResult OCRLibraryManager =  GetOCRResult(720, 520, Coords.X, Coords.Y+100, 1);
-OmnisphereLibraryManager manager = new OmnisphereLibraryManager(OCRLibraryManager);
-manager.ShowDialog();
+OCRResult OCRLibraryManager =  GetOCRResult(720, 520, Coords.X, Coords.Y+100, 5);
+Speak(OCRLibraryManager.Text);
 }
 
 }
@@ -30,7 +29,8 @@ public class OmnisphereLibraryManager : Form
 
 public OmnisphereLibraryManager(OCRResult OCRLibraryManager)
 {
-foreach(var item in OCRLibraryManager.lines)
+this.Text = "Omnisphere library manager";
+foreach(var item in OCRLibraryManager.Lines)
 {
 
 }

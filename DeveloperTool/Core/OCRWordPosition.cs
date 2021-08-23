@@ -30,13 +30,13 @@ byte[] b = memoryStream.ToArray();
 string Resulte = Task.Run(() => MKLib.OCR(b, "en")).Result;
 OCRResult JsonResulte = JsonSerializer.Deserialize<OCRResult>(Resulte);
 OCRResultForm ORF = new		OCRResultForm();
-foreach(var Line in JsonResulte.lines)
+foreach(var Line in JsonResulte.Lines)
 {
-for(int I = 0; I <= Line.words.Count-1; I++)
+for(int I = 0; I <= Line.Words.Count-1; I++)
 {
-LW.Add(Line.words[I].text);
-LX.Add(Convert.ToInt32(Line.words[I].rect.x));
-LY.Add(Convert.ToInt32(Line.words[I].rect.y));
+LW.Add(Line.Words[I].Text);
+LX.Add(Convert.ToInt32(Line.Words[I].BoundingRect.X));
+LY.Add(Convert.ToInt32(Line.Words[I].BoundingRect.Y));
 }
 }
 foreach(var W in LW){

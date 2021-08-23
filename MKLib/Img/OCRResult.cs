@@ -3,26 +3,27 @@ using System.Collections.Generic;
 
 public class Rect
 {
-public int x { get; set; }
-public int y { get; set; }
-public int width { get; set; }
-public int height { get; set; }
+public int X { get; set; }
+public int Y { get; set; }
+public int Width { get; set; }
+public int Height { get; set; }
 }
 
 public class Word
 {
-public string text { get; set; }
-public Rect rect { get; set; }
+public string Text { get; set; }
+public Rect BoundingRect { get; set; }
 }
 
 public class Line
 {
-public string text { get; set; }
-public List<Word> words { get; set; }
+public string Text { get; set; }
+public List<Word> Words { get; set; }
 }
 
-public class OCRResult
+    public class OCRResult
 {
-public string text { get; set; }
-public List<Line> lines { get; set; }
+public string Text { get; set; }
+public Nullable<double> TextAngle { get; set; }
+public List<Line> Lines { get; set; }
 }

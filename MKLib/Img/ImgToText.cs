@@ -14,7 +14,7 @@ public static string ImgToText(int W, int H, int X, int Y, int Zoom, string Lang
 {
 if (Environment.OSVersion.Version.Major < 10)
 {
-return "Windows 10 OCR is not evalable";
+return "Windows OCR is not available";
 }
 try
 {
@@ -22,12 +22,12 @@ using var memoryStream = new MemoryStream();
 Bitmap Screen = new Bitmap(W, H);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
-Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
-S.Save(memoryStream, ImageFormat.Png);
+Bitmap S = ResizeImage(Screen, Zoom);
+S.Save(memoryStream, ImageFormat.Bmp);
 byte[] b = memoryStream.GetBuffer();
 string Result = Task.Run(() => OCR(b, Lang)).Result;
 OCRResult JsonResult = JsonSerializer.Deserialize<OCRResult>(Result);
-return JsonResult.text;
+return JsonResult.Text;
 }
 catch(Exception)
 {
@@ -39,7 +39,7 @@ public static OCRResult GetOCRResult(int W, int H, int X, int Y, int Zoom, strin
 {
 if (Environment.OSVersion.Version.Major < 10)
 {
-Speak("Windows 10 OCR is not evalable");
+Speak("Windows OCR is not available");
 return null;
 }
 try
@@ -48,8 +48,8 @@ using var memoryStream = new MemoryStream();
 Bitmap Screen = new Bitmap(W, H);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(X, Y, 00, 0, Screen.Size);
-Bitmap S = new Bitmap(Screen, new Size(W*Zoom, H*Zoom));
-S.Save(memoryStream, ImageFormat.Png);
+Bitmap S = ResizeImage(Screen, Zoom);
+S.Save(memoryStream, ImageFormat.Bmp);
 byte[] b = memoryStream.GetBuffer();
 string Result = Task.Run(() => OCR(b, Lang)).Result;
 OCRResult JsonResult = JsonSerializer.Deserialize<OCRResult>(Result);
@@ -64,10 +64,7 @@ return null;
 
 public static string OCR(byte[] b, string Lang)
 {
-IntPtr Handle = Marshal.AllocHGlobal(b.Length);
-Marshal.Copy(b, 0, Handle, b.Length);
-var Result = Marshal.PtrToStringUni(Recognize(Handle, (uint)b.Length, Lang));
-Marshal.FreeHGlobal(Handle);
+string Result = Recognize(b, (uint)b.Length, Lang);
 return Result;
 }
 

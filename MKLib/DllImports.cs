@@ -89,11 +89,13 @@ public static extern int nvdaController_speakText(string text);
 public static extern int nvdaController_brailleMessage(string Text);
 #endif
 #if X64
-[DllImport("WinRTOCR64.dll")]
-public static extern IntPtr Recognize(IntPtr Img, uint Size, [MarshalAs(UnmanagedType.LPTStr)] string Lang);
+[DllImport("WinRTOCR64.dll", CharSet = CharSet.Auto)]
+[return: MarshalAs(UnmanagedType.BStr)]
+public static extern string Recognize(byte[] Img, uint Size, [MarshalAs(UnmanagedType.BStr)] string Lang);
 #else
-[DllImport("WinRTOCR32.dll")]
-public static extern IntPtr Recognize(IntPtr Img, uint Size, [MarshalAs(UnmanagedType.LPTStr)] string Lang);
+[DllImport("WinRTOCR32.dll", , CharSet = CharSet.Auto)]
+[return: MarshalAs(UnmanagedType.BStr)]
+public static extern string Recognize(byte[] Img, uint Size, [MarshalAs(UnmanagedType.BStr)] string Lang);
 #endif
 [DllImport( "user32.dll", SetLastError = true )]
 public static extern int GetWindowThreadProcessId ( IntPtr hWnd, out int lpdwProcessId );

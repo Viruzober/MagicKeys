@@ -64,17 +64,17 @@ MouseClick("Left", Coords.X+220, Coords.Y+400, 1, 0, 0, 10);
 
 public static void HostAutomation(int X, int Y)
 {
-MouseClick("Right", X, Y, 1, 0, 0, 1);
+MouseClick("Right", X, Y, 1, 0, 0, 10);
 if (MenuItemClick("Enable Host") == true)
 {
-KeySend("Keys", "LCtrl", 50, 50);
+KeySend("Keys", "LCtrl", 100, 100);
 Speak("Enabled host automation");
 return;
 }
 else
 {
 MenuItemClick("Unlearn Host Automation ID");
-KeySend("Keys", "LCtrl", 50, 50);
+KeySend("Keys", "LCtrl", 100, 100);
 Speak("Disabled host automation");
 }
 }
