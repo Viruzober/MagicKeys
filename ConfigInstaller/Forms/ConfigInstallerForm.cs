@@ -33,13 +33,13 @@ public void InitLabel()
 Label List = new Label();
 List.Size = new Size(190, 20);
 List.Location = new Point(20, 10);
-List.Text = T._("Плагины");
+List.Text = T._("Plugins");
 List.TabIndex = 1;
 this.Controls.Add(List);
 Label Log = new Label();
 Log.Size = new Size(190, 20);
 Log.Location = new Point(220, 10);
-Log.Text = T._("Результат");
+Log.Text = T._("Result");
 Log.TabIndex = 3;
 this.Controls.Add(Log);
 }
