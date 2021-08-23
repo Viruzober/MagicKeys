@@ -1,0 +1,422 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MagicKeys\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-23 13:15+0200\n"
+"PO-Revision-Date: 2021-08-23 13:44+0200\n"
+"Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: T._\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: MagicKeys\n"
+
+#: ConfigInstaller\ConfigInstaller.cs:16
+msgid ""
+"For MagicKeys to work correctly, you need to set the screen scale to 100%. "
+"When you click the \"yes\" button, this will be done automatically."
+msgstr ""
+"Чтобы MagicKeys работал корректно, необходимо установить масштаб экрана на "
+"100%. Когда вы нажмете кнопку «да», это будет сделано автоматически."
+
+#: ConfigInstaller\ConfigInstaller.cs:17
+#: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
+#: MKUpdater\Forms\UpdateFormActions.cs:21
+msgid "Warning"
+msgstr "Внимание"
+
+#: ConfigInstaller\ConfigInstaller.cs:26
+msgid ""
+"Also, for the MagicKeys to work properly, you need to set the maximum "
+"display resolution. Click \"Yes\" to automatically apply the parameter."
+msgstr ""
+"Также, чтобы MagicKeys работал корректно, нужно установить максимальное "
+"разрешение экрана. Нажмите «Да», чтобы автоматически применить параметр."
+
+#: ConfigInstaller\ConfigInstaller.cs:27
+msgid "Attention"
+msgstr "Внимание"
+
+#: ConfigInstaller\Forms\ConfigInstallerForm.cs:36
+msgid "Plugins"
+msgstr "Плагины"
+
+#: ConfigInstaller\Forms\ConfigInstallerForm.cs:42
+msgid "Result"
+msgstr "Результат"
+
+#: ConfigInstaller\Forms\ConfigInstallerForm.cs:69
+msgid "Install"
+msgstr "Установить"
+
+#: DeveloperTool\Core\ControlSearch.cs:17
+msgid "Control search"
+msgstr "Поиск элементов управлений"
+
+#: DeveloperTool\Core\ControlSearch.cs:18
+msgid "Enter substring to search for a module."
+msgstr "Введите подстроку для поиска модуля."
+
+#: DeveloperTool\Core\ImgSave.cs:15
+msgid "Image name"
+msgstr "Название изображения"
+
+#: DeveloperTool\Core\ImgSave.cs:15
+msgid "Enter image name."
+msgstr "Введите название изображения."
+
+#: DeveloperTool\Core\MouseGoTo.cs:16
+msgid "Mouse X"
+msgstr "координата мыши X"
+
+#: DeveloperTool\Core\MouseGoTo.cs:17
+msgid "Enter new mouse position X"
+msgstr "Введите новую позицию мыши X"
+
+#: DeveloperTool\Core\MouseGoTo.cs:33
+msgid "Mouse Y"
+msgstr "Координата мыши Y"
+
+#: DeveloperTool\Core\MouseGoTo.cs:34
+msgid "Enter new mouse position Y"
+msgstr "Введите новое положение мыши Y"
+
+#: DeveloperTool\Core\MouseStepChange.cs:15
+msgid "Mouse step"
+msgstr "Шаг мыши"
+
+#: DeveloperTool\Core\MouseStepChange.cs:16
+msgid "Enter mouse step:"
+msgstr "Введите шаг мыши в пикселях:"
+
+#: DeveloperTool\Core\OCRClick.cs:11 DeveloperTool\Core\VisionBot.cs:19
+#: DeveloperTool\Core\WindowsOCR.cs:13
+msgid "No rectangle for OCR"
+msgstr "Нет прямоугольника для OCR"
+
+#: DeveloperTool\Core\OCRZoomChange.cs:15
+msgid "OCR Zoom"
+msgstr "увеличение OCR"
+
+#: DeveloperTool\Core\OCRZoomChange.cs:16
+msgid "Enter OCR Zoom value:"
+msgstr "Введите значение увеличения для OCR:"
+
+#: DeveloperTool\Core\RectOCR.cs:16
+msgid "OCR Width"
+msgstr "Ширина OCR"
+
+#: DeveloperTool\Core\RectOCR.cs:17
+msgid "Enter OCR width:"
+msgstr "Введите ширину OCR:"
+
+#: DeveloperTool\Core\RectOCR.cs:32
+msgid "OCR Height"
+msgstr "Высота OCR"
+
+#: DeveloperTool\Core\RectOCR.cs:33
+msgid "Enter OCR height:"
+msgstr "Введите высоту OCR:"
+
+#: DeveloperTool\Core\Save.cs:16 MagicKeys\Settings\SettingsForm.cs:90
+msgid "Save"
+msgstr "Сохранить"
+
+#: DeveloperTool\Core\Save.cs:16
+msgid "Enter name for save."
+msgstr "Введите название для сохранения."
+
+#: DeveloperTool\Core\SpeakWindowRect.cs:10
+msgid "Width"
+msgstr "Ширина"
+
+#: DeveloperTool\Core\SpeakWindowRect.cs:10
+msgid "Height"
+msgstr "Высота"
+
+#: DeveloperTool\Forms\MenuForm.cs:24
+msgid "Developer tool"
+msgstr "Developer tool"
+
+#: DeveloperTool\Forms\OCRResultForm.cs:33
+msgid "OCR Word List"
+msgstr "список ключевых слов OCR"
+
+#: MagicKeys\MagicKeys.cs:38
+msgid ""
+"This version of MagicKeys is built for 32-bit Windows, but you are running a "
+"64-bit version. Please run a 64-bit version of MagicKeys instead."
+msgstr ""
+"Эта версия MagicKeys предназначена для 32-разрядных версий Windows, но вы "
+"используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
+"MagicKeys."
+
+#: MagicKeys\MagicKeys.cs:38 MagicKeys\MagicKeys.cs:45
+#: MagicKeys\Core\Common\CheckRunProc.cs:18 MagicKeys\Forms\DebugForm.cs:46
+#: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
+#: MKUpdater\Forms\UpdateFormActions.cs:38
+#: MKUpdater\Forms\UpdateFormActions.cs:58
+#: MKUpdater\Forms\UpdateFormActions.cs:65
+msgid "Error"
+msgstr "Ошибка"
+
+#: MagicKeys\MagicKeys.cs:45
+msgid "You must close DeveloperTool to run MagicKeys."
+msgstr "Для запуска MagicKeys необходимо закрыть DeveloperTool."
+
+#: MagicKeys\MagicKeys.cs:65
+msgid "MagicKeys is ready"
+msgstr "Сервис MagicKeys запущен"
+
+#: MagicKeys\Core\Common\CheckRunProc.cs:18
+msgid "MagicKeys is already running."
+msgstr "Программа MagicKeys уже запущена."
+
+#: MagicKeys\Core\Common\Help.cs:15
+msgid "Help file not found"
+msgstr "Файл справки не найден"
+
+#: MagicKeys\Core\Common\SystemInvoke.cs:31
+#, csharp-format
+msgid "Method {0} is not implemented"
+msgstr "Метод {0} не реализован"
+
+#: MagicKeys\Core\Ini\IniManager.cs:61 MagicKeys\Core\Ini\IniRead.cs:38
+msgid "Section not found"
+msgstr "Раздел не найден"
+
+#: MagicKeys\Core\Ini\IniRead.cs:77
+msgid "The value is not correct"
+msgstr "Значение неверно"
+
+#: MagicKeys\Core\Ini\IniRead.cs:84
+msgid "Key not found"
+msgstr "Ключ не найден"
+
+#: MagicKeys\Core\Ini\IniRead.cs:88
+msgid "Error reading file"
+msgstr "Ошибка чтения файла"
+
+#: MagicKeys\Core\Objects\Slider.cs:12
+msgid "Enter a value for "
+msgstr "Введите значение для "
+
+#: MagicKeys\Core\Objects\Slider.cs:12
+msgid " from 1 to 100"
+msgstr " от 1 до 100"
+
+#: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
+msgid "No plugins are available."
+msgstr "Нет доступных плагинов."
+
+#: MagicKeys\Forms\DebugForm.cs:33 MagicKeys\Forms\MenuForm.cs:17
+msgid "Exit"
+msgstr "Выход"
+
+#: MagicKeys\Forms\DebugFormActions.cs:49
+#: MagicKeys\Forms\DebugFormActions.cs:59
+#: MagicKeys\Forms\DebugFormActions.cs:68
+#: MagicKeys\Forms\DebugFormActions.cs:76
+#: MagicKeys\Forms\DebugFormActions.cs:83
+msgid "Message:"
+msgstr "Сообщение:"
+
+#: MagicKeys\Forms\DebugFormActions.cs:50
+#: MagicKeys\Forms\DebugFormActions.cs:60
+#: MagicKeys\Forms\DebugFormActions.cs:69
+#: MagicKeys\Forms\DebugFormActions.cs:77
+#: MagicKeys\Forms\DebugFormActions.cs:84
+msgid "File:"
+msgstr "Файл:"
+
+#: MagicKeys\Forms\DebugFormActions.cs:51
+#: MagicKeys\Forms\DebugFormActions.cs:61
+msgid "Line:"
+msgstr "Строка:"
+
+#: MagicKeys\Forms\DebugFormActions.cs:52
+#: MagicKeys\Forms\DebugFormActions.cs:62
+msgid "Section:"
+msgstr "Раздел:"
+
+#: MagicKeys\Forms\DebugFormActions.cs:53
+#: MagicKeys\Forms\DebugFormActions.cs:70
+msgid "Key:"
+msgstr "Ключ:"
+
+#: MagicKeys\Forms\DebugFormActions.cs:68
+msgid "The keyboard shortcut cannot be registered"
+msgstr "Не удалось зарегистрировать сочетание клавиш"
+
+#: MagicKeys\Forms\DebugFormActions.cs:76
+msgid "File not found"
+msgstr "Файл не найден"
+
+#: MagicKeys\Forms\DebugFormActions.cs:83
+msgid "The key or value doesn't exist."
+msgstr "Ключ или значение не существует."
+
+#: MagicKeys\Forms\DebugFormActions.cs:85
+msgid "Object:"
+msgstr "Обьект:"
+
+#: MagicKeys\Forms\HelpForm.cs:36 MagicKeys\Forms\MenuForm.cs:16
+#: MagicKeys\Settings\SettingsForm.cs:84
+msgid "Help"
+msgstr "Справка"
+
+#: MagicKeys\Forms\MenuActions.cs:24
+msgid "Do you really want to exit MagicKeys?"
+msgstr "Вы действительно хотите завершить работу MagicKeys?"
+
+#: MagicKeys\Forms\MenuActions.cs:24
+msgid "Exit MagicKeys"
+msgstr "Выйти из MagicKeys"
+
+#: MagicKeys\Forms\MenuActions.cs:27 MagicKeys\Forms\MenuActions.cs:37
+msgid "Goodbye"
+msgstr "Пока"
+
+#: MagicKeys\Forms\MenuForm.cs:14 MagicKeys\Settings\SettingsForm.cs:110
+msgid "Settings"
+msgstr "Настройки"
+
+#: MagicKeys\Forms\MenuForm.cs:15
+msgid "Check for updates"
+msgstr "Проверить наличие обновлений"
+
+#: MagicKeys\Forms\MenuForm.cs:29 MagicKeys\Forms\MenuKeys.cs:25
+#, csharp-format
+msgid "MagicKeys {0} is enabled"
+msgstr "MagicKeys {0} включен"
+
+#: MagicKeys\Forms\MenuKeys.cs:19
+#, csharp-format
+msgid "MagicKeys {0} is disabled"
+msgstr "MagicKeys {0} выключен"
+
+#: MagicKeys\Forms\MenuKeys.cs:20
+msgid "MagicKeys is disabled"
+msgstr "MagicKeys выключен"
+
+#: MagicKeys\Forms\MenuKeys.cs:26
+msgid "MagicKeys is enabled"
+msgstr "MagicKeys включен"
+
+#: MagicKeys\Forms\MenuKeys.cs:39
+msgid "Sounds off"
+msgstr "Звуки выключены"
+
+#: MagicKeys\Forms\MenuKeys.cs:44
+msgid "Sounds on"
+msgstr "Звуки включены"
+
+#: MagicKeys\Settings\SettingsForm.cs:33
+msgid "Use left/right arrow keys for navigation"
+msgstr "Использовать клавиши горизонтальных стрелок для навигации"
+
+#: MagicKeys\Settings\SettingsForm.cs:38
+msgid "Enable sounds"
+msgstr "Включить звуки"
+
+#: MagicKeys\Settings\SettingsForm.cs:43
+msgid "Window detection timeout (ms):"
+msgstr "Задержка при определении окон (мс):"
+
+#: MagicKeys\Settings\SettingsForm.cs:54
+msgid "Speak control types"
+msgstr "Говорить типы элементов управления"
+
+#: MagicKeys\Settings\SettingsForm.cs:59
+msgid "Ask before exiting"
+msgstr "Спрашивать перед выходом"
+
+#: MagicKeys\Settings\SettingsForm.cs:64
+msgid "Update channel"
+msgstr "Канал обновлений"
+
+#: MagicKeys\Settings\SettingsForm.cs:76
+msgid "check for updates when magicKeys starts"
+msgstr "Проверять наличие обновлений при запуске magicKeys"
+
+#: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
+msgid "Cancel"
+msgstr "Отмена"
+
+#: MKUpdater\MKUpdater.cs:46
+msgid "No updates available."
+msgstr "Нет доступных обновлений."
+
+#: MKUpdater\MKUpdater.cs:46
+msgid "Information"
+msgstr "Информация"
+
+#: MKUpdater\MKUpdater.cs:62
+msgid "the update server returned an error. Please try again later."
+msgstr "сервер обновлений вернул ошибку. Повторите попытку позже."
+
+#: MKUpdater\MKUpdater.cs:72
+msgid "Something has gone wrong. Please check your internet connection."
+msgstr "Что-то пошло не так. Пожалуйста, проверьте подключение к Интернету."
+
+#: MKUpdater\Forms\UpdateForm.cs:30
+msgid "Changelog"
+msgstr "Список изменений"
+
+#: MKUpdater\Forms\UpdateForm.cs:56
+msgid "Update"
+msgstr "Обновить"
+
+#: MKUpdater\Forms\UpdateForm.cs:75
+msgid "Update MagicKeys"
+msgstr "Обновление MagicKeys"
+
+#: MKUpdater\Forms\UpdateFormActions.cs:21
+msgid "Please close these programs before updating."
+msgstr "Пожалуйста, закройте эти программы перед обновлением."
+
+#: MKUpdater\Forms\UpdateFormActions.cs:38
+msgid "Error Downloading update. Please try again later."
+msgstr "Ошибка загрузки обновления. Повторите попытку позже."
+
+#: MKUpdater\Forms\UpdateFormActions.cs:58
+#: MKUpdater\Forms\UpdateFormActions.cs:65
+msgid "Update file is corrupted."
+msgstr "Файл обновления поврежден."
+
+#~ msgid "Windows 10 OCR is unavailable"
+#~ msgstr "Компонент Windows 10 OCR недоступен"
+
+#~ msgid "Send anonymous diagnostic information about the system"
+#~ msgstr "Отправлять анонимную диагностическую информацию о системе"
+
+#~ msgid "Register"
+#~ msgstr "Зарегистрироваться"
+
+#~ msgid "Registration Successful. Restart MagicKeys to apply the changes."
+#~ msgstr ""
+#~ "Вы успешно зарегистрировались. Пожалуйста, перезапустите MagicKeys для "
+#~ "применения изменений."
+
+#~ msgid "Incorrect e-mail"
+#~ msgstr "Неправильный e-mail"
+
+#~ msgid "Please enter your name"
+#~ msgstr "Пожалуйста, введите ваше имя"
+
+#~ msgid "First and last name:"
+#~ msgstr "Имя и фамилия:"
+
+#~ msgid "E-mail:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Please register by clicking Register in the tray context menu."
+#~ msgstr "Пожалуйста, зарегистрируйтесь из меню в системном лотке."
