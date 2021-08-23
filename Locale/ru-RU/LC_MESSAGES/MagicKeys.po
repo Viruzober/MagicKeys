@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 01:51+0300\n"
-"PO-Revision-Date: 2020-08-13 20:12+0300\n"
-"Last-Translator: A11CF0 <a11cf0@yandex.ru>\n"
+"POT-Creation-Date: 2021-08-23 11:55+0200\n"
+"PO-Revision-Date: 2021-08-23 11:57+0200\n"
+"Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
@@ -36,16 +36,23 @@ msgid ""
 msgstr ""
 
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:36
-msgid "Плагины"
+msgid "Plugins"
 msgstr ""
 
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:42
-msgid "Результат"
+#, fuzzy
+msgid "Result"
 msgstr ""
+"Дополнительная поддержка и функции для Microsoft Outlook:\n"
+"- Предоставляет жесты для чтения и активации заголовков, информационной "
+"панели и вложений в сообщениях, событиях календаря и задачах.\n"
+"- Улучшает чтение результатов в адресной книге.\n"
+"- Озвучивает команды Пометить как прочитанное/не прочитанное ctrl+q/ctrl+u."
 
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:69
-msgid "Установить"
-msgstr ""
+#, fuzzy
+msgid "Install"
+msgstr "Установить или обновить дополнение"
 
 #: DeveloperTool\Core\ControlSearch.cs:17
 msgid "Control search"
@@ -260,8 +267,9 @@ msgid "The key or value doesn't exist."
 msgstr ""
 
 #: MagicKeys\Forms\DebugFormActions.cs:85
+#, fuzzy
 msgid "Object:"
-msgstr ""
+msgstr "Открывает ссылку на скачивание последнего каталога переводов"
 
 #: MagicKeys\Forms\HelpForm.cs:36 MagicKeys\Forms\MenuForm.cs:16
 #: MagicKeys\Settings\SettingsForm.cs:84
@@ -337,7 +345,7 @@ msgstr "Спрашивать перед выходом"
 #: MagicKeys\Settings\SettingsForm.cs:64
 #, fuzzy
 msgid "Update channel"
-msgstr "Выйти из MagicKeys"
+msgstr "Канал &обновлений дополнения:"
 
 #: MagicKeys\Settings\SettingsForm.cs:76
 msgid "check for updates when magicKeys starts"
@@ -374,7 +382,7 @@ msgstr ""
 #: MKUpdater\Forms\UpdateForm.cs:56
 #, fuzzy
 msgid "Update"
-msgstr "Выйти из MagicKeys"
+msgstr "&Уведомление об обновленях дополнения:"
 
 #: MKUpdater\Forms\UpdateForm.cs:75
 #, fuzzy
@@ -392,24 +400,6 @@ msgstr ""
 #: MKUpdater\Forms\UpdateFormActions.cs:58
 #: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Update file is corrupted."
-msgstr ""
-
-#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:24
-msgid "Enter serial"
-msgstr ""
-
-#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:25
-msgid "Enter serial key."
-msgstr ""
-
-#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:28 Plugins\DLL\Xfer
-#: Records Serum\Source\Serum.cs:48
-msgid "Enter Activation code"
-msgstr ""
-
-#: Plugins\DLL\LUXONIX.Purity\Source\LUXONIX Purity.cs:29 Plugins\DLL\Xfer
-#: Records Serum\Source\Serum.cs:49
-msgid "Enter activation code."
 msgstr ""
 
 #~ msgid "Windows 10 OCR is unavailable"
