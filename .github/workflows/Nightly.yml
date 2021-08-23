@@ -3,8 +3,6 @@ name: Nightly
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   windowsBuild:
@@ -16,7 +14,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Install .NET Core
+    - name: Install .NET
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.x
