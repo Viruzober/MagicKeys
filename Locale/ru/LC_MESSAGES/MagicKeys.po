@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-23 11:55+0200\n"
-"PO-Revision-Date: 2021-08-23 11:57+0200\n"
+"POT-Creation-Date: 2021-08-23 13:15+0200\n"
+"PO-Revision-Date: 2021-08-23 13:44+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
-"Language: ru_RU\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,106 +22,109 @@ msgstr ""
 #: ConfigInstaller\ConfigInstaller.cs:16
 msgid ""
 "For MagicKeys to work correctly, you need to set the screen scale to 100%. "
-"When you click on the \"yes\" button, this will be done automatically."
+"When you click the \"yes\" button, this will be done automatically."
 msgstr ""
+"Чтобы MagicKeys работал корректно, необходимо установить масштаб экрана на "
+"100%. Когда вы нажмете кнопку «да», это будет сделано автоматически."
 
-#: ConfigInstaller\ConfigInstaller.cs:17 ConfigInstaller\ConfigInstaller.cs:27
-msgid "Attention"
-msgstr ""
+#: ConfigInstaller\ConfigInstaller.cs:17
+#: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
+#: MKUpdater\Forms\UpdateFormActions.cs:21
+msgid "Warning"
+msgstr "Внимание"
 
 #: ConfigInstaller\ConfigInstaller.cs:26
 msgid ""
 "Also, for the MagicKeys to work properly, you need to set the maximum "
 "display resolution. Click \"Yes\" to automatically apply the parameter."
 msgstr ""
+"Также, чтобы MagicKeys работал корректно, нужно установить максимальное "
+"разрешение экрана. Нажмите «Да», чтобы автоматически применить параметр."
+
+#: ConfigInstaller\ConfigInstaller.cs:27
+msgid "Attention"
+msgstr "Внимание"
 
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:36
 msgid "Plugins"
-msgstr ""
+msgstr "Плагины"
 
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:42
-#, fuzzy
 msgid "Result"
-msgstr ""
-"Дополнительная поддержка и функции для Microsoft Outlook:\n"
-"- Предоставляет жесты для чтения и активации заголовков, информационной "
-"панели и вложений в сообщениях, событиях календаря и задачах.\n"
-"- Улучшает чтение результатов в адресной книге.\n"
-"- Озвучивает команды Пометить как прочитанное/не прочитанное ctrl+q/ctrl+u."
+msgstr "Результат"
 
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:69
-#, fuzzy
 msgid "Install"
-msgstr "Установить или обновить дополнение"
+msgstr "Установить"
 
 #: DeveloperTool\Core\ControlSearch.cs:17
 msgid "Control search"
-msgstr ""
+msgstr "Поиск элементов управлений"
 
 #: DeveloperTool\Core\ControlSearch.cs:18
 msgid "Enter substring to search for a module."
-msgstr ""
+msgstr "Введите подстроку для поиска модуля."
 
 #: DeveloperTool\Core\ImgSave.cs:15
 msgid "Image name"
-msgstr ""
+msgstr "Название изображения"
 
 #: DeveloperTool\Core\ImgSave.cs:15
 msgid "Enter image name."
-msgstr ""
+msgstr "Введите название изображения."
 
 #: DeveloperTool\Core\MouseGoTo.cs:16
 msgid "Mouse X"
-msgstr ""
+msgstr "координата мыши X"
 
 #: DeveloperTool\Core\MouseGoTo.cs:17
 msgid "Enter new mouse position X"
-msgstr ""
+msgstr "Введите новую позицию мыши X"
 
 #: DeveloperTool\Core\MouseGoTo.cs:33
 msgid "Mouse Y"
-msgstr ""
+msgstr "Координата мыши Y"
 
 #: DeveloperTool\Core\MouseGoTo.cs:34
 msgid "Enter new mouse position Y"
-msgstr ""
+msgstr "Введите новое положение мыши Y"
 
 #: DeveloperTool\Core\MouseStepChange.cs:15
 msgid "Mouse step"
-msgstr ""
+msgstr "Шаг мыши"
 
 #: DeveloperTool\Core\MouseStepChange.cs:16
 msgid "Enter mouse step:"
-msgstr ""
+msgstr "Введите шаг мыши в пикселях:"
 
 #: DeveloperTool\Core\OCRClick.cs:11 DeveloperTool\Core\VisionBot.cs:19
 #: DeveloperTool\Core\WindowsOCR.cs:13
 msgid "No rectangle for OCR"
-msgstr ""
+msgstr "Нет прямоугольника для OCR"
 
 #: DeveloperTool\Core\OCRZoomChange.cs:15
 msgid "OCR Zoom"
-msgstr ""
+msgstr "увеличение OCR"
 
 #: DeveloperTool\Core\OCRZoomChange.cs:16
 msgid "Enter OCR Zoom value:"
-msgstr ""
+msgstr "Введите значение увеличения для OCR:"
 
 #: DeveloperTool\Core\RectOCR.cs:16
 msgid "OCR Width"
-msgstr ""
+msgstr "Ширина OCR"
 
 #: DeveloperTool\Core\RectOCR.cs:17
 msgid "Enter OCR width:"
-msgstr ""
+msgstr "Введите ширину OCR:"
 
 #: DeveloperTool\Core\RectOCR.cs:32
 msgid "OCR Height"
-msgstr ""
+msgstr "Высота OCR"
 
 #: DeveloperTool\Core\RectOCR.cs:33
 msgid "Enter OCR height:"
-msgstr ""
+msgstr "Введите высоту OCR:"
 
 #: DeveloperTool\Core\Save.cs:16 MagicKeys\Settings\SettingsForm.cs:90
 msgid "Save"
@@ -129,23 +132,23 @@ msgstr "Сохранить"
 
 #: DeveloperTool\Core\Save.cs:16
 msgid "Enter name for save."
-msgstr ""
+msgstr "Введите название для сохранения."
 
 #: DeveloperTool\Core\SpeakWindowRect.cs:10
 msgid "Width"
-msgstr ""
+msgstr "Ширина"
 
 #: DeveloperTool\Core\SpeakWindowRect.cs:10
 msgid "Height"
-msgstr ""
+msgstr "Высота"
 
 #: DeveloperTool\Forms\MenuForm.cs:24
 msgid "Developer tool"
-msgstr ""
+msgstr "Developer tool"
 
 #: DeveloperTool\Forms\OCRResultForm.cs:33
 msgid "OCR Word List"
-msgstr ""
+msgstr "список ключевых слов OCR"
 
 #: MagicKeys\MagicKeys.cs:38
 msgid ""
@@ -167,7 +170,7 @@ msgstr "Ошибка"
 
 #: MagicKeys\MagicKeys.cs:45
 msgid "You must close DeveloperTool to run MagicKeys."
-msgstr ""
+msgstr "Для запуска MagicKeys необходимо закрыть DeveloperTool."
 
 #: MagicKeys\MagicKeys.cs:65
 msgid "MagicKeys is ready"
@@ -204,20 +207,15 @@ msgstr "Ошибка чтения файла"
 
 #: MagicKeys\Core\Objects\Slider.cs:12
 msgid "Enter a value for "
-msgstr ""
+msgstr "Введите значение для "
 
 #: MagicKeys\Core\Objects\Slider.cs:12
 msgid " from 1 to 100"
-msgstr ""
+msgstr " от 1 до 100"
 
 #: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
 msgid "No plugins are available."
 msgstr "Нет доступных плагинов."
-
-#: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
-#: MKUpdater\Forms\UpdateFormActions.cs:21
-msgid "Warning"
-msgstr "Внимание"
 
 #: MagicKeys\Forms\DebugForm.cs:33 MagicKeys\Forms\MenuForm.cs:17
 msgid "Exit"
@@ -264,12 +262,11 @@ msgstr "Файл не найден"
 
 #: MagicKeys\Forms\DebugFormActions.cs:83
 msgid "The key or value doesn't exist."
-msgstr ""
+msgstr "Ключ или значение не существует."
 
 #: MagicKeys\Forms\DebugFormActions.cs:85
-#, fuzzy
 msgid "Object:"
-msgstr "Открывает ссылку на скачивание последнего каталога переводов"
+msgstr "Обьект:"
 
 #: MagicKeys\Forms\HelpForm.cs:36 MagicKeys\Forms\MenuForm.cs:16
 #: MagicKeys\Settings\SettingsForm.cs:84
@@ -294,7 +291,7 @@ msgstr "Настройки"
 
 #: MagicKeys\Forms\MenuForm.cs:15
 msgid "Check for updates"
-msgstr ""
+msgstr "Проверить наличие обновлений"
 
 #: MagicKeys\Forms\MenuForm.cs:29 MagicKeys\Forms\MenuKeys.cs:25
 #, csharp-format
@@ -343,22 +340,20 @@ msgid "Ask before exiting"
 msgstr "Спрашивать перед выходом"
 
 #: MagicKeys\Settings\SettingsForm.cs:64
-#, fuzzy
 msgid "Update channel"
-msgstr "Канал &обновлений дополнения:"
+msgstr "Канал обновлений"
 
 #: MagicKeys\Settings\SettingsForm.cs:76
 msgid "check for updates when magicKeys starts"
-msgstr ""
+msgstr "Проверять наличие обновлений при запуске magicKeys"
 
 #: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
 msgid "Cancel"
 msgstr "Отмена"
 
 #: MKUpdater\MKUpdater.cs:46
-#, fuzzy
 msgid "No updates available."
-msgstr "Нет доступных плагинов."
+msgstr "Нет доступных обновлений."
 
 #: MKUpdater\MKUpdater.cs:46
 msgid "Information"
@@ -366,41 +361,36 @@ msgstr "Информация"
 
 #: MKUpdater\MKUpdater.cs:62
 msgid "the update server returned an error. Please try again later."
-msgstr ""
+msgstr "сервер обновлений вернул ошибку. Повторите попытку позже."
 
 #: MKUpdater\MKUpdater.cs:72
-#, fuzzy
 msgid "Something has gone wrong. Please check your internet connection."
-msgstr ""
-"Что-то пошло не так. Пожалуйста, попробуйте позже или свяжитесь с "
-"разработчиком."
+msgstr "Что-то пошло не так. Пожалуйста, проверьте подключение к Интернету."
 
 #: MKUpdater\Forms\UpdateForm.cs:30
 msgid "Changelog"
-msgstr ""
+msgstr "Список изменений"
 
 #: MKUpdater\Forms\UpdateForm.cs:56
-#, fuzzy
 msgid "Update"
-msgstr "&Уведомление об обновленях дополнения:"
+msgstr "Обновить"
 
 #: MKUpdater\Forms\UpdateForm.cs:75
-#, fuzzy
 msgid "Update MagicKeys"
-msgstr "Выйти из MagicKeys"
+msgstr "Обновление MagicKeys"
 
 #: MKUpdater\Forms\UpdateFormActions.cs:21
 msgid "Please close these programs before updating."
-msgstr ""
+msgstr "Пожалуйста, закройте эти программы перед обновлением."
 
 #: MKUpdater\Forms\UpdateFormActions.cs:38
 msgid "Error Downloading update. Please try again later."
-msgstr ""
+msgstr "Ошибка загрузки обновления. Повторите попытку позже."
 
 #: MKUpdater\Forms\UpdateFormActions.cs:58
 #: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Update file is corrupted."
-msgstr ""
+msgstr "Файл обновления поврежден."
 
 #~ msgid "Windows 10 OCR is unavailable"
 #~ msgstr "Компонент Windows 10 OCR недоступен"
