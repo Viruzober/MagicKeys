@@ -1,0 +1,21 @@
+Developer tool shortcut keys
+ctrl+shift+f1 - Switches developer tool on or off
+ctrl+shift+f2 - exits developer tool
+ctrl+shift+f3 - opens the window which allows you to enter the name of an active proces which needs to be clicked
+ctrl+shift+f4 - speaks the name of the currently active process.
+ctrl+alt+a - turns on or off the automatic ocr function.
+Arrow keys - Moves the mouse in the respective position. Left, right, up and down.
+ctrl+o - performs OCR at the actual cursor position
+ctrl+shift+o - presents the dialog box with all recognized words in the window. If one of these is selected and enter is pressed, the program will move the mouse to the respective coordinate of that word.
+shift+o - switches to the vision bot service
+ctrl+shift+p - changes the mouse step in pixels
+ctrl+shift+z - opens the dialog box for zooming elements which have to be recognized. Note! 100 times zooming crashes the devtool! Use with caution!
+minus on the number row - emulates the left click
+equals on the number row - emulates the right click
+letter c - speaks color of the object
+ctrl+s saves the coordinates under the name in the text file
+ctrl+i - saves the rectangle as an image
+ctrl+g - opens the dialog box which allows you to enter the position in pixel to go to the particular element
+r- speaks the rectangle of the window
+ctrl+w - speaks the info about the focused control
+w - speaks the window info
