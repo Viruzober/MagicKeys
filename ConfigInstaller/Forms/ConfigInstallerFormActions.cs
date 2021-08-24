@@ -35,12 +35,36 @@ string[] FileStr = File.ReadAllLines(@"./Settings/"+Item.ToString()+"/Files.copy
 foreach(string FC in FileStr)
 {
 string[] Copy = FC.Split(",");
+if (Copy[1] == "SelectPath")
+{
+Copy[1] = GetPathFromUser(Copy[2]);
+if (string.IsNullOrEmpty(Copy[1]))
+{
+TB.Text += "Path not selected. This action skipped";
+continue;
+}
+}
 TB.Text += "Copying "+Copy[0]+" to "+Copy[1]+" "+ConfigInstaller.CopyFiles(Copy[0], Copy[1])+"\r\n";
 }
 }
 }
 LB.Enabled = true;
 Ins.Enabled = true;
+}
+
+public string GetPathFromUser(string TitleMessage)
+{
+FolderBrowserDialog Dialog = new FolderBrowserDialog();
+Dialog.Description = TitleMessage;
+Dialog.RootFolder = Environment.SpecialFolder.MyComputer;
+Dialog.ShowNewFolderButton = true;
+Dialog.UseDescriptionForTitle = true;
+Dialog.ShowDialog();
+if (string.IsNullOrEmpty(Dialog.SelectedPath))
+{
+return null;
+}
+return Dialog.SelectedPath;
 }
 
 }
