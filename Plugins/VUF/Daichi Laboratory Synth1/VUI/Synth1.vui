@@ -2,15 +2,23 @@
 PluginClass=MagicKeys
 Loader=None
 [Keys]
+PageUp=PreviousPreset
+PageDown=NextPreset
 B=BankManager
 O=Options
-[1]
+[PreviousPreset]
+Text=Previous preset
+ObjectType=Button
+Func=PreviousPreset
+[NextPreset]
+Text=Next preset
+ObjectType=Button
+Func=NextPreset
+[BankManager]
 Text=Bank manager
 ObjectType=Button
-Help=Open bank manager
 Func=BankManager
-[2]
+[Options]
 Text=Options
 ObjectType=Button
-Help=Open options
 Func=Options
