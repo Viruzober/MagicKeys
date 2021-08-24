@@ -1,6 +1,10 @@
 [Params]
 PluginClass=Serum
 Loader=Code
+[Keys]
+P=SpeakPreset
+PageUp=PreviousPreset
+PageDown=NextPreset
 [1]
 Text=Presets menu
 ObjectType=Button

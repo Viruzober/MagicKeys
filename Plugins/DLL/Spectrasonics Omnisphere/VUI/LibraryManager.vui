@@ -1,6 +1,8 @@
 ﻿[Keys]
 Ctrl+L=LibraryManager
 Shift+L=SelectLibrary
+Up=LibraryPresetManager,Up
+Down=LibraryPresetManager,Down
 [SelectLibrary]
 Text= Select library
 ObjectType=Button
@@ -9,3 +11,7 @@ Func=SelectLibrary
 Text=Open library manager selector
 ObjectType=Button
 Func=LibraryManager
+[BackToStartWindow]
+Text=Back
+ObjectType=Button
+Func=MainBack

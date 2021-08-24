@@ -58,7 +58,7 @@ MKLib.MouseMove(MP[0], MP[1]+MouseStep, 0);
 }
 if(AutoOCR == 1)
 {
-VisionBot();
+WindowsOCR();
 }
 KeyReg();
 }

@@ -16,6 +16,7 @@ public partial class Omnisphere
 
 public static void GoToLibraryManager()
 {
+SetFocusControlPoint(Coords.X+100, Coords.Y+100);
 MouseClick("Left", Coords.X+120, Coords.Y+20, 1, 0, 0, 10);
 VUILoader("LibraryManager");
 }
@@ -50,6 +51,19 @@ OldY = ColumnSeparator[2] - (ColumnSeparator[4] / 2);
 Thread.Sleep(500);
 }
 Speak("Done");
+}
+
+public static void LibraryPresetManager(string To)
+{
+Bitmap OltPreset = CreateBitmap(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H);
+KeySend("Keys", To, 50, 50);
+DisplayTraffic(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 2, 2, 10, OltPreset);
+int[] CurrentPreset = ImgSearchArea("BP", Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 20);
+if (CurrentPreset[0] == 1)
+{
+string Patch = ImgToText(150, 20, CurrentPreset[1], CurrentPreset[2], 3);
+Speak(Patch);
+}
 }
 
 }

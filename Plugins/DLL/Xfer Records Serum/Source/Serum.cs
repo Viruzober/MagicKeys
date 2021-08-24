@@ -17,19 +17,20 @@ MouseClick("Left", Coords.X+660, Coords.Y+10, 1, 0, 0, 10);
 public static void PreviousPreset()
 {
 MouseClick("Left", Coords.X+690, Coords.Y+10, 1, 0, 0, 10);
-if (API.GetWClass() == "#32770")
-{
-Speak(ControlGetTextPoint(Coords.X+100, Coords.Y-20));
-}
+Thread.Sleep(100);
+Speak(ImgToText(150, 30, Coords.X+450, Coords.Y, 4));
 }
 
 public static void NextPreset()
 {
 MouseClick("Left", Coords.X+710, Coords.Y+10, 1, 0, 0, 10);
-if (API.GetWClass() == "#32770")
-{
-Speak(ControlGetTextPoint(Coords.X+100, Coords.Y-20));
+Thread.Sleep(100);
+Speak(ImgToText(150, 30, Coords.X+450, Coords.Y, 4));
 }
+
+public static void SpeakPreset()
+{
+Speak(ImgToText(150, 30, Coords.X+450, Coords.Y, 4));
 }
 
 public static void Menu()

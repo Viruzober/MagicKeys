@@ -1,0 +1,4 @@
+﻿Ctrl+L - Open library manager selector.
+Shift+L - Open menu for select library
+Up - Previous preset.
+Down - Next preset.

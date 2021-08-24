@@ -25,7 +25,8 @@ Bitmap Screen = new Bitmap(P[3]-P[1], P[4]-P[2]);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(P[1], P[2], 00, 0, Screen.Size);
 var memoryStream = new MemoryStream();
-Screen.Save(memoryStream, ImageFormat.Bmp);
+Bitmap s = MKLib.ResizeImage(Screen, OCRZoom); 
+s.Save(memoryStream, ImageFormat.Bmp);
 byte[] b = memoryStream.ToArray();
 string Resulte = Task.Run(() => MKLib.OCR(b, "en")).Result;
 OCRResult JsonResulte = JsonSerializer.Deserialize<OCRResult>(Resulte);
@@ -46,7 +47,7 @@ ORF.ShowDialog();
 if(ORF.DialogResult == DialogResult.OK)
 {
 int SI = ORF.WList.SelectedIndex;
-MKLib.MouseMove(P[1]+LX[SI], P[2]+LY[SI], 0);
+MKLib.MouseMove(P[1]+(LX[SI] / OCRZoom), P[2]+(LY[SI] / OCRZoom), 0);
 }
 LW.Clear();
 LX.Clear();
