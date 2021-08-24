@@ -35,7 +35,7 @@ return "Error OCR angine";
 }
 }
 
-public static OCRResult GetOCRResult(int W, int H, int X, int Y, int Zoom, string Lang = "en")
+public static OCRResult GetOCRResult(int W, int H, int X, int Y, float Zoom, string Lang = "en")
 {
 if (Environment.OSVersion.Version.Major < 10)
 {

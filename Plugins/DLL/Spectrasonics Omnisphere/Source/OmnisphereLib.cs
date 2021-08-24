@@ -27,12 +27,13 @@ MouseClick("Left", Coords.X+60, Coords.Y+60, 1, 0, 0, 10);
 
 public static void LibraryManager()
 {
-int OldX = Coords.X;
+int OldX = Coords.X, OldY = Coords.Y + 100;
 while(true)
 {
-int[] ColumnSeparator = ImgSearchArea("LibraryManagerLine", OldX, Coords.Y+90, Coords.X+Coords.W, Coords.Y+Coords.H, 40);
+int[] ColumnSeparator = ImgSearchArea("LibraryManagerLine", OldX, OldY, Coords.X+Coords.W, Coords.Y+Coords.H, 50);
 if (ColumnSeparator[0] == 0) break;
-OCRResult OCRLibraryManager =  GetOCRResult(ColumnSeparator[1] - OldX, 520, OldX, Coords.Y+90, 2);
+OCRResult OCRLibraryManager =  GetOCRResult(ColumnSeparator[1] - OldX, 520, OldX, OldY, 4);
+if (OCRLibraryManager.Lines.Any() == false) break;
 OmnisphereLibraryManager Manager = new OmnisphereLibraryManager(OCRLibraryManager);
 Manager.ShowDialog();
 if (string.IsNullOrEmpty(Manager.GetSelectedValue())) break;
@@ -41,10 +42,11 @@ foreach(var ClickItem in OCRLibraryManager.Lines)
 if (ClickItem.Text == Manager.GetSelectedValue())
 {
 Rect SelectedRect = ClickItem.Words[0].BoundingRect;
-MouseClick("Left", OldX + (SelectedRect.X / 2), ColumnSeparator[2] + (SelectedRect.Y / 2), 1, 0, 0, 20);
+MouseClick("Left", OldX + (SelectedRect.X / 4), OldY + (SelectedRect.Y / 4), 2, 0, 0, 20);
 }
 }
 OldX = ColumnSeparator[1] + (ColumnSeparator[3] / 2);
+OldY = ColumnSeparator[2] - (ColumnSeparator[4] / 2);
 Thread.Sleep(500);
 }
 Speak("Done");
@@ -67,6 +69,7 @@ Table.ColumnCount = 2;
 Table.Controls.Add(new Label() {Text = OCRLibraryManager.Lines[0].Text.Trim()});
 string[] ComboBoxValues = OCRLibraryManager.Lines.Select(t => t.Text).ToArray();
 LinesComboBox.Items.AddRange(ComboBoxValues[1..]);
+LinesComboBox.SelectedIndex = 0;
 Table.Controls.Add(LinesComboBox);
 this.Controls.Add(Table);
 this.Load += Form_Load;
