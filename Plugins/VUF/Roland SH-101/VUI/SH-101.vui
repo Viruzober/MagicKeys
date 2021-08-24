@@ -1,0 +1,11 @@
+[Params]
+PluginClass=MagicKeys
+Loader=None
+[1]
+Text=PresetsMenu
+ObjectType=Button
+Func=PresetsMenu
+[2]
+Text=Options
+ObjectType=Button
+Func=Options
