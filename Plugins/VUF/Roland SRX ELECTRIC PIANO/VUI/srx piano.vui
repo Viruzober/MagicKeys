@@ -1,0 +1,9 @@
+[Params]
+PluginClass=MagicKeys
+[Keys]
+P=PresetManager
+[PresetManager]
+Text=Presets menu
+ObjectType=Button
+Help=Открыть меню пресетов
+Func=PresetManager
