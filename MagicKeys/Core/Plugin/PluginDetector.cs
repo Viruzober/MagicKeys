@@ -9,6 +9,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 public static Mutex SyncThreads = new Mutex();
+
 public static void PluginDetector()
 {
 while(true)

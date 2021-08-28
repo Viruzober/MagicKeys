@@ -12,7 +12,7 @@ switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
 string Key = GetModKeyName((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
-if (Key== "Ctrl+Alt+A")
+if (Key== "Alt+Ctrl+A")
 {
 if (DeveloperTool.AutoOCR == true)
 {

@@ -16,6 +16,7 @@ IB.Text = T._("OCR Zoom");
 IB.InputBoxLabel.Text = T._("Enter OCR Zoom value:");
 IB.Value.Minimum = 1;
 IB.Value.Maximum = 10;
+IB.Value.Value = OCRZoom;
 IB.ShowDialog();
 if (IB.DialogResult == DialogResult.OK)
 {

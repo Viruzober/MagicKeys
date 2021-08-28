@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-28 20:06+0300\n"
+"POT-Creation-Date: 2021-08-28 21:07+0300\n"
 "PO-Revision-Date: 2021-08-24 17:10+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -58,18 +58,18 @@ msgstr "Результат"
 msgid "Install"
 msgstr "Установить"
 
-#: DeveloperTool\Core\Common\ControlSearch.cs:16
+#: DeveloperTool\Core\Common\ControlSearch.cs:22
 msgid "Control search"
 msgstr "Поиск элемента управления"
 
-#: DeveloperTool\Core\Common\ControlSearch.cs:17
+#: DeveloperTool\Core\Common\ControlSearch.cs:23
 msgid "Enter substring to search for a module."
 msgstr "Введите подстроку для поиска модуля."
 
 #: DeveloperTool\Core\Common\FixWindow.cs:13
 msgid ""
-"This window apears to be out ov screen. Do you want to move it to the "
-"visible aria?"
+"This window appears to be out off screen. Do you want to move it to the "
+"visible area?"
 msgstr ""
 
 #: DeveloperTool\Core\Img\ImgSave.cs:13
@@ -142,13 +142,17 @@ msgstr "Высота OCR"
 msgid "Enter OCR height:"
 msgstr "Введите высоту OCR:"
 
-#: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:10
+#: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:12
 msgid "Width"
 msgstr "Ширина"
 
-#: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:10
+#: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:12
 msgid "Height"
 msgstr "Высота"
+
+#: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:15
+msgid "Window is not fully visible."
+msgstr ""
 
 #: DeveloperTool\Forms\MenuForm.cs:24
 msgid "Developer tool"

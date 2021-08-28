@@ -16,6 +16,7 @@ IB.Text = T._("Mouse step");
 IB.InputBoxLabel.Text = T._("Enter mouse step:");
 IB.Value.Minimum = 1;
 IB.Value.Maximum = 100;
+IB.Value.Value = MouseStep;
 IB.ShowDialog();
 if (IB.DialogResult == DialogResult.OK)
 {

@@ -13,6 +13,8 @@ namespace DeveloperTool
 public partial class DeveloperTool
 {
 
+public static Mutex SyncThreads = new Mutex();
+
 public static void ModuleDetector()
 {
 while(true)
@@ -26,10 +28,12 @@ FixWindow();
 CreateDevToolKeys();
 SetKeyRegContext(DevKeyRegInfo);
 KeyReg();
-SoundPlay("PluginDetect");
+SoundPlay("WindowOpened");
+SyncThreads.WaitOne();
 WaitModuleClose(ModuleName);
-SoundPlay("WindowClosed");
 KeyUnReg();
+SyncThreads.ReleaseMutex();
+SoundPlay("WindowClosed");
 DeveloperToolKeyList.Clear();
 }
 }

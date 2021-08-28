@@ -8,7 +8,7 @@ public partial class DeveloperTool
 
 public static void FixWindow()
 {
-if (Coords.X < 0 || Coords.Y < 0 || Coords.W > GetDisplayResolution().Width || Coords.H > GetDisplayResolution().Height)
+if (Coords.X < 0 || Coords.Y < 0)
 {
 DialogResult result = MessageBox.Show(T._("This window appears to be out off screen. Do you want to move it to the visible area?"), T._("Attention"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 if (result == DialogResult.OK)
