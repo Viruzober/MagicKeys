@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading;
 using static MKLib;
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public partial class DeveloperTool
@@ -14,13 +14,13 @@ public partial class DeveloperTool
 public static async void VisionBot()
 {
 try{
-if (DP[0] == 0)
+if (OCRSize[0] == 0)
 {
 MKLib.Speak(T._("No rectangle for OCR"));
 return;
 }
 int[] MP = MKLib.GetMousePosition();
-Bitmap Screen = new Bitmap(DP[0], DP[1]);
+Bitmap Screen = new Bitmap(OCRSize[0], OCRSize[1]);
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(MP[0], MP[1], 00, 0, Screen.Size);
 Bitmap S = ResizeImage(Screen, OCRZoom);
@@ -62,11 +62,10 @@ Dictionary<string, string> J = JsonSerializer.Deserialize<Dictionary<string, str
 if (J["status"] == "notready")
 {
 Thread.Sleep(1000);
-SoundPlay("PluginDetect", 0);
+SoundPlay("PluginDetect");
 continue;
 }
 HTTPC.Dispose();
-OCRR = J["text"];
 MKLib.Speak(J["text"]);
 break;
 }

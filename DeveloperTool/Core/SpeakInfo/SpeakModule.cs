@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public partial class DeveloperTool

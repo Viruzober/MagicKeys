@@ -72,6 +72,11 @@
 
   <ItemGroup>
     <None Remove=".gitignore" />
+    <None Remove="Core\Ini\IniRead.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Core\Ini\IniRead.txt" />
   </ItemGroup>
 
   <ItemGroup>

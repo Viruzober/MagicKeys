@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using static MKLib;
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public partial class DeveloperTool
@@ -10,7 +11,6 @@ public partial class DeveloperTool
 public static void MouseStepChange()
 {
 KeyUnReg();
-OptionKeyUnReg();
 InputBox IB = new InputBox();
 IB.Text = T._("Mouse step");
 IB.InputBoxLabel.Text = T._("Enter mouse step:");
@@ -22,8 +22,6 @@ if (IB.DialogResult == DialogResult.OK)
 MouseStep = Convert.ToInt32(IB.GetString());
 }
 KeyReg();
-OptionKeyReg();
-MKLib.Speak(MouseStep.ToString());
 }
 
 }

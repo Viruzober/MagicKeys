@@ -7,7 +7,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void SoundPlay(string SoundFile, int Wait)
+public static void SoundPlay(string SoundFile, bool Wait)
 {
 if (Settings.SoundTheme == true)
 {

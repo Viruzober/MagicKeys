@@ -14,7 +14,7 @@ if (NavigateTo == "Back")
 {
 if (ImgSearch("KontaktLibListStart")[0] == 1)
 {
-SoundPlay("End", 0);
+SoundPlay("End", false);
 }
 else
 {
@@ -30,7 +30,7 @@ else if (NavigateTo == "Next")
 {
 if (ImgSearch("KontaktLibListEnd")[0] == 1)
 {
-SoundPlay("End", 0);
+SoundPlay("End", false);
 }
 else
 {

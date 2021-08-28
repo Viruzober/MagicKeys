@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public partial class DeveloperTool

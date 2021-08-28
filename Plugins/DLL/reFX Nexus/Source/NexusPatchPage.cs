@@ -15,10 +15,10 @@ if (To == "Back")
 int[] FH = ImgSearchArea("FullHome", Coords.X+540, Coords.Y+50, Coords.X+590, Coords.Y+160, 20);
 if (FH[0] == 1)
 {
-SoundPlay("End", 0);
+SoundPlay("End", false);
 return;
 }
-SoundPlay("Scrol", 0);
+SoundPlay("Scrol", false);
 MouseClick("Left", Coords.X+575, Coords.Y+120, 1, 0, 0, 10);
 MouseClick("Right", Coords.X+450, Coords.Y+230, 1, 0, 0, 10);
 MenuItemClick("rename");
@@ -33,10 +33,10 @@ else if (To == "Next")
 int[] FH = ImgSearchArea("FullEnd", Coords.X+540, Coords.Y+180, Coords.X+590, Coords.Y+280, 20);
 if (FH[0] == 1)
 {
-SoundPlay("End", 0);
+SoundPlay("End", false);
 return;
 }
-SoundPlay("Scrol", 0);
+SoundPlay("Scrol", false);
 MouseClick("Left", Coords.X+575, Coords.Y+220, 1, 0, 0, 10);
 MouseClick("Right", Coords.X+450, Coords.Y+105, 1, 0, 0, 10);
 MenuItemClick("rename");

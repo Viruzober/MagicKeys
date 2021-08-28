@@ -2,12 +2,12 @@
 using System.Media;
 using static MKLib;
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 public partial class DeveloperTool
 {
 
-public static void SoundPlay(string SoundFile, int Wait)
+public static void SoundPlay(string SoundFile, bool Wait = false)
 {
 string SoundPath = @$".\Sounds\{SoundFile}.ogg";
 MKLib.PlaySound(SoundPath, Wait);

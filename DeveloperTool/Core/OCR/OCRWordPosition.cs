@@ -7,8 +7,8 @@ using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace MagicKeys
+using static MKLib;
+namespace DeveloperTool
 {
 
 public partial class DeveloperTool
@@ -19,19 +19,9 @@ public static List<int> LX = new List<int>();
 public static List<int> LY = new List<int>();
 public static void OCRWordPosition()
 {
-KeyUnReg();
-OptionKeyUnReg();
-Bitmap Screen = new Bitmap(P[3]-P[1], P[4]-P[2]);
-Graphics g = Graphics.FromImage(Screen);
-g.CopyFromScreen(P[1], P[2], 00, 0, Screen.Size);
-var memoryStream = new MemoryStream();
-Bitmap s = MKLib.ResizeImage(Screen, OCRZoom); 
-s.Save(memoryStream, ImageFormat.Bmp);
-byte[] b = memoryStream.ToArray();
-string Resulte = Task.Run(() => MKLib.OCR(b, "en")).Result;
-OCRResult JsonResulte = JsonSerializer.Deserialize<OCRResult>(Resulte);
+OCRResult Resulte = GetOCRResult(Coords.W-Coords.X, Coords.H-Coords.Y, Coords.X, Coords.Y, OCRZoom);
 OCRResultForm ORF = new		OCRResultForm();
-foreach(var Line in JsonResulte.Lines)
+foreach(var Line in Resulte.Lines)
 {
 for(int I = 0; I <= Line.Words.Count-1; I++)
 {
@@ -43,17 +33,17 @@ LY.Add(Convert.ToInt32(Line.Words[I].BoundingRect.Y));
 foreach(var W in LW){
 ORF.WList.Items.Add(W);
 }
+KeyUnReg();
 ORF.ShowDialog();
+KeyReg();
 if(ORF.DialogResult == DialogResult.OK)
 {
-int SI = ORF.WList.SelectedIndex;
-MKLib.MouseMove(P[1]+(LX[SI] / OCRZoom), P[2]+(LY[SI] / OCRZoom), 0);
+int SI = ORF.WList.SelectedIndices[0];
+MKLib.MouseMove(Coords.X+(LX[SI] / OCRZoom), Coords.Y+(LY[SI] / OCRZoom), 0);
 }
 LW.Clear();
 LX.Clear();
 LY.Clear();
-OptionKeyReg();
-KeyReg();
 }
 
 }

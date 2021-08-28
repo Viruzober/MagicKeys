@@ -7,7 +7,7 @@ using NGettext;
 //T._pn("Context", "You have {0} apple.", "You have {0} apples.", count, count); // GetParticularPluralString
 //
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public class T

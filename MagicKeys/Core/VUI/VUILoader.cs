@@ -18,7 +18,7 @@ VUIObjects.Clear();
 ActiveObjects.Clear();
 CurrentPlugin.Remove("Loader");
 ThreadFunc = string.Empty;
-SoundPlay("ChangeVUI", 0);
+SoundPlay("ChangeVUI", false);
 CurrentPlugin["VUI"] = File;
 ParamsLoader();
 string[] AllVUIObjects = Ini.IniReadSections(API.GetCurrentVUI()).Where(ParamSections => ParamSections != "Params" && ParamSections != "Keys").ToArray();
@@ -50,7 +50,7 @@ GetPluginType();
 VUIPluginLoad();
 KeyLoader();
 KeyReg();
-SoundPlay("PluginDetect", 0);
+SoundPlay("PluginDetect", false);
 }
 
 }

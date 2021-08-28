@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Diagnostics;
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public partial class DevMenu : Form

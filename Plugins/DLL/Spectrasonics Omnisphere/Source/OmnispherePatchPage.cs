@@ -15,10 +15,10 @@ if (To == "Back")
 int[] FH = ImgSearchArea("FullHome", Coords.X+230, Coords.Y+380, Coords.X+270, Coords.Y+420, 20);
 if (FH[0] == 1)
 {
-SoundPlay("End", 0);
+SoundPlay("End", false);
 return;
 }
-SoundPlay("Scrol", 0);
+SoundPlay("Scrol", false);
 MouseClick("Left", Coords.X+250, Coords.Y+395, 1, 0, 0, 10);
 Thread.Sleep(300);
 MouseClick("Left", Coords.X+220, Coords.Y+610, 1, 0, 0, 10);
@@ -28,10 +28,10 @@ else if (To == "Next")
 int[] FH = ImgSearchArea("FullEnd", Coords.X+230, Coords.Y+590, Coords.X+270, Coords.Y+630, 20);
 if (FH[0] == 1)
 {
-SoundPlay("End", 0);
+SoundPlay("End", false);
 return;
 }
-SoundPlay("Scrol", 0);
+SoundPlay("Scrol", false);
 MouseClick("Left", Coords.X+250, Coords.Y+615, 1, 0, 0, 10);
 Thread.Sleep(300);
 MouseClick("Left", Coords.X+220, Coords.Y+400, 1, 0, 0, 10);

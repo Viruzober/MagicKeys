@@ -19,6 +19,7 @@ this.Close();
 public void InputBox_Shown(Object sender, EventArgs e)
 {
 this.Activate();
+Value.Select(0, Value.Text.Length);
 }
 
 public string GetString()

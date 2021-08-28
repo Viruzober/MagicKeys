@@ -82,4 +82,8 @@
     </Compile>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Ini\" />
+  </ItemGroup>
+
 </Project>

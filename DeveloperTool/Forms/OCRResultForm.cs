@@ -1,13 +1,13 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public partial class OCRResultForm : Form
 {
 
-public ListBox WList = new ListBox();
+public ListView WList = new ListView();
 public OCRResultForm()
 {
 InitListBox();
@@ -18,6 +18,10 @@ public void InitListBox()
 {
 WList.Location = new Point(10, 10);
 WList.Size = new Size(400, 150);
+WList.View = View.Details;
+WList.MultiSelect = false;
+WList.Columns.Add(new ColumnHeader());
+WList.Columns[0].Text = "Words";
 this.Controls.Add(WList);
 WList.KeyDown += Form_KeyDown;
 }
@@ -29,7 +33,6 @@ this.StartPosition = FormStartPosition.CenterScreen;
 this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Size = new Size(435, 250);
-this.Name = "DebugForm";
 this.Text = T._("OCR Word List");
 this.Shown += OCRResultForm_Shown;
 }

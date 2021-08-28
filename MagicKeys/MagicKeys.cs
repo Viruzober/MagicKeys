@@ -62,7 +62,7 @@ OptionKeyRegInfo.WNDProcHandle = HM.Handle;
 OptionKeyRegInfo.KeyList = OptionKeyList;
 SetKeyRegContext(OptionKeyRegInfo);
 KeyReg();
-SoundPlay("Start", 0);
+SoundPlay("Start", false);
 Speak(T._("MagicKeys is ready"));
 Application.Run();
 }

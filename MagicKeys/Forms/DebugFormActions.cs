@@ -11,7 +11,7 @@ public partial class DebugForm : Form
 public void DebugForm_Shown(object sender, EventArgs e)
 {
 this.Activate();
-MagicKeys.SoundPlay("Error", 0);
+MagicKeys.SoundPlay("Error", false);
 string[] DI = DebugInfo.Split("|");
 switch(DI[0])
 {

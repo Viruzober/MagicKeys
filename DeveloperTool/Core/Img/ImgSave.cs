@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace MagicKeys
+namespace DeveloperTool
 {
 
 public partial class DeveloperTool
@@ -9,36 +9,26 @@ public partial class DeveloperTool
 
 public static void ImgSave()
 {
-KeyUnReg();
-OptionKeyUnReg();
 int[] MP = MKLib.GetMousePosition();
 string ITB = MKLib.InputTextBox(T._("Image name"), T._("Enter image name."));
 if (ITB == null)
 {
-KeyReg();
-OptionKeyReg();
 return;
 }
-string IBWidth = MKLib.InputBox("Image width", "Enter image width", 1, P[3]-MP[0]);
+string IBWidth = MKLib.InputBox("Image width", "Enter image width", 1, Coords.W-MP[0]);
 if (IBWidth == null)
 {
-KeyReg();
-OptionKeyReg();
 return;
 }
-string IBHeight = MKLib.InputBox("Image height", "Enter image height", 1, P[4]-MP[1]);
+string IBHeight = MKLib.InputBox("Image height", "Enter image height", 1, Coords.H-MP[1]);
 if (IBHeight == null)
 {
-KeyReg();
-OptionKeyReg();
 return;
 }
 Bitmap Screen = new Bitmap(Convert.ToInt32(IBWidth), Convert.ToInt32(IBHeight));
 Graphics g = Graphics.FromImage(Screen);
 g.CopyFromScreen(MP[0], MP[1], 00, 0, Screen.Size);
-Screen.Save(@"DevSave\"+Module+@"\"+ITB+".bmp");
-KeyReg();
-OptionKeyReg();
+Screen.Save(@"DevSave\"+ModuleName+@"\"+ITB+".bmp");
 }
 
 }
