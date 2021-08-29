@@ -9,27 +9,18 @@ namespace MagicKeys
 public static partial class Ini
 {
 
-public static bool IniFileExists(string ExistsFile)
+public static bool IniSectionExists(string IniFile, string Section)
 {
-return File.Exists(ExistsFile);
+List<string> temp = IniReadSections(IniFile);
+bool Exists = temp.Contains(Section, StringComparer.OrdinalIgnoreCase);
+return Exists;
 }
 
-public static bool IniSectionExists(string File, string Section)
+public static bool IniKeyExists(string IniFile, string Section, string Key)
 {
-List<string> temp = new List<string>();
-temp = IniReadSections(File);
-bool x = temp.Contains(Section, StringComparer.OrdinalIgnoreCase);
-temp.Clear();
-return x;
-}
-
-public static bool IniKeyExists(string File, string Section, string Key)
-{
-List<string> temp = new List<string>();
-temp = IniReadKeys(File, Section);
-bool x = temp.Contains(Key, StringComparer.OrdinalIgnoreCase);
-temp.Clear();
-return x;
+List<string> temp = IniReadKeys(IniFile, Section);
+bool Exists = temp.Contains(Key, StringComparer.OrdinalIgnoreCase);
+return Exists;
 }
 
 }

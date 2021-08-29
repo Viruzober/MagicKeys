@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-28 21:07+0300\n"
+"POT-Creation-Date: 2021-08-29 10:03+0300\n"
 "PO-Revision-Date: 2021-08-24 17:10+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -201,10 +201,6 @@ msgstr "Файл справки не найден"
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
 
-#: MagicKeys\Core\Ini\IniManager.cs:61
-msgid "Section not found"
-msgstr "Раздел не найден"
-
 #: MagicKeys\Core\Objects\Slider.cs:12
 msgid "Enter a value for "
 msgstr "Введите значение для "
@@ -391,6 +387,9 @@ msgstr "Ошибка загрузки обновления. Повторите �
 #: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Update file is corrupted."
 msgstr "Файл обновления поврежден."
+
+#~ msgid "Section not found"
+#~ msgstr "Раздел не найден"
 
 #~ msgid "The value is not correct"
 #~ msgstr "Значение неверно"
