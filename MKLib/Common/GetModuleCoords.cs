@@ -19,7 +19,7 @@ HModule.Add(GetForegroundWindow());
 HModule.AddRange(GetAllWindows(GetForegroundWindow()));
 foreach(var H in HModule)
 {
-string ModuleName = GetDllName(H);
+string ModuleName = GetModuleName(H);
 if (ModuleName.Contains(HookModuleName, StringComparison.OrdinalIgnoreCase) == true)
 {
 int[] RectCTRL = GetWinRect(H);

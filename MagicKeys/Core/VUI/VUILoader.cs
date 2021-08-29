@@ -41,7 +41,7 @@ VUIObjects.GetValueOrDefault(ObjectName).Add(Keys[I], Values[I]);
 }
 catch(IndexOutOfRangeException)
 {
-MKDebugForm("VUILoader|"+API.GetCurrentVUI()+"|"+ObjectName);
+MKDebugForm("Object is not correct\r\n"+API.GetCurrentVUI()+" "+ObjectName);
 }
 }
 }

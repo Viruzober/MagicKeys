@@ -5,8 +5,6 @@ using System.Linq;
 using static System.Collections.Specialized.BitVector32;
 using System.Windows.Forms;
 
-namespace MagicKeys
-{
 public static partial class Ini
 {
 
@@ -18,5 +16,4 @@ List<string> Sections = FileStrings.Where(s => s.Trim().Contains("[") || s.Trim(
 return Sections;
 }
 
-}
 }

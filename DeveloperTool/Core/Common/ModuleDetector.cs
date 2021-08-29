@@ -32,6 +32,7 @@ SoundPlay("WindowOpened");
 SyncThreads.WaitOne();
 WaitModuleClose(ModuleName);
 KeyUnReg();
+LockKeys = false;
 SyncThreads.ReleaseMutex();
 SoundPlay("WindowClosed");
 DeveloperToolKeyList.Clear();

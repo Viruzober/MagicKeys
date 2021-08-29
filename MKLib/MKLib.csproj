@@ -68,6 +68,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\DebugFormActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\InputBoxActions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +86,6 @@
     <Compile Update="Forms\InputTextBoxActions.cs">
       <SubType>Form</SubType>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Ini\" />
   </ItemGroup>
 
 </Project>

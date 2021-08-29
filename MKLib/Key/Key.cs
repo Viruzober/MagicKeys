@@ -11,7 +11,7 @@ public List<string> KeyList;
 public static partial class MKLib
 {
 
-public static KeyInfo KeyRegInfo = new KeyInfo();
+private static KeyInfo KeyRegInfo = new KeyInfo();
 
 public static void SetKeyRegContext(KeyInfo GetKeyInfo)
 {

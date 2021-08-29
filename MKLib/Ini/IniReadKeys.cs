@@ -6,9 +6,6 @@ using System.Text.RegularExpressions;
 using static System.Collections.Specialized.BitVector32;
 using System.Windows.Forms;
 
-namespace MagicKeys
-{
-
 public static partial class Ini
 {
 
@@ -24,5 +21,4 @@ List<string> Keys = FileStrings.Select(s => RGX.Split(s.Trim())[0].Trim()).ToLis
 return Keys;
 }
 
-}
 }

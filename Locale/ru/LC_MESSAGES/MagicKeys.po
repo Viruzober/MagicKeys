@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-29 10:03+0300\n"
+"POT-Creation-Date: 2021-08-29 12:19+0300\n"
 "PO-Revision-Date: 2021-08-24 17:10+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -172,9 +172,8 @@ msgstr ""
 "MagicKeys."
 
 #: MagicKeys\MagicKeys.cs:39 MagicKeys\MagicKeys.cs:46
-#: MagicKeys\Core\Common\CheckRunProc.cs:18 MagicKeys\Forms\DebugForm.cs:46
-#: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
-#: MKUpdater\Forms\UpdateFormActions.cs:38
+#: MagicKeys\Core\Common\CheckRunProc.cs:18 MKUpdater\MKUpdater.cs:62
+#: MKUpdater\MKUpdater.cs:72 MKUpdater\Forms\UpdateFormActions.cs:38
 #: MKUpdater\Forms\UpdateFormActions.cs:58
 #: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Error"
@@ -213,57 +212,6 @@ msgstr " от 1 до 100"
 msgid "No plugins are available."
 msgstr "Нет доступных плагинов."
 
-#: MagicKeys\Forms\DebugForm.cs:33 MagicKeys\Forms\MenuForm.cs:17
-msgid "Exit"
-msgstr "Выход"
-
-#: MagicKeys\Forms\DebugFormActions.cs:49
-#: MagicKeys\Forms\DebugFormActions.cs:59
-#: MagicKeys\Forms\DebugFormActions.cs:68
-#: MagicKeys\Forms\DebugFormActions.cs:76
-#: MagicKeys\Forms\DebugFormActions.cs:83
-msgid "Message:"
-msgstr "Сообщение:"
-
-#: MagicKeys\Forms\DebugFormActions.cs:50
-#: MagicKeys\Forms\DebugFormActions.cs:60
-#: MagicKeys\Forms\DebugFormActions.cs:69
-#: MagicKeys\Forms\DebugFormActions.cs:77
-#: MagicKeys\Forms\DebugFormActions.cs:84
-msgid "File:"
-msgstr "Файл:"
-
-#: MagicKeys\Forms\DebugFormActions.cs:51
-#: MagicKeys\Forms\DebugFormActions.cs:61
-msgid "Line:"
-msgstr "Строка:"
-
-#: MagicKeys\Forms\DebugFormActions.cs:52
-#: MagicKeys\Forms\DebugFormActions.cs:62
-msgid "Section:"
-msgstr "Раздел:"
-
-#: MagicKeys\Forms\DebugFormActions.cs:53
-#: MagicKeys\Forms\DebugFormActions.cs:70
-msgid "Key:"
-msgstr "Ключ:"
-
-#: MagicKeys\Forms\DebugFormActions.cs:68
-msgid "The keyboard shortcut cannot be registered"
-msgstr "Не удалось зарегистрировать сочетание клавиш"
-
-#: MagicKeys\Forms\DebugFormActions.cs:76
-msgid "File not found"
-msgstr "Файл не найден"
-
-#: MagicKeys\Forms\DebugFormActions.cs:83
-msgid "The key or value doesn't exist."
-msgstr "Ключ или значение не существует."
-
-#: MagicKeys\Forms\DebugFormActions.cs:85
-msgid "Object:"
-msgstr "Обьект:"
-
 #: MagicKeys\Forms\HelpForm.cs:36 MagicKeys\Forms\MenuForm.cs:16
 #: MagicKeys\Settings\SettingsForm.cs:84
 msgid "Help"
@@ -288,6 +236,10 @@ msgstr "Настройки"
 #: MagicKeys\Forms\MenuForm.cs:15
 msgid "Check for updates"
 msgstr "Проверить наличие обновлений"
+
+#: MagicKeys\Forms\MenuForm.cs:17
+msgid "Exit"
+msgstr "Выход"
 
 #: MagicKeys\Forms\MenuForm.cs:29 MagicKeys\Forms\MenuKeys.cs:25
 #, csharp-format
@@ -387,6 +339,33 @@ msgstr "Ошибка загрузки обновления. Повторите �
 #: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Update file is corrupted."
 msgstr "Файл обновления поврежден."
+
+#~ msgid "Message:"
+#~ msgstr "Сообщение:"
+
+#~ msgid "File:"
+#~ msgstr "Файл:"
+
+#~ msgid "Line:"
+#~ msgstr "Строка:"
+
+#~ msgid "Section:"
+#~ msgstr "Раздел:"
+
+#~ msgid "Key:"
+#~ msgstr "Ключ:"
+
+#~ msgid "The keyboard shortcut cannot be registered"
+#~ msgstr "Не удалось зарегистрировать сочетание клавиш"
+
+#~ msgid "File not found"
+#~ msgstr "Файл не найден"
+
+#~ msgid "The key or value doesn't exist."
+#~ msgstr "Ключ или значение не существует."
+
+#~ msgid "Object:"
+#~ msgstr "Обьект:"
 
 #~ msgid "Section not found"
 #~ msgstr "Раздел не найден"

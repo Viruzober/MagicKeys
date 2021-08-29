@@ -41,7 +41,7 @@ return Result;
 }
 catch(Exception ex)
 {
-MKDebugForm("ExceptionHook|"+ex.ToString());
+MKDebugForm(ex.ToString());
 return null;
 }
 }

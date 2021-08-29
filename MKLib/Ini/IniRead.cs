@@ -4,9 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace MagicKeys
-{
-
 public static partial class Ini
 {
 
@@ -23,5 +20,4 @@ string Value = RGX.Split(KeyValue)[1].Trim();
 return Value;
 }
 
-}
 }

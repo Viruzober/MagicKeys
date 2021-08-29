@@ -40,7 +40,7 @@ PluginClass =  Activator.CreateInstance(ClassType);
 }
 catch(Exception)
 {
-MKDebugForm("FileNotFound|"+ModulePath);
+MKDebugForm("File not found "+ModulePath);
 return;
 }
 }

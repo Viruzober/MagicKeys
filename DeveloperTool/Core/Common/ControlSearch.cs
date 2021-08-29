@@ -25,7 +25,8 @@ ITB.Value.Text = ModuleName;
 ITB.ShowDialog();
 if (ITB.DialogResult == DialogResult.OK)
 {
-if(GetModuleCoords(ITB.GetString()) == new ModuleCoords())
+ModuleCoords GMC = GetModuleCoords(ITB.GetString());
+if(GMC == new ModuleCoords())
 {
 Speak("Not found", true);
 ModuleName = string.Empty;
@@ -35,7 +36,7 @@ return;
 }
 KeyReg();
 LockDeveloperTool = false;
-ModuleName = ITB.GetString();
+ModuleName = GetModuleName(GetWinPointHandle(GMC.X, GMC.Y));
 return;
 }
 KeyReg();

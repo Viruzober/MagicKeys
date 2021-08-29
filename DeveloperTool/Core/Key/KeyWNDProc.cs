@@ -12,7 +12,11 @@ switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
 string Key = GetModKeyName((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
-if (Key== "Alt+Ctrl+A")
+if (Key== "Ctrl+K")
+{
+DeveloperTool.LockDevKeys();
+}
+else if (Key== "Ctrl+A")
 {
 if (DeveloperTool.AutoOCR == true)
 {
@@ -29,11 +33,11 @@ else if (Key == "Left" || Key == "Right" || Key == "Up" || Key == "Down")
 {
 DeveloperTool.MouseMover(Key);
 }
-else if (Key == "Ctrl+Shift+P")
+else if (Key == "Ctrl+S")
 {
 DeveloperTool.MouseStepChange();
 }
-else if (Key == "Ctrl+Shift+R")
+else if (Key == "Ctrl+R")
 {
 DeveloperTool.RectOCR();
 }
@@ -45,7 +49,7 @@ else if (Key == "Shift+O")
 {
 DeveloperTool.VisionBot();
 }
-else if (Key == "Ctrl+Shift+Z")
+else if (Key == "Ctrl+Z")
 {
 DeveloperTool.OCRZoomChange();
 }
@@ -77,15 +81,11 @@ else if (Key == "C")
 {
 DeveloperTool.SpeakColor();
 }
-else if (Key == "Ctrl+S")
-{
-DeveloperTool.Save();
-}
 else if (Key == "Ctrl+I")
 {
 DeveloperTool.ImgSave();
 }
-else if (Key == "Ctrl+Shift+G")
+else if (Key == "Ctrl+G")
 {
 DeveloperTool.MouseGoTo();
 }

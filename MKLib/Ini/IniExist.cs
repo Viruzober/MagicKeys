@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace MagicKeys
-{
 
 public static partial class Ini
 {
@@ -23,5 +21,4 @@ bool Exists = temp.Contains(Key, StringComparer.OrdinalIgnoreCase);
 return Exists;
 }
 
-}
 }

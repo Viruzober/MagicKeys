@@ -5,7 +5,7 @@ using System.Text;
 public static partial class MKLib
 {
 
-public static string GetDllName(IntPtr Handle)
+public static string GetModuleName(IntPtr Handle)
 {
 int nChars = 256;
 StringBuilder Text = new StringBuilder(nChars);

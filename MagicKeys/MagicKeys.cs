@@ -24,10 +24,10 @@ static void Main()
 {
 Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
 Application.ThreadException +=
-(o, e) => MKDebugForm("ExceptionHook|"+e.Exception.ToString());
+(o, e) => MKDebugForm(e.Exception.ToString());
 Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
 AppDomain.CurrentDomain.UnhandledException +=
-(o, e) => MKDebugForm("ExceptionHook|"+e.ExceptionObject.ToString());
+(o, e) => MKDebugForm(e.ExceptionObject.ToString());
 if (CheckRunProc("MagicKeys") == true)
 {
 return;

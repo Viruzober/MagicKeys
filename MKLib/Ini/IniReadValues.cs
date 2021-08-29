@@ -3,9 +3,6 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace MagicKeys
-{
-
 public static partial class Ini
 {
 
@@ -21,5 +18,4 @@ List<string> Keys = FileStrings.Select(s => RGX.Split(s.Trim())[1].Trim()).ToLis
 return Keys;
 }
 
-}
 }
