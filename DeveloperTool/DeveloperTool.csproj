@@ -52,6 +52,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\EditProjectActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\EditProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\OCRResultForm.cs">
       <SubType>Form</SubType>
     </Compile>

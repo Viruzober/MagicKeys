@@ -1,4 +1,5 @@
 using System.Windows.Forms;
+using System.Threading;
 using static MKLib;
 
 namespace DeveloperTool
@@ -12,7 +13,19 @@ switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
 string Key = GetModKeyName((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
-if (Key== "Ctrl+K")
+if (Key == "Ctrl+Shift+E")
+{
+DeveloperTool.EditProject();
+}
+else if (Key == "Ctrl+D")
+{
+DeveloperTool.DeleteCurrentProject();
+}
+else if (Key == "Ctrl+Shift+N")
+{
+DeveloperTool.CreateProject();
+}
+else if (Key== "Ctrl+K")
 {
 DeveloperTool.LockDevKeys();
 }

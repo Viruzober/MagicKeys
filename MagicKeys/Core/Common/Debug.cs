@@ -10,7 +10,7 @@ public static void MKDebugForm(string DebugInfo)
 {
 KeyUnReg();
 LockPluginDetect = true;
-DebugForm(DebugInfo);
+CallDebugForm(DebugInfo);
 }
 
 }

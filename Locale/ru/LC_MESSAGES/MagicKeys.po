@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-29 12:19+0300\n"
+"POT-Creation-Date: 2021-09-02 10:40+0300\n"
 "PO-Revision-Date: 2021-08-24 17:10+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -80,15 +80,6 @@ msgstr "Название изображения"
 msgid "Enter image name."
 msgstr "Введите название изображения."
 
-#: DeveloperTool\Core\Mouse\MouseCoordSavve.cs:14
-#: MagicKeys\Settings\SettingsForm.cs:90
-msgid "Save"
-msgstr "Сохранить"
-
-#: DeveloperTool\Core\Mouse\MouseCoordSavve.cs:14
-msgid "Enter name for save."
-msgstr "Введите название для сохранения."
-
 #: DeveloperTool\Core\Mouse\MouseGoTo.cs:16
 msgid "Mouse X"
 msgstr "координата мыши X"
@@ -142,6 +133,28 @@ msgstr "Высота OCR"
 msgid "Enter OCR height:"
 msgstr "Введите высоту OCR:"
 
+#: DeveloperTool\Core\Project\CreateProject.cs:26
+msgid "The project for this module already exists"
+msgstr ""
+
+#: DeveloperTool\Core\Project\DeleteCurrentProject.cs:16
+#, fuzzy
+msgid "Do you really want to delete current project?"
+msgstr "Вы действительно хотите завершить работу MagicKeys?"
+
+#: DeveloperTool\Core\Project\DeleteCurrentProject.cs:16
+msgid "Delete current project"
+msgstr ""
+
+#: DeveloperTool\Core\Project\EditProject.cs:14
+#, fuzzy
+msgid "Project is not opened"
+msgstr "Раздел не найден"
+
+#: DeveloperTool\Core\Project\OpenProject.cs:23
+msgid "project is opened"
+msgstr ""
+
 #: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:12
 msgid "Width"
 msgstr "Ширина"
@@ -152,6 +165,47 @@ msgstr "Высота"
 
 #: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:15
 msgid "Window is not fully visible."
+msgstr ""
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:17
+#: DeveloperTool\Forms\CreateProjectForm.cs:22
+msgid "Create project"
+msgstr ""
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:18
+#: DeveloperTool\Forms\EditProject.cs:15 MagicKeys\Settings\SettingsForm.cs:96
+#: MKUpdater\Forms\UpdateForm.cs:61
+msgid "Cancel"
+msgstr "Отмена"
+
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:26
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:31
+#: DeveloperTool\Forms\EditProjectActions.cs:28
+#: DeveloperTool\Forms\EditProjectActions.cs:35 MagicKeys\MagicKeys.cs:39
+#: MagicKeys\MagicKeys.cs:46 MagicKeys\Core\Common\CheckRunProc.cs:18
+#: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
+#: MKUpdater\Forms\UpdateFormActions.cs:38
+#: MKUpdater\Forms\UpdateFormActions.cs:58
+#: MKUpdater\Forms\UpdateFormActions.cs:65
+msgid "Error"
+msgstr "Ошибка"
+
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:26
+#: DeveloperTool\Forms\EditProjectActions.cs:28
+msgid "Some fields are empty"
+msgstr ""
+
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:31
+#: DeveloperTool\Forms\EditProjectActions.cs:35
+msgid "A project with the same name already exists."
+msgstr ""
+
+#: DeveloperTool\Forms\EditProject.cs:14 MagicKeys\Settings\SettingsForm.cs:90
+msgid "Save"
+msgstr "Сохранить"
+
+#: DeveloperTool\Forms\EditProject.cs:19
+msgid "EditProject"
 msgstr ""
 
 #: DeveloperTool\Forms\MenuForm.cs:24
@@ -170,14 +224,6 @@ msgstr ""
 "Эта версия MagicKeys предназначена для 32-разрядных версий Windows, но вы "
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
-
-#: MagicKeys\MagicKeys.cs:39 MagicKeys\MagicKeys.cs:46
-#: MagicKeys\Core\Common\CheckRunProc.cs:18 MKUpdater\MKUpdater.cs:62
-#: MKUpdater\MKUpdater.cs:72 MKUpdater\Forms\UpdateFormActions.cs:38
-#: MKUpdater\Forms\UpdateFormActions.cs:58
-#: MKUpdater\Forms\UpdateFormActions.cs:65
-msgid "Error"
-msgstr "Ошибка"
 
 #: MagicKeys\MagicKeys.cs:46
 msgid "You must close DeveloperTool to run MagicKeys."
@@ -295,10 +341,6 @@ msgstr "Канал обновлений"
 msgid "check for updates when magicKeys starts"
 msgstr "Проверять наличие обновлений при запуске magicKeys"
 
-#: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
-msgid "Cancel"
-msgstr "Отмена"
-
 #: MKUpdater\MKUpdater.cs:46
 msgid "No updates available."
 msgstr "Нет доступных обновлений."
@@ -340,6 +382,9 @@ msgstr "Ошибка загрузки обновления. Повторите �
 msgid "Update file is corrupted."
 msgstr "Файл обновления поврежден."
 
+#~ msgid "Enter name for save."
+#~ msgstr "Введите название для сохранения."
+
 #~ msgid "Message:"
 #~ msgstr "Сообщение:"
 
@@ -366,9 +411,6 @@ msgstr "Файл обновления поврежден."
 
 #~ msgid "Object:"
 #~ msgstr "Обьект:"
-
-#~ msgid "Section not found"
-#~ msgstr "Раздел не найден"
 
 #~ msgid "The value is not correct"
 #~ msgstr "Значение неверно"

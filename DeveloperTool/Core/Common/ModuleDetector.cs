@@ -30,12 +30,12 @@ SetKeyRegContext(DevKeyRegInfo);
 KeyReg();
 SoundPlay("WindowOpened");
 SyncThreads.WaitOne();
+OpenProject();
 WaitModuleClose(ModuleName);
 KeyUnReg();
 LockKeys = false;
 SyncThreads.ReleaseMutex();
 SoundPlay("WindowClosed");
-DeveloperToolKeyList.Clear();
 }
 }
 
