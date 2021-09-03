@@ -20,6 +20,7 @@ foreach(var Point in Points)
 if (ModuleName.Contains(Ini.IniRead(ManifestDir+@"\Manifest.ini", Point, "Module")) == true)
 {
 ProjectName = Ini.IniRead(ManifestDir+@"\Manifest.ini", "Info", "Name");
+PointName = Point;
 Speak(ProjectName+" "+T._("project is opened"));
 }
 }

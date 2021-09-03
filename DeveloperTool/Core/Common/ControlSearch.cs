@@ -18,10 +18,7 @@ SyncThreads.WaitOne();
 SetKeyRegContext(OptionKeyRegInfo);
 KeyUnReg();
 SyncThreads.ReleaseMutex();
-InputTextBox ITB = new InputTextBox();
-ITB.Text = T._("Control search");
-ITB.InputBoxLabel.Text = T._("Enter substring to search for a module.");
-ITB.Value.Text = ModuleName;
+ControlSearchForm ITB = new ControlSearchForm();
 ITB.ShowDialog();
 if (ITB.DialogResult == DialogResult.OK)
 {

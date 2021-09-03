@@ -20,6 +20,11 @@ public static List<string> OptionKeyList = new List<string>();
 [STAThread]
 static void Main()
 {
+Ini.IniWrite("Curac.ini", "Curac", "Key", "Value");
+Ini.IniWrite("Curac.ini", "Curac", "Key2", "Value");
+Ini.IniWrite("Curac.ini", "Curac", "Key3", "Value");
+Ini.IniWrite("Curac.ini", "Curac", "Key4", "Value");
+Ini.IniDeleteKey("Curac.ini", "Curac", "Key");
 Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
 if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)

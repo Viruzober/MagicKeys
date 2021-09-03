@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-02 10:40+0300\n"
+"POT-Creation-Date: 2021-09-03 14:21+0300\n"
 "PO-Revision-Date: 2021-08-24 17:10+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -57,14 +57,6 @@ msgstr "Результат"
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:69
 msgid "Install"
 msgstr "Установить"
-
-#: DeveloperTool\Core\Common\ControlSearch.cs:22
-msgid "Control search"
-msgstr "Поиск элемента управления"
-
-#: DeveloperTool\Core\Common\ControlSearch.cs:23
-msgid "Enter substring to search for a module."
-msgstr "Введите подстроку для поиска модуля."
 
 #: DeveloperTool\Core\Common\FixWindow.cs:13
 msgid ""
@@ -151,7 +143,7 @@ msgstr ""
 msgid "Project is not opened"
 msgstr "Раздел не найден"
 
-#: DeveloperTool\Core\Project\OpenProject.cs:23
+#: DeveloperTool\Core\Project\OpenProject.cs:24
 msgid "project is opened"
 msgstr ""
 
@@ -167,16 +159,29 @@ msgstr "Высота"
 msgid "Window is not fully visible."
 msgstr ""
 
-#: DeveloperTool\Forms\CreateProjectForm.cs:17
-#: DeveloperTool\Forms\CreateProjectForm.cs:22
-msgid "Create project"
+#: DeveloperTool\Forms\ControlSearchForm.cs:13
+msgid "OK"
 msgstr ""
 
+#: DeveloperTool\Forms\ControlSearchForm.cs:14
 #: DeveloperTool\Forms\CreateProjectForm.cs:18
 #: DeveloperTool\Forms\EditProject.cs:15 MagicKeys\Settings\SettingsForm.cs:96
 #: MKUpdater\Forms\UpdateForm.cs:61
 msgid "Cancel"
 msgstr "Отмена"
+
+#: DeveloperTool\Forms\ControlSearchForm.cs:18
+msgid "Control search"
+msgstr "Поиск элемента управления"
+
+#: DeveloperTool\Forms\ControlSearchForm.cs:30
+msgid "Enter or select module name"
+msgstr ""
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:17
+#: DeveloperTool\Forms\CreateProjectForm.cs:22
+msgid "Create project"
+msgstr ""
 
 #: DeveloperTool\Forms\CreateProjectFormActions.cs:26
 #: DeveloperTool\Forms\CreateProjectFormActions.cs:31
@@ -381,6 +386,13 @@ msgstr "Ошибка загрузки обновления. Повторите �
 #: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Update file is corrupted."
 msgstr "Файл обновления поврежден."
+
+#, fuzzy
+#~ msgid "Control search form"
+#~ msgstr "Поиск элемента управления"
+
+#~ msgid "Enter substring to search for a module."
+#~ msgstr "Введите подстроку для поиска модуля."
 
 #~ msgid "Enter name for save."
 #~ msgstr "Введите название для сохранения."
