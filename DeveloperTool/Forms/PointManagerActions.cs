@@ -34,11 +34,11 @@ Delete.Enabled = true;
 
 public void AddPoint(Object Sender, EventArgs e)
 {
-string AddNewPoint = InputTextBox(T._("Point name"), T._("Enter new point name"));
+string AddNewPoint = InputTextBox(T._("Entry Point Name"), T._("Enter new entry point name."));
 if (AddNewPoint == null) return;
 if (Ini.IniSectionExists("Projects/"+DeveloperTool.ProjectName+"/Manifest.ini", AddNewPoint) == true)
 {
-MessageBox.Show(T._("An entry point with the same name already exists."), T._("Error"));
+MessageBox.Show(T._("An entry point with the same name already exists."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 Ini.IniAddSection("Projects/"+DeveloperTool.ProjectName+"/Manifest.ini", AddNewPoint);
@@ -47,7 +47,7 @@ Points.Items.Add(AddNewPoint);
 
 public async void DeletePoint(object Sender, EventArgs e)
 {
-DialogResult result = await Task.Run(async () => MessageBox.Show(T._("Do you really want to delete selected point?"), T._("Delete point"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification));
+DialogResult result = await Task.Run(async () => MessageBox.Show(T._("Do you really want to delete the selected entry point?"), T._("Delete Entry Point"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification));
 if (result == DialogResult.OK)
 {
 Ini.IniDeleteSection("Projects/"+DeveloperTool.ProjectName+"/Manifest.ini", Points.SelectedItem.ToString());

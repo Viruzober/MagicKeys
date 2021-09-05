@@ -28,17 +28,17 @@ var TextBoxes = this.Controls.OfType<TableLayoutPanel>().ToList()[0].Controls.Of
 var TextBoxesText = TextBoxes.Select(t => t.Text).ToList();
 if (TextBoxesText.Any(s => string.IsNullOrEmpty(s)) == true)
 {
-MessageBox.Show(T._("Error"), T._("Some fields are empty"));
+MessageBox.Show(T._("Some fields are empty."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 if (Directory.Exists("Projects/"+TextBoxesText[0]) == true)
 {
-MessageBox.Show(T._("Error"), T._("A project with the same name already exists."));
+MessageBox.Show(T._("A project with the same name already exists."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 if (File.Exists("Projects/"+DeveloperTool.VUIName+"/VUI/"+TextBoxesText[4]+".vui") == true)
 {
-MessageBox.Show(T._("Error"), T._("A VUI with the same name already exists."));
+MessageBox.Show(T._("A VUI with the same name already exists."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 if (TextBoxesText[4] != DeveloperTool.VUIName)

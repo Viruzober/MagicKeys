@@ -32,7 +32,7 @@ TableLayoutPanel Table = new TableLayoutPanel();
 Table.ColumnCount = 2;
 Table.Location = new Point (10, 10);
 Table.Size = new Size(450, 100);
-Table.Controls.Add(new Label() {Text = T._("Points")});
+Table.Controls.Add(new Label() {Text = T._("Points:")});
 Points.DropDownStyle = ComboBoxStyle.DropDownList;
 Points.SelectedIndexChanged += ChangeSelectPoint;
 Table.Controls.Add(Points);

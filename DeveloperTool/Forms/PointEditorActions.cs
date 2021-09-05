@@ -19,7 +19,7 @@ public async void Save_Click(object Sender, EventArgs e)
 {
 if (string.IsNullOrEmpty(PointName.Text) == true || string.IsNullOrEmpty(Modules.Text) == true)
 {
-await Task.Run(async () => MessageBox.Show(T._("Error"), T._("Some fields are empty")));
+await Task.Run(async () => MessageBox.Show(T._("Some fields are empty."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error));
 return;
 }
 Ini.IniRenameSection("Projects/"+DeveloperTool.ProjectName+"/Manifest.ini", OldPointName, PointName.Text);

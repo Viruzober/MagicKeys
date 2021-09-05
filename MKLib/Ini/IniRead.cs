@@ -16,7 +16,7 @@ if (File.Exists(IniFile) == false)
 MKLib.CallDebugForm("File not found.\r\n"+"File: "+IniFile);
 return null;
 }
- List<string> FileStrings = File.ReadAllLines(IniFile).ToList();
+List<string> FileStrings = File.ReadAllLines(IniFile).ToList();
 if (FileStrings.Any() == false)
 {
 MKLib.CallDebugForm("File is empty.\r\n"+"File: "+IniFile);
