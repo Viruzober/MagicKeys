@@ -34,7 +34,7 @@ this.MaximizeBox = false;
 this.MinimizeBox = false;
 this.Size = new Size(435, 250);
 this.Text = T._("OCR Word List");
-this.Shown += OCRResultForm_Shown;
+this.Load += OCRResultForm_Shown;
 }
 
 }

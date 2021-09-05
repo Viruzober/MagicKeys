@@ -13,7 +13,7 @@ public static void DeleteCurrentProject()
 if (ProjectName != string.Empty)
 {
 KeyUnReg();
-DialogResult result = MessageBox.Show(T._("Do you really want to delete current project?"), T._("Delete current project"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+DialogResult result = MessageBox.Show(T._("Do you really want to delete current project?"), T._("Delete current project"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification);
 if (result == DialogResult.OK)
 {
 Directory.Delete(@"Projects\"+ProjectName, true);

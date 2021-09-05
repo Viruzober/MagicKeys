@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-03 14:21+0300\n"
+"POT-Creation-Date: 2021-09-05 12:43+0300\n"
 "PO-Revision-Date: 2021-08-24 17:10+0200\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -135,15 +135,17 @@ msgid "Do you really want to delete current project?"
 msgstr "Вы действительно хотите завершить работу MagicKeys?"
 
 #: DeveloperTool\Core\Project\DeleteCurrentProject.cs:16
+#: DeveloperTool\Forms\PointManagerActions.cs:50
 msgid "Delete current project"
 msgstr ""
 
-#: DeveloperTool\Core\Project\EditProject.cs:14
+#: DeveloperTool\Core\Project\EditProject.cs:15
+#: DeveloperTool\Core\Project\ManagePoint.cs:14
 #, fuzzy
 msgid "Project is not opened"
 msgstr "Раздел не найден"
 
-#: DeveloperTool\Core\Project\OpenProject.cs:24
+#: DeveloperTool\Core\Project\OpenProject.cs:26
 msgid "project is opened"
 msgstr ""
 
@@ -165,8 +167,9 @@ msgstr ""
 
 #: DeveloperTool\Forms\ControlSearchForm.cs:14
 #: DeveloperTool\Forms\CreateProjectForm.cs:18
-#: DeveloperTool\Forms\EditProject.cs:15 MagicKeys\Settings\SettingsForm.cs:96
-#: MKUpdater\Forms\UpdateForm.cs:61
+#: DeveloperTool\Forms\EditProject.cs:18
+#: DeveloperTool\Forms\PointEditorForm.cs:20
+#: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -183,10 +186,13 @@ msgstr ""
 msgid "Create project"
 msgstr ""
 
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:26
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:31
-#: DeveloperTool\Forms\EditProjectActions.cs:28
-#: DeveloperTool\Forms\EditProjectActions.cs:35 MagicKeys\MagicKeys.cs:39
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:27
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:32
+#: DeveloperTool\Forms\EditProjectActions.cs:31
+#: DeveloperTool\Forms\EditProjectActions.cs:36
+#: DeveloperTool\Forms\EditProjectActions.cs:41
+#: DeveloperTool\Forms\PointEditorActions.cs:22
+#: DeveloperTool\Forms\PointManagerActions.cs:41 MagicKeys\MagicKeys.cs:39
 #: MagicKeys\MagicKeys.cs:46 MagicKeys\Core\Common\CheckRunProc.cs:18
 #: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
 #: MKUpdater\Forms\UpdateFormActions.cs:38
@@ -195,22 +201,29 @@ msgstr ""
 msgid "Error"
 msgstr "Ошибка"
 
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:26
-#: DeveloperTool\Forms\EditProjectActions.cs:28
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:27
+#: DeveloperTool\Forms\EditProjectActions.cs:31
+#: DeveloperTool\Forms\PointEditorActions.cs:22
 msgid "Some fields are empty"
 msgstr ""
 
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:31
-#: DeveloperTool\Forms\EditProjectActions.cs:35
+#: DeveloperTool\Forms\CreateProjectFormActions.cs:32
+#: DeveloperTool\Forms\EditProjectActions.cs:36
 msgid "A project with the same name already exists."
 msgstr ""
 
-#: DeveloperTool\Forms\EditProject.cs:14 MagicKeys\Settings\SettingsForm.cs:90
+#: DeveloperTool\Forms\EditProject.cs:17
+#: DeveloperTool\Forms\PointEditorForm.cs:19
+#: MagicKeys\Settings\SettingsForm.cs:90
 msgid "Save"
 msgstr "Сохранить"
 
-#: DeveloperTool\Forms\EditProject.cs:19
+#: DeveloperTool\Forms\EditProject.cs:22
 msgid "EditProject"
+msgstr ""
+
+#: DeveloperTool\Forms\EditProjectActions.cs:41
+msgid "A VUI with the same name already exists."
 msgstr ""
 
 #: DeveloperTool\Forms\MenuForm.cs:24
@@ -220,6 +233,52 @@ msgstr "Developer tool"
 #: DeveloperTool\Forms\OCRResultForm.cs:36
 msgid "OCR Word List"
 msgstr "список ключевых слов OCR"
+
+#: DeveloperTool\Forms\PointEditorForm.cs:34
+msgid "Edit point"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManager.cs:17
+msgid "Add"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManager.cs:18
+msgid "Delete"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManager.cs:19
+msgid "Edit"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManager.cs:20
+msgid "Close"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManager.cs:25
+msgid "Point manager"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManager.cs:35
+msgid "Points"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManagerActions.cs:37
+msgid "Point name"
+msgstr ""
+
+#: DeveloperTool\Forms\PointManagerActions.cs:37
+#, fuzzy
+msgid "Enter new point name"
+msgstr "Введите новую позицию мыши X"
+
+#: DeveloperTool\Forms\PointManagerActions.cs:41
+msgid "An entry point with the same name already exists."
+msgstr ""
+
+#: DeveloperTool\Forms\PointManagerActions.cs:50
+#, fuzzy
+msgid "Do you really want to delete selected point?"
+msgstr "Вы действительно хотите завершить работу MagicKeys?"
 
 #: MagicKeys\MagicKeys.cs:39
 msgid ""

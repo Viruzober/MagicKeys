@@ -15,6 +15,7 @@ public partial class CreateProjectForm : Form
 public void Form_Show(object Sender, EventArgs e)
 {
 this.Activate();
+Module.Text = DeveloperTool.ModuleName;
 }
 
 public void Click_Create(object Sender, EventArgs e)
@@ -38,11 +39,13 @@ Ini.IniWrite("Projects/"+TextBoxesText[0]+"/Manifest.ini", TextBoxesText[3], "VU
 Ini.IniWrite("Projects/"+TextBoxesText[0]+"/Manifest.ini", TextBoxesText[3], "Module", TextBoxesText[5]);
 CreateFile("Projects/"+TextBoxesText[0]+"/VUI/"+TextBoxesText[4]+".vui");
 CreateFile("Projects/"+TextBoxesText[0]+"/VUI/"+TextBoxesText[4]+".vuf");
+this.DialogResult = DialogResult.OK;
 this.Close();
 }
 
 public void Click_Cancel(object sender, EventArgs e)
 {
+this.DialogResult = DialogResult.Cancel;
 this.Close();
 }
 

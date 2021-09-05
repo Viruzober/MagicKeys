@@ -21,6 +21,8 @@ if (ModuleName.Contains(Ini.IniRead(ManifestDir+@"\Manifest.ini", Point, "Module
 {
 ProjectName = Ini.IniRead(ManifestDir+@"\Manifest.ini", "Info", "Name");
 PointName = Point;
+VUIName = Path.GetFileNameWithoutExtension(Ini.IniRead(ManifestDir+@"\Manifest.ini", Point, "VUI"));
+ModuleName = Ini.IniRead(ManifestDir+@"\Manifest.ini", Point, "Module");
 Speak(ProjectName+" "+T._("project is opened"));
 }
 }

@@ -13,7 +13,11 @@ switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
 string Key = GetModKeyName((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
-if (Key == "Ctrl+Shift+E")
+if (Key == "Ctrl+Shift+P")
+{
+DeveloperTool.ManagePoint();
+}
+else if (Key == "Ctrl+Shift+E")
 {
 DeveloperTool.EditProject();
 }

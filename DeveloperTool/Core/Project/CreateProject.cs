@@ -31,7 +31,10 @@ return;
 KeyUnReg();
 CreateProjectForm CPF = new CreateProjectForm();
 CPF.ShowDialog();
+if (CPF.DialogResult == DialogResult.OK)
+{
 OpenProject();
+}
 KeyReg();
 }
 

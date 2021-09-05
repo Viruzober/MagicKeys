@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Linq;
-using System.Windows.Forms;
 using static MKLib;
 
 namespace DeveloperTool
@@ -8,7 +7,7 @@ namespace DeveloperTool
 public partial class DeveloperTool
 {
 
-public static void EditProject()
+public static void ManagePoint()
 {
 if (ProjectName == string.Empty)
 {
@@ -16,12 +15,8 @@ Speak(T._("Project is not opened"));
 return;
 }
 KeyUnReg();
-EditProjectForm EPF = new EditProjectForm();
-EPF.ShowDialog();
-if (EPF.DialogResult == DialogResult.OK)
-{
-OpenProject();
-}
+PointManager PM = new PointManager();
+PM.ShowDialog();
 KeyReg();
 }
 

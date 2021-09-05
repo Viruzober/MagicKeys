@@ -34,7 +34,7 @@ Table.Controls.Add(OK);
 Table.Controls.Add(Cancel);
 this.Controls.Add(Table);
 this.Size = new Size(Table.Size.Width+50, Table.Size.Height+30);
-this.Paint += Form_Show;
+this.Load += Form_Show;
 ModulesList.SelectedIndexChanged += ModulesList_ChangeSelectItem;
 OK.Click += OK_Click;
 Cancel.Click += Cancel_Click;
