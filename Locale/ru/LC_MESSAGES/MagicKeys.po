@@ -2,8 +2,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2021-09-05 12:43+0300\n"
 "PO-Revision-Date: 2021-08-24 17:10+0200\n"
+=======
+"POT-Creation-Date: 2021-09-03 14:21+0300\n"
+"PO-Revision-Date: 2021-09-03 18:14+0200\n"
+>>>>>>> 41a8ed1d77274363ac5923db6f11519f98cdb353
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -63,6 +68,8 @@ msgid ""
 "This window appears to be out off screen. Do you want to move it to the "
 "visible area?"
 msgstr ""
+"Это окно отображается за пределами экрана. Вы хотите переместить его в "
+"видимую область?"
 
 #: DeveloperTool\Core\Img\ImgSave.cs:13
 msgid "Image name"
@@ -127,27 +134,30 @@ msgstr "Введите высоту OCR:"
 
 #: DeveloperTool\Core\Project\CreateProject.cs:26
 msgid "The project for this module already exists"
-msgstr ""
+msgstr "Проект для этого модуля уже существует"
 
 #: DeveloperTool\Core\Project\DeleteCurrentProject.cs:16
-#, fuzzy
 msgid "Do you really want to delete current project?"
-msgstr "Вы действительно хотите завершить работу MagicKeys?"
+msgstr "Вы действительно хотите удалить текущий проект?"
 
 #: DeveloperTool\Core\Project\DeleteCurrentProject.cs:16
 #: DeveloperTool\Forms\PointManagerActions.cs:50
 msgid "Delete current project"
-msgstr ""
+msgstr "Удаление текущего проекта"
 
+<<<<<<< HEAD
 #: DeveloperTool\Core\Project\EditProject.cs:15
 #: DeveloperTool\Core\Project\ManagePoint.cs:14
 #, fuzzy
+=======
+#: DeveloperTool\Core\Project\EditProject.cs:14
+>>>>>>> 41a8ed1d77274363ac5923db6f11519f98cdb353
 msgid "Project is not opened"
-msgstr "Раздел не найден"
+msgstr "Проект не открыт"
 
 #: DeveloperTool\Core\Project\OpenProject.cs:26
 msgid "project is opened"
-msgstr ""
+msgstr "проект открыт"
 
 #: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:12
 msgid "Width"
@@ -159,11 +169,11 @@ msgstr "Высота"
 
 #: DeveloperTool\Core\SpeakInfo\SpeakWindowRect.cs:15
 msgid "Window is not fully visible."
-msgstr ""
+msgstr "Окно видно не полностью."
 
 #: DeveloperTool\Forms\ControlSearchForm.cs:13
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: DeveloperTool\Forms\ControlSearchForm.cs:14
 #: DeveloperTool\Forms\CreateProjectForm.cs:18
@@ -179,12 +189,12 @@ msgstr "Поиск элемента управления"
 
 #: DeveloperTool\Forms\ControlSearchForm.cs:30
 msgid "Enter or select module name"
-msgstr ""
+msgstr "Введите или выберите имя модуля"
 
 #: DeveloperTool\Forms\CreateProjectForm.cs:17
 #: DeveloperTool\Forms\CreateProjectForm.cs:22
 msgid "Create project"
-msgstr ""
+msgstr "Создать проект"
 
 #: DeveloperTool\Forms\CreateProjectFormActions.cs:27
 #: DeveloperTool\Forms\CreateProjectFormActions.cs:32
@@ -205,12 +215,12 @@ msgstr "Ошибка"
 #: DeveloperTool\Forms\EditProjectActions.cs:31
 #: DeveloperTool\Forms\PointEditorActions.cs:22
 msgid "Some fields are empty"
-msgstr ""
+msgstr "Некоторые поля пусты"
 
 #: DeveloperTool\Forms\CreateProjectFormActions.cs:32
 #: DeveloperTool\Forms\EditProjectActions.cs:36
 msgid "A project with the same name already exists."
-msgstr ""
+msgstr "Проект с таким именем уже существует."
 
 #: DeveloperTool\Forms\EditProject.cs:17
 #: DeveloperTool\Forms\PointEditorForm.cs:19
@@ -220,7 +230,7 @@ msgstr "Сохранить"
 
 #: DeveloperTool\Forms\EditProject.cs:22
 msgid "EditProject"
-msgstr ""
+msgstr "РедактироватьПроект"
 
 #: DeveloperTool\Forms\EditProjectActions.cs:41
 msgid "A VUI with the same name already exists."
