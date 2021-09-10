@@ -8,7 +8,7 @@ using System.IO;
 
 namespace DeveloperTool
 {
-public partial class PointEditor : Form
+public partial class PointEditorForm : Form
 {
 
 public string OldPointName;
@@ -19,7 +19,7 @@ public ComboBox Modules = new ComboBox() {Dock = DockStyle.Fill};
 public Button Save = new Button() {Text = T._("Save")};
 public Button Cancel = new Button() {Text = T._("Cancel")};
 
-public PointEditor(string OldPoint, string[] AllVUI, string[] AllModules)
+public PointEditorForm(string OldPoint, string[] AllVUI, string[] AllModules)
 {
 OldPointName = OldPoint;
 PointName.Text = OldPointName;

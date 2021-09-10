@@ -36,15 +36,15 @@ if (Directory.Exists("Projects/"+TextBoxesText[0]) == true)
 MessageBox.Show(T._("A project with the same name already exists."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
-if (File.Exists("Projects/"+DeveloperTool.VUIName+"/VUI/"+TextBoxesText[4]+".vui") == true)
+if (File.Exists(API.GetVUIPath()+"/"+TextBoxesText[4]+".vui") == true)
 {
 MessageBox.Show(T._("A VUI with the same name already exists."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 if (TextBoxesText[4] != DeveloperTool.VUIName)
 {
-File.Move("Projects/"+DeveloperTool.ProjectName+"/VUI/"+DeveloperTool.VUIName+".vui", "Projects/"+DeveloperTool.ProjectName+"/VUI/"+TextBoxesText[4]+".vui");
-File.Move("Projects/"+DeveloperTool.ProjectName+"/VUI/"+DeveloperTool.VUIName+".vuf", "Projects/"+DeveloperTool.ProjectName+"/VUI/"+TextBoxesText[4]+".vuf");
+File.Move(API.GetVUIPath()+"/"+DeveloperTool.VUIName+".vui", API.GetVUIPath()+"/"+TextBoxesText[4]+".vui");
+File.Move(API.GetVUIPath()+"/"+DeveloperTool.VUIName+".vuf", API.GetVUIPath()+"/"+TextBoxesText[4]+".vuf");
 }
 if (TextBoxesText[0] != DeveloperTool.ProjectName)
 {

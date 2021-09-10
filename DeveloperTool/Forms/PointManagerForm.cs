@@ -7,7 +7,7 @@ using System.IO;
 
 namespace DeveloperTool
 {
-public partial class PointManager : Form
+public partial class PointManagerForm : Form
 {
 
 public string[] AllModules = GetAllModules().ToArray();
@@ -19,7 +19,7 @@ public Button Delete = new Button() {Text = T._("Delete")};
 public Button Edit = new Button() {Text = T._("Edit")};
 public Button ButtonClose = new Button() {Text = T._("Close")};
 
-public PointManager()
+public PointManagerForm()
 {
 this.StartPosition = FormStartPosition.CenterScreen;
 this.Text = T._("Point manager");

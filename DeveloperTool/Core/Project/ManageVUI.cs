@@ -7,7 +7,8 @@ namespace DeveloperTool
 public partial class DeveloperTool
 {
 
-public static void ManagePoint()
+public static void ManageVUI
+()
 {
 if (ProjectName == string.Empty)
 {
@@ -15,8 +16,8 @@ Speak(T._("Project is not opened"));
 return;
 }
 KeyUnReg();
-PointManagerForm PM = new PointManagerForm();
-PM.ShowDialog();
+VUIManagerForm VUIM = new VUIManagerForm();
+VUIM.ShowDialog();
 KeyReg();
 }
 

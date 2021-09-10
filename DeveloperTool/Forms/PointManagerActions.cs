@@ -6,7 +6,7 @@ using static MKLib;
 
 namespace DeveloperTool
 {
-public partial class PointManager : Form
+public partial class PointManagerForm : Form
 {
 
 public void Form_Show(Object Sender, EventArgs e)
@@ -47,7 +47,7 @@ Points.Items.Add(AddNewPoint);
 
 public async void DeletePoint(object Sender, EventArgs e)
 {
-DialogResult result = await Task.Run(async () => MessageBox.Show(T._("Do you really want to delete the selected entry point?"), T._("Delete Entry Point"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification));
+DialogResult result = await Task.Run(() => MessageBox.Show(T._("Do you really want to delete the selected entry point?"), T._("Delete Entry Point"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.ServiceNotification));
 if (result == DialogResult.OK)
 {
 Ini.IniDeleteSection("Projects/"+DeveloperTool.ProjectName+"/Manifest.ini", Points.SelectedItem.ToString());
@@ -61,7 +61,7 @@ Points.SelectedIndex = 0;
 
 public void EditPoint(object Sender, EventArgs e)
 {
-PointEditor PE = new PointEditor(Points.SelectedItem.ToString(), AllVUI, AllModules);
+PointEditorForm PE = new PointEditorForm(Points.SelectedItem.ToString(), AllVUI, AllModules);
 PE.ShowDialog();
 var ReadPoints = Ini.IniReadSections("Projects/"+DeveloperTool.ProjectName+"/Manifest.ini").Where(s => s.Contains("Info") == false).ToList();
 ReadPoints[0] = ReadPoints[0]+" (Default)";

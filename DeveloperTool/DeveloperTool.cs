@@ -24,11 +24,11 @@ Directory.SetCurrentDirectory(Path.GetDirectoryName(Process.GetCurrentProcess().
 var RunProc = from proc in Process.GetProcesses(".") orderby proc.Id select proc;
 if (RunProc.Count(p => p.ProcessName.Contains("MagicKeys")) > 0)
 {
-MessageBox.Show("You must close MagicKeys to run DeveloperTool.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+MessageBox.Show(T._("You must close MagicKeys to run DeveloperTool."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 return;
 }
 HM = new DevMenu();
-MKLib.Speak("DeveloperTool is ready");
+MKLib.Speak(T._("DeveloperTool is ready"));
 OptionKeyRegInfo.WNDProcHandle = HM.Handle;
 OptionKeyList.AddRange(new string[] {"Ctrl+Shift+F1", "Ctrl+Shift+F2", "Ctrl+Shift+F3", "Ctrl+Shift+F4"});
 OptionKeyRegInfo.KeyList = OptionKeyList;
