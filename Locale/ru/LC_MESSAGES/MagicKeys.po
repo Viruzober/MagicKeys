@@ -2,13 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2021-09-05 12:43+0300\n"
-"PO-Revision-Date: 2021-08-24 17:10+0200\n"
-=======
-"POT-Creation-Date: 2021-09-03 14:21+0300\n"
-"PO-Revision-Date: 2021-09-03 18:14+0200\n"
->>>>>>> 41a8ed1d77274363ac5923db6f11519f98cdb353
+"POT-Creation-Date: 2021-09-10 15:18+0200\n"
+"PO-Revision-Date: \n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -16,13 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
-"X-Poedit-Basepath: ../../..\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: T._\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPath-1: MagicKeys\n"
 
 #: ConfigInstaller\ConfigInstaller.cs:16
 msgid ""
@@ -62,6 +50,34 @@ msgstr "Результат"
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:69
 msgid "Install"
 msgstr "Установить"
+
+#: DeveloperTool\DeveloperTool.cs:27
+msgid "You must close MagicKeys to run DeveloperTool."
+msgstr "Для запуска DeveloperTool необходимо закрыть MagicKeys."
+
+#: DeveloperTool\DeveloperTool.cs:27
+#: DeveloperTool\Forms\CreateProjectActions.cs:27
+#: DeveloperTool\Forms\CreateProjectActions.cs:32
+#: DeveloperTool\Forms\EditProjectActions.cs:31
+#: DeveloperTool\Forms\EditProjectActions.cs:36
+#: DeveloperTool\Forms\EditProjectActions.cs:41
+#: DeveloperTool\Forms\PointEditorActions.cs:22
+#: DeveloperTool\Forms\PointManagerActions.cs:41
+#: DeveloperTool\Forms\VUIManagerActions.cs:56
+#: DeveloperTool\Forms\VUIManagerActions.cs:80
+#: DeveloperTool\Forms\VUIManagerActions.cs:110
+#: DeveloperTool\Forms\VUIManagerActions.cs:123 MagicKeys\MagicKeys.cs:39
+#: MagicKeys\MagicKeys.cs:46 MagicKeys\Core\Common\CheckRunProc.cs:18
+#: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
+#: MKUpdater\Forms\UpdateFormActions.cs:38
+#: MKUpdater\Forms\UpdateFormActions.cs:58
+#: MKUpdater\Forms\UpdateFormActions.cs:65
+msgid "Error"
+msgstr "Ошибка"
+
+#: DeveloperTool\DeveloperTool.cs:31
+msgid "DeveloperTool is ready"
+msgstr "DeveloperTool готов"
 
 #: DeveloperTool\Core\Common\FixWindow.cs:13
 msgid ""
@@ -141,17 +157,12 @@ msgid "Do you really want to delete current project?"
 msgstr "Вы действительно хотите удалить текущий проект?"
 
 #: DeveloperTool\Core\Project\DeleteCurrentProject.cs:16
-#: DeveloperTool\Forms\PointManagerActions.cs:50
 msgid "Delete current project"
 msgstr "Удаление текущего проекта"
 
-<<<<<<< HEAD
 #: DeveloperTool\Core\Project\EditProject.cs:15
 #: DeveloperTool\Core\Project\ManagePoint.cs:14
-#, fuzzy
-=======
-#: DeveloperTool\Core\Project\EditProject.cs:14
->>>>>>> 41a8ed1d77274363ac5923db6f11519f98cdb353
+#: DeveloperTool\Core\Project\ManageVUI.cs:15
 msgid "Project is not opened"
 msgstr "Проект не открыт"
 
@@ -177,7 +188,7 @@ msgstr "OK"
 
 #: DeveloperTool\Forms\ControlSearchForm.cs:14
 #: DeveloperTool\Forms\CreateProjectForm.cs:18
-#: DeveloperTool\Forms\EditProject.cs:18
+#: DeveloperTool\Forms\EditProjectForm.cs:18
 #: DeveloperTool\Forms\PointEditorForm.cs:20
 #: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
 msgid "Cancel"
@@ -191,52 +202,69 @@ msgstr "Поиск элемента управления"
 msgid "Enter or select module name"
 msgstr "Введите или выберите имя модуля"
 
+#: DeveloperTool\Forms\CreateProjectActions.cs:27
+#: DeveloperTool\Forms\EditProjectActions.cs:31
+#: DeveloperTool\Forms\PointEditorActions.cs:22
+msgid "Some fields are empty."
+msgstr "Некоторые поля пусты."
+
+#: DeveloperTool\Forms\CreateProjectActions.cs:32
+#: DeveloperTool\Forms\EditProjectActions.cs:36
+msgid "A project with the same name already exists."
+msgstr "Проект с таким именем уже существует."
+
 #: DeveloperTool\Forms\CreateProjectForm.cs:17
 #: DeveloperTool\Forms\CreateProjectForm.cs:22
 msgid "Create project"
 msgstr "Создать проект"
 
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:27
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:32
-#: DeveloperTool\Forms\EditProjectActions.cs:31
-#: DeveloperTool\Forms\EditProjectActions.cs:36
+#: DeveloperTool\Forms\CreateProjectForm.cs:32
+#: DeveloperTool\Forms\EditProjectForm.cs:32
+#: DeveloperTool\Forms\PointEditorForm.cs:44
+msgid "Name:"
+msgstr "Название:"
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:34
+#: DeveloperTool\Forms\EditProjectForm.cs:34
+msgid "Author:"
+msgstr "Автор:"
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:36
+#: DeveloperTool\Forms\EditProjectForm.cs:36
+msgid "E-Mail:"
+msgstr "E-Mail:"
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:38
+#: DeveloperTool\Forms\EditProjectForm.cs:38
+msgid "Main entry point:"
+msgstr "Основная точка входа:"
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:40
+#: DeveloperTool\Forms\EditProjectForm.cs:40
+msgid "Starting VUI:"
+msgstr "Запуск VUI:"
+
+#: DeveloperTool\Forms\CreateProjectForm.cs:42
+#: DeveloperTool\Forms\EditProjectForm.cs:42
+#: DeveloperTool\Forms\PointEditorForm.cs:49
+msgid "Module:"
+msgstr "Модуль:"
+
 #: DeveloperTool\Forms\EditProjectActions.cs:41
-#: DeveloperTool\Forms\PointEditorActions.cs:22
-#: DeveloperTool\Forms\PointManagerActions.cs:41 MagicKeys\MagicKeys.cs:39
-#: MagicKeys\MagicKeys.cs:46 MagicKeys\Core\Common\CheckRunProc.cs:18
-#: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
-#: MKUpdater\Forms\UpdateFormActions.cs:38
-#: MKUpdater\Forms\UpdateFormActions.cs:58
-#: MKUpdater\Forms\UpdateFormActions.cs:65
-msgid "Error"
-msgstr "Ошибка"
+msgid "A VUI with the same name already exists."
+msgstr "VUI с таким именем уже существует."
 
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:27
-#: DeveloperTool\Forms\EditProjectActions.cs:31
-#: DeveloperTool\Forms\PointEditorActions.cs:22
-msgid "Some fields are empty"
-msgstr "Некоторые поля пусты"
-
-#: DeveloperTool\Forms\CreateProjectFormActions.cs:32
-#: DeveloperTool\Forms\EditProjectActions.cs:36
-msgid "A project with the same name already exists."
-msgstr "Проект с таким именем уже существует."
-
-#: DeveloperTool\Forms\EditProject.cs:17
+#: DeveloperTool\Forms\EditProjectForm.cs:17
 #: DeveloperTool\Forms\PointEditorForm.cs:19
 #: MagicKeys\Settings\SettingsForm.cs:90
 msgid "Save"
 msgstr "Сохранить"
 
-#: DeveloperTool\Forms\EditProject.cs:22
+#: DeveloperTool\Forms\EditProjectForm.cs:22
 msgid "EditProject"
 msgstr "РедактироватьПроект"
 
-#: DeveloperTool\Forms\EditProjectActions.cs:41
-msgid "A VUI with the same name already exists."
-msgstr ""
-
-#: DeveloperTool\Forms\MenuForm.cs:24
+#: DeveloperTool\Forms\Menu.cs:24
 msgid "Developer tool"
 msgstr "Developer tool"
 
@@ -246,49 +274,120 @@ msgstr "список ключевых слов OCR"
 
 #: DeveloperTool\Forms\PointEditorForm.cs:34
 msgid "Edit point"
-msgstr ""
+msgstr "редактировать точку входа"
 
-#: DeveloperTool\Forms\PointManager.cs:17
-msgid "Add"
-msgstr ""
-
-#: DeveloperTool\Forms\PointManager.cs:18
-msgid "Delete"
-msgstr ""
-
-#: DeveloperTool\Forms\PointManager.cs:19
-msgid "Edit"
-msgstr ""
-
-#: DeveloperTool\Forms\PointManager.cs:20
-msgid "Close"
-msgstr ""
-
-#: DeveloperTool\Forms\PointManager.cs:25
-msgid "Point manager"
-msgstr ""
-
-#: DeveloperTool\Forms\PointManager.cs:35
-msgid "Points"
-msgstr ""
+#: DeveloperTool\Forms\PointEditorForm.cs:46
+#: DeveloperTool\Forms\VUIManagerForm.cs:36
+msgid "VUI:"
+msgstr "VUI:"
 
 #: DeveloperTool\Forms\PointManagerActions.cs:37
-msgid "Point name"
-msgstr ""
+msgid "Entry Point Name"
+msgstr "Имя точки входа"
 
 #: DeveloperTool\Forms\PointManagerActions.cs:37
-#, fuzzy
-msgid "Enter new point name"
-msgstr "Введите новую позицию мыши X"
+msgid "Enter new entry point name."
+msgstr "Введите новое имя точки входа."
 
 #: DeveloperTool\Forms\PointManagerActions.cs:41
 msgid "An entry point with the same name already exists."
-msgstr ""
+msgstr "Точка входа с таким именем уже существует."
 
 #: DeveloperTool\Forms\PointManagerActions.cs:50
-#, fuzzy
-msgid "Do you really want to delete selected point?"
-msgstr "Вы действительно хотите завершить работу MagicKeys?"
+msgid "Do you really want to delete the selected entry point?"
+msgstr "Вы действительно хотите удалить выбранную точку входа?"
+
+#: DeveloperTool\Forms\PointManagerActions.cs:50
+msgid "Delete Entry Point"
+msgstr "Удаление точки входа"
+
+#: DeveloperTool\Forms\PointManagerForm.cs:17
+#: DeveloperTool\Forms\VUIManagerForm.cs:14
+#: DeveloperTool\Forms\VUIManagerForm.cs:18
+msgid "Add"
+msgstr "Добавить"
+
+#: DeveloperTool\Forms\PointManagerForm.cs:18
+#: DeveloperTool\Forms\VUIManagerForm.cs:15
+#: DeveloperTool\Forms\VUIManagerForm.cs:19
+msgid "Delete"
+msgstr "Удалить"
+
+#: DeveloperTool\Forms\PointManagerForm.cs:19
+msgid "Edit"
+msgstr "Редактировать"
+
+#: DeveloperTool\Forms\PointManagerForm.cs:20
+#: DeveloperTool\Forms\VUIManagerForm.cs:21
+msgid "Close"
+msgstr "Закрыть"
+
+#: DeveloperTool\Forms\PointManagerForm.cs:25
+msgid "Point manager"
+msgstr "Менеджер точек входа"
+
+#: DeveloperTool\Forms\PointManagerForm.cs:35
+msgid "Points:"
+msgstr "Точки входа:"
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:52
+#: DeveloperTool\Forms\VUIManagerActions.cs:76
+msgid "VUI Name"
+msgstr "Название VUI"
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:52
+#: DeveloperTool\Forms\VUIManagerActions.cs:76
+msgid "Enter new VUI name."
+msgstr "Введите новое имя VUI."
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:56
+#: DeveloperTool\Forms\VUIManagerActions.cs:80
+msgid "An VUI with the same name already exists."
+msgstr "VUI с таким именем уже существует."
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:66
+msgid "Do you really want to delete the selected VUI?"
+msgstr "Вы действительно хотите удалить выбранный VUI?"
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:66
+msgid "Delete VUI"
+msgstr "Удаление VUI"
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:106
+#: DeveloperTool\Forms\VUIManagerActions.cs:119
+msgid "VUI object Name"
+msgstr "Название объекта VUI"
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:106
+#: DeveloperTool\Forms\VUIManagerActions.cs:119
+msgid "Enter new VUI object name."
+msgstr "Введите новое имя объекта VUI."
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:110
+#: DeveloperTool\Forms\VUIManagerActions.cs:123
+msgid "An Object with the same name already exists."
+msgstr "Объект с таким именем уже существует."
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:132
+msgid "Do you really want to delete the selected VUI object?"
+msgstr "Вы действительно хотите удалить выбранный объект VUI?"
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:132
+msgid "Delete VUI object"
+msgstr "Удаление объекта VUI"
+
+#: DeveloperTool\Forms\VUIManagerForm.cs:16
+#: DeveloperTool\Forms\VUIManagerForm.cs:20
+msgid "Rename"
+msgstr "Переименовать"
+
+#: DeveloperTool\Forms\VUIManagerForm.cs:26
+msgid "VUI manager"
+msgstr "Менеджер VUI"
+
+#: DeveloperTool\Forms\VUIManagerForm.cs:51
+msgid "Objects:"
+msgstr "Объекты:"
 
 #: MagicKeys\MagicKeys.cs:39
 msgid ""
@@ -456,6 +555,9 @@ msgstr "Ошибка загрузки обновления. Повторите �
 msgid "Update file is corrupted."
 msgstr "Файл обновления поврежден."
 
+#~ msgid "Point name"
+#~ msgstr "Название точки входа"
+
 #, fuzzy
 #~ msgid "Control search form"
 #~ msgstr "Поиск элемента управления"
@@ -490,9 +592,6 @@ msgstr "Файл обновления поврежден."
 #~ msgid "The key or value doesn't exist."
 #~ msgstr "Ключ или значение не существует."
 
-#~ msgid "Object:"
-#~ msgstr "Обьект:"
-
 #~ msgid "The value is not correct"
 #~ msgstr "Значение неверно"
 
@@ -524,9 +623,6 @@ msgstr "Файл обновления поврежден."
 
 #~ msgid "First and last name:"
 #~ msgstr "Имя и фамилия:"
-
-#~ msgid "E-mail:"
-#~ msgstr "E-mail:"
 
 #~ msgid "Please register by clicking Register in the tray context menu."
 #~ msgstr "Пожалуйста, зарегистрируйтесь из меню в системном лотке."
