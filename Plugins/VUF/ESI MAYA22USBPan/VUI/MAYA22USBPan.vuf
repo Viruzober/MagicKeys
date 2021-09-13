@@ -17,11 +17,9 @@ MouseClick=Left,200,90,1,0,0,10
 [Volume1Up]
 MouseMove=110,250,0
 KeySend=Keys,Up,10,10
-MouseMove=110,285,0
 [Volume1Down]
 MouseMove=110,250,0
 KeySend=Keys,Down,10,10
-MouseMove=110,285,0
 [Volume2Up]
 MouseMove=215,250,0
 KeySend=Keys,Up,10,10
