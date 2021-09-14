@@ -16,7 +16,7 @@ DevKeyRegInfo = new KeyInfo();
 DevKeyRegInfo.WNDProcHandle = DeveloperToolWNDProc.Handle;
 DevKeyRegInfo.KeyList.AddRange(new string[] {"Left", "Right", "Up", "Down", "Ctrl+S", "Ctrl+R", "Ctrl+O",
 "Shift+O", "Ctrl+Z", "M", "C", "-", "=", "Ctrl+Shift+I", "Ctrl+G", "R", "Ctrl+Shift+O", "Ctrl+-", "Ctrl+=", "Ctrl+A", "W", "Ctrl+W",
-"Ctrl+K", "Ctrl+Shift+N", "Ctrl+D", "Ctrl+Shift+E", "Ctrl+Shift+P"});
+"Ctrl+K", "Ctrl+Shift+N", "Ctrl+D", "Ctrl+Shift+E", "Ctrl+Shift+P", "Ctrl+Shift+F"});
 }
 
 public static void LockDevKeys()
