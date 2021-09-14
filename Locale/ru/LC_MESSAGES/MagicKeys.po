@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-10 15:18+0200\n"
+"POT-Creation-Date: 2021-09-14 05:04+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -61,12 +61,14 @@ msgstr "Для запуска DeveloperTool необходимо закрыть 
 #: DeveloperTool\Forms\EditProjectActions.cs:31
 #: DeveloperTool\Forms\EditProjectActions.cs:36
 #: DeveloperTool\Forms\EditProjectActions.cs:41
+#: DeveloperTool\Forms\ObjectEditorActions.cs:29
 #: DeveloperTool\Forms\PointEditorActions.cs:22
 #: DeveloperTool\Forms\PointManagerActions.cs:41
 #: DeveloperTool\Forms\VUIManagerActions.cs:56
-#: DeveloperTool\Forms\VUIManagerActions.cs:80
-#: DeveloperTool\Forms\VUIManagerActions.cs:110
-#: DeveloperTool\Forms\VUIManagerActions.cs:123 MagicKeys\MagicKeys.cs:39
+#: DeveloperTool\Forms\VUIManagerActions.cs:98
+#: DeveloperTool\Forms\VUIManagerActions.cs:130
+#: DeveloperTool\Forms\VUIManagerActions.cs:141
+#: DeveloperTool\Forms\VUIManagerActions.cs:154 MagicKeys\MagicKeys.cs:39
 #: MagicKeys\MagicKeys.cs:46 MagicKeys\Core\Common\CheckRunProc.cs:18
 #: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
 #: MKUpdater\Forms\UpdateFormActions.cs:38
@@ -189,6 +191,7 @@ msgstr "OK"
 #: DeveloperTool\Forms\ControlSearchForm.cs:14
 #: DeveloperTool\Forms\CreateProjectForm.cs:18
 #: DeveloperTool\Forms\EditProjectForm.cs:18
+#: DeveloperTool\Forms\ObjectEditorForm.cs:19
 #: DeveloperTool\Forms\PointEditorForm.cs:20
 #: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
 msgid "Cancel"
@@ -204,6 +207,7 @@ msgstr "Введите или выберите имя модуля"
 
 #: DeveloperTool\Forms\CreateProjectActions.cs:27
 #: DeveloperTool\Forms\EditProjectActions.cs:31
+#: DeveloperTool\Forms\ObjectEditorActions.cs:29
 #: DeveloperTool\Forms\PointEditorActions.cs:22
 msgid "Some fields are empty."
 msgstr "Некоторые поля пусты."
@@ -255,6 +259,7 @@ msgid "A VUI with the same name already exists."
 msgstr "VUI с таким именем уже существует."
 
 #: DeveloperTool\Forms\EditProjectForm.cs:17
+#: DeveloperTool\Forms\ObjectEditorForm.cs:18
 #: DeveloperTool\Forms\PointEditorForm.cs:19
 #: MagicKeys\Settings\SettingsForm.cs:90
 msgid "Save"
@@ -268,6 +273,25 @@ msgstr "РедактироватьПроект"
 msgid "Developer tool"
 msgstr "Developer tool"
 
+#: DeveloperTool\Forms\ObjectEditorForm.cs:25
+#, fuzzy
+msgid "Edit Object"
+msgstr "РедактироватьПроект"
+
+#: DeveloperTool\Forms\ObjectEditorForm.cs:35
+msgid "Text:"
+msgstr ""
+
+#: DeveloperTool\Forms\ObjectEditorForm.cs:37
+#, fuzzy
+msgid "Help:"
+msgstr "Справка"
+
+#: DeveloperTool\Forms\ObjectEditorForm.cs:39
+#, fuzzy
+msgid "Function:"
+msgstr "Раздел:"
+
 #: DeveloperTool\Forms\OCRResultForm.cs:36
 msgid "OCR Word List"
 msgstr "список ключевых слов OCR"
@@ -277,7 +301,7 @@ msgid "Edit point"
 msgstr "редактировать точку входа"
 
 #: DeveloperTool\Forms\PointEditorForm.cs:46
-#: DeveloperTool\Forms\VUIManagerForm.cs:36
+#: DeveloperTool\Forms\VUIManagerForm.cs:37
 msgid "VUI:"
 msgstr "VUI:"
 
@@ -309,16 +333,17 @@ msgstr "Добавить"
 
 #: DeveloperTool\Forms\PointManagerForm.cs:18
 #: DeveloperTool\Forms\VUIManagerForm.cs:15
-#: DeveloperTool\Forms\VUIManagerForm.cs:19
+#: DeveloperTool\Forms\VUIManagerForm.cs:20
 msgid "Delete"
 msgstr "Удалить"
 
 #: DeveloperTool\Forms\PointManagerForm.cs:19
+#: DeveloperTool\Forms\VUIManagerForm.cs:19
 msgid "Edit"
 msgstr "Редактировать"
 
 #: DeveloperTool\Forms\PointManagerForm.cs:20
-#: DeveloperTool\Forms\VUIManagerForm.cs:21
+#: DeveloperTool\Forms\VUIManagerForm.cs:22
 msgid "Close"
 msgstr "Закрыть"
 
@@ -331,61 +356,84 @@ msgid "Points:"
 msgstr "Точки входа:"
 
 #: DeveloperTool\Forms\VUIManagerActions.cs:52
-#: DeveloperTool\Forms\VUIManagerActions.cs:76
+#: DeveloperTool\Forms\VUIManagerActions.cs:94
 msgid "VUI Name"
 msgstr "Название VUI"
 
 #: DeveloperTool\Forms\VUIManagerActions.cs:52
-#: DeveloperTool\Forms\VUIManagerActions.cs:76
+#: DeveloperTool\Forms\VUIManagerActions.cs:94
 msgid "Enter new VUI name."
 msgstr "Введите новое имя VUI."
 
 #: DeveloperTool\Forms\VUIManagerActions.cs:56
-#: DeveloperTool\Forms\VUIManagerActions.cs:80
+#: DeveloperTool\Forms\VUIManagerActions.cs:98
 msgid "An VUI with the same name already exists."
 msgstr "VUI с таким именем уже существует."
 
-#: DeveloperTool\Forms\VUIManagerActions.cs:66
+#: DeveloperTool\Forms\VUIManagerActions.cs:62
+msgid "A function file with the same name was found. Overwrite it?"
+msgstr ""
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:62
+msgid "Overwrite VUF file?"
+msgstr ""
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:76
 msgid "Do you really want to delete the selected VUI?"
 msgstr "Вы действительно хотите удалить выбранный VUI?"
 
-#: DeveloperTool\Forms\VUIManagerActions.cs:66
+#: DeveloperTool\Forms\VUIManagerActions.cs:76
 msgid "Delete VUI"
 msgstr "Удаление VUI"
 
-#: DeveloperTool\Forms\VUIManagerActions.cs:106
-#: DeveloperTool\Forms\VUIManagerActions.cs:119
+#: DeveloperTool\Forms\VUIManagerActions.cs:83
+#, fuzzy
+msgid "A function file with the same name was found. Delete it?"
+msgstr "Точка входа с таким именем уже существует."
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:83
+#, fuzzy
+msgid "Delete VUF file?"
+msgstr "Удаление VUI"
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:126
+#: DeveloperTool\Forms\VUIManagerActions.cs:150
 msgid "VUI object Name"
 msgstr "Название объекта VUI"
 
-#: DeveloperTool\Forms\VUIManagerActions.cs:106
-#: DeveloperTool\Forms\VUIManagerActions.cs:119
+#: DeveloperTool\Forms\VUIManagerActions.cs:126
+#: DeveloperTool\Forms\VUIManagerActions.cs:150
 msgid "Enter new VUI object name."
 msgstr "Введите новое имя объекта VUI."
 
-#: DeveloperTool\Forms\VUIManagerActions.cs:110
-#: DeveloperTool\Forms\VUIManagerActions.cs:123
+#: DeveloperTool\Forms\VUIManagerActions.cs:130
+#: DeveloperTool\Forms\VUIManagerActions.cs:154
 msgid "An Object with the same name already exists."
 msgstr "Объект с таким именем уже существует."
 
-#: DeveloperTool\Forms\VUIManagerActions.cs:132
+#: DeveloperTool\Forms\VUIManagerActions.cs:141
+msgid ""
+"For this interface, functions are not handled. Objects cannot be edited."
+msgstr ""
+
+#: DeveloperTool\Forms\VUIManagerActions.cs:163
 msgid "Do you really want to delete the selected VUI object?"
 msgstr "Вы действительно хотите удалить выбранный объект VUI?"
 
-#: DeveloperTool\Forms\VUIManagerActions.cs:132
+#: DeveloperTool\Forms\VUIManagerActions.cs:163
 msgid "Delete VUI object"
 msgstr "Удаление объекта VUI"
 
 #: DeveloperTool\Forms\VUIManagerForm.cs:16
-#: DeveloperTool\Forms\VUIManagerForm.cs:20
+#: DeveloperTool\Forms\VUIManagerForm.cs:21
 msgid "Rename"
 msgstr "Переименовать"
 
-#: DeveloperTool\Forms\VUIManagerForm.cs:26
+#: DeveloperTool\Forms\VUIManagerForm.cs:27
 msgid "VUI manager"
 msgstr "Менеджер VUI"
 
-#: DeveloperTool\Forms\VUIManagerForm.cs:51
+#: DeveloperTool\Forms\VUIManagerForm.cs:52
 msgid "Objects:"
 msgstr "Объекты:"
 
@@ -576,9 +624,6 @@ msgstr "Файл обновления поврежден."
 
 #~ msgid "Line:"
 #~ msgstr "Строка:"
-
-#~ msgid "Section:"
-#~ msgstr "Раздел:"
 
 #~ msgid "Key:"
 #~ msgstr "Ключ:"

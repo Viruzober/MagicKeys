@@ -73,6 +73,12 @@
     <Compile Update="Forms\MenuKeys.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ObjectEditorActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ObjectEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\VUIManagerActions.cs">
       <SubType>Form</SubType>
     </Compile>

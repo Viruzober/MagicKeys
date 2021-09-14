@@ -47,7 +47,7 @@ RenameVUI.Enabled = true;
 DeleteVUI.Enabled = true;
 }
 
-public void Add_VUI(Object Sender, EventArgs e)
+public async void Add_VUI(Object Sender, EventArgs e)
 {
 string AddNewVUI = InputTextBox(T._("VUI Name"), T._("Enter new VUI name."));
 if (AddNewVUI == null) return;
@@ -57,6 +57,16 @@ MessageBox.Show(T._("An VUI with the same name already exists."), T._("Error"), 
 return;
 }
 CreateFile(API.GetVUIPath()+"/"+AddNewVUI+".vui");
+if (File.Exists(API.GetVUIPath()+"/"+AddNewVUI+".vuf") == true)
+{
+DialogResult Result = await Task.Run(() => MessageBox.Show(T._("A function file with the same name was found. Overwrite it?"), T._("Overwrite VUF file?"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question));
+if (Result == DialogResult.OK)
+{
+CreateFile(API.GetVUIPath()+"/"+AddNewVUI+".vuf");
+}
+GetAllVUI();
+return;
+}
 CreateFile(API.GetVUIPath()+"/"+AddNewVUI+".vuf");
 GetAllVUI();
 }
@@ -67,8 +77,16 @@ DialogResult result = await Task.Run(() => MessageBox.Show(T._("Do you really wa
 if (result == DialogResult.OK)
 {
 File.Delete(API.GetVUIPath()+"/"+VUI.SelectedItem.ToString()+".vui");
-GetAllVUI();
 }
+if (File.Exists(API.GetVUIPath()+"/"+VUI.SelectedItem.ToString()+".vuf") == true)
+{
+DialogResult Result = await Task.Run(() => MessageBox.Show(T._("A function file with the same name was found. Delete it?"), T._("Delete VUF file?"), MessageBoxButtons.OKCancel, MessageBoxIcon.Question));
+if (Result == DialogResult.OK)
+{
+File.Delete(API.GetVUIPath()+"/"+VUI.SelectedItem.ToString()+".vuf");
+}
+}
+GetAllVUI();
 }
 
 public void Rename_VUI(Object Sender, EventArgs e)
@@ -94,9 +112,11 @@ if (AllObjects.Any() == true)
 VUIObjects.Items.AddRange(AllObjects.ToArray());
 VUIObjects.SelectedIndex = 0;
 RenameObject.Enabled = true;
+EditObject.Enabled = true;
 DeleteObject.Enabled = true;
 return;
 }
+EditObject.Enabled = false;
 RenameObject.Enabled = false;
 DeleteObject.Enabled = false;
 }
@@ -113,6 +133,17 @@ return;
 Ini.IniAddSection(API.GetVUIPath() + "/" + VUI.SelectedItem.ToString().Split(" (Default)")[0] + ".vui", AddVUIObjectName);
 GetAllObjects();
         }
+
+public void Edit_Object(object Sender, EventArgs e)
+{
+if (Ini.IniReadSections(API.GetVUIPath() + "/" + VUI.SelectedItem.ToString().Split(" (Default)")[0] + ".vuf").Any() == false)
+        {
+MessageBox.Show(T._("For this interface, functions are not handled. Objects cannot be edited."), T._("Error"), MessageBoxButtons.OK, MessageBoxIcon.Error);
+return;
+}
+ObjectEditorForm OEF = new ObjectEditorForm(VUI.SelectedItem.ToString().Split(" (Default)")[0], VUIObjects.SelectedItem.ToString());
+OEF.ShowDialog();
+}
 
         public void Rename_Object(object Sender, EventArgs e)
 {

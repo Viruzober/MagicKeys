@@ -15,19 +15,19 @@ public static List<string> IniReadKeys(string IniFile, string Section)
 if (File.Exists(IniFile) == false)
 {
 MKLib.CallDebugForm("File not found.\r\n"+"File: "+IniFile);
-return null;
+return new List<string>();
 }
  List<string> FileStrings = File.ReadAllLines(IniFile).ToList();
 if (FileStrings.Any() == false)
 {
 MKLib.CallDebugForm("File is empty.\r\n"+"File: "+IniFile);
-return null;
+return  new List<string>();
 }
 int SectionIndex = FileStrings.IndexOf(FileStrings.Where(S => S.Trim().Contains("["+Section+"]")).ToList()[0]);
 if (SectionIndex == -1)
 {
 MKLib.CallDebugForm("Section not found.\r\n"+"File: "+IniFile+"\r\nSection: "+Section);
-return null;
+return  new List<string>();
 }
 FileStrings.RemoveRange(0, SectionIndex+1);
 FileStrings = FileStrings.TakeWhile(s => s.Trim().StartsWith("[") == false || s.Trim().EndsWith("]") == false).SkipWhile(t => string.IsNullOrEmpty(t) == true || CommentRGX.IsMatch(t) == true).ToList();
@@ -35,7 +35,7 @@ List<string> Keys = FileStrings.Select(s => SplitRgx.Split(s.Trim())[0].Trim()).
 if (Keys.Any() == false)
 {
 MKLib.CallDebugForm("Keys not found.\r\n"+"File: "+IniFile+"\r\nSection: "+Section);
-return null;
+return  new List<string>();
 }
 return Keys;
 }

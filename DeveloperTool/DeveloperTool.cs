@@ -29,6 +29,7 @@ return;
 }
 HM = new DevMenu();
 MKLib.Speak(T._("DeveloperTool is ready"));
+MKLib.DebugMod = false;
 OptionKeyRegInfo.WNDProcHandle = HM.Handle;
 OptionKeyList.AddRange(new string[] {"Ctrl+Shift+F1", "Ctrl+Shift+F2", "Ctrl+Shift+F3", "Ctrl+Shift+F4"});
 OptionKeyRegInfo.KeyList = OptionKeyList;
