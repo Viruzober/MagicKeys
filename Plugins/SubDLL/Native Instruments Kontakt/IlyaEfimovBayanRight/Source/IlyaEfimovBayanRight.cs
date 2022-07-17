@@ -29,12 +29,12 @@ Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+230, Coords.X+100, Coords.Y+260, 0)[0] == 1)
 {
 Speak("AutoAttack checked");
-VUIObjectSwitcher(false, "false", 2, 2);
+VUIObjectSwitcher(false, false, 2, 2);
 }
 else
 {
 Speak("AutoAttack not checked");
-VUIObjectSwitcher(false, "true", 2, 2);
+VUIObjectSwitcher(false, true, 2, 2);
 }
 }
 
@@ -65,12 +65,12 @@ Thread.Sleep(100);
 if (ImgSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
 {
 Speak("Reverb checked");
-VUIObjectSwitcher(false, "true", 7, 7);
+VUIObjectSwitcher(false, true, 7, 7);
 }
 else
 {
 Speak("Reverb not checked");
-VUIObjectSwitcher(false, "false", 7, 7);
+VUIObjectSwitcher(false, false, 7, 7);
 }
 }
 
@@ -181,25 +181,24 @@ public static void IlyaEfimovBayanRightLoader()
 {
 if (ImgSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+230, Coords.X+100, Coords.Y+260, 0)[0] == 1)
 {
-VUIObjectSwitcher(false, "false", 2, 2);
+VUIObjectSwitcher(false, false, 2, 2);
 }
 else
 {
-VUIObjectSwitcher(false, "true", 2, 2);
+VUIObjectSwitcher(false, true, 2, 2);
 }
 if (ImgSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
 {
-VUIObjectSwitcher(false, "true", 7, 7);
+VUIObjectSwitcher(false, true, 7, 7);
 }
 else
 {
-VUIObjectSwitcher(false, "false", 7, 7);
+VUIObjectSwitcher(false, false, 7, 7);
 }
 }
 
 public static void Back()
 {
-SubPluginUnLoad();
 VUILoader("LibList");
 }
 

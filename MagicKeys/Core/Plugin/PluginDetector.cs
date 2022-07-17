@@ -19,9 +19,11 @@ if (LockPluginDetect == true)
 {
 continue;
 }
-foreach (string Item in PluginsList.Keys)
+foreach (PluginContainer PluginItem in Plugins)
 {
-string[] OptionWindowInfo = WinHook(PluginsList[Item]["WTitle"], PluginsList[Item]["WClass"]);
+foreach(var PluginPointItem in PluginItem.Points)
+{
+string[] OptionWindowInfo = WinHook(PluginPointItem.WTitle, PluginPointItem.WClass);
 if (OptionWindowInfo[0] == null)
 {
 continue;
@@ -30,8 +32,8 @@ if (OptionWindowInfo[1] == null)
 {
 continue;
 }
-GlobalPluginLoad(Item, OptionWindowInfo[0], OptionWindowInfo[1]);
-Coords = GetModuleCoords(CurrentPlugin["Module"]);
+GlobalPluginLoad(PluginItem.PluginName, PluginPointItem);
+Coords = GetModuleCoords(CurrentPlugin.Module);
 if (Coords != new ModuleCoords())
 {
 VUILoader(API.GetVUI());
@@ -41,23 +43,14 @@ SyncThreads.WaitOne();
 WaitPluginClose(OptionWindowInfo[0], OptionWindowInfo[1]);
 KeyUnReg();
 SyncThreads.ReleaseMutex();
-VUIKeys.Clear();
-VUIObjects.Clear();
-ActiveObjects.Clear();
 SoundPlay("WindowClosed", false);
 ThreadFunc = string.Empty;
 PluginClass = null;
 PluginClassLoader.Unload();
-if (API.GetSubClass() != string.Empty && API.GetSubClass() != "MagicKeys")
-{
-SubClass = null;
-SubClassLoader.Unload();
-}
 LUAScript.Globals.Clear();
 GC.Collect();
-GC.WaitForPendingFinalizers();
 }
-CurrentPlugin.Clear();
+}
 }
 }
 }

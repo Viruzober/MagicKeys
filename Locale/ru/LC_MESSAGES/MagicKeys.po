@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 06:50+0300\n"
+"POT-Creation-Date: 2022-06-03 04:08+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgstr ""
 "100%. Когда вы нажмете кнопку «да», это будет сделано автоматически."
 
 #: ConfigInstaller\ConfigInstaller.cs:17
-#: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
+#: MagicKeys\Core\Plugin\PluginsListLoader.cs:65
 #: MKUpdater\Forms\UpdateFormActions.cs:21
 msgid "Warning"
 msgstr "Внимание"
@@ -64,10 +64,6 @@ msgstr "Для запуска DeveloperTool необходимо закрыть 
 #: DeveloperTool\Forms\ObjectEditorActions.cs:29
 #: DeveloperTool\Forms\PointEditorActions.cs:22
 #: DeveloperTool\Forms\PointManagerActions.cs:41
-#: DeveloperTool\Forms\VUFManagerActions.cs:56
-#: DeveloperTool\Forms\VUFManagerActions.cs:79
-#: DeveloperTool\Forms\VUFManagerActions.cs:110
-#: DeveloperTool\Forms\VUFManagerActions.cs:129
 #: DeveloperTool\Forms\VUIManagerActions.cs:56
 #: DeveloperTool\Forms\VUIManagerActions.cs:98
 #: DeveloperTool\Forms\VUIManagerActions.cs:130
@@ -168,7 +164,6 @@ msgstr "Удаление текущего проекта"
 
 #: DeveloperTool\Core\Project\EditProject.cs:15
 #: DeveloperTool\Core\Project\ManagePoint.cs:14
-#: DeveloperTool\Core\Project\ManageVUF.cs:14
 #: DeveloperTool\Core\Project\ManageVUI.cs:15
 msgid "Project is not opened"
 msgstr "Проект не открыт"
@@ -331,29 +326,23 @@ msgid "Delete Entry Point"
 msgstr "Удаление точки входа"
 
 #: DeveloperTool\Forms\PointManagerForm.cs:17
-#: DeveloperTool\Forms\VUFManagerForm.cs:14
-#: DeveloperTool\Forms\VUFManagerForm.cs:18
 #: DeveloperTool\Forms\VUIManagerForm.cs:14
 #: DeveloperTool\Forms\VUIManagerForm.cs:18
 msgid "Add"
 msgstr "Добавить"
 
 #: DeveloperTool\Forms\PointManagerForm.cs:18
-#: DeveloperTool\Forms\VUFManagerForm.cs:15
-#: DeveloperTool\Forms\VUFManagerForm.cs:20
 #: DeveloperTool\Forms\VUIManagerForm.cs:15
 #: DeveloperTool\Forms\VUIManagerForm.cs:20
 msgid "Delete"
 msgstr "Удалить"
 
 #: DeveloperTool\Forms\PointManagerForm.cs:19
-#: DeveloperTool\Forms\VUFManagerForm.cs:19
 #: DeveloperTool\Forms\VUIManagerForm.cs:19
 msgid "Edit"
 msgstr "Редактировать"
 
 #: DeveloperTool\Forms\PointManagerForm.cs:20
-#: DeveloperTool\Forms\VUFManagerForm.cs:22
 #: DeveloperTool\Forms\VUIManagerForm.cs:22
 msgid "Close"
 msgstr "Закрыть"
@@ -365,87 +354,6 @@ msgstr "Менеджер точек входа"
 #: DeveloperTool\Forms\PointManagerForm.cs:35
 msgid "Points:"
 msgstr "Точки входа:"
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:52
-#: DeveloperTool\Forms\VUFManagerActions.cs:75
-#, fuzzy
-msgid "VUF Name"
-msgstr "Название VUI"
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:52
-#: DeveloperTool\Forms\VUFManagerActions.cs:75
-#, fuzzy
-msgid "Enter new VUF name."
-msgstr "Введите новое имя VUI."
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:56
-#: DeveloperTool\Forms\VUFManagerActions.cs:79
-#, fuzzy
-msgid "An VUF with the same name already exists."
-msgstr "VUI с таким именем уже существует."
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:65
-#, fuzzy
-msgid "Do you really want to delete the selected VUF?"
-msgstr "Вы действительно хотите удалить выбранный VUI?"
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:65
-#, fuzzy
-msgid "Delete VUF"
-msgstr "Удаление VUI"
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:106
-#: DeveloperTool\Forms\VUFManagerActions.cs:125
-#, fuzzy
-msgid "VUF object Name"
-msgstr "Название объекта VUI"
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:106
-#, fuzzy
-msgid "Enter new VUF object name."
-msgstr "Введите новое имя объекта VUI."
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:110
-#: DeveloperTool\Forms\VUFManagerActions.cs:129
-#, fuzzy
-msgid "An function with the same name already exists."
-msgstr "Объект с таким именем уже существует."
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:125
-#, fuzzy
-msgid "Enter new function name."
-msgstr "Введите новое имя точки входа."
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:138
-#, fuzzy
-msgid "Do you really want to delete the selected function?"
-msgstr "Вы действительно хотите удалить выбранную точку входа?"
-
-#: DeveloperTool\Forms\VUFManagerActions.cs:138
-#, fuzzy
-msgid "Delete function"
-msgstr "Удаление точки входа"
-
-#: DeveloperTool\Forms\VUFManagerForm.cs:16
-#: DeveloperTool\Forms\VUFManagerForm.cs:21
-#: DeveloperTool\Forms\VUIManagerForm.cs:16
-#: DeveloperTool\Forms\VUIManagerForm.cs:21
-msgid "Rename"
-msgstr "Переименовать"
-
-#: DeveloperTool\Forms\VUFManagerForm.cs:27
-#, fuzzy
-msgid "VUF manager"
-msgstr "Менеджер VUI"
-
-#: DeveloperTool\Forms\VUFManagerForm.cs:37
-msgid "VUF:"
-msgstr ""
-
-#: DeveloperTool\Forms\VUFManagerForm.cs:52
-#, fuzzy
-msgid "Functions:"
-msgstr "Раздел:"
 
 #: DeveloperTool\Forms\VUIManagerActions.cs:52
 #: DeveloperTool\Forms\VUIManagerActions.cs:94
@@ -516,6 +424,11 @@ msgstr "Вы действительно хотите удалить выбран
 msgid "Delete VUI object"
 msgstr "Удаление объекта VUI"
 
+#: DeveloperTool\Forms\VUIManagerForm.cs:16
+#: DeveloperTool\Forms\VUIManagerForm.cs:21
+msgid "Rename"
+msgstr "Переименовать"
+
 #: DeveloperTool\Forms\VUIManagerForm.cs:27
 msgid "VUI manager"
 msgstr "Менеджер VUI"
@@ -549,7 +462,7 @@ msgstr "Программа MagicKeys уже запущена."
 msgid "Help file not found"
 msgstr "Файл справки не найден"
 
-#: MagicKeys\Core\Common\SystemInvoke.cs:31
+#: MagicKeys\Core\Common\SystemInvoke.cs:23
 #, csharp-format
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
@@ -562,7 +475,7 @@ msgstr "Введите значение для "
 msgid " from 1 to 100"
 msgstr " от 1 до 100"
 
-#: MagicKeys\Core\Plugin\PluginsListLoader.cs:64
+#: MagicKeys\Core\Plugin\PluginsListLoader.cs:65
 msgid "No plugins are available."
 msgstr "Нет доступных плагинов."
 
@@ -689,6 +602,58 @@ msgstr "Ошибка загрузки обновления. Повторите �
 #: MKUpdater\Forms\UpdateFormActions.cs:65
 msgid "Update file is corrupted."
 msgstr "Файл обновления поврежден."
+
+#, fuzzy
+#~ msgid "VUF Name"
+#~ msgstr "Название VUI"
+
+#, fuzzy
+#~ msgid "Enter new VUF name."
+#~ msgstr "Введите новое имя VUI."
+
+#, fuzzy
+#~ msgid "An VUF with the same name already exists."
+#~ msgstr "VUI с таким именем уже существует."
+
+#, fuzzy
+#~ msgid "Do you really want to delete the selected VUF?"
+#~ msgstr "Вы действительно хотите удалить выбранный VUI?"
+
+#, fuzzy
+#~ msgid "Delete VUF"
+#~ msgstr "Удаление VUI"
+
+#, fuzzy
+#~ msgid "VUF object Name"
+#~ msgstr "Название объекта VUI"
+
+#, fuzzy
+#~ msgid "Enter new VUF object name."
+#~ msgstr "Введите новое имя объекта VUI."
+
+#, fuzzy
+#~ msgid "An function with the same name already exists."
+#~ msgstr "Объект с таким именем уже существует."
+
+#, fuzzy
+#~ msgid "Enter new function name."
+#~ msgstr "Введите новое имя точки входа."
+
+#, fuzzy
+#~ msgid "Do you really want to delete the selected function?"
+#~ msgstr "Вы действительно хотите удалить выбранную точку входа?"
+
+#, fuzzy
+#~ msgid "Delete function"
+#~ msgstr "Удаление точки входа"
+
+#, fuzzy
+#~ msgid "VUF manager"
+#~ msgstr "Менеджер VUI"
+
+#, fuzzy
+#~ msgid "Functions:"
+#~ msgstr "Раздел:"
 
 #~ msgid "Point name"
 #~ msgstr "Название точки входа"

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using Microsoft.Collections.Extensions;
 using System.Collections.Generic;
 using static MKLib;
 
@@ -10,7 +9,6 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static OrderedDictionary<string, string> VUIKeys = new OrderedDictionary<string, string>();
 public static KeyWNDProc KeyWndProcHandle = new KeyWNDProc();
 public static KeyInfo PluginKeyRegInfo = new KeyInfo();
 public static void KeyLoader()
@@ -21,10 +19,13 @@ List<string> Keys = Ini.IniReadKeys(API.GetCurrentVUI(), "Keys");
 List<string> Values = Ini.IniReadValues(API.GetCurrentVUI(), "Keys");
 for(int I = 0; I <= Keys.Count-1; I++)
 {
-VUIKeys.Add(Keys[I], Values[I]);
+VUIKeyFuncContainer TempKeyFunc = new VUIKeyFuncContainer();
+TempKeyFunc.Key = Keys[I];
+TempKeyFunc.Function = FunctionParser(Values[I]);
+VUIKeysFunctions.Add(TempKeyFunc);
 }
 }
-var AllKeys = GetOptionKeys().Concat(VUIKeys).ToDictionary(x=>x.Key, x=>x.Value).Keys.ToList();
+var AllKeys = GetOptionKeys().Concat(VUIKeysFunctions).Select(k => k.Key).ToList();
 PluginKeyRegInfo.WNDProcHandle = KeyWndProcHandle.Handle;
 PluginKeyRegInfo.KeyList = AllKeys;
 SetKeyRegContext(PluginKeyRegInfo);

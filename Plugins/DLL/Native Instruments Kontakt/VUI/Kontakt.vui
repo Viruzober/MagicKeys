@@ -1,6 +1,3 @@
-[Params]
-PluginClass=Kontakt
-Loader=Code
 [Keys]
 Ctrl+D=AllLibDelete
 Delete=BlockDelete

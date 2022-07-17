@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using static MagicKeys.MagicKeys;
 using static MKLib;
+using System.Linq;
 
 namespace MagicKeys
 {
@@ -13,48 +14,48 @@ protected override void WndProc(ref Message m)
 switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
-string Key = KeyParse((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
-if (VUIKeys.ContainsKey(Key) == true)
+string ReplaceWNDProcKey = GetKeyMod((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
+if (VUIKeysFunctions.Where(k => k.Key == ReplaceWNDProcKey).Any() == true)
 {
-(string Func, string Param) = FuncParse(VUIKeys[Key]);
-if(VUIKeys[Key].Split(",", 2)[0] == "Background")
+VUIKeyFuncContainer keyFunc = VUIKeysFunctions.Where(k => k.Key == ReplaceWNDProcKey).ToArray()[0];
+if(keyFunc.Function.Background == true)
 {
-if (Func == ThreadFunc.Split(",")[0])
+if (keyFunc.Function.Name == ThreadFunc.Split(",")[0])
 {
 ThreadFunc = string.Empty;
 break;
 }
-var BFObj = new BackgroundFuncObject(Func, Param);
+var BFObj = new BackgroundFuncObject(keyFunc.Function.Name, keyFunc.Function.Param);
 BackgroundInvoke(BFObj);
 break;
 }
 else
 {
-Invoker(Func, Param);
+Invoker(keyFunc.Function.Name, keyFunc.Function.Param);
 break;
 }
 }
-if (Key == "Ctrl+Shift+F3")
+if (ReplaceWNDProcKey == "Ctrl+Shift+F3")
 {
 MagicKeys.HelpForm();
 }
-else if (Key == "Ctrl+Shift+F5")
+else if (ReplaceWNDProcKey == "Ctrl+Shift+F5")
 {
 VUILoader(API.GetVUI());
 }
-else if (Key == "Shift+Tab" || Key == "Left")
+else if (ReplaceWNDProcKey == "Shift+Tab" || ReplaceWNDProcKey == "Left")
 {
 MagicKeys.VUIObjectNavigator("Back");
 }
-else if (Key == "Tab" || Key == "Right")
+else if (ReplaceWNDProcKey == "Tab" || ReplaceWNDProcKey == "Right")
 {
 MagicKeys.VUIObjectNavigator("Next");
 }
-else if (Key == "F1")
+else if (ReplaceWNDProcKey == "F1")
 {
 MKLib.Speak(API.GetHelp());
 }
-else if (Key == "Enter")
+else if (ReplaceWNDProcKey == "Enter")
 {
 MagicKeys.Invoker(API.GetFunc("Func"), API.GetParam("Func"));
 }

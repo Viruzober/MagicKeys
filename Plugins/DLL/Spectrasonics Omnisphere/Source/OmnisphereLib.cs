@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.Collections.Extensions;
 using System.Threading;
 using static MagicKeys.MagicKeys;
 using static MKLib;

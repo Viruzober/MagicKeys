@@ -6,15 +6,16 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static Dictionary<string, string> CurrentPlugin = new Dictionary<string, string>();
-public static void GlobalPluginLoad(string Item, string WTitle, string WClass)
+public static void GlobalPluginLoad(string PluginName, PluginPointContainer Point)
 {
-CurrentPlugin.Add("WTitle", WTitle);
-CurrentPlugin.Add("WClass", WClass);
-CurrentPlugin.Add("PluginClass", PluginsList[Item]["PluginClass"]);
-CurrentPlugin.Add("VUI", PluginsList[Item]["VUI"]);
-CurrentPlugin.Add("PluginName", PluginsList[Item]["PluginName"]);
-CurrentPlugin.Add("Module", PluginsList[Item]["Module"]);
+
+CurrentPlugin.PluginName = PluginName;
+CurrentPlugin.WTitle = Point.WTitle;
+CurrentPlugin.WClass = Point.WClass;
+CurrentPlugin.PluginClass = Point.PluginClass;
+CurrentPlugin.VUIName = Point.StartVUI;
+CurrentPlugin.Module = Point.Module;
+
 }
 
 }

@@ -1,9 +1,6 @@
 using Microsoft.Win32;
 
-namespace MagicKeys
-{
-
-public partial class MagicKeys
+public partial class MKLib
 {
 
 public static string RegReader(RegistryKey HK, string Path, string GetKey)
@@ -18,5 +15,4 @@ string Result = (Key.GetValue(GetKey)).ToString();
 return Result;
 }
 
-}
 }

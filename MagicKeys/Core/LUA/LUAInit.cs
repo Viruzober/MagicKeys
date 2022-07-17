@@ -1,6 +1,6 @@
 ﻿using MoonSharp.Interpreter;
 using MoonSharp.Interpreter.Loaders;
-
+using System.IO;
 
 namespace MagicKeys
 {
@@ -18,8 +18,8 @@ LUAScript = new Script();
 LUAScript.Globals["MK"] = typeof(MagicKeys);
 LUAScript.Globals["MKLib"] = typeof(MKLib);
 ((ScriptLoaderBase)LUAScript.Options.ScriptLoader).IgnoreLuaPathGlobal = true;
-string[] path = ((ScriptLoaderBase)LUAScript.Options.ScriptLoader).ModulePaths = new string[] {API.GetVUIPath()+@"\?.lua"};
-LUAScript.DoFile(API.GetCurrentScript());
+string[] path = ((ScriptLoaderBase)LUAScript.Options.ScriptLoader).ModulePaths = new string[] {API.GetLUAPath()+@"\?.lua"};
+LUAScript.DoFile(Path.Combine(API.GetLUAPath(), API.GetVUI()+".lua"));
 }
 
 }

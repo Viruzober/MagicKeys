@@ -14,7 +14,7 @@ if (BFObj.AutoFunc == true)
 while(Thread.CurrentThread.Name == ThreadFunc)
 {
 if (BFObj.ObjectName != API.GetNameCurrentObject()) return;
-if (API.GetActiveClass() == "lua")
+if (API.GetPluginClass() == "lua")
 {
 LUAInvoke(BFObj.Func, BFObj.Params);
 }
@@ -29,7 +29,7 @@ else
 {
 while(Thread.CurrentThread.Name == ThreadFunc)
 {
-if (API.GetActiveClass() == "lua")
+if (API.GetPluginClass() == "lua")
 {
 LUAInvoke(BFObj.Func, BFObj.Params);
 }

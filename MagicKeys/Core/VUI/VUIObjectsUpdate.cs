@@ -6,18 +6,17 @@ public partial class MagicKeys
 
 public static void VUIObjectsUpdate(bool StartObject)
 {
-ActiveObjects.Clear();
-foreach(var O in VUIObjects)
+VisibleVUIObjects.Clear();
+foreach(var O in AllVUIObjects)
 {
-if (O.Value["Active"] == "true")
+if (O.Visible == true)
 {
-ActiveObjects.Add(O.Key);
+VisibleVUIObjects.Add(O);
 }
 }
-ObjectsCount = ActiveObjects.Count-1;
 if (StartObject == true)
 {
-CurrentObject = 0;
+CurrentPlugin.CurrentVUIObjectNumber = 0;
 }
 }
 

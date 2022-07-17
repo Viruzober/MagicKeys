@@ -15,7 +15,6 @@ LibLoaded();
 
 public static void LibListLoader()
 {
-SubPluginUnLoad();
 LibNormalize();
 }
 

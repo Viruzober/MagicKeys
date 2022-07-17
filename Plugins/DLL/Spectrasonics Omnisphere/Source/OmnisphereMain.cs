@@ -156,10 +156,10 @@ string CheckState = CheckStateImg("Glide", Coords.X+1035, Coords.Y+420, Coords.X
 Speak(CheckState);
 if(CheckState == "Checked")
 {
-VUIObjectSwitcher(false, "true", "24", "27");
+VUIObjectSwitcher(false, true, 24, 27);
 return;
 }
-VUIObjectSwitcher(false, "false", "24", "27");
+VUIObjectSwitcher(false, false, 24, 27);
 }
 
 public static void MainGlideA()

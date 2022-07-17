@@ -13,7 +13,7 @@ if (Settings.SpeakType == true)
 {
 SpeakObject += " "+API.GetObjectType();
 }
-if (API.GetFunc("AutoFunc") != null)
+if (API.GetFunc("AutoFunc") != string.Empty)
 {
 SpeakObject += " "+Invoker(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"));;
 }

@@ -1,5 +1,7 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
 using System.Windows.Forms;
-using Microsoft.Collections.Extensions;
 
 namespace MagicKeys
 {
@@ -7,27 +9,27 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static OrderedDictionary<string, string> GetOptionKeys()
+public static List<VUIKeyFuncContainer> GetOptionKeys()
 {
-OrderedDictionary<string, string> OptionKeys = new OrderedDictionary<string, string>();
-if (VUIObjects.Count != 0)
+List<VUIKeyFuncContainer> OptionKeyFunc = new List<VUIKeyFuncContainer>();
+if (AllVUIObjects.Count != 0)
 {
 if (Settings.NavigationType == false)
 {
-OptionKeys.Add("Tab", "VUIObjectNavigator,Next");
-OptionKeys.Add("Shift+Tab", "VUIObjectNavigator,Back");
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "Tab", Function = new FunctionContainer() {Name = "VUIObjectNavigator", Param = "Next"}});
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "Shift+Tab", Function= new FunctionContainer() {Name = "VUIObjectNavigator", Param = "Back"}});
 }
 else
 {
-OptionKeys.Add("Right", "VUIObjectNavigator,Next");
-OptionKeys.Add("Left", "VUIObjectNavigator,Back");
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "Right", Function= new FunctionContainer() {Name = "VUIObjectNavigator", Param = "Next"}});
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "Left", Function= new FunctionContainer() {Name = "VUIObjectNavigator", Param = "Back"}});
 }
-OptionKeys.Add("F1", "Speak,Help");
-OptionKeys.Add("Enter", "Invoker");
-}
-OptionKeys.Add("Ctrl+Shift+F3", "Speak,OptionHelp");
-OptionKeys.Add("Ctrl+Shift+F5", "ReloadVUI");
-return OptionKeys;
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "F1"});
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "Enter"});
+}   
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "Ctrl+Shift+F3"});
+OptionKeyFunc.Add(new VUIKeyFuncContainer() {Key = "Ctrl+Shift+F5"});
+return OptionKeyFunc;
 }
 
 }

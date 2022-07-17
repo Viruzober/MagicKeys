@@ -8,24 +8,24 @@ public static void VUIObjectNavigator(string Navigate)
 {
 if (Navigate == "Next")
 {
-if (CurrentObject >= ObjectsCount)
+if (CurrentPlugin.CurrentVUIObjectNumber >= VisibleVUIObjects.Count-1)
 {
-CurrentObject = 0;
+CurrentPlugin.CurrentVUIObjectNumber = 0;
 }
 else
 {
-CurrentObject += 1;
+CurrentPlugin.CurrentVUIObjectNumber += 1;
 }
 }
 else if (Navigate == "Back")
 {
-if (CurrentObject == 0)
+if (CurrentPlugin.CurrentVUIObjectNumber <= 0)
 {
-CurrentObject = ObjectsCount;
+CurrentPlugin.CurrentVUIObjectNumber = VisibleVUIObjects.Count-1;
 }
 else
 {
-CurrentObject -= 1;
+CurrentPlugin.CurrentVUIObjectNumber -= 1;
 }
 }
 VUIObjectSpeak();

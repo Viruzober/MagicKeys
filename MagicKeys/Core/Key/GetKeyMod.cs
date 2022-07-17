@@ -4,7 +4,7 @@
 public partial class MagicKeys
 {
 
-public static string KeyParse(int Mod)
+public static string GetKeyMod(int Mod)
 {
 string KeyMod = ((MKC.ModKeys)Mod).ToString().Replace(", ", "+");
 if (KeyMod == "No")

@@ -14,11 +14,6 @@ public static object PluginClass = new object();
 public static CustomAssemblyLoadContext PluginClassLoader = new CustomAssemblyLoadContext();
 public static void GetPluginType()
 {
-if (API.GetSubClass() != string.Empty)
-{
-return;
-}
-
 string ModulePath = string.Empty;
 PluginClassLoader = new CustomAssemblyLoadContext();
 try
@@ -28,15 +23,14 @@ if (API.GetPluginClass() == "lua")
 LUAInit();
 return;
 }
-if (API.GetPluginClass() == "MagicKeys")
-{
-PluginClass = MKOBJ.GetType();
-return;
-}
 ModulePath = Path.Combine(Directory.GetCurrentDirectory(), API.GetModulePath());
 Assembly PluginClasASM = PluginClassLoader.LoadFromAssemblyPath(ModulePath);
 var ClassType = PluginClasASM.GetType("MagicKeys."+API.GetPluginClass());
 PluginClass =  Activator.CreateInstance(ClassType);
+if (PluginClass.GetType().GetMethod(API.GetVUI()+"Loader") != null)
+{
+SystemInvoke(API.GetVUI()+"Loader");
+}
 }
 catch(Exception)
 {

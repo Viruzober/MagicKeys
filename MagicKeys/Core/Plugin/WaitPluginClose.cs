@@ -14,7 +14,7 @@ while(true)
 {
 Thread.Sleep(20);
 Application.DoEvents();
-Coords = GetModuleCoords(CurrentPlugin["Module"]);
+Coords = GetModuleCoords(CurrentPlugin.Module);
 if (Coords == new ModuleCoords())
 {
 return;

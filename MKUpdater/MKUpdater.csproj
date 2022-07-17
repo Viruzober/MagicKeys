@@ -41,7 +41,7 @@
 
   <ItemGroup>
     <PackageReference Include="Gettext.Tools" Version="0.21.0.1" />
-    <PackageReference Include="NGettext" Version="0.6.6" />
+    <PackageReference Include="NGettext" Version="0.6.7" />
     <PackageReference Include="Pluralize.NET.Core" Version="1.0.0" />
   </ItemGroup>
 

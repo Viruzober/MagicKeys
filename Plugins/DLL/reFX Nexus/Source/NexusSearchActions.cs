@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Windows.Forms;
+using static MKLib;
 
 namespace MagicKeys
 {
@@ -11,7 +12,7 @@ public partial class NexusSearchForm
 public void NexusSearchForm_Shown(object sender, EventArgs e)
 {
 this.Activate();
-string ScanDir = MagicKeys.RegReader(Microsoft.Win32.Registry.CurrentUser, "SOFTWARE/reFX/Nexus", "ContentPath");
+string ScanDir = RegReader(Microsoft.Win32.Registry.CurrentUser, "SOFTWARE/reFX/Nexus", "ContentPath");
 string[] Dirs = Directory.GetDirectories(ScanDir+"/Presets");
 foreach (string S in Dirs)
 {
@@ -25,7 +26,7 @@ public void ListBank_SelectedIndexChanged(object sender, EventArgs e)
 try
 {
 ListPatch.Items.Clear();
-string ScanDir = MagicKeys.RegReader(Microsoft.Win32.Registry.CurrentUser, "SOFTWARE/reFX/Nexus", "ContentPath");
+string ScanDir = RegReader(Microsoft.Win32.Registry.CurrentUser, "SOFTWARE/reFX/Nexus", "ContentPath");
 string[] Files = Directory.GetFiles(ScanDir+"/Presets/"+(ListBank.FocusedItem.Text));
 foreach (string S in Files)
 {
@@ -43,7 +44,7 @@ public void SearchText_KeyDown(object sender, KeyEventArgs e)
 if (e.KeyCode == Keys.Enter)
 {
 ListPatch.Items.Clear();
-string ScanDir = MagicKeys.RegReader(Microsoft.Win32.Registry.CurrentUser, "SOFTWARE/reFX/Nexus", "ContentPath");
+string ScanDir = RegReader(Microsoft.Win32.Registry.CurrentUser, "SOFTWARE/reFX/Nexus", "ContentPath");
 string[] Dirs = Directory.GetDirectories(ScanDir+"/Presets");
 if (SearchText.Text != "")
 {

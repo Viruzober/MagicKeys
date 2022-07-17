@@ -13,12 +13,7 @@ public class API
 
 public static string GetPluginPath()
 {
-string[] TempPluginName = CurrentPlugin["PluginName"].Split(".");
-if (TempPluginName.Length == 2)
-{
-return Path.Combine("Plugins", TempPluginName[0], "Subplugins", TempPluginName[1]);
-}
-return Path.Combine("Plugins", TempPluginName[0]);
+return Path.Combine("Plugins", CurrentPlugin.PluginName);
 }
 
 public static string GetVUIPath()
@@ -26,38 +21,14 @@ public static string GetVUIPath()
 return Path.Combine(GetPluginPath(), "VUI");
 }
 
+public static string GetLUAPath()
+{
+return Path.Combine(GetPluginPath(), "LUA");
+}
+
 public static string GetCurrentVUI()
 {
 return Path.Combine(GetVUIPath(), GetVUI()+".VUI");
-}
-
-public static string GetCurrentScript()
-{
-if (GetActiveClass() == "lua")
-{
-return Path.Combine(GetVUIPath(), GetVUI()+".lua");
-}
-return Path.Combine(GetVUIPath(), GetVUI()+".vuf");
-}
-
-public static bool IsSubPlugin()
-{
-string[] Temp = CurrentPlugin["PluginClass"].Split(".");
-if(Temp.Length == 2)
-{
-return true;
-}
-return false;
-}
-
-public static string GetCurrentVUILoader()
-{
-return Path.Combine(GetVUIPath(), GetVUI()+"Load.VUI");
-}
-
-public static string GetCurrentVUFLoader()
-{
-return Path.Combine(GetVUIPath(), GetVUI()+"Load.VUF");
 }
 
 public static string GetImgPath()
@@ -72,163 +43,102 @@ return Path.Combine(GetPluginPath(), GetPluginName()+".dll");
 
 public static string GetWTitle()
 {
-return CurrentPlugin["WTitle"];
+return CurrentPlugin.WTitle;
 }
 
 public static string GetWClass()
 {
-return CurrentPlugin["WClass"];
+return CurrentPlugin.WClass;
 }
 
 public static string GetPluginClass()
 {
-string[] TempClass = CurrentPlugin["PluginClass"].Split(".");
-if (TempClass.Length == 2)
-{
-return TempClass[0];
-}
-return TempClass[0];
-}
-
-public static string GetSubClass()
-{
-string[] TempClass = CurrentPlugin["PluginClass"].Split(".");
-if (TempClass.Length == 2)
-{
-return TempClass[1];
-}
-return string.Empty;
-}
-
-public static string GetActiveClass()
-{
-if (API.IsSubPlugin() == true)
-{
-return GetSubClass();
-}
-return GetPluginClass();
+return CurrentPlugin.PluginClass;
 }
 
 public static string GetVUI()
 {
-return CurrentPlugin["VUI"];
-}
-
-public static string GetVUIExt()
-{
-return CurrentPlugin["VUI"]+".vui";
+return CurrentPlugin.VUIName;
 }
 
 public static string GetPluginName()
 {
-string[] TempPluginName = CurrentPlugin["PluginName"].Split(".");
-if (TempPluginName.Length == 2)
-{
-return TempPluginName[1];
-}
-return CurrentPlugin["PluginName"];
+return CurrentPlugin.PluginName;
 }
 
 public static string GetModule()
 {
-return CurrentPlugin["Module"];
-}
-
-public static string GetLoader()
-{
-if (CurrentPlugin.ContainsKey("Loader") == true)
-{
-return CurrentPlugin["Loader"];
-}
-return null;
+return CurrentPlugin.Module;
 }
 
 public static string GetNameCurrentObject()
 {
-if (ActiveObjects.Any() == true)
-{
-return ActiveObjects[CurrentObject];
-}
-return null;
+return VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Name;
 }
 
 public static string GetText()
 {
-return VUIObjects[ActiveObjects[CurrentObject]]["Text"];
+return VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Text;
 }
 
 public static string GetObjectType()
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("ObjectType") == true)
-{
-return VUIObjects[ActiveObjects[CurrentObject]]["ObjectType"];
-}
-return string.Empty;
+return VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Type;
 }
 
 public static string GetHelp()
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey("Help") == true)
+if (VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Help != String.Empty)
 {
-return VUIObjects[ActiveObjects[CurrentObject]]["Help"];
+return VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Help;
 }
 return "Help not found";
 }
 
 public static bool FuncIsBackground(string TypeFunc)
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey(TypeFunc) == true)
+bool IsBackgroundFunc = false;
+if (TypeFunc == "Func")
 {
-string[] Temp = VUIObjects[ActiveObjects[CurrentObject]][TypeFunc].Split(",", 2);
-if (Temp[0] == "Background")
+IsBackgroundFunc = VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Function.Background;
+}
+if (TypeFunc == "AutoFunc")
 {
-return true;
+IsBackgroundFunc = VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].AutoFunction.Background;
 }
-return false;
-}
-return false;
+return IsBackgroundFunc;
 }
 
 public static string GetFunc(string TypeFunc)
 {
-try
+string FuncName = string.Empty;
+if (TypeFunc == "Func")
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey(TypeFunc) == true)
+FuncName = VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Function.Name;
+}
+if (TypeFunc == "AutoFunc")
 {
-string[] Temp = VUIObjects[ActiveObjects[CurrentObject]][TypeFunc].Split(",", 2);
-if (Temp[0] == "Background")
-{
-return Temp[1].Split(",", 2)[0].Trim();
+FuncName = VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].AutoFunction.Name;
 }
-return Temp[0].Split(",", 2)[0].Trim();
+return FuncName;
 }
-return null;
-}
-catch(Exception)
-        {
-        return null;
-}
-        }
 
         public static string GetParam(string TypeParam)
 {
-try
+if (TypeParam == "Func")
 {
-if (VUIObjects[ActiveObjects[CurrentObject]].ContainsKey(TypeParam) == true)
-{
-string[] Temp = VUIObjects[ActiveObjects[CurrentObject]][TypeParam].Split(",");
-if (Temp[0] == "Background")
-{
-return Temp[1].Split(",", 2)[1].Trim();
+if (VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Function.Param == String.Empty) return null;
+string TempParamInfo = VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].Function.Param;
+return TempParamInfo;
 }
-return Temp[1].Trim();
+
+if (TypeParam == "AutoFunc")
+{
+if (VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].AutoFunction.Param == String.Empty) return null;
+string TempParamInfo = VisibleVUIObjects[CurrentPlugin.CurrentVUIObjectNumber].AutoFunction.Param;
+return TempParamInfo;
 }
 return null;
-}
-catch(Exception)
-{
-return null;
-}
 }
 
 }

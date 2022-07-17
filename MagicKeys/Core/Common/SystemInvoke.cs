@@ -18,14 +18,6 @@ if (PluginClass.GetType().GetMethod(InvokeFunc) != null)
 {
 Class = PluginClass;
 }
-else if (SubClass.GetType().GetMethod(InvokeFunc) != null)
-{
-Class = SubClass;
-}
-else if (MKOBJ.GetType().GetMethod(InvokeFunc) != null)
-{
-Class = MKOBJ;
-}
 else
 {
 Speak(T._("Method {0} is not implemented", InvokeFunc));
