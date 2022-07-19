@@ -12,7 +12,7 @@ public static void RoundRobin()
 {
 MouseClick("Left", Coords.X+45, Coords.Y+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+190, Coords.X+100, Coords.Y+230, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+190, Coords.X+100, Coords.Y+230, 0)[0] == 1)
 {
 Speak("RoundRobin checked");
 }
@@ -26,7 +26,7 @@ public static void AutoAttack()
 {
 MouseClick("Left", Coords.X+45, Coords.Y+230, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+230, Coords.X+100, Coords.Y+260, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+230, Coords.X+100, Coords.Y+260, 0)[0] == 1)
 {
 Speak("AutoAttack checked");
 VUIObjectSwitcher(false, false, 2, 2);
@@ -62,7 +62,7 @@ public static void Reverb()
 {
 MouseClick("Left", Coords.X+280, Coords.Y+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
 {
 Speak("Reverb checked");
 VUIObjectSwitcher(false, true, 7, 7);
@@ -83,7 +83,7 @@ public static void Detune()
 {
 MouseClick("Left", Coords.X+280, Coords.Y+270, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+270, Coords.X+350, Coords.Y+320, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+270, Coords.X+350, Coords.Y+320, 0)[0] == 1)
 {
 Speak("Detune checked");
 }
@@ -122,7 +122,7 @@ public static void Piccolo()
 MouseClick("Left", Coords.X+75, Coords.Y+310, 1, 0, 0, 10);
 MouseMove(Coords.X, Coords.Y, 0);
 Thread.Sleep(100);
-if (ImgSearch("BayanPiccolo")[0] == 1)
+if (ImageSearch("BayanPiccolo")[0] == 1)
 {
 Speak("Piccolo on");
 }
@@ -137,7 +137,7 @@ public static void Concertina()
 MouseClick("Left", Coords.X+155, Coords.Y+310, 1, 0, 0, 10);
 MouseMove(Coords.X, Coords.Y, 0);
 Thread.Sleep(100);
-if (ImgSearch("BayanConcertina")[0] == 1)
+if (ImageSearch("BayanConcertina")[0] == 1)
 {
 Speak("Concertina on");
 }
@@ -152,7 +152,7 @@ public static void Clarinet()
 MouseClick("Left", Coords.X+235, Coords.Y+310, 1, 0, 0, 10);
 MouseMove(Coords.X, Coords.Y, 0);
 Thread.Sleep(100);
-if (ImgSearch("BayanClarinet")[0] == 1)
+if (ImageSearch("BayanClarinet")[0] == 1)
 {
 Speak("Clarinet on");
 }
@@ -167,7 +167,7 @@ public static void Bossoon()
 MouseClick("Left", Coords.X+315, Coords.Y+310, 1, 0, 0, 10);
 MouseMove(Coords.X, Coords.Y, 0);
 Thread.Sleep(100);
-if (ImgSearch("BayanBassoon")[0] == 1)
+if (ImageSearch("BayanBassoon")[0] == 1)
 {
 Speak("Bassoon on");
 }
@@ -179,7 +179,7 @@ Speak("Bassoon off");
 
 public static void IlyaEfimovBayanRightLoader()
 {
-if (ImgSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+230, Coords.X+100, Coords.Y+260, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+230, Coords.X+100, Coords.Y+260, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, false, 2, 2);
 }
@@ -187,7 +187,7 @@ else
 {
 VUIObjectSwitcher(false, true, 2, 2);
 }
-if (ImgSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, true, 7, 7);
 }

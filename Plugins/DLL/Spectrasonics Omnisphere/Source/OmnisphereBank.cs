@@ -12,7 +12,7 @@ public static void OmnisphereBank(string To)
 {
 if (To == "Back")
 {
-int[] OUP = ImgSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+185, 20);
+int[] OUP = ImageSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+185, 20);
 if (OUP[0] == 1)
 {
 OmnisphereBankPage("Back");
@@ -20,7 +20,7 @@ return;
 }
 else if (OUP[0] == 0)
 {
-int[] OBP = ImgSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20);
+int[] OBP = ImageSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20);
 if (OBP[0] == 1)
 {
 string Bank = ImgToText(150, 20, OBP[1], OBP[2]-15, 3);
@@ -33,7 +33,7 @@ return;
 }
 else if (To == "Next")
 {
-int[] ODW = ImgSearchArea("BP", Coords.X+10, Coords.Y+360, Coords.X+50, Coords.Y+385, 20);
+int[] ODW = ImageSearchArea("BP", Coords.X+10, Coords.Y+360, Coords.X+50, Coords.Y+385, 20);
 if (ODW[0] == 1)
 {
 OmnisphereBankPage("Next");
@@ -41,7 +41,7 @@ return;
 }
 else if (ODW[0] == 0)
 {
-int[] OBP = ImgSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20);
+int[] OBP = ImageSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20);
 if (OBP[0] == 1)
 {
 string Bank = ImgToText(150, 20, OBP[1], OBP[2]+15, 3);
@@ -56,7 +56,7 @@ return;
 
 public static void BankName()
 {
-int[] OBP = ImgSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20);
+int[] OBP = ImageSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20);
 string Bank = ImgToText(150, 25, OBP[1], OBP[2], 3);
 Thread.Sleep(100);
 Speak(Bank);

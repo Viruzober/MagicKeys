@@ -35,7 +35,7 @@ return;
 #if X86
 if (OS() == "64")
 {
-SoundPlay("Error", 0);
+SoundPlay("Error", false);
 MessageBox.Show(T._("This version of MagicKeys is built for 32-bit Windows, but you are running a 64-bit version. Please run a 64-bit version of MagicKeys instead."), T._("Error"));
 return;
 }
@@ -52,7 +52,6 @@ if (Settings.CheckUpdate == true)
 {
 Update();
 }
-
 PluginsListLoader();
 Thread ThreadPluginDetector = new Thread(PluginDetector);
 ThreadPluginDetector.IsBackground = true;

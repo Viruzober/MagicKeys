@@ -11,7 +11,7 @@ public partial class LUXONIXPurity
 
 public static void PurityLoader()
 {
-if (ImgSearch("Register", true)[0] == 1)
+if (ImageSearch("Register", true)[0] == 1)
 {
 VUILoader("Register");
 return;
@@ -45,7 +45,7 @@ temp += 70;
 }
 MouseClick("Left", Coords.X+667, Coords.Y+416, 1, 0, 0, 10);
 Thread.Sleep(1000);
-if (ImgSearch("Register", true)[0] == 0)
+if (ImageSearch("Register", true)[0] == 0)
 {
 VUILoader("Purity");
 }

@@ -25,9 +25,9 @@ TempKeyFunc.Function = FunctionParser(Values[I]);
 VUIKeysFunctions.Add(TempKeyFunc);
 }
 }
-var AllKeys = GetOptionKeys().Concat(VUIKeysFunctions).Select(k => k.Key).ToList();
+var AllKeys = VUIKeysFunctions.Concat(GetPluginOptionKeys()).ToList();
 PluginKeyRegInfo.WNDProcHandle = KeyWndProcHandle.Handle;
-PluginKeyRegInfo.KeyList = AllKeys;
+PluginKeyRegInfo.KeyList = AllKeys.Select(k => k.Key).ToList();
 SetKeyRegContext(PluginKeyRegInfo);
 }
 

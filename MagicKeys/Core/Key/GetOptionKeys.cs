@@ -9,7 +9,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static List<VUIKeyFuncContainer> GetOptionKeys()
+public static List<VUIKeyFuncContainer> GetPluginOptionKeys()
 {
 List<VUIKeyFuncContainer> OptionKeyFunc = new List<VUIKeyFuncContainer>();
 if (AllVUIObjects.Count != 0)

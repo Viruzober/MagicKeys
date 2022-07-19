@@ -14,25 +14,25 @@ public static void LibMidiChannel()
 string Input = InputBox("MIDI Channel", "Enter MIDI channel number from 1 to 16.", 1, 16);
 if (Input != null)
 {
-int[] KLMC = ImgSearch("KontaktTopLine");
+int[] KLMC = ImageSearch("KontaktTopLine");
 MouseClick("Left", KLMC[1]+620, KLMC[2]+20, 1, 0, 0, 10);
 Thread.Sleep(100);
 MouseClick("Left", KLMC[1]+380, KLMC[2]+15, 1, 0, 0, 10);
 Thread.Sleep(100);
 MouseClick("Left", KLMC[1]+120, KLMC[2]+60, 1, 0, 0, 10);
-while (ImgSearch("KontaktMidiChannelMenu")[0] == 0)
+while (ImageSearch("KontaktMidiChannelMenu")[0] == 0)
 {
 ;
 }
 
-int[] NKLMC = ImgSearch("KontaktMidiChannelMenu");
+int[] NKLMC = ImageSearch("KontaktMidiChannelMenu");
 MouseMove(NKLMC[5], NKLMC[6], 0);
-while (ImgSearch("KontaktMidiChannelNumber")[0] == 0)
+while (ImageSearch("KontaktMidiChannelNumber")[0] == 0)
 {
 ;
 }
 
-int[] NKLMCN = ImgSearch("KontaktMidiChannelNumber");
+int[] NKLMCN = ImageSearch("KontaktMidiChannelNumber");
 MouseMove(NKLMCN[5], NKLMCN[6], 0);
 int NumberChannel = Convert.ToInt32(Input);
 int X = Convert.ToInt32(NKLMCN[5]);
@@ -48,18 +48,18 @@ public static void LibAudioChannel()
 string Input = InputBox("Audio Channel", "Enter audio channel number from 1 to 16.", 1, 16);
 if (Input != null)
 {
-int[] KLAC = ImgSearch("KontaktTopLine");
+int[] KLAC = ImageSearch("KontaktTopLine");
 MouseClick("Left", KLAC[1]+620, KLAC[2]+20, 1, 0, 0, 10);
 Thread.Sleep(100);
 MouseClick("Left", KLAC[1]+380, KLAC[2]+15, 1, 0, 0, 10);
 Thread.Sleep(100);
 MouseClick("Left", KLAC[1]+120, KLAC[2]+40, 1, 0, 0, 10);
-while (ImgSearch("KontaktAudioChannel")[0] == 0)
+while (ImageSearch("KontaktAudioChannel")[0] == 0)
 {
 ;
 }
 
-int[] NKLAC = ImgSearch("KontaktAudioChannel");
+int[] NKLAC = ImageSearch("KontaktAudioChannel");
 int NumberChannel = Convert.ToInt32(Input);
 int X = Convert.ToInt32(NKLAC[5]);
 int Y = Convert.ToInt32(NKLAC[2]+(17*NumberChannel));
@@ -75,15 +75,15 @@ return;
 
 public static void LibDelete()
 {
-int[] KLD = ImgSearch("KontaktTopLine");
+int[] KLD = ImageSearch("KontaktTopLine");
 string Name = ImgToText(200, 30, KLD[1] + 70, KLD[2] + 5, 2);
 MouseClick("Left", KLD[1] + 620, KLD[2] + 10, 1, 0, 0, 10);
-while(ImgSearch("KontaktTopLine")[0] == 1)
+while(ImageSearch("KontaktTopLine")[0] == 1)
 {
 ;
 }
 
-int[] LibLoaded = ImgSearch("KontaktLibLoaded");
+int[] LibLoaded = ImageSearch("KontaktLibLoaded");
 if (LibLoaded[0] == 1)
 {
 BackToOptionMenu();
@@ -102,7 +102,7 @@ public static void LibSwitchFolder(string To)
 {
 try
 {
-int[] KLSF = ImgSearch("KontaktTopLine");
+int[] KLSF = ImageSearch("KontaktTopLine");
 if (To == "Back")
 {
 MouseClick("Left", KLSF[1]+365, KLSF[2]+20, 1, 0, 0, 30);
@@ -123,15 +123,15 @@ Speak("Done");
 
 public static void LibSwitchSnapshot(string To)
 {
-int[] KLSS = ImgSearch("KontaktTopLine");
+int[] KLSS = ImageSearch("KontaktTopLine");
 MouseClick("Left", KLSS[1]+620, KLSS[2]+20, 1, 0, 0, 10);
-while (ImgSearch("KontaktLeftLine")[0] == 0)
+while (ImageSearch("KontaktLeftLine")[0] == 0)
 {
 ;
 }
 
 MouseClick("Left", KLSS[1]+360, KLSS[2]+15, 1, 0, 0, 10);
-while (ImgSearch("KontaktLibSnapshot")[0] == 1)
+while (ImageSearch("KontaktLibSnapshot")[0] == 1)
 {
 ;
 }

@@ -7,7 +7,7 @@ using System.IO;
 
 namespace DeveloperTool
 {
-public partial class VUIManagerForm : Form
+public partial class VUIManager : Form
 {
 
 public ComboBox VUI = new ComboBox() {Dock = DockStyle.Fill};
@@ -21,7 +21,7 @@ public Button DeleteObject = new Button() {Text = T._("Delete")};
 public Button RenameObject = new Button() {Text = T._("Rename")};
 public Button ButtonClose = new Button() {Text = T._("Close")};
 
-public VUIManagerForm()
+public VUIManager()
 {
 this.StartPosition = FormStartPosition.CenterScreen;
 this.Text = T._("VUI manager");

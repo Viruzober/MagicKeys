@@ -1,11 +1,8 @@
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using static MKLib;
 
-namespace MagicKeys
-{
-public partial class MagicKeys
+public static partial class MKLib
 {
 
 public static int[] ImgSearch(string imgPath, bool Window)
@@ -14,11 +11,11 @@ IntPtr result;
 if (Window == true)
 {
 int[] RC = GetWinRect(GetForegroundWindow());
-result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
+result = ImageSearch(RC[0], RC[1], RC[0]+RC[2], RC[1]+RC[3], "*20 "+imgPath);
 }
 else
 {
-result = ImageSearch(0, 0, GetDisplayResolution().Width, GetDisplayResolution().Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
+result = ImageSearch(0, 0, GetDisplayResolution().Width, GetDisplayResolution().Height, "*20 "+imgPath);
 }
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
@@ -42,7 +39,7 @@ return pos;
 
 public static int[] ImgSearch(string imgPath)
 {
-IntPtr result = ImageSearch(0, 0, GetDisplayResolution().Width, GetDisplayResolution().Height, "*20 "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
+IntPtr result = ImageSearch(0, 0, GetDisplayResolution().Width, GetDisplayResolution().Height, "*20 "+imgPath);
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {
@@ -63,5 +60,4 @@ result = IntPtr.Zero;
 return pos;
 }
 
-}
 }

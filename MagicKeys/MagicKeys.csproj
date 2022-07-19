@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
     <Platforms>x86;x64</Platforms>
@@ -12,6 +12,7 @@
     <AssemblyName>MagicKeys</AssemblyName>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
@@ -89,7 +90,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;set subluadir=$(SolutionDir)Plugins\SubLua&#xD;&#xA;if exist &quot;%25distdir%25\Locale&quot; xcopy /e /i /q /y &quot;%25distdir%25\Locale&quot; &quot;$(TargetDir)Locale&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Plugins\Lua&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;for /f &quot;usebackq tokens=*&quot; %25%25P in (`dir /b /a:d &quot;%25subluadir%25&quot;`) do for /f &quot;usebackq tokens=*&quot; %25%25D in (`dir /b /a:d &quot;%25subluadir%25\%25%25P&quot;`) do (&#xD;&#xA;xcopy /e /i /q /y &quot;%25subluadir%25\%25%25P\%25%25D&quot; &quot;$(TargetDir)Plugins\%25%25P\Subplugins\%25%25D&quot; &gt; nul&#xD;&#xA;)&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Lib\$(PlatformName)\*.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Plugins&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Sounds&quot; &quot;%25distdir%25\Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Lib\$(PlatformName)\*.dll&quot; &quot;%25distdir%25&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.txt&quot; &quot;%25distdir%25\&quot; &gt; nul" />
+    <Exec Command="set distdir=$(SolutionDir)Dist\$(PlatformName)&#xD;&#xA;if exist &quot;%25distdir%25\Locale&quot; xcopy /e /i /q /y &quot;%25distdir%25\Locale&quot; &quot;$(TargetDir)Locale&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Plugins\Lua&quot; &quot;$(TargetDir)Plugins&quot; &gt; nul&#xD;&#xA;&#xD;&#xA;copy /y &quot;$(SolutionDir)Plugins\Hosts.ini&quot; &quot;$(TargetDir)Plugins\&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Settings&quot; &quot;$(TargetDir)Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(SolutionDir)Sounds&quot; &quot;$(TargetDir)Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Lib\$(PlatformName)\*.dll&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)*.html&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)MagicKeys.lua&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;&#xD;&#xA;copy /y &quot;$(SolutionDir)Changelog.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)License.txt&quot; &quot;$(TargetDir)&quot; &gt; nul&#xD;&#xA;&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Plugins&quot; &quot;%25distdir%25\Plugins&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Settings&quot; &quot;%25distdir%25\Settings&quot; &gt; nul&#xD;&#xA;xcopy /e /i /q /y &quot;$(TargetDir)Sounds&quot; &quot;%25distdir%25\Sounds&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(SolutionDir)Lib\$(PlatformName)\*.dll&quot; &quot;%25distdir%25&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.lua&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.html&quot; &quot;%25distdir%25\&quot; &gt; nul&#xD;&#xA;copy /y &quot;$(TargetDir)*.txt&quot; &quot;%25distdir%25\&quot; &gt; nul" />
   </Target>
 
   <Target Name="ProjectCleanup" BeforeTargets="PreBuildEvent" AfterTargets="Clean">

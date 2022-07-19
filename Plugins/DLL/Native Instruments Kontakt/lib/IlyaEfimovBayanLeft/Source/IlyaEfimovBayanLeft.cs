@@ -12,7 +12,7 @@ public static void AutoAttack()
 {
 MouseClick("Left", Coords.X+45, Coords.Y+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+190, Coords.X+100, Coords.Y+230, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+190, Coords.X+100, Coords.Y+230, 0)[0] == 1)
 {
 Speak("AutoAttack checked");
 VUIObjectSwitcher(false, false, 1, 1);
@@ -48,7 +48,7 @@ public static void Reverb()
 {
 MouseClick("Left", Coords.X+280, Coords.Y+190, 1, 0, 0, 10);
 Thread.Sleep(100);
-if (ImgSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
 {
 Speak("Reverb checked");
 VUIObjectSwitcher(false, true, 6, 6);
@@ -91,7 +91,7 @@ Speak("Detache on");
 
 public static void IlyaEfimovBayanLeftLoader()
 {
-if (ImgSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+190, Coords.X+100, Coords.Y+230, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+45, Coords.Y+190, Coords.X+100, Coords.Y+230, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, false, 1, 1);
 }
@@ -99,7 +99,7 @@ else
 {
 VUIObjectSwitcher(false, true, 1, 1);
 }
-if (ImgSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
+if (ImageSearchArea("BayanCheckBox", Coords.X+280, Coords.Y+190, Coords.X+350, Coords.Y+230, 0)[0] == 1)
 {
 VUIObjectSwitcher(false, true, 6, 6);
 }

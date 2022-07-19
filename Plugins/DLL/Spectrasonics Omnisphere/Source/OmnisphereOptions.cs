@@ -51,12 +51,12 @@ AudoSelect();
 public static void AudoSelect()
 {
 Thread.Sleep(200);
-if (ImgSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20)[0] == 0)
+if (ImageSearchArea("BP", Coords.X+10, Coords.Y+160, Coords.X+50, Coords.Y+385, 20)[0] == 0)
 {
 MouseClick("Left", Coords.X+220, Coords.Y+170, 1, 0, 0, 10);
 }
 Thread.Sleep(200);
-if (ImgSearchArea("BP", Coords.X+10, Coords.Y+390, Coords.X+50, Coords.Y+620, 20)[0] == 0)
+if (ImageSearchArea("BP", Coords.X+10, Coords.Y+390, Coords.X+50, Coords.Y+620, 20)[0] == 0)
 {
 MouseClick("Left", Coords.X+220, Coords.Y+400, 1, 0, 0, 10);
 }

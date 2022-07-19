@@ -30,7 +30,7 @@ public static void LibraryManager()
 int OldX = Coords.X, OldY = Coords.Y + 100;
 while(true)
 {
-int[] ColumnSeparator = ImgSearchArea("LibraryManagerLine", OldX, OldY, Coords.X+Coords.W, Coords.Y+Coords.H, 50);
+int[] ColumnSeparator = ImageSearchArea("LibraryManagerLine", OldX, OldY, Coords.X+Coords.W, Coords.Y+Coords.H, 50);
 if (ColumnSeparator[0] == 0) break;
 OCRResult OCRLibraryManager =  GetOCRResult(ColumnSeparator[1] - OldX, 520, OldX, OldY, 4);
 if (OCRLibraryManager.Lines.Any() == false) break;
@@ -57,7 +57,7 @@ public static void LibraryPresetManager(string To)
 Bitmap OltPreset = CreateBitmap(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H);
 KeySend("Keys", To, 50, 50);
 DisplayTraffic(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 2, 2, 10, OltPreset);
-int[] CurrentPreset = ImgSearchArea("BP", Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 20);
+int[] CurrentPreset = ImageSearchArea("BP", Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 20);
 if (CurrentPreset[0] == 1)
 {
 string Patch = ImgToText(150, 20, CurrentPreset[1], CurrentPreset[2], 3);

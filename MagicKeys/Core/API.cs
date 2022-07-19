@@ -23,7 +23,7 @@ return Path.Combine(GetPluginPath(), "VUI");
 
 public static string GetLUAPath()
 {
-return Path.Combine(GetPluginPath(), "LUA");
+return Path.Combine(GetPluginPath(), "lua");
 }
 
 public static string GetCurrentVUI()

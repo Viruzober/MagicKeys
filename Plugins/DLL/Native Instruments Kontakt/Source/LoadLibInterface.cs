@@ -10,7 +10,7 @@ public partial class Kontakt
 
 public static void LoadLibInterface()
 {
-int[] KTL = ImgSearch("KontaktTopLine");
+int[] KTL = ImageSearch("KontaktTopLine");
 Bitmap LoadLibTopLine = CreateBitmap(Coords.X, Coords.Y, Coords.W, Coords.H);
 MouseClick("Left", KTL[1]+620, KTL[2]+20, 1, 0, 0, 10);
 DisplayTraffic(Coords.X, Coords.Y, Coords.W, Coords.H, 5, 5, 10, LoadLibTopLine);

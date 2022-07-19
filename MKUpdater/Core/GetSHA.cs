@@ -12,7 +12,7 @@ public static string GetSHA(string file)
 {
 using (FileStream stream = File.OpenRead(file))
 {
-var sha = new SHA256Managed();
+var sha =  SHA256.Create();
 byte[] checksum = sha.ComputeHash(stream);
 return BitConverter.ToString(checksum).Replace("-", String.Empty);
 }

@@ -10,7 +10,7 @@ public partial class Kontakt
 
 public static string Progress()
 {
-int[] X = ImgSearchArea("Progress", Coords.X, Coords.Y, Coords.W, Coords.H, 0);
+int[] X = ImageSearchArea("Progress", Coords.X, Coords.Y, Coords.W, Coords.H, 0);
 if (X[0] == 1)
 {
 Speak((Math.Round((X[1]-Coords.X)/3.5)).ToString(), true);

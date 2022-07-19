@@ -13,7 +13,7 @@ public static void NexusBank(string To)
 {
 if (To == "Back")
 {
-int[] NXUP = ImgSearchArea("NexusUp", Coords.X+330, Coords.Y+70, Coords.X+350, Coords.Y+130, 40);
+int[] NXUP = ImageSearchArea("NexusUp", Coords.X+330, Coords.Y+70, Coords.X+350, Coords.Y+130, 40);
 if (NXUP[0] == 1)
 {
 NexusBankPage("Back");
@@ -21,7 +21,7 @@ return;
 }
 else if (NXUP[0] == 0)
 {
-int[] NXBP = ImgSearchArea("NexusBP", Coords.X+260, Coords.Y+90, Coords.X+280, Coords.Y+270, 20);
+int[] NXBP = ImageSearchArea("NexusBP", Coords.X+260, Coords.Y+90, Coords.X+280, Coords.Y+270, 20);
 if (NXBP[0] == 1)
 {
 MouseClick("Left", NXBP[1]+15, NXBP[2]-5, 1, 0, 0, 10);
@@ -37,7 +37,7 @@ Speak(Bank);
 }
 else if (To == "Next")
 {
-int[] NXDW = ImgSearchArea("NexusDown", Coords.X+300, Coords.Y+220, Coords.X+330, Coords.Y+250, 40);
+int[] NXDW = ImageSearchArea("NexusDown", Coords.X+300, Coords.Y+220, Coords.X+330, Coords.Y+250, 40);
 if (NXDW[0] == 1)
 {
 NexusBankPage("Next");
@@ -45,10 +45,10 @@ return;
 }
 else if (NXDW[0] == 0)
 {
-int[] NXBP = ImgSearchArea("NexusBP", Coords.X+260, Coords.Y+90, Coords.X+280, Coords.Y+270, 20);
+int[] NXBP = ImageSearchArea("NexusBP", Coords.X+260, Coords.Y+90, Coords.X+280, Coords.Y+270, 20);
 if (NXBP[0] == 1)
 {
-int[] NXEND = ImgSearchArea("NexusEnd", NXBP[5], NXBP[6], NXBP[5]+15, NXBP[6]+20, 20);
+int[] NXEND = ImageSearchArea("NexusEnd", NXBP[5], NXBP[6], NXBP[5]+15, NXBP[6]+20, 20);
 if (NXEND[0] == 1)
 {
 SoundPlay("End", false);

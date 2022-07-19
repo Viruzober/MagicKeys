@@ -22,7 +22,7 @@ VUILoader("Spire");
 
 public void ChangeBank(string Key)
 {
-int[] BImg = ImgSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 20);
+int[] BImg = ImageSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 20);
 if (BImg[0] == 0)
 {
 MouseClick("Left", Coords.X+210, Coords.Y+85, 2, 0, 10, 10);
@@ -36,20 +36,20 @@ BP = "Bank";
 }
 }
 KeySend("Keys", Key, 100, 100);
-BImg = ImgSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 0);
+BImg = ImageSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 0);
 Speak(ImgToText(150, 20, BImg[1], BImg[2], 4));
 }
 
 public void ChangePreset(string Key)
 {
-int[] PImg = ImgSearchArea("Presets", Coords.X+340, Coords.Y+50, Coords.X+1000, Coords.Y+500, 20);
+int[] PImg = ImageSearchArea("Presets", Coords.X+340, Coords.Y+50, Coords.X+1000, Coords.Y+500, 20);
 if (PImg[0] == 0)
 {
 MouseClick("Left", Coords.X+420, Coords.Y+80, 1, 0, 10, 10);
 Thread.Sleep(100);
-if (ImgSearchArea("Presets", Coords.X+340, Coords.Y+50, Coords.X+1000, Coords.Y+500, 0)[0] == 0)
+if (ImageSearchArea("Presets", Coords.X+340, Coords.Y+50, Coords.X+1000, Coords.Y+500, 0)[0] == 0)
 {
-int[] BImg = ImgSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 0);
+int[] BImg = ImageSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 0);
 MouseClick("Left", BImg[1], BImg[2], 2, 0, 10, 10);
 Speak("Bank not selected");
 return;
@@ -64,13 +64,13 @@ BP = "Preset";
 }
 }
 KeySend("Keys", Key, 100, 100);
-PImg = ImgSearchArea("Presets", Coords.X+340, Coords.Y+50, Coords.X+1000, Coords.Y+500, 0);
+PImg = ImageSearchArea("Presets", Coords.X+340, Coords.Y+50, Coords.X+1000, Coords.Y+500, 0);
 Speak(ImgToText(150, 20, PImg[1], PImg[2], 4));
 }
 
 public void SelectBank()
 {
-int[] BImg = ImgSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 0);
+int[] BImg = ImageSearchArea("Banks", Coords.X+50, Coords.Y+50, Coords.X+250, Coords.Y+500, 0);
 MouseClick("Left", BImg[5], BImg[6], 1, 0, 10, 10);
 Speak(ImgToText(150, 20, BImg[1], BImg[2], 2)+" selected");
 }
@@ -82,7 +82,7 @@ MouseClick("Left", Coords.X+355, Coords.Y+510, 1, 0, 0, 10);
 
 public void SpeakPreset(string To)
 {
-if (ImgSearch("Lib", true)[0] == 1)
+if (ImageSearch("Lib", true)[0] == 1)
 {
 Speak("Please open library and select bank");
 return;

@@ -42,7 +42,7 @@ Speak("Add library tool not found");
 
 public static void AllLibDelete()
 {
-if (ImgSearch("KontaktLibLoaded")[0] == 1)
+if (ImageSearch("KontaktLibLoaded")[0] == 1)
 {
 Speak("No loaded libraries");
 return;

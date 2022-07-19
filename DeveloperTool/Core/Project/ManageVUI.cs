@@ -16,7 +16,7 @@ Speak(T._("Project is not opened"));
 return;
 }
 KeyUnReg();
-VUIManagerForm VUIM = new VUIManagerForm();
+VUIManager VUIM = new VUIManager();
 VUIM.ShowDialog();
 KeyReg();
 }

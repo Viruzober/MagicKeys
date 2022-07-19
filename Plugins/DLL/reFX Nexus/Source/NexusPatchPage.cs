@@ -12,7 +12,7 @@ public static void NexusPatchPage(string To)
 {
 if (To == "Back")
 {
-int[] FH = ImgSearchArea("FullHome", Coords.X+540, Coords.Y+50, Coords.X+590, Coords.Y+160, 20);
+int[] FH = ImageSearchArea("FullHome", Coords.X+540, Coords.Y+50, Coords.X+590, Coords.Y+160, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End", false);
@@ -30,7 +30,7 @@ Speak(Patch);
 }
 else if (To == "Next")
 {
-int[] FH = ImgSearchArea("FullEnd", Coords.X+540, Coords.Y+180, Coords.X+590, Coords.Y+280, 20);
+int[] FH = ImageSearchArea("FullEnd", Coords.X+540, Coords.Y+180, Coords.X+590, Coords.Y+280, 20);
 if (FH[0] == 1)
 {
 SoundPlay("End", false);

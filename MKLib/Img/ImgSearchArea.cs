@@ -1,16 +1,13 @@
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
-using static MKLib;
 
-namespace MagicKeys
-{
-public partial class MagicKeys
+public static partial class MKLib
 {
 
 public static int[] ImgSearchArea(string imgPath, int X, int Y, int W, int H, int Variant)
 {
-IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+Path.Combine(API.GetImgPath(), imgPath+".bmp"));
+IntPtr result = ImageSearch(X, Y, W, H, "*"+Variant+" "+imgPath);
 String res = Marshal.PtrToStringAnsi(result);
 if (res == "0")
 {
@@ -31,5 +28,4 @@ result = IntPtr.Zero;
 return pos;
 }
 
-}
 }

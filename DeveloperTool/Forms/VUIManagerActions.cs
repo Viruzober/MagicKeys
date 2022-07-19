@@ -8,7 +8,7 @@ using System.IO;
 
 namespace DeveloperTool
 {
-public partial class VUIManagerForm : Form
+public partial class VUIManager : Form
 {
 
 public void Form_Show(Object Sender, EventArgs e)
