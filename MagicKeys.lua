@@ -1,5 +1,5 @@
 ﻿function ImgToText(W, H, X, Y, Zoom, Lang)
-return MKLib.ImgToText(W, H, MagicKeys.Coords.X+X, MagicKeys.Coords.Y+Y, Zoom, Lang)
+return MKLib.ImgToText(W, H, MagicKeys.Coords.X+X, MagicKeys.Coords.Y+Y, Zoom, Lang or "en")
 end
 function MouseClick(Button, X, Y, Count, TimeMove, TimeClick, TimeUp)
 MKLib.MouseClick(Button, MagicKeys.Coords.X+X, MagicKeys.Coords.Y+Y,  Count, TimeMove, TimeClick, TimeUp)
@@ -13,8 +13,8 @@ end
 function Sleep(Time)
 MKLib.Sleep(Time)
 end
-function Speak(Text)
-MKLib.Speak(Text)
+function Speak(Text, Interrupt)
+MKLib.Speak(Text, interrupt or false)
 end
 function VUILoader(VUIName)
 MagicKeys.VUILoader(VUIName)

@@ -1,0 +1,24 @@
+[Keys]
+C=callMenu:content
+Shift+C=sayContent
+B=callMenu:banks
+Shift+B=sayBank
+P=callMenu:presets
+Shift+P=sayPreset
+PageUp=arrows:next
+PageDown=arrows:back
+[1]
+Text=Choose content
+ObjectType=Button
+Help=Allows to choose the Z3TA+ content: classic Z3Ta+ content or modern Z3TA+ 2 content.
+Func=callMenu:content
+[2]
+Text=Choose bank
+ObjectType=Button
+Help=Allows to choose the needed bank using standart Windows popup menu
+Func=callMenu:banks
+[3]
+Text=Choose preset
+ObjectType=Button
+Help=Allows to choose the needed preset using standart Windows popup menu
+Func=callMenu:presets
