@@ -1,24 +1,21 @@
 ﻿using MoonSharp.Interpreter;
 
-
 namespace MagicKeys
 {
 [MoonSharpUserData]
 public partial class MagicKeys
 {
 
-public static string LUAInvoke(string Func, string Param = null)
+public static void LUAInvoke(string Func, string Param)
 {
-DynValue Result;
-if (Param == null)
+if (string.IsNullOrEmpty(Param) == true)
 {
-Result = LUAScript.Call(LUAScript.Globals[Func]);
+LUAScript.Call(LUAScript.Globals[Func]);
 }
 else
 {
-Result = LUAScript.Call(LUAScript.Globals[Func], Param);
+LUAScript.Call(LUAScript.Globals[Func], Param);
 }
-return Result.String;
 }
 
 }

@@ -29,7 +29,7 @@ var ClassType = PluginClasASM.GetType("MagicKeys."+API.GetPluginClass());
 PluginClass =  Activator.CreateInstance(ClassType);
 if (PluginClass.GetType().GetMethod(API.GetVUI()+"Loader") != null)
 {
-SystemInvoke(API.GetVUI()+"Loader");
+SystemInvoke(API.GetVUI()+"Loader", string.Empty);
 }
 }
 catch(Exception)

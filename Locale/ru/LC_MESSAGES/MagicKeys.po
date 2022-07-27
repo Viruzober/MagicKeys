@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-18 14:27+0300\n"
+"POT-Creation-Date: 2022-07-27 18:48+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -462,7 +462,7 @@ msgstr "Программа MagicKeys уже запущена."
 msgid "Help file not found"
 msgstr "Файл справки не найден"
 
-#: MagicKeys\Core\Common\SystemInvoke.cs:23
+#: MagicKeys\Core\Common\SystemInvoke.cs:19
 #, csharp-format
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"

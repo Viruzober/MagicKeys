@@ -7,19 +7,17 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static string Invoker(string Func, string Param = null)
+public static void Invoker(string Func, string Param)
 {
 KeyUnReg();
-string Result;
 if (API.GetPluginClass() == "lua")
 {
-Result = LUAInvoke(Func, Param);
+LUAInvoke(Func, Param);
 KeyReg();
-return Result;
+return;
 }
- Result = SystemInvoke(Func, Param);
+ SystemInvoke(Func, Param);
 KeyReg();
-return Result;
 }
 
 }

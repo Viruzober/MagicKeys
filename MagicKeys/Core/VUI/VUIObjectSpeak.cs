@@ -13,15 +13,19 @@ if (Settings.SpeakType == true)
 {
 SpeakObject += " "+API.GetObjectType();
 }
-if (API.GetFunc("AutoFunc") != string.Empty)
-{
-SpeakObject += " "+Invoker(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"));;
-}
 MKLib.Speak(SpeakObject);
+if (string.IsNullOrEmpty(API.GetFunc("AutoFunc")) != true)
+{
+Invoker(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"));
+}
 if (API.FuncIsBackground("AutoFunc") == true)
 {
-var BFObj = new BackgroundFuncObject(API.GetFunc("AutoFunc"), API.GetParam("AutoFunc"), API.GetNameCurrentObject(), true);
-BackgroundInvoke(BFObj);
+var BackgroundFuncSpeak = new BackgroundFuncContainer();
+BackgroundFuncSpeak.Func = API.GetFunc("AutoFunc");
+BackgroundFuncSpeak.Param = API.GetParam("AutoFunc");
+BackgroundFuncSpeak.CallName = API.GetNameCurrentObject();
+BackgroundFuncSpeak.CallMethod = BackgroundCallMethod.VUIObject;
+BackgroundInvoke(BackgroundFuncSpeak);
 }
 }
 

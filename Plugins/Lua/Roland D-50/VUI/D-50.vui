@@ -1,3 +1,5 @@
+[Keys]
+Ctrl+R=Background|Test
 [1]
 Text=Presets menu
 ObjectType=Button

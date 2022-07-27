@@ -20,13 +20,17 @@ if (VUIKeysFunctions.Where(k => k.Key == ReplaceWNDProcKey).Any() == true)
 VUIKeyFuncContainer keyFunc = VUIKeysFunctions.Where(k => k.Key == ReplaceWNDProcKey).ToArray()[0];
 if(keyFunc.Function.Background == true)
 {
-if (keyFunc.Function.Name == ThreadFunc.Split(",")[0])
+if (keyFunc.Key == ThreadFunc.Split(",")[0])
 {
 ThreadFunc = string.Empty;
 break;
 }
-var BFObj = new BackgroundFuncObject(keyFunc.Function.Name, keyFunc.Function.Param);
-BackgroundInvoke(BFObj);
+var BackgroundFuncWNDProc = new BackgroundFuncContainer();
+BackgroundFuncWNDProc.Func = keyFunc.Function.Name;
+BackgroundFuncWNDProc.Param = keyFunc.Function.Param;
+BackgroundFuncWNDProc.CallName = keyFunc.Key;
+BackgroundFuncWNDProc.CallMethod = BackgroundCallMethod.VUIKey;
+BackgroundInvoke(BackgroundFuncWNDProc);
 break;
 }
 else

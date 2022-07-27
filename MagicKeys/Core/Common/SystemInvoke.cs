@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using System.Linq;
 using static MKLib;
 
 namespace MagicKeys
@@ -8,33 +9,31 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static string SystemInvoke(string InvokeFunc, string FuncParam = null)
+public static void SystemInvoke(string Func, string Param)
 {
 try
 {
-Object Class = null;
-object[] Param = null;
-if (PluginClass.GetType().GetMethod(InvokeFunc) != null)
+var CheckMethod = PluginClass.GetType().GetMethods().Select(m => m.Name).Where(n => n == Func).ToList();
+if (CheckMethod.Any() == false)
 {
-Class = PluginClass;
+Speak(T._("Method {0} is not implemented", Func));
+return;
 }
-else
+MethodInfo Method = PluginClass.GetType().GetMethod(Func);
+object[] ParamsObjects = null;
+if (string.IsNullOrEmpty(Param) == true)
 {
-Speak(T._("Method {0} is not implemented", InvokeFunc));
-return null;
+Method.Invoke(PluginClass, ParamsObjects);
+return;
 }
-if (FuncParam != null)
-{
-Param = new object[] {FuncParam};
-}
-MethodInfo Method = Class.GetType().GetMethod(InvokeFunc);
-string Result = Method.Invoke(Class, Param) as string;
-return Result;
+ParamsObjects = new object[] {Param};
+Method.Invoke(PluginClass, ParamsObjects);
+return;
 }
 catch(Exception ex)
 {
 MKDebugForm(ex.ToString());
-return null;
+return;
 }
 }
 
