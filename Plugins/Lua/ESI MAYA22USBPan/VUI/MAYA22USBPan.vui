@@ -1,11 +1,8 @@
-[Params]
-PluginClass=MagicKeys
-Loader=None
 [Keys]
-Home=Volume1Up
-End=Volume1Down
-PageUp=Volume2Up
-PageDown=Volume2Down
+Home=Volume1:Up
+End=Volume1:Down
+PageUp=Volume2:Up
+PageDown=Volume2:Down
 [1]
 Text=Line in
 ObjectType=Button
