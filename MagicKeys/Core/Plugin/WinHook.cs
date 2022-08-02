@@ -6,7 +6,7 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static string[] WinHook(string WTitle, string WClass)
+public static (string Title, string Class) WinHook(string WTitle, string WClass)
 {
 string[] T = WTitle.Split(",");
 string[] C = WClass.Split(",");
@@ -16,11 +16,11 @@ foreach(string Class in C)
 {
 if (WinActive(Title, Class) == true)
 {
-return new string[2] {Title, Class};
+return (Title, Class);
 }
 }
 }
-return new string[2] {null, null};
+return (string.Empty, string.Empty);
 }
 
 }
