@@ -6,37 +6,26 @@ namespace MagicKeys
 public partial class MagicKeys
 {
 
-public static void BackgroundFuncThread(object Params)
+public static void BackgroundFuncThread(object InvokeBackgroundFunc)
 {
-BackgroundFuncObject BFObj = (BackgroundFuncObject)Params;
-if (BFObj.AutoFunc == true)
-{
+BackgroundFuncContainer TempBackgroundFunc = (BackgroundFuncContainer)InvokeBackgroundFunc;
 while(Thread.CurrentThread.Name == ThreadFunc)
 {
-if (BFObj.ObjectName != API.GetNameCurrentObject()) return;
+if (TempBackgroundFunc.CallMethod == BackgroundCallMethod.VUIObject)
+{
+if (TempBackgroundFunc.CallName != API.GetNameCurrentObject()) return;
+}
 if (API.GetPluginClass() == "lua")
 {
-LUAInvoke(BFObj.Func, BFObj.Params);
+LUAInvoke(TempBackgroundFunc.Func, TempBackgroundFunc.Param);
 }
 else
 {
-SystemInvoke(BFObj.Func, BFObj.Params);
+SystemInvoke(TempBackgroundFunc.Func, TempBackgroundFunc.Param);
 }
-if (BFObj.ObjectName != API.GetNameCurrentObject()) return;
-}
-}
-else
+if (TempBackgroundFunc.CallMethod == BackgroundCallMethod.VUIObject)
 {
-while(Thread.CurrentThread.Name == ThreadFunc)
-{
-if (API.GetPluginClass() == "lua")
-{
-LUAInvoke(BFObj.Func, BFObj.Params);
-}
-else
-{
-SystemInvoke(BFObj.Func, BFObj.Params);
-}
+if (TempBackgroundFunc.CallName != API.GetNameCurrentObject()) return;
 }
 }
 }

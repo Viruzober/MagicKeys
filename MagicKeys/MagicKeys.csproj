@@ -13,6 +13,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <Nullable>annotations</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">

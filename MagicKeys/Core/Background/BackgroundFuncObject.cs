@@ -2,20 +2,18 @@
 
 namespace MagicKeys
 {
-public class BackgroundFuncObject
+public enum BackgroundCallMethod : int
 {
-
-public string Func;
-public string Params;
-public string ObjectName = null;
-public bool AutoFunc = false;
-public BackgroundFuncObject(string GetFunc, string GetParams, string GetObjectName = null, bool GetAutoFunc = false)
-{
-Func = GetFunc;
-Params = GetParams;
-ObjectName = GetObjectName;
-AutoFunc = GetAutoFunc;
+VUIKey = 0,
+VUIObject = 1
 }
 
+public class BackgroundFuncContainer
+{
+
+public string Func = String.Empty;
+public string Param = String.Empty;
+public string CallName = String.Empty;
+public BackgroundCallMethod CallMethod;
 }
 }

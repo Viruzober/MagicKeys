@@ -10,7 +10,7 @@ public static partial class Ini
 
 public static List<string> IniReadSections(string IniFile)
 {
-if (File.Exists(IniFile) == false) return null;
+if (File.Exists(IniFile) == false) return new List<string>();
  List<string> FileStrings = File.ReadAllLines(IniFile).ToList();
 List<string> Sections = FileStrings.Where(s => s.Trim().Contains("[") || s.Trim().Contains("]")).Select(t => t.Trim(new char[] {'[', ']'})).ToList();
 return Sections;
