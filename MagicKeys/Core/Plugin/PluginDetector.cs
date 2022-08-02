@@ -46,6 +46,7 @@ PluginClass = null;
 PluginClassLoader.Unload();
 LUAScript.Globals.Clear();
 GC.Collect();
+GC.WaitForPendingFinalizers();
 }
 }
 }
