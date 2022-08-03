@@ -1,7 +1,13 @@
 function BanksMenu()
-MouseClick("left", 405, 17, 1, 0, 0, 10)
+	MouseClick("Left", 405, 17, 1, 0, 0, 10)
 end
 
 function PresetsMenu()
-MouseClick("left", 605, 17, 1, 0, 0, 10)
+	MouseClick("Left", 605, 17, 1, 0, 0, 10)
+end
+
+-- Loader
+Sleep(100)
+if MagicKeys.ImageSearch("Browse")[0] == 0 then
+	VUILoader("Browse")
 end
