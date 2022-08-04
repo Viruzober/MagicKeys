@@ -1,8 +1,8 @@
 ﻿[Keys]
 Ctrl+L=LibraryManager
 Shift+L=SelectLibrary
-Up=LibraryPresetManager,Up
-Down=LibraryPresetManager,Down
+Up=LibraryPresetManager:Up
+Down=LibraryPresetManager:Down
 [SelectLibrary]
 Text= Select library
 ObjectType=Button
