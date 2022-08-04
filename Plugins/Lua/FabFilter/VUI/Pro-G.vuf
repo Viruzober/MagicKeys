@@ -1,0 +1,8 @@
+[PresetsMenu]
+MouseClick=Left,450,17,1,0,0,10
+[PreviousPreset]
+MouseClick=Left,405,17,1,0,0,10
+[NextPreset]
+MouseClick=Left,565,17,1,0,0,10
+[Help]
+MouseClick=Left,595,17,1,0,0,10
