@@ -1,0 +1,6 @@
+[Keys]
+P=LoadPreset
+[1]
+Text=Load preset
+ObjectType=Button
+Func=LoadPreset

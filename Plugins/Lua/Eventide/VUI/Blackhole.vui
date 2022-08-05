@@ -1,0 +1,7 @@
+[Keys]
+L=LoadPreset
+[1]
+Text=Load preset
+ObjectType=Button
+Help=Загрузить пресет
+Func=LoadPreset

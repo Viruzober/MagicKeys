@@ -1,6 +1,3 @@
-[Params]
-PluginClass=MagicKeys
-Loader=None
 [Keys]
 C=CategoryMenu
 K=KicksMenu

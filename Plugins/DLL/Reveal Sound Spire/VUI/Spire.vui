@@ -1,8 +1,8 @@
 [Params]
 Loader=Code
 [Keys]
-PageUp=SpeakPreset,Previous
-PageDown=SpeakPreset,Next
+PageUp=SpeakPreset:Previous
+PageDown=SpeakPreset:Next
 Ctrl+1=Oscillator1
 Ctrl+2=Oscillator2
 Ctrl+3=Oscillator3
@@ -23,9 +23,9 @@ Func=Options
 Text=Previous preset
 ObjectType=Button
 Help=Not found
-Func=SpeakPreset,Previous
+Func=SpeakPreset:Previous
 [4]
 Text=Next preset
 ObjectType=Button
 Help=Not found
-Func=SpeakPreset,Next
+Func=SpeakPreset:Next

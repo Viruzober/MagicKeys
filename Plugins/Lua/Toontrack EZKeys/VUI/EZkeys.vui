@@ -1,6 +1,6 @@
-[Params]
-PluginClass=MagicKeys
-Loader=VUF
+[Keys]
+PageUp=PresetsSwitch:up
+PageDown=PresetsSwitch:down
 [1]
 Text=Banks menu
 ObjectType=Button

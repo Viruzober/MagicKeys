@@ -1,7 +1,0 @@
-[Params]
-PluginClass=MagicKeys
-Loader=None
-[1]
-Text=Presets menu
-ObjectType=Button
-Func=PresetsMenu

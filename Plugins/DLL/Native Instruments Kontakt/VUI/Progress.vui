@@ -1,5 +1,5 @@
 [Keys]
-P=Background,Progress
+P=Background|Progress
 [ProgressLoad]
 Text=Loading
 ObjectType=Progress
