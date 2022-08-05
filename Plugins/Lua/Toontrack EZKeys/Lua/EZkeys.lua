@@ -27,12 +27,12 @@ function PresetsSwitch(direction)
 end
 
 function ReportBank()
-	Speak(ImgToText(150, 20, 300, 11, 4))
+	Speak(string.format("Bank %s", ImgToText(150, 20, 300, 11, 4)))
 end
 
 function ReportPreset()
 	local presetName = ImgToText(150, 20, 455, 11, 4)
-	Speak(presetName)
+	Speak(string.format("Preset %s", presetName))
 	pnCache = presetName
 end
 

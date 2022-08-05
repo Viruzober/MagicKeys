@@ -3,15 +3,15 @@ PageUp=PresetsSwitch:up
 PageDown=PresetsSwitch:down
 B=BanksMenu
 P=PresetsMenu
-Shift+B=ReportBank
-Shift+P=ReportPreset
 [1]
 Text=Banks menu
 ObjectType=Button
 Help=Open banks menu
+AutoFunc=ReportBank
 Func=BanksMenu
 [2]
 Text=Presets menu
 ObjectType=Button
 Help=Open presets menu
+AutoFunc=ReportPreset
 Func=PresetsMenu
