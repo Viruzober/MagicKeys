@@ -31,8 +31,9 @@ function ReportBank()
 end
 
 function ReportPreset()
-	Speak(ImgToText(150, 20, 455, 11, 4))
-	pnCache = newPresetName
+	local presetName = ImgToText(150, 20, 455, 11, 4)
+	Speak(presetName)
+	pnCache = presetName
 end
 
 -- Loader
