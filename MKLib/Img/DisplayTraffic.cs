@@ -4,7 +4,9 @@ using System.Drawing;
 public static partial class MKLib
 {
 
-public static void DisplayTraffic(int X, int Y, int W, int H, int SkipPixelX, int SkipPixelY, int CountChangedPixel, Bitmap ComparisonImg)
+public static Bitmap ComparisonBitMap;
+
+public static void DisplayTraffic(int X, int Y, int W, int H, int SkipPixelX, int SkipPixelY, int CountChangedPixel)
 {
 Bitmap ToScreen = new Bitmap(W, H);
 Graphics ToG = Graphics.FromImage(ToScreen);
@@ -22,7 +24,7 @@ return;
 for (int YTo = 0; YTo < ToScreen.Height; YTo+=SkipPixelY)
 {
 Color ToColor = ToScreen.GetPixel(XTo, YTo);
-Color OneColor = ComparisonImg.GetPixel(XTo, YTo);
+Color OneColor = ComparisonBitMap.GetPixel(XTo, YTo);
 if (OneColor != ToColor)
 {
 Count+=1;
@@ -36,12 +38,11 @@ return;
 }
 }
 
-public static Bitmap CreateBitmap(int X, int Y, int W, int H)
+public static void CreateBitmap(int X, int Y, int W, int H)
 {
-Bitmap Screen = new Bitmap(W, H);
-Graphics G = Graphics.FromImage(Screen);
-G.CopyFromScreen(X, Y, 00, 0, Screen.Size);
-return Screen;
+ComparisonBitMap = new Bitmap(W, H);
+Graphics G = Graphics.FromImage(ComparisonBitMap);
+G.CopyFromScreen(X, Y, 00, 0, ComparisonBitMap.Size);
 }
 
 }

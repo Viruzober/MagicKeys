@@ -7,8 +7,7 @@ function MouseClick(Button, X, Y, Count, TimeMove, TimeClick, TimeUp)
 end
 
 function MouseClickDrag(Button, X1, Y1, X2, Y2, TimeMove, TimeUp)
-	MKLib.MouseClickDrag(Button, MagicKeys.Coords.X + X1, MagicKeys.Coords.Y + Y1, MagicKeys.Coords.X + X2,
-		MagicKeys.Coords.Y + Y2, TimeMove, TimeUp)
+	MKLib.MouseClickDrag(Button, MagicKeys.Coords.X + X1, MagicKeys.Coords.Y + Y1, MagicKeys.Coords.X + X2, MagicKeys.Coords.Y + Y2, TimeMove, TimeUp)
 end
 
 function PixelSearch(X, Y, Color)

@@ -54,9 +54,9 @@ Speak("Done");
 
 public static void LibraryPresetManager(string To)
 {
-Bitmap OltPreset = CreateBitmap(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H);
+CreateBitmap(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H);
 KeySend("Keys", To, 50, 50);
-DisplayTraffic(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 2, 2, 10, OltPreset);
+DisplayTraffic(Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 2, 2, 10);
 int[] CurrentPreset = ImageSearchArea("BP", Coords.X+730, Coords.Y+330, Coords.X+Coords.W, Coords.Y+Coords.H, 20);
 if (CurrentPreset[0] == 1)
 {
