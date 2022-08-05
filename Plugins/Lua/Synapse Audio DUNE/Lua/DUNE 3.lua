@@ -1,5 +1,5 @@
 function BanksMenu()
-	MouseClick("left", 479, 71, 1, 0, 0, 10)
+	MouseClick("Left", 479, 71, 1, 0, 0, 10)
 end
 
 function PatchesMenu()
