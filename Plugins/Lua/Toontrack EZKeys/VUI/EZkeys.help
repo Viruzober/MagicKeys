@@ -1,2 +1,5 @@
+B: select bank in the popup menu
+P: select preset in the popup menu
+The keys above with Shift: report  specified sections
 Page up: previous patch at  selected bank
 Page Down: Next patch at selected bank

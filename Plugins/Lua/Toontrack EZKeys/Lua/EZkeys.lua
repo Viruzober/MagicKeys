@@ -26,6 +26,16 @@ function PresetsSwitch(direction)
 	end
 end
 
+function ReportBank()
+	Speak(ImgToText(150, 20, 300, 11, 4))
+end
+
+function ReportPreset()
+	local presetName = ImgToText(150, 20, 455, 11, 4)
+	Speak(presetName)
+	pnCache = presetName
+end
+
 -- Loader
 Sleep(100)
 if MagicKeys.ImageSearch("Browse")[0] == 0 then

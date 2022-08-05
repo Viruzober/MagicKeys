@@ -1,6 +1,10 @@
 [Keys]
 PageUp=PresetsSwitch:up
 PageDown=PresetsSwitch:down
+B=BanksMenu
+P=PresetsMenu
+Shift+B=ReportBank
+Shift+P=ReportPreset
 [1]
 Text=Banks menu
 ObjectType=Button
