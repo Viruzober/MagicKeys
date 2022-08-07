@@ -27,12 +27,13 @@ function PresetsSwitch(direction)
 end
 
 function ReportBank()
-	Speak(string.format("Bank %s", ImgToText(150, 20, 300, 11, 4)))
+	Speak(string.format("Bank menu. %s selected", ImgToText(150, 20, 300, 11, 4)))
 end
 
 function ReportPreset()
 	local presetName = ImgToText(150, 20, 455, 11, 4)
-	Speak(string.format("Preset %s", presetName))
+	-- The following code line is identical of ReportBank function report code, that's just  Lua syntax sugar demonstration
+	Speak(("Presets menu. %s selected"):format(presetName))
 	pnCache = presetName
 end
 
