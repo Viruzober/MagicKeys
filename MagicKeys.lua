@@ -33,3 +33,11 @@ end
 function KeySend(Type, Send, Time, PostTime)
 	MKLib.KeySend(Type, Send, Time, PostTime)
 end
+
+function CreateBitmap(X, Y, W, H)
+	MKLib.CreateBitmap(MagicKeys.Coords.X + X, MagicKeys.Coords.Y + Y, W, H)
+end
+
+function DisplayTraffic(X, Y, W, H, SkipPixelX, SkipPixelY, CountChangedPixel)
+	MKLib.DisplayTraffic(MagicKeys.Coords.X + X, MagicKeys.Coords.Y + Y, W, H, SkipPixelX, SkipPixelY, CountChangedPixel)
+end
