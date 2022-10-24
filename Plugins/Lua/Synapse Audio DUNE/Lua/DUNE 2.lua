@@ -1,25 +1,29 @@
+-- Define which conversion we need
+local pos = position.module -- relative
+
 function BanksMenu()
-	MouseClick("Left", 411, 69, 1, 0, 0, 1)
+	mouse.clickLeft(pos(411, 69))
 end
 
 function PatchesMenu()
-	MouseClick("Left", 525, 75, 1, 0, 0, 1)
+	mouse.clickLeft(pos(525, 75))
 end
 
 function PresetsMenu()
-	MouseClick("Left", 487, 106, 1, 0, 0, 1)
+	mouse.clickLeft(pos(487, 106))
 end
 
+local presetArea = pos(420, 80, 250, 50)
 function PreviousPreset()
-	CreateBitmap(420, 80, 250, 50)
-	MouseClick("Left", 574, 70, 1, 0, 0, 1)
-	DisplayTraffic(420, 80, 250, 50, 5, 5, 2)
-	Speak(ImgToText(250, 50, 420, 80, 2))
+	screen.snapshot(presetArea)
+	mouse.clickLeft(pos(574, 70))
+	screen.waitUntilChanged(presetArea, 5, 5, 2)
+	speak(screen.recognizeText(presetArea, 2))
 end
 
 function NextPreset()
-	CreateBitmap(420, 80, 250, 50)
-	MouseClick("Left", 596, 71, 1, 0, 0, 10)
-	DisplayTraffic(420, 80, 250, 50, 5, 5, 2)
-	Speak(ImgToText(250, 50, 420, 80, 2))
+	screen.snapshot(presetArea)
+	mouse.clickLeft(pos(596, 71))
+	screen.waitUntilChanged(presetArea, 5, 5, 2)
+	speak(screen.recognizeText(presetArea, 2))
 end

@@ -1,9 +1,21 @@
+-- Select the coordinates conversion
+local pos = position.module
+
+-- Mouse static parameters initialization
+mouse.timeUp = 10
+
+-- Loader
+sleep(100)
+if screen.searchImage("Browse")[0] == 0 then
+	vui.load("Browse")
+end
+
 function BanksMenu()
-	MouseClick("Left", 405, 17, 1, 0, 0, 10)
+	mouse.clickLeft(pos(405, 17))
 end
 
 function PresetsMenu()
-	MouseClick("Left", 605, 17, 1, 0, 0, 10)
+	mouse.clickLeft(pos(605, 17))
 end
 
 -- Presets cache to attempting for define of presets bounces
@@ -14,31 +26,28 @@ function PresetsSwitch(direction)
 		up = 21,
 		down = 29
 	}
-	MouseClick("Left", arrowsRow, arrowsCol[direction], 1, 0, 0, 10)
-	Sleep(300)
+	local presetArea = pos(455, 11, 150, 20)
+	mouse.clickLeft(pos(arrowsRow, arrowsCol[direction]))
 	-- Attempt to define the presets bounces
-	local newPresetName = ImgToText(150, 20, 455, 11, 4)
-	if newPresetName ~= pnCache then
-		Speak(newPresetName)
-		pnCache = newPresetName
-	else
-		MagicKeys.SoundPlay("End", false)
+	for _ = 1, 5 do
+		sleep(100)
+		local newPresetName = screen.recognizeText(presetArea, 4)
+		if newPresetName ~= pnCache then
+			speak(newPresetName)
+			pnCache = newPresetName
+			return
+		end
 	end
+	sound.play("End")
 end
 
 function ReportBank()
-	Speak(string.format("Bank menu. %s selected", ImgToText(150, 20, 300, 11, 4)))
+	speak(string.format("%s selected", screen.recognizeText(pos(300, 11, 150, 20), 4)), true)
 end
 
 function ReportPreset()
-	local presetName = ImgToText(150, 20, 455, 11, 4)
+	local presetName = screen.recognizeText(pos(455, 11, 150, 20), 4)
 	-- The following code line is identical of ReportBank function report code, that's just  Lua syntax sugar demonstration
-	Speak(("Presets menu. %s selected"):format(presetName))
+	speak(("%s selected"):format(presetName), true)
 	pnCache = presetName
-end
-
--- Loader
-Sleep(100)
-if MagicKeys.ImageSearch("Browse")[0] == 0 then
-	VUILoader("Browse")
 end

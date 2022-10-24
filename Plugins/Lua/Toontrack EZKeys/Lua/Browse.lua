@@ -1,3 +1,3 @@
 function Browse()
-MouseClick("Left", 430, 345, 1, 0, 0, 10)
+mouse.clickLeft"(position.module(430, 345), 1, nil, nil, 10)
 end
