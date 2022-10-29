@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-27 18:48+0300\n"
+"POT-Creation-Date: 2022-10-29 03:15+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -88,6 +88,11 @@ msgid ""
 msgstr ""
 "Это окно отображается за пределами экрана. Вы хотите переместить его в "
 "видимую область?"
+
+#: DeveloperTool\Core\Common\FixWindow.cs:20
+#, fuzzy
+msgid "Window is fully visible"
+msgstr "Окно видно не полностью."
 
 #: DeveloperTool\Core\Img\ImgSave.cs:13
 msgid "Image name"

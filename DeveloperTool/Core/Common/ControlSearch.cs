@@ -22,7 +22,7 @@ ControlSearchForm ITB = new ControlSearchForm();
 ITB.ShowDialog();
 if (ITB.DialogResult == DialogResult.OK)
 {
-ModuleCoords GMC = GetModuleCoords(ITB.GetString());
+ModuleCoords GMC    = GetModuleCoords(ITB.GetString());
 if(GMC == new ModuleCoords())
 {
 Speak("Not found", true);

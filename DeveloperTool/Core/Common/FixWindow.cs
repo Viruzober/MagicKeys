@@ -14,8 +14,10 @@ DialogResult result = MessageBox.Show(T._("This window appears to be out off scr
 if (result == DialogResult.OK)
 {
 SetWindowPos(GetForegroundWindow(), 0, 50, 50, 0, 0, MKC.SWP_NOSIZE|MKC.SWP_NOACTIVATE|MKC.SWP_NOZORDER);
+return;
 }
 }
+MKLib.Speak(T._("Window is fully visible"), true);
 }
 
 }

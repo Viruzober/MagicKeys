@@ -13,9 +13,9 @@ switch (m.Msg)
 {
 case MKC.WM_HOTKEY:
 string Key = GetModKeyName((int)m.LParam & 0xFFFF)+GetKeyName(((int)m.LParam >> 16) & 0xFFFF);
-if (Key == "Ctrl+Shift+F")
+if (Key == "Ctrl+F")
 {
-
+DeveloperTool.FixWindow();
 }
 else if (Key == "Ctrl+Shift+I")
 {

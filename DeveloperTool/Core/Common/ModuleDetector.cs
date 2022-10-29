@@ -24,7 +24,6 @@ if (LockDeveloperTool == true) continue;
 if (string.IsNullOrEmpty(ModuleName) == true) continue;
 Coords = GetModuleCoords(ModuleName);
 if (Coords == new ModuleCoords()) continue;
-FixWindow();
 CreateDevToolKeys();
 SetKeyRegContext(DevKeyRegInfo);
 KeyReg();
