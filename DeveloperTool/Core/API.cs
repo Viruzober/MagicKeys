@@ -16,11 +16,6 @@ public static string GetCurrentVUI()
 return Path.Combine("Projects", DeveloperTool.ProjectName, "VUI", DeveloperTool.VUIName+".vui");
 }
 
-public static string GetCurrentVUF()
-{
-return Path.Combine("Projects", DeveloperTool.ProjectName, "VUI", DeveloperTool.VUIName+".vuf");
-}
-
 public static string GetImagePath()
 {
 return Path.Combine("Projects", DeveloperTool.ProjectName, "Images");
