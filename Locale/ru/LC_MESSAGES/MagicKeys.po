@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MagicKeys\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-29 03:15+0300\n"
+"POT-Creation-Date: 2023-02-26 00:04+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgstr ""
 "100%. Когда вы нажмете кнопку «да», это будет сделано автоматически."
 
 #: ConfigInstaller\ConfigInstaller.cs:17
-#: MagicKeys\Core\Plugin\PluginsListLoader.cs:65
+#: magickeys\Core\Plugin\PluginsListLoader.cs:65
 #: MKUpdater\Forms\UpdateFormActions.cs:21
 msgid "Warning"
 msgstr "Внимание"
@@ -38,6 +38,81 @@ msgstr ""
 #: DeveloperTool\Core\Common\FixWindow.cs:13
 msgid "Attention"
 msgstr "Внимание"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:33
+#: Dist\x64\Settings\SettingsForm.cs:33 magickeys\Settings\SettingsForm.cs:33
+#: Settings\SettingsForm.cs:33
+msgid "Use left/right arrow keys for navigation"
+msgstr "Использовать клавиши горизонтальных стрелок для навигации"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:38
+#: Dist\x64\Settings\SettingsForm.cs:38 magickeys\Settings\SettingsForm.cs:38
+#: Settings\SettingsForm.cs:38
+msgid "Enable sounds"
+msgstr "Включить звуки"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:43
+#: Dist\x64\Settings\SettingsForm.cs:43 magickeys\Settings\SettingsForm.cs:43
+#: Settings\SettingsForm.cs:43
+msgid "Window detection timeout (ms):"
+msgstr "Задержка при определении окон (мс):"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:54
+#: Dist\x64\Settings\SettingsForm.cs:54 magickeys\Settings\SettingsForm.cs:54
+#: Settings\SettingsForm.cs:54
+msgid "Speak control types"
+msgstr "Говорить типы элементов управления"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:59
+#: Dist\x64\Settings\SettingsForm.cs:59 magickeys\Settings\SettingsForm.cs:59
+#: Settings\SettingsForm.cs:59
+msgid "Ask before exiting"
+msgstr "Спрашивать перед выходом"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:64
+#: Dist\x64\Settings\SettingsForm.cs:64 magickeys\Settings\SettingsForm.cs:64
+#: Settings\SettingsForm.cs:64
+msgid "Update channel"
+msgstr "Канал обновлений"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:76
+#: Dist\x64\Settings\SettingsForm.cs:76 magickeys\Settings\SettingsForm.cs:76
+#: Settings\SettingsForm.cs:76
+msgid "check for updates when magicKeys starts"
+msgstr "Проверять наличие обновлений при запуске magicKeys"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:84
+#: Dist\x64\Settings\SettingsForm.cs:84 magickeys\Forms\HelpForm.cs:36
+#: magickeys\Forms\MenuForm.cs:16 magickeys\Settings\SettingsForm.cs:84
+#: Settings\SettingsForm.cs:84
+msgid "Help"
+msgstr "Справка"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:90
+#: DeveloperTool\Forms\EditProjectForm.cs:17
+#: DeveloperTool\Forms\ObjectEditorForm.cs:18
+#: DeveloperTool\Forms\PointEditorForm.cs:19
+#: Dist\x64\Settings\SettingsForm.cs:90 magickeys\Settings\SettingsForm.cs:90
+#: Settings\SettingsForm.cs:90
+msgid "Save"
+msgstr "Сохранить"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:96
+#: DeveloperTool\Forms\ControlSearchForm.cs:14
+#: DeveloperTool\Forms\CreateProjectForm.cs:18
+#: DeveloperTool\Forms\EditProjectForm.cs:18
+#: DeveloperTool\Forms\ObjectEditorForm.cs:19
+#: DeveloperTool\Forms\PointEditorForm.cs:20
+#: Dist\x64\Settings\SettingsForm.cs:96 magickeys\Settings\SettingsForm.cs:96
+#: MKUpdater\Forms\UpdateForm.cs:61 Settings\SettingsForm.cs:96
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ConfigInstaller\bin\x64\Debug\Settings\SettingsForm.cs:110
+#: Dist\x64\Settings\SettingsForm.cs:110 magickeys\Forms\MenuForm.cs:14
+#: magickeys\Settings\SettingsForm.cs:110 Settings\SettingsForm.cs:110
+msgid "Settings"
+msgstr "Настройки"
 
 #: ConfigInstaller\Forms\ConfigInstallerForm.cs:36
 msgid "Plugins"
@@ -68,8 +143,8 @@ msgstr "Для запуска DeveloperTool необходимо закрыть 
 #: DeveloperTool\Forms\VUIManagerActions.cs:98
 #: DeveloperTool\Forms\VUIManagerActions.cs:130
 #: DeveloperTool\Forms\VUIManagerActions.cs:141
-#: DeveloperTool\Forms\VUIManagerActions.cs:154 MagicKeys\MagicKeys.cs:39
-#: MagicKeys\MagicKeys.cs:46 MagicKeys\Core\Common\CheckRunProc.cs:18
+#: DeveloperTool\Forms\VUIManagerActions.cs:154 magickeys\MagicKeys.cs:39
+#: magickeys\MagicKeys.cs:46 magickeys\Core\Common\CheckRunProc.cs:18
 #: MKUpdater\MKUpdater.cs:62 MKUpdater\MKUpdater.cs:72
 #: MKUpdater\Forms\UpdateFormActions.cs:38
 #: MKUpdater\Forms\UpdateFormActions.cs:58
@@ -193,15 +268,6 @@ msgstr "Окно видно не полностью."
 msgid "OK"
 msgstr "OK"
 
-#: DeveloperTool\Forms\ControlSearchForm.cs:14
-#: DeveloperTool\Forms\CreateProjectForm.cs:18
-#: DeveloperTool\Forms\EditProjectForm.cs:18
-#: DeveloperTool\Forms\ObjectEditorForm.cs:19
-#: DeveloperTool\Forms\PointEditorForm.cs:20
-#: MagicKeys\Settings\SettingsForm.cs:96 MKUpdater\Forms\UpdateForm.cs:61
-msgid "Cancel"
-msgstr "Отмена"
-
 #: DeveloperTool\Forms\ControlSearchForm.cs:18
 msgid "Control search"
 msgstr "Поиск элемента управления"
@@ -262,13 +328,6 @@ msgstr "Модуль:"
 #: DeveloperTool\Forms\EditProjectActions.cs:41
 msgid "A VUI with the same name already exists."
 msgstr "VUI с таким именем уже существует."
-
-#: DeveloperTool\Forms\EditProjectForm.cs:17
-#: DeveloperTool\Forms\ObjectEditorForm.cs:18
-#: DeveloperTool\Forms\PointEditorForm.cs:19
-#: MagicKeys\Settings\SettingsForm.cs:90
-msgid "Save"
-msgstr "Сохранить"
 
 #: DeveloperTool\Forms\EditProjectForm.cs:22
 msgid "EditProject"
@@ -442,7 +501,7 @@ msgstr "Менеджер VUI"
 msgid "Objects:"
 msgstr "Объекты:"
 
-#: MagicKeys\MagicKeys.cs:39
+#: magickeys\MagicKeys.cs:39
 msgid ""
 "This version of MagicKeys is built for 32-bit Windows, but you are running a "
 "64-bit version. Please run a 64-bit version of MagicKeys instead."
@@ -451,121 +510,84 @@ msgstr ""
 "используете 64-разрядную версию. Пожалуйста запустите 64-разрядную версию "
 "MagicKeys."
 
-#: MagicKeys\MagicKeys.cs:46
+#: magickeys\MagicKeys.cs:46
 msgid "You must close DeveloperTool to run MagicKeys."
 msgstr "Для запуска MagicKeys необходимо закрыть DeveloperTool."
 
-#: MagicKeys\MagicKeys.cs:65
+#: magickeys\MagicKeys.cs:65
 msgid "MagicKeys is ready"
 msgstr "Сервис MagicKeys запущен"
 
-#: MagicKeys\Core\Common\CheckRunProc.cs:18
+#: magickeys\Core\Common\CheckRunProc.cs:18
 msgid "MagicKeys is already running."
 msgstr "Программа MagicKeys уже запущена."
 
-#: MagicKeys\Core\Common\Help.cs:15
+#: magickeys\Core\Common\Help.cs:15
 msgid "Help file not found"
 msgstr "Файл справки не найден"
 
-#: MagicKeys\Core\Common\SystemInvoke.cs:19
+#: magickeys\Core\Common\SystemInvoke.cs:19
 #, csharp-format
 msgid "Method {0} is not implemented"
 msgstr "Метод {0} не реализован"
 
-#: MagicKeys\Core\Objects\Slider.cs:12
+#: magickeys\Core\Objects\Slider.cs:12
 msgid "Enter a value for "
 msgstr "Введите значение для "
 
-#: MagicKeys\Core\Objects\Slider.cs:12
+#: magickeys\Core\Objects\Slider.cs:12
 msgid " from 1 to 100"
 msgstr " от 1 до 100"
 
-#: MagicKeys\Core\Plugin\PluginsListLoader.cs:65
+#: magickeys\Core\Plugin\PluginsListLoader.cs:65
 msgid "No plugins are available."
 msgstr "Нет доступных плагинов."
 
-#: MagicKeys\Forms\HelpForm.cs:36 MagicKeys\Forms\MenuForm.cs:16
-#: MagicKeys\Settings\SettingsForm.cs:84
-msgid "Help"
-msgstr "Справка"
-
-#: MagicKeys\Forms\MenuActions.cs:24
+#: magickeys\Forms\MenuActions.cs:24
 msgid "Do you really want to exit MagicKeys?"
 msgstr "Вы действительно хотите завершить работу MagicKeys?"
 
-#: MagicKeys\Forms\MenuActions.cs:24
+#: magickeys\Forms\MenuActions.cs:24
 msgid "Exit MagicKeys"
 msgstr "Выйти из MagicKeys"
 
-#: MagicKeys\Forms\MenuActions.cs:27 MagicKeys\Forms\MenuActions.cs:37
+#: magickeys\Forms\MenuActions.cs:27 magickeys\Forms\MenuActions.cs:37
 msgid "Goodbye"
 msgstr "Пока"
 
-#: MagicKeys\Forms\MenuForm.cs:14 MagicKeys\Settings\SettingsForm.cs:110
-msgid "Settings"
-msgstr "Настройки"
-
-#: MagicKeys\Forms\MenuForm.cs:15
+#: magickeys\Forms\MenuForm.cs:15
 msgid "Check for updates"
 msgstr "Проверить наличие обновлений"
 
-#: MagicKeys\Forms\MenuForm.cs:17
+#: magickeys\Forms\MenuForm.cs:17
 msgid "Exit"
 msgstr "Выход"
 
-#: MagicKeys\Forms\MenuForm.cs:29 MagicKeys\Forms\MenuKeys.cs:25
+#: magickeys\Forms\MenuForm.cs:29 magickeys\Forms\MenuKeys.cs:25
 #, csharp-format
 msgid "MagicKeys {0} is enabled"
 msgstr "MagicKeys {0} включен"
 
-#: MagicKeys\Forms\MenuKeys.cs:19
+#: magickeys\Forms\MenuKeys.cs:19
 #, csharp-format
 msgid "MagicKeys {0} is disabled"
 msgstr "MagicKeys {0} выключен"
 
-#: MagicKeys\Forms\MenuKeys.cs:20
+#: magickeys\Forms\MenuKeys.cs:20
 msgid "MagicKeys is disabled"
 msgstr "MagicKeys выключен"
 
-#: MagicKeys\Forms\MenuKeys.cs:26
+#: magickeys\Forms\MenuKeys.cs:26
 msgid "MagicKeys is enabled"
 msgstr "MagicKeys включен"
 
-#: MagicKeys\Forms\MenuKeys.cs:39
+#: magickeys\Forms\MenuKeys.cs:39
 msgid "Sounds off"
 msgstr "Звуки выключены"
 
-#: MagicKeys\Forms\MenuKeys.cs:44
+#: magickeys\Forms\MenuKeys.cs:44
 msgid "Sounds on"
 msgstr "Звуки включены"
-
-#: MagicKeys\Settings\SettingsForm.cs:33
-msgid "Use left/right arrow keys for navigation"
-msgstr "Использовать клавиши горизонтальных стрелок для навигации"
-
-#: MagicKeys\Settings\SettingsForm.cs:38
-msgid "Enable sounds"
-msgstr "Включить звуки"
-
-#: MagicKeys\Settings\SettingsForm.cs:43
-msgid "Window detection timeout (ms):"
-msgstr "Задержка при определении окон (мс):"
-
-#: MagicKeys\Settings\SettingsForm.cs:54
-msgid "Speak control types"
-msgstr "Говорить типы элементов управления"
-
-#: MagicKeys\Settings\SettingsForm.cs:59
-msgid "Ask before exiting"
-msgstr "Спрашивать перед выходом"
-
-#: MagicKeys\Settings\SettingsForm.cs:64
-msgid "Update channel"
-msgstr "Канал обновлений"
-
-#: MagicKeys\Settings\SettingsForm.cs:76
-msgid "check for updates when magicKeys starts"
-msgstr "Проверять наличие обновлений при запуске magicKeys"
 
 #: MKUpdater\MKUpdater.cs:46
 msgid "No updates available."
