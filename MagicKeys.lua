@@ -13,14 +13,13 @@ position.module = setmetatable({}, {
 	__index = MagicKeys.Coords,
 	-- When the object called as function it mus convert passed values to expected table
 	__call = function (self, x, y, w, h)
-		local obj = {}
-		-- assign the default values
-		x = x or 0 y = y or 0
-		obj.x = MagicKeys.Coords.X + x
-		obj.y = MagicKeys.Coords.Y + y
-		obj.w = w
-		obj.h = h
-		return obj
+		return {
+			x = MagicKeys.Coords.X + (x or 0),
+			y = MagicKeys.Coords.Y + (y or 0),
+			-- The width and height fields are optional, so we don't need to check these
+			w = w,
+			h = h
+	}
 	end
 })
 
@@ -31,12 +30,10 @@ position.screen = setmetatable({}, {
 		return 0
 	end,
 	__call = function (self, x, y, w, h)
-		local obj = {}
-		obj.x = x or 0
-		obj.y = y or 0
-		obj.w = w
-		obj.h = h
-		return obj
+		return {
+			x = x or 0, y = y or 0,
+			w = w, h = h
+		}
 	end
 })
 
@@ -229,6 +226,11 @@ function window.setFocusByCoordinates(coords)
 	MKLib.SetFocusControlPoint(coords.x, coords.y)
 end
 
+function window.waitUntilClosed(windowClass)
+	MKLib.WaitWinClose(windowClass)
+end
+
+-- Root functions which might called at anytime
 function sleep(Time)
 	MKLib.Sleep(Time)
 end
