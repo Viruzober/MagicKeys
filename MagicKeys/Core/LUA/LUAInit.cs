@@ -12,6 +12,7 @@ public static Script LUAScript = new Script();
 public static void LUAInit()
 {
 UserData.RegisterType<MagicKeys>();
+        UserData.RegisterType<System.Drawing.Bitmap>();
 UserData.RegisterType<ModuleCoords>();
 UserData.RegisterType(typeof(MKLib));
 LUAScript = new Script();
