@@ -1,3 +1,5 @@
+local pos = position.module
+
 function LoadPreset()
-	MouseClick("Left", 214, 11, 1, 0, 0, 10)
+	mouse.clickLeft(pos(214, 11))
 end

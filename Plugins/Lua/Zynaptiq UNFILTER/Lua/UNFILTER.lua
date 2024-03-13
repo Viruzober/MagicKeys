@@ -1,15 +1,17 @@
+local p = position.module
+
 function Learn()
-	MouseClick("Left", 38, 307, 1, 0, 0, 10)
+	mouse.clickLeft(p(38, 307))
 end
 
 function ExportFilterResponse()
-	MouseClick("Left", 98, 372, 1, 0, 0, 10)
+	mouse.clickLeft(p(98, 372))
 end
 
 function ResetLearning()
-	MouseClick("Left", 108, 307, 1, 0, 0, 10)
+	mouse.clickLeft(p(108, 307))
 end
 
 function ImportFilterResponse()
-	MouseClick("Left", 143, 372, 1, 0, 0, 10)
+	mouse.clickLeft(p(143, 372))
 end

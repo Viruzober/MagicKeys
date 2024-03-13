@@ -1,7 +1,9 @@
+local pos = position.module
+
 function LoadPreset()
-	MouseClick("Left", 310, 20, 1, 0, 0, 10)
+	mouse.clickLeft(pos(310, 20))
 end
 
 function SavePreset()
-	MouseClick("Left", 370, 20, 1, 0, 0, 10)
+	mouse.clickLeft(pos(370, 20))
 end

@@ -1,3 +1,3 @@
 function PresetsMenu()
-	MouseClick("left", 40, 35, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(40, 35))
 end

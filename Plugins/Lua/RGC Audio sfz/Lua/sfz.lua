@@ -1,3 +1,3 @@
 function LoadSample()
-	MouseClick("left", 227, 45, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(227, 45))
 end

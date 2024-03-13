@@ -1,7 +1,7 @@
 function BankMenu()
-	MouseClick("Left", 48, 49, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(48, 49))
 end
 
 function PatchMenu()
-	MouseClick("Left", 48, 70, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(48, 70))
 end

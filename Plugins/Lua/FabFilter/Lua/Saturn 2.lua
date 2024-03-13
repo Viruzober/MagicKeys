@@ -1,15 +1,17 @@
+local pos = position.module
+
 function PresetsMenu()
-	MouseClick("left", 1000, 17, 1, 0, 0, 10)
+	mouse.clickLeft(pos(1000, 17))
 end
 
 function PreviousPreset()
-	MouseClick("left", 920, 17, 1, 0, 0, 10)
+	mouse.clickLeft(pos(920, 17))
 end
 
 function NextPreset()
-	MouseClick("left", 1150, 17, 1, 0, 0, 10)
+	mouse.clickLeft(pos(1150, 17))
 end
 
 function Help()
-	MouseClick("left", 1220, 17, 1, 0, 0, 10)
+	mouse.clickLeft(pos(1220, 17))
 end

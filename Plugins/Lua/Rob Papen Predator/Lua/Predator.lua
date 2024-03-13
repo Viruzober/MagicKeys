@@ -1,7 +1,9 @@
+local p = position.module
+
 function BanksMenu()
-MouseClick("left", 280, 60, 1, 0, 0, 10)
+	mouse.clickLeft(p(280, 60))
 end
 
 function PresetsMenu()
-MouseClick("left", 130, 30, 1, 0, 0, 10)
+	mouse.clickLeft(p(130, 30))
 end

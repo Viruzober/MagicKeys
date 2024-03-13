@@ -1,7 +1,7 @@
 function BanksMenu()
-	MouseClick("Left", 235, 45, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(235, 45))
 end
 
 function PresetsMenu()
-	MouseClick("Left", 430, 45, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(430, 45))
 end

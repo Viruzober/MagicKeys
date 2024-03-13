@@ -1,11 +1,13 @@
+local p = position.module
+
 function FileMenu()
-	MouseClick("Left", 780, 515, 1, 0, 0, 10)
+	mouse.clickLeft(p(780, 515))
 end
 
 function BanksMenu()
-	MouseClick("Left", 860, 560, 1, 0, 0, 10)
+	mouse.clickLeft(p(860, 560))
 end
 
 function PatchesMenu()
-	MouseClick("Left", 740, 605, 1, 0, 0, 10)
+	mouse.clickLeft(p(740, 605))
 end

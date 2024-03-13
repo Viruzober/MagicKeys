@@ -1,7 +1,7 @@
 function PresetsMenu()
-	MouseClick("left", 30, 10, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(30, 10))
 end
 
 function Options()
-	MouseClick("left", 770, 10, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(770, 10))
 end

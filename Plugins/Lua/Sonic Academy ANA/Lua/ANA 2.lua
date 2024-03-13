@@ -1,4 +1,6 @@
+mouse.timeUp = 20
+
 function LoadPreset()
-	MouseClick("Left", 375, 35, 1, 5, 0, 20)
-	MouseClick("Left", 425, 50, 1, 5, 0, 20)
+	mouse.clickLeft(position.module(375, 35))
+	mouse.clickLeft(position.module(425, 50))
 end

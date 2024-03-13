@@ -1,3 +1,3 @@
 function PresetManager()
-	MouseClick("left", 160, 185, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(160, 185))
 end

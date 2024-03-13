@@ -1,3 +1,3 @@
 function BankMenu()
-	MouseClick("Left", 166, 129, 1, 0, 0, 10)
+	mouse.clickLeft(position.module(166, 129))
 end

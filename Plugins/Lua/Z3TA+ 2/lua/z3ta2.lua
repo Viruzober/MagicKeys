@@ -59,9 +59,9 @@ end
 
 function callMenu(key)
 	local menus = {
-		content={x=525, y=29},
-		banks={x=658, y=28},
-		presets={x=723, y=29}
+		content=pos(525, 29),
+		banks=pos(658, 28),
+		presets=pos(723, 29)
 	}
 	-- Выше мы фактически сформировали объекты координат, так что мы можем просто  передать в щелчок объект, индексирующийся по ключу раздела
 	mouse.clickLeft(menus[key])
