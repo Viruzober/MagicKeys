@@ -98,11 +98,35 @@ function screen.isPixelColor(coords, Color)
 end
 
 function screen.searchImage(imgPath, window)
-	return MagicKeys.ImageSearch(imgPath, window)
+	local retval = MagicKeys.ImageSearch(imgPath, window)
+	local pos = nil
+	if retval[0] == 1 then
+		pos = {
+			x = retval[1],
+			y = retval[2],
+			w = retval[3],
+			h = retval[4],
+			cx = retval[5],
+			cy = retval[6]
+		}
+	end
+	return retval[1] == 1, pos
 end
 
 function screen.searchImageAt(imgPath, position, variant)
-	return MagicKeys.ImageSearchArea(imgPath, position.x, position.y, position.w, position.h, variant)
+	local retval = MagicKeys.ImageSearchArea(imgPath, position.x, position.y, position.w, position.h, variant)
+	local pos = nil
+	if retval[0] == 1 then
+		pos = {
+			x = retval[1],
+			y = retval[2],
+			w = retval[3],
+			h = retval[4],
+			cx = retval[5],
+			cy = retval[6]
+		}
+	end
+	return retval[1] == 1, pos
 end
 
 function screen.snapshot(position)

@@ -6,7 +6,7 @@ mouse.timeUp = 10
 
 -- Loader
 sleep(100)
-if screen.searchImage("Browse")[0] == 0 then
+if not screen.searchImage("Browse") then
 	vui.load("Browse")
 end
 
